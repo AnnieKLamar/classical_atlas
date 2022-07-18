@@ -1,8 +1,9 @@
-import wget
+import requests
 import json
 import gzip
 import shutil
 import os
+
 
 def wget_url(url):
     """
@@ -14,7 +15,8 @@ def wget_url(url):
     Returns:
     (string) file name of downloaded file
     """
-    wget.download(url, url.split("/")[-1])
+    response = requests.get(url)
+    open(url.split("/")[-1], "wb").write(response.content)
     return url.split("/")[-1]
 
 def unzip_gz(file):
@@ -31,8 +33,10 @@ def unzip_gz(file):
     with gzip.open(file, 'rb') as f_in:
         with open(new_name, 'wb') as f_out:
             shutil.copyfileobj(f_in, f_out)
-    f_in.close(); os.remove(file)
-    f_out.close(); return file[:-3]
+    f_in.close()
+    #os.remove(file)
+    f_out.close()
+    return file[:-3]
     
 def get_file(url):
     """

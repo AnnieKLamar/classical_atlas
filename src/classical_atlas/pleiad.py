@@ -1,5 +1,5 @@
 '''
-
+Class header
 
 '''
 
@@ -8,7 +8,7 @@
 
 class Pleiad:
     '''
-    A class to represent a single location from Pleiades.
+    A class to represent a single place from Pleiades.
 
     ---Attributes---
     geographic_type : string
@@ -92,6 +92,7 @@ class Pleiad:
     '''
     def __init__(self, data):
         # initialization
+        self.locations = {}
         self.time_periods = {}
         self.confidence_metrics = {}
         self.attestations = []
@@ -103,13 +104,19 @@ class Pleiad:
         self.place_types = []
         self.association_certainty_types = {}
         self.connections = {}
+        self.geographic_type = None
+        self.features_id = None
+        self.snippet = None
+        self.stable_Pleiades_link = None
+        self.description = None
+        self.location_precision = None
+        self.formal_title = None
 
         if data['features'] and data['features'][0]:
             if data['features'][0]['geometry']:
                 self.geographic_type = data['features'][0]['geometry']['type']
-                self.geographic_coordinates = data['features'][0]['geometry']['coordinates']
-            if data['features'][0]['type']:
-                self.features_type = data['features'][0]['type']
+                for item in data['features'][0]['geometry']['coordinates']:
+                    self.geographic_coordinates.append(item)
             if data['features'][0]['id']:
                 self.features_id = data['features'][0]['id']
             if data['features'][0]['properties']:
@@ -121,60 +128,35 @@ class Pleiad:
 
         # location info
         if data['locations'] and data['locations'][0]:
-            if data['locations'][0]['associationCertainty']:
-                self.association_certainty = data['locations'][0]['associationCertainty']
-                if self.association_certainty not in self.association_certainty_types.keys():
-                    self.association_certainty_types[self.association_certainty] = data['locations'][0]['associationCertaintyURI']
-
-            # info about temporal attestations
-            if data['locations'][0]['attestations']:
-                for attestation in range(len(data['locations'][0]['attestations'])):
-                    time_period = data['locations'][0]['attestations'][attestation]['timePeriod']
-                    time_period_uri = data['locations'][0]['attestations'][attestation]['timePeriodURI']
-                    confidence = data['locations'][0]['attestations'][attestation]['confidence']
-                    confidence_uri = data['locations'][0]['attestations'][attestation]['confidenceURI']
-                    if time_period not in self.time_periods.keys():
-                        self.time_periods[time_period] = time_period_uri
-                    if confidence not in self.confidence_metrics.keys():
-                        self.confidence_metrics[confidence] = confidence_uri
-                    self.attestations.append([time_period, confidence])
-
-            if data['locations'][0]['id']:
-                self.locations_id = data['locations'][0]['id']
-
-            if data['locations'][0]['featureTypeURI'] and data['locations'][0]['featureTypeURI'][0]:
-                location_type = data['locations'][0]['featureType'][0]
-                location_type_uri = data['locations'][0]['featureTypeURI'][0]
-                if location_type not in self.location_types.keys():
-                    self.location_types[location_type] = location_type_uri
-
-            if data['locations'][0]['start']:
-                self.start_date = data['locations'][0]['start']
-            if data['locations'][0]['end']:
-                self.end_date = data['locations'][0]['end']
-
-            if data['locations'][0]['title']:
-                self.locations_title = data['locations'][0]['title']
-
-            if data['locations'][0]['archaeologicalRemains']:
-                self.archaeologicalRemains = data['locations'][0]['archaeologicalRemains']
-            if data['locations'][0]['details']:
-                self.locations_details = data['locations'][0]['details']
-            if data['locations'][0]['accuracy_value']:
-                self.locations_accuracy_value = data['locations'][0]['accuracy_value']
-            if data['locations'][0]['featureType'] and data['locations'][0]['featureType'][0]:
-                self.locations_featureType = data['locations'][0]['featureType'][0]
-            if data['locations'][0]['description']:
-                self.locations_description = data['locations'][0]['description']
-            if data['locations'][0]['locationType'] and graph_dict['locations'][0]['locationType'][0]:
-                self.locations_locationType = data['locations'][0]['locationType'][0]
-            if data['locations'][0]['uri']:
-                self.locations_uri = data['locations'][0]['uri']
-            if data['locations'][0]['@type']:
-                self.locations_type = data['locations'][0]['@type']
-
+            if type(data['locations'][0]) == 'dict':  # more than one associated location
+                for l in data['locations']:
+                    current = Location(data['locations'][l])
+                    if data['locations'][l]['associationCertainty']:
+                        if data['locations'][l]['associationCertainty'] not in self.association_certainty_types.keys():
+                            self.association_certainty_types[data['locations'][l]['associationCertainty']] = data['locations'][0]['associationCertaintyURI']
+                        self.locations[current] = data['locations'][l]['associationCertainty']
+                    else:
+                        self.locations[current] = "None"
+                    if data['locations'][l]['featureTypeURI'] and data['locations'][l]['featureTypeURI'][0]:
+                        location_type = data['locations'][l]['featureType'][0]
+                        location_type_uri = data['locations'][l]['featureTypeURI'][0]
+                        if location_type not in self.location_types.keys():
+                            self.location_types[location_type] = location_type_uri
+            else:
+                current = Location(data['locations'][0])
+                if data['locations'][0]['associationCertainty']:
+                    if data['locations'][0]['associationCertainty'] not in self.association_certainty_types.keys():
+                        self.association_certainty_types[data['locations'][0]['associationCertainty']] = \
+                            data['locations'][0]['associationCertaintyURI']
+                    self.locations[current] = data['locations'][0]['associationCertainty']
+                else:
+                    self.locations[current] = "None"
+                if data['locations'][0]['featureTypeURI'] and data['locations'][0]['featureTypeURI'][0]:
+                    location_type = data['locations'][0]['featureType'][0]
+                    location_type_uri = data['locations'][0]['featureTypeURI'][0]
+                    if location_type not in self.location_types.keys():
+                        self.location_types[location_type] = location_type_uri
         # connections
-
         if data['connections'] and data['connections'][0]:
             for item in data['connections']:
                 self.connections[item['id']] = item['connectionType']
@@ -185,6 +167,18 @@ class Pleiad:
             for name in range(len(list_of_names)):
                 self.names.append(Name(list_of_names[name]))
 
+        self.id = None
+        self.uri = None
+        self.description = None
+        self.title = None
+        self.provenance = None
+        self.details = None
+        self.type = None
+        self.min_longitude = None
+        self.min_latitude = None
+        self.max_longitude = None
+        self.max_latitude = None
+        self.representative_point = None
         if data['id']:
             self.id = data['id']
         if data['subject'] and data['subject'][0]:
@@ -215,6 +209,113 @@ class Pleiad:
 
         if data['reprPoint'] and data['reprPoint'][0]:
             self.representative_point = data['reprPoint']
+
+    def __str__(self):
+        p = self.title + " (" + self.snippet + ")"
+        return p
+
+    def full_report(self):
+        print("Geographic type: " + str(self.geographic_type))
+        if len(self.geographic_coordinates) > 1:
+            print("Geographic coordinates: " + "(" + str(self.geographic_coordinates[0]) + ", " + str(self.geographic_coordinates[1])+ ")")
+        elif len(self.geographic_coordinates[0]) > 1:
+            print("Geographic coordinates: ")
+            for coord in self.geographic_coordinates[0]:
+                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
+        else:
+            print("Geographic coordinates: ")
+            for coord in self.geographic_coordinates[0][0]:
+                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
+        print("Features id: " + str(self.features_id))
+        print("Snippet: " + str(self.snippet))
+        print("Stable Pleiades link: " + str(self.stable_Pleiades_link))
+        print("Description: " + str(self.description))
+        print("Location precision: " + str(self.location_precision))
+        print("Formal title: " + str(self.formal_title))
+        print("Locations: ")
+        for location in self.locations.keys():
+            print(" - " + str(location.title) + ", " + str(location.start_date) + "-" + str(location.end_date) + ", " + str(self.locations[location]))
+        print("Connections: ")
+        for item in self.connections.keys():
+            print(" - " + item + ": " + str(self.connections[item]))
+        print("Names: ")
+        for item in self.names:
+            print(" - " + str(item))
+        print("ID : " + self.id)
+        print("Subjects: ")
+        for item in self.subjects:
+            print(" - " + str(item))
+        print("Title : " + str(self.title))
+        print("Provenance : " + str(self.provenance))
+        print("Details : " + str(self.details))
+        print("Type : " + str(self.type))
+        print("uri : " + str(self.uri))
+        print("Description : " + str(self.description))
+        print("Place types: ")
+        for item in self.place_types:
+            print(" - " + str(item))
+        print("Minimum longitude : " + str(self.min_longitude))
+        print("Minimum latitude : " + str(self.min_latitude))
+        print("Maximum longitude : " + str(self.max_longitude))
+        print("Maximum latitude : " + str(self.max_latitude))
+        print("Representative point : " + str(self.representative_point))
+
+
+class Location:
+
+    def __init__(self, location_data):
+        self.time_periods = {}
+        self.confidence_metrics = {}
+        self.attestations = []
+        self.location_id = None
+        self.location_feature_type = None
+        self.location_feature_type_uri = None
+        self.start_date = None
+        self.end_date = None
+        self.title = None
+        self.archaeologicalRemains = None
+        self.location_details = None
+        self.location_accuracy_value = None
+        self.location_featureType = None
+        self.location_description = None
+        self.location_locationType = None
+        self.location_uri = None
+
+        if location_data['attestations']:
+            for attestation in range(len(location_data['attestations'])):
+                time_period = location_data['attestations'][attestation]['timePeriod']
+                time_period_uri = location_data['attestations'][attestation]['timePeriodURI']
+                confidence = location_data['attestations'][attestation]['confidence']
+                confidence_uri = location_data['attestations'][attestation]['confidenceURI']
+                if time_period not in self.time_periods.keys():
+                    self.time_periods[time_period] = time_period_uri
+                if confidence not in self.confidence_metrics.keys():
+                    self.confidence_metrics[confidence] = confidence_uri
+                self.attestations.append([time_period, confidence])
+
+        if location_data['id']:
+            self.location_id = location_data['id']
+        if location_data['featureTypeURI'] and location_data['featureTypeURI'][0]:
+            self.location_feature_type = location_data['featureType'][0]
+            self.location_feature_type_uri = location_data['featureTypeURI'][0]
+        if location_data['start']:
+            self.start_date = location_data['start']
+        if location_data['end']:
+            self.end_date = location_data['end']
+        if location_data['title']:
+            self.title = location_data['title']
+        if location_data['archaeologicalRemains']:
+            self.archaeologicalRemains = location_data['archaeologicalRemains']
+        if location_data['details']:
+            self.location_details = location_data['details']
+        if location_data['accuracy_value']:
+            self.location_accuracy_value = location_data['accuracy_value']
+        if location_data['description']:
+            self.location_description = location_data['description']
+        if location_data['locationType'] and location_data['locationType'][0]:
+            self.location_locationType = location_data['locationType'][0]
+        if location_data['uri']:
+            self.location_uri = location_data['uri']
 
 
 class Name:
@@ -249,17 +350,106 @@ class Name:
     """
 
     def __init__(self, attributes):
-        self.name_type = attributes['nameType']
-        self.transcription_accuracy = attributes['transcriptionAccuracy']
-        self.association_certainty = attributes['associationCertainty']
-        self.romanized_name = attributes['romanized']
-        self.name_attestations = {}
-        list_of_attestations = attributes['attestations']
-        for attestations in list_of_attestations:
-            self.name_attestations[attestations['timePeriod']] = attestations['confidence']
-        self.name_id = attributes['id']
-        self.transcription_completeness = attributes['transcriptionCompleteness']
-        self.language = attributes['language']
-        self.description = attributes['description']
-        self.name_uri = attributes['uri']
-        self.name_attested = attributes['attested']
+        self._name_type = None
+        self._transcription_accuracy = None
+        self._association_certainty = None
+        self._romanized_name = None
+        self._name_attestations = {}
+        self._name_id = None
+        self._transcription_completeness = None
+        self._language = None
+        self._description = None
+        self._name_uri = None
+        self._name_attested = None
+
+        if attributes['nameType']:
+            self._name_type = attributes['nameType']
+        if attributes['transcriptionAccuracy']:
+            self._transcription_accuracy = attributes['transcriptionAccuracy']
+        if attributes['associationCertainty']:
+            self._association_certainty = attributes['associationCertainty']
+        if attributes['romanized']:
+            self._romanized_name = attributes['romanized']
+        if attributes['attestations']:
+            list_of_attestations = attributes['attestations']
+            for attestations in list_of_attestations:
+                self._name_attestations[attestations['timePeriod']] = attestations['confidence']
+        if attributes['id']:
+            self._name_id = attributes['id']
+        if attributes['transcriptionCompleteness']:
+            self._transcription_completeness = attributes['transcriptionCompleteness']
+        if attributes['language']:
+            self._language = attributes['language']
+        if attributes['description']:
+            self._description = attributes['description']
+        if attributes['uri']:
+            self._name_uri = attributes['uri']
+        if attributes['attested']:
+            self._name_attested = attributes['attested']
+
+    @property
+    def name_type(self):
+        return self._name_type
+
+    @property
+    def name_attestations(self):
+        return self._name_attestations
+
+    @property
+    def transcription_accuracy(self):
+        return self._transcription_accuracy
+
+    @property
+    def association_certainty(self):
+        return self._association_certainty
+
+    @property
+    def romanized_name(self):
+        return self._romanized_name
+
+    @property
+    def transcription_completeness(self):
+        return self._transcription_completeness
+
+    @property
+    def name_id(self):
+        return self._name_id
+
+    @property
+    def language(self):
+        return self._language
+
+    @property
+    def description(self):
+        return self._description
+
+    @property
+    def name_uri(self):
+        return self._name_uri
+
+    @property
+    def name_attested(self):
+        return self._name_attested
+
+    def __str__(self):
+        n = "[" + self.name_type + "] " + self.romanized_name
+        if self.name_attested is not None:
+            n = n + " (" + self.name_attested + ")"
+        if self.description is not None:
+            n = n + ": " + self.description
+        return n
+
+    def name_summary(self):
+        print(" ---- Summary of " + self.romanized_name + " (ID: " + str(self.name_id) + ")" + " ----")
+        print("Name type: " + str(self.name_type))
+        print("Language: " + str(self.language))
+        print("Description: " + str(self.description))
+        print("Transcription accuracy: " + str(self.transcription_accuracy))
+        print("Transcription completeness: " + str(self.transcription_completeness))
+        print("Description: " + str(self.description))
+        print("Ancient spelling: " + str(self.name_attested))
+        if len(self.name_attestations) != 0:
+            print("Temporal attestations: ")
+            for attestation in self.name_attestations.keys():
+                print(" - " + str(attestation) + ", " + str(self.name_attestations[attestation]))
+
