@@ -2,6 +2,7 @@
 Classical Atlas
 module header
 @author: kalamar
+
 """
 import downloaders
 from pleiad import Pleiad
