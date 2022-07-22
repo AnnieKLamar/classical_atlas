@@ -72,7 +72,7 @@ def get_data(url):
      Downloads, unzips, and loads the JSON file at the given URL.
 
      Keyword arguments:
-     url -- web location of the JSON file from which to download data
+     url -- web location.py of the JSON file from which to download data
 
      Returns:
      (list) dataset with JSON file data, list of dictionaries

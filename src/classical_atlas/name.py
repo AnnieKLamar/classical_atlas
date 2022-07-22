@@ -1,10 +1,10 @@
 class Name:
     """
-    A class to represent a location name.
+    A class to represent a location.py name.
 
     ---Attributes---
     name_type : string
-        name of the location
+        name of the location.py
     transcription_accuracy : string
         accuracy of name as transmitted
     association_certainty : string
