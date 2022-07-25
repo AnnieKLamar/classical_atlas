@@ -1,32 +1,44 @@
+""" This module represents a Name object.
+A place may have more than one name.
+
+Notes
+-----
+
+References
+----------
+
+"""
+
 class Name:
     """
-    A class to represent a location.py name.
+    A class to represent a  name.
 
-    ---Attributes---
-    name_type : string
-        name of the location.py
-    transcription_accuracy : string
-        accuracy of name as transmitted
+    Attributes
+    ----------
+    name_type
+    transcription_accuracy
+    description
+    name_uri
+    romanized_name
+    name_id
+    transcription_completeness
+    language
+    name_attestations
+
     association_certainty : string
-        Level of certainty in association between places and locations or names
-    romanized_name : string
-        Transliteration of the attested name to Roman characters following the
-        Classical Atlas Project scheme.
-    attestations : AttestationsContainer
-        AttestationsContainer object of attestations of this place name
-    name_id : string
-        id of the name
-    transcription_completeness : string
-        how complete the transcribed place name is
-    language : string
-         Short identifier for language and writing system associated with the
-         attested spelling
-    description : string
-        description of name and source
-    name_uri : string
-        uri of the name on Pleiades
+        level of certainty in association between place or names
+
+
+
+
+
     name_attested : string
         Attested spelling of ancient name, not necessarily the same as the "title"
+
+    Methods
+    -------
+
+
     """
 
     def __init__(self, attributes):
@@ -69,14 +81,19 @@ class Name:
 
     @property
     def name_type(self):
+        """type of place the name refers to, e.g. geographic (`string`)"""
         return self._name_type
 
     @property
     def name_attestations(self):
+        """dictionary of temporal attestations of this name;
+        maps time periods to confidence metrics (`dictionary`)
+        """
         return self._name_attestations
 
     @property
     def transcription_accuracy(self):
+        """accuracy of name as transmitted (`string`)"""
         return self._transcription_accuracy
 
     @property
@@ -85,26 +102,34 @@ class Name:
 
     @property
     def romanized_name(self):
+        """transliteration of the attested name to Roman characters (`string`)"""
         return self._romanized_name
 
     @property
     def transcription_completeness(self):
+        """how complete the transcribed place name is (`string`)"""
         return self._transcription_completeness
 
     @property
     def name_id(self):
+        """unique identifier for this name (`string`)"""
         return self._name_id
 
     @property
     def language(self):
+        """Short identifier for language and writing system associated with the
+        attested spelling (`string`)
+        """
         return self._language
 
     @property
     def description(self):
+        """description of name and source (`string`)"""
         return self._description
 
     @property
     def name_uri(self):
+        """uri of the name on Pleiades (`string`)"""
         return self._name_uri
 
     @property

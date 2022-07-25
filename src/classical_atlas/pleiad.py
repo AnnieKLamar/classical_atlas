@@ -97,7 +97,7 @@ class Pleiad:
         self._time_periods = {}
         self._confidence_metrics = {}
         self._attestations = []
-        self._names = []
+        self._names = {}
         self._geographic_coordinates = []
         self._location_types = {}
         self._connections = {}
@@ -175,9 +175,34 @@ class Pleiad:
 
         # general
         if data['names'] and data['names'][0]:
+            if type(data['names'][0]) == 'dict':  # more than one associated name
+                for n in data['names']:
+                    current = Name(data['names'][n])
+                    if data['names'][n]['associationCertainty']:
+                        if data['names'][n]['associationCertainty'] not in self._association_certainty_types.keys():
+                            self._association_certainty_types[data['names'][n]['associationCertainty']] = data['names'][0]['associationCertaintyURI']
+                        self._names[current] = data['names'][n]['associationCertainty']
+                    else:
+                        self._locations[current] = "None"
+            #### HERE::::
+            else:
+                current = Location(data['locations'][0])
+                if data['locations'][0]['associationCertainty']:
+                    if data['locations'][0]['associationCertainty'] not in self._association_certainty_types.keys():
+                        self._association_certainty_types[data['locations'][0]['associationCertainty']] = \
+                            data['locations'][0]['associationCertaintyURI']
+                    self._locations[current] = data['locations'][0]['associationCertainty']
+                else:
+                    self._locations[current] = "None"
+                if data['locations'][0]['featureTypeURI'] and data['locations'][0]['featureTypeURI'][0]:
+                    location_type = data['locations'][0]['featureType'][0]
+                    location_type_uri = data['locations'][0]['featureTypeURI'][0]
+                    if location_type not in self._location_types.keys():
+                        self._location_types[location_type] = location_type_uri
             list_of_names = data['names']
             for name in range(len(list_of_names)):
                 self._names.append(Name(list_of_names[name]))
+        #need to make names a dictionary with association certainities, like location
 
         if data['id']:
             self._id = data['id']
