@@ -29,12 +29,11 @@ class Location:
                 if confidence not in self.confidence_metrics.keys():
                     self._confidence_metrics[confidence] = confidence_uri
                 self._attestations.append([time_period, confidence])
-
         if location_data['id']:
             self._location_id = location_data['id']
         if location_data['featureTypeURI'] and location_data['featureTypeURI'][0]:
             self._location_feature_type = location_data['featureType'][0]
-            self.location_feature_type_uri = location_data['featureTypeURI'][0]
+            self._location_feature_type_uri = location_data['featureTypeURI'][0]
         if location_data['start']:
             self._start_date = location_data['start']
         if location_data['end']:
@@ -69,10 +68,6 @@ class Location:
     @property
     def location_id(self):
         return self._location_id
-
-    @property
-    def location_feature_type(self):
-        return self._location_feature_type
 
     @property
     def location_feature_type_uri(self):

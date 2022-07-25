@@ -1,17 +1,16 @@
 """ This module represents a Name object.
 A place may have more than one name.
-
-Notes
------
-
-References
-----------
-
 """
+
 
 class Name:
     """
     A class to represent a  name.
+
+    Parameters
+    ----------
+    attributes : dictionary
+        Section of JSON file relevant to Name objects, parsed as dictionary
 
     Attributes
     ----------
@@ -24,21 +23,12 @@ class Name:
     transcription_completeness
     language
     name_attestations
-
-    association_certainty : string
-        level of certainty in association between place or names
-
-
-
-
-
-    name_attested : string
-        Attested spelling of ancient name, not necessarily the same as the "title"
+    name_attested
 
     Methods
     -------
-
-
+    name_summary()
+        Print summary of Name object
     """
 
     def __init__(self, attributes):
@@ -78,34 +68,34 @@ class Name:
 
     @property
     def name_type(self):
-        """type of place the name refers to, e.g. geographic (`string`)"""
+        """Type of place the name refers to, e.g. geographic (`string`)"""
         return self._name_type
 
     @property
     def name_attestations(self):
-        """dictionary of temporal attestations of this name;
+        """Dictionary of temporal attestations of this name;
         maps time periods to confidence metrics (`dictionary`)
         """
         return self._name_attestations
 
     @property
     def transcription_accuracy(self):
-        """accuracy of name as transmitted (`string`)"""
+        """Accuracy of name as transmitted (`string`)"""
         return self._transcription_accuracy
 
     @property
     def romanized_name(self):
-        """transliteration of the attested name to Roman characters (`string`)"""
+        """Transliteration of the attested name to Roman characters (`string`)"""
         return self._romanized_name
 
     @property
     def transcription_completeness(self):
-        """how complete the transcribed place name is (`string`)"""
+        """How complete the transcribed place name is (`string`)"""
         return self._transcription_completeness
 
     @property
     def name_id(self):
-        """unique identifier for this name (`string`)"""
+        """Unique identifier for this name (`string`)"""
         return self._name_id
 
     @property
@@ -117,19 +107,27 @@ class Name:
 
     @property
     def description(self):
-        """description of name and source (`string`)"""
+        """Description of name and source (`string`)"""
         return self._description
 
     @property
     def name_uri(self):
-        """uri of the name on Pleiades (`string`)"""
+        """URI of the name on Pleiades (`string`)"""
         return self._name_uri
 
     @property
     def name_attested(self):
+        """Attested spelling of ancient name, not necessarily the same as the `title` (`string`)"""
         return self._name_attested
 
     def __str__(self):
+        """Represent Name object as a string.
+
+        Returns
+        -------
+        string
+            representation of Name object as string; includes name, temporal attestation, and description
+        """
         n = "[" + self.name_type + "] " + self.romanized_name
         if self.name_attested is not None:
             n = n + " (" + self.name_attested + ")"
@@ -138,6 +136,7 @@ class Name:
         return n
 
     def name_summary(self):
+        """Print summary of Name object."""
         print(" ---- Summary of " + self.romanized_name + " (ID: " + str(self.name_id) + ")" + " ----")
         print("Name type: " + str(self.name_type))
         print("Language: " + str(self.language))

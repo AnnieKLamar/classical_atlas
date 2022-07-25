@@ -184,9 +184,8 @@ class Pleiad:
                         self._names[current] = data['names'][n]['associationCertainty']
                     else:
                         self._names[current] = "None"
-            #### HERE::::
             else:
-                current = Location(data['names'][0])
+                current = Name(data['names'][0])
                 if data['names'][0]['associationCertainty']:
                     if data['names'][0]['associationCertainty'] not in self._association_certainty_types.keys():
                         self._association_certainty_types[data['names'][0]['associationCertainty']] = \
