@@ -44,7 +44,6 @@ class Name:
     def __init__(self, attributes):
         self._name_type = None
         self._transcription_accuracy = None
-        self._association_certainty = None
         self._romanized_name = None
         self._name_attestations = {}
         self._name_id = None
@@ -58,8 +57,6 @@ class Name:
             self._name_type = attributes['nameType']
         if attributes['transcriptionAccuracy']:
             self._transcription_accuracy = attributes['transcriptionAccuracy']
-        if attributes['associationCertainty']:
-            self._association_certainty = attributes['associationCertainty']
         if attributes['romanized']:
             self._romanized_name = attributes['romanized']
         if attributes['attestations']:
@@ -95,10 +92,6 @@ class Name:
     def transcription_accuracy(self):
         """accuracy of name as transmitted (`string`)"""
         return self._transcription_accuracy
-
-    @property
-    def association_certainty(self):
-        return self._association_certainty
 
     @property
     def romanized_name(self):
