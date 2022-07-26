@@ -1,14 +1,51 @@
-'''
-Class header
+"""Module to represent a Pleiades place.
 
-'''
+Notes
+-----
+Pleiades places are the primary organizational construct of the gazetteer. They are conceptual entities: the term
+"place" applies to any locus of human attention, material or intellectual, in a real-world geographic context. A
+settlement mentioned in an ancient text is a place, whether or not it can now be located; an archaeological site is a
+place; a modern city located atop an ancient settlement is a place. Basically, any spatial feature that is connected
+to the pre-modern past and that a human being has noticed and discussed as such between the past and the present is a
+place.
+
+Places in Pleiades can therefore represent:
+
+* areas of fairly intensive human activity like settlements and sanctuaries;
+
+* large-scale geological features known in antiquity like mountains, rivers, lakes;
+
+* political, social, or cultural constructs like provinces and mining districts;
+
+* individual structures, when they have been referred to individually by ancient sources or modern scholars (e.g.,
+the Parthenon, the Queen’s Megaron at Knossos, the Basilica Iulia, the House of the Faun); and
+
+* Spatial extents or thematic groupings of places defined by modern scholars or administrative entities for purposes of
+analysis, description, reference, or heritage management (e.g., the Aswan Quarry Landscape, or the Archaeological
+Border complex of Hedeby and the Danevirke) Pleiades recognizes a variety of place categories or types; new
+categories can be added as needed by the editorial college.
+
+Places are entirely abstract, conceptual entities. They are objects of thought, speech, or writing, not tangible,
+mappable points on the earth’s surface. They have no spatial or temporal attributes of their own. A place can exist
+in name only in an ancient source, without any material correlate; conversely, an archaeological site can exist as a
+place without an ancient name.
+
+The spatial aspects of Pleiades places (i.e., latitude and longitude coordinates in space), as well as their ancient
+and modern names, are addressed through two other conceptual entities: locations and names. Connections are used to
+express and document relationships between different places. Temporal characteristics and bibliographical references
+are recorded at the name, location, and connection levels as appropriate. (https://pleiades.stoa.org/help/conceptual-overview)
+
+Note also that this class excludes the deprecated (as of 2010) Pleiades 'features' that are linked to places.
+The features container remains in the available Pleiades dataset to preserve spatial metadata.
+The intent of the place-location-name distinction makes features containers irrelevant.
+"""
 
 from name import Name
 from location import Location
 
 
 class Pleiad:
-    '''
+    """
     A class to represent a single place from Pleiades.
 
     ---Attributes---
@@ -90,27 +127,16 @@ class Pleiad:
 
     Information about the other attributes in the object may be found in the Pleiades documentation:
     https://pleiades.stoa.org/downloads
-    '''
+    """
     def __init__(self, data):
         # initialization
         self._locations = {}
-        self._time_periods = {}
-        self._confidence_metrics = {}
-        self._attestations = []
         self._names = {}
-        self._geographic_coordinates = []
         self._location_types = {}
         self._connections = {}
         self._subjects = []
         self._place_types = []
         self._association_certainty_types = {}
-        self._geographic_type = None
-        self._features_id = None
-        self._snippet = None
-        self._stable_Pleiades_link = None
-        self._description = None
-        self._location_precision = None
-        self._formal_title = None
         self._id = None
         self._uri = None
         self._description = None
@@ -123,22 +149,7 @@ class Pleiad:
         self._max_longitude = None
         self._max_latitude = None
         self._representative_point = None
-
-        if data['features'] and data['features'][0]:
-            if data['features'][0]['geometry']:
-                self._geographic_type = data['features'][0]['geometry']['type']
-                for item in data['features'][0]['geometry']['coordinates']:
-                    self._geographic_coordinates.append(item)
-            if data['features'][0]['id']:
-                self._features_id = data['features'][0]['id']
-            if data['features'][0]['properties']:
-                self._snippet = data['features'][0]['properties']['snippet']
-                self._stable_Pleiades_link = data['features'][0]['properties']['link']
-                self._description = data['features'][0]['properties']['description']
-                self._location_precision = data['features'][0]['properties']['location_precision']
-                self._formal_title = data['features'][0]['properties']['title']
-
-        # location.py info
+        # locations
         if data['locations'] and data['locations'][0]:
             if type(data['locations'][0]) == 'dict':  # more than one associated location.py
                 for l in data['locations']:
@@ -171,9 +182,8 @@ class Pleiad:
         # connections
         if data['connections'] and data['connections'][0]:
             for item in data['connections']:
-                self._connections[item['id']] = item['connectionType']
-
-        # general
+                self._connections[item['id']] = [item['connectionType'], item['title'], item['start'], item['end']]
+        # names
         if data['names'] and data['names'][0]:
             if type(data['names'][0]) == 'dict':  # more than one associated name
                 for n in data['names']:
@@ -193,7 +203,7 @@ class Pleiad:
                     self._names[current] = data['names'][0]['associationCertainty']
                 else:
                     self._names[current] = "None"
-
+        # general
         if data['id']:
             self._id = data['id']
         if data['subject'] and data['subject'][0]:
@@ -232,24 +242,12 @@ class Pleiad:
         return self._locations
 
     @property
-    def time_periods_info(self):
-        return self._time_periods
-
-    @property
-    def confidence_metrics_info(self):
-        return self._confidence_metrics
-
-    @property
-    def attestations(self):
-        return self._attestations
+    def title(self):
+        return self._title
 
     @property
     def names(self):
         return self._names
-
-    @property
-    def geographic_coordinates(self):
-        return self._geographic_coordinates
 
     @property
     def location_types_info(self):
@@ -272,34 +270,8 @@ class Pleiad:
         return self._association_certainty_types
 
     @property
-    def geographic_type(self):
-        return self._geographic_type
-
-    @property
-    def features_id(self):
-        return self._features_id
-
-    @property
-    def snippet(self):
-        return self._snippet
-
-    @property
-    def pleiades_link(self):
-        return self._stable_Pleiades_link
-
-    @property
     def description(self):
         return self._description
-
-    @property
-    def location_precision(self):
-        return self._location_precision
-
-    @property
-    def title(self):
-        if self._formal_title is None:
-            return self._id
-        return self._formal_title
 
     @property
     def provenance(self):
@@ -333,7 +305,15 @@ class Pleiad:
     def representative_point(self):
         return self._representative_point
 
-    # access methods #
+    @property
+    def uri(self):
+        return self._uri
+
+    @property
+    def id(self):
+        return self._id
+
+    # access methods
     def get_bbox(self):
         return [self.min_latitude, self.min_longitude, self.max_latitude, self.max_longitude]
 
@@ -363,23 +343,10 @@ class Pleiad:
             name_ids.append(name.name_id)
         return name_ids
 
-    # Print Methods #
-
+    # info methods
     def __str__(self):
-        p = self.title + " (" + self.snippet + ")"
+        p = self.title + " (" + self.description + ")"
         return p
-
-    def print_time_periods_info(self):
-        print("Time periods relevant to " + self.title + ":")
-        for time_period in self.time_periods_info.keys():
-            print("--- " + str(time_period) + " ---")
-            print (self.time_periods_info[time_period])
-
-    def print_confidence_metrics_info(self):
-        print("Confidence metrics relevant to " + self.title + ":")
-        for metric in self.confidence_metrics_info.keys():
-            print("--- " + str(metric) + " ---")
-            print (self.confidence_metrics_info[metric])
 
     def print_location_types_info(self):
         print("Location types relevant to " + self.title + ":")
@@ -394,18 +361,6 @@ class Pleiad:
             print(self.association_certainty_info[certainty_type])
 
     def print_coordinate_info(self):
-        print("Set of relevant geographic coordinates (Shape: " + str(self.geographic_type) + "): ")
-        if len(self.geographic_coordinates) > 1:
-            print("Geographic coordinates: " + "(" + str(self.geographic_coordinates[0]) + ", " + str(
-                self.geographic_coordinates[1]) + ")")
-        elif len(self.geographic_coordinates[0]) > 1:
-            print("Geographic coordinates: ")
-            for coord in self.geographic_coordinates[0]:
-                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
-        else:
-            print("Geographic coordinates: ")
-            for coord in self.geographic_coordinates[0][0]:
-                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
         print("Representative point: " + str(self.representative_point))
         print("Minimum latitude: " + str(self.min_latitude))
         print("Minimum longitude: " + str(self.min_longitude))
@@ -428,25 +383,37 @@ class Pleiad:
             pr = pr + subject + ", "
         print(pr[:-2])
 
-    # Needs to be revised
-    def full_report(self):
-        print("Geographic type: " + str(self.geographic_type))
-        if len(self.geographic_coordinates) > 1:
-            print("Geographic coordinates: " + "(" + str(self.geographic_coordinates[0]) + ", " + str(self.geographic_coordinates[1])+ ")")
-        elif len(self.geographic_coordinates[0]) > 1:
-            print("Geographic coordinates: ")
-            for coord in self.geographic_coordinates[0]:
-                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
-        else:
-            print("Geographic coordinates: ")
-            for coord in self.geographic_coordinates[0][0]:
-                print("(" + str(coord[0]) + ", " + str(coord[1]) + ")")
-        print("Features id: " + str(self.features_id))
-        print("Snippet: " + str(self.snippet))
-        print("Stable Pleiades link: " + str(self.stable_Pleiades_link))
-        print("Description: " + str(self.description))
-        print("Location precision: " + str(self.location_precision))
-        print("Formal title: " + str(self.formal_title))
+    def print_connections(self):
+        print("Connections relevant to " + self.title + ":")
+        for connection in self.connections.keys():
+            c_type = self.connections[connection][0]
+            c_title = self.connections[connection][1]
+            c_start = self.connections[connection][2]
+            c_end = self.connections[connection][3]
+            print(c_title + " (id: " + str(connection) + "): " )
+            print("     connection type: " + str(c_type))
+            print("     date range: " + str(c_start) + ", " + str(c_end))
+
+    def report(self, detail='short'):
+        print("Title : " + str(self.title))
+        print("Description : " + str(self.description))
+        print("Representative point : " + str(self.representative_point))
+        print("ID : " + self.id)
+        print("uri : " + str(self.uri))
+        print("Place types: ")
+        for item in self.place_types:
+            print(" - " + str(item))
+        if detail == 'long':
+            print("Provenance : " + str(self.provenance))
+            print("Details : " + str(self.details))
+            print("Type : " + str(self.type))
+            print("Minimum longitude : " + str(self.min_longitude))
+            print("Minimum latitude : " + str(self.min_latitude))
+            print("Maximum longitude : " + str(self.max_longitude))
+            print("Maximum latitude : " + str(self.max_latitude))
+            print("Subjects: ")
+            for item in self.subjects:
+                print(" - " + str(item))
         print("Locations: ")
         for location in self.locations.keys():
             print(" - " + str(location.title) + ", " + str(location.start_date) + "-" + str(location.end_date) + ", " + str(self.locations[location]))
@@ -456,26 +423,10 @@ class Pleiad:
         print("Names: ")
         for item in self.names:
             print(" - " + str(item))
-        print("ID : " + self.id)
-        print("Subjects: ")
-        for item in self.subjects:
-            print(" - " + str(item))
-        print("Title : " + str(self.title))
-        print("Provenance : " + str(self.provenance))
-        print("Details : " + str(self.details))
-        print("Type : " + str(self.type))
-        print("uri : " + str(self.uri))
-        print("Description : " + str(self.description))
-        print("Place types: ")
-        for item in self.place_types:
-            print(" - " + str(item))
-        print("Minimum longitude : " + str(self.min_longitude))
-        print("Minimum latitude : " + str(self.min_latitude))
-        print("Maximum longitude : " + str(self.max_longitude))
-        print("Maximum latitude : " + str(self.max_latitude))
-        print("Representative point : " + str(self.representative_point))
 
-
+    def place_type_info(self):
+        print(self.place_types)
+        print("https://pleiades.stoa.org/vocabularies/place-types")
 
 
 

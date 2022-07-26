@@ -1,0 +1,13 @@
+        if data['features'] and data['features'][0]:
+            if data['features'][0]['geometry']:
+                self._geographic_type = data['features'][0]['geometry']['type']
+                for item in data['features'][0]['geometry']['coordinates']:
+                    self._geographic_coordinates.append(item)
+            if data['features'][0]['id']:
+                self._features_id = data['features'][0]['id']
+            if data['features'][0]['properties']:
+                self._snippet = data['features'][0]['properties']['snippet']
+                self._stable_Pleiades_link = data['features'][0]['properties']['link']
+                self._description = data['features'][0]['properties']['description']
+                self._location_precision = data['features'][0]['properties']['location_precision']
+                self._formal_title = data['features'][0]['properties']['title']

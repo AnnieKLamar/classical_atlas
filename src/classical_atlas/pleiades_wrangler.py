@@ -28,11 +28,14 @@ def main():
     test1 = pleiades[21]
     #test2 = pleiades[5]
     test3 = pleiades[31]
-    #test1.full_report()
-    #test2.full_report()
-    #test3.full_report()
-    for n in test3.names:
-        n.name_summary()
+
+    test1.report(detail='long')
+    for n in test1.locations:
+        n.report(detail='long')
+
+    test3.report(detail='long')
+    for n in test3.locations:
+        n.report(detail='long')
 
 if __name__ == "__main__":
     main()
