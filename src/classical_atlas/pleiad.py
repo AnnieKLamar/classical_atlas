@@ -48,6 +48,30 @@ class Pleiad:
     """
     A class to represent a single place from Pleiades.
 
+    Attributes
+    ----------
+    locations
+    title
+    names
+    location_types_info
+    connections
+    subjects
+    place_types
+    association_certainty_info
+    description
+    provenance
+    details
+    type
+    min_longitude
+    min_latitude
+    max_longitude
+    max_latitude
+    representative_point
+    uri
+    id
+
+    Methods
+    -------
 
     Information about the other attributes in the object may be found in the Pleiades documentation:
     https://pleiades.stoa.org/downloads
@@ -173,78 +197,108 @@ class Pleiad:
 
     @property
     def names(self):
-        """Maps associated names to certainty of association ('names')"""
+        """Maps associated names to certainty of association ('dictionary')"""
         return self._names
 
     @property
     def location_types_info(self):
+        """Information about the types of associated locations (`dictionary`)"""
         return self._location_types
 
     @property
     def connections(self):
+        """Information about connections between this place and another (`dictionary`)"""
         return self._connections
 
     @property
     def subjects(self):
+        """List of subjects relevant to this place (`list`)"""
         return self._subjects
 
     @property
     def place_types(self):
+        """Place types associated with a place (`list`)"""
         return self._place_types
 
     @property
     def association_certainty_info(self):
+        """Maps certainty types to corresponding information (`dictionary`)"""
         return self._association_certainty_types
 
     @property
     def description(self):
+        """Text description of a place (`string`)"""
         return self._description
 
     @property
     def provenance(self):
+        """Provenance of information about this place (`string`)"""
         return self._provenance
 
     @property
     def details(self):
+        """Details about a place above and beyond information in the description (`string`)"""
         return self._details
 
     @property
     def type(self):
+        """Deprecated place type variable (`string`)"""
         return self._type
 
     @property
     def min_longitude(self):
+        """Minimum longitude of bounding box (`float`)"""
         return self._min_longitude
 
     @property
     def min_latitude(self):
+        """Minimum latitude of bounding box (`float`)"""
         return self._min_latitude
 
     @property
     def max_longitude(self):
+        """Maximum longitude of bounding box (`float`)"""
         return self._max_longitude
 
     @property
     def max_latitude(self):
+        """Maximum latitude of bounding box (`float`)"""
         return self._max_latitude
 
     @property
     def representative_point(self):
+        """Representative point of latitude and longitude (`list`)"""
         return self._representative_point
 
     @property
     def uri(self):
+        """Stable Pleiades uri for a place (`string`)"""
         return self._uri
 
     @property
     def id(self):
+        """Unique identifier for a place (`string`)"""
         return self._id
 
     # access methods
     def get_bbox(self):
+        """Access bounding box of geographic coordinates
+
+        Returns
+        -------
+        list
+            bounding box of geographic coordinates
+        """
         return [self.min_latitude, self.min_longitude, self.max_latitude, self.max_longitude]
 
     def earliest_date(self):
+        """Return earliest known date of any associated location
+
+        Returns
+        -------
+        int
+            Earliest known date of any associated location
+        """
         earliest = 3000
         for location in self.locations.keys():
             if location.start_date < earliest:
@@ -252,6 +306,13 @@ class Pleiad:
         return earliest
 
     def latest_date(self):
+        """Return latest known date of any associated location
+
+        Returns
+        -------
+        int
+            latest known date of any associated location
+        """
         latest = -10000
         for location in self.locations.keys():
             if location.end_date > latest:
@@ -259,18 +320,58 @@ class Pleiad:
         return latest
 
     def get_list_of_locations(self):
+        """
+        Return list of titles of associated locations
+
+        Returns
+        -------
+        list
+            titles of associated locations
+        """
+        locations = []
+        for location in self.locations.keys():
+            locations.append(location.title)
+        return locations
 
     def get_location_ids(self):
+        """
+        Return list of ids of associated locations
+
+        Returns
+        -------
+        list
+            ids of associated locations
+        """
         location_ids = []
         for location in self.locations.keys():
             location_ids.append(location.location_id)
         return location_ids
 
     def get_list_of_names(self):
+        """
+        Return list of names associated with a place
+
+        Returns
+        -------
+        list
+            names associated with a place
+        """
+        names_list = []
+        for name in self.names.keys():
+            names_list.append(name.romanized_name)
+        return names_list
 
     def get_name_ids(self):
+        """
+        Return list of ids of associated names
+
+        Returns
+        -------
+        list
+            ids of associated names
+        """
         name_ids = []
-        for name in self.names:
+        for name in self.names.keys():
             name_ids.append(name.name_id)
         return name_ids
 
@@ -280,18 +381,21 @@ class Pleiad:
         return p
 
     def print_location_types_info(self):
+        """Print explanations for location types."""
         print("Location types relevant to " + self.title + ":")
         for location_type in self.location_types_info.keys():
             print("--- " + str(location_type) + " ---")
             print (self.location_types_info[location_type])
 
     def print_association_certainty_info(self):
+        """Print explanations for association certainties"""
         print("Explanation of association certainties relevent to " + self.title + ":")
         for certainty_type in self.association_certainty_info.keys():
             print("--- " + str(certainty_type) + " ---")
             print(self.association_certainty_info[certainty_type])
 
     def print_coordinate_info(self):
+        """Print information about geographic coordinates associated with a place"""
         print("Representative point: " + str(self.representative_point))
         print("Minimum latitude: " + str(self.min_latitude))
         print("Minimum longitude: " + str(self.min_longitude))
@@ -299,22 +403,26 @@ class Pleiad:
         print("Maximum longitude: " + str(self.max_longitude))
 
     def print_locations(self):
+        """Print summary of titles of locations associated with a place"""
         print("Locations relevant to " + self.title + ":")
         for location in self.locations.keys():
             print("     " + str(location.title) + " (" + str(location.start_date) + ", ") + str(location.end_date) + ")"
 
     def print_location_association_certainties(self):
+        """Print summary of locations and association certainties"""
         print("Locations and association certainties relevant to " + self.title + ":")
         for location in self.locations.keys():
             print("     " + location.title + ", " + str(self.locations[location]))
 
     def print_subjects(self):
+        """Print list of relevant subjects"""
         pr = "Subjects relevant to : " + self.title + ": "
         for subject in self.subjects:
             pr = pr + subject + ", "
         print(pr[:-2])
 
     def print_connections(self):
+        """Print list of connections and relevant information"""
         print("Connections relevant to " + self.title + ":")
         for connection in self.connections.keys():
             c_type = self.connections[connection][0]
@@ -326,6 +434,13 @@ class Pleiad:
             print("     date range: " + str(c_start) + ", " + str(c_end))
 
     def report(self, detail='short'):
+        """Print a summary of information about this location.
+
+         Parameters
+         ----------
+         detail : {'short', 'long'}
+             about of detail to include in summary
+         """
         print("Title : " + str(self.title))
         print("Description : " + str(self.description))
         print("Representative point : " + str(self.representative_point))

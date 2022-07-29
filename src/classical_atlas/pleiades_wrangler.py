@@ -26,16 +26,18 @@ def make_pleiades_objects(download_latest_data=False):
 def main():
     pleiades = make_pleiades_objects()
     test1 = pleiades[21]
-    #test2 = pleiades[5]
+    test2 = pleiades[5]
     test3 = pleiades[31]
-
-    test1.report(detail='long')
-    for n in test1.locations:
-        n.report(detail='long')
-
-    test3.report(detail='long')
-    for n in test3.locations:
-        n.report(detail='long')
+    print(test1.type)
+    print(test2.type)
+    print(test3.type)
+    # test1.report(detail='long')
+    # for n in test1.locations:
+    #     n.report(detail='long')
+    #
+    # test3.report(detail='long')
+    # for n in test3.locations:
+    #     n.report(detail='long')
 
 if __name__ == "__main__":
     main()
