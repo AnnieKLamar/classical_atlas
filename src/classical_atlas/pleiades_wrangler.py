@@ -5,7 +5,7 @@ module header
 
 """
 from collections import defaultdict
-
+import networkx as nx
 import downloaders
 from pleiad import Pleiad
 
@@ -72,19 +72,37 @@ def find_keyword(list_of_pleiads, keyword, print_results=False):
     return found_list
 
 
+def get_pleiades_as_nodes(list_of_pleiades):
+    G = nx.Graph()
+    for pl in list_of_pleiades:
+        G.add_node(pl)
+    return G
+
+
+def add_connections_as_edges(graph):
+    temp = []
+    for node in graph.nodes:
+        temp.append(node)
+    for pl in temp:
+        for connection in pl.connections.keys():
+            match = None
+            for node in temp:
+                if connection == node.id:
+                    match = node
+                    break
+            graph.add_edge(pl, match, connection_type=pl.connections[connection][0])
+    return graph
+
+
 def main():
     pleiades = make_pleiades_objects()
-    test1 = pleiades[21]
-    test2 = pleiades[5]
-    test3 = pleiades[31]
-    find_keyword(pleiades, 'town', print_results=True)
-    # test1.report(detail='long')
-    # for n in test1.locations:
-    #     n.report(detail='long')
-    #
-    # test3.report(detail='long')
-    # for n in test3.locations:
-    #     n.report(detail='long')
+    #test1 = pleiades[21]
+    #test2 = pleiades[5]
+    #test3 = pleiades[31]
+    gr = get_pleiades_as_nodes(pleiades)
+    gr = add_connections_as_edges(gr)
+    print(len(gr.nodes))
+    print(len(gr.edges))
 
 
 if __name__ == "__main__":
