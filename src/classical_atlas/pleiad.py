@@ -48,82 +48,6 @@ class Pleiad:
     """
     A class to represent a single place from Pleiades.
 
-    ---Attributes---
-    geographic_type : string
-    geographic_coordinates : list
-    features_type : string
-    features_id : string
-
-    snippet : string
-        short description of a place
-    link : string
-        stable link to Pleiades page
-    description : string
-        description of a place
-    location_precision : string
-        how precise of a geographic location.py this is
-    formal_title : string
-        formal title of location.py
-    association_certainty : string
-        certainty of the relationship between place name and coordinates
-    attestations : list
-        list of tuples containing temporal attestations and associated confidence metrics
-    locations_id : string
-    start_date : string
-        The minimum date (decimal CE year) of any attested time period.
-    end_date : string
-        The maximum date (decimal CE year) of any attested time period.
-    archaeological_remains : string
-        How many archaeological remains are present at the site
-    connections : dictionary
-        connections to other Pleiades
-    names : list
-        list of Name objects, contains info about attested names for this location.py
-
-    locations_details : string
-    locations_accuracy_value : string
-    locations_featureType : string
-    locations_description : string
-    locations_locationType : string
-    locations_uri : string
-    locations_type : string
-
-    type : string
-    provenance : string
-
-    id : string
-        Numeric id of the location.py
-    subjects : list
-        List of subjects relevant to the location.py
-    title : string
-        Standardized text title
-    details : string
-        Details about the location.py
-    uri: string
-        Stable Pleiades uri for the location.py
-    description : string
-        Long description of location.py
-    place_types : list
-        List of place types relevant to the location.py
-    min_longitude : string
-        Minimum longitude of a location.py
-    min_latitude : string
-        Minimum latitude of a location.py
-    max_longitude : string
-        Maximum longitude of a location.py
-    max_latitude : string
-        Maximum latitude of a location.py
-    representative_point : list
-        Representative long/lat point
-
-    association_certainty_types : dictionary
-        maps association certainty values to stable explanatory link
-    time_periods : dictionary
-        maps time periods to stable explanatory link
-    confidence_metrics : dictionary
-        maps confidence metrics to stable explanatory link
-    location_types : dictionary
-        maps location.py types to stable explanatory link
 
     Information about the other attributes in the object may be found in the Pleiades documentation:
     https://pleiades.stoa.org/downloads
@@ -239,14 +163,17 @@ class Pleiad:
 
     @property
     def locations(self):
+        """Maps associated locations to certainty of association (`dictionary`)"""
         return self._locations
 
     @property
     def title(self):
+        """Title included in a place's metadata in Pleiades (`string`)"""
         return self._title
 
     @property
     def names(self):
+        """Maps associated names to certainty of association ('names')"""
         return self._names
 
     @property
@@ -331,11 +258,15 @@ class Pleiad:
                 latest = location.end_date
         return latest
 
+    def get_list_of_locations(self):
+
     def get_location_ids(self):
         location_ids = []
         for location in self.locations.keys():
             location_ids.append(location.location_id)
         return location_ids
+
+    def get_list_of_names(self):
 
     def get_name_ids(self):
         name_ids = []

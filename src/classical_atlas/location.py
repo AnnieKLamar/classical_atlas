@@ -12,6 +12,46 @@ or area in question. (https://pleiades.stoa.org/help/conceptual-overview)
 
 
 class Location:
+    """Represents a Pleiades location.
+
+    Parameters
+    ----------
+    location_data : dictionary
+        Section of JSON file relevant to Location objects, parsed as dictionary
+
+
+    Attributes
+    ----------
+    geometric_type
+    coordinates
+    time_periods
+    confidence_metrics
+    attestations
+    location_id
+    location_feature_type_uri
+    start_date
+    end_date
+    title
+    archaeological_remains
+    location_details
+    location_accuracy_value
+    location_accuracy_info
+    location_feature_type
+    location_description
+    location_type
+    location_uri
+
+    Methods
+    -------
+    print_attestations()
+        Print formatted list of temporal attestations
+    print_time_periods_info()
+        Print information about time periods
+    print_confidence_metrics_info()
+        Print information about confidence metrics
+    report(detail='short')
+        Print a summary of information about this location
+    """
 
     def __init__(self, location_data):
         self._time_periods = {}
@@ -181,23 +221,33 @@ class Location:
         return self._location_uri
 
     def print_attestations(self):
+        """Print formatted list of temporal attestations."""
         print("Temporal attestations for " + self.title + ":")
         for attestation in self.attestations:
             print(attestation[0] + ", " + attestation[1])
 
     def print_time_periods_info(self):
+        """Print information about time periods."""
         print("Time periods relevant to " + self.title + ":")
         for time_period in self.time_periods.keys():
             print("--- " + str(time_period) + " ---")
             print(self.time_periods[time_period])
 
     def print_confidence_metrics_info(self):
+        """Print information about confidence metrics."""
         print("Confidence metrics relevant to " + self.title + ":")
         for metric in self.confidence_metrics.keys():
             print("--- " + str(metric) + " ---")
             print(self.confidence_metrics[metric])
 
     def report(self, detail='short'):
+        """Print a summary of information about this location.
+
+        Parameters
+        ----------
+        detail : {'short', 'long'}
+            about of detail to include in summary
+        """
         print("Title: " + str(self.title))
         print("ID: " + str(self.location_id))
         print("URI: " + str(self.location_uri))
