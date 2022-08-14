@@ -1,15 +1,19 @@
 import json
 import os
 from bs4 import BeautifulSoup
+import csv
+from collections import defaultdict
 from pathlib import Path
-
-topos_gaz = "data/topos_data/topos_text_gazeteer.jsonld"
 
 
 def load_json(file_name):
     file = open(file_name, "r+", encoding="utf8")
     df = json.load(file)
     return df
+
+
+def get_topos_data():
+    return load_json("data/ToposTextGazetteer.jsonld")
 
 
 def topos_pleiades_ids(df, key_selector='topos'):
@@ -34,7 +38,22 @@ def topos_pleiades_ids(df, key_selector='topos'):
         return pleiades_topos_ids
 
 
-def parse_topos_place_refs(data='topos_text_data/'):
+def parse_topos_place_refs():
+    #parses the topos places csv to a dictionary
+    topos_places = defaultdict(list)
+    with open('data/topos_data.csv', 'r', encoding="utf8") as topos_csv:
+        csv_reader = csv.reader(topos_csv, delimiter=',')
+        for row in csv_reader:
+            if len(row) > 0:
+                for i in range(len(row)):
+                    if i == 0:
+                        key = row[i]
+                        topos_places[key] = []
+                    else:
+                        topos_places[key].append(row[i])
+    return topos_places
+
+def _parse_topos_place_refs_from_all_files(data='data/topos_data/'):
     directory = os.fsencode(data)
     topos_places = {}
     print("Parsing data...please be patient.")
@@ -43,7 +62,7 @@ def parse_topos_place_refs(data='topos_text_data/'):
         # print(filename)
         if filename.endswith(".htm") or filename.endswith(".html"):
             # print("here!")
-            name = "topos_text_data/" + filename
+            name = "data/topos_data/" + filename
             text = open(name, "r", encoding="utf8").read()
             soup = BeautifulSoup(text, 'html.parser')
             title = soup.find('meta', property='dc:title', itemprop='name', lang='en').get_text("|")
@@ -64,9 +83,20 @@ def parse_topos_place_refs(data='topos_text_data/'):
     return topos_places
 
 
-def merge_pleiades_topos_ids(topos_places):
-    df = load_json(topos_gaz)
-    ids = topos_pleiades_ids(df)
+def _write_topos_place_refs_to_csv(topos_place_refs):
+    with open('data/topos_data.csv', 'w+', encoding="utf8") as topos_csv:
+        # create the csv writer
+        writer = csv.writer(topos_csv)
+        for item in topos_place_refs.keys():
+            row = [item]
+            for ref in topos_place_refs[item]:
+                row.append(ref)
+            writer.writerow(row)
+
+
+def switch_to_pleiades_ids(topos_df, topos_places):
+    #takes in a df and a dictionary, swaps ids in dictionary and returns it
+    ids = topos_pleiades_ids(topos_df)
     switch_counter = 0
     did_not_switch = 0
     for place in topos_places.keys():
@@ -80,3 +110,12 @@ def merge_pleiades_topos_ids(topos_places):
     print("Made " + str(switch_counter) + " switches.")
     print("No Pleiades ID available for " + str(did_not_switch) + " topos places.")
     return topos_places
+
+
+def main():
+    df = get_topos_data()
+    switch_to_pleiades_ids(df, parse_topos_place_refs())
+
+
+if __name__ == "__main__":
+    main()

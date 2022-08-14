@@ -8,6 +8,7 @@ from collections import defaultdict
 import networkx as nx
 import downloaders
 from pleiad import Pleiad
+import topos_wrangler
 
 
 def make_pleiades_objects(download_latest_data=False):
@@ -93,6 +94,9 @@ def add_connections_as_edges(graph):
             graph.add_edge(pl, match, connection_type=pl.connections[connection][0])
     return graph
 
+#add method: add texts with references to place as node attribute
+
+#add method: replace PLeiades IDs with titles in topos places dictionary
 
 def main():
     pleiades = make_pleiades_objects()
