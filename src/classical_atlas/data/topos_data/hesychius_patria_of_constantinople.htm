@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Hesychius, Patria of Constantinople' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Patria Constantinopoleos, derived from Hesychios of Miletos (?), English translation by Brady Kiesling (2019) from the Greek edition of Th. Preger (1901, 1-18). This unedited translation makes no claim to accuracy or elegance. Freely usable for any reasonable purpose, with appropriate attribution. For a serious translation with commentary, see Albrecht Berger, Accounts of Medieval Constantinople (Dumbarton Oaks 2013).' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='550' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 550' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='freely available for any non-commercial purpose with acknowledgement' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/801' content='urn:cts:greekLit:tlg2274.tlg005' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n87899441' content='Hesychius of Miletus?'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2005086093' content='John Brady Kiesling (1957- )' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='' /><h2>Hesychius, Patria of Constantinople</h2>Patria Constantinopoleos, derived from Hesychios of Miletos (?), English translation by Brady Kiesling (2019) from the Greek edition of Th. Preger (1901, 1-18). This unedited translation makes no claim to accuracy or elegance. Freely usable for any reasonable purpose, with appropriate attribution. For a serious translation with commentary, see Albrecht Berger, Accounts of Medieval Constantinople (Dumbarton Oaks 2013). This text has 70 tagged references to 34 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg2274.tlg005'>urn:cts:greekLit:tlg2274.tlg005</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87771457'>Q87771457</a>;     <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:1'><b>&sect; 1</b>&nbsp;&nbsp;Patria Constantinopoleos according to Hesychios the Illustrious <br />Three hundred and sixty two years having passed from the monarchy of <a href=/people/8 target=_blank>Augustus Caesar</a> at the elder <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, with its affairs already having reached their limit, <a href=/people/136 target=_blank>Constantine</a> the child of <a href=/people/136 target=_blank>Constantius</a> taking up the scepters decreed the creation of a <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>New Rome</a> equal to the first. For now already, after experiencing tyrants and kings and being governed in aristocratic and democratic ways, the former city had come to reach its appointed size. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:2'><b>&sect; 2</b>&nbsp;&nbsp;We should say how it began and by whom it was colonized making use of the ancient poets and writers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:3'><b>&sect; 3</b>&nbsp;&nbsp;Some say it was first the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, after the <a href=/people/10998 target=_blank>Pythia</a> prophesied to them as follows, Prosperous they who settle the sacred city on the Thracian shore by the narrow-watered mouth of <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontos</a>, where two bitches take hold of the watery sea, where fish and deer pasture, who fixed dwellings in that place, in which the <a about=https://topostext.org/place/411289WKyd class=place long=28.94556 lat=41.07033>Kydaros</a> and <a about=https://topostext.org/place/411290WBar class=place long=28.95514 lat=41.06585>Barbyses</a> rivers make their outlet, the latter from the northern parts, the former from the western, and flowing by the altar of the <a about=https://topostext.org/place/411290USem class=place long=28.953 lat=41.073>nymph called Semestre</a> they join with the sea. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:4'><b>&sect; 4</b>&nbsp;&nbsp;When they came into the appointed country and appeased the native daimones with sacrifices, a <a href=/people/10957 target=_blank>crow</a> stealthily snatched a small part of the sacrifice and carried it to another place, which has the appellation <a about=https://topostext.org/place/411291WBos class=place long=29.0753 lat=41.1194>Bosporos</a> when a cowherd (boukolos) pointed out the flight of the bird, from which thing that place was also called Boukolia. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:5'><b>&sect; 5</b>&nbsp;&nbsp;Others say it was <a about=https://topostext.org/place/380233PMeg class=ethnic long=23.34285 lat=37.997>Megarians</a> descended from the race of <a href=/people/563 target=_blank>Nisos</a> who made the voyage to this place, under their leader <a href=/people/5523 target=_blank>Byzas</a>, from which story they say the name was given to the city. Others make <a href=/people/5523 target=_blank>Byzas</a> to be a child born of the local nymph Semestre. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:6'><b>&sect; 6</b>&nbsp;&nbsp;While some used other accounts, we will make the plausible account of the origin from <a href=/people/389 target=_blank>Io</a> the daughter of <a href=/people/684 target=_blank>Inachos</a>. A daughter <a href=/people/389 target=_blank>Io</a> was born to <a href=/people/684 target=_blank>Inachos</a> king of the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>. <a href=/people/2816 target=_blank>Argos</a>, whom they called-many-eyed, guarded her virginity. When <a href=/people/1 target=_blank>Zeus</a> fell in love with the girl he persuaded <a href=/people/33 target=_blank>Hermes</a> to murder <a href=/people/2816 target=_blank>Argos</a>, and when her virginity was ended she was changed by <a href=/people/1 target=_blank>Zeus</a> into a <a href=/people/10978 target=_blank>cow</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:7'><b>&sect; 7</b>&nbsp;&nbsp;<a href=/people/19 target=_blank>Hera</a> was angry and what happened and send a gadfly to the heifer to drive her over land and water. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:8'><b>&sect; 8</b>&nbsp;&nbsp;When she came to the land of the <a about=https://topostext.org/place/410265RThr class=ethnic long=26.5 lat=41>Thracians</a>, she left the name <a about=https://topostext.org/place/411291WBos class=place long=29.0753 lat=41.1194>Bosporos</a> (cow-crossing) to the place, while she went up toward the so-called <a about=https://topostext.org/place/410290WKer class=place long=28.9674 lat=41.022>Horn</a> (<a href=/people/9618 target=_blank>Keras</a>) where the <a about=https://topostext.org/place/411289WKyd class=place long=28.94556 lat=41.07033>Kydaros</a> and <a about=https://topostext.org/place/411290WBar class=place long=28.95514 lat=41.06585>Barbyses</a> mix, foretelling the future to the residents, and by the <a about=https://topostext.org/place/411290USem class=place long=28.953 lat=41.073>altar of Semestre</a> she gave birth to a daughter Keroessa (horny), from whom the <a about=https://topostext.org/place/410290WKer class=place long=28.9674 lat=41.022>Keras</a> is named. But others say the name was added from the position of the place, and others that it was called after the horn of the <a href=/people/10956 target=_blank>goat</a> <a href=/people/1323 target=_blank>Amaltheia</a> (cornucopia) for its richness in bearing fruit. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:9'><b>&sect; 9</b>&nbsp;&nbsp;So Keroessa was raised by the nymph Semestre and distinguished by her odd form she greatly exceeded the Thracian virgins, and having sex with maritime <a href=/people/25 target=_blank>Poseidon</a> she gave birth to <a href=/people/5523 target=_blank>Byzas</a>, who took this name from the Thracian nymph Bizye who raised him, and from whom even now the citizens draw water. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:10'><b>&sect; 10</b>&nbsp;&nbsp;So then when he reached the flower of age the young man went up and spent time in the Thracian mountains being fearsome to the beasts and barbarians, and he received embassies from the local rulers urging him to be their ally and friend. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:11'><b>&sect; 11</b>&nbsp;&nbsp;So Melias the king of the <a about=https://topostext.org/place/410265RThr class=ethnic long=26.5 lat=41>Thracians</a> invited him to a hunting contest and <a href=/people/5523 target=_blank>Byzas</a> carried off the glory, offering the <a href=/people/10955 target=_blank>bull</a> he subdued for sacrifice and appeasing the ancestral daimones at the junction of the above-mentioned rivers, when an <a href=/people/10980 target=_blank>eagle</a> suddenly appeared and snatched the heart of the victim and stood at the extreme point of the Bosporian headland opposite the so-called <a about=https://topostext.org/place/410290UChr class=place long=29.0129 lat=41.0206>Chrysopolis</a>, which name was left by <a href=/people/1324 target=_blank>Chryses</a>, the child born to <a href=/people/12237 target=_blank>Chryseis</a> and <a href=/people/47 target=_blank>Agamemnon</a>, when he was fleeing the malice of <a href=/people/595 target=_blank>Klytaimnestra</a> after the murder of his father and was hastening in search of <a href=/people/708 target=_blank>Iphigeneia</a>. When destruction reached him there, the locals made a tomb monument. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:12'><b>&sect; 12</b>&nbsp;&nbsp;So <a href=/people/5523 target=_blank>Byzas</a> laid out a <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>city</a> at the promontory of the <a about=https://topostext.org/place/411291WBos class=place long=29.0753 lat=41.1194>Bosporian brine</a>. He built the walls with the assistance, they say, of <a href=/people/25 target=_blank>Poseidon</a> and <a href=/people/2 target=_blank>Apollo</a>, contriving to make them better in every way. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:13'><b>&sect; 13</b>&nbsp;&nbsp;He articulated the seven towers in it so that sounds would pass between them and echo. For if ever a trumpet or voice reached any of the towers, each would pass the echo to the next, and send it to the one at the end. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:14'><b>&sect; 14</b>&nbsp;&nbsp;But let us not omit something else remarked on by those who wrote these things: They say that the tower called that of <a href=/people/4 target=_blank>Herakles</a> transmits to those inside the walls the enemy's secrets. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:15'><b>&sect; 15</b>&nbsp;&nbsp;Afterwards he completed the circlet of the walls and the precincts of the gods. For <a href=/people/243 target=_blank>Rhea</a> he founded a temple and statue at the Place of the Basilica, where the Tychaion (the shrine of <a href=/people/2811 target=_blank>Tyche</a>) is also honored by the citizens. He erected a temenos of <a href=/people/25 target=_blank>Poseidon</a> toward the sea, where now the house of the martyr <a href=/people/1593 target=_blank>Menas</a> has been fitted out with adornments, and of <a href=/people/409 target=_blank>Hekate</a> where the <a about=https://topostext.org/place/362362BHiA class=place long=36.1717 lat=36.2269>Hippodrome</a> is now, and of the <a href=/people/526 target=_blank>Dioskouroi</a>, <a href=/people/230 target=_blank>Kastor</a> and <a href=/people/327 target=_blank>Polydeukes</a>, I mean, in the <a about=https://topostext.org/place/411290USem class=place long=28.953 lat=41.073>altar of Semestre</a> and the junction of the rivers, where human passions used to be resolved. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:16'><b>&sect; 16</b>&nbsp;&nbsp;Near the so-called Strategion of <a href=/people/63 target=_blank>Ajax</a> and <a href=/people/17 target=_blank>Achilles</a> he set up altars. There he created the bath of <a href=/people/17 target=_blank>Achilles</a>. In the so-called <a about=https://topostext.org/place/410290USyk class=place long=28.9746 lat=41.0257>Sykai</a>, which got its name from the fig-bearing trees, he built the [shrine/bath] of the hero Amphiareos. A little above the temple of <a href=/people/25 target=_blank>Poseidon</a> and that of <a href=/people/15 target=_blank>Aphrodite</a> a precinct of <a href=/people/28 target=_blank>Artemis</a> was proclaimed toward the mountain of Thrace. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:17'><b>&sect; 17</b>&nbsp;&nbsp;When he was managing these things in his city, he needed to repel the oncoming barbarians, especially Haimos, who was tyrant of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> and came to the city of <a href=/people/5523 target=_blank>Byzas</a> and challenged the hero to battle, being eager to lay waste to everything. But the hero, not waiting for the onslaught of the barbarian, fought him one on one and overthrew Haimos on the hill of that name. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:18'><b>&sect; 18</b>&nbsp;&nbsp;While <a href=/people/5523 target=_blank>Byzas</a>, after his victory, was driving the enemy back toward <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, Odryses the king of the <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a> crossed the <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Ister</a> and passing through reached the city walls and besieged those inside. In response, the wife of <a href=/people/5523 target=_blank>Byzas</a>, the marvelous <a href=/people/12239 target=_blank>Phidaleia</a>, undaunted by the numbers of the enemy, using her feminine hand she intelligently combated the barbarian with <a href=/people/55 target=_blank>serpents</a> as allies. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:19'><b>&sect; 19</b>&nbsp;&nbsp;For gathering up all the <a href=/people/55 target=_blank>snakes</a> near the city in one place, she guarded them, and appearing suddenly to the enemy she launched the beasts in the role of arrows or javelins, and infecting most of them in this way she saved the city. From then on, therefore, an old legend had it that one must not destroy <a href=/people/55 target=_blank>snakes</a> caught near the city, in as much as they were its benefactors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:20'><b>&sect; 20</b>&nbsp;&nbsp;Not much time later a man named Strombos, born to Keroessa, waged war on <a href=/people/5523 target=_blank>Byzas</a> with a great force. For he stirred up all the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> tribes, and there came together the strong men of Greece and a not to be despised force of <a about=https://topostext.org/place/364282IRho class=ethnic long=28.2244 lat=36.4408>Rhodians</a>, and Dineos, the toparch of neighboring <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, a colonist from <a about=https://topostext.org/place/380233PMeg class=place long=23.34285 lat=37.997>Megara</a> who arrived there 19 years before the monarchy of <a href=/people/5523 target=_blank>Byzas</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:21'><b>&sect; 21</b>&nbsp;&nbsp;(The place <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a> got its name, as some say, from the river <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, but as others say from the child of <a href=/people/662 target=_blank>Kalchas</a> the seer after the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war, and still others from the city <a about=https://topostext.org/place/385236PCha class=place long=23.6153 lat=38.4597>Chalkis</a> of <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboia</a>, which sent colonists there, the ones who were called blind for having overlooked <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantion</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:22'><b>&sect; 22</b>&nbsp;&nbsp;So Dineos came into the alliance with <a href=/people/5523 target=_blank>Byzas</a> with many ships, but not being able to dock his ships, with their king <a href=/people/5523 target=_blank>Byzas</a> having just died and the whole people being in agony, he came to the so-called Anaplous, and having passed some time there he called the place Hestiai (hearths). </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:23'><b>&sect; 23</b>&nbsp;&nbsp;A little later he crossed into the city and, having repelled the barbarians, because the second general of the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a>. During these times many kinds of <a href=/people/55 target=_blank>serpents</a> frequented the city and killed the inhabitants, but they were killed through the sudden arrival of the birds called storks, with <a href=/people/25 target=_blank>Poseidon</a> assisting them, as they say. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:24'><b>&sect; 24</b>&nbsp;&nbsp;Not long afterwards, the birds turned against them and became the cause of death, catching <a href=/people/55 target=_blank>snakes</a> by the water reservoirs and launching them against the citizens walking in the avenues, attacking them invisibly, and they were at a loss. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:25'><b>&sect; 25</b>&nbsp;&nbsp;A certain man from <a about=https://topostext.org/place/378346PTya class=place long=34.57 lat=37.82>Tyana</a> named <a href=/people/59 target=_blank>Apollonios</a> set up three storks of worked stone facing one another, which remain until these times, which do not permit the race of storks to frequent the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:26'><b>&sect; 26</b>&nbsp;&nbsp;Following the above, when Dineos the general died, <a href=/people/627 target=_blank>Leon</a> received the aristocracy of the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a>. Against whom <a href=/people/30 target=_blank>Philip</a> the king of the <a about=https://topostext.org/place/408225RMak class=ethnic long=22.5 lat=40.81>Macedonians</a>, the son of <a href=/people/1308 target=_blank>Amyntas</a>, brought a great force and besieged the city with a trench and was approaching the walls with all kinds of siege machinery. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:27'><b>&sect; 27</b>&nbsp;&nbsp;And he would easily have taken it, attacking on a moonless night when an extraordinary rainstorm burst, if there had not been some sacred alliance that set the <a href=/people/10953 target=_blank>dogs</a> in the city howling, while clouds of fire rose in the northern parts. This roused the population and they hotly came to grips with the enemy and rescued the city, which was already in <a href=/people/30 target=_blank>Philip</a>'s power, and they took up the destroyed towers using the nearby stones from tombs and raised up the bastions of the wall. For this reason they called the wall Tymbosyne (tombyness) and set up a statue of torch-bearing <a href=/people/409 target=_blank>Hekate</a>. Immediately they turned toward naval combat and were proudly victorious over the <a about=https://topostext.org/place/408225RMak class=ethnic long=22.5 lat=40.81>Macedonians</a>. And thus the war ended and <a href=/people/30 target=_blank>Philip</a> granted [ ] to the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:28'><b>&sect; 28</b>&nbsp;&nbsp;When <a href=/people/627 target=_blank>Leon</a> departed this life, <a href=/people/462 target=_blank>Chares</a> the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> general came with forty ships to aid the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a> in the war against <a href=/people/30 target=_blank>Philip</a>, and occupied the <a about=https://topostext.org/place/410290LBou class=place long=29.0098 lat=41.0252>headland</a> of the <a about=https://topostext.org/place/408280WPro class=place long=28 lat=40.75>Propontis</a> between <a about=https://topostext.org/place/410290UChr class=place long=29.0129 lat=41.0206>Chrysopolis</a> and <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, and anchoring in that place he attempted battle. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:29'><b>&sect; 29</b>&nbsp;&nbsp;There his wife, who was following him, was struck down by disease. He placed her in a tomb and stood up an altar and column, on which a heifer is shown carved in stone. So rather it was she who gave the name, which is preserved until our times through written verses. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:30'><b>&sect; 30</b>&nbsp;&nbsp;The verses are as follows: I am not the <a href=/people/10978 target=_blank>cow</a> of the <a about=https://topostext.org/place/378228WIna class=demonym long=22.744 lat=37.625>Inachian</a> nor from me is called the facing Bosporion sea. For her the prior heavy anger of <a href=/people/19 target=_blank>Hera</a> drove to <a about=https://topostext.org/place/312299IPha class=place long=29.8856 lat=31.213>Pharos</a>. I here am a Kekropian shade, who was the bed-fellow (Eunetis) of <a href=/people/462 target=_blank>Chares</a>, when he sailed here as rival of the Philippian vessels. Boidion was my name then, but now as bed-fellow of <a href=/people/462 target=_blank>Chares</a> I delight in both continents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:31'><b>&sect; 31</b>&nbsp;&nbsp;When <a href=/people/462 target=_blank>Chares</a> sailed back to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, Protomachos assumed the military command. He enslaved the insurgent <a about=https://topostext.org/place/410265RThr class=ethnic long=26.5 lat=41>Thracians</a> in battle and set up a bronze trophy at the so-called <a about=https://topostext.org/place/410290BMil class=place long=28.97807 lat=41.00804>Milion</a> (milestone) of the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:32'><b>&sect; 32</b>&nbsp;&nbsp;When this one too had shuffled off, the man Timesios, one of those reared among the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, first attempted to reestablish a city at the so-called <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Euxine</a> <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontos</a> toward Ephesiates (where the <a about=https://topostext.org/place/379273PEph class=ethnic long=27.3397 lat=37.9419>Ephesians</a>, having once sent colonies and tried to build a city, soon listened to the <a about=https://topostext.org/place/410290UByz class=demonym long=28.9836 lat=41.0119>Byzantine</a> οracle...where two bitches take hold of the watery sea, where fish and deer pasture in it,). Disappointed in his hope, he settled down with the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a>. And having been appointed strategos of the whole people, he reformed the city, making it bigger and more beneficial, and created laws about everyday matters and set up covenants and established politic and cultivated habits through which the citizens became urbane and philanthropic. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:33'><b>&sect; 33</b>&nbsp;&nbsp;He set up most of the sanctuaries of the gods, but those that existed before he redecorated. For he rebuilt the <a about=https://topostext.org/place/412291SHie class=place long=29.094 lat=41.179>temple toward the headland</a> of the <a about=https://topostext.org/place/435335WPon class=demonym long=33.5 lat=43.5>Pontic</a> sea, which <a href=/people/2578 target=_blank>Iason</a> once had dedicated to the twelve gods but was now in ruins, and renewed the house of <a href=/people/28 target=_blank>Artemis</a> at the harbor of <a href=/people/548 target=_blank>Phrixos</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:34'><b>&sect; 34</b>&nbsp;&nbsp;In addition to this, Kalliades as general of <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a> combatted both foreign and domestic enemies excellently, and set up the famous statue of <a href=/people/5523 target=_blank>Byzas</a> at the so-called Basilica, and inscribed it as follows: Kalliades dedicated the valiant <a href=/people/5523 target=_blank>Byzas</a> and the delectable <a href=/people/12239 target=_blank>Phidaleia</a> as an ornament together. (?) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:35'><b>&sect; 35</b>&nbsp;&nbsp;While these things happened when the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a> were ruled by aristocracies or democracies, but also they were ruled by tyrants at various times. When through the power of the consuls Roman rule prevailed over the dynasties, and enslaved the nations of the Greeks, it was natural that the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a> would end up obeying it as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:36'><b>&sect; 36</b>&nbsp;&nbsp;After some years, when <a href=/people/11085 target=_blank>Severus</a> was reigning in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, they preferred the hope of <a href=/people/12194 target=_blank>Niger</a>, the usurper in the East, and dared to come to blows with the emperor, so they were stripped by him of their polis rights and the circuit of their walls was destroyed, they were ordered to be subject to the <a about=https://topostext.org/place/410280UPer class=ethnic long=27.953 lat=40.971>Perinthians</a> also called Herakleotes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:37'><b>&sect; 37</b>&nbsp;&nbsp;Once <a href=/people/11085 target=_blank>Severus</a>' anger ceased, he soon brought it into greater honor, erecting with great luxury a very large bath by the altar of <a href=/people/1 target=_blank>Zeus</a> Hippios, namely what is called the grove of <a href=/people/4 target=_blank>Herakles</a> (where they say that having tamed the <a href=/people/10959 target=_blank>horses</a> of <a href=/people/1525 target=_blank>Diomedes</a> he called the place <a href=/people/1121 target=_blank>Zeuxippos</a> (horse-yoker). The area near this for horse-racing, lying by the Dioskouroi, he ornamented with grandstands and stoas (there even now the turning posts show the emblems of the ephors through the eggs (cartouches?) on the bronze obelisks. But in addition, he allocated military funds. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:38'><b>&sect; 38</b>&nbsp;&nbsp;So while <a href=/people/11085 target=_blank>Severus</a> and his child <a href=/people/4913 target=_blank>Antoninus</a> were still alive, the city was called Antonina. But when these emperors joined their divine predecessors, it was immediately renamed <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantion</a> again. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:39'><b>&sect; 39</b>&nbsp;&nbsp;After <a href=/people/136 target=_blank>Constantine</a> had acquired the Roman rule the city was called <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Konstantinoupolis</a>, willingly accepting the name to repay the excessive generosity of the emperor, who had marvelously completed it in terms of beauty, and had extended the walls far beyond, to the so-called Troadesian bastions, whereas before they had not extended beyond the Agora of the King; and causing the city to shine with baths and sacred houses, endowing it with every privilege to rival those of the elder <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and he inscribed them on a stone stele in the Strategion Forum, where once the men who served as generals of the city used to receive their honors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:40'><b>&sect; 40</b>&nbsp;&nbsp;And he erected a statue of his mother <a href=/people/1158 target=_blank>Helene</a> on a column, and called the place Augustaion. And to the senators who followed him from great <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he generously gave the houses he built with his own money. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:41'><b>&sect; 41</b>&nbsp;&nbsp;When <a href=/people/136 target=_blank>Constantius</a> became ruler after this, the aqueduct was added to the city. He also erected the two apses by the Forum, and the Porphyry and Peribleptos column, on which we see <a href=/people/136 target=_blank>Constantine</a> shining forth like the sun for the citizens. In addition he built the Senate houses, naming them Senata, in which he erected the statue of <a about=https://topostext.org/place/395208SDod class=demonym long=20.7878 lat=39.5464>Dodonaian</a> <a href=/people/1 target=_blank>Zeus</a> and two foundations (?) of <a href=/people/11 target=_blank>Pallas</a> and the courtyard of the palaces. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg2274.tlg005:42'><b>&sect; 42</b>&nbsp;&nbsp;Having completed everything in this way, <a href=/people/136 target=_blank>Constantine</a> carried out the inauguration on the 11th of May in the 25th year of his reign. Watching the horse-racing, he ordered that there be a viewing of his statue in future years on the day of the anniversary with the customary honor by the reigning king and by the Demos. So in this way <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinople</a> was brought to this greatness, being the royal capital by succession until our times. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 330 <a href='https://archive.org/details/scriptoresorigin12preg/page/n21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2019                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=801', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas801";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=801';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

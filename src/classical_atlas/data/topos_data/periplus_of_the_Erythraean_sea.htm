@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Periplus of the Erythraean Sea' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Periplus of the Erythraean Sea, translated by Wilfred Harvey Schoff (1874-1932) (New York: Longmans, Green, and Co., 1912), a work in the public domain placed online by Silkroad (University of Washington) with minor emendations from Lionel Casson’s The Periplus Maris Erythraei: Text with Introduction, Translation and Commentary (Princeton, NJ: Princeton University Press, 1989).' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='50' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 50' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/491' content='urn:cts:greekLit:tlg0071.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n80135264' content='Anonymous'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88610860' content='Wilfred H. Schoff (1874-1932)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://depts.washington.edu/silkroad/texts/periplus/periplus.html' /><h2>Periplus of the Erythraean Sea</h2>Periplus of the Erythraean Sea, translated by Wilfred Harvey Schoff (1874-1932) (New York: Longmans, Green, and Co., 1912), a work in the public domain placed online by Silkroad (University of Washington) with minor emendations from Lionel Casson’s The Periplus Maris Erythraei: Text with Introduction, Translation and Commentary (Princeton, NJ: Princeton University Press, 1989). This text has 153 tagged references to 39 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0071.tlg001'>urn:cts:greekLit:tlg0071.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q664162'>Q664162</a>;     <a href='https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:1'><b>&sect; 1</b>&nbsp;&nbsp;Of the designated ports on the <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Erythraean Sea</a>, and the market-towns around it, the first is the <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> port of Mussel Harbor [<a about=https://topostext.org/place/262342UMyo class=place long=34.2421 lat=26.1567>Myos Hormos</a>]. To those sailing down from that place, on the right hand, after eighteen hundred stadia, there is <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a>. The harbors of both are at the boundary of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, and are bays opening from the <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Erythraean Sea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#1 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:2'><b>&sect; 2</b>&nbsp;&nbsp;On the right-hand coast next below <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a> is the country of the Berbers [Barbaroi]. Along the shore are the Fish-Eaters [Ichthyophagoi], living in scattered caves in the narrow valleys. Further inland are the Berbers, and beyond them the Wild-flesh-Eaters and Calf-Eaters, each tribe governed by its chief; and behind them, further inland, in the country toward the west, there lies a city called <a about=https://topostext.org/place/169337UMer class=place long=33.7104 lat=16.938>Meroe</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#2 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:3'><b>&sect; 3</b>&nbsp;&nbsp;Below the Calf-Eaters there is a little market-town on the shore after sailing about four thousand stadia from <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a>, called <a about=https://topostext.org/place/191373UPto class=place long=37.334 lat=19.105>Ptolemais</a> of the Hunts, from which the hunters started for the interior under the dynasty of the <a href=/people/1790 target=_blank>Ptolemies</a>. This market-town has the true land-tortoise in small quantity; it is white and smaller in the shells. And here also is found a little ivory, like that of <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>. But the place has no harbor and is reached only by small boats. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#3 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:4'><b>&sect; 4</b>&nbsp;&nbsp;Below <a about=https://topostext.org/place/191373UPto class=place long=37.334 lat=19.105>Ptolemais</a> of the Hunts, at a distance of about three thousand stadia, there is <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>, a port established by law, lying at the inner end of a bay that runs in toward the south. Before the harbor lies the so-called Mountain Island, about two hundred stadia sea-ward from the very head of the bay, with the shores of the mainland close to it on both sides. Ships bound for this port now anchor here because of attacks from the land. They used formerly to anchor at the very head of the bay, by an island called <a href=/people/199 target=_blank>Diodorus</a>, close to the shore, which could be reached on foot from the land; by which means the barbarous natives attacked the island. Opposite Mountain Island, on the mainland twenty stadia from shore, lies <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>, a fair-sized village, from which there is a three-days' journey to Coloe, an inland town and the first market for ivory. From that place to the city of the people called <a about=https://topostext.org/place/141387UAxu class=ethnic long=38.719 lat=14.1315>Auxumites</a> there is a five days' journey more; to that place all the ivory is brought from the country beyond the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> through the district called Cyeneum, and thence to <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>. Practically the whole number of elephants and rhinoceros that are killed live in the places inland, although at rare intervals they are hunted on the seacoast even near <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>. Before the harbor of that market-town, out at sea on the right hand, there lie a great many little sandy islands called Alalaei, yielding tortoise-shell, which is brought to market there by the Fish-Eaters. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#4 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:5'><b>&sect; 5</b>&nbsp;&nbsp;And about eight hundred stadia beyond there is another very deep bay, with a great mound of sand piled up at the right of the entrance; at the bottom of which the opsidian stone is found, and this is the only place where it is produced. These places, from the Calf-Eaters to the other <a href=/people/6292 target=_blank>Berber</a> country, are governed by Zoskales, who is miserly in his ways and always striving for more, but otherwise upright, and acquainted with Greek literature. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#5 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:6'><b>&sect; 6</b>&nbsp;&nbsp;There are imported into these places, undressed cloth made in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> for the Berbers; robes from <a about=https://topostext.org/place/300326UArs class=place long=32.555 lat=29.98>Arsinoe</a>; cloaks of poor quality dyed in colors; double-fringed linen mantles; many articles of flint glass, and others of murrhine, made in <a about=https://topostext.org/place/257326PThe class=place long=32.641 lat=25.684>Diospolis</a>; and brass, which is used for ornament and in cut pieces instead of coin; sheets of soft copper, used for cooking-utensils and cut up for bracelets and anklets for the women; iron, which is made into spears used against the elephants and other wild beasts, and in their wars. Besides these, small axes are imported, and adzes and swords; copper drinking-cups, round and large; a little coin for those coming to the market; wine of <a about=https://topostext.org/place/378291PLao class=place long=29.109 lat=37.836>Laodicea</a> and <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, not much; olive oil, not much; for the king, gold and silver plate made after the fashion of the country, and for clothing, military cloaks, and thin coats of skin, of no great value. Likewise from the district of <a href=/people/6238 target=_blank>Ariaca</a> across this sea, there are imported <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> iron, and steel, and <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> cotton cloth; the broad cloth called monache and that called sagmatogene, and girdles, and coats of skin and mallow-colored cloth, and a few muslins, and colored lac. There are exported from these places ivory, and tortoise-shell and rhinoceros-horn. The most from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> is brought to this market from the month of January, to September, that is, from <a href=/people/8463 target=_blank>Tybi</a> to <a href=/people/4321 target=_blank>Thoth</a>; but seasonably they put to sea about the month of September. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#6 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:7'><b>&sect; 7</b>&nbsp;&nbsp;From this place the <a href=/people/275 target=_blank>Arabian</a> Gulf trends toward the east and becomes narrowest just before the Gulf of Avalites. After about four thousand stadia, for those sailing eastward along the same coast, there are other <a href=/people/6292 target=_blank>Berber</a> market-towns, known as the far-side ports; lying at intervals one after the other, without harbors but having roadsteads where ships can anchor and lie in good weather. The first is called Avalites; to this place the voyage from <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> to the far-side coast is the shortest. Here there is a small market-town called Avalites, which must be reached by boats and rafts. There are imported into this place, flint glass, assorted; juice of sour grapes from <a about=https://topostext.org/place/257326PThe class=place long=32.641 lat=25.684>Diospolis</a>; dressed cloth, assorted, made for the Berbers; wheat, wine, and a little tin. There are exported from the same place, and sometimes by the Berbers themselves crossing on rafts to <a href=/people/5137 target=_blank>Ocelis</a> and <a href=/people/3640 target=_blank>Muza</a> on the opposite shore, spices, a little ivory, tortoise-shell, and a very little myrrh, but better than the rest. And the Berbers who live in the place are very unruly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#7 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:7'><b>&sect; 7</b>&nbsp;&nbsp;After Avalites there is another market-town, better than this, called <a href=/people/7917 target=_blank>Malao</a>, distant a sail of about eight hundred stadia. The anchorage is an open road-stead, sheltered by a spit running out from the east. Here the natives are more peaceable. There are imported into this place the things already mentioned, and many tunics, cloaks from <a about=https://topostext.org/place/300326UArs class=place long=32.555 lat=29.98>Arsinoe</a>, dressed and dyed; drinking-cups, sheets of soft copper in small quantity, iron, and gold and silver coin, not much. There are exported from these places myrrh, a little frankincense (that known as “far-side”), the harder cinnamon, duaca, <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> copal and macir, which are imported into <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>; and slaves, but rarely. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#7 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:9'><b>&sect; 9</b>&nbsp;&nbsp;Two days' sail, or three, beyond <a href=/people/7917 target=_blank>Malao</a> is the market-town of <a href=/people/12180 target=_blank>Mundus</a>, where the ships lie at anchor more safely behind a projecting island close to the shore. There are imported into this place the things previously set forth, and from it likewise are exported the merchandise already stated, and the incense called mocrotu. And the traders living here are harder. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#9 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:10'><b>&sect; 10</b>&nbsp;&nbsp;Beyond <a href=/people/12180 target=_blank>Mundus</a>, sailing toward the east, after another two days' sail, or three, you reach <a href=/people/9835 target=_blank>Mosyllum</a>, on a beach, with a bad anchorage. There are imported here the same things already mentioned, also silver plate, a very little iron, and glass. There are shipped from the place a great quantity of cinnamon, (so that this market-town requires ships of larger size), and fragrant gums, spices, a little tortoise shell, and mocrotu, (poorer than that of <a href=/people/12180 target=_blank>Mundus</a>), frankincense [from] the “far-side”, ivory and myrrh in small quantities. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#10 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:11'><b>&sect; 11</b>&nbsp;&nbsp;Sailing along the coast beyond <a href=/people/9835 target=_blank>Mosyllum</a>, after a two days' course you come to the so-called Little <a href=/people/4627 target=_blank>Nile</a> River, and a fine spring, and a small laurel-grove, and Cape Elephant. Then the shore recedes into a bay, and has a river, called Elephant, and a large laurel-grove called Acanna; where alone is produced the far-side frankincense, in great quantity and of the best grade. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#11 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:12'><b>&sect; 12</b>&nbsp;&nbsp;Beyond this place, the coast trending toward the south, there is the Market and Cape of Spices, an abrupt promontory, at the very end of the <a href=/people/6292 target=_blank>Berber</a> coast toward the east. The anchorage is dangerous at times from the ground-swell, because the place is exposed to the north. A sign of an approaching storm which is peculiar to the place, is that the deep water becomes more turbid and changes its color. When this happens they all run to a large promontory called <a href=/people/10338 target=_blank>Taba</a>, which offers safe shelter. There are imported into this market-town the things already mentioned; and there are produced in it cinnamon, (and its different varieties, gizir, asypha, arebo, magla, and moto) and frankincense. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#12 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:13'><b>&sect; 13</b>&nbsp;&nbsp;Beyond <a href=/people/10338 target=_blank>Taba</a>, after four hundred stadia, there is the village of <a href=/people/9987 target=_blank>Pano</a>. And then, after sailing four hundred stadia along a promontory, toward which place the current also draws you, there is another market-town called <a href=/people/8061 target=_blank>Opone</a>, into which the same things are imported as those already mentioned, and in it the greatest quantity of cinnamon is produced, (the arebo and moto), and slaves of the better sort, which are brought to <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> in increasing numbers; and a great quantity of tortoise-shell, better than that found elsewhere. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#13 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:14'><b>&sect; 14</b>&nbsp;&nbsp;The voyage to all these far-side market-towns is made from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> about the month of July, that is <a href=/people/4987 target=_blank>Epiphi</a>. And ships are also customarily fitted out from the places across this sea, from <a href=/people/6238 target=_blank>Ariaca</a> and <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, bringing to these far-side market-towns the products of their own places; wheat, rice, clarified butter, sesame oil, cotton cloth, (the monache and the sagmatogene), and girdles, and honey from the reed called sacchari. Some make the voyage especially to these market-towns, and others exchange their cargoes while sailing along the coast. This country is not subject to a King, but each market-town is ruled by its separate chief. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#14 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:15'><b>&sect; 15</b>&nbsp;&nbsp;Beyond <a href=/people/8061 target=_blank>Opone</a>, the shore trending more toward the south, first there are the small and great bluffs of <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a>; this coast is destitute of harbors, but there are places where ships can lie at anchor, the shore being abrupt; and this course is of six days, the direction being south-west. Then come the small and great beach for another six days' course and after that in order, the Courses of <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a>, the first being called <a href=/people/4293 target=_blank>Sarapion</a> and the next <a href=/people/12003 target=_blank>Nicon</a>; and after that several rivers and other anchorages, one after the other, separately a rest and a run for each day, seven in all, until the Pyralae islands and what is called the channel; beyond which, a little to the south of south-west, after two courses of a day and night along the Ausanitic coast, is the island Menuthias, about three hundred stadia from the main-land, low and wooded, in which there are rivers and many kinds of birds and the mountain-tortoise. There are no wild beasts except the crocodiles; but there they do not attack men. In this place there are sewed boats, and canoes hollowed from single logs, which they use for fishing and catching tortoise. In this island they also catch them in a peculiar way, in wicker baskets, which they fasten across the channel-opening between the breakers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#15 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:16'><b>&sect; 16</b>&nbsp;&nbsp;Two days' sail beyond, there lies the very last market-town of the continent of <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a>, which is called <a about=https://topostext.org/place/000393URha class=place long=39.2882 lat=-6.819>Rhapta</a>; which has its name from the sewed boats (rhapton ploiarion) already mentioned; in which there is ivory in great quantity, and tortoise-shell. Along this coast live men of <a href=/people/10975 target=_blank>piratical</a> habits, very great in stature, and under separate chiefs for each place. The Mapharitic chief governs it under some ancient right that subjects it to the sovereignty of the state that is become first in <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>. And the people of <a href=/people/3640 target=_blank>Muza</a> now hold it under his authority, and send thither many large ships, using Arab captains and agents, who are familiar with the natives and intermarry with them, and who know the whole coast and understand the language. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#16 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:17'><b>&sect; 17</b>&nbsp;&nbsp;There are imported into these markets the lances made at <a href=/people/3640 target=_blank>Muza</a> especially for this trade, and hatchets and daggers and awls, and various kinds of glass; and at some places a little wine, and wheat, not for trade, but to serve for getting the good-will of the savages. There are exported from these places a great quantity of ivory, but inferior to that of <a about=https://topostext.org/place/152396UAdo class=place long=39.6361 lat=15.2565>Adulis</a>, and rhinoceros-horn and tortoise-shell (which is in best demand after that from <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>), and a little palm-oil. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#17 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:18'><b>&sect; 18</b>&nbsp;&nbsp;And these markets of <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a> are the very last of the continent that stretches down on the right hand from <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a>; for beyond these places the unexplored ocean curves around toward the west, and running along by the regions to the south of <a about=https://topostext.org/place/130350REth class=place long=35.01 lat=13.01>Aethiopia</a> and <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> and Africa, it mingles with the western sea. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#18 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:19'><b>&sect; 19</b>&nbsp;&nbsp;Now to the left of <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a>, sailing for two or three days from <a about=https://topostext.org/place/262342UMyo class=place long=34.2421 lat=26.1567>Mussel Harbor</a> eastward across the adjacent gulf, there is another harbor and fortified place, which is called White Village, from which there is a road to <a about=https://topostext.org/place/303254UPet class=place long=35.4423 lat=30.3285>Petra</a>, which is subject to Malichas, King of the <a about=https://topostext.org/place/298353RNab class=ethnic long=35.3 lat=29.8>Nabataans</a>. It holds the position of a market-town for the small vessels sent there from <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>; and so a centurion is stationed there as a collector of one-fourth of the merchandise imported, with an armed force, as a garrison. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#19 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:20'><b>&sect; 20</b>&nbsp;&nbsp;Directly below this place is the adjoining country of <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, in its length bordering a great distance on the <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Erythraean Sea</a>. Different tribes inhabit the country, differing in their speech, some partially, and some altogether. The land next the sea is similarly dotted here and there with caves of the Fish-Eaters, but the country inland is peopled by rascally men speaking two languages, who live in villages and nomadic camps, by whom those sailing off the middle course are plundered, and those surviving shipwrecks are taken for slaves. And so they too are continually taken prisoners by the chiefs and kings of <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>; and they are called Carnaites. Navigation is dangerous along this whole coast of <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, which is without harbors, with bad anchorages, foul, inaccessible because of breakers and rocks, and terrible in every way. Therefore we hold our course down the middle of the gulf and pass on as fast as possible by the country of <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> until we come to the Burnt Island; directly below which there are regions of peaceful people, nomadic, pasturers of <a href=/people/10978 target=_blank>cattle</a>, <a href=/people/10954 target=_blank>sheep</a> and <a href=/people/10950 target=_blank>camels</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#20 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:21'><b>&sect; 21</b>&nbsp;&nbsp;Beyond these places, in a bay at the foot of the left side of this gulf, there is a place by the shore called <a href=/people/3640 target=_blank>Muza</a>, a market-town established by law, distant altogether from <a about=https://topostext.org/place/239355UBer class=place long=35.472 lat=23.911>Berenice</a> for those sailing southward, about twelve thousand stadia. And the whole place is crowded with Arab ship-owners and seafaring men, and is busy with the affairs of commerce; for they carry on a trade with the far-side coast and with <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, sending their own ships there. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#21 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:22'><b>&sect; 22</b>&nbsp;&nbsp;Three days inland from this port there is a city called Saua, in the midst of the region called <a href=/people/9747 target=_blank>Mapharitis</a>; and there is a vassal-chief named Cholaebus who lives in that city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#22 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:23'><b>&sect; 23</b>&nbsp;&nbsp;And after nine days more there is Saphar, the metropolis, in which lives <a href=/people/6346 target=_blank>Charibael</a>, lawful king of two tribes, the <a about=https://topostext.org/place/130450RHim class=ethnic long=45 lat=13>Homerites</a> and those living next to them, called the <a about=https://topostext.org/place/145440RSab class=ethnic long=44 lat=14.5>Sabaites</a>; through continual embassies and gifts, he is a friend of the Emperors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#23 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:24'><b>&sect; 24</b>&nbsp;&nbsp;The market-town of <a href=/people/3640 target=_blank>Muza</a> is without a harbor, but has a good roadstead and anchorage because of the sandy bottom thereabouts, where the anchors hold safely. The merchandise imported there consists of purple cloths, both fine and coarse; clothing in the <a href=/people/275 target=_blank>Arabian</a> style, with sleeves; plain, ordinary, embroidered, or interwoven with gold; saffron, sweet rush, muslins, cloaks, blankets (not many), some plain and others made in the local fashion; sashes of different colors, fragrant ointments in moderate quantity, wine and wheat, not much. For the country produces grain in moderate amount, and a great deal of wine. And to the King and the Chief are given <a href=/people/10959 target=_blank>horses</a> and sumpter-mules, vessels of gold and polished silver, finely woven clothing and copper vessels. There are exported from the same place the things produced in the country: selected myrrh, and the Gebanite-<a href=/people/7979 target=_blank>Minaean</a> stacte, alabaster and all the things already mentioned from Avalites and the far-side coast. The voyage to this place is made best about the month of September, that is <a href=/people/4321 target=_blank>Thoth</a>; but there is nothing to prevent it even earlier. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#24 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:25'><b>&sect; 25</b>&nbsp;&nbsp;After sailing beyond this place about three hundred stadia, the coast of <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> and the <a href=/people/6292 target=_blank>Berber</a> country about the Avalitic gulf now coming close together, there is a channel, not long in extent, which forces the sea together and shuts it into a narrow strait, the passage through which, sixty stadia in length, the island <a href=/people/199 target=_blank>Diodorus</a> divides. Therefore the course through it is beset with rushing currents and with strong winds blowing down from the adjacent ridge of mountains. Directly on this strait by the shore there is a village of <a about=https://topostext.org/place/280400RAra class=ethnic long=40 lat=28>Arabs</a>, subject to the same chief, called <a href=/people/5137 target=_blank>Ocelis</a>; which is not so much a market-town as it is an anchorage and watering-place and the first landing for those sailing into the gulf. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#25 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:26'><b>&sect; 26</b>&nbsp;&nbsp;Beyond <a href=/people/5137 target=_blank>Ocelis</a>, the sea widening again toward the east and soon giving a view of the open ocean, after about twelve hundred stadia there is Eudaemon <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, a village by the shore, also of the Kingdom of <a href=/people/6346 target=_blank>Charibael</a>, and having convenient anchorages, and watering-places, sweeter and better than those at <a href=/people/5137 target=_blank>Ocelis</a>; it lies at the entrance of a bay, and the land recedes from it. It was called Eudaemon [Prosperous], because in the early days of the city when the voyage was not yet made from <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> to <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, and when they did not dare to sail from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> to the ports across this ocean, but all came together at this place, it received the cargoes from both countries, just as <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a> now receives the things brought both from abroad and from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>. But not long before our own time <a href=/people/6346 target=_blank>Charibael</a> destroyed the place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#26 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:27'><b>&sect; 27</b>&nbsp;&nbsp;After Eudaemon <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> there is a continuous length of coast, and a bay extending two thousand stadia or more, along which there are Nomads and Fish-Eaters living in villages; just beyond the cape projecting from this bay there is another market-town by the shore, <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a> [Kane], of the Kingdom of Eleazus, the Frankincense Country; and facing it there are two desert islands, one called Island of Birds, the other Dome Island, one hundred and twenty stadia from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a>. Inland from this place lies the metropolis Sabbatha, in which the King lives. All the frankincense produced in the country is brought by <a href=/people/10950 target=_blank>camels</a> to that place to be stored, and to <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a> on rafts held up by inflated skins after the manner of the country, and in boats. And this place has a trade also with the far-side ports, with <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> and <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a> and <a href=/people/6723 target=_blank>Ommana</a> and the neighboring coast of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#27 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:28'><b>&sect; 28</b>&nbsp;&nbsp;There are imported into this place from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> a little wheat and wine, as at <a href=/people/3640 target=_blank>Muza</a>; clothing in the <a href=/people/275 target=_blank>Arabian</a> style, plain and common and most of it spurious; and copper and tin and coral and storax and other things such as go to <a href=/people/3640 target=_blank>Muza</a>; and for the King usually wrought gold and silver plate, also <a href=/people/10959 target=_blank>horses</a>, statuettes, and thin clothing of fine quality. And there are exported from this place, native produce, frankincense and aloes, and the rest of the things that enter into the trade of the other ports. The voyage to this place is best made at the same time as that to <a href=/people/3640 target=_blank>Muza</a>, or rather earlier. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#28 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:29'><b>&sect; 29</b>&nbsp;&nbsp;Beyond <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a>, the land receding greatly, there follows a very deep bay stretching a great way across, which is called <a href=/people/6885 target=_blank>Sachalites</a>; and the Frankincense Country, mountainous and forbidding, wrapped in thick clouds and fog, and yielding frankincense from the trees. These incense-bearing trees are not of great height or thickness; they bear the frankincense sticking in drops on the bark, just as the trees among us in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> weep their gum. The frankincense is gathered by the King's slaves and those who are sent to this service for punishment. For these places are very unhealthy, and pestilential even to those sailing along the coast, but almost always fatal to those working there, who also perish often from want of food. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#29 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:30'><b>&sect; 30</b>&nbsp;&nbsp;On this bay there is a very great promontory facing the east, called <a href=/people/2940 target=_blank>Syagrus</a>; on which is a fort for .the defense of the country, and a harbor and storehouse for the frankincense that is collected; and opposite this cape, well out at sea, there is an island, lying between it and the Cape of Spices opposite, but nearer <a href=/people/2940 target=_blank>Syagrus</a>: it is called Dioscorida [modern Socotra], and is very large but desert and marshy, having rivers in it and crocodiles and many <a href=/people/55 target=_blank>snakes</a> and great lizards, of which the flesh is eaten and the fat melted and used instead of olive oil. The island yields no fruit, neither vine nor grain. The inhabitants are few and they live on the coast toward the north, which from this side faces the continent. They are foreigners, a mixture of <a about=https://topostext.org/place/280400RAra class=ethnic long=40 lat=28>Arabs</a> and <a about=https://topostext.org/place/300740RInd class=ethnic long=74 lat=30>Indians</a> and Greeks, who have emigrated to carry on trade there. The island produces the true sea-tortoise, and the land-tortoise, and the white tortoise which is very numerous and preferred for its large shells; and the mountain-tortoise, which is largest of all and has the thickest shell; of which the worthless' specimens cannot be cut apart on the under-side, because they are even too hard; but those of value are cut apart and the shells made whole into caskets and small plates and cake-dishes and that sort of ware. There is also produced in this island cinnabar, that called <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a>, which is collected in drops from the trees. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#30 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:31'><b>&sect; 31</b>&nbsp;&nbsp;It happens that just as <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a> is subject to <a href=/people/6346 target=_blank>Charibael</a> and the Chief of <a href=/people/9747 target=_blank>Mapharitis</a>, this island is subject to the King of the Frankincense Country. Trade is also carried on there by some people from <a href=/people/3640 target=_blank>Muza</a> and by those who chance to call there on the voyage from Damirica [Casson: Limyrike] and <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>; they bring in rice and wheat and <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> cloth, and a few female slaves; and they take for their exchange cargoes, a great quantity of tortoise-shell. Now the island is farmed out under the Kings and is garrisoned. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#31 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:32'><b>&sect; 32</b>&nbsp;&nbsp;Immediately beyond <a href=/people/2940 target=_blank>Syagrus</a> the bay of <a href=/people/8054 target=_blank>Omana</a> cuts deep into the coast-line, the width of it being six hundred stadia; and beyond this there are mountains, high and rocky and steep, inhabited by cave-dwellers for five hundred stadia more; and beyond this is a port established for receiving the <a href=/people/10201 target=_blank>Sachalitic</a> frankincense; the harbor is called Moscha, and ships from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a> call there regularly; and ships returning from Damirica and <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, if the season is late, winter there, and trade with the King's officers, exchanging their cloth and wheat and sesame oil for frankincense, which lies in heaps all over the <a href=/people/10201 target=_blank>Sachalitic</a> country, open and unguarded, as if the place were under the protection of the gods; for neither openly nor by stealth can it be loaded on board ship without the King's permission; if a single grain were loaded without this, the ship could not clear from the harbor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#32 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:33'><b>&sect; 33</b>&nbsp;&nbsp;Beyond the harbor of Moscha for about fifteen hundred stadia as far as Asich, a mountain range runs along the shore; at the end of which, in a row, lie seven islands, called Zenobian. Beyond these there is a barbarous region which is no longer of the same Kingdom, but now belongs to <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>. Sailing along this coast well out at sea for two thousand stadia from the Zenobian Islands, there meets you an island called <a href=/people/646 target=_blank>Sarapis</a>, about one hundred and twenty stadia from the mainland. It is about two hundred stadia wide and six hundred long, inhabited by three settlements of Fish-Eaters, a villainous lot, who use the <a href=/people/275 target=_blank>Arabian</a> language and wear girdles of palm-leaves. The island produces considerable tortoise-shell of fine quality, and small sail-boats and cargo-ships are sent there regularly from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#33 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:34'><b>&sect; 34</b>&nbsp;&nbsp;Sailing along the coast, which trends north-ward toward the entrance of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> Sea, there are many islands known as the Calaei, after about two thousand stadia, extending along the shore. The inhabitants are a treacherous lot, very little civilized. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#34 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:35'><b>&sect; 35</b>&nbsp;&nbsp;At the upper end of these Calai islands is a range of mountains called <a href=/people/6323 target=_blank>Calon</a>, and there follows not far beyond, the mouth of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> Gulf, where there is much diving for the pearl-mussel. To the left of the straits are great mountains called <a href=/people/8898 target=_blank>Asabon</a>, and to the right there rises in full view another round and high mountain called <a href=/people/332 target=_blank>Semiramis</a>; between them the passage across the strait is about six hundred stadia; beyond which that very great and broad sea, the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> Gulf, reaches far into the interior. At the upper end of this Gulf there is a market-town designated by law, called Apologus, situated near <a about=https://topostext.org/place/309476UCha class=place long=47.578 lat=30.8947>Charax</a> <a href=/people/8329 target=_blank>Spasini</a> and the river <a about=https://topostext.org/place/353403WEup class=place long=40.2708 lat=35.2791>Euphrates</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#35 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:36'><b>&sect; 36</b>&nbsp;&nbsp;Sailing through the mouth of the Gulf, after a six-days' course there is another market-town of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a> called <a href=/people/6723 target=_blank>Ommana</a>. To both of these market-towns large vessels are regularly sent from <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, loaded with copper and sandalwood and timbers of teakwood and logs of blackwood and ebony. To <a href=/people/6723 target=_blank>Ommana</a> frankincense is also brought from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a>, and from <a href=/people/6723 target=_blank>Ommana</a> to <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> boats sewed together after the fashion of the place; these are known as madarata. From each of these market-towns, there are exported to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> and also to <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, many pearls, but inferior to those of <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>; purple, clothing after the fashion of the place, wine, a great quantity of dates, gold and slaves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#36 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:37'><b>&sect; 37</b>&nbsp;&nbsp;Beyond the Ommanitic region there is a country also of the Parsidae, of another Kingdom, and the bay of <a href=/people/7706 target=_blank>Gedrosia</a> [Casson: Gulf of Terabdoi], from the middle of which a cape juts out into the bay. Here there is a river affording an entrance for ships, with a little market-town at the mouth, called <a href=/people/9940 target=_blank>Oraea</a> and back from the place an in-land city, distant a seven days' journey from the sea, in which also is the King's court; it is called ... (probably <a href=/people/10177 target=_blank>Rhambacia</a>). This country yields much wheat, wine, rice and dates; but along the coast there is nothing but bdellium. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#37 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:38'><b>&sect; 38</b>&nbsp;&nbsp;Beyond this region, the continent making a wide curve from the east across the depths of the bays, there follows the coast district of <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a>, which lies above toward the north; the whole marshy; from which flows down the river Sinthus [<a about=https://topostext.org/place/254683WInd class=place long=68.3192 lat=25.4487>Indus</a>], the greatest of all the rivers that flow into the <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Erythraean Sea</a>, bringing down an enormous volume of water; so that a long way out at sea, before reaching this country, the water of the ocean is fresh from it. Now as a sign of approach to this country to those coming from the sea, there are <a href=/people/55 target=_blank>serpents</a> coming forth from the depths to meet you; and a sign of the places just mentioned and in <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>, are those called graea. This river has seven mouths, very shallow and marshy, so that they are not navigable, except the one in the middle; at which by the shore, is the market-town, <a href=/people/7359 target=_blank>Barbaricum</a>. Before it there lies a small island, and inland behind it is the metropolis of <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a>, <a href=/people/9812 target=_blank>Minnagara</a>; it is subject to <a about=https://topostext.org/place/370585RPar class=demonym long=58.5 lat=37>Parthian</a> princes who are constantly driving each other out. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#38 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:39'><b>&sect; 39</b>&nbsp;&nbsp;The ships lie at anchor at <a href=/people/7359 target=_blank>Barbaricum</a>, but all their cargoes are carried up to the metropolis by the river, to the King. There are imported into this market a great deal of thin clothing, and a little spurious; figured linens, topaz, coral, storax, frankincense, vessels of glass, silver and gold plate, and a little wine. On the other hand there are exported costus, bdellium, lycium, nard, turquoise, lapis lazuli, Seric skins, cotton cloth, silk yarn, and indigo. And sailors set out thither with the <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> <a href=/people/12230 target=_blank>Etesian</a> winds, about the month of July, that is <a href=/people/4987 target=_blank>Epiphi</a>: it is more dangerous then, but through these winds the voyage is more direct, and sooner completed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#39 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:40'><b>&sect; 40</b>&nbsp;&nbsp;Beyond the river Sinthus there is another gulf, not navigable, running in toward the north; it is called <a href=/people/9301 target=_blank>Eirinon</a>; its parts are called separately the small gulf and the great; in both parts the water is shallow, with shifting sandbanks occurring continually and a great way from shore; so that very often when the shore is not even in sight, ships run aground, and if they attempt to hold their course they are wrecked. A promontory stands out from this gulf, curving around from <a href=/people/9301 target=_blank>Eirinon</a> toward the East, then South, then West, and enclosing the gulf called <a href=/people/7358 target=_blank>Baraca</a>, which contains seven islands. Those who come to the entrance of this bay escape it by putting about a little and standing further out to sea; but those who are drawn inside into the gulf of <a href=/people/7358 target=_blank>Baraca</a> are lost; for the waves are high and very violent, and the sea is tumultuous and foul, and has eddies and rushing whirlpools. The bottom is in some places abrupt, and in others rocky and sharp, so that the anchors lying there are parted, some being quickly cut off, and others chafing on the bottom. As a sign of these places to those approaching from the sea there are <a href=/people/55 target=_blank>serpents</a>, very large and black; for at the other places on this coast and around <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, they are smaller, and in color bright green, running into gold. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#40 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:41'><b>&sect; 41</b>&nbsp;&nbsp;Beyond the gulf of <a href=/people/7358 target=_blank>Baraca</a> is that of <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> and the coast of the country of <a href=/people/6238 target=_blank>Ariaca</a>, which is the beginning of the Kingdom of Nambanus and of all <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>. That part of it lying inland and adjoining <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a> is called Abiria, but the coast is called <a href=/people/10336 target=_blank>Syrastrene</a>. It is a fertile country, yielding wheat and rice and sesame oil and clarified butter, cotton and the <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> cloths made therefrom, of the coarser sorts. Very many <a href=/people/10978 target=_blank>cattle</a> are pastured there, and the men are of great stature and black in color. The metropolis of this country is <a href=/people/9812 target=_blank>Minnagara</a>, from which much cotton cloth is brought down to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>. In these places there remain even to the present time signs of the expedition of <a href=/people/13 target=_blank>Alexander</a>, such as ancient shrines, walls of forts and great wells. The sailing course along this coast, from <a href=/people/7359 target=_blank>Barbaricum</a> to the promontory called <a href=/people/9991 target=_blank>Papica</a>, opposite <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, and before <a href=/people/8906 target=_blank>Astacampra</a>, is of three thousand stadia. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#41 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:42'><b>&sect; 42</b>&nbsp;&nbsp;Beyond this there is another gulf exposed to the sea-waves, running up toward the north, at the mouth of which there is an island called Bavones: at its innermost part there is a great river called Mais. Those sailing to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> pass across this gulf, which is three hundred stadia in width, leaving behind to their left the island just visible from their tops toward the east, straight to the very mouth of the river of <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>; and this river is called Nammadus. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#42 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:43'><b>&sect; 43</b>&nbsp;&nbsp;This gulf is very narrow to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> and very hard to navigate for those coming from the ocean; this is the case with both the right and left passages, but there is a better passage through the left. For on the right at the very mouth of the gulf there lies a shoal, along and narrow, and full of rocks, called Herone, facing the village of Cammoni; and opposite this on the left projects the promontory that lies before <a href=/people/8906 target=_blank>Astacampra</a>, which is called <a href=/people/9991 target=_blank>Papica</a>, and is a had anchorage because of the strong current setting in around it and because the anchors are cut off, the bottom being rough and rocky. And even if the entrance to the gulf is made safely, the mouth of the river at <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> is found with difficulty, because the shore is very low and cannot be made out until you are close upon it. And when you have found it the passage is difficult because of the shoals at the mouth of the river. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#43 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:44'><b>&sect; 44</b>&nbsp;&nbsp;Because of this, native fishermen in the King's service, stationed at the very entrance in well-manned large boats called trappaga and cotymba, go up the coast as far as <a href=/people/10336 target=_blank>Syrastrene</a>, from which they pilot vessels to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>. And they steer them straight from the mouth of the bay between the shoals with their crews; and they tow them to fixed stations, going up with the beginning of the flood, and lying through the ebb at anchorages and in basins. These basins are deeper places in the river as far as <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>; which lies by the river, about three hundred stadia up from the mouth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#44 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:45'><b>&sect; 45</b>&nbsp;&nbsp;Now the whole country of <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> has very many rivers, and very great ebb and flow of the tides; increasing at the new moon, and at the full moon for three days, and falling off during the intervening days of the moon. But about <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> it is much greater, so that the bottom is suddenly seen, and now parts of the dry land are sea, and now it is dry where ships were sailing just before; and the rivers, under the inrush of the flood tide, when the whole force of the sea is directed against them, are driven upwards more strongly against their natural current, for many stadia. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#45 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:46'><b>&sect; 46</b>&nbsp;&nbsp;For this reason entrance and departure of vessels is very dangerous to those who are inexperienced or who come to this market-town for the first time. For the rush of waters at the incoming tide is irresistible, and the anchors cannot hold against it; so that large ships are caught up by the force of it, turned broadside on through the speed of the current, and so driven on the shoals and wrecked; and smaller boats are over-turned; and those that have been turned aside among the channels by the receding waters at the ebb, are left on their sides, and if not held on an even keel by props, the flood tide comes upon them suddenly and under the first head of the current they are filled with water. For there is so great force in the rush of the sea at the new moon, especially during the flood tide at night, that if you begin the entrance at the moment when the waters are still, on the instant there is borne to you at the mouth of the river, a noise like the cries of an army heard from afar; and very soon the sea itself comes rushing in over the shoals with a hoarse roar. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#46 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:47'><b>&sect; 47</b>&nbsp;&nbsp;The country inland from <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> is inhabited by numerous tribes, such as the Arattii, the <a href=/people/7271 target=_blank>Arachosii</a>, the Gandaraei and the people of <a href=/people/10110 target=_blank>Poclais</a>, in which is <a href=/people/4904 target=_blank>Bucephalus</a> Alexandria. Above these is the very war-like nation of the <a about=https://topostext.org/place/340670RBac class=ethnic long=66.901 lat=36.768>Bactrians</a>, who are under their own king. And <a href=/people/13 target=_blank>Alexander</a>, setting out from these parts, penetrated to the <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>, leaving aside Damirica and the southern part of <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>; and to the present day ancient drachma are current in <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, coming from this country, bearing inscriptions in Greek letters, and the devices of those who reigned after <a href=/people/13 target=_blank>Alexander</a>, <a href=/people/4858 target=_blank>Apollodotus</a> and <a href=/people/156 target=_blank>Menander</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#47 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:48'><b>&sect; 48</b>&nbsp;&nbsp;Inland from this place and to the east, is the city called Ozene, formerly a royal capital; from this place are brought down all things needed for the welfare of the country about <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, and many things for our trade: agate and carnelian, <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> muslins and mallow cloth, and much ordinary cloth. Through this same region and from the upper country is brought the spikenard that comes through <a href=/people/10110 target=_blank>Poclais</a>; that is, the Caspapyrene and <a href=/people/3653 target=_blank>Paropanisene</a> and Cabolitic and that brought through the adjoining country of <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a>; also costus and bdellium. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#48 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:49'><b>&sect; 49</b>&nbsp;&nbsp;There are imported into this market-town, wine, <a about=https://topostext.org/place/406163RIta class=demonym long=16.3 lat=40.6>Italian</a> preferred, also Laodicean and <a href=/people/275 target=_blank>Arabian</a>; copper, tin, and lead; coral and topaz; thin clothing and inferior sorts of all kinds; bright-colored girdles a cubit wide; storax, sweet clover, flint glass, realgar, antimony, gold and silver coin, on which there is a profit when exchanged for the money of the country; and ointment, but not very costly and not much. And for the King there are brought into those places very costly vessels of silver, singing boys, beautiful maidens for the harem, fine wines, thin clothing of the finest weaves, and the choicest ointments. There are exported from these places spikenard, costus, bdellium, ivory, agate and carnelian, lycium, cotton cloth of all kinds, silk cloth, mallow cloth, yarn, long pepper and such other things as are brought here from the various market-towns. Those bound for this market-town from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> make the voyage favorably about the month of July, that is <a href=/people/4987 target=_blank>Epiphi</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#49 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:50'><b>&sect; 50</b>&nbsp;&nbsp;Beyond <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> the adjoining coast extends in a straight line from north to south; and so this region is called <a href=/people/9232 target=_blank>Dachinabades</a>, for dachanos in the language of the natives means south. The inland country back from the coast toward the east comprises many desert regions and great mountains; and all kinds of wild beasts — leopards, tigers, elephants, enormous <a href=/people/55 target=_blank>serpents</a>, hyenas, and baboons of many sorts; and many populous nations, as far as the <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#50 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:51'><b>&sect; 51</b>&nbsp;&nbsp;Among the market-towns of <a href=/people/9232 target=_blank>Dachinabades</a> there are two of special importance; <a href=/people/10008 target=_blank>Pathana</a>, distant about twenty days' journey south from <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>; beyond which, about ten days' journey east, there is another very great city, <a href=/people/10344 target=_blank>Tagara</a>. There are brought down to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> from these places by wagons and through great tracts without roads, from <a href=/people/10008 target=_blank>Pathana</a> carnelian in great quantity, and from <a href=/people/10344 target=_blank>Tagara</a> much common cloth, all kinds of muslins and mallow cloth, and other merchandise brought there locally from the regions along the sea-coast. And the whole course to the end of Damirica is seven thousand stadia; but the distance is greater to the Coast Country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#51 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:52'><b>&sect; 52</b>&nbsp;&nbsp;The market-towns of this region are, in order, after <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>: Suppara, and the city of <a href=/people/9061 target=_blank>Calliena</a>, which in the time of the elder Saraganus became a lawful Market-town; but since it came into the possession of Sandares the port is much obstructed, and Greek ships landing there may chance to be taken to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> under guard. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#52 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:53'><b>&sect; 53</b>&nbsp;&nbsp;Beyond <a href=/people/9061 target=_blank>Calliena</a> there are other market-towns of this region; Semylla, Mandagora, Pala patma, Meligara, Byzantium, Togarum and Aurannohoas. Then there are the islands called Sesecrienae and that of the Aegidii, and that of the Caenitae, opposite the place called Chersonesus (and in these places there are <a href=/people/10975 target=_blank>pirates</a>) and after this the White Island. Then come Naura and <a href=/people/8465 target=_blank>Tyndis</a>, the first markets of Damirica, and then <a about=https://topostext.org/place/102762UPat class=place long=76.2093 lat=10.1568>Muziris</a> and <a href=/people/8021 target=_blank>Nelcynda</a>, which are now of leading importance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#53 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:54'><b>&sect; 54</b>&nbsp;&nbsp;<a href=/people/8465 target=_blank>Tyndis</a> is of the Kingdom of Cerobothra; it is a village in plain sight by the sea. <a about=https://topostext.org/place/102762UPat class=place long=76.2093 lat=10.1568>Muziris</a>, of the same Kingdom, abounds in ships sent there with cargoes from <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, and by the Greeks; it is located on a river, distant from <a href=/people/8465 target=_blank>Tyndis</a> by river and sea five hundred stadia, and up the river from the shore twenty stadia. <a href=/people/8021 target=_blank>Nelcynda</a> is distant from <a about=https://topostext.org/place/102762UPat class=place long=76.2093 lat=10.1568>Muziris</a> by river and sea about five hundred stadia, and is of another Kingdom, the Pandian. This place also is situated on a river, about one hundred and twenty stadia from the sea. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#54 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:55'><b>&sect; 55</b>&nbsp;&nbsp;There is another place at the mouth of this river, the village of <a href=/people/8948 target=_blank>Bacare</a>; to which ships drop down on the outward voyage from <a href=/people/8021 target=_blank>Nelcynda</a>, and anchor in the roadstead to take on their cargoes; because the river is full of shoals and the channels are not clear. The kings of both these market-towns live in the interior. And as a sign to those approaching these places from the sea there are <a href=/people/55 target=_blank>serpents</a> coming forth to meet you, black in color, but shorter, like <a href=/people/55 target=_blank>snakes</a> in the head, and with blood-red eyes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#55 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:56'><b>&sect; 56</b>&nbsp;&nbsp;They send large ships to these market-towns on account of the great quantity and bulk of pepper and malabathrum. There are imported here, in the first place, a great quantity of coin; topaz, thin clothing, not much; figured linens, antimony, coral, crude glass, copper, tin, lead; wine, not much, but as much as at <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>; realgar and orpiment; and wheat enough for the sailors, for this is not dealt in by the merchants there. There is exported pepper, which is produced in quantity in only one region near these markets, a district called <a href=/people/9195 target=_blank>Cottonara</a>. Besides this there are exported great quantities of fine pearls, ivory, silk cloth, spikenard from the <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>, malabathrum from the places in the interior, transparent stones of all kinds, diamonds and sapphires, and tortoise-shell; that from <a href=/people/2968 target=_blank>Chryse</a> Island, and that taken among the islands along the coast of Damirica. They make the voyage to this place in a favorable season who set out from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> about the month of July, that is <a href=/people/4987 target=_blank>Epiphi</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#56 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:57'><b>&sect; 57</b>&nbsp;&nbsp;This whole voyage as above described, from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a> and Eudaemon <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a>, they used to make in small vessels, sailing close around the shores of the gulfs; and <a href=/people/6538 target=_blank>Hippalus</a> was the pilot who by observing the location of the ports and the conditions of the sea, first discovered how to lay his course straight across the ocean. For at the same time when with us the <a href=/people/12230 target=_blank>Etesian</a> winds are blowing, on the shores of <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> the wind sets in from the ocean, and this southwest wind is called <a href=/people/6538 target=_blank>Hippalus</a>, from the name of him who first discovered the passage across. From that time to the present day ships start, some direct from <a about=https://topostext.org/place/140483UKan class=place long=48.323 lat=14.0107>Cana</a>, and some from the Cape of Spices; and those bound for Damirica throw the ship's head considerably off the wind; while those bound for <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a> and <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a> keep along shore not more than three days and for the rest of the time hold the same course straight out to sea from that region, with a favorable wind, quite away from the land, and so sail outside past the aforesaid gulfs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#57 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:58'><b>&sect; 58</b>&nbsp;&nbsp;Beyond <a href=/people/8948 target=_blank>Bacare</a> there is the Dark Red Mountain, and another district stretching along the coast toward the south, called <a href=/people/6761 target=_blank>Paralia</a>. The first place is called Balita; it has a fine harbor and a village by the shore. Beyond this there is another place called <a href=/people/6377 target=_blank>Comari</a> at which are the Cape of <a href=/people/6377 target=_blank>Comari</a> [Cape Comorin] and a harbor; hither come those men who wish to consecrate themselves for the rest of their lives, and bathe and dwell in celibacy; and women also do the same; for it is told that a goddess once dwelt here and bathed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#58 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:59'><b>&sect; 59</b>&nbsp;&nbsp;From <a href=/people/6377 target=_blank>Comari</a> toward the south this region extends to Colchi, where the pearl-fisheries are; (they are worked by condemned criminals); and it belongs to the Pandian Kingdom. Beyond Colchi there follows another district called the Coast Country, which lies on a bay, and has a region inland called Argaru. At this place, and nowhere else, are bought the pearls gathered on the coast thereabouts; and from there are exported muslins, those called Argaritic. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#59 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:60'><b>&sect; 60</b>&nbsp;&nbsp;Among the market-towns of these countries, and the harbors where the ships put in from Damirica and from the north, the most important are, in order as they lie, first Camara, then Poduca, then Sopatma; in which there are ships of the country coasting along the shore as far as Damirica; and other very large vessels made of single logs bound together, called sangara: but those which make the voyage to <a href=/people/2968 target=_blank>Chryse</a> and to the <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a> are called colandia, and are very large. There are imported into these places everything made in Damirica, and the greatest part of what is brought at any time from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> comes here, together with most kinds of all the things that are brought from Damirica and of those that are carried through <a href=/people/6761 target=_blank>Paralia</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#60 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:61'><b>&sect; 61</b>&nbsp;&nbsp;About the following region, the course trending toward the east, lying out at sea toward the west is the island Palaesimundu, called by the ancients <a about=https://topostext.org/place/073805ITap class=place long=80.5 lat=7.3>Taprobane</a>. The northern part is a day's journey distant, and the southern part trends gradually toward the west, and almost touches the opposite shore of <a about=https://topostext.org/place/025450RAza class=place long=45 lat=2.5>Azania</a>. It produces pearls, transparent stones, muslins, and tortoise-shell. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#61 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:62'><b>&sect; 62</b>&nbsp;&nbsp;About these places is the region of Masalia stretching a great way along the coast before the inland country; a great quantity of muslins is made there. Beyond this region, sailing toward the east and crossing the adjacent bay, there is the region of Dosarene, yielding the ivory known as Dosarenic. Beyond this, the course trending toward the north, there are many barbarous tribes, among whom are the Cirrhadae, a race of men with flattened noses, very savage; another tribe, the Bargysi; and the Horse-faces and the Long-faces, who are said to be cannibals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#62 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:63'><b>&sect; 63</b>&nbsp;&nbsp;After these, the course turns toward the east again, and sailing with the ocean to the right and the shore remaining beyond to the left, <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a> comes into view, and near it the very last land toward the east, <a href=/people/2968 target=_blank>Chryse</a>. There is a river near it called the <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>, and it rises and falls in the same way as the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. On its bank is a market-town which has the same name as the river, <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>. Through this place are brought malabathrum and <a about=https://topostext.org/place/38898WGan class=demonym long=89.8009 lat=23.7818>Gangetic</a> spikenard and pearls, and muslins of the finest sorts, which are called <a about=https://topostext.org/place/38898WGan class=demonym long=89.8009 lat=23.7818>Gangetic</a>. It is said that there are gold-mines near these places, and there is a gold coin which is called caltis. And just opposite this river there is an island in the ocean, the last part of the inhabited world toward the east, under the rising sun itself; it is called <a href=/people/2968 target=_blank>Chryse</a>; and it has the best tortoise-shell of all the places on the <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Erythraean Sea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#63 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=64>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:64'><b>&sect; 64</b>&nbsp;&nbsp;After this region under the very north, the sea outside ending in a land called This, there is a very great inland city called Thinae [China], from which raw silk and silk yarn and silk cloth are brought on foot through <a about=https://topostext.org/place/340670RBac class=place long=66.901 lat=36.768>Bactria</a> to <a about=https://topostext.org/place/217730UBar class=place long=72.993 lat=21.712>Barygaza</a>, and are also exported to Damirica by way of the river <a about=https://topostext.org/place/38898WGan class=place long=89.8009 lat=23.7818>Ganges</a>. But the land of <a href=/people/8411 target=_blank>Thina</a> is not easy of access; few men come from there, and seldom. The country lies under the Lesser Bear [Ursa Minor], and is said to border on the farthest parts of <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a> and the <a about=https://topostext.org/place/400516WHyr class=place long=51.6 lat=40>Caspian Sea</a>, next to which lies Lake <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotis</a>; all of which empty into the ocean. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#64 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=65>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:65'><b>&sect; 65</b>&nbsp;&nbsp;Every year on the borders of the land of <a href=/people/8411 target=_blank>Thina</a> there comes together a tribe of men with short bodies and broad, flat faces, and by nature peaceable; they are called Besata,, and are almost entirely uncivilized. They come with their wives and children, carrying great packs and plaited baskets green like grape-leaves. They meet in a place between their own country and the land of <a href=/people/8411 target=_blank>Thina</a>. There they hold a feast for several days, spreading out the baskets under themselves as mats, and then return to their own places in the interior. And then the natives watching them come into that place and gather up their mats; and they pick out from the braids the fibers which they call petri. They lay the leaves closely together in several layers and make them into balls, which they pierce with the fibers from the mats. And there are three sorts; those made of the largest leaves are called the large-ball malabathrum; those of the smaller, the medium-ball; and those of the smallest, the small-ball. Thus there exist three sorts of malabathrum, and it is brought into <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> by those who prepare it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#65 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=66>
+                            <p id='urn:cts:greekLit:tlg0071.tlg001:66'><b>&sect; 66</b>&nbsp;&nbsp;The regions beyond these places are either difficult of access because of their excessive winters and great cold, or else cannot be sought out because of some divine influence of the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50 <a href=https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CE%BB%CE%BF%CF%85%CF%82_%CF%84%E1%BF%86%CF%82_%E1%BC%98%CF%81%CF%85%CE%B8%CF%81%CE%AC%CF%82_%CE%98%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B7%CF%82#66 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 50                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=491', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas491";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=491';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

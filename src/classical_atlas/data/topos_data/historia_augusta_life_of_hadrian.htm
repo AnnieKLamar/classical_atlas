@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Scriptores Historia Augusta, Life of Hadrian' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Scriptores Historia Augusta, The Life of Hadrian, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='360' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 360' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/232' content='urn:cts:latinLit:phi2331.phi001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/nr97032332' content='Scriptores Historia Augusta'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr97032340' content='David Magie (1877-1960)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Historia_Augusta/home.html' /><h2>Scriptores Historia Augusta, Life of Hadrian</h2>Scriptores Historia Augusta, The Life of Hadrian, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 114 tagged references to 68 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi2331.phi001'>urn:cts:latinLit:phi2331.phi001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87775391'>Q87775391</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:latinLit:phi2331.phi001.perseus-lat1' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi2331.phi001:1'><b>&sect; 1</b>&nbsp;&nbsp;The original home of the family of the Emperor <a href=/people/1020 target=_blank>Hadrian</a> was <a about=https://topostext.org/place/430135RPic class=place long=13.5 lat=43>Picenum</a>, the later, Spain; for <a href=/people/1020 target=_blank>Hadrian</a> himself relates in his autobiography that his forefathers came from <a about=https://topostext.org/place/426140UHat class=place long=13.9766 lat=42.5807>Hadria</a>, but settled at <a about=https://topostext.org/place/374000UIta class=place long=-6.045 lat=37.4427>Italica</a> in the time of the <a href=/people/22 target=_blank>Scipios</a>. 2 The father of <a href=/people/1020 target=_blank>Hadrian</a> was <a href=/people/499 target=_blank>Aelius</a> <a href=/people/4544 target=_blank>Hadrianus</a>, surnamed <a href=/people/2826 target=_blank>Afer</a>, a cousin of the Emperor <a href=/people/207 target=_blank>Trajan</a>; his mother was <a href=/people/3584 target=_blank>Domitia</a> <a href=/people/2910 target=_blank>Paulina</a>, a native of <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Cadiz</a>; his sister was <a href=/people/2910 target=_blank>Paulina</a>, the wife of <a href=/people/2783 target=_blank>Servianus</a>, his wife was <a href=/people/11083 target=_blank>Sabina</a>, and his great-grandfather's grandfather was Marullinus, the first of his family to be a Roman senator. 3 <a href=/people/1020 target=_blank>Hadrian</a> was born in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> on the ninth day before the Kalends of February in the seventh consulship of <a href=/people/492 target=_blank>Vespasian</a> and the fifth of Titus. 4 Bereft of his father at the age of ten, he became the ward of Ulpius <a href=/people/3272 target=_blank>Trajanus</a>, his cousin, then of praetorian rank, but afterwards emperor, and of <a href=/people/698 target=_blank>Caelius</a> <a href=/people/3541 target=_blank>Attianus</a>, a knight. 5 He then grew rather deeply devoted to Greek studies, to which his natural tastes inclined so much that some called him Greekling. <</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 76 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:phi2331.phi001:2'><b>&sect; 2</b>&nbsp;&nbsp;He returned to his native city in his fifteenth year and at once entered military service, but was so fond of hunting that he incurred criticism for it, and for this reason <a href=/people/207 target=_blank>Trajan</a> recalled him from <a about=https://topostext.org/place/374000UIta class=place long=-6.045 lat=37.4427>Italica</a>. 2 Thenceforth he was treated by <a href=/people/207 target=_blank>Trajan</a> as his own son, and not long afterwards he was made one of the ten judges of the inheritance-court, and, later, tribune of the Second Legion, the Adjutrix. 3 After this, when <a href=/people/516 target=_blank>Domitian</a>'s principate was drawing to a close, he was transferred to the province of Lower <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Moesia</a>. 4 There, it is said, he heard from an astrologer the same prediction of his future power which had been made, as he already knew, by his great-uncle, <a href=/people/499 target=_blank>Aelius</a> <a href=/people/4544 target=_blank>Hadrianus</a>, a master of astrology. 5 When <a href=/people/207 target=_blank>Trajan</a> was adopted by <a href=/people/1075 target=_blank>Nerva</a>, <a href=/people/1020 target=_blank>Hadrian</a> was sent to convey to him the army's congratulations and was at once transferred to Upper <a href=/people/557 target=_blank>Germany</a>. 6 When <a href=/people/1075 target=_blank>Nerva</a> died, he wished to be the first to bring the news to <a href=/people/207 target=_blank>Trajan</a>, but as he was hastening to meet him he was detained by his brother-in-law, <a href=/people/2783 target=_blank>Servianus</a>, the same man who had revealed <a href=/people/1020 target=_blank>Hadrian</a>'s extravagance and indebtedness and thus stirred <a href=/people/207 target=_blank>Trajan</a>'s anger against him. He was further delayed by the fact that his travelling-carriage had been designedly broken, but he nevertheless proceeded on foot and anticipated <a href=/people/2783 target=_blank>Servianus</a>' personal messenger. 7 And now he became a favourite of <a href=/people/207 target=_blank>Trajan</a>'s, and yet, owing to the activity of the guardians of certain boys whom <a href=/people/207 target=_blank>Trajan</a> loved ardently, he was not free from . . . which <a href=/people/276 target=_blank>Gallus</a> fostered. 8 Indeed, at this time he was even anxious about the Emperor's attitude towards him, and consulted the Vergilian oracle. This was the lot given out: But who is yonder man, by olive wreath Distinguished, who the sacred vessel bears? I see a hoary head and beard. Behold The Roman King whose laws shall stablish <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> Anew, from tiny <a about=https://topostext.org/place/422127UCur class=place long=12.6806 lat=42.1845>Cures</a>' humble land Called to a mighty realm. Then shall arise . . . Others, however, declare that this prophecy came to him from the <a href=/people/12187 target=_blank>Sibylline</a> Verses. 9 Moreover, he received a further intimation of his subsequent power, in a response which issued from the temple of <a href=/people/1 target=_blank>Jupiter</a> at <a about=https://topostext.org/place/360390UNik class=place long=39.021 lat=35.9517>Nicephorium</a> and has been quoted by <a href=/people/333 target=_blank>Apollonius</a> of <a about=https://topostext.org/place/355390RSyr class=person long=39 lat=35.5>Syria</a>, the <a href=/people/3071 target=_blank>Platonist</a>. 10 Finally, through the good offices of Sura, he was instantly restored to a friendship with <a href=/people/207 target=_blank>Trajan</a> that was closer than ever, and he took to wife the daughter of the Emperor's sister — a marriage advocated by <a href=/people/3457 target=_blank>Plotina</a>, but, according to Marius <a href=/people/11092 target=_blank>Maximus</a>, little desired by <a href=/people/207 target=_blank>Trajan</a> himself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 90 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#2 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:phi2331.phi001:3'><b>&sect; 3</b>&nbsp;&nbsp;He held the quaestorship in the fourth consulship of <a href=/people/207 target=_blank>Trajan</a> and the first of Articuleius, and while holding this office he read a speech of the Emperor's to the senate and provoked a laugh by his somewhat provincial accent. He thereupon gave attention to the study of Latin until he attained the utmost proficiency and fluency. 2 After his quaestorship he served as curator of the acts of the senate, and later accompanied <a href=/people/207 target=_blank>Trajan</a> in the <a about=https://topostext.org/place/445250RDac class=demonym long=25 lat=44.5>Dacian</a> war on terms of considerable intimacy, 3 seeing, indeed, that falling in with <a href=/people/207 target=_blank>Trajan</a>'s habits, as he says himself, he partook freely of wine, and for this was very richly rewarded by the Emperor. 4 He was made tribune of the plebs in the second consulship of <a href=/people/7430 target=_blank>Candidus</a> and Quadratus, 5 and he claimed that he received an omen of continuous tribunician power during this magistracy, because he lost the heavy cloak which is worn by the tribunes of the plebs in rainy weather, but never by the emperors. And down to this day the emperors do not wear cloaks when they appear in public before civilians. 6 In the second <a about=https://topostext.org/place/445250RDac class=demonym long=25 lat=44.5>Dacian</a> war, <a href=/people/207 target=_blank>Trajan</a> appointed him to the command of the First Legion, the Minervia, and took him with him to the war; and in this campaign his many remarkable deeds won great renown. 7 Because of this he was presented with a diamond which <a href=/people/207 target=_blank>Trajan</a> himself had received from <a href=/people/1075 target=_blank>Nerva</a>, and by this gift he was encouraged in his hopes of succeeding to the throne. 8 He held the praetorship in the second consulship of <a href=/people/6960 target=_blank>Suburanus</a> and <a href=/people/2783 target=_blank>Servianus</a>, and again received from <a href=/people/207 target=_blank>Trajan</a> two million sesterces with which to give games.9 Next he was sent as praetorian legate to Lower <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a>, where he held the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a> in check, maintained discipline among the soldiers, and restrained the procurators, who were overstepping too freely the bounds of their power. 10 In return for these services he was made consul. While he was holding this office he learned from Sura that he was to be adopted by <a href=/people/207 target=_blank>Trajan</a>, and thereupon he ceased to be an object of contempt and neglect to <a href=/people/207 target=_blank>Trajan</a>'s friends. 11 Indeed, after Sura's death <a href=/people/207 target=_blank>Trajan</a>'s friendship for him increased, principally on account of the speeches which he composed for the Emperor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 100 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#3 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:phi2331.phi001:4'><b>&sect; 4</b>&nbsp;&nbsp;He enjoyed, too, the favour of <a href=/people/3457 target=_blank>Plotina</a>, and it was due to her interest in him that later, at the time of the campaign against <a about=https://topostext.org/place/370585RPar class=place long=58.5 lat=37>Parthia</a>, he was appointed the legate of the Emperor. 2 At this same time he enjoyed, besides, the friendship of <a href=/people/1852 target=_blank>Sosius</a> <a href=/people/4649 target=_blank>Papus</a> and Platorius <a href=/people/12142 target=_blank>Nepos</a>, both of the senatorial order, and also of <a href=/people/3541 target=_blank>Attianus</a>, his former guardian, of Livianus, and of Turbo, all of equestrian rank. 3 And when Palma and <a href=/people/3007 target=_blank>Celsus</a>, always his enemies, on whom he later took vengeance, fell under suspicion of aspiring to the throne, his adoption seemed assured; 4 and it was taken wholly for granted when, through <a href=/people/3457 target=_blank>Plotina</a>'s favour, he was appointed consul for the second time.5 That he was bribing <a href=/people/207 target=_blank>Trajan</a>'s freedmen and courting and corrupting his favourites all the while that he was in close attendance at court, was told and generally believed. 6 On the fifth day before the Ides of August, while he was governor of <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, he learned of his adoption by <a href=/people/207 target=_blank>Trajan</a>, and he later gave orders to celebrate this day as the anniversary of his adoption. 7 On the third day before the Ides of August he received the news of <a href=/people/207 target=_blank>Trajan</a>'s death, and this day he appointed as the anniversary of his accession. 8 There was, to be sure, a widely prevailing belief that <a href=/people/207 target=_blank>Trajan</a>, with the approval of many of his friends, had planned to appoint as his successor not <a href=/people/1020 target=_blank>Hadrian</a> but <a href=/people/6699 target=_blank>Neratius</a> <a href=/people/1008 target=_blank>Priscus</a>, even to the extent of saying to <a href=/people/1008 target=_blank>Priscus</a>: I entrust the provinces to your care in case anything happens to me. 9 And, indeed, many aver that <a href=/people/207 target=_blank>Trajan</a> had purposed to follow the example of <a href=/people/13 target=_blank>Alexander</a> of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedonia</a> and die without naming a successor. Again, many others declare that he had meant to send an address to the senate, requesting this body, in case aught befell him, to appoint a ruler for the Roman empire, and merely appending the names of some from among whom the senate might choose the best. 10 And the statement has even been made that it was not until after <a href=/people/207 target=_blank>Trajan</a>'s death that <a href=/people/1020 target=_blank>Hadrian</a> was declared adopted, and then only by means of a trick of <a href=/people/3457 target=_blank>Plotina</a>'s; for she smuggled in someone who impersonated the Emperor and spoke in a feeble voice. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 100 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#4 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:phi2331.phi001:5'><b>&sect; 5</b>&nbsp;&nbsp;On taking possession of the imperial power <a href=/people/1020 target=_blank>Hadrian</a> at once resumed the policy of the early emperors, and devoted his attention to maintaining peace throughout the world. 2 For the nations which <a href=/people/207 target=_blank>Trajan</a> had conquered began to revolt; the Moors, moreover, began to make attacks, and the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a> to wage war, the <a about=https://topostext.org/place/530-15IBri class=ethnic long=-1.5 lat=53>Britons</a> could not be kept under Roman sway, <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> was thrown into disorder by riots, and finally <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> and <a about=https://topostext.org/place/320350RPal class=place long=35.0001 lat=32.0206>Palestine</a> showed the spirit of rebellion. 3 Whereupon he relinquished all the conquests east of the <a about=https://topostext.org/place/353403WEup class=place long=40.2708 lat=35.2791>Euphrates</a> and the <a about=https://topostext.org/place/346437WTig class=place long=43.702 lat=34.5971>Tigris</a>, following, as he used to say, the example of <a href=/people/41 target=_blank>Cato</a>, who urged that the <a about=https://topostext.org/place/408225RMak class=ethnic long=22.5 lat=40.81>Macedonians</a>, because they could not be held as subjects, should be declared free and independent. 4 And <a href=/people/12220 target=_blank>Parthamasiris</a>, appointed king of the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> by <a href=/people/207 target=_blank>Trajan</a>, he assigned as ruler to the neighbouring tribes, because he saw that the man was held in little esteem by the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a>. 5 Moreover, he showed at the outset such a wish to be lenient, that although <a href=/people/3541 target=_blank>Attianus</a> advised him by letter in the first few days of his rule to put to death <a href=/people/836 target=_blank>Baebius</a> Macer, the prefect of the city, in case he opposed his elevation to power, also <a href=/people/1476 target=_blank>Laberius</a> <a href=/people/11092 target=_blank>Maximus</a>, then in exile on an island under suspicion of designs on the throne, and likewise <a href=/people/95 target=_blank>Crassus</a> Frugi, he nevertheless refused to harm them. 6 Later on, however, his procurator, though without an order from <a href=/people/1020 target=_blank>Hadrian</a>, had <a href=/people/95 target=_blank>Crassus</a> killed when he tried to leave the island, on the ground that he was planning a revolt. 7 He gave a double donative to the soldiers in order to ensure a favourable beginning to his principate. 8 He deprived <a href=/people/4589 target=_blank>Lusius</a> Quietus of the command of the Moorish tribesmen, who were serving under him, and then dismissed him from the army, because he had fallen under the suspicion of having designs on the throne; and he appointed <a href=/people/10971 target=_blank>Marcius</a> Turbo, after his reduction of <a about=https://topostext.org/place/316353UIud class=place long=35.3063 lat=31.6988>Judaea</a>, to quell the insurrection in <a about=https://topostext.org/place/350000RMau class=place long=-5 lat=35>Mauretania</a>. 9 After taking these measures he set out from <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a> to view the remains of <a href=/people/207 target=_blank>Trajan</a>, which were being escorted by <a href=/people/3541 target=_blank>Attianus</a>, <a href=/people/3457 target=_blank>Plotina</a>, and Matidia. 10 He received them formally and sent them on to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> by ship and at once returned to <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a>; he then appointed <a href=/people/4471 target=_blank>Catilius</a> <a href=/people/501 target=_blank>Severus</a> governor of <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, and proceeded to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> by way of <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 117 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#5 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:phi2331.phi001:6'><b>&sect; 6</b>&nbsp;&nbsp;Despatching to the senate a carefully worded letter, he asked for divine honours for <a href=/people/207 target=_blank>Trajan</a>. This request he obtained by a unanimous vote; indeed, the senate voluntarily voted <a href=/people/207 target=_blank>Trajan</a> many more honours than <a href=/people/1020 target=_blank>Hadrian</a> had requested. 2 In this letter to the senate he apologized because he had not left it the right to decide regarding his accession, explaining that the unseemly haste of the troops in acclaiming him emperor was due to the belief that the state could not be without an emperor. 3 Later, when the senate offered him the triumph which was to have been <a href=/people/207 target=_blank>Trajan</a>'s, he refused it for himself, and caused the effigy of the dead Emperor to be carried in a triumphal chariot, in order that the best of emperors might not lose even after death the honour of a triumph. 4 Also he refused for the present the title of Father of his Country, offered to him at the time of his accession and again later on, giving as his reason the fact that <a href=/people/8 target=_blank>Augustus</a> had not won it until late in life. 5 Of the crown-money for his triumph he remitted <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>'s contribution, and lessened that of the provinces, all the while setting forth grandiloquently and in great detail the straits of the public treasury. 6 Then, on hearing of the incursions of the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a> and <a href=/people/3954 target=_blank>Roxolani</a>, he sent the troops ahead and set out for <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Moesia</a>. 7 He conferred the insignia of a prefect on <a href=/people/10971 target=_blank>Marcius</a> Turbo after his Mauretanian campaign and appointed him to the temporary command of <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a> and <a about=https://topostext.org/place/445250RDac class=place long=25 lat=44.5>Dacia</a>. 8 When the king of the <a href=/people/3954 target=_blank>Roxolani</a> complained of the diminution of his subsidy, he investigated his case and made peace with him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#6 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:phi2331.phi001:7'><b>&sect; 7</b>&nbsp;&nbsp;A plot to murder him while sacrificing was made by <a href=/people/2430 target=_blank>Nigrinus</a>, with <a href=/people/4589 target=_blank>Lusius</a> and a number of others as accomplices, even though <a href=/people/1020 target=_blank>Hadrian</a> had destined <a href=/people/2430 target=_blank>Nigrinus</a> for the succession; but <a href=/people/1020 target=_blank>Hadrian</a> successfully evaded this plot. 2 Because of this conspiracy Palma was put to death at <a about=https://topostext.org/place/413133UTar class=place long=13.2486 lat=41.292>Tarracina</a>, <a href=/people/3007 target=_blank>Celsus</a> at <a about=https://topostext.org/place/408141PBai class=place long=14.0699 lat=40.8178>Baiae</a>, <a href=/people/2430 target=_blank>Nigrinus</a> at <a about=https://topostext.org/place/443119UFav class=place long=11.8841 lat=44.2856>Faventia</a>, and <a href=/people/4589 target=_blank>Lusius</a> on his journey homeward, all by order of the senate, but contrary to the wish of <a href=/people/1020 target=_blank>Hadrian</a>, as he says himself in his autobiography. 3 Whereupon <a href=/people/1020 target=_blank>Hadrian</a> entrusted the command in <a about=https://topostext.org/place/445250RDac class=place long=25 lat=44.5>Dacia</a> to Turbo, whom he dignified, in order to increase his authority, with a rank analogous to that of the prefect of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>. He then hastened to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> in order to win over public opinion, which was hostile to him because of the belief that on one single occasion he had suffered four men of consular rank to be put to death. In order to check the rumours about himself, he gave in person a double largess to the people, although in his absence three aurei had already been given to each of the citizens. 4 In the senate, too, he cleared himself of blame for what had happened, and pledged himself never to inflict punishment on a senator until after a vote of the senate. 5 He established a regular imperial post, in order to relieve the local officials of such a burden. 6 Moreover, he used every means of gaining popularity. He remitted to private debtors in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> immense sums of money owed to the privy-purse, and in the provinces he remitted large amounts of arrears; and he ordered the promissory notes to be burned in the <a about=https://topostext.org/place/419125BMTr class=place long=12.4862 lat=41.8954>Forum</a> of the Deified <a href=/people/207 target=_blank>Trajan</a>, in order that the general sense of security might thereby be increased. 7 He gave orders that the property of condemned persons should not accrue to the privy-purse, and in each case deposited the whole amount in the public treasury. 8 He made additional appropriations for the children to whom <a href=/people/207 target=_blank>Trajan</a> had allotted grants of money. 9 He supplemented the property of senators impoverished through no fault of their own, making the allowance in each case proportionate to the number of children, so that it might be enough for a senatorial career; to many, indeed, he paid punctually on the date the amount allotted for their living. 10 Sums of money sufficient to enable men to hold office he bestowed, not on his friends alone, but also on many far and wide, 11 and by his donations he helped a number of women to sustain life. 12 He gave gladiatorial combats for six days in succession, and on his birthday he put into the arena a thousand wild beasts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#7 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:phi2331.phi001:8'><b>&sect; 8</b>&nbsp;&nbsp;The foremost members of the senate he admitted to close intimacy with the emperor's majesty.2 All circus-games decreed in his honour he refused, except those held to celebrate his birthday.3 Both in meetings of the people and in the senate he used to say that he would so administer the commonwealth that men would know that it was not his own but the people's. 4 Having himself been consul three times, he reappointed many to the consulship for the third time and men without number to a second term; 5 his own third consulship he held for only four months, and during his term he often administered justice. He always attended regular meetings of the senate if he was present in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> or even in the neighbourhood. 7 In the appointment of senators he showed the utmost caution and thereby greatly increased the dignity of the senate, and when he removed <a href=/people/3541 target=_blank>Attianus</a> from the post of prefect of the guard and created him a senator with consular honours, he made it clear that he had no greater honour which he could bestow upon him. 8 Nor did he allow knights to try cases involving senators whether he was present at the trial or not. 9 For at that time it was customary for the emperor, when he tried cases, to call to his council both senators and knights and give a verdict based on their joint decision. 10 Finally, he denounced those emperors who had not shown this deference to the senators. 11 On his brother-in-law <a href=/people/2783 target=_blank>Servianus</a>, to whom he showed such respect that he would advance to meet him as he came from his chamber, he bestowed a third consulship, and that without any request or entreaty on <a href=/people/2783 target=_blank>Servianus</a>' part; but nevertheless he did not appoint him as his own colleague, since <a href=/people/2783 target=_blank>Servianus</a> had been consul twice before <a href=/people/1020 target=_blank>Hadrian</a>, and the Emperor did not wish to have second place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#8 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi2331.phi001:9'><b>&sect; 9</b>&nbsp;&nbsp;And yet, at the same time, <a href=/people/1020 target=_blank>Hadrian</a> abandoned many provinces won by <a href=/people/207 target=_blank>Trajan</a>, and also destroyed, contrary to the entreaties of all, the theatre which <a href=/people/207 target=_blank>Trajan</a> had built in the <a about=https://topostext.org/place/419125SCMa class=place long=12.481 lat=41.905>Campus Martius</a>.2 These measures, unpopular enough in themselves, were still more displeasing to the public because of his pretence that all acts which he thought would be offensive had been secretly enjoined upon him by <a href=/people/207 target=_blank>Trajan</a>. 3 Unable to endure the power of <a href=/people/3541 target=_blank>Attianus</a> and formerly his guardian, he was eager to murder him. He was restrained, however, by the knowledge that he already laboured under the odium of murdering four men of consular rank, although, as a matter of fact, he always attributed their execution to the designs of <a href=/people/3541 target=_blank>Attianus</a>. 4 And as he could not appoint a successor for <a href=/people/3541 target=_blank>Attianus</a> except at the latter's request, he contrived to make him request it, and at once transferred the power to Turbo;5 at the same time Similis also, the other prefect, received a successor, namely Septicius <a href=/people/12125 target=_blank>Clarus</a>. 6 After <a href=/people/1020 target=_blank>Hadrian</a> had removed from the prefecture the very men to whom he owed the imperial power, he departed for <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a>, where he aided all the towns of the region by gifts and benefactions and attached all the foremost men to his train of friends. 7 But when at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, he frequently attended the official functions of the praetors and consuls, appeared at the banquets of his friends, visited them twice or thrice a day when they were sick, even those who were merely knights and freedmen, cheered them by words of comfort, encouraged them by words of advice, and very often invited them to his own banquets. 8 In short, everything that he did was in the manner of a private citizen. 9 On his mother-in-law he bestowed especial honour by means of gladiatorial games and other ceremonies. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#9 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:phi2331.phi001:10'><b>&sect; 10</b>&nbsp;&nbsp;After this he travelled to the provinces of Gaul, and came to the relief of all the communities with various acts of generosity; 2 and from there he went over into <a href=/people/557 target=_blank>Germany</a>. Though more desirous of peace than of war, he kept the soldiers in training just as if war were imminent, inspired them by proofs of his own powers of endurance, actually led a soldier's life among the maniples, and, after the example of <a href=/people/22 target=_blank>Scipio</a> <a href=/people/1261 target=_blank>Aemilianus</a>, <a href=/people/98 target=_blank>Metellus</a>, and his own adoptive father <a href=/people/207 target=_blank>Trajan</a>, cheerfully ate out of doors such camp-fare as bacon, cheese and vinegar. And that the troops might submit more willingly to the increased harshness of his orders, he bestowed gifts on many and honours on a few. 3 For he reestablished the discipline of the camp, which since the time of <a href=/people/2432 target=_blank>Octavian</a> had been growing slack through the laxity of his predecessors. He regulated, too, both the duties and the expenses of the soldiers, and now no one could get a leave of absence from camp by unfair means, for it was not popularity with the troops but just deserts that recommended a man for appointment as tribune. 4 He incited others by the example of his own soldierly spirit; he would walk as much as twenty miles fully armed; he cleared the camp of banqueting-rooms, porticoes, grottos, and bowers,5 generally wore the commonest clothing, would have no gold ornaments on his sword-belt or jewels on the clasp, would scarcely consent to have his sword furnished with an ivory hilt, 6 visited the sick soldiers in their quarters, selected the sites for camps, conferred the centurion's wand on those only who were hardy and of good repute, appointed as tribunes only men with full beards or of an age to give to the authority of the tribuneship the full measure of prudence and maturity, 7 permitted no tribune to accept a present from a soldier, banished luxuries on every hand, and, lastly, improved the soldiers' arms and equipment. 8 Furthermore, with regard to length of military service he issued an order that no one should violate ancient usage by being in the service at an earlier age than his strength warranted, or at a more advanced one than common humanity permitted. He made it a point to be acquainted with the soldiers and to know their numbers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#10 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:phi2331.phi001:11'><b>&sect; 11</b>&nbsp;&nbsp;Besides this, he strove to have an accurate knowledge of the military stores, and the receipts from the provinces he examined with care in order to make good any deficit that might occur in any particular instance. But more than any other emperor he made it a point not to purchase or maintain anything that was not serviceable. And so, having reformed the army quite in the manner of a monarch, he set out for <a about=https://topostext.org/place/530-15IBri class=place long=-1.5 lat=53>Britain</a>, and there he corrected many abuses and was the first to construct a wall, eighty miles in length, which was to separate the barbarians from the Romans. 3 He removed from office Septicius <a href=/people/12125 target=_blank>Clarus</a>, the prefect of the guard, and <a href=/people/2667 target=_blank>Suetonius</a> <a href=/people/4323 target=_blank>Tranquillus</a>, the imperial secretary, and many others besides, because without his consent they had been conducting themselves toward his wife, <a href=/people/11083 target=_blank>Sabina</a>, in a more informal fashion than the etiquette of the court demanded. And, as he was himself wont to say, he would have sent away his wife too, on the ground of ill-temper and irritability, had he been merely a private citizen. 4 Moreover, his vigilance was not confined to his own household but extended to those of his friends, and by means of his private agents he even pried into all their secrets, and so skilfully that they were never aware that the Emperor was acquainted with their private lives until he revealed it himself. 5 In this connection, the insertion of an incident will not be unwelcome, showing that he found out much about his friends. 6 The wife of a certain man wrote to her husband, complaining that he was so preoccupied by pleasures and baths that he would not return home to her, and <a href=/people/1020 target=_blank>Hadrian</a> found this out through his private agents. And so, when the husband asked for a furlough, <a href=/people/1020 target=_blank>Hadrian</a> reproached him with his fondness for his baths and his pleasures. Whereupon the man exclaimed: What, did my wife write you just what she wrote to me? 7 And, indeed, as for this habit of <a href=/people/1020 target=_blank>Hadrian</a>'s, men regard it as a most grievous fault, and add to their criticism the statements which are current regarding the passion for males and the adulteries with married women to which he is said to have been addicted, adding also the charge that he did not even keep faith with his friends. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#11 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:phi2331.phi001:12'><b>&sect; 12</b>&nbsp;&nbsp;After arranging matters in <a about=https://topostext.org/place/530-15IBri class=place long=-1.5 lat=53>Britain</a> he crossed over to Gaul, for he was rendered anxious by the news of a riot in <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a>, which arose on account of <a href=/people/360 target=_blank>Apis</a>; for <a href=/people/360 target=_blank>Apis</a> had been discovered again after an interval of many years, and was causing great dissension among the communities, each one earnestly asserting its claim as the place best fitted to be the seat of his worship. 2 During this same time he reared a basilica of marvellous workmanship at <a about=https://topostext.org/place/438044UNem class=place long=4.3604 lat=43.8384>Nemausus</a> in honour of <a href=/people/3457 target=_blank>Plotina</a>. 3 After this he travelled to Spain and spent the winter at <a about=https://topostext.org/place/411013UTar class=place long=1.259 lat=41.1147>Tarragona</a>, and here he restored at his own expense the temple of <a href=/people/8 target=_blank>Augustus</a>. 4 To this place, too, he called all the inhabitants of Spain for a general meeting, and when they refused to submit to a levy, the <a about=https://topostext.org/place/406163RIta class=demonym long=16.3 lat=40.6>Italian</a> settlers jestingly, to use the very words of Marius <a href=/people/11092 target=_blank>Maximus</a>, and the others very vigorously, he took measures characterized by skill and discretion. 5 At this same time he incurred grave danger and won great glory; for while he was walking about in a garden at <a about=https://topostext.org/place/411013UTar class=place long=1.259 lat=41.1147>Tarragona</a> one of the slaves of the household rushed at him madly with a sword. But he merely laid hold on the man, and when the servants ran to the rescue handed him over to them. Afterwards, when it was found that the man was mad, he turned him over to the physicians for treatment, and all this time showed not the slightest sign of alarm. 6 During this period and on many other occasions also, in many regions where the barbarians are held back not by rivers but by artificial barriers, <a href=/people/1020 target=_blank>Hadrian</a> shut them off by means of high stakes planted deep in the ground and fastened together in the manner of a palisade. 7 He appointed a king for the Germans, suppressed revolts among the Moors, and won from the senate the usual ceremonies of thanksgiving. 8 The war with the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> had not at that time advanced beyond the preparatory stage, and <a href=/people/1020 target=_blank>Hadrian</a> checked it by a personal conference. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#12 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:phi2331.phi001:13'><b>&sect; 13</b>&nbsp;&nbsp;After this <a href=/people/1020 target=_blank>Hadrian</a> travelled by way of Asia and the islands to Greece, and, following the example of <a href=/people/4 target=_blank>Hercules</a> and <a href=/people/26 target=_blank>Philip</a>, had himself initiated into the <a about=https://topostext.org/place/380235SEle class=demonym long=23.538 lat=38.0411>Eleusinian</a> mysteries. He bestowed many favours on the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> and sat as president of the public games. 2 And during this stay in Greece care was taken, they say, that when <a href=/people/1020 target=_blank>Hadrian</a> was present, none should come to a sacrifice armed, whereas, as a rule, many carried knives. 3 Afterwards he sailed to <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, and there he climbed Mount <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> to see the sunrise, which is many-hued, they say, like the rainbow. 4 Thence he returned to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and from there he crossed over to Africa, where he showed many acts of kindness to the provinces. 5 Hardly any emperor ever travelled with such speed over so much territory. 6 Finally, after his return to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> from Africa, he immediately set out for the East, journeying by way of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>. Here he dedicated the public works which he had begun in the city of the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, such as the <a about=https://topostext.org/place/380237SOly class=place long=23.7337 lat=37.9694>temple</a> to Olympian <a href=/people/1 target=_blank>Jupiter</a> and an altar to himself; and in the same way, while travelling through Asia, he consecrated the temples called by his name. 7 Next, he received slaves from the <a about=https://topostext.org/place/388350RCap class=ethnic long=35 lat=38.8>Cappadocians</a> for service in the camps. 8 To petty rulers and kings he made offers of friendship, and even to <a href=/people/5855 target=_blank>Osdroes</a>, king of the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a>. To him he also restored his daughter, who had been captured by <a href=/people/207 target=_blank>Trajan</a>, and promised to return the throne captured at the same time. 9 And when some of the kings came to him, he treated them in such a way that those who had refused to come regretted it. He took this course especially on account of <a href=/people/4260 target=_blank>Pharasmanes</a>, who had haughtily scorned his invitation. 10 Furthermore, as he went about the provinces he punished procurators and governors as their actions demanded, and indeed with such severity that it was believed that he incited those who brought the accusations. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html#13 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:phi2331.phi001:14'><b>&sect; 14</b>&nbsp;&nbsp;In the course of these travels he conceived such a hatred for the people of <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a> that he wished to separate <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> from <a about=https://topostext.org/place/335354RPho class=place long=35.4 lat=33.5>Phoenicia</a>, in order that <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a> might not be called the chief city of so many communities. 2 At this time also the <a href=/people/7828 target=_blank>Jews</a> began war, because they were forbidden to practice circumcision. 3 As he was sacrificing on Mount <a about=https://topostext.org/place/360360LKas class=place long=35.9692 lat=35.9519>Casius</a>, which he had ascended by night in order to see the sunrise, a storm arose, and a flash of lightning descended and struck both the victim and the attendant. 4 He then travelled through <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> and finally came to <a about=https://topostext.org/place/310325UPel class=place long=32.5462 lat=31.0424>Pelusium</a>, where he rebuilt <a href=/people/7 target=_blank>Pompey</a>'s tomb on a more magnificent scale. 5 During a journey on the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> he lost <a href=/people/673 target=_blank>Antinous</a>, his favourite, and for this youth he wept like a woman. 6 Concerning this incident there are varying rumours; for some claim that he had devoted himself to death for <a href=/people/1020 target=_blank>Hadrian</a>, and others — what both his beauty and <a href=/people/1020 target=_blank>Hadrian</a>'s sensuality suggest. 7 But however this may be, the Greeks deified him at <a href=/people/1020 target=_blank>Hadrian</a>'s request, and declared that oracles were given through his agency, but these, it is commonly asserted, were composed by <a href=/people/1020 target=_blank>Hadrian</a> himself. (14) 8 In poetry and in letters <a href=/people/1020 target=_blank>Hadrian</a> was greatly interested. In arithmetic, geometry, and painting he was very expert. 9 Of his knowledge of flute-playing and singing he even boasted openly. He ran to excess in the gratification of his desires, and wrote much verse about the subjects of his passion. He composed love-poems too. 10 He was also a connoisseur of arms, had a thorough knowledge of warfare, and knew how to use gladiatorial weapons. 11 He was, in the same person, austere and genial, dignified and playful, dilatory and quick to act, niggardly and generous, deceitful and straightforward, cruel and merciful, and always in all things changeable. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#14 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:phi2331.phi001:15'><b>&sect; 15</b>&nbsp;&nbsp;His friends he enriched greatly, even though they did not ask it, while to those who did ask, he refused nothing. 2 And yet he was always ready to listen to whispers about his friends, and in the end he treated almost all of them as enemies, even the closest and even those whom he had raised to the highest of honours, such as <a href=/people/3541 target=_blank>Attianus</a> and <a href=/people/12142 target=_blank>Nepos</a> and Septicius <a href=/people/12125 target=_blank>Clarus</a>. 3 Eudaemon, for example, who had been his accomplice in obtaining the imperial power, he reduced to poverty;4 Polaenus and <a href=/people/71 target=_blank>Marcellus</a> he drove to suicide; 5 <a href=/people/1203 target=_blank>Heliodorus</a> he assailed in a most slanderous pamphlet; 6 <a href=/people/6028 target=_blank>Titianus</a> he allowed to be accused as an accomplice in an attempt to seize the empire and even to be outlawed; 7 Ummidius Quadratus, <a href=/people/4471 target=_blank>Catilius</a> <a href=/people/501 target=_blank>Severus</a>, and Turbo he persecuted vigorously 8 and in order to prevent <a href=/people/2783 target=_blank>Servianus</a>, his brother-in-law, from surviving him, he compelled him to commit suicide, although the man was then in his ninetieth year. 9 And he even took vengeance on freedmen and sometimes on soldiers. 10 And although he was very deft at prose and at verse and very accomplished in all the arts, yet he used to subject the teachers of these arts, as though more learned than they, to ridicule, scorn, and humiliation. 11 With these very professors and philosophers he often debated by means of pamphlets or poems issued by both sides in turn. 12 And once <a href=/people/278 target=_blank>Favorinus</a>, when he had yielded to <a href=/people/1020 target=_blank>Hadrian</a>'s criticism of a word which he had used, raised a merry laugh among his friends. For when they reproached him for having done wrong in yielding to <a href=/people/1020 target=_blank>Hadrian</a> in the matter of a word used by reputable authors, he replied: 13 You are urging a wrong course, my friends, when you do not suffer me to regard as the most learned of men the one who has thirty legions. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#15 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:phi2331.phi001:16'><b>&sect; 16</b>&nbsp;&nbsp;So desirous of a wide-spread reputation was <a href=/people/1020 target=_blank>Hadrian</a> that he even wrote his own biography; this he gave to his educated freedmen, with instructions to publish it under their own names. For indeed, <a href=/people/2775 target=_blank>Phlegon</a>'s writings, it is said, are <a href=/people/1020 target=_blank>Hadrian</a>'s in reality. 2 He wrote Catachannae, a very obscure work in imitation of <a href=/people/739 target=_blank>Antimachus</a>. 3 And when the poet <a href=/people/1425 target=_blank>Florus</a> wrote to him: I don't want to be a <a href=/people/108 target=_blank>Caesar</a>, Stroll about among the <a about=https://topostext.org/place/530-15IBri class=ethnic long=-1.5 lat=53>Britons</a>, Lurk about among the . . . . And endure the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> winters, 4 he wrote back I don't want to be a <a href=/people/1425 target=_blank>Florus</a>, Stroll about among the taverns, Lurk about among the cook-shops And endure the round fat insects. 5 Furthermore, he loved the archaic style of writing, and he used to take part in debates. 6 He preferred <a href=/people/41 target=_blank>Cato</a> to <a href=/people/2300 target=_blank>Cicero</a>, <a href=/people/337 target=_blank>Ennius</a> to <a href=/people/118 target=_blank>Vergil</a>, <a href=/people/698 target=_blank>Caelius</a> to <a href=/people/926 target=_blank>Sallust</a>; and with the same self-assurance he expressed opinions about <a href=/people/9 target=_blank>Homer</a> and <a href=/people/12 target=_blank>Plato</a>. 7 In astrology he considered himself so proficient that on the Kalends of January he would actually write down all that might happen to him in the whole ensuing year, and in the year in which he died, indeed, he wrote down everything that he was going to do, down to the very hour of his death. 8 However ready <a href=/people/1020 target=_blank>Hadrian</a> might have been to criticize musicians, tragedians, comedians, grammarians, and rhetoricians, he nevertheless bestowed both honours and riches upon all who professed these arts, though he always tormented them with his questions. 9 And although he was himself responsible for the fact that many of them left his presence with their feelings hurt, to see anyone with hurt feelings, he used to say, he could hardly endure. 10 He treated with the greatest friendship the philosophers <a href=/people/1264 target=_blank>Epictetus</a> and <a href=/people/1203 target=_blank>Heliodorus</a>, and various grammarians, rhetoricians, musicians, geometricians — not to mention all by name — painters and astrologers; and among them <a href=/people/278 target=_blank>Favorinus</a>, many claim, was conspicuous above all the rest. 11 Teachers who seemed unfit for their profession he presented with riches and honours and then dismissed from the practice of their profession. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#16 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi2331.phi001:17'><b>&sect; 17</b>&nbsp;&nbsp;Many whom he had regarded as enemies when a private citizen, when emperor he merely ignored; for example, on becoming emperor, he said to one man whom he had regarded as a mortal foe, You have escaped. 2 When he himself called any to military service, he always supplied them with <a href=/people/10959 target=_blank>horses</a>, mules, clothing, cost of maintenance, and indeed their whole equipment. 3 At the <a href=/people/12227 target=_blank>Saturnalia</a> and <a href=/people/5971 target=_blank>Sigillaria</a> he often surprised his friends with presents, and he gladly received gifts from them and again gave others in return. 4 In order to detect dishonesty in his caterers, when he gave banquets with several tables he gave orders that platters from the other tables, even the lowest, should be set before himself. 5 He surpassed all monarchs in his gifts. He often bathed in the public baths, even with the meanest crowd. And a jest of his made in the bath became famous. 6 For on a certain occasion, seeing a veteran, whom he had known in the service, rubbing his back and the rest of his body against the wall, he asked him why he had the marble rub him, and when the man replied that it was because he did not own a slave, he presented him with some slaves and the cost of their maintenance. 7 But another time, when he saw a number of old men rubbing themselves against the wall for the purpose of arousing the generosity of the Emperor, he ordered them to be called out and then to rub one another in turn. 8 His love for the common people he loudly expressed. So fond was he of travel, that he wished to inform himself in person about all that he had read concerning all parts of the world. 9 Cold and bad weather he could bear with such endurance that he never covered his head. 10 He showed a multitude of favours to many kings, but from a number he even purchased peace, and by some he was treated with scorn; 11 to many he gave huge gifts, but none greater than to the king of the <a href=/people/7763 target=_blank>Hiberi</a>, for to him he gave an elephant and a band of fifty men, in addition to magnificent presents.12 And having himself received huge gifts from <a href=/people/4260 target=_blank>Pharasmanes</a>, including some cloaks embroidered with gold, he sent into the arena three hundred condemned criminals dressed in gold-embroidered cloaks for the purpose of ridiculing the gifts of the king. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#17 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:phi2331.phi001:18'><b>&sect; 18</b>&nbsp;&nbsp;When he tried cases, he had in his council not only his friends and the members of his staff, but also jurists, in particular <a href=/people/2756 target=_blank>Juventius</a> <a href=/people/3007 target=_blank>Celsus</a>, Salvus <a href=/people/732 target=_blank>Julianus</a>, <a href=/people/6699 target=_blank>Neratius</a> <a href=/people/1008 target=_blank>Priscus</a>, and others, only those, however, whom the senate had in every instance approved. 2 Among other decisions he ruled that in no community should any house be demolished for the purpose of transporting any building-materials to another city. 3 To the child of an outlawed person he granted a twelfth of the property. 4 Accusations for lese-majeste he did not admit. 5 Legacies from persons unknown to him he refused, and even those left to him by acquaintances he would not accept if they had any children.6 In regard to treasure-trove, he ruled that if anyone made a find on his own property he might keep it, if on another's land, he should turn over half to the proprietor thereof, if on the state's, he should share the find equally with the privy-purse. 7 He forbade masters to kill their slaves, and ordered that any who deserved it should be sentenced by the courts. 8 He forbade anyone to sell a slave or a maid-servant to a procurer or trainer of gladiators without giving a reason therefor. 9 He ordered that those who had wasted their property, if legally responsible, should be flogged in the amphitheatre and then let go. Houses of hard labour for slaves and free he abolished. 10 He provided separate baths for the sexes. 11 He issued an order that, if a slave-owner were murdered in his house, no slaves should be examined save those who were near enough to have had knowledge of the murder. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#18 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:phi2331.phi001:19'><b>&sect; 19</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/430105RTyr class=place long=10.5 lat=43>Etruria</a> he held a praetorship while emperor. In the Latin towns he was dictator and aedile and duumvir, in <a about=https://topostext.org/place/408142PNea class=place long=14.24 lat=40.843>Naples</a> demarch, in his native city duumvir with the powers of censor. This office he held at <a about=https://topostext.org/place/426140UHat class=place long=13.9766 lat=42.5807>Hadria</a>, too, his second native city, as it were, and at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> he was archon. 2 In almost every city he built some building and gave public games. 3 At <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> he exhibited in the <a about=https://topostext.org/place/380237BPan class=place long=23.7404 lat=37.969>stadium</a> a hunt of a thousand wild beasts, 4 but he never called away from <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> a single wild beast hunter or actor. 5 In <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, in addition to popular entertainments of unbounded extravagance, he gave spices to the people in honour of his mother-in-law, and in honour of <a href=/people/207 target=_blank>Trajan</a> he caused essences of balsam and saffron to be poured over the seats of the theatre. 6 And in the theatre he presented plays of all kinds in the ancient manner and had the court-players appear before the public. 7 In the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a> he had many wild beasts killed and often a whole hundred of <a href=/people/10960 target=_blank>lions</a>. 8 He often gave the people exhibitions of military Pyrrhic dances, and he frequently attended gladiatorial shows. 9 He built public buildings in all places and without number, but he inscribed his own name on none of them except the temple of his father <a href=/people/207 target=_blank>Trajan</a>. 10 At <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he restored the <a about=https://topostext.org/place/419125SPan class=place long=12.4767 lat=41.8986>Pantheon</a>, the <a about=https://topostext.org/place/419125BSJu class=place long=12.4773 lat=41.8984>Voting Enclosure</a>, the <a about=https://topostext.org/place/419125BBNp class=place long=12.4771 lat=41.8983>Basilica</a> of <a href=/people/25 target=_blank>Neptune</a>, very many temples, the <a about=https://topostext.org/place/419125SFAu class=place long=12.4869 lat=41.8944>Forum</a> of <a href=/people/8 target=_blank>Augustus</a>, the <a about=https://topostext.org/place/419125BTAg class=place long=12.477 lat=41.8969>Baths of Agrippa</a>, and dedicated all of them in the names of their original builders. 11 Also he constructed the bridge named after himself, a tomb on the banks of the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>, and the temple of the Bona <a href=/people/2402 target=_blank>Dea</a>. 12 With the aid of the architect Decrianus he raised the <a href=/people/12192 target=_blank>Colossus</a> and, keeping it in an upright position, moved it away from the place in which the <a about=https://topostext.org/place/419125SVeR class=place long=12.4897 lat=41.8909>Temple of Rome</a> is now, though its weight was so vast that he had to furnish for the work as many as twenty-four elephants. 13 This statue he then consecrated to the <a href=/people/180 target=_blank>Sun</a>, after removing the features of <a href=/people/66 target=_blank>Nero</a>, to whom it had previously been dedicated, and he also planned, with the assistance of the architect <a href=/people/110 target=_blank>Apollodorus</a>, to make a similar one for the Moon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:phi2331.phi001:20'><b>&sect; 20</b>&nbsp;&nbsp;Most democratic in his conservations, even with the very humble, he denounced all who, in the belief that they were thereby maintaining the imperial dignity, begrudged him the pleasure of such friendliness. 2 In the <a href=/people/2058 target=_blank>Museum</a> at <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a> he propounded many questions to the teachers and answered himself what he had propounded. 3 Marius <a href=/people/11092 target=_blank>Maximus</a> says that he was naturally cruel and performed so many kindnesses only because he feared that he might meet the fate which had befallen <a href=/people/516 target=_blank>Domitian</a>. 4 Though he cared nothing for inscriptions on his public works, he gave the name of Hadrianopolis to many cities, as, for example, even to <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> and a section of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>; 5 and he also gave his name to aqueducts without number. 6 He was the first to appoint a pleader for the privy-purse. 7 <a href=/people/1020 target=_blank>Hadrian</a>'s memory was vast and his ability was unlimited; for instance, he personally dictated his speeches and gave opinions on all questions. 8 He was also very witty, and of his jests many still survive. The following one has even become famous: When he had refused a request to a certain grey-haired man, and the man repeated the request but this time with dyed hair, <a href=/people/1020 target=_blank>Hadrian</a> replied: I have already refused this to your father. 9 Even without the aid of a nomenclator he could call by name a great many people, whose names he had heard but once and then all in a crowd; indeed, he could correct the nomenclators when they made mistakes, as they not infrequently did, 10 and he even knew the names of the veterans whom he had discharged at various times. He could repeat from memory, after a rapid reading, books which to most men were not known at all. 11 He wrote, dictated, listened, and, incredible as it seems, conversed with his friends, all at one and the same time. He had as complete a knowledge of the state-budget in all its details as any careful householder has of his own household. 12 His <a href=/people/10959 target=_blank>horses</a> and <a href=/people/10953 target=_blank>dogs</a> he loved so much that he provided burial-places for them, 13 and in one locality he founded a town called <a about=https://topostext.org/place/397279UAdr class=place long=27.883 lat=39.65>Hadrianutherae</a>, because once he had hunted successfully there and killed a bear. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#20 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:phi2331.phi001:21'><b>&sect; 21</b>&nbsp;&nbsp;He always inquired into the actions of all his judges, and persisted in his inquiries until he satisfied himself of the truth about them. 2 He would not allow his freedmen to be prominent in public affairs or to have any influence over himself, and he declared that all his predecessors were to blame for the faults of their freedmen; he also punished all his freedmen who boasted of their influence over him.3 With regard to his treatment of his slaves, the following incident, stern but almost humorous, is still related. Once when he saw one of his slaves walk away from his presence between two senators, he sent someone to give him a box on the ear and say to him: Do not walk between those whose slave you may some day be. 4 As an article of food he was singularly fond of tetrapharmacum, which consisted of pheasant, <a href=/people/10951 target=_blank>sow</a>'s udders, ham, and pastry. 5 During his reign there were famines, pestilence, and earthquakes. The distress caused by all these calamities he relieved to the best of his ability, and also he aided many communities which had been devastated by them. 6 There was also an overflow of the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>. 7 To many communities he gave Latin citizenship, and to many others he remitted their tribute. There were no campaigns of importance during his reign, and the wars that he did wage were brought to a close almost without arousing comment. 9 The soldiers loved him much on account of his very great interest in the army and for his great liberality to them besides. 10 The <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> always regarded him as a friend because he took away the king whom <a href=/people/207 target=_blank>Trajan</a> had set over them. 11 The <a about=https://topostext.org/place/397443RArm class=ethnic long=44.298 lat=39.702>Armenians</a> were permitted to have their own king, whereas under <a href=/people/207 target=_blank>Trajan</a> they had had a governor,12 and the <a href=/people/290 target=_blank>Mesopotamians</a> were relieved of the tribute which <a href=/people/207 target=_blank>Trajan</a> had imposed. 13 The <a about=https://topostext.org/place/407465RAlb class=ethnic long=46.5 lat=40.7>Albanians</a> and <a about=https://topostext.org/place/420435RIbe class=ethnic long=43.5 lat=42>Hiberians</a> he made his friends by lavishing gifts upon their kings, even though they had scorned to come to him. 14 The kings of the <a about=https://topostext.org/place/340670RBac class=ethnic long=66.901 lat=36.768>Bactrians</a> sent envoys to him to beg humbly for his friendship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#21 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:phi2331.phi001:22'><b>&sect; 22</b>&nbsp;&nbsp;He very often assigned guardians. Discipline in civil life he maintained as rigorously as he did in military. 2 He ordered senators and knights to wear the toga whenever they appeared in public except when they were returning from a banquet, 3 and he himself, when in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, always appeared thus clad. 4 At banquets, when senators came, he received them standing, and he always reclined at table dressed either in a Greek cloak or in a toga. 5 The cost of a banquet he determined on each occasion, all with the utmost care, and he reduced the sums that might be expended to the amounts prescribed by the ancient laws. 6 He forbade the entry into <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> of heavily laden waggons, and did not permit riding on horseback in cities. 7 None but invalids were allowed to bathe in the public baths before the eighth hour of the day. 8 He was the first to put knights in charge of the imperial correspondence and of the petitions addressed to the emperor. 9 Those men whom he saw to be poor and innocent he enriched of his own accord, but those who had become rich through sharp practice he actually regarded with hatred. He despised foreign cults, 10 but native Roman ones he observed most scrupulously; moreover, he always performed the duties of <a href=/people/12031 target=_blank>pontifex maximus</a>. 11 He tried a great number of lawsuits himself both in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and in the provinces, and to his council he called consuls and praetors and the foremost of the senators. 12 He drained the <a about=https://topostext.org/place/420135WFuc class=place long=13.547 lat=41.995>Fucine Lake</a>. 13 He appointed four men of consular rank as judges for all <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>. 14 When he went to Africa it rained on his arrival for the first time in the space of five years, and for this he was beloved by the Africans. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#22 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:phi2331.phi001:23'><b>&sect; 23</b>&nbsp;&nbsp;After traversing, as he did, all parts of the world with bare head and often in severe storms and frosts, he contracted an illness which confined him to his bed. 2 And becoming anxious about a successor he thought first of <a href=/people/2783 target=_blank>Servianus</a>. 3 Afterwards, however, as I have said, he forced him to commit suicide; and <a href=/people/3602 target=_blank>Fuscus</a>, too, he put to death on the ground that, being spurred on by prophecies and omens, he was hoping for the imperial power. 4 Carried away by suspicion, he held in the greatest abhorrence Platorius <a href=/people/12142 target=_blank>Nepos</a>, whom he had formerly so loved that, once, when he went to see him while ill and was refused admission, he nevertheless let him go unpunished. 5 Also he hated <a href=/people/217 target=_blank>Terentius</a> Gentianus, but even more vehemently, because he saw that he was then beloved by the senate. 6 At last, he came to hate all those of whom he had thought in connection with the imperial power, as though they were really about to be emperors. 7 However, he controlled all the force of his innate cruelty down to the time when in his <a about=https://topostext.org/place/420128UTib class=demonym long=12.7975 lat=41.9644>Tiburtine</a> Villa he almost met his death through a hemorrhage. 8 Then he threw aside all restraint and compelled <a href=/people/2783 target=_blank>Servianus</a> to kill himself, on the ground that he aspired to the empire, merely because he gave a feast to the royal slaves, sat in a royal chair placed close to his bed, and, though an old man of ninety, used to arise and go forward to meet the guard of soldiers. He put many others to death, either openly or by treachery, 9 and indeed, when his wife <a href=/people/11083 target=_blank>Sabina</a> died, the rumour arose that the Emperor had given her poison. 10 <a href=/people/1020 target=_blank>Hadrian</a> then determined to adopt Ceionius <a href=/people/1471 target=_blank>Commodus</a>, son-in-law of <a href=/people/2430 target=_blank>Nigrinus</a>, the former conspirator, and this in spite of the fact that his sole recommendation was his beauty. 11 Accordingly, despite the opposition of all, he adopted Ceionius <a href=/people/1471 target=_blank>Commodus</a> <a href=/people/1915 target=_blank>Verus</a> and called him <a href=/people/499 target=_blank>Aelius</a> <a href=/people/1915 target=_blank>Verus</a> <a href=/people/108 target=_blank>Caesar</a>. 12 On the occasion of the adoption he gave games in the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a> and bestowed largess upon the populace and the soldiers. 13 He dignified <a href=/people/1471 target=_blank>Commodus</a> with the office of praetor and immediately placed him in command of the <a about=https://topostext.org/place/450190RPan class=demonym long=19 lat=45>Pannonian</a> provinces, and also conferred on him the consulship together with money enough to meet the expenses of the office. He also appointed <a href=/people/1471 target=_blank>Commodus</a> to a second consulship. 14 And when he saw that the man was diseased, he used often to say: We have leaned against a tottering wall and have wasted the four hundred million sesterces which we gave to the populace and the soldiers on the adoption of <a href=/people/1471 target=_blank>Commodus</a>. 15 Moreover, because of his ill-health, <a href=/people/1471 target=_blank>Commodus</a> could not even make a speech in the senate thanking <a href=/people/1020 target=_blank>Hadrian</a> for his adoption. 16 Finally, too large a quantity of medicine was administered to him, and thereupon his illness increased, and he died in his sleep on the very Kalends of January. Because of the date <a href=/people/1020 target=_blank>Hadrian</a> forbade public mourning for him, in order that the vows for the state might be assumed as usual. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 125 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#23 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi2331.phi001:24'><b>&sect; 24</b>&nbsp;&nbsp;After the death of <a href=/people/499 target=_blank>Aelius</a> <a href=/people/1915 target=_blank>Verus</a> Caesar, <a href=/people/1020 target=_blank>Hadrian</a> was attacked by a very severe illness, and thereupon he adopted <a href=/people/3343 target=_blank>Arrius</a> <a href=/people/12361 target=_blank>Antoninus</a> (who was afterwards called <a href=/people/1456 target=_blank>Pius</a>), imposing upon him the condition that he adopt two sons, <a href=/people/1125 target=_blank>Annius</a> <a href=/people/1915 target=_blank>Verus</a> and <a href=/people/809 target=_blank>Marcus Antoninus</a>. 2 These were the two who afterwards ruled the empire together, the first joint Augusti. 3 And as for <a href=/people/12361 target=_blank>Antoninus</a>, he was called <a href=/people/1456 target=_blank>Pius</a>, it is said, because he used to give his arm to his father-in-law when weakened by old age. 4 However, others assert that this surname was given to him because, as <a href=/people/1020 target=_blank>Hadrian</a> grew more cruel, he rescued many senators from the Emperor; 5 others, again, that it was because he bestowed great honours upon <a href=/people/1020 target=_blank>Hadrian</a> after his death. 6 The adoption of <a href=/people/12361 target=_blank>Antoninus</a> was lamented by many at that time, particularly by <a href=/people/4471 target=_blank>Catilius</a> <a href=/people/501 target=_blank>Severus</a>, the prefect of the city, who was making plans to secure the throne for himself. 7 When this fact became known, a successor was appointed for him and he was deprived of his office. 8 But <a href=/people/1020 target=_blank>Hadrian</a> was now seized with the utmost disgust of life and ordered a servant to stab him with a sword. 9 When this was disclosed and reached the ears of <a href=/people/12361 target=_blank>Antoninus</a>, he came to the Emperor, together with the prefects, and begged him to endure with fortitude the hard necessity of illness, declaring furthermore that he himself would be no better than a parricide, were he, an adopted son, to permit <a href=/people/1020 target=_blank>Hadrian</a> to be killed. 10 The Emperor then became angry and ordered the betrayer of the secret to be put to death; however, the man was saved by <a href=/people/12361 target=_blank>Antoninus</a>. 11 Then <a href=/people/1020 target=_blank>Hadrian</a> immediately drew up his will, though he did not lay aside the administration of the empire. 12 Once more, however, after making his will, he attempted to kill himself, but the dagger was taken from him. 13 He then became more violent, and he even demanded poison from his physician, who thereupon killed himself in order that he might not have to administer it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 100 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#24 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:phi2331.phi001:25'><b>&sect; 25</b>&nbsp;&nbsp;About this time there came a certain woman, who said that she had been warned in a dream to coax <a href=/people/1020 target=_blank>Hadrian</a> to refrain from killing himself, for he was destined to recover entirely, but that she had failed to do this and had become blind; she had nevertheless been ordered a second time to give the same message to <a href=/people/1020 target=_blank>Hadrian</a> and to kiss his knees, and was assured of the recovery of her sight if she did so. 2 The woman then carried out the command of the dream, and received her sight after she had bathed her eyes with the water in the temple from which she had come. 3 Also a blind old man from <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a> came to <a href=/people/1020 target=_blank>Hadrian</a> when he was ill with fever, and touched him; whereupon the man received his sight, and the fever left <a href=/people/1020 target=_blank>Hadrian</a>. 4 All these things, however, Marius <a href=/people/11092 target=_blank>Maximus</a> declares were done as a hoax. 5 After this <a href=/people/1020 target=_blank>Hadrian</a> departed for <a about=https://topostext.org/place/408141PBai class=place long=14.0699 lat=40.8178>Baiae</a>, leaving <a href=/people/12361 target=_blank>Antoninus</a> at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> to carry on the government. 6 But he received no benefit there, and he thereupon sent for <a href=/people/12361 target=_blank>Antoninus</a>, and in his presence he died there at <a about=https://topostext.org/place/408141PBai class=place long=14.0699 lat=40.8178>Baiae</a> on the sixth day before the Ides of July. 7 Hated by all, he was buried at <a about=https://topostext.org/place/408141PDik class=place long=14.1253 lat=40.8259>Puteoli</a> on an estate that had belonged to <a href=/people/2300 target=_blank>Cicero</a>. 8 Just before his death, he compelled <a href=/people/2783 target=_blank>Servianus</a>, then ninety years old, to kill himself, as has been said before, in order that <a href=/people/2783 target=_blank>Servianus</a> might not outlive him, and, as he thought, become emperor. He likewise gave orders that very many others who were guilty of slight offences should be put to death; these, however, were spared by <a href=/people/12361 target=_blank>Antoninus</a>. 9 And he is said, as he lay dying, to have composed the following lines: O blithe little soul, thou, flitting away, Guest and comrade of this my clay, Whither now goest thou, to what place Bare and ghastly and without grace? Nor, as thy wont was, joke and play. 10 Such verses as these did he compose, and not many that were better, and also some in Greek. 11 He lived 62 years, 5 months, 17 days. He ruled 20 years, 11 months. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 100 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#25 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:phi2331.phi001:26'><b>&sect; 26</b>&nbsp;&nbsp;He was tall of stature and elegant in appearance; his hair was curled on a comb, and he wore a full beard to cover up the natural blemishes on his face; and he was very strongly built. 2 He rode and walked a great deal and always kept himself in training by the use of arms and the javelin. 3 He also hunted, and he used often to kill a <a href=/people/10960 target=_blank>lion</a> with his own hand, but once in a hunt he broke his collar-bone and a rib; these hunts of his he always shared with his friends. 4 At his banquets he always furnished, according to the occasion, tragedies, comedies, <a about=https://topostext.org/place/410143UAte class=demonym long=14.2538 lat=40.9658>Atellan</a> farces, players on the sambuca, readers, or poets. 5 His <a about=https://topostext.org/place/419128BVHa class=place long=12.7756 lat=41.9419>villa</a> at <a about=https://topostext.org/place/420128UTib class=place long=12.7975 lat=41.9644>Tibur</a> was marvellously constructed, and he actually gave to parts of it the names of provinces and places of the greatest renown, calling them, for instance, Lyceum, Academia, Prytaneum, <a href=/people/2757 target=_blank>Canopus</a>, Poecile and Tempe. And in order not to omit anything, he even made a <a href=/people/10685 target=_blank>Hades</a>. 6 The premonitions of his death were as follows: On his last birthday, when he was commending <a href=/people/12361 target=_blank>Antoninus</a> to the gods, his bordered toga fell down without apparent cause and bared his head. 7 His ring, on which his portrait was carved, slipped of its own accord from his finger. 8 On the day before his birthday some one came into the senate wailing; by his presence <a href=/people/1020 target=_blank>Hadrian</a> was as disturbed as if he were speaking about his own death, for no one could understand what he was saying. 9 Again, in the senate, when he meant to say, after my son's death, he said, after mine. 10 Besides, he dreamed that he had asked his father for a soporific; he also dreamed that he had been overcome by a <a href=/people/10960 target=_blank>lion</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 100 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#26 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:latinLit:phi2331.phi001:27'><b>&sect; 27</b>&nbsp;&nbsp;Much was said against him after his death, and by many persons. 2 The senate wished to annul his acts, and would have refrained from naming him the Deified had not <a href=/people/12361 target=_blank>Antoninus</a> requested it. 3 <a href=/people/12361 target=_blank>Antoninus</a>, moreover, finally built a temple for him at <a about=https://topostext.org/place/408141PDik class=place long=14.1253 lat=40.8259>Puteoli</a> to take the place of a tomb, and he also established a quinquennial contest and flamens and sodales and many other institutions which appertain to the honour of one regarded as a god. 4 It is for this reason, as has been said before, that many think that <a href=/people/12361 target=_blank>Antoninus</a> received the surname <a href=/people/1456 target=_blank>Pius</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 138 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/2*.html#27 target=_blank>LA</a>                        </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=232', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas232";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=232';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

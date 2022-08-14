@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Lysias 19, On the Property of Aristophanes' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='On the Property of Aristophanes, Lysias, Speeches, translated by Walter Rangeley Maitland Lamb  (1882-1961), from the Loeb edition of 1930, text made available by permission of the publishers at the Internet Archive and Project Gutenberg.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-388' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -388' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain?' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/473' content='urn:cts:greekLit:tlg0540.tlg019' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n50000909' content='Lysias'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88635997' content='Walter Rangeley Maitland Lamb  (1882-1961)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://archive.org/details/lysiaslamb00lysiuoft' /><h2>Lysias 19, On the Property of Aristophanes</h2>On the Property of Aristophanes, Lysias, Speeches, translated by Walter Rangeley Maitland Lamb  (1882-1961), from the Loeb edition of 1930, text made available by permission of the publishers at the Internet Archive and Project Gutenberg. This text has 27 tagged references to 16 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0540.tlg019'>urn:cts:greekLit:tlg0540.tlg019</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q16331827'>Q16331827</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:1'><b>&sect; 1</b>&nbsp;&nbsp;This suit troubles me greatly, gentlemen of the jury, when I consider that if I do not speak well, not only I, but my father will appear in the wrong, and I shall lose all my property. So, if I am not naturally skillful in this task, I must come to the rescue of myself and my father as best I can. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:2'><b>&sect; 2</b>&nbsp;&nbsp;You see the careful preparation and zeal of my enemies, and I need say nothing about them, and all who know me know my inexperience. So I shall beg you grant what is just (for me) and easy (for you), to hear me with patience, as well as the prosecution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:3'><b>&sect; 3</b>&nbsp;&nbsp;For a defendant is necessarily at a disadvantage even if you listen impartially, for the prosecutors have planned for a long time, and without any risk to themselves have made their attack, but I struggle with fear, prejudice and great danger. So it is right for you to show greater favor to the defendants. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:4'><b>&sect; 4</b>&nbsp;&nbsp;For I suppose you all know that many who make terrible accusations have at once been convicted of falsifying so evidently, that they leave the court and become mistrusted for all they do. Some again have been convicted of false witness and of seeking to ruin men, when there was nothing more to their advantage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:5'><b>&sect; 5</b>&nbsp;&nbsp;Since, as I hear, there are many such cases, gentlemen of the jury, do not trust the words of the prosecution until I speak. For I hear, and I think many of you know that slander is most difficult (to deal with). </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:6'><b>&sect; 6</b>&nbsp;&nbsp;Surely we may realize this when so many come to trial on this charge, for usually the last tried are acquitted; for you listen to them without prejudice, and you admit their arguments willingly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:7'><b>&sect; 7</b>&nbsp;&nbsp;So remember that <a href=/people/2535 target=_blank>Nicophemus</a> and <a href=/people/73 target=_blank>Aristophanes</a> were put to death without a trial, before the arrival of any one to (hear) them proved guilty. For no one saw them after the arrest; for they did not give up their bodies for burial, and so terrible was their fate, that besides all the rest they were deprived of this (privilege) too. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:8'><b>&sect; 8</b>&nbsp;&nbsp;But I will pass this by, for I could never finish (the subject); but much harder I think was the fate of the sons of <a href=/people/73 target=_blank>Aristophanes</a>. For though never wronging any one in public or private, they not only lost their patrimony contrary to your laws, but also their remaining hope was blighted of being brought up by their grandfather. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:9'><b>&sect; 9</b>&nbsp;&nbsp;Still I, deprived of kindred, of the dowry (of my sister), and having to bring up three children, have charges brought against me, and run in danger about the inheritance which my ancestors left me, acquired legally (by them). And yet, gentlemen of the jury, my father during his lifetime spent more for the state than for himself and family, and it was four times what I have now, as I was often at hand when he was reckoning. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:10'><b>&sect; 10</b>&nbsp;&nbsp;Do not prejudge the injustice of a man who spent little for himself and much every year for you, but (be ready to condemn those) who are accustomed to spend their patrimony and everything else they get for vicious pleasures. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:11'><b>&sect; 11</b>&nbsp;&nbsp;It is difficult, gentlemen of the jury, to defend myself contrary to the opinion which some hold about the property of <a href=/people/2535 target=_blank>Nicophemus</a>, both because of the present scarcity of money in the state, and because the suit concerns the treasury. And yet under these disadvantages, you will readily see that the accusations are not true. And I beg you by every means in my power to hear me favorably to the close, and to vote whatever you think best and in best accord with your oaths. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:12'><b>&sect; 12</b>&nbsp;&nbsp;In the first place I will inform you how they came to be connections of mine. For <a href=/people/164 target=_blank>Conon</a>, commanding near the <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a>, who was my father's friend when he was Trierarch, asked him to give my sister to the son of <a href=/people/2535 target=_blank>Nicophemus</a> when he asked her hand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:13'><b>&sect; 13</b>&nbsp;&nbsp;And he seeing that they (<a href=/people/2535 target=_blank>Nicophemus</a> and his son) were trusted by <a href=/people/164 target=_blank>Conon</a>, and were serviceable to the state, then at least conforming to her laws, promised to give her, not realizing the bad repute into which they would fall, at a time when any one of you would have wished to be connected with them; that it was (done) for the sake of money, it is easy to understand from the whole life and conduct of my father. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:14'><b>&sect; 14</b>&nbsp;&nbsp;For when he was at a suitable age, although he could have married another with a large dowry, he married my mother who brought none, because she was the daughter of <a href=/people/62 target=_blank>Xenophon</a>, son of <a href=/people/75 target=_blank>Euripides</a>, who not only seemed to be of good character, but you thought him worthy to be Strategus, as I hear. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:15'><b>&sect; 15</b>&nbsp;&nbsp;Moreover he did not give my sisters to rich husbands who would have been willing to take them without dowries, because they seemed to be of inferior birth, but one to <a href=/people/1034 target=_blank>Philomelus</a> of <a about=https://topostext.org/place/380239DPai class=person long=23.8553 lat=37.9585>Paeania</a>, whom they say is better in character than wealth, another to a man who lost his property through no fault of his own, his nephew, Phaidrus of Murrhinoute, besides giving him forty minae, and the same to <a href=/people/73 target=_blank>Aristophanes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:16'><b>&sect; 16</b>&nbsp;&nbsp;And besides, though I could have (married a woman with) a large dowry, be advised a smaller one, that I might be sure of having connections orderly and discreet. And now my wife is the daughter of <a href=/people/4946 target=_blank>Critodemus</a> of <a about=https://topostext.org/place/380237DAlo class=person long=23.75 lat=37.95>Alopeke</a>, who was put to death by the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> after the naval battle of the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:17'><b>&sect; 17</b>&nbsp;&nbsp;And now, gentlemen of the jury, is it not probable that one who married without a portion, and gave his daughter much money, and took a small dowry for his son, should be trusted to have sought connection with these men for no money considerations? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:18'><b>&sect; 18</b>&nbsp;&nbsp;It is easy to see that <a href=/people/73 target=_blank>Aristophanes</a>, already married, would have confided in any one sooner than my father. For their ages were wide apart, and their dispositions still more; for my father had merely his own concerns to attend to, but <a href=/people/73 target=_blank>Aristophanes</a> wished to attend not only to his own private affairs, but to public ones as well, and if he had any money, he spent it in his desire for honor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:19'><b>&sect; 19</b>&nbsp;&nbsp;You know from what he used to do that I speak the truth. For first, when <a href=/people/164 target=_blank>Conon</a> wished to send some one to <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, he undertook the commission and went with <a href=/people/1182 target=_blank>Eunomus</a>, enjoying the friendship and hospitality of <a href=/people/23 target=_blank>Dionysius</a>, who benefited the state greatly, as I heard from those in his company at <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Piraeus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:20'><b>&sect; 20</b>&nbsp;&nbsp;And the hope of the expedition was to persuade <a href=/people/23 target=_blank>Dionysius</a> to become allied to <a href=/people/417 target=_blank>Evagoras</a>, and hostile to the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a>, and a friend and ally to your city. And this they did in spite of dangers which threatened by sea and from the enemy, and they persuaded <a href=/people/23 target=_blank>Dionysius</a> not to send the trireme which he had prepared for the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:21'><b>&sect; 21</b>&nbsp;&nbsp;And afterwards, when ambassadors came from <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a> for assistance, he did cease his activity. You gave them triremes, and voted other aid, but they lacked funds for the expedition. For they came with little money, and asked for much; for they (asked it) not only for the ships, but they hired mercenaries, and bought arms. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:22'><b>&sect; 22</b>&nbsp;&nbsp;Now <a href=/people/73 target=_blank>Aristophanes</a> himself furnished most of the money; and when there was not enough, he persuaded his friends, asking for it and giving securities, and having forty minae of his half-brother at his house he used them up. And the day before he sailed, he went to my father and asked him to lend him whatever money he had. For he said it was needed for paying the mercenaries. We had in ready money seven minae, and he took this and used it up. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:23'><b>&sect; 23</b>&nbsp;&nbsp;Now what man, gentlemen of the jury, ambitious, with letters from his father that he would find no lack in <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, having moreover been chosen ambassador, and being about to sail to <a href=/people/417 target=_blank>Evagoras</a>, would have left everything behind, and would not, if he could by contributing everything, please him (<a href=/people/417 target=_blank>Evagoras</a>) and make a large profit? That this is the case, call <a href=/people/1182 target=_blank>Eunomus</a>. WITNESSES. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:24'><b>&sect; 24</b>&nbsp;&nbsp;You hear the witnesses, both that they lent (the money) at his demand, and that they received it back, for it was brought them on the trireme. From what has been said, it is easy to see that in these emergencies he spared himself not in the least. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:25'><b>&sect; 25</b>&nbsp;&nbsp;Here is the best proof: <a href=/people/6429 target=_blank>Demus</a>, the son of Pyrolampes, in command of the trireme for <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, asked me to go to him, saying that he had from the king of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a> a golden bowl, for which he wished to get seventeen minae, which he would spend on his trierarchy; when he came to <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a> he would redeem it, paying twenty minae; for through this pledge he would have plenty of money and other advantages in Asia Minor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:26'><b>&sect; 26</b>&nbsp;&nbsp;<a href=/people/73 target=_blank>Aristophanes</a>, hearing this from <a href=/people/6429 target=_blank>Demus</a>, though I urged him, and although he would have taken the cup, and gained four minae interest, said he had no money, and declared he had borrowed from his friends besides, otherwise he would be most glad to take the pledge and oblige us by what we asked. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:27'><b>&sect; 27</b>&nbsp;&nbsp;I will bring witnesses that these are the facts. WITNESSES. From the evidence it is certain that <a href=/people/73 target=_blank>Aristophanes</a> left no money behind; and he had not much (in the way of) bronze. And when he entertained the ambassadors from <a href=/people/417 target=_blank>Evagoras</a> he had to borrow the plate. And we will read you what he left. INVENTORY. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:28'><b>&sect; 28</b>&nbsp;&nbsp;Perhaps some of you, gentlemen of the jury, think this is a small inventory. Bear this in mind, that before our naval victory he only had a little estate at <a about=https://topostext.org/place/382240DRha class=place long=24.027 lat=38.222>Rhamnus</a>. The naval battle was in the archonship of Euboulus. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:29'><b>&sect; 29</b>&nbsp;&nbsp;So in four or five years, as at first he had no property, it was no easy matter for him to supply the chorus twice for tragedies, for himself and his father, serve as Trierarch three consecutive years, make large contributions, build a house for five minae, and get more than three hundred plethra of land; and yet, besides all this, do you think he necessarily left many household effects? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:30'><b>&sect; 30</b>&nbsp;&nbsp;But not even families of long-standing wealth could show much of value, for sometimes, no matter how desirous one may be, it is not possible to buy that which always gives pleasure to its possessor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:31'><b>&sect; 31</b>&nbsp;&nbsp;But consider this. Of others whose property you confiscated, not only did you sell no furniture, but the doors were torn from the houses. But when the confiscation had taken place, and my sister had left, we set a guard in the house, that neither the doors, vases, nor anything else might be lost. And property of more than a thousand drachmae was reported, more than you ever took from any one else. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:32'><b>&sect; 32</b>&nbsp;&nbsp;Besides, both formerly before the commissioners and now we wish to give a pledge, the greatest in use, that we have no money of <a href=/people/73 target=_blank>Aristophanes</a>, but he owes the dowry of my sister and seven minae, which he took from my father when he went off. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:33'><b>&sect; 33</b>&nbsp;&nbsp;How then would men be more wretched than to be thought to hold the property of others, after loss of their own? And what is the worst of all, to receive a sister with many children, look after them, and have nothing for myself, if you take even what we have. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:34'><b>&sect; 34</b>&nbsp;&nbsp;Come now, by the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> gods! Look at it in this light, gentlemen of the jury. If one of you happened to give to <a href=/people/155 target=_blank>Timotheus</a>, son of <a href=/people/164 target=_blank>Conon</a>, his daughter or sister, and when he was deprived of civil rights, and accused, his property was seized, and if, when all was sold, the city did not get four talents, on this account would you think it right to ruin his family and relatives, because the property turned out to be not even a fraction of what you thought it? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:35'><b>&sect; 35</b>&nbsp;&nbsp;All of you here know that <a href=/people/164 target=_blank>Conon</a> was in command, and that <a href=/people/2247 target=_blank>Nicodemus</a> executed his commands. It is likely that <a href=/people/164 target=_blank>Conon</a> gave part of the profits to some other, so if they thought <a href=/people/2247 target=_blank>Nicodemus</a> had much, they would agree that <a href=/people/164 target=_blank>Conon</a>'s share was ten times as much. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:36'><b>&sect; 36</b>&nbsp;&nbsp;And still they seem never to have had any difference of opinion, so it is likely that they had the same ideas about money, namely, to have here sufficient for their sons, and to take the rest with them. For <a href=/people/164 target=_blank>Conon</a> had a son and wife in <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, <a href=/people/2247 target=_blank>Nicodemus</a> a wife and daughter, and they thought their property there to be as safe as that here. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:37'><b>&sect; 37</b>&nbsp;&nbsp;And besides this, think, if some one who had not acquired his property, but had inherited it from his father, distributed it to his sons, that he would have reserved the most for himself. For all with money prefer to be served by their children rather than ask it of them in poverty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:38'><b>&sect; 38</b>&nbsp;&nbsp;Now if you should confiscate the property of <a href=/people/155 target=_blank>Timotheus</a>, — and may it not happen, unless great good come to the state from it, — and should gain less from it than came from the property of <a href=/people/73 target=_blank>Aristophanes</a>, for this reason would you believe it right that his relatives should lose their property? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:39'><b>&sect; 39</b>&nbsp;&nbsp;It is not likely, gentlemen of the jury. For the death of <a href=/people/164 target=_blank>Conon</a> and the will which he made in <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a> clearly showed that his money was a very small part of what you expected, for to <a href=/people/11 target=_blank>Athena</a> and to <a href=/people/2 target=_blank>Apollo</a> in <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> he dedicated five thousand staters. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:40'><b>&sect; 40</b>&nbsp;&nbsp;And to his nephew who kept guard for him and had charge of his affairs in <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, he gave ten thousand drachmae, and three talents to his brother; the rest, seventeen talents, he left to his son. The sum total is about forty talents. And no one can say that he was robbed or that a just return was not made. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:41'><b>&sect; 41</b>&nbsp;&nbsp;For he made his will when in sickness, in his right mind. Now call me the witnesses. WITNESSES. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:42'><b>&sect; 42</b>&nbsp;&nbsp;Surely one would have thought, before both cases were shown, that the property of <a href=/people/2535 target=_blank>Nicophemus</a> was a small fraction of that of <a href=/people/164 target=_blank>Conon</a>. <a href=/people/73 target=_blank>Aristophanes</a> purchased land and a house for more than five talents, supplied choruses for himself and his father for five thousand drachmae, and spent eighty minae as Trierarch. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:43'><b>&sect; 43</b>&nbsp;&nbsp;And in taxes he contributed for both no less than forty minae, and for the expedition to <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> he spent a hundred minae. For sending the triremes when the <a about=https://topostext.org/place/350330RCyp class=ethnic long=33 lat=35>Cyprians</a> came and you gave them ten ships, for pay for the mercenaries and the purchase of arms, he furnished thirty thousand drachmae. The amount of this is a little less than fifteen talents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:44'><b>&sect; 44</b>&nbsp;&nbsp;So you do not charge me with reason, since the property of <a href=/people/73 target=_blank>Aristophanes</a> appears to be more than a third part of that of <a href=/people/164 target=_blank>Conon</a>, which is agreed was rightly reported by himself, though appearing to be much greater. And I do not reckon what <a href=/people/2535 target=_blank>Nicophemus</a> had in <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, where were his wife and daughter. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:45'><b>&sect; 45</b>&nbsp;&nbsp;I do not believe, gentlemen of the jury, that you will ruin me after my producing such conclusive evidence. For I have heard from my father and other older men that both now and formerly you have been mistaken about the property of many men, and that many while living seem to be wealthy, and after death they turned out very different from what you supposed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:46'><b>&sect; 46</b>&nbsp;&nbsp;For example, every one supposed <a href=/people/3617 target=_blank>Ischomachus</a> as long as he lived was worth more than seventy talents, as I hear; but each of his two sons had less than ten at his death. <a href=/people/309 target=_blank>Stephanus</a>, son of <a href=/people/2943 target=_blank>Thallus</a>, was said to be worth more than fifty talents, but his property after his death proved to be about eleven talents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:47'><b>&sect; 47</b>&nbsp;&nbsp;The estate of <a href=/people/115 target=_blank>Nicias</a> was expected to be worth not less than a hundred talents, and much of it in ready money; but when <a href=/people/1333 target=_blank>Niceratus</a> was dying, he said himself he was not leaving any gold or silver, and the house which he left to his son was not worth more than fourteen talents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:48'><b>&sect; 48</b>&nbsp;&nbsp;Again <a href=/people/218 target=_blank>Callias</a>, son of <a href=/people/919 target=_blank>Hipponicus</a>, at the recent death of his father seemed to have inherited more than any other Greek, but as he says, his grandfather valued (the property) at two hundred talents. His rateable property is really not worth two talents. You all know <a href=/people/1621 target=_blank>Cleophon</a>, that for many years he managed all the finances of the state and was supposed to have much from the government; but at his death there was no money, and the relatives and connections whom he left were confessedly poor men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:49'><b>&sect; 49</b>&nbsp;&nbsp;So we are evidently much deceived in regard to men of hereditary wealth and those who have recently become noted. And I think the reason is that one dares to say without sufficient grounds that so-and-so has many talents from the government. And I do not wonder at what they say about the dead (for they cannot be confuted by them), but at their attempt to deceive during their life. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:49' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:50'><b>&sect; 50</b>&nbsp;&nbsp;For you yourselves lately heard in the assembly that <a href=/people/1200 target=_blank>Diotimus</a> had forty talents more than he acknowledged from the ship captains and merchants; and no one tested him when he came bringing his accounts and feeling bad that he had been slandered in his absence, that too when the state was in need of money and he wished to give a statement. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:51'><b>&sect; 51</b>&nbsp;&nbsp;Think now what would happen if after all <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> had heard that <a href=/people/1200 target=_blank>Diotimus</a> had forty talents, he had met his fate before sailing home. Then his relatives would have been in greatest danger, if they had had to defend themselves against such a charge, not knowing any of the facts. These are responsible for your being mistaken about many, and unjustly ruining some, (these men) who rashly venture to speak falsely and wish to bring charges against others. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:51' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:52'><b>&sect; 52</b>&nbsp;&nbsp;Then I suppose you know that <a href=/people/52 target=_blank>Alcibiades</a> was Strategus for four or five years, having prevailed over and conquered the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a>, and the cities thought best to give him twice as much as to any other general, so that some thought he owned more than a hundred talents. But at his death he showed it was not the case, for he left a smaller estate to his children than he had received from his guardians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:52' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:53'><b>&sect; 53</b>&nbsp;&nbsp;That such things formerly happened is readily seen; and they say the noblest and wisest are especially willing to change their opinions. If then I seem to speak to the point, and bring sufficient testimony, gentlemen of the jury, in every way favor me, as, although the accusation is so great, I believe I shall win with truth on my side; and if there is no way in which you are willing to be persuaded, there seems to be no hope for me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:54'><b>&sect; 54</b>&nbsp;&nbsp;But by the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> gods, gentlemen of the jury, be willing to save me with justice (on my side), rather than ruin me unjustly; and believe they speak the truth, who even in silence during their lives conduct themselves wisely and justly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:55'><b>&sect; 55</b>&nbsp;&nbsp;So in regard to the writ itself and how they became my connections and that his property was not enough for the voyage, but that he borrowed elsewhere, you have heard and testimony has been given you; but I wish to say a few words about myself. For I at thirty years of age never spoke wrongly to my father, nor has a citizen ever brought a charge against me, and though living near the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a> I was never seen in the court or assembly before this befell me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:55' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:56'><b>&sect; 56</b>&nbsp;&nbsp;So much I can say of myself, but of my father, since the charge has been made as if he were at fault, have patience if I declare what he spent for the state and his friends. And (it is not) in a spirit of boasting, but to prove that it is inconsistent with the character of a man to spend much unnecessarily and to wish to keep common property at greatest risk. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:56' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:57'><b>&sect; 57</b>&nbsp;&nbsp;There are some who spend not only for this, but that they may gain twice as much if they are thought by you worthy to rule. My father never wished to be a leader, but he supplied all choruses, and was Trierarch seven times, and made many large contributions. That you may know this, each point will be read you. LIST OF SERVICES. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:57' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:58'><b>&sect; 58</b>&nbsp;&nbsp;Hear the number of them, gentlemen of the jury. For fifty years my father served the state with money, and in person. So in such a time, being thought wealthy from the start, it is natural that he shrank from no expense. Yet I will bring you witnesses. WITNESSES. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:58' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:59'><b>&sect; 59</b>&nbsp;&nbsp;The sum of all is nine talents and two thousand drachmae. Besides, privately he helped portion the daughters and sisters of some poor citizens, and ransomed some from the enemy, and furnished money for the burial of others. And this he did, believing it was a brave man's duty to help his friends, even if no one would learn of it; and now it is fitting that you should learn of it from me. Now call in this and that one. WITNESSES. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:60'><b>&sect; 60</b>&nbsp;&nbsp;You have heard the witnesses; remember that one could assume a character for a short time, but no one could elude detection for seventy years if a bad man. Against my father perhaps some could bring other charges, but no one, even an enemy, dared (to accuse him) about his money affairs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:61'><b>&sect; 61</b>&nbsp;&nbsp;Is it then right to trust the words of the accusers, rather than to the facts, (as to) what he did in all his life, and to time, which to be sure is the clearest test of truth? For if he had not been such a man, he would not have left so little from so much, since if you are deceived by these men and confiscate my property, you will get not two talents. So it is for your interest to acquit me not only because you think it right, but as a question of money, for you will be the gainers if I keep this. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:61' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:62'><b>&sect; 62</b>&nbsp;&nbsp;And see how many expenditures have been made in the past for the state, and now from what remains I am Trierarch, and my father died while Trierarch, and I shall endeavor, following his example, to give a small amount, little at a time, for the common weal. So in reality this (now) belongs to the state, and I shall not think I am wronged if deprived of it, but you will have greater benefit than if you confiscate it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:62' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0540.tlg019:63'><b>&sect; 63</b>&nbsp;&nbsp;Besides this, it is fitting to bear in mind the nature of my father. For whatever he wished to spend beyond the necessities of life, it evidently was in a direction in which the city too would gain some honor. For example, when he served in the cavalry, he purchased <a href=/people/10959 target=_blank>horses</a>, not only fine ones, but racers, with which he won at the <a about=https://topostext.org/place/379230SIst class=demonym long=22.9932 lat=37.9159>Isthmian</a> and <a about=https://topostext.org/place/378227SNem class=demonym long=22.7108 lat=37.8085>Nemean</a> games, so that the city was proclaimed and he crowned. So I beg you, gentlemen of the jury, bearing in mind these and all other words to protect me, and not to leave men in the power of their enemies. And so doing, you will vote justly, and for your own advantage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0540.tlg019.perseus-grc1:63' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=473', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas473";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=473';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

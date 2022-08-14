@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Pseudo-Epiphanius, Notitia Episcopatuum' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Pseudo-Epiphanius, Notitia Episcopatuum (Protocol order of Bishoprics) of the Patriarchate of Constantinople, possibly from around 640 CE, supplemented by the Greek provinces of Hierocles, Synecdemus, both Greek texts  in the public domain, transliterated/formatted by Brady Kiesling.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='640' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 640' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/567' content='urn:cts:greekLit:tlg2012.tlg027' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/' content='Pseudo-Epiphanius'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2005086093' content='Brady Kiesling' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' /><h2>Pseudo-Epiphanius, Notitia Episcopatuum</h2>Pseudo-Epiphanius, Notitia Episcopatuum (Protocol order of Bishoprics) of the Patriarchate of Constantinople, possibly from around 640 CE, supplemented by the Greek provinces of Hierocles, Synecdemus, both Greek texts  in the public domain, transliterated/formatted by Brady Kiesling. This text has 461 tagged references to 391 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg2012.tlg027'>urn:cts:greekLit:tlg2012.tlg027</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87769111'>Q87769111</a>;     <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1.1>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:1.1'><b>&sect; 1.1</b>&nbsp;&nbsp;The exposition of senior patriarchs and metropolitans by Epiphanios, Archbishop of <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a><br />1. Patriarch of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a><br />2. Patriarch of <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinople</a><br />3. Patriarch of <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a><br />4. Patriarch of <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a><br />5. Patriarch of <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:2.1'><b>&sect; 2.1</b>&nbsp;&nbsp;Metropolitans: <br />1. Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a>: <a about=https://topostext.org/place/387355UMaz class=place long=35.4881 lat=38.7207>Kaisareia</a><br />2. Province of Asia: <a about=https://topostext.org/place/379273PEph class=place long=27.3397 lat=37.9419>Ephesos</a><br />3. Province of Europe: <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Herakleia</a><br />4. Province of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>: <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Ankyra</a><br />5. Province of Hellespontos: <a about=https://topostext.org/place/404279UCyz class=place long=27.8878 lat=40.3895>Kyzikos</a><br />6. Province of <a about=https://topostext.org/place/385280RLyd class=place long=28 lat=38.5>Lydia</a>: <a about=https://topostext.org/place/385280PSar class=place long=28.0403 lat=38.4883>Sardeis</a><br />7. Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nikomedeia</a><br />8. Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <a about=https://topostext.org/place/404297PNic class=place long=29.7168 lat=40.4266>Nikaia</a><br />9. Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalkedon</a><br />10. Province of <a about=https://topostext.org/place/370320RPam class=place long=32.01 lat=37.01>Pamphylia</a>: <a about=https://topostext.org/place/368314PSid class=place long=31.391 lat=36.768>Side</a><br />11. Province of <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a>: <a about=https://topostext.org/place/397370USeb class=place long=37.015 lat=39.745>Sebasteia</a><br />12. Province of Helenopontos: <a about=https://topostext.org/place/407358PAma class=place long=35.8349 lat=40.6586>Amasia</a><br />13. Province of Armenia 1: <a about=https://topostext.org/place/384384RMel class=place long=38.3611 lat=38.382>Melitene</a><br />14. Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a> 2: <a about=https://topostext.org/place/378346PTya class=place long=34.57 lat=37.82>Tyana</a><br />15. Province of <a about=https://topostext.org/place/410300RPap class=place long=30 lat=41>Paphlagonia</a>: <a about=https://topostext.org/place/406336UGan class=place long=33.6172 lat=40.603>Gangra</a><br />16. Province of Honoria: <a about=https://topostext.org/place/407316UBit class=place long=31.607 lat=40.7334>Klaudioupolis</a><br />17. Province of Pontos: <a about=https://topostext.org/place/406370UKab class=place long=36.9571 lat=40.5918>Neokaisareia</a><br />18. Province of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>: <a about=https://topostext.org/place/393316SPes class=place long=31.5832 lat=39.3314>Pisinous</a><br />19. Province of <a about=https://topostext.org/place/365295RLyc class=place long=29.5 lat=36.5>Lycia</a>: <a about=https://topostext.org/place/363300UMyr class=place long=29.9853 lat=36.259>Myra</a><br />20. Province of <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a>: <a about=https://topostext.org/place/377287PAph class=place long=28.7263 lat=37.7085>Stauroupolis</a><br />21. Province of <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a>: <a about=https://topostext.org/place/378291PLao class=place long=29.109 lat=37.836>Laodikia</a><br />22. Province of Phrygia Salutaris: <a about=https://topostext.org/place/385306USyn class=place long=30.55 lat=38.533>Synada</a><br />23. Province of <a about=https://topostext.org/place/375324RLyk class=place long=32.4 lat=37.5>Lykaonia</a>: <a about=https://topostext.org/place/379325PIko class=place long=32.4921 lat=37.8728>Ikonion</a><br />24. Province of <a about=https://topostext.org/place/370306RPis class=place long=30.6 lat=37.01>Pisidia</a>: <a about=https://topostext.org/place/383312UAnt class=place long=31.1884 lat=38.3048>Antiocheia</a><br />25. Province of <a about=https://topostext.org/place/370320RPam class=place long=32.01 lat=37.01>Pamphylia</a>: <a about=https://topostext.org/place/370309PPer class=place long=30.856 lat=36.961>Perge</a><br />26. Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a>: <a about=https://topostext.org/place/382342UMok class=place long=34.207 lat=38.1855>Mokesos</a><br />27. Province of Lazike: <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a><br />28. Province of Thrace: <a about=https://topostext.org/place/421247PPhi class=place long=24.751 lat=42.1468>Philippoupolis</a><br />29. Province of Europe: <a about=https://topostext.org/place/409260UTra class=place long=26.033 lat=40.8653>Traianoupolis</a><br />30. Province of <a about=https://topostext.org/place/372248RKyk class=place long=24.8 lat=37.2>Cyclades</a>: <a about=https://topostext.org/place/364282IRho class=place long=28.2244 lat=36.4408>Rhodos</a><br />31. Province of Haimimontos: <a about=https://topostext.org/place/417266PHad class=place long=26.559 lat=41.678>Adrianoupolis</a><br />32. Province of Haimimontos: <a about=https://topostext.org/place/432276UMar class=place long=27.5851 lat=43.2253>Markianoupolis</a><br />33. Province of Phrygia Kapatiane: <a about=https://topostext.org/place/379291PHie class=place long=29.1318 lat=37.9175>Hierapolis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.1>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:3.1'><b>&sect; 3.1</b>&nbsp;&nbsp;Autocephalous archbishoprics <br />1. Province of Mysia: <a about=https://topostext.org/place/432279POde class=place long=27.918 lat=43.2002>Odysos</a><br />2. Province of <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Skythia</a>: <a about=https://topostext.org/place/442287PTom class=place long=28.6592 lat=44.1715>Tome</a><br />3. Province of Europe: <a about=https://topostext.org/place/416278UBiz class=place long=27.7693 lat=41.5737>Bizye</a><br />4. Province of <a about=https://topostext.org/place/410300RPap class=place long=30 lat=41>Paphlagonia</a>: <a about=https://topostext.org/place/415342UPom class=place long=34.2116 lat=41.5179>Pompeioupolis</a><br />5. Province of Asia: <a about=https://topostext.org/place/384271PSmy class=place long=27.1383 lat=38.4191>Smyrna</a><br />6. Province of <a about=https://topostext.org/place/372324UIsa class=place long=32.3526 lat=37.1895>Isauria</a>: <a about=https://topostext.org/place/306313ULeo class=place long=31.3554 lat=30.683>Leontopolis</a><br />7. Province of Rodope: <a about=https://topostext.org/place/409255PMar class=place long=25.511 lat=40.874>Maronia</a><br />8. Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <a about=https://topostext.org/place/404289PBry class=place long=28.8827 lat=40.3756>Apamia</a><br />9. Province of Rodope: <a about=https://topostext.org/place/411253UPor class=place long=25.3253 lat=41.1286>Maximianoupolis</a><br />10. Province of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>: ton <a about=https://topostext.org/place/395316UGer class=ethnic long=31.6285 lat=39.5252>Germion</a><br />11. Province of Europe: <a about=https://topostext.org/place/414274UBer class=place long=27.3552 lat=41.402>Arkadioupolis</a><br />12. Province of Thrace: <a about=https://topostext.org/place/424256UBer class=place long=25.6248 lat=42.427>Berone</a><br />13. Province of <a about=https://topostext.org/place/392261ILes class=place long=26.2 lat=39.2075>Lesbos</a> island: <a about=https://topostext.org/place/391265PMyt class=place long=26.5621 lat=39.1114>Mitylene</a><br />14. Province of Hellespontos: <a about=https://topostext.org/place/404271UPar class=place long=27.0671 lat=40.4257>Parion</a><br />15. Province of <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a>: <a about=https://topostext.org/place/375273PMil class=place long=27.2775 lat=37.5292>Miletos</a><br />16. Province of Thrace: <a about=https://topostext.org/place/432256UNic class=place long=25.6118 lat=43.2181>Nikopolis</a><br />17. Province of Nesos: <a about=https://topostext.org/place/406276IPro class=place long=27.6167 lat=40.6167>Prokonesos</a><br />18. Province of Rodope: <a about=https://topostext.org/place/425276UAnc class=place long=27.6461 lat=42.5543>Anchialos</a><br />19. Province of Europe: <a about=https://topostext.org/place/411282USel class=place long=28.2477 lat=41.0785>Selybria</a><br />20. Province of <a about=https://topostext.org/place/392261ILes class=place long=26.2 lat=39.2075>Lesbos</a> island: <a about=https://topostext.org/place/394262PMet class=place long=26.1769 lat=39.3692>Methymne</a><br />21. Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <a about=https://topostext.org/place/404292UPru class=place long=29.1564 lat=40.4325>Kios</a><br />22. Province of Europe: <a about=https://topostext.org/place/409271UApr class=place long=27.105 lat=40.927>Aproi</a><br />23. Province of Rodope: <a about=https://topostext.org/place/409264PKyp class=place long=26.3921 lat=40.9245>Kympsalon</a><br />24. Province of Zechia: <a about=https://topostext.org/place/446335UChe class=place long=33.4922 lat=44.6103>Cherson</a><br />25. Province of Zechia: <a about=https://topostext.org/place/454367WBos class=place long=36.66 lat=45.36>Bosporos</a><br />26. Province of Zechia: Nikopsis <br />27. Province of <a about=https://topostext.org/place/372324UIsa class=place long=32.3526 lat=37.1895>Isauria</a>: Kotradon <br />28. Province of Helenopontos: <a about=https://topostext.org/place/406353UEuc class=place long=35.2699 lat=40.5727>Euchaiton</a><br />29. Province of <a about=https://topostext.org/place/372248RKyk class=place long=24.8 lat=37.2>Kyklades</a>: <a about=https://topostext.org/place/356271IKar class=place long=27.1333 lat=35.5833>Karpathos</a><br />30. Province of Rodope: <a about=https://topostext.org/place/407261PAin class=place long=26.0812 lat=40.7238>Ainos</a><br />31. Province of Europe: <a about=https://topostext.org/place/413275UDro class=place long=27.544 lat=41.3001>Drizeparon</a><br />32. Province of Haimimontos: <a about=https://topostext.org/place/427277UMes class=place long=27.7359 lat=42.6591>Mesembria</a><br />33. Province of <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a>: Herakleioupolis <br />34. Province of <a href=/people/12179 target=_blank>Abasgia</a>: <a about=https://topostext.org/place/430410UDio class=place long=41.0188 lat=42.9962>Sebastopolis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.1>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.1'><b>&sect; 4.1</b>&nbsp;&nbsp;Regarding subordinate bishops <br />Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a>: <br />The Metropolis of <a about=https://topostext.org/place/387355UMaz class=place long=35.4881 lat=38.7207>Kaisareia</a> has five cities and/or bishops under it: <br />- Basilikai thermai <br />- Nysa <br />- Theodosioupolis Armenias <br />- Kamouliana <br />- Kikisos</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.2>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.2'><b>&sect; 4.2</b>&nbsp;&nbsp;Province of Asia: <br />The Metropolis of <a about=https://topostext.org/place/379273PEph class=place long=27.3397 lat=37.9419>Ephesos</a> has 36 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/382280UHyp class=place long=27.955 lat=38.275>Hypepa</a><br />- <a about=https://topostext.org/place/379278UTra class=place long=27.8354 lat=37.8598>Tralleis</a><br />- <a about=https://topostext.org/place/379275UMag class=place long=27.526 lat=37.853>Magnesia</a> on the Maiandros <br />- <a about=https://topostext.org/place/389271UEla class=place long=27.0384 lat=38.9415>Elaia</a><br />- <a about=https://topostext.org/place/395269Uadr class=place long=26.9346 lat=39.504>Adramytion</a><br />- <a about=https://topostext.org/place/395263UAss class=place long=26.3371 lat=39.4906>Assos</a><br />- <a about=https://topostext.org/place/395265UGar class=place long=26.5429 lat=39.5355>Gargara</a><br />- <a about=https://topostext.org/place/380284UMas class=place long=28.3528 lat=37.9504>Mastaura</a><br />- <a about=https://topostext.org/place/382282UKol class=place long=28.208 lat=38.2259>Kaloe</a><br />- Brioula <br />- <a about=https://topostext.org/place/389269PPit class=place long=26.9339 lat=38.9336>Pittane</a><br />- <a about=https://topostext.org/place/388270PMyr class=place long=26.98 lat=38.847>Myrine</a><br />- <a about=https://topostext.org/place/387268UPho class=place long=26.7532 lat=38.6704>Phokia</a><br />- Aurelioupolis <br />- <a about=https://topostext.org/place/379281UNys class=place long=28.1455 lat=37.9032>Nysse</a><br />- Maschakomeis <br />- <a about=https://topostext.org/place/381273UMet class=place long=27.3245 lat=38.124>Metropolitai</a><br />- Bareta <br />- <a about=https://topostext.org/place/385275UMag class=place long=27.4294 lat=38.6103>Magnesia</a> and Anelion <br />- Aninata <br />- <a about=https://topostext.org/place/391272PPer class=place long=27.1842 lat=39.1325>Pergamos</a><br />- <a about=https://topostext.org/place/377273PPri class=place long=27.2981 lat=37.6599>Priele</a><br />- Arkadioupolis <br />- Aneas Aule <br />- <a about=https://topostext.org/place/382281PDio class=place long=28.0833 lat=38.2276>Dios hieron</a><br />- Augaza <br />- Sieis <br />- <a about=https://topostext.org/place/381272PCol class=place long=27.141 lat=38.111>Kolophone</a><br />- <a about=https://topostext.org/place/381270PLeb class=place long=26.9647 lat=38.0779>Lebedos</a><br />- <a about=https://topostext.org/place/382268PTeo class=place long=26.7877 lat=38.1717>Teos</a><br />- <a about=https://topostext.org/place/384265PEry class=place long=26.4808 lat=38.3828>Erythrai</a><br />- Eklyzomenina <br />- <a about=https://topostext.org/place/396268UAnt class=place long=26.7862 lat=39.5716>Antandros</a><br />- <a about=https://topostext.org/place/392270UPer class=place long=26.963 lat=39.2602>Theodosioupolis Perperines</a><br />- <a about=https://topostext.org/place/388269UCym class=place long=26.9363 lat=38.7595>Kyme</a><br />- Palaioupolis</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.3>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.3'><b>&sect; 4.3</b>&nbsp;&nbsp;Province of Europe Thrace: <br />The Metropolis of <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Herakleia</a> has 5 cities and/or bishops under it: <br />- of <a about=https://topostext.org/place/409275UPan class=place long=27.467 lat=40.9071>Panion</a><br />- <a about=https://topostext.org/place/404267UKal class=place long=26.6808 lat=40.4139>Kallipolis</a><br />- <a about=https://topostext.org/place/405268UAgo class=place long=26.784 lat=40.513>Cherronesos</a><br />- Kyla <br />- <a about=https://topostext.org/place/410275UBis class=place long=27.508 lat=40.9784>Raidestos</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.4>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.4'><b>&sect; 4.4</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Ankyra</a> has 7 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/399345UTav class=place long=34.5061 lat=39.858>Tabia</a><br />- Helioupolis <br />- Aspone <br />- Berinoupolis <br />- Mnezon <br />- Kine <br />- Anastasioupolis</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.5>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.5'><b>&sect; 4.5</b>&nbsp;&nbsp;Province of Hellespontos: <br />- The Metropolis of <a about=https://topostext.org/place/404279UCyz class=place long=27.8878 lat=40.3895>Kyzikos</a> has 12 cities and/or bishops under it: <br />- Germe <br />- <a about=https://topostext.org/place/401277UPom class=place long=27.732 lat=40.109>Pemanenos</a><br />- Oke <br />- Sasabaris <br />- <a about=https://topostext.org/place/397279UAdr class=place long=27.883 lat=39.65>Adrianou therai</a><br />- <a about=https://topostext.org/place/403267UPit class=place long=26.6992 lat=40.3467>Lampsakos</a><br />- <a about=https://topostext.org/place/402264PAby class=place long=26.4091 lat=40.1951>Abydos</a><br />- <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanos</a><br />- <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilion</a><br />- <a about=https://topostext.org/place/398262UAnt class=place long=26.159 lat=39.752>Troas</a><br />- <a about=https://topostext.org/place/396276UPio class=place long=27.5796 lat=39.6262>Pionia</a><br />- <a about=https://topostext.org/place/401283UMil class=place long=28.3165 lat=40.0835>Melitoupolis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.6>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.6'><b>&sect; 4.6</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/385280RLyd class=place long=28 lat=38.5>Lydia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/385280PSar class=place long=28.0403 lat=38.4883>Sardeis</a> has 26 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/384285UPhi class=place long=28.5167 lat=38.35>Philadelphia</a><br />- <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Tripolis</a><br />- <a about=https://topostext.org/place/389278UThy class=place long=27.8405 lat=38.9229>Thyateira</a><br />- Settoi <br />- Aurelioupolis <br />- <a about=https://topostext.org/place/383278UTem class=place long=27.831 lat=38.3218>Tripolis</a><br />- Gordes <br />- <a about=https://topostext.org/place/379278UTra class=place long=27.8354 lat=37.8598>Tralle</a><br />- Saloi <br />- Silandos <br />- <a about=https://topostext.org/place/388283RMai class=place long=28 lat=38.6>Maionia</a><br />- Apollonos hieron <br />- Hyrkanis <br />- Moustine <br />- Akrasos <br />- <a about=https://topostext.org/place/389277UApo class=place long=27.6846 lat=38.8989>Apollonias</a><br />- Attaleia <br />- Bage <br />- <a about=https://topostext.org/place/384292UBla class=place long=29.209 lat=38.3574>Blandon</a><br />- Mesotymolon <br />- Hierokaisareia <br />- <a about=https://topostext.org/place/387281UDal class=place long=28.1426 lat=38.6684>Dalde</a><br />- Keraseis <br />- <a about=https://topostext.org/place/373281UStr class=place long=28.0645 lat=37.3136>Stratonikeia</a><br />- Gabala <br />- <a about=https://topostext.org/place/386283USat class=place long=28.2675 lat=38.5792>Sattala</a><br />- Hermoukapeleia</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.7>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.7'><b>&sect; 4.7</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nikomedeia</a> has 8 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/402291UPru class=place long=29.0615 lat=40.1848>Prousa</a> or Theoupolis <br />- Basilinoupolis <br />- Prainetos <br />- <a about=https://topostext.org/place/402287UApo class=place long=28.6818 lat=40.1684>Apollonias</a><br />- <a about=https://topostext.org/place/401281PDas class=place long=28.0504 lat=40.1322>Daskylion</a><br />- Gallos <br />- Neokaisareia <br />- Kolasia or Lophoi <br />- The Metropolis of <a about=https://topostext.org/place/404297PNic class=place long=29.7168 lat=40.4266>Nikaia</a> has 3 cities and/or bishops under it: <br />- Modrine or Melitos <br />- Linoe <br />- Gordoserboi <br />- The Metropolis of <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Kalchedon</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.8>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.8'><b>&sect; 4.8</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/370320RPam class=place long=32.01 lat=37.01>Pamphylia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/368314PSid class=place long=31.391 lat=36.768>Side</a> has 16 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/372311PSel class=place long=31.127 lat=37.229>Selge</a><br />- <a about=https://topostext.org/place/369312PAsp class=place long=31.172 lat=36.939>Aspendos</a><br />- <a about=https://topostext.org/place/370314UEte class=place long=31.4477 lat=37.0008>Ettene</a><br />- Horymne <br />- Kasoi <br />- Semneis <br />- Karalia <br />- <a about=https://topostext.org/place/365320UKor class=place long=31.9936 lat=36.5365>Karakision</a><br />- <a about=https://topostext.org/place/364321USye class=place long=32.148 lat=36.4459>Syedra</a><br />- Mylome or Ioustinianoupolis> <br />- Ouamandra <br />- Dalisandon <br />- Isba <br />- <a about=https://topostext.org/place/369315ULyr class=place long=31.4752 lat=36.874>Lyrbe</a><br />- Kolybrassos <br />- Manauga </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.9>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.9'><b>&sect; 4.9</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a> 2: <br />- The Metropolis of <a about=https://topostext.org/place/397370USeb class=place long=37.015 lat=39.745>Sebastia</a> has 5 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/400361UHer class=place long=36.0833 lat=39.9967>Sebastoupolis</a><br />- <a about=https://topostext.org/place/401381UNic class=place long=38.1477 lat=40.1366>Nikopolis</a><br />- <a about=https://topostext.org/place/396400USat class=place long=39.5979 lat=40.0277>Sattala</a><br />- Koloneia <br />- Berisse</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.10>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.10'><b>&sect; 4.10</b>&nbsp;&nbsp;Province of Helenopontos: <br />- The Metropolis of <a about=https://topostext.org/place/407358PAma class=place long=35.8349 lat=40.6586>Amasia</a> has 6 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/413363PAmi class=place long=36.315 lat=41.312>Aminsos</a><br />- <a about=https://topostext.org/place/420351PSin class=place long=35.143 lat=42.025>Sinope</a><br />- Ibora <br />- Andrapa <br />- Zalicha or <a about=https://topostext.org/place/306313ULeo class=place long=31.3554 lat=30.683>Leontopolis</a><br />- Zeloi</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.11>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.11'><b>&sect; 4.11</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/384384RMel class=place long=38.3611 lat=38.382>Melitene</a> has 5 cities and/or bishops under it: <br />- Arke <br />- Koukousos <br />- Arabissos <br />- Ariarathe <br />- <a about=https://topostext.org/place/383363UCom class=place long=36.3258 lat=38.328>Komana</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.12>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.12'><b>&sect; 4.12</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a> 2: <br />- The Metropolis of <a about=https://topostext.org/place/378346PTya class=place long=34.57 lat=37.82>Tyana</a> has 3 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/377342UKyb class=place long=34.2269 lat=37.6621>Kybistra</a><br />- Phaustinoupolis <br />- Sasima</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.13>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.13'><b>&sect; 4.13</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/410300RPap class=place long=30 lat=41>Paphlagonia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/406336UGan class=place long=33.6172 lat=40.603>Gangra</a> has 4 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/417324UAma class=place long=32.3868 lat=41.7495>Amastris</a><br />- <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Iounoupolis</a><br />- Dadybra <br />- Soroi</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.14>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.14'><b>&sect; 4.14</b>&nbsp;&nbsp;Province of Honorias: <br />- The Metropolis of <a about=https://topostext.org/place/407316UBit class=place long=31.607 lat=40.7334>Klaudioupolis</a> has 5 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/413314PHer class=place long=31.426 lat=41.287>Herakleia</a> of <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontos</a><br />- <a about=https://topostext.org/place/409311UPro class=place long=31.148 lat=40.9059>Prousias</a><br />- <a about=https://topostext.org/place/416230UTio class=place long=32.0344 lat=41.5682>Tios</a><br />- Krateia <br />- Adrianoupolis</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.15>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.15'><b>&sect; 4.15</b>&nbsp;&nbsp;Province of Pontos Polemoniakos: <br />- The Metropolis of <a about=https://topostext.org/place/406370UKab class=place long=36.9571 lat=40.5918>Neokaisareia</a> has 4 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/410397PTra class=place long=39.727 lat=40.999>Trapezous</a><br />- <a about=https://topostext.org/place/409384UKer class=place long=38.3882 lat=40.9197>Kerasous</a><br />- of <a about=https://topostext.org/place/410375UPol class=place long=37.494 lat=41.0266>Polemonion</a><br />- <a about=https://topostext.org/place/404366UCom class=place long=36.6387 lat=40.3575>Komana</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.16>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.16'><b>&sect; 4.16</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> 2: <br />- The Metropolis of <a about=https://topostext.org/place/393316SPes class=place long=31.5832 lat=39.3314>Pisinous</a> has 7 cities and/or bishops under it: <br />- of <a about=https://topostext.org/place/390313UAmo class=place long=31.2956 lat=39.0189>Amorion</a><br />- Klanaos <br />- Eudoxias <br />- Petanisos <br />- Troknada <br />- <a about=https://topostext.org/place/395316UGer class=place long=31.6285 lat=39.5252>Germokoloneia</a><br />- Palia</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.17>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.17'><b>&sect; 4.17</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/365295RLyc class=place long=29.5 lat=36.5>Lycia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/363300UMyr class=place long=29.9853 lat=36.259>Myra</a> has 36 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/380284UMas class=place long=28.3528 lat=37.9504>Mastaura</a><br />- <a about=https://topostext.org/place/366291UTel class=place long=29.1058 lat=36.6209>Telmesos</a><br />- <a about=https://topostext.org/place/363302PLim class=place long=30.17 lat=36.343>Elimyra</a><br />- <a about=https://topostext.org/place/368294UAra class=place long=29.3869 lat=36.7458>Araxe</a><br />- <a about=https://topostext.org/place/362298UApe class=place long=29.783 lat=36.159>Aprilla</a><br />- <a about=https://topostext.org/place/367300UPod class=place long=30.043 lat=36.68>Apodaleia</a><br />- <a about=https://topostext.org/place/365300UAry class=place long=30.0596 lat=36.5136>Orykanda</a><br />- Tatloi <br />- <a about=https://topostext.org/place/364299UArn class=place long=29.8718 lat=36.4428>Arnea</a><br />- <a about=https://topostext.org/place/364292USid class=place long=29.1928 lat=36.4107>Sidyma</a><br />- Zenonoupolis <br />- <a about=https://topostext.org/place/363305UOly class=place long=30.4718 lat=36.3954>Olympos</a><br />- <a about=https://topostext.org/place/366294UTlo class=place long=29.42 lat=36.5535>Tlos</a><br />- <a about=https://topostext.org/place/364303UKor class=place long=30.2736 lat=36.3707>Korydala</a><br />- <a about=https://topostext.org/place/368286UKau class=place long=28.6215 lat=36.8259>Kanos</a><br />- Akrassos <br />- <a about=https://topostext.org/place/364293PXan class=place long=29.3182 lat=36.3565>Xanthos</a><br />- <a about=https://topostext.org/place/370294UBou class=place long=29.4152 lat=36.974>Bobon</a> or Sophianoupolis <br />- Markiane <br />- <a about=https://topostext.org/place/368296UOin class=place long=29.5529 lat=36.8037>Oinounda</a><br />- <a about=https://topostext.org/place/366298UCho class=place long=29.83623 lat=36.64235>Choma</a><br />- <a about=https://topostext.org/place/364297PPhe class=place long=29.6622 lat=36.2428>Phellos</a><br />- <a about=https://topostext.org/place/362296UAnt class=place long=29.6349 lat=36.1999>Antiphellos</a><br />- <a about=https://topostext.org/place/365306PPha class=place long=30.552 lat=36.524>Phaseleias</a><br />- <a about=https://topostext.org/place/364303URho class=place long=30.2657 lat=36.3873>Rodiapolis</a><br />- <a about=https://topostext.org/place/365302UAka class=place long=30.228 lat=36.54>Akalissos</a><br />- <a about=https://topostext.org/place/366302UIde class=place long=30.2022 lat=36.5546>Lebesos</a><br />- Akandroi <br />- Palaiotoi <br />- Eudokias or Ioustinoupolis <br />- Komna <br />- <a about=https://topostext.org/place/363293UPat class=place long=29.316 lat=36.2618>Patara</a><br />- <a about=https://topostext.org/place/370296UBal class=place long=29.5809 lat=36.9558>Balboura</a><br />- <a about=https://topostext.org/place/364296UNei class=place long=29.627 lat=36.442>Nesoi</a><br />- <a about=https://topostext.org/place/362298UKya class=place long=29.815 lat=36.246>Kyanea</a><br />- <a about=https://topostext.org/place/363304UMel class=place long=30.4066 lat=36.2548>Melonitoi</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.18>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.18'><b>&sect; 4.18</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a>: <br />- The Metropolis of <a about=https://topostext.org/place/377287PAph class=place long=28.7263 lat=37.7085>Stauroupolis</a> has 28 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/372295UCib class=place long=29.4918 lat=37.1602>Kibyra</a><br />- Sizoi <br />- <a about=https://topostext.org/place/376290UHer class=place long=28.9856 lat=37.6225>Herakleia Salbakon</a><br />- <a about=https://topostext.org/place/375290UApo class=place long=29.0175 lat=37.508>Apollonias</a><br />- Herakleia Lakymon <br />- <a about=https://topostext.org/place/374289UTab class=place long=28.8462 lat=37.4314>Tabai</a><br />- Larbon <br />- <a about=https://topostext.org/place/379285UAnt class=place long=28.5483 lat=37.8735>Antiocheia Maiandrou</a><br />- Tapassai <br />- <a about=https://topostext.org/place/378284UHar class=place long=28.3527 lat=37.8026>Harpasa</a><br />- <a about=https://topostext.org/place/377284UNea class=place long=28.3879 lat=37.6929>Neapolis</a><br />- <a about=https://topostext.org/place/378282UOrt class=place long=28.2405 lat=37.8261>Orthosia</a><br />- Anotetartes <br />- <a about=https://topostext.org/place/376280PAla class=place long=27.9842 lat=37.5945>Labanda</a><br />- <a about=https://topostext.org/place/373281UStr class=place long=28.0645 lat=37.3136>Stratonikeia</a><br />- Alkanda <br />- <a about=https://topostext.org/place/373278PMyl class=place long=27.781 lat=37.315>Mylasa</a><br />- Meizon <br />- <a about=https://topostext.org/place/373276UIas class=place long=27.5846 lat=37.2795>Iassos</a><br />- tou Barbyliou <br />- <a about=https://topostext.org/place/370274PHal class=place long=27.4238 lat=37.0323>Halikarnasos</a><br />- <a about=https://topostext.org/place/375283UHyl class=place long=28.3497 lat=37.505>Hylarima</a><br />- <a about=https://topostext.org/place/367274PKni class=place long=27.374 lat=36.6862>Knidos</a><br />- Metaba <br />- <a about=https://topostext.org/place/371272UMyn class=place long=27.2347 lat=37.058>Myndos</a><br />- tou Hierou <br />- Kindrama <br />- <a about=https://topostext.org/place/370280UKer class=place long=27.9562 lat=37.0417>Keramos</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.19>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.19'><b>&sect; 4.19</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a> Kappatiane: <br />- The Metropolis of <a about=https://topostext.org/place/378291PLao class=place long=29.109 lat=37.836>Laodikeia</a> has 17 cities and/or bishops under it: <br />- Tiberioupolis <br />- <a about=https://topostext.org/place/392296UAiz class=place long=29.6097 lat=39.2011>Azanon</a><br />- <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Ankyra</a> Synaou <br />- Peltai <br />- Appia <br />- <a about=https://topostext.org/place/390294UKad class=place long=29.4025 lat=39.0142>Kadoi</a><br />- Ikria <br />- Elouza <br />- Tranoupolis <br />- <a about=https://topostext.org/place/385297USeb class=place long=29.6581 lat=38.4946>Sebasteia</a><br />- <a about=https://topostext.org/place/383298UEum class=place long=29.8453 lat=38.3214>Eumeneia</a><br />- Timenos theron <br />- Agathoukomeoi <br />- Alioi <br />- Tripolis <br />- Attanasos <br />- Siblios</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.20>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.20'><b>&sect; 4.20</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a> Salutaris: <br />- The Metropolis of <a about=https://topostext.org/place/385306USyn class=place long=30.55 lat=38.533>Synada</a> has 24 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/394300UKot class=place long=29.983 lat=39.415>Kotyaeion</a><br />- <a about=https://topostext.org/place/398305UDor class=place long=30.529 lat=39.784>Dorylaion</a><br />- Nakoleia <br />- <a about=https://topostext.org/place/389308UDok class=place long=30.752 lat=38.8624>Dokimion</a><br />- Medaion <br />- <a about=https://topostext.org/place/389305UIps class=place long=30.5267 lat=38.8529>Ipsos</a><br />- <a about=https://topostext.org/place/387306UPry class=place long=30.5752 lat=38.6981>Promnesos</a><br />- Meros <br />- Sibindos <br />- Polybotos <br />- Phyteia <br />- <a about=https://topostext.org/place/379291PHie class=place long=29.1318 lat=37.9175>Hierapolis</a><br />- <a about=https://topostext.org/place/385301UEuk class=place long=30.1085 lat=38.476>Eukarpia</a><br />- Lyssias <br />- Augoustopolis <br />- Brozou <br />- Otros <br />- Lykaon <br />- <a about=https://topostext.org/place/383301USte class=place long=30.14376 lat=38.33261>Stektorion</a><br />- Kinnaborion <br />- Kone Demetropoles <br />- Skordaspia <br />- Nikoupolis <br />- Aurokla</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.21>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.21'><b>&sect; 4.21</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/375324RLyk class=place long=32.4 lat=37.5>Lykaonia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/379325PIko class=place long=32.4921 lat=37.8728>Ikonion</a> has 14 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/376323ULys class=place long=32.3384 lat=37.6017>Lystra</a><br />- <a about=https://topostext.org/place/375319UVas class=place long=31.9147 lat=37.5044>Ouasada</a><br />- Amblada <br />- Oumanada <br />- Misthia <br />- <a about=https://topostext.org/place/372332ULar class=place long=33.2114 lat=37.1826>Laranda</a><br />- Bareta <br />- <a about=https://topostext.org/place/373334UDer class=place long=33.3617 lat=37.3492>Derbe</a><br />- <a about=https://topostext.org/place/380331USav class=place long=33.1053 lat=37.9651>Sanatra</a><br />- <a about=https://topostext.org/place/379332UKan class=place long=33.2176 lat=37.8802>Kanou</a><br />- Berinoupoliopsianon <br />- Galbanos <br />- <a about=https://topostext.org/place/376323ULys class=place long=32.3384 lat=37.6017>Lystra</a><br />- <a about=https://topostext.org/place/382331UPer class=place long=33.0505 lat=38.1754>Perta</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.22>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.22'><b>&sect; 4.22</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/370306RPis class=place long=30.6 lat=37.01>Pisidia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/383312UAnt class=place long=31.1884 lat=38.3048>Antiocheia</a> has 18 cities and/or bishops under it: <br />- tou <a about=https://topostext.org/place/384314UPhi class=place long=31.416 lat=38.3555>Philomeliou</a><br />- <a about=https://topostext.org/place/377305USag class=place long=30.5179 lat=37.6772>Sagalasos</a><br />- Sozoupolis <br />- <a about=https://topostext.org/place/381302PApa class=place long=30.174 lat=38.073>Apamia</a> of Kenoos <br />- Raion <br />- Baris <br />- Adrianoupolis <br />- Limena <br />- Neapolis <br />- <a about=https://topostext.org/place/382324ULaK class=place long=32.3727 lat=38.1921>Laodikia Kekaumene</a><br />- <a about=https://topostext.org/place/379306USel class=place long=30.6175 lat=37.8996>Seleukia Sidera</a><br />- Adada <br />- Zozela <br />- Timbrias <br />- Tymandos <br />- Ioustinianoupolis <br />- <a about=https://topostext.org/place/382305UMet class=place long=30.4906 lat=38.2411>Metropolis</a><br />- Pappa</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.23>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.23'><b>&sect; 4.23</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/370320RPam class=place long=32.01 lat=37.01>Pamphylia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/370309PPer class=place long=30.856 lat=36.961>Perge</a> has 18 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/369307PAtt class=place long=30.7086 lat=36.8853>Attalia</a><br />- Eudoxias <br />- <a about=https://topostext.org/place/370305PTer class=place long=30.465 lat=36.982>Telmesos</a><br />- <a about=https://topostext.org/place/371296USin class=place long=29.5845 lat=37.1287>Sindos</a><br />- Maximianoupolis <br />- <a about=https://topostext.org/place/374280ULag class=place long=28.0395 lat=37.3786>Lagina</a><br />- Palaioupolis <br />- Kremnos <br />- Koudroula <br />- <a about=https://topostext.org/place/372309UPed class=place long=30.9342 lat=37.2137>Peltinessos</a><br />- <a about=https://topostext.org/place/372305UAri class=place long=30.47131 lat=37.18162>Aresasos</a><br />- Pougla <br />- Adriane <br />- Diketanaura <br />- Sandida <br />- Barae <br />- Sylaion <br />- Perbaina</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.24>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.24'><b>&sect; 4.24</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a>: <br />- The Metropolis of <a about=https://topostext.org/place/382342UMok class=place long=34.207 lat=38.1855>Mokesos</a> has 4 cities and/or bishops under it: <br />- Nazianzos <br />- Koloneia <br />- Parnassos <br />- Doara</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.25>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.25'><b>&sect; 4.25</b>&nbsp;&nbsp;Province of Lazike: <br />- The Metropolis of <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a> has 4 cities and/or bishops under it: <br />- Rodopolis <br />- Saesina <br />- Petrai <br />- Ziganea</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.26>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.26'><b>&sect; 4.26</b>&nbsp;&nbsp;Province of Thrace: <br />- The Metropolis of <a about=https://topostext.org/place/421247PPhi class=place long=24.751 lat=42.1468>Philippoupolis</a> has 3 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/405213UDio class=place long=21.251 lat=40.463>Diokletianoupolis</a><br />- Sebastoupolis <br />- <a about=https://topostext.org/place/425265PKab class=place long=26.4841 lat=42.5481>Diospolis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.27>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.27'><b>&sect; 4.27</b>&nbsp;&nbsp;Province of Europe: <br />- The Metropolis of <a about=https://topostext.org/place/409260UTra class=place long=26.033 lat=40.8653>Traianou[polis]</a> has 2 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/411248UTop class=place long=24.7662 lat=41.086>[To]Peron</a><br />- <a about=https://topostext.org/place/411251UAna class=place long=25.0928 lat=41.1026>Anastasioupolis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.28>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.28'><b>&sect; 4.28</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/372248RKyk class=place long=24.8 lat=37.2>Cyclades</a> islands: <br />- The Metropolis of <a about=https://topostext.org/place/364282IRho class=place long=28.2244 lat=36.4408>Rhodes</a> has 12 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/377269PSam class=place long=26.935 lat=37.695>Samos</a><br />- <a about=https://topostext.org/place/384261PChi class=place long=26.1342 lat=38.3764>Chios</a><br />- <a about=https://topostext.org/place/369273PKos class=place long=27.2859 lat=36.8914>Kos</a><br />- <a about=https://topostext.org/place/371255INax class=place long=25.377 lat=37.1059>Naxia</a><br />- <a about=https://topostext.org/place/364255PThe class=place long=25.477 lat=36.364>Thera</a><br />- <a about=https://topostext.org/place/371252PPar class=place long=25.1483 lat=37.0844>Paros</a><br />- <a about=https://topostext.org/place/372269PLer class=place long=26.8547 lat=37.158>Leros</a><br />- <a about=https://topostext.org/place/378248PAnd class=place long=24.8279 lat=37.8186>Andros</a><br />- <a about=https://topostext.org/place/375252PTen class=place long=25.1617 lat=37.538>Tenos</a><br />- <a about=https://topostext.org/place/367244PMel class=place long=24.4199 lat=36.7389>Melos</a><br />- Pissyne [<a about=https://topostext.org/place/368259IAmo class=place long=25.9 lat=36.8333>Amorgos</a>?]</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.29>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.29'><b>&sect; 4.29</b>&nbsp;&nbsp;Province of Haimimontos: <br />- The Metropolis of <a about=https://topostext.org/place/417266PHad class=place long=26.559 lat=41.678>Adrianon</a> has 5 cities and/or bishops under it: <br />- <a about=https://topostext.org/place/427277UMes class=place long=27.7359 lat=42.6591>Mesembria</a><br />- <a about=https://topostext.org/place/424277PApo class=place long=27.693 lat=42.421>Sozopolis</a><br />- <a about=https://topostext.org/place/414265UPlo class=place long=26.5024 lat=41.3435>Ploutinoupolis</a><br />- Anastasioupolis <br />- Tzoida <br />- The Metropolis of <a about=https://topostext.org/place/432276UMar class=place long=27.5851 lat=43.2253>Markiano[polis]</a> has 5 cities and/or bishops under it: <br />- Rodostolon <br />- Tramariskoi <br />- Noba <br />- Zekedespa <br />- Skaria</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.30>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:4.30'><b>&sect; 4.30</b>&nbsp;&nbsp;Province of Phrygia Kappatiane: <br />- The Metropolis of <a about=https://topostext.org/place/379291PHie class=place long=29.1318 lat=37.9175>Hierapolis</a> has 5 cities and/or bishops under it: <br />- Meloupole <br />- Dionysioupolis <br />- Anastasioupolis <br />- Attouda <br />- <a about=https://topostext.org/place/381293UMos class=place long=29.2986 lat=38.0956>Mosyna</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 640 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.9>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:5.9'><b>&sect; 5.9</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>, under a hegemon, 17 cities<br />- <a about=https://topostext.org/place/396224PLar class=place long=22.421 lat=39.6349>Larisa</a><br />- <a about=https://topostext.org/place/393229UDem class=place long=22.9243 lat=39.3434>Demetrias</a><br />- <a about=https://topostext.org/place/393228PThe class=place long=22.7663 lat=39.2718>Thebai</a><br />- <a about=https://topostext.org/place/389227PEch class=place long=22.7253 lat=38.8955>Echinaion</a><br />- <a about=https://topostext.org/place/389224PLam class=place long=22.4426 lat=38.903>Lamia</a><br />- <a about=https://topostext.org/place/389223PHyp class=place long=22.2434 lat=38.8714>Hypata</a><br />- <a about=https://topostext.org/place/393218UMet class=place long=21.8387 lat=39.3386>Metropolis</a><br />- <a about=https://topostext.org/place/396218PTri class=place long=21.7647 lat=39.5564>Trikai</a><br />- <a about=https://topostext.org/place/394217PGom class=place long=21.6782 lat=39.4403>Gomphoi</a><br />- <a about=https://topostext.org/place/402218UKai class=place long=21.8412 lat=40.1718>Kaisareia</a><br />- <a about=https://topostext.org/place/405213UDio class=place long=21.251 lat=40.463>Diokletianoupolis</a><br />- <a about=https://topostext.org/place/393224UPha class=place long=22.3869 lat=39.2883>Pharsalos</a><br />- Saltoboramision <br />- Saltos Iovios <br />- island of <a about=https://topostext.org/place/391237PPep class=place long=23.7285 lat=39.1246>Skopelos</a><br />- island of <a about=https://topostext.org/place/392235PSki class=place long=23.4885 lat=39.164>Skiathos</a><br />- island of <a about=https://topostext.org/place/392239PIko class=place long=23.9066 lat=39.1634>Peparethos</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 530 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.10>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:5.10'><b>&sect; 5.10</b>&nbsp;&nbsp;Province of Hellas or Achaia, under a proconsul, 79 cities<br />- <a about=https://topostext.org/place/388227PSka class=place long=22.6569 lat=38.803>Skarphia</a><br />- <a about=https://topostext.org/place/386228PEla class=place long=22.783 lat=38.646>Elatina</a><br />- <a about=https://topostext.org/place/387224PBoi class=place long=22.42731 lat=38.6836>Boe</a> and <a about=https://topostext.org/place/387225UDry class=place long=22.541 lat=38.705>Drimya</a><br />- <a about=https://topostext.org/place/385227PDau class=place long=22.7318 lat=38.5055>Daulia</a><br />- <a about=https://topostext.org/place/385228PCha class=place long=22.8416 lat=38.4944>Chaironeia</a><br />- <a about=https://topostext.org/place/384218UNau class=place long=21.8313 lat=38.3997>Naupaktos</a><br />- <a about=https://topostext.org/place/385225PDel class=place long=22.5056 lat=38.4806>Delphoi</a><br />- <a about=https://topostext.org/place/385224PAmp class=place long=22.374 lat=38.53>Amphissa</a><br />- <a about=https://topostext.org/place/386227UTit class=place long=22.6686 lat=38.5855>Tithora</a><br />- <a about=https://topostext.org/place/384227PAmb class=place long=22.663 lat=38.4296>Ambrosos</a><br />- <a about=https://topostext.org/place/384226PAnt class=place long=22.6233 lat=38.37296>Antikyra</a><br />- <a about=https://topostext.org/place/384229PLeb class=place long=22.875 lat=38.4354>Lebadia</a><br />- <a about=https://topostext.org/place/384230PKor class=place long=22.9571 lat=38.3912>Koronia</a> of <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boiotia</a><br />- <a about=https://topostext.org/place/384227PSti class=place long=22.757 lat=38.385>Sterais</a><br />- <a about=https://topostext.org/place/386230POpo class=place long=22.992 lat=38.652>Opous</a><br />- <a about=https://topostext.org/place/386231UAna class=place long=23.0864 lat=38.6256>Anastasis</a><br />- <a about=https://topostext.org/place/389230PAid class=place long=23.0476 lat=38.855>Adepsos</a> [of the] island <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboia</a><br />- <a about=https://topostext.org/place/385235PAnt class=place long=23.448 lat=38.4987>Anthedon</a><br />- <a about=https://topostext.org/place/386232PBou class=place long=23.1767 lat=38.6002>Boumelita</a><br />- <a about=https://topostext.org/place/383232PThe class=place long=23.1549 lat=38.2935>Thespiai</a><br />- <a about=https://topostext.org/place/386231PHye class=place long=23.1031 lat=38.558>Yttos</a> <a about=https://topostext.org/place/383230PThi class=place long=22.972 lat=38.2564>Thisthai</a><br />- <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebai</a> metropolis of <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boiotia</a><br />- <a about=https://topostext.org/place/383236PTan class=place long=23.5841 lat=38.3074>Tanagra</a><br />- <a about=https://topostext.org/place/385236PCha class=place long=23.6153 lat=38.4597>Chalkis</a> of the island of <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboia</a><br />- <a about=https://topostext.org/place/384241UPor class=place long=24.0597 lat=38.3893>Porthmos</a><br />- <a about=https://topostext.org/place/380244PKar class=place long=24.427 lat=38.027>Karystos</a><br />- <a about=https://topostext.org/place/382233PPla class=place long=23.2733 lat=38.2213>Plateai</a><br />- <a about=https://topostext.org/place/381232PAig class=place long=23.2286 lat=38.1473>Aigosthena</a><br />- <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> metropolis of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attike</a><br />- <a about=https://topostext.org/place/380233PMeg class=place long=23.34285 lat=37.997>Megara</a><br />- <a about=https://topostext.org/place/381232PPag class=place long=23.1884 lat=38.0834>Pagai</a><br />- emporion <a about=https://topostext.org/place/380231UKro class=place long=23.1287 lat=37.9292>Krommon</a><br />- <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aigina</a> island <br />- <a about=https://topostext.org/place/373233IPit class=place long=23.159 lat=37.263>Poitoiousa</a><br />- <a about=https://topostext.org/place/376243IKeo class=place long=24.3333 lat=37.6167>Kea</a><br />- <a about=https://topostext.org/place/374244PKyt class=place long=24.395 lat=37.409>Kythnos</a><br />- <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a> adelos <br />- <a about=https://topostext.org/place/389246PSky class=place long=24.568 lat=38.907>Skyros</a><br />- <a about=https://topostext.org/place/379235PSal class=place long=23.5408 lat=37.952>Talamine</a> until <a about=https://topostext.org/place/388225FThe class=place long=22.536 lat=38.795>Thermopylai</a><br />- <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Korinthos</a> once Ephyra, metropolis of all Hellas<br />- <a about=https://topostext.org/place/380227PSik class=place long=22.7145 lat=37.9834>New Sikyon</a><br />- <a about=https://topostext.org/place/381224PAig class=place long=22.3777 lat=38.1286>Aigeirai</a><br />- <a about=https://topostext.org/place/383221PAig class=place long=22.09 lat=38.252>Aigion</a><br />- <a about=https://topostext.org/place/376234PMet class=place long=23.3496 lat=37.5868>Methana</a><br />- <a about=https://topostext.org/place/375234PTro class=place long=23.3484 lat=37.5033>Tryzena</a><br />- <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Pilaura</a><br />- <a about=https://topostext.org/place/374232UHer class=place long=23.2535 lat=37.3834>Hieramione</a><br />- <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a><br />- <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a><br />- <a about=https://topostext.org/place/377219PThe class=place long=21.8788 lat=37.7174>Thalpousa</a><br />- <a about=https://topostext.org/place/376224UMan class=place long=22.3933 lat=37.6181>Mantineia</a><br />- <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lakedaimon</a> metropolis of <a about=https://topostext.org/place/370225RLak class=place long=22.5 lat=37.001>Lakonike</a>, once Sparta <br />- <a about=https://topostext.org/place/370227PGer class=place long=22.7063 lat=36.9941>Gerenthrai</a><br />- <a about=https://topostext.org/place/370221UPhe class=place long=22.113 lat=37.046>Pharai</a><br />- <a about=https://topostext.org/place/367229UAso class=place long=22.8426 lat=36.6845>Asopos</a><br />- <a about=https://topostext.org/place/368228UAkr class=place long=22.792 lat=36.8>Akreai</a><br />- <a about=https://topostext.org/place/374218PPhi class=place long=21.842 lat=37.4075>Phialea</a><br />- <a about=https://topostext.org/place/372219PMes class=place long=21.9195 lat=37.1779>Messene</a><br />- <a about=https://topostext.org/place/370219PKor class=place long=21.9211 lat=36.9541>Koronia</a><br />- <a about=https://topostext.org/place/367222PAsi class=place long=21.961 lat=36.794>Asine</a><br />- <a about=https://topostext.org/place/368217UMot class=place long=21.705 lat=36.817>Mothone</a><br />- <a about=https://topostext.org/place/372217PKyp class=place long=21.6788 lat=37.2499>Kyparissia</a><br />- <a about=https://topostext.org/place/378214PEli class=place long=21.374 lat=37.89>Elis</a> metropolis of <a about=https://topostext.org/place/375223RArk class=place long=22.3 lat=37.5>Arkadia</a><br />- <a about=https://topostext.org/place/382217PPat class=place long=21.74 lat=38.245>Patrai</a><br />- <a about=https://topostext.org/place/386214PAgr class=place long=21.391 lat=38.645>Aigion</a> metropolis of <a about=https://topostext.org/place/386215RAit class=place long=21.5 lat=38.6>Aitolia</a><br />- island <a about=https://topostext.org/place/382206IKep class=place long=20.59 lat=38.2>Kefallenia</a><br />- island <a about=https://topostext.org/place/383208HPan class=place long=20.576 lat=38.4626>Panormos</a><br />- island <a about=https://topostext.org/place/378209PZak class=place long=20.8921 lat=37.7872>Zakynthos</a><br />- island <a about=https://topostext.org/place/363230PKyt class=place long=23.0291 lat=36.2295>Kytheria</a><br />- island <a about=https://topostext.org/place/374253PMyk class=place long=25.3286 lat=37.446>Mykon</a><br />- island <a about=https://topostext.org/place/373210IStr class=place long=21.014 lat=37.25>Strophadia</a><br />- island Molos opposite <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Korinthos</a><br />- island Dorousa <br />- island <a about=https://topostext.org/place/399253ILem class=place long=25.21 lat=39.93>Lemnos</a><br />- island <a about=https://topostext.org/place/402259PImb class=place long=25.903 lat=40.2331>Imbros</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 530 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.11>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:5.11'><b>&sect; 5.11</b>&nbsp;&nbsp;Province of <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, under a consular, 22 cities: <br />- metropolis <a about=https://topostext.org/place/351249UGor class=place long=24.95 lat=35.0594>Gortyne</a><br />- <a about=https://topostext.org/place/353263PIta class=place long=26.2635 lat=35.2632>Inatos</a><br />- <a about=https://topostext.org/place/351254PBia class=place long=25.4029 lat=35.0608>Bienna</a><br />- <a about=https://topostext.org/place/350257PHie class=place long=25.7388 lat=35.0095>Ierapydna</a><br />- <a about=https://topostext.org/place/352257ULat class=place long=25.719 lat=35.1896>Kamara</a><br />- Allyngos <br />- <a about=https://topostext.org/place/353254PChe class=place long=25.3905 lat=35.3186>Chersonesos</a><br />- <a about=https://topostext.org/place/352254PLyk class=place long=25.3682 lat=35.2081>Lyktos</a><br />- <a about=https://topostext.org/place/351253PArk class=place long=25.3409 lat=35.1024>Arkadia</a><br />- <a about=https://topostext.org/place/353252PKno class=place long=25.1631 lat=35.2978>Knossos</a><br />- <a about=https://topostext.org/place/353246PSyb class=place long=24.6401 lat=35.2597>Soubritos</a><br />- <a about=https://topostext.org/place/353248PAxo class=place long=24.8441 lat=35.3079>Oaxios</a><br />- <a about=https://topostext.org/place/353247PEle class=place long=24.677 lat=35.3334>Eleutherna</a><br />- <a about=https://topostext.org/place/353243PLap class=place long=24.3361 lat=35.2866>Lampai</a><br />- <a about=https://topostext.org/place/355241PApt class=place long=24.141 lat=35.463>Aptera</a><br />- <a about=https://topostext.org/place/355240PKyd class=place long=24.0187 lat=35.5158>Kydonea</a><br />- <a about=https://topostext.org/place/355237UKis class=place long=23.6558 lat=35.4929>Kisamos</a><br />- <a about=https://topostext.org/place/353237UKan class=place long=23.7363 lat=35.316>Kantania</a><br />- <a about=https://topostext.org/place/353238PEly class=place long=23.796 lat=35.287>Elyros</a><br />- <a about=https://topostext.org/place/352238ULis class=place long=23.785 lat=35.244>Lissos</a><br />- <a about=https://topostext.org/place/352241UPho class=place long=24.0777 lat=35.1958>Phoinike</a> or <a about=https://topostext.org/place/352241UAra class=place long=24.0603 lat=35.2275>Aradena</a><br />- island <a about=https://topostext.org/place/349241IKau class=place long=24.11 lat=34.851>Klaudos</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 530 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.12>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:5.12'><b>&sect; 5.12</b>&nbsp;&nbsp;Province of Old Epeiros, under a hegemon, 12 cities <br />- metropolis <a about=https://topostext.org/place/390207PNic class=place long=20.7322 lat=39.0181>Nikopolis</a><br />- <a about=https://topostext.org/place/395208SDod class=place long=20.7878 lat=39.5464>Dodonai</a><br />- <a about=https://topostext.org/place/393206UEur class=place long=20.606 lat=39.3278>Euroia</a><br />- <a about=https://topostext.org/place/392210PAmb class=place long=20.9899 lat=39.155>Aknion</a><br />- <a about=https://topostext.org/place/400202UHad class=place long=20.2247 lat=39.9964>Adrianoupolis</a><br />- Appon <br />- <a about=https://topostext.org/place/399201UPho class=place long=20.0566 lat=39.9139>Phoinike</a><br />- <a about=https://topostext.org/place/399200UOnc class=place long=19.9968 lat=39.8832>Anchiasmos</a><br />- <a about=https://topostext.org/place/397200PBou class=place long=20.0206 lat=39.7456>Bouthrotos</a><br />- <a about=https://topostext.org/place/395205UPho class=place long=20.499 lat=39.479>Photike</a><br />- <a about=https://topostext.org/place/396199PKer class=place long=19.9156 lat=39.6063>Kerkyra</a> island <br />- <a about=https://topostext.org/place/383207IIth class=place long=20.71 lat=38.34>Ethrake</a> island </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 530 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.13>
+                            <p id='urn:cts:greekLit:tlg2012.tlg027:5.13'><b>&sect; 5.13</b>&nbsp;&nbsp;Province of New Epeiros, under a consular, 9 cities <br />- <a about=https://topostext.org/place/413194PEpi class=place long=19.4449 lat=41.3164>Dyrrachion</a> once <a about=https://topostext.org/place/413194PEpi class=place long=19.4449 lat=41.3164>Epidamnos</a><br />- <a about=https://topostext.org/place/411200USca class=place long=20.0181 lat=41.1129>Skampa</a><br />- <a about=https://topostext.org/place/407195PApo class=place long=19.4727 lat=40.7215>Apollonia</a><br />- <a about=https://topostext.org/place/405197PByl class=place long=19.7385 lat=40.543>Boulis</a><br />- <a about=https://topostext.org/place/405196UAma class=place long=19.6974 lat=40.3787>Amantia</a><br />- <a about=https://topostext.org/place/407199UAnt class=place long=19.945 lat=40.7078>Poulcherioupolis</a><br />- <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Aulon</a><br />- <a about=https://topostext.org/place/411208ULyc class=place long=20.794 lat=41.114>Aulinidos</a> metropolis <br />- Listron and Skepon </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 530 <a href='https://books.google.gr/books?id=WIpdAAAAcAAJ&dq=Notitia%20Episcopatuum&pg=PA150#v=onepage&q=Notitia%20Episcopatuum&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=567', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas567";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=567';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

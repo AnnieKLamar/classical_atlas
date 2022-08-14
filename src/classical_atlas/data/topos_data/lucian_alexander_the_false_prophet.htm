@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Lucian, Alexander the False Prophet' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Alexander the False Prophet (Alexander), Lucian, The Works of Lucian of Samosata, translated by Henry Watson Fowler (1858-1933) and Francis George Fowler (1871–1918), Oxford edition of 1905, a work in the public domain nobly placed on line by lucianofsamosata.info' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='180' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 180' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/337' content='urn:cts:greekLit:tlg0062.tlg038' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79073533' content='Lucian of Samosata'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n50027721' content='Henry Watson Fowler (1858-1933)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://lucianofsamosata.info/texts.html' /><h2>Lucian, Alexander the False Prophet</h2>Alexander the False Prophet (Alexander), Lucian, The Works of Lucian of Samosata, translated by Henry Watson Fowler (1858-1933) and Francis George Fowler (1871–1918), Oxford edition of 1905, a work in the public domain nobly placed on line by lucianofsamosata.info This text has 99 tagged references to 47 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0062.tlg038'>urn:cts:greekLit:tlg0062.tlg038</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q3610422'>Q3610422</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:1'><b>&sect; 1</b>&nbsp;&nbsp;You, my dear <a href=/people/3007 target=_blank>Celsus</a>, possibly suppose yourself to be laying upon me quite a trifling task: Write me down in a book and send me the life and adventures, the tricks and frauds, of the impostor <a href=/people/1439 target=_blank>Alexander</a> of <a about=https://topostext.org/place/420338UAbo class=person long=33.766 lat=41.974>Abonutichus</a>. In fact, however, it would take as long to do this in full detail as to reduce to writing the achievements of <a href=/people/6 target=_blank>Alexander</a> of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedon</a>; the one is among villains what the other is among heroes. Nevertheless, if you will promise to read with indulgence, and fill up the gaps in my tale from your imagination, I will essay the task. I may not cleanse that <a href=/people/1015 target=_blank>Augean</a> stable completely, but I will do my best, and fetch you out a few loads as samples of the unspeakable filth that three thousand <a href=/people/10961 target=_blank>oxen</a> could produce in many years. I confess to being a little ashamed both on your account and my own. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:2'><b>&sect; 2</b>&nbsp;&nbsp;There are you asking that the memory of an arch-scoundrel should be perpetuated in writing; here am I going seriously into an investigation of this sort — the doings of a person whose deserts entitled him not to be read about by the cultivated, but to be torn to pieces in the amphitheatre by apes or <a href=/people/10958 target=_blank>foxes</a>, with a vast audience looking on. Well, well, if any one does cast reflections of that sort upon us, we shall at least have a precedent to plead. <a href=/people/2592 target=_blank>Arrian</a> himself, disciple of <a href=/people/1264 target=_blank>Epictetus</a>, distinguished Roman, and product of lifelong culture as he was, had just our experience, and shall make our defence. He condescended, that is, to put on record the life of the robber Tilliborus. The robber we propose to immortalize was of a far more pestilent kind, following his profession not in the forests and mountains, but in cities; he was not content to overrun a <a about=https://topostext.org/place/375275RMys class=place long=28 lat=40>Mysia</a> or an <a about=https://topostext.org/place/397268LIda class=place long=26.8423 lat=39.6922>Ida</a>; his booty came not from a few scantily populated districts of Asia; one may say that the scene of his depredations was the whole Roman Empire. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:3'><b>&sect; 3</b>&nbsp;&nbsp;I will begin with a picture of the man himself, as lifelike (though I am not great at description) as I can make it with nothing better than words. In person — not to forget that part of him — he was a fine handsome man with a real touch of divinity about him, white-skinned, moderately bearded; he wore besides his own hair artificial additions which matched it so cunningly that they were not generally detected. His eyes were piercing, and suggested inspiration, his voice at once sweet and sonorous. In fact there was no fault to be found with him in these respects. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:4'><b>&sect; 4</b>&nbsp;&nbsp;So much for externals. As for his mind and spirit — well, if all the kind Gods who avert disaster will grant a prayer, it shall be that they bring me not within reach of such a one as he; sooner will I face my bitterest enemies, my country's foes. In understanding, resource, acuteness, he was far above other men; curiosity, receptiveness, memory, scientific ability — all these were his in overflowing measure. But he used them for the worst purposes. Endowed with all these instruments of good, he very soon reached a proud pre-eminence among all who have been famous for evil; the <a href=/people/3195 target=_blank>Cercopes</a>, <a href=/people/2105 target=_blank>Eurybatus</a>, <a href=/people/5903 target=_blank>Phrynondas</a>, <a href=/people/226 target=_blank>Aristodemus</a>, <a href=/people/988 target=_blank>Sostratus</a> — all thrown into the shade. In a letter to his father-in-law <a href=/people/2782 target=_blank>Rutilianus</a>, which puts his own pretensions in a truly modest light, he compares himself to <a href=/people/58 target=_blank>Pythagoras</a>. Well, I should not like to offend the wise, the divine <a href=/people/58 target=_blank>Pythagoras</a>; but if he had been <a href=/people/1439 target=_blank>Alexander</a>'s contemporary, I am quite sure he would have been a mere child to him. Now by all that is admirable, do not take that for an insult to <a href=/people/58 target=_blank>Pythagoras</a>, nor suppose I would draw a parallel between their achievements. What I mean is: if any one would make a collection of all the vilest and most damaging slanders ever vented against <a href=/people/58 target=_blank>Pythagoras</a> — things whose truth I would not accept for a moment — , the sum of them would not come within measurable distance of <a href=/people/1439 target=_blank>Alexander</a>'s cleverness. You are to set your imagination to work and conceive a temperament curiously compounded of falsehood, trickery, perjury, cunning; it is versatile, audacious, adventurous, yet dogged in execution; it is plausible enough to inspire confidence; it can assume the mask of virtue, and seem to eschew what it most desires. I suppose no one ever left him after a first interview without the impression that this was the best and kindest of men, ay, and the simplest and most unsophisticated. Add to all this a certain greatness in his objects; he never made a small plan; his ideas were always large. While in the bloom of his youthful beauty, which we may </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:5'><b>&sect; 5</b>&nbsp;&nbsp;assume to have been great both from its later remains and from the report of those who saw it, he traded quite shamelessly upon it. Among his other patrons was one of the charlatans who deal in magic and mystic incantations; they will smooth your course of love, confound your enemies, find you treasure, or secure you an inheritance. This person was struck with the lad's natural qualifications for apprenticeship to his trade, and finding him as much attracted by rascality as attractive in appearance, gave him a regular training as accomplice, satellite, and attendant. His own ostensible profession was medicine, and his knowledge included, like that of <a href=/people/3516 target=_blank>Thoon</a> the <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egyptian</a>'s wife, Many a virtuous herb, and many a bane; to all which inheritance our friend succeeded. This teacher and lover of his was a native of <a about=https://topostext.org/place/378346PTya class=place long=34.57 lat=37.82>Tyana</a>, an associate of the great <a href=/people/333 target=_blank>Apollonius</a>, and acquainted with all his heroics. And now you know the atmosphere in which <a href=/people/1439 target=_blank>Alexander</a> lived. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:6'><b>&sect; 6</b>&nbsp;&nbsp;By the time his beard had come, the Tyanean was dead, and he found himself in straits; for the personal attractions which might once have been a resource were diminished. He now formed great designs, which he imparted to a <a about=https://topostext.org/place/410290UByz class=demonym long=28.9836 lat=41.0119>Byzantine</a> chronicler of the strolling competitive order, a man of still worse character than himself, called, I believe, <a href=/people/7527 target=_blank>Cocconas</a>. The pair went about living on occult pretensions, shearing 'fat-heads,' as they describe ordinary people in the native Magian lingo. Among these they got hold of a rich <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a> woman; her youth was past, but not her desire for admiration; they got sufficient supplies out of her, and accompanied her from <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a> to <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>. She came from <a about=https://topostext.org/place/408225PPel class=place long=22.518 lat=40.754>Pella</a>, which had been a flourishing place under the <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a> kingdom, but has now a poor and much reduced population. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:7'><b>&sect; 7</b>&nbsp;&nbsp;There is here a breed of large <a href=/people/55 target=_blank>serpents</a>, so tame and gentle that women make pets of them, children take them to bed, they will let you tread on them, have no objection to being squeezed, and will draw milk from the breast like infants. To these facts is probably to be referred the common story about <a href=/people/272 target=_blank>Olympias</a> when she was with child of <a href=/people/6 target=_blank>Alexander</a>; it was doubtless one of these that was her bed-fellow. Well, the two saw these creatures, and bought the finest they could get for a few pence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:8'><b>&sect; 8</b>&nbsp;&nbsp;And from this point, as <a href=/people/193 target=_blank>Thucydides</a> might say, the war takes its beginning. These ambitious scoundrels were quite devoid of scruples, and they had now joined forces; it could not escape their penetration that human life is under the absolute dominion of two mighty principles, fear and hope, and that any one who can make these serve his ends may be sure of a rapid fortune. They realized that, whether a man is most swayed by the one or by the other, what he must most depend upon and desire is a knowledge of futurity. So were to be explained the ancient wealth and fame of <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>, <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>, <a about=https://topostext.org/place/380272SKla class=place long=27.193 lat=38.0047>Clarus</a>, <a about=https://topostext.org/place/374273SDid class=place long=27.2561 lat=37.3848>Branchidae</a>; it was at the bidding of the two tyrants aforesaid that men thronged the shrines, longed for fore-knowledge, and to attain it sacrificed their hecatombs or dedicated their golden ingots. All this they turned over and debated, and it issued in the resolve to establish an oracle. If it were successful, they looked for immediate wealth and prosperity; the result surpassed their most sanguine expectations. The next things to be settled were, first the theatre of operations, and secondly the plan of campaign. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:9'><b>&sect; 9</b>&nbsp;&nbsp;<a href=/people/7527 target=_blank>Cocconas</a> favoured <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, as a mercantile centre convenient both for <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> and <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>, and accessible enough for the province of Asia, <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>, and tribes still further east. <a href=/people/1439 target=_blank>Alexander</a>, on the other hand, preferred his native place, urging very truly that an enterprise like theirs required congenial soil to give it a start, in the shape of 'fat-heads' and simpletons; that was a fair description, he said, of the <a about=https://topostext.org/place/410300RPap class=ethnic long=30 lat=41>Paphlagonians</a> beyond <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a>; they were mostly superstitious and well-to-do; one had only to go there with some one to play the flute, the tambourine, or the cymbals, set the proverbial mantic sieve a-spinning, and there they would all be gaping as if he were a God from heaven. This difference of opinion did not last long, and <a href=/people/1439 target=_blank>Alexander</a> prevailed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:10'><b>&sect; 10</b>&nbsp;&nbsp;Discovering, however, that a use might after all be made of <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, they went there first, and in the sanctuary of <a href=/people/2 target=_blank>Apollo</a>, the oldest in the place, they buried some brazen tablets, on which was the statement that very shortly <a href=/people/114 target=_blank>Asclepius</a>, with his father <a href=/people/2 target=_blank>Apollo</a>, would pay a visit to <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, and take up his abode at <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a>. The discovery of the tablets took place as arranged, and the news flew through <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a> and <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, first of all, naturally, to <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a>. The people of that place at once resolved to raise a temple, and lost no time in digging the foundations. <a href=/people/7527 target=_blank>Cocconas</a> was now left at <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a>, engaged in composing certain ambiguous crabbed oracles. He shortly afterwards died, I believe, of a <a href=/people/55 target=_blank>viper</a>'s bite. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:11'><b>&sect; 11</b>&nbsp;&nbsp;<a href=/people/1439 target=_blank>Alexander</a> meanwhile went on in advance; he had now grown his hair and wore it in long curls; his doublet was white and purple striped, his cloak pure white; he carried a scimetar in imitation of <a href=/people/153 target=_blank>Perseus</a>, from whom he now claimed descent through his mother. The wretched <a about=https://topostext.org/place/410300RPap class=ethnic long=30 lat=41>Paphlagonians</a>, who knew perfectly well that his parentage was obscure and mean on both sides, nevertheless gave credence to the oracle, which ran: Lo, sprung from <a href=/people/153 target=_blank>Perseus</a>, and to <a href=/people/11033 target=_blank>Phoebus</a> dear, High <a href=/people/1439 target=_blank>Alexander</a>, <a href=/people/2961 target=_blank>Podalirius</a>' son! <a href=/people/2961 target=_blank>Podalirius</a>, it seems, was of so highly amorous a complexion that the distance between <a about=https://topostext.org/place/396218PTri class=place long=21.7647 lat=39.5564>Tricca</a> and <a about=https://topostext.org/place/410300RPap class=place long=30 lat=41>Paphlagonia</a> was no bar to his union with <a href=/people/1439 target=_blank>Alexander</a>'s mother. A <a href=/people/12187 target=_blank>Sibylline</a> prophecy had also been found: Hard by <a about=https://topostext.org/place/420351PSin class=place long=35.143 lat=42.025>Sinope</a> on the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Euxine</a> shore Th' Italic age a fortress prophet sees. To the first monad let thrice ten be added, Five monads yet, and then a triple score: Such the quaternion of th' alexic name. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:12'><b>&sect; 12</b>&nbsp;&nbsp;This heroic entry into his long-left home placed <a href=/people/1439 target=_blank>Alexander</a> conspicuously before the public; he affected madness, and frequently foamed at the mouth — a manifestation easily produced by chewing the herb soap-wort, used by dyers; but it brought him reverence and awe. The two had long ago manufactured and fitted up a <a href=/people/55 target=_blank>serpent</a>'s head of linen; they had given it a more or less human expression, and painted it very like the real article; by a contrivance of horsehair, the mouth could be opened and shut, and a forked black <a href=/people/55 target=_blank>serpent</a> tongue protruded, working on the same system. The <a href=/people/55 target=_blank>serpent</a> from <a about=https://topostext.org/place/408225PPel class=place long=22.518 lat=40.754>Pella</a> was also kept ready in the house, to be produced at the right moment and take its part in the drama — the leading part, indeed. In the fullness of time, his plan took shape. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:13'><b>&sect; 13</b>&nbsp;&nbsp;He went one night to the temple foundations, still in process of digging, and with standing water in them, which had collected from the rainfall or otherwise; here he deposited a goose egg, into which, after blowing it, he had inserted some new-born reptile. He made a resting-place deep down in the mud for this, and departed. Early next morning he rushed into the market-place, naked except for a gold-spangled loin-cloth; with nothing but this and his scimetar, and shaking his long loose hair, like the fanatics who collect money in the name of <a href=/people/366 target=_blank>Cybele</a>, he climbed on to a lofty altar and delivered a harangue, felicitating the city upon the advent of the God now to bless them with his presence. In a few minutes nearly the whole population was on the spot, women, old men, and children included; all was awe, prayer, and adoration. He uttered some unintelligible sounds, which might have been Hebrew or <a about=https://topostext.org/place/335354RPho class=demonym long=35.4 lat=33.5>Phoenician</a>, but completed his victory over his audience, who could make nothing of what he said, beyond the constant repetition of the names <a href=/people/2 target=_blank>Apollo</a> and <a href=/people/114 target=_blank>Asclepius</a>. He then set off at a run for the future temple. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:14'><b>&sect; 14</b>&nbsp;&nbsp;Arrived at the excavation and the already completed sacred fount, he got down into the water, chanted in a loud voice hymns to <a href=/people/114 target=_blank>Asclepius</a> and <a href=/people/2 target=_blank>Apollo</a>, and invited the God to come, a welcome guest, to the city. He next demanded a bowl, and when this was handed to him, had no difficulty in putting it down at the right place and scooping up, besides water and mud, the egg in which the God had been enclosed; the edges of the aperture had been joined with wax and white lead. He took the egg in his hand and announced that here he held <a href=/people/114 target=_blank>Asclepius</a>. The people, who had been sufficiently astonished by the discovery of the egg in the water, were now all eyes for what was to come. He broke it, and received in his hollowed palm the hardly developed reptile; the crowd could see it stirring and winding about his fingers; they raised a shout, hailed the God, blessed the city, and every mouth was full of prayers — for treasure and wealth and health and all the other good things that he might give. Our hero now departed homewards, still running, with the new-born <a href=/people/114 target=_blank>Asclepius</a> in his hands — the twice-born, too, whereas ordinary men can be born but once, and born moreover not of <a href=/people/1380 target=_blank>Coronis</a> nor even of her namesake the <a href=/people/10957 target=_blank>crow</a>, but of a goose! After him streamed the whole people, in all the madness of fanatic hopes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:15'><b>&sect; 15</b>&nbsp;&nbsp;He now kept the house for some days, in hopes that the <a about=https://topostext.org/place/410300RPap class=ethnic long=30 lat=41>Paphlagonians</a> would soon be drawn in crowds by the news. He was not disappointed; the city was filled to overflowing with persons who had neither brains nor individuality, who bore no resemblance to men that live by bread, and had only their outward shape to distinguish them from <a href=/people/10954 target=_blank>sheep</a>. In a small room he took his seat, very imposingly attired, upon a couch. He took into his bosom our <a href=/people/114 target=_blank>Asclepius</a> of <a about=https://topostext.org/place/408225PPel class=person long=22.518 lat=40.754>Pella</a> (a very fine and large one, as I observed), wound its body round his neck, and let its tail hang down; there was enough of this not only to fill his lap, but to trail on the ground also; the patient creature's head he kept hidden in his armpit, showing the linen head on one side of his beard exactly as if it belonged to the visible body. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:16'><b>&sect; 16</b>&nbsp;&nbsp;Picture to yourself a little chamber into which no very brilliant light was admitted, with a crowd of people from all quarters, excited, carefully worked up, all a-flutter with expectation. As they came in, they might naturally find a miracle in the development of that little crawling thing of a few days ago into this great, tame, human-looking <a href=/people/55 target=_blank>serpent</a>. Then they had to get on at once towards the exit, being pressed forward by the new arrivals before they could have a good look. An exit had been specially made just opposite the entrance, for all the world like the <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a> device at <a about=https://topostext.org/place/325444UBab class=place long=44.421 lat=32.542>Babylon</a> when <a href=/people/6 target=_blank>Alexander</a> was ill; he was in extremis, you remember, and the crowd round the palace were eager to take their last look and give their last greeting. Our scoundrel's exhibition, though, is said to have been given not once, but many times, especially for the benefit of any wealthy new-comers. And at this point, my dear <a href=/people/3007 target=_blank>Celsus</a>, we may, if we will be candid, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:17'><b>&sect; 17</b>&nbsp;&nbsp;make some allowance for these <a about=https://topostext.org/place/410300RPap class=ethnic long=30 lat=41>Paphlagonians</a> and <a about=https://topostext.org/place/435335WPon class=ethnic long=33.5 lat=43.5>Pontics</a>; the poor uneducated 'fat-heads' might well be taken in when they handled the <a href=/people/55 target=_blank>serpent</a> — a privilege conceded to all who choose — and saw in that dim light its head with the mouth that opened and shut. It was an occasion for a <a href=/people/139 target=_blank>Democritus</a>, nay, for an <a href=/people/106 target=_blank>Epicurus</a> or a <a href=/people/435 target=_blank>Metrodorus</a>, perhaps, a man whose intelligence was steeled against such assaults by scepticism and insight, one who, if he could not detect the precise imposture, would at any rate have been perfectly certain that, though this escaped him, the whole thing was a lie and an impossibility. By degrees <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>, <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>, <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, came flocking in, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:18'><b>&sect; 18</b>&nbsp;&nbsp;every one who had been present doubtless reporting that he had beheld the birth of the God, and had touched him after his marvellous development in size and in expression. Next came pictures and models, bronze or silver images, and the God acquired a name. By divine command, metrically expressed, he was to be known as <a href=/people/3029 target=_blank>Glycon</a>. For <a href=/people/1439 target=_blank>Alexander</a> had delivered the line: <a href=/people/3029 target=_blank>Glycon</a> my name, man's light, son's son to <a href=/people/1 target=_blank>Zeus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:19'><b>&sect; 19</b>&nbsp;&nbsp;And now at last the object to which all this had led up, the giving of oracular answers to all applicants, could be attained. The cue was taken from <a href=/people/1085 target=_blank>Amphilochus</a> in <a about=https://topostext.org/place/370340RCil class=place long=34.01 lat=37.01>Cilicia</a>. After the death and disappearance at <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a> of his father <a href=/people/284 target=_blank>Amphiaraus</a>, <a href=/people/1085 target=_blank>Amphilochus</a>, driven from his home, made his way to <a about=https://topostext.org/place/370340RCil class=place long=34.01 lat=37.01>Cilicia</a>, and there did not at all badly by prophesying to the <a about=https://topostext.org/place/370340RCil class=ethnic long=34.01 lat=37.01>Cilicians</a> at the rate of threepence an oracle. After this precedent, <a href=/people/1439 target=_blank>Alexander</a> proclaimed that on a stated day the God would give answers to all comers. Each person was to write down his wish and the object of his curiosity, fasten the packet with thread, and seal it with wax, clay, or other such substance. He would receive these, and enter the adyton (by this time the temple was complete, and the scene all ready), whither the givers should be summoned in order by a herald and an acolyte; he would learn the God's mind upon each, and return the packets with their seals intact and the answers attached, the God being ready to give a definite answer to any question that might be put. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:20'><b>&sect; 20</b>&nbsp;&nbsp;The trick here was one which would be seen through easily enough by a person of your intelligence (or, if I may say so without violating modesty, of my own), but which to the ordinary imbecile would have the persuasiveness of what is marvellous and incredible. He contrived various methods of undoing the seals, read the questions, answered them as seemed good, and then folded, sealed, and returned them, to the great astonishment of the recipients. And then it was, 'How could he possibly know what I gave him carefully secured under a seal that defies imitation, unless he were a true God, with a God's omniscience?' Perhaps you will ask what these contrivances were; well, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:21'><b>&sect; 21</b>&nbsp;&nbsp;then — the information may be useful another time. One of them was this. He would heat a needle, melt with it the under part of the wax, lift the seal off, and after reading warm the wax once more with the needle — both that below the thread and that which formed the actual seal — and re-unite the two without difficulty. Another method employed the substance called collyrium; this is a preparation of <a about=https://topostext.org/place/392165RBre class=demonym long=16.5 lat=39.2>Bruttian</a> pitch, bitumen, pounded glass, wax, and mastich. He kneaded the whole into collyrium, heated it, placed it on the seal, previously moistened with his tongue, and so took a mould. This soon hardened; he simply opened, read, replaced the wax, and reproduced an excellent imitation of the original seal as from an engraved stone. One more I will give you. Adding some gypsum to the glue used in book-binding he produced a sort of wax, which was applied still wet to the seal, and on being taken off solidified at once and provided a matrix harder than horn, or even iron. There are plenty of other devices for the purpose, to rehearse which would seem like airing one's knowledge. Moreover, in your excellent pamphlets against the magians (most useful and instructive reading they are) you have yourself collected enough of them — many more than those I have mentioned. So oracles and divine utterances were the order of the day, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:22'><b>&sect; 22</b>&nbsp;&nbsp;and much shrewdness he displayed, eking out mechanical ingenuity with obscurity, his answers to some being crabbed and ambiguous, and to others absolutely unintelligible. He did however distribute warning and encouragement according to his lights, and recommend treatments and diets; for he had, as I originally stated, a wide and serviceable acquaintance with drugs; he was particularly given to prescribing 'cytmides,' which were a salve prepared from <a href=/people/10956 target=_blank>goat</a>'s fat, the name being of his own invention. For the realization of ambitions, advancement, or successions, he took care never to assign early dates; the formula was, 'All this shall come to pass when it is my will, and when my prophet <a href=/people/1439 target=_blank>Alexander</a> shall make prayer and entreaty on your behalf.' </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:23'><b>&sect; 23</b>&nbsp;&nbsp;There was a fixed charge of a shilling the oracle. And, my friend, do not suppose that this would not come to much; he made something like 3,000 pounds per annum; people were insatiable — would take from ten to fifteen oracles at a time. What he got he did not keep to himself, nor put it by for the future; what with accomplices, attendants, inquiry agents, oracle writers and keepers, amanuenses, seal-forgers, and interpreters, he had now a host of claimants to satisfy. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:24'><b>&sect; 24</b>&nbsp;&nbsp;He had begun sending emissaries abroad to make the shrine known in foreign lands; his prophecies, discovery of runaways, conviction of thieves and robbers, revelations of hidden treasure, cures of the sick, restoration of the dead to life — all these were to be advertised. This brought them running and crowding from all points of the compass; victims bled, gifts were presented, and the prophet and disciple came off better than the God; for had not the oracle spoken? — Give what ye give to my attendant priest; My care is not for gifts, but for my priest. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:25'><b>&sect; 25</b>&nbsp;&nbsp;A time came when a number of sensible people began to shake off their intoxication and combine against him, chief among them the numerous <a href=/people/10981 target=_blank>Epicureans</a>; in the cities, the imposture with all its theatrical accessories began to be seen through. It was now that he resorted to a measure of intimidation; he proclaimed that <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a> was overrun with atheists and <a href=/people/455 target=_blank>Christians</a>, who presumed to spread the most scandalous reports concerning him; he exhorted <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, as it valued the God's favour, to stone these men. Touching <a href=/people/106 target=_blank>Epicurus</a>, he gave the following response. An inquirer had asked how <a href=/people/106 target=_blank>Epicurus</a> fared in <a href=/people/10685 target=_blank>Hades</a>, and was told: Of slime is his bed, And his fetters of lead. <br />The prosperity of the oracle is perhaps not so wonderful, when one learns what sensible, intelligent questions were in fashion with its votaries. Well, it was war to the knife between him and <a href=/people/106 target=_blank>Epicurus</a>, and no wonder. What fitter enemy for a charlatan who patronized miracles and hated truth, than the thinker who had grasped the nature of things and was in solitary possession of that truth? As for the Platonists, <a href=/people/11086 target=_blank>Stoics</a>, <a href=/people/135 target=_blank>Pythagoreans</a>, they were his good friends; he had no quarrel with them. But the unmitigated <a href=/people/106 target=_blank>Epicurus</a>, as he used to call him, could not but be hateful to him, treating all such pretensions as absurd and puerile. <a href=/people/1439 target=_blank>Alexander</a> consequently loathed <a about=https://topostext.org/place/417324UAma class=place long=32.3868 lat=41.7495>Amastris</a> beyond all the cities of <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, knowing what a number of <a href=/people/128 target=_blank>Lepidus</a>'s friends and others like-minded it contained. He would not give oracles to Amastrians; when he once did, to a senator's brother, he made himself ridiculous, neither hitting upon a presentable oracle for himself, nor finding a deputy equal to the occasion. The man had complained of colic, and what he meant to prescribe was <a href=/people/10951 target=_blank>pig</a>'s foot dressed with mallow. The shape it took was: In basin hallowed Be pigments mallowed. I have mentioned that the <a href=/people/55 target=_blank>serpent</a> was often exhibited by </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:26'><b>&sect; 26</b>&nbsp;&nbsp;request; he was not completely visible, but the tail and body were exposed, while the head was concealed under the prophet's dress. By way of impressing the people still more, he announced that he would induce the God to speak, and give his responses without an intermediary. His simple device to this end was a tube of cranes' windpipes, which he passed, with due regard to its matching, through the artificial head, and, having an assistant speaking into the end outside, whose voice issued through the linen <a href=/people/114 target=_blank>Asclepius</a>, thus answered questions. These oracles were called autophones, and were not vouchsafed casually to any one, but reserved for officials, the rich, and the lavish. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:27'><b>&sect; 27</b>&nbsp;&nbsp;It was an autophone which was given to Severian regarding the invasion of <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a>. He encouraged him with these lines: <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a>, <a about=https://topostext.org/place/370585RPar class=place long=58.5 lat=37>Parthia</a>, cowed by thy fierce spear, To <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>'s shining waves, thou com'st, Thy brow with leaves and radiant gold encircled. Then when the foolish Gaul took his advice and invaded, to the total destruction of himself and his army by <a href=/people/3918 target=_blank>Othryades</a>, the adviser expunged that oracle from his archives and substituted the following: Vex not th' <a about=https://topostext.org/place/397443RArm class=demonym long=44.298 lat=39.702>Armenian</a> land; it shall not thrive; One in soft raiment clad shall from his bow Launch death, and cut thee off from life and light. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:28'><b>&sect; 28</b>&nbsp;&nbsp;For it was one of his happy thoughts to issue prophecies after the event as antidotes to those premature utterances which had not gone right. Frequently he promised recovery to a sick man before his death, and after it was at no loss for second thoughts: No longer seek to arrest thy fell disease; Thy fate is manifest, inevitable. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:29'><b>&sect; 29</b>&nbsp;&nbsp;Knowing the fame of <a about=https://topostext.org/place/380272SKla class=place long=27.193 lat=38.0047>Clarus</a>, <a about=https://topostext.org/place/374273SDid class=place long=27.2561 lat=37.3848>Didymus</a>, and <a about=https://topostext.org/place/368355PMal class=place long=35.485 lat=36.756>Mallos</a> for sooth-saying much like his own, he struck up an alliance with them, sending on many of his clients to those places. So Hie thee to <a about=https://topostext.org/place/380272SKla class=place long=27.193 lat=38.0047>Clarus</a> now, and hear my sire. And again, Draw near to <a about=https://topostext.org/place/374273SDid class=place long=27.2561 lat=37.3848>Branchidae</a> and counsel take. Or Seek <a about=https://topostext.org/place/368355PMal class=place long=35.485 lat=36.756>Mallos</a>; be <a href=/people/1085 target=_blank>Amphilochus</a> thy counsellor. So things went within the borders of <a about=https://topostext.org/place/375275RIon class=place long=27.3 lat=38>Ionia</a>, <a about=https://topostext.org/place/370340RCil class=place long=34.01 lat=37.01>Cilicia</a>, <a about=https://topostext.org/place/410300RPap class=place long=30 lat=41>Paphlagonia</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:30'><b>&sect; 30</b>&nbsp;&nbsp;and <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>. When the fame of the oracle travelled to <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> and entered <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, the only question was, who should be first; those who did not come in person sent messages, the powerful and respected being the keenest of all. First and foremost among these was <a href=/people/2782 target=_blank>Rutilianus</a>; he was in most respects an excellent person, and had filled many high offices in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>; but he suffered from religious mania, holding the most extraordinary beliefs on that matter; show him a bit of stone smeared with unguents or crowned with flowers, and he would incontinently fall down and worship, and linger about it praying and asking for blessings. The reports about our oracle nearly induced him to throw up the appointment he then held, and fly to <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a>; he actually did send messenger upon messenger. His envoys were ignorant servants, easily taken in. They came back having really seen certain things, relating others which they probably thought they had seen and heard, and yet others which they deliberately invented to curry favour with their master. So they inflamed the poor old man and drove him into confirmed madness. He had a wide circle of influential friends, to whom he communicated </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:31'><b>&sect; 31</b>&nbsp;&nbsp;the news brought by his successive messengers, not without additional touches of his own. All <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> was full of his tales; there was quite a commotion, the gentlemen of the Court being much fluttered, and at once taking measures to learn something of their own fate. The prophet gave all who came a hearty welcome, gained their goodwill by hospitality and costly gifts, and sent them off ready not merely to report his answers, but to sing the praises of the God and invent miraculous tales of the shrine and its guardian. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:32'><b>&sect; 32</b>&nbsp;&nbsp;This triple rogue now hit upon an idea which would have been too clever for the ordinary robber. Opening and reading the packets which reached him, whenever he came upon an equivocal, compromising question, he omitted to return the packet; the sender was to be under his thumb, bound to his service by the terrifying recollection of the question he had written down. You know the sort of things that wealthy and powerful personages would be likely to ask. This blackmail brought him in a good income. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:33'><b>&sect; 33</b>&nbsp;&nbsp;I should like to quote you one or two of the answers given to <a href=/people/2782 target=_blank>Rutilianus</a>. He had a son by a former wife, just old enough for advanced teaching. The father asked who should be his tutor, and was told, <a href=/people/58 target=_blank>Pythagoras</a>, and the mighty battle-bard. When the child died a few days after, the prophet was abashed, and quite unable to account for this summary confutation. However, dear good <a href=/people/2782 target=_blank>Rutilianus</a> very soon restored the oracle's credit by discovering that this was the very thing the God had foreshown; he had not directed him to choose a living teacher; <a href=/people/58 target=_blank>Pythagoras</a> and <a href=/people/9 target=_blank>Homer</a> were long dead, and doubtless the boy was now enjoying their instructions in <a href=/people/10685 target=_blank>Hades</a>. Small blame to <a href=/people/1439 target=_blank>Alexander</a> if he had a taste for dealings with such specimens of humanity as this. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:34'><b>&sect; 34</b>&nbsp;&nbsp;Another of <a href=/people/2782 target=_blank>Rutilianus</a>'s questions was, Whose soul he had succeeded to, and the answer: First thou wast <a href=/people/109 target=_blank>Peleus</a>' son, and next <a href=/people/156 target=_blank>Menander</a>; Then thine own self; next, a sunbeam shalt be; And nine score annual rounds thy life shall measure. At seventy, he died of melancholy, not waiting for the God to pay in full. That was an autophone too. Another time <a href=/people/2782 target=_blank>Rutilianus</a> consulted </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:35'><b>&sect; 35</b>&nbsp;&nbsp;the oracle on the choice of a wife. The answer was express: Wed <a href=/people/1439 target=_blank>Alexander</a>'s daughter and <a href=/people/339 target=_blank>Selene</a>'s. He had long ago spread the report that the daughter he had had was by <a href=/people/339 target=_blank>Selene</a>: she had once seen him asleep, and fallen in love, as is her way with handsome sleepers. The sensible <a href=/people/2782 target=_blank>Rutilianus</a> lost no time, but sent for the maiden at once, celebrated the nuptials, a sexagenarian bridegroom, and lived with her, propitiating his divine mother-in-law with whole hecatombs, and reckoning himself now one of the heavenly company. His finger once in the <a about=https://topostext.org/place/406163RIta class=demonym long=16.3 lat=40.6>Italian</a> pie, <a href=/people/1439 target=_blank>Alexander</a> devoted himself </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:36'><b>&sect; 36</b>&nbsp;&nbsp;to getting further. Sacred envoys were sent all over the Roman Empire, warning the various cities to be on their guard against pestilence and conflagrations, with the prophet's offers of security against them. One oracle in particular, an autophone again, he distributed broadcast at a time of pestilence. It was a single line: <a href=/people/11033 target=_blank>Phoebus</a> long-tressed the plague-cloud shall dispel. This was everywhere to be seen written up on doors as a prophylactic. Its effect was generally disappointing; for it somehow happened that the protected houses were just the ones to be desolated. Not that I would suggest for a moment that the line was their destruction; but, accidentally no doubt, it did so fall out. Possibly common people put too much confidence in the verse, and lived carelessly without troubling to help the oracle against its foe; were there not the words fighting their battle, and long-tressed <a href=/people/11033 target=_blank>Phoebus</a> discharging his arrows at the pestilence? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:37'><b>&sect; 37</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> itself he established an intelligence bureau well manned with his accomplices. They sent him people's characters, forecasts of their questions, and hints of their ambitions, so that he had his answers ready before the messengers reached him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:38'><b>&sect; 38</b>&nbsp;&nbsp;It was with his eye on this <a about=https://topostext.org/place/406163RIta class=demonym long=16.3 lat=40.6>Italian</a> propaganda, too, that he took a further step. This was the institution of mysteries, with hierophants and torch-bearers complete. The ceremonies occupied three successive days. On the first, proclamation was made on the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> model to this effect: 'If there be any atheist or <a href=/people/455 target=_blank>Christian</a> or <a href=/people/10981 target=_blank>Epicurean</a> here spying upon our rites, let him depart in haste; and let all such as have faith in the God be initiated and all blessing attend them.' He led the litany with, '<a href=/people/455 target=_blank>Christians</a>, avaunt!' and the crowd responded, '<a href=/people/10981 target=_blank>Epicureans</a>, avaunt!' Then was presented the child-bed of <a href=/people/127 target=_blank>Leto</a> and birth of <a href=/people/2 target=_blank>Apollo</a>, the bridal of <a href=/people/1380 target=_blank>Coronis</a>, <a href=/people/114 target=_blank>Asclepius</a> born. The second day, the epiphany and nativity of the God <a href=/people/3029 target=_blank>Glycon</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:39'><b>&sect; 39</b>&nbsp;&nbsp;On the third came the wedding of <a href=/people/2961 target=_blank>Podalirius</a> and <a href=/people/1439 target=_blank>Alexander</a>'s mother; this was called Torch-day, and torches were used. The finale was the loves of <a href=/people/339 target=_blank>Selene</a> and <a href=/people/1439 target=_blank>Alexander</a>, and the birth of <a href=/people/2782 target=_blank>Rutilianus</a>'s wife. The torch-bearer and hierophant was <a href=/people/954 target=_blank>Endymion</a>-<a href=/people/1439 target=_blank>Alexander</a>. He was discovered lying asleep; to him from heaven, represented by the ceiling, enter as <a href=/people/339 target=_blank>Selene</a> one Rutilia, a great beauty, and wife of one of the Imperial procurators. She and <a href=/people/1439 target=_blank>Alexander</a> were lovers off the stage too, and the wretched husband had to look on at their public kissing and embracing; if there had not been a good supply of torches, things might possibly have gone even further. Shortly after, he reappeared amidst a profound hush, attired as hierophant; in a loud voice he called, 'Hail, <a href=/people/3029 target=_blank>Glycon</a>!', whereto the <a href=/people/1941 target=_blank>Eumolpidae</a> and <a href=/people/2626 target=_blank>Ceryces</a> of <a about=https://topostext.org/place/410300RPap class=person long=30 lat=41>Paphlagonia</a>, with their clod-hopping shoes and their garlic breath, made sonorous response, 'Hail, <a href=/people/1439 target=_blank>Alexander</a>!' </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:40'><b>&sect; 40</b>&nbsp;&nbsp;The torch ceremony with its ritual skippings often enabled him to bestow a glimpse of his thigh, which was thus discovered to be of gold; it was presumably enveloped in cloth of gold, which glittered in the lamp-light. This gave rise to a debate between two wiseacres, whether the golden thigh meant that he had inherited <a href=/people/58 target=_blank>Pythagoras</a>'s soul, or merely that their two souls were alike; the question was referred to <a href=/people/1439 target=_blank>Alexander</a> himself, and King <a href=/people/3029 target=_blank>Glycon</a> relieved their perplexity with an oracle: Waxes and wanes <a href=/people/58 target=_blank>Pythagoras</a>' soul: the seer's Is from the mind of <a href=/people/1 target=_blank>Zeus</a> an emanation. His Father sent him, virtuous men to aid, And with his bolt one day shall call him home. I will now give you a conversation between <a href=/people/3029 target=_blank>Glycon</a> and one </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:43'><b>&sect; 43</b>&nbsp;&nbsp;<a href=/people/1568 target=_blank>Sacerdos</a> of <a about=https://topostext.org/place/416230UTio class=person long=32.0344 lat=41.5682>Tius</a>; the intelligence of the latter you may gauge from his questions. I read it inscribed in golden letters in <a href=/people/1568 target=_blank>Sacerdos</a>'s house at <a about=https://topostext.org/place/416230UTio class=place long=32.0344 lat=41.5682>Tius</a>. 'Tell me, lord <a href=/people/3029 target=_blank>Glycon</a>,' said he, 'who you are.' 'The new <a href=/people/114 target=_blank>Asclepius</a>.' 'Another, different from the former one? Is that the meaning?' 'That it is not lawful for you to learn.' 'And how many years will you sojourn and prophesy among us?' 'A thousand and three.' 'And after that, whither will you go?' 'To <a about=https://topostext.org/place/340670RBac class=place long=66.901 lat=36.768>Bactria</a>; for the barbarians too must be blessed with my presence.' 'The other oracles, at <a about=https://topostext.org/place/374273SDid class=place long=27.2561 lat=37.3848>Didymus</a> and <a about=https://topostext.org/place/380272SKla class=place long=27.193 lat=38.0047>Clarus</a> and <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>, have they still the spirit of your grandsire <a href=/people/2 target=_blank>Apollo</a>, or are the answers that now come from them forgeries?' 'That, too, desire not to know; it is not lawful.' 'What shall I be after this life?' 'A <a href=/people/10950 target=_blank>camel</a>; then a <a href=/people/10959 target=_blank>horse</a>; then a wise man, no less a prophet than <a href=/people/1439 target=_blank>Alexander</a>.' Such was the conversation. There was added to it an oracle in verse, inspired by the fact that <a href=/people/1568 target=_blank>Sacerdos</a> was an associate of <a href=/people/128 target=_blank>Lepidus</a>: Shun <a href=/people/128 target=_blank>Lepidus</a>; an evil fate awaits him. As I have said, <a href=/people/1439 target=_blank>Alexander</a> was much afraid of <a href=/people/106 target=_blank>Epicurus</a>, and the solvent action of his logic on imposture. On one occasion, indeed, an <a href=/people/10981 target=_blank>Epicurean</a> got himself into great </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:44'><b>&sect; 44</b>&nbsp;&nbsp;trouble by daring to expose him before a great gathering. He came up and addressed him in a loud voice. '<a href=/people/1439 target=_blank>Alexander</a>, it was you who induced So-and-so the <a about=https://topostext.org/place/410300RPap class=demonym long=30 lat=41>Paphlagonian</a> to bring his slaves before the governor of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>, charged with the murder of his son who was being educated in <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a>. Well, the young man is alive, and has come back, to find that the slaves had been cast to the beasts by your machinations.' What had happened was this. The lad had sailed up the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>, gone on to a <a about=https://topostext.org/place/195390WEry class=place long=39 lat=19.5>Red Sea</a> port, found a vessel starting for <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>, and been persuaded to make the voyage. He being long overdue, the unfortunate slaves supposed that he had either perished in the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> or fallen a victim to some of the <a href=/people/10975 target=_blank>pirates</a> who infested it at that time; so they came home to report his disappearance. Then followed the oracle, the sentence, and finally the young man's return with the story of his absence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:45'><b>&sect; 45</b>&nbsp;&nbsp;All this the <a href=/people/10981 target=_blank>Epicurean</a> recounted. <a href=/people/1439 target=_blank>Alexander</a> was much annoyed by the exposure, and could not stomach so well deserved an affront; he directed the company to stone the man, on pain of being involved in his impiety and called <a href=/people/10981 target=_blank>Epicureans</a>. However, when they set to work, a distinguished <a about=https://topostext.org/place/435335WPon class=demonym long=33.5 lat=43.5>Pontic</a> called <a href=/people/1995 target=_blank>Demostratus</a>, who was staying there, rescued him by interposing his own body; the man had the narrowest possible escape from being stoned to death — as he richly deserved to be; what business had he to be the only sane man in a crowd of madmen, and needlessly make himself the butt of <a about=https://topostext.org/place/410300RPap class=demonym long=30 lat=41>Paphlagonian</a> infatuation? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:46'><b>&sect; 46</b>&nbsp;&nbsp;This was a special case; but it was the practice for the names of applicants to be read out the day before answers were given; the herald asked whether each was to receive his oracle; and sometimes the reply came from within, To perdition! One so repulsed could get shelter, fire or water, from no man; he must be driven from land to land as a blasphemer, an atheist, and — lowest depth of all — an <a href=/people/10981 target=_blank>Epicurean</a>. In this connexion <a href=/people/1439 target=_blank>Alexander</a> once made himself supremely </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:47'><b>&sect; 47</b>&nbsp;&nbsp;ridiculous. Coming across <a href=/people/106 target=_blank>Epicurus</a>'s Accepted Maxims, the most admirable of his books, as you know, with its terse presentment of his wise conclusions, he brought it into the middle of the market-place, there burned it on a fig-wood fire for the sins of its author, and cast its ashes into the sea. He issued an oracle on the occasion: The dotard's maxims to the flames be given. The fellow had no conception of the blessings conferred by that book upon its readers, of the peace, tranquillity, and independence of mind it produces, of the protection it gives against terrors, phantoms, and marvels, vain hopes and inordinate desires, of the judgement and candour that it fosters, or of its true purging of the spirit, not with torches and squills and such rubbish, but with right reason, truth, and frankness. Perhaps the greatest example of our rogue's audacity is what </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:48'><b>&sect; 48</b>&nbsp;&nbsp;I now come to. Having easy access to Palace and Court by <a href=/people/2782 target=_blank>Rutilianus</a>'s influence, he sent an oracle just at the crisis of the German war, when M. <a href=/people/11042 target=_blank>Aurelius</a> was on the point of engaging the <a href=/people/11059 target=_blank>Marcomanni</a> and <a href=/people/11070 target=_blank>Quadi</a>. The oracle required that two <a href=/people/10960 target=_blank>lions</a> should be flung alive into the <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Danube</a>, with quantities of sacred herbs and magnificent sacrifices. I had better give the words: To rolling <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Ister</a>, swoln with Heaven's rain, Of Cybelean thralls, those mountain beasts, Fling ye a pair; therewith all flowers and herbs Of savour sweet that <a about=https://topostext.org/place/300740RInd class=demonym long=74 lat=30>Indian</a> air doth breed. Hence victory, and fame, and lovely peace. These directions were precisely followed; the <a href=/people/10960 target=_blank>lions</a> swam across to the enemy's bank, where they were clubbed to death by the barbarians, who took them for <a href=/people/10953 target=_blank>dogs</a> or a new kind of <a href=/people/10952 target=_blank>wolves</a>; and our forces immediately after met with a severe defeat, losing some twenty thousand men in one engagement. This was followed by the <a about=https://topostext.org/place/458134UAqu class=demonym long=13.368 lat=45.7692>Aquileian</a> incident, in the course of which that city was nearly lost. In view of these results, <a href=/people/1439 target=_blank>Alexander</a> warmed up that stale <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Delphian</a> defence of the <a href=/people/105 target=_blank>Croesus</a> oracle: the God had foretold a victory, forsooth, but had not stated whether Romans or barbarians should have it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:49'><b>&sect; 49</b>&nbsp;&nbsp;The constant increase in the number of visitors, the inadequacy of accommodation in the city, and the difficulty of finding provisions for consultants, led to his introducing what he called night oracles. He received the packets, slept upon them, in his own phrase, and gave answers which the God was supposed to send him in dreams. These were generally not lucid, but ambiguous and confused, especially when he came to packets sealed with exceptional care. He did not risk tampering with these, but wrote down any words that came into his head, the results obtained corresponding well enough to his conception of the oracular. There were regular interpreters in attendance, who made considerable sums out of the recipients by expounding and unriddling these oracles. This office contributed to his revenue, the interpreters paying him 250 pounds each. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:49' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:50'><b>&sect; 50</b>&nbsp;&nbsp;Sometimes he stirred the wonder of the silly by answers to persons who had neither brought nor sent questions, and in fact did not exist. Here is a specimen: Who is 't, thou askst, that with Calligenia All secretly defiles thy nuptial bed? The slave <a href=/people/1057 target=_blank>Protogenes</a>, whom most thou trustest. Him thou enjoyedst: he thy wife enjoys — The fit return for that thine outrage done. And know that baleful drugs for thee are brewed, Lest thou or see or hear their evil deeds. Close by the wall, at thy bed's head, make search. Thy maid <a href=/people/829 target=_blank>Calypso</a> to their plot is privy. The names and circumstantial details might stagger a <a href=/people/139 target=_blank>Democritus</a>, till a moment's thought showed him the despicable trick. He often gave answers in <a href=/people/10337 target=_blank>Syriac</a> or <a about=https://topostext.org/place/490070RKel class=demonym long=7 lat=49>Celtic</a> to barbarians who </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:51'><b>&sect; 51</b>&nbsp;&nbsp;questioned him in their own tongue, though he had difficulty in finding compatriots of theirs in the city. In these cases there was a long interval between application and response, during which the packet might be securely opened at leisure, and somebody found capable of translating the question. The following is an answer given to a <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a>: Morphi ebargulis for night Chnenchicrank shall leave the light. Another oracle to some one who neither came nor existed </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:51' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:52'><b>&sect; 52</b>&nbsp;&nbsp;was in prose. 'Return the way thou earnest,' it ran; 'for he that sent thee hath this day been slain by his neighbour <a href=/people/336 target=_blank>Diocles</a>, with aid of the robbers <a href=/people/359 target=_blank>Magnus</a>, <a href=/people/1743 target=_blank>Celer</a>, and Bubalus, who are taken and in chains.' I must give you one or two of the answers that fell to my </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:52' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:53'><b>&sect; 53</b>&nbsp;&nbsp;share. I asked whether <a href=/people/1439 target=_blank>Alexander</a> was bald, and having sealed it publicly with great care, got a night oracle in reply: Sabardalachu malach <a href=/people/1108 target=_blank>Attis</a> was not he. Another time I did up the same question — What was <a href=/people/9 target=_blank>Homer</a>'s birthplace? — in two packets given in under different names. My servant misled him by saying, when asked what he came for, a cure for lung trouble; so the answer to one packet was: Cytmide and foam of steed the liniment give. As for the other packet, he got the information that the sender was inquiring whether the land or the sea route to <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> was preferable. So he answered, without much reference to <a href=/people/9 target=_blank>Homer</a>: Fare not by sea; land-travel meets thy need. I laid a good many traps of this kind for him; here is another. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:54'><b>&sect; 54</b>&nbsp;&nbsp;I asked only one question, but wrote outside the packet in the usual form, So-and-so's eight Queries, giving a fictitious name and sending the eight shillings. Satisfied with the payment of the money and the inscription on the packet, he gave me eight answers to my one question. This was, When will <a href=/people/1439 target=_blank>Alexander</a>'s imposture be detected? The answers concerned nothing in heaven or earth, but were all silly and meaningless together. He afterwards found out about this, and also that I had tried to dissuade <a href=/people/2782 target=_blank>Rutilianus</a> both from the marriage and from putting any confidence in the oracle; so he naturally conceived a violent dislike for me. When <a href=/people/2782 target=_blank>Rutilianus</a> once put a question to him about me, the answer was: Night-haunts and foul debauch are all his joy. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:55'><b>&sect; 55</b>&nbsp;&nbsp;It is true his dislike was quite justified. On a certain occasion I was passing through <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a>, with a spearman and a pikeman whom my friend the governor of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a> had lent me as an escort on my way to the sea. Ascertaining that I was the <a href=/people/3037 target=_blank>Lucian</a> he knew of, he sent me a very polite and hospitable invitation. I found him with a numerous company; by good luck I had brought my escort. He gave me his hand to kiss according to his usual custom. I took hold of it as if to kiss, but instead bestowed on it a sound bite that must have come near disabling it. The company, who were already offended at my calling him <a href=/people/1439 target=_blank>Alexander</a> instead of Prophet, were inclined to throttle and beat me for sacrilege. But he endured the pain like a man, checked their violence, and assured them that he would easily tame me, and illustrate <a href=/people/3029 target=_blank>Glycon</a>'s greatness in converting his bitterest foes to friends. He then dismissed them all, and argued the matter with me: he was perfectly aware of my advice to <a href=/people/2782 target=_blank>Rutilianus</a>; why had I treated him so, when I might have been preferred by him to great influence in that quarter? By this time I had realized my dangerous position, and was only too glad to welcome these advances; I presently went my way in all friendship with him. The rapid change wrought in me greatly impressed the observers. When I intended to sail, he sent me many parting gifts, and </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:55' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:56'><b>&sect; 56</b>&nbsp;&nbsp;offered to find us (<a href=/people/62 target=_blank>Xenophon</a> and me, that is; I had sent my father and family on to <a about=https://topostext.org/place/417324UAma class=place long=32.3868 lat=41.7495>Amastris</a>) a ship and crew — which offer I accepted in all confidence. When the passage was half over, I observed the master in tears arguing with his men, which made me very uneasy. It turned out that <a href=/people/1439 target=_blank>Alexander</a>'s orders were to seize and fling us overboard; in that case his war with me would have been lightly won. But the crew were prevailed upon by the master's tears to do us no harm. 'I am sixty years old, as you can see,' he said to me; 'I have lived an honest blameless life so far, and I should not like at my time of life, with a wife and children too, to stain my hands with blood.' And with that preface he informed us what we were there for, and what <a href=/people/1439 target=_blank>Alexander</a> had told him to do. He landed us at Aegiali, of Homeric fame, and thence sailed </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:56' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:57'><b>&sect; 57</b>&nbsp;&nbsp;home. Some <a about=https://topostext.org/place/411291WBos class=demonym long=29.0753 lat=41.1194>Bosphoran</a> envoys happened to be passing, on their way to <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a> with the annual tribute from their king <a href=/people/1369 target=_blank>Eupator</a>. They listened kindly to my account of our dangerous situation, I was taken on board, and reached <a about=https://topostext.org/place/417324UAma class=place long=32.3868 lat=41.7495>Amastris</a> safely after my narrow escape. From that time it was war between <a href=/people/1439 target=_blank>Alexander</a> and me, and I left no stone unturned to get my revenge. Even before his plot I had hated him, revolted by his abominable practices, and I now busied myself with the attempt to expose him; I found plenty of allies, especially in the circle of <a href=/people/250 target=_blank>Timocrates</a> the <a about=https://topostext.org/place/413314PHer class=person long=31.426 lat=41.287>Heracleot</a> philosopher. But <a href=/people/5493 target=_blank>Avitus</a>, the then governor of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a> and <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, restrained me, I may almost say with prayers and entreaties. He could not possibly spoil his relations with <a href=/people/2782 target=_blank>Rutilianus</a>, he said, by punishing the man, even if he could get clear evidence against him. Thus arrested in my course, I did not persist in what must have been, considering the disposition of the judge, a fruitless prosecution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:57' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:58'><b>&sect; 58</b>&nbsp;&nbsp;Among instances of <a href=/people/1439 target=_blank>Alexander</a>'s presumption, a high place must be given to his petition to the Emperor: the name of <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Abonutichus</a> was to be changed to <a about=https://topostext.org/place/420338UAbo class=place long=33.766 lat=41.974>Ionopolis</a>; and a new coin was to be struck, with a representation on the obverse of <a href=/people/3029 target=_blank>Glycon</a>, and, on the reverse, <a href=/people/1439 target=_blank>Alexander</a> bearing the garlands proper to his paternal grandfather <a href=/people/114 target=_blank>Asclepius</a>, and the famous scimetar of his maternal ancestor <a href=/people/153 target=_blank>Perseus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:58' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:59'><b>&sect; 59</b>&nbsp;&nbsp;He had stated in an oracle that he was destined to live to a hundred and fifty, and then die by a thunderbolt; he had in fact, before he reached seventy, an end very sad for a son of <a href=/people/2961 target=_blank>Podalirius</a>, his leg mortifying from foot to groin and being eaten of worms; it then proved that he was bald, as he was forced by pain to let the doctors make cooling applications to his head, which they could not do without removing his wig. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:60'><b>&sect; 60</b>&nbsp;&nbsp;So ended <a href=/people/1439 target=_blank>Alexander</a>'s heroics; such was the catastrophe of his tragedy; one would like to find a special providence in it, though doubtless chance must have the credit. The funeral celebration was to be worthy of his life, taking the form of a contest — for possession of the oracle. The most prominent of the impostors his accomplices referred it to <a href=/people/2782 target=_blank>Rutilianus</a>'s arbitration which of them should be selected to succeed to the prophetic office and wear the hierophantic oracular garland. Among these was numbered the grey-haired physician <a href=/people/1226 target=_blank>Paetus</a>, dishonouring equally his grey hairs and his profession. But Steward-of-the-Games <a href=/people/2782 target=_blank>Rutilianus</a> sent them about their business ungarlanded, and continued the defunct in possession of his holy office. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0062.tlg038:61'><b>&sect; 61</b>&nbsp;&nbsp;My object, dear friend, in making this small selection from a great mass of material has been twofold. First, I was willing to oblige a friend and comrade who is for me the pattern of wisdom, sincerity, good humour, justice, tranquillity, and geniality. But secondly I was still more concerned (a preference which you will be very far from resenting) to strike a blow for <a href=/people/106 target=_blank>Epicurus</a>, that great man whose holiness and divinity of nature were not shams, who alone had and imparted true insight into the good, and who brought deliverance to all that consorted with him. Yet I think casual readers too may find my essay not unserviceable, since it is not only destructive, but, for men of sense, constructive also. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg038.perseus-grc1:61' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=337', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas337";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=337';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

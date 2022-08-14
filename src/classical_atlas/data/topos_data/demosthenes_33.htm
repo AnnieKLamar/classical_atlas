@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Demosthenes 33, Against Apatourius' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Against Apatourius, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-350' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -350' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/433' content='urn:cts:greekLit:tlg0014.tlg033' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063465' content='Demosthenes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88615458' content='Augustus Taber Murray (1866-1940)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>Demosthenes 33, Against Apatourius</h2>Against Apatourius, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License. This text has 14 tagged references to 9 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg033'>urn:cts:greekLit:tlg0014.tlg033</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87738406'>Q87738406</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:1'><b>&sect; 1</b>&nbsp;&nbsp;The law, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, ordains that actions for merchants and shipowners shall be before the <a href=/people/1119 target=_blank>Thesmothetae</a> if they have been in any way wronged in the market either in connection with a voyage from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> to any point, or from some other port to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>; and it fixes imprisonment as the penalty for wrongdoers until such time as they shall have paid the amount adjudged against them, so that no one may lightly do wrong to any merchant. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:2'><b>&sect; 2</b>&nbsp;&nbsp;To those, however, who are brought into court in cases where no contract has been made, the law gives the right to have recourse to a special plea, that no one may bring a baseless or malicious suit, but that actions may be confined to those among the merchants and shipowners who are really wronged. Many defendants in mercantile suits have before now entered special pleas in accordance with this law, and have come before you and proved that their adversaries were making unjust charges and bringing baseless suits under pretence of being engaged in commerce. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:3'><b>&sect; 3</b>&nbsp;&nbsp;Who it is that has conspired with this fellow against me and who has concocted this suit, will become clear to you as my speech goes on. Since, however, <a href=/people/1876 target=_blank>Apaturius</a> has made a false charge against me, and is suing me contrary to law, seeing that there had been a release and discharge from all contracts made between him and me, and there exists no other contract made with him by me whether for business by sea or on land, I have entered the special plea that the action is not maintainable, according to the following laws. Laws </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:4'><b>&sect; 4</b>&nbsp;&nbsp;That <a href=/people/1876 target=_blank>Apaturius</a>, then, has instituted suit against me contrary to these laws and that his charges are false, I shall show you by many proofs. I, men of the jury, have by now been for a long time engaged in foreign trade, and up to a certain time risked the sea in my own person; it is not quite seven years since I gave up voyaging, and, having a moderate capital, I try to put it to work by making loans on adventures overseas. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:5'><b>&sect; 5</b>&nbsp;&nbsp;As I have visited many places and spend my time in your exchange, I know most of those who are seafarers, and with these men from <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a> I am on intimate terms through having myself spent much time there. My position, then, was such as I have described, when this fellow put into our port with a fellow-countryman of his, named <a href=/people/1247 target=_blank>Parmeno</a>, a <a about=https://topostext.org/place/410290UByz class=person long=28.9836 lat=41.0119>Byzantine</a> by birth, who was an exile from his country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:6'><b>&sect; 6</b>&nbsp;&nbsp;The plaintiff and <a href=/people/1247 target=_blank>Parmeno</a> came up to me on the exchange and spoke about money. It happened that the plaintiff owed forty minae on his ship, and his creditors were pressing him hard with demands for their money, and were about to board the ship and take possession of it, as his note was overdue. While he was in this embarrassment, <a href=/people/1247 target=_blank>Parmeno</a> agreed to give him ten minae, and the plaintiff asked me to contribute thirty minae, charging that the creditors in their eagerness to secure the ship had slandered him on the exchange, that they might seize the ship by putting him in a position where he could not pay. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:7'><b>&sect; 7</b>&nbsp;&nbsp;I happened to have no ready money in hand, but being acquainted with <a href=/people/268 target=_blank>Heracleides</a>, the banker, I persuaded him to lend the money, and to take me as surety. But when now the thirty minae had been procured, <a href=/people/1247 target=_blank>Parmeno</a> happened to fall out with the plaintiff. However, seeing that he had agreed to furnish him with ten minae and had already given him three of them, he was compelled on account of the money he had given to pay the remainder as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:8'><b>&sect; 8</b>&nbsp;&nbsp;Not wishing, however, for the reason given, to make the loan in his own name, he bade me to arrange it so that things should be as safe as possible for him. So I took over the seven minae from <a href=/people/1247 target=_blank>Parmeno</a>, and having had transferred to myself the obligation for the three, which the plaintiff had already received from him, caused a bill of sale to be executed on the ship and the slaves until such time as he should repay me the ten minae, which he had received through me, and also the thirty for which he had made me his surety with the banker. In proof that my words are true, hear the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:9'><b>&sect; 9</b>&nbsp;&nbsp;In this way, then, <a href=/people/1876 target=_blank>Apaturius</a> here got rid of his creditors. Not long after this, the bank having failed, and <a href=/people/268 target=_blank>Heracleides</a> for a time having gone into hiding, the plaintiff schemed to send the slaves from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and to remove the ship from the harbor. This was the cause of my first quarrel with him. For <a href=/people/1247 target=_blank>Parmeno</a>, learning of the fact, laid hands on the slaves as they were being taken away, and prevented the sailing of the ship; then he sent for me, and told me of the affair. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:10'><b>&sect; 10</b>&nbsp;&nbsp;When I heard him, thinking this fellow a most impious wretch because of his attempt, I set about considering how I might myself get free from my guaranty to the bank, and how the foreigner might avoid the loss of the money he had lent this fellow through me. After stationing men to guard the ship I told the whole story to the sureties of the bank and turned the security over to them, telling them that the foreigner had a lien of ten minae on the ship. Having arranged this, I attached the slaves, in order that, if any shortage occurred, the deficiency might be made up by the proceeds of their sale. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:11'><b>&sect; 11</b>&nbsp;&nbsp;In this way, when I found that <a href=/people/1876 target=_blank>Apaturius</a> was a rascal, I set matters right in my own interest and in the interest of the foreigner. But <a href=/people/1876 target=_blank>Apaturius</a>, as though the wrong was on my side, and not on his, made complaint to me, and asked if it were not enough for me to be released from my guaranty to the bank, without also attaching the ship and the slaves to secure his money for <a href=/people/1247 target=_blank>Parmeno</a>, and thus making an enemy of himself in the interest of one who was an exile. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:12'><b>&sect; 12</b>&nbsp;&nbsp;I replied that, when a man had put his trust in me, I was all the less inclined to leave him in the lurch, because, while he was an exile and in misfortune, he was being wronged by the plaintiff; and after I had done everything possible, and had incurred the utmost enmity on the part of this fellow, I with difficulty secured the money, the ship being sold for forty minae, the precise amount for which she was mortgaged. The thirty minae then having been paid back to the bank, and the ten minae to <a href=/people/1247 target=_blank>Parmeno</a>, in the presence of many witnesses, we cancelled the bond in accordance with which the money had been lent, and mutually released and discharged one another from our engagements so that the plaintiff had nothing more to do with me, nor I with him. In proof that my words are true, hear the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:13'><b>&sect; 13</b>&nbsp;&nbsp;Since then I have had no business transaction with the fellow, whether great or small, but <a href=/people/1247 target=_blank>Parmeno</a> sued him for damages for the blows which he received from him when he laid hands on the slaves as they were being carried off, and because he had been prevented by him from making the voyage to <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>. When the action had been instituted, <a href=/people/1247 target=_blank>Parmeno</a> tendered an oath to <a href=/people/1876 target=_blank>Apaturius</a> regarding some of his charges, and he accepted it, and furthermore made a deposit to be forfeited if he did not swear the oath. In proof that my words are true, take the deposition. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:14'><b>&sect; 14</b>&nbsp;&nbsp;Having accepted the oath, since he was aware that many would know that he had perjured himself, he did not present himself for the swearing, but, as though he could get free of the oath by an action, he summoned <a href=/people/1247 target=_blank>Parmeno</a> into court. When both actions had been instituted, on the advice of persons present they proceeded to an arbitration, and after drawing up an agreement they submitted the matter to one common arbitrator, <a href=/people/4263 target=_blank>Phocritus</a>, a fellow-country-man of theirs; and each one appointed one man to sit with <a href=/people/4263 target=_blank>Phocritus</a>, <a href=/people/1876 target=_blank>Apaturius</a> choosing <a href=/people/657 target=_blank>Aristocles</a> of <a about=https://topostext.org/place/381236DOex class=person long=23.8745 lat=37.9141>Oe</a>, and <a href=/people/1247 target=_blank>Parmeno</a> choosing me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:15'><b>&sect; 15</b>&nbsp;&nbsp;They agreed in the articles that, if we three were of one mind, our decision should be binding on them, but, if not, then they should be bound to abide by what the two should determine. Having made this agreement, they appointed sureties for one another to guarantee its fulfillment. <a href=/people/1876 target=_blank>Apaturius</a> appointed <a href=/people/657 target=_blank>Aristocles</a>, and <a href=/people/1247 target=_blank>Parmeno</a> <a href=/people/875 target=_blank>Archippus</a> of <a about=https://topostext.org/place/379240DMyr class=person long=23.9661 lat=37.8778>Myrrhinus</a>. At the outset they deposited their agreement with <a href=/people/4263 target=_blank>Phocritus</a>, but upon his bidding them to deposit it with someone else, they deposited it with <a href=/people/657 target=_blank>Aristocles</a>. In proof that my words are true, hear the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:16'><b>&sect; 16</b>&nbsp;&nbsp;That the agreements were deposited with <a href=/people/657 target=_blank>Aristocles</a>, and that the arbitration was left with <a href=/people/4263 target=_blank>Phocritus</a>, <a href=/people/657 target=_blank>Aristocles</a> and myself, has been testified to you by witnesses who know the facts. And now, men of the jury, I beg of you to hear from me what happened after this; for from this it will be clear to you that this man <a href=/people/1876 target=_blank>Apaturius</a> is making a claim upon me which is baseless and malicious. For when he saw that <a href=/people/4263 target=_blank>Phocritus</a> and I were of one mind, and realized that we should give judgement against him, wishing to break down the arbitration, he sought, in collusion with the man who held them, to destroy the articles of agreement, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:17'><b>&sect; 17</b>&nbsp;&nbsp;and he proceeded to contend that <a href=/people/657 target=_blank>Aristocles</a> was his arbitrator, and declared that <a href=/people/4263 target=_blank>Phocritus</a> and I were empowered to do nothing else than seek to bring about a reconciliation. Angered at this statement, <a href=/people/1247 target=_blank>Parmeno</a> demanded of <a href=/people/657 target=_blank>Aristocles</a> that he produce the agreement, adding that if there had been any criminal meddling with the papers, proof of the fact would not be far to seek, for his own slave had written them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:18'><b>&sect; 18</b>&nbsp;&nbsp;<a href=/people/657 target=_blank>Aristocles</a> promised that he would produce the articles, but up to this day has not brought them to light. He did meet us on the appointed day at the <a about=https://topostext.org/place/380237SHep class=place long=23.7214 lat=37.9756>Hephaisteion</a>, but made the excuse that his slave while waiting for him had fallen asleep and lost the document. The man who concocted this plot was <a href=/people/2161 target=_blank>Eryxias</a>, the physician from <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Peiraeus</a>, an intimate friend of <a href=/people/657 target=_blank>Aristocles</a>, the same man who out of enmity toward me has also got up this action against me. Now in proof that <a href=/people/657 target=_blank>Aristocles</a> pretended that he had lost the document, hear the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:19'><b>&sect; 19</b>&nbsp;&nbsp;After this the arbitration was done away with, the articles of agreement having disappeared and the authority of the arbitrators being questioned. They did endeavor to draw up new articles about these matters, but could come to no agreement, as the plaintiff insisted on having <a href=/people/657 target=_blank>Aristocles</a>, and <a href=/people/1247 target=_blank>Parmeno</a> the three to whom in the first instance the arbitration had been referred. Nevertheless, although no new articles had been drawn, and those originally drawn had been made away with, the man who had made away with them came to such a pitch of shamelessness that he declared he would in his own single person pronounce the award. <a href=/people/1247 target=_blank>Parmeno</a> called witnesses to be present, and forbade <a href=/people/657 target=_blank>Aristocles</a> to pronounce an award against him, without his co-arbitrators, in defiance of the articles of agreement. Hear the deposition of those in whose presence he thus forbade him. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:20'><b>&sect; 20</b>&nbsp;&nbsp;After this there befell <a href=/people/1247 target=_blank>Parmeno</a>, men of the jury, a dire misfortune. He was dwelling in <a about=https://topostext.org/place/400263UOph class=place long=26.339 lat=40.027>Ophrynium</a> because of his being an exile from home, when the earthquake in the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a> occurred; and in the collapse of his house his wife and children perished. Immediately on hearing of the disaster he departed by ship from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>. <a href=/people/657 target=_blank>Aristocles</a>, although the man had adjured him in the presence of witnesses not to pronounce judgement against him without his co-arbitrators, when <a href=/people/1247 target=_blank>Parmeno</a> had left the country because of the disaster, pronounced an award against him by default. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:21'><b>&sect; 21</b>&nbsp;&nbsp;<a href=/people/4263 target=_blank>Phocritus</a> and I, who were named in the same articles, refused to participate in the award, because the plaintiff denied that in his view we were arbitrators; but <a href=/people/657 target=_blank>Aristocles</a>, whose authority was not only disputed, but who had expressly been forbidden to act, nevertheless made the declaration — a thing which not one of you and not one of all the other <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> could have been induced to do. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:22'><b>&sect; 22</b>&nbsp;&nbsp;For all that <a href=/people/1876 target=_blank>Apaturius</a> and the arbitrator did in connection with the disappearance of the articles and the pronouncing of the award, the man wronged, if ever he comes safely back to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, will obtain satisfaction from them. But since <a href=/people/1876 target=_blank>Apaturius</a> has come to such a pitch of shamelessness as to bring suit against me also, charging that I undertook to pay any sum that might be awarded against <a href=/people/1247 target=_blank>Parmeno</a>, and since he declares that my name was entered in the articles as surety, I shall free myself from such a charge in the proper way; I shall first bring forward witnesses to prove that it was not I who became surety for <a href=/people/1247 target=_blank>Parmeno</a>, but <a href=/people/875 target=_blank>Archippus</a> of <a about=https://topostext.org/place/379240DMyr class=person long=23.9661 lat=37.8778>Myrrhinus</a>; and I shall then undertake, men of the jury, to make my defence by circumstantial proofs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:23'><b>&sect; 23</b>&nbsp;&nbsp;In the first place, I hold that the time is a witness for me to prove that the charge is groundless. For the agreement to arbitrate made by this fellow and <a href=/people/1247 target=_blank>Parmeno</a> and the award of <a href=/people/657 target=_blank>Aristocles</a> took place two years ago; but merchants may bring action every month from <a href=/people/12203 target=_blank>Boedromion</a> to <a href=/people/12206 target=_blank>Munichion</a>, in order that they may obtain their rights without delay and put to sea. So, if I was in truth a surety for <a href=/people/1247 target=_blank>Parmeno</a>, why did not <a href=/people/1876 target=_blank>Apaturius</a> immediately after the award proceed to collect the sum guaranteed? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:24'><b>&sect; 24</b>&nbsp;&nbsp;It is not open to him to say that because of his friendship for me he was loth to incur my enmity, for he had himself in utter unfriendliness been forced by me to pay the one thousand drachmae due to <a href=/people/1247 target=_blank>Parmeno</a>; and when he was trying to get his ship out of the port in his plot to sneak away and to defraud the bank of what was due, it was I who prevented him. So, if I had become a surety for <a href=/people/1247 target=_blank>Parmeno</a>, he would not have waited until two years afterward to exact the sum guaranteed, but would have proceeded to do so at once. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:25'><b>&sect; 25</b>&nbsp;&nbsp;Ah, but he was well provided with funds, so that it was open to him to proceed against me later on, and at the moment he had no time, as he was about to put to sea! On the contrary, he was in such straits that he had lost all his effects, and had sold his ship. And, if there really had been anything to prevent his immediately bringing suit against me, why, when he was in town last year, did he not dare, I will not say to bring suit, but even to make a demand? It was surely the proper course for him, if judgement had been given against <a href=/people/1247 target=_blank>Parmeno</a> in his favour, and if I was the latter's surety, to come to me himself accompanied by witnesses, and to demand the amount guaranteed, if not the year before last, at any rate in the year just past; and then, if I proffered payment, to take his money, and, if I did not, to bring suit. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:26'><b>&sect; 26</b>&nbsp;&nbsp;For in claims of this sort everyone makes demand before he brings suit. Well, there isn't a person living who will testify that he was present either last year or the year before, when this man either instituted proceedings against me or made any mention to me whatever of the claims for which he is now suing me. To prove that he was in town last year when the courts were open, please take the deposition. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:27'><b>&sect; 27</b>&nbsp;&nbsp;Now, please take the law which declares that guaranties shall be for a year only. I do not lay stress on the law to show that I should not pay what is due, if I actually became a surety, but I declare that the law is a witness that I did not become one, and so is the fellow himself; for otherwise he would have brought suit against me within the time specified by the law. Law </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:28'><b>&sect; 28</b>&nbsp;&nbsp;Let this, then, be another proof to you that <a href=/people/1876 target=_blank>Apaturius</a> is lying. If I had become surety to him for <a href=/people/1247 target=_blank>Parmeno</a>, it is inconceivable that I should have made the plaintiff my enemy for <a href=/people/1247 target=_blank>Parmeno</a>'s sake, taking every care that the latter should not lose what he had lent the plaintiff through me, and yet have allowed myself to be left in the lurch by him as his surety to the plaintiff. For what ground had I to hope that leniency would be shown me by the man whom I had compelled to do justice to <a href=/people/1247 target=_blank>Parmeno</a>? And when I had made him my enemy by exacting from him what was guaranteed to the bank, what treatment could I myself have expected to receive at his hands? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:29'><b>&sect; 29</b>&nbsp;&nbsp;It is worth while also for you to bear this in mind, men of the jury, that, if I had been surety, I should never have denied it. For my argument was much stronger, if I admitted the guaranty and appealed to the agreement in accordance with which the arbitration was to be held. That the matter was referred to three arbitrators has been shown by testimony. When, then, there had been no decision by the three, why in the world should I have denied the guaranty? For, if judgement had not been given in accordance with the agreement, neither should I have been open to action for my guaranty. Therefore, men of the jury, if I had really become a surety, I should not have given up a defence which was at hand, and have proceeded to deny the fact. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:30'><b>&sect; 30</b>&nbsp;&nbsp;Again, the following fact has been testified to you by witnesses, that, after the articles of agreement had been made away with by these men, the plaintiff and <a href=/people/1247 target=_blank>Parmeno</a> sought to have new articles drawn up, thus admitting that their former agreement was without force. Yet, when they sought to have other articles drawn in regard to the judgement that was to be given, since the existing ones had been lost, how was it possible that, if other articles were not drawn, there could be either arbitration or guaranty? It was the fact that they disagreed upon this very point that prevented their writing new articles, <a href=/people/1876 target=_blank>Apaturius</a> demanding that there should be one arbitrator, and <a href=/people/1247 target=_blank>Parmeno</a> that there should be three. But, since the original articles were made away with, in accordance with which he alleges that I became a surety, and other articles were not written, what right has he to bring suit against me, against whom he is able to produce no agreement? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:31'><b>&sect; 31</b>&nbsp;&nbsp;Further, it has been testified to you by witnesses that <a href=/people/1247 target=_blank>Parmeno</a> forbade <a href=/people/657 target=_blank>Aristocles</a> to give judgement against him without the concurrence of his co-arbitrators. When, therefore, it is shown that the same person has made away with the document in accordance with the terms of which the arbitration was to be made, and declares that he has made the decision without his co-arbitrators, and in defiance of the notice forbidding him to do so, how can you with any fairness credit the fellow and condemn me? Consider this, men of the jury: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:32'><b>&sect; 32</b>&nbsp;&nbsp;suppose it was not against me, but against <a href=/people/1247 target=_blank>Parmeno</a>, that this man <a href=/people/1876 target=_blank>Apaturius</a> were now taking action, seeking to recover the twenty minae in reliance upon the judgement of <a href=/people/657 target=_blank>Aristocles</a>; and that <a href=/people/1247 target=_blank>Parmeno</a> was present and making his defence, calling witnesses to prove that he had turned the matter over to <a href=/people/657 target=_blank>Aristocles</a>, not as a single arbitrator, but as one of three; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:33'><b>&sect; 33</b>&nbsp;&nbsp;that he had forbidden him to announce a decision against him without his co-arbitrators; and that, after his wife and children had perished in the earthquake, and he in the face of a disaster so appalling had sailed for home, the man who had made away with the articles of agreement announced a judgement against him by default in his absence, is there a single one of you who, when <a href=/people/1247 target=_blank>Parmeno</a> had brought out these facts in his defence, would have considered an award so unjustly made to be valid? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:34'><b>&sect; 34</b>&nbsp;&nbsp;More than this; suppose that not every point was under dispute; that there were in existence articles of agreement; that <a href=/people/657 target=_blank>Aristocles</a> was admittedly an arbitrator having sole authority; that <a href=/people/1247 target=_blank>Parmeno</a> had not forbidden him to make the award; but that the calamity had befallen the man before the announcement of the award; what adversary or what arbitrator would have been so cruel as not to postpone the case until the man returned to the country? Then, if <a href=/people/1247 target=_blank>Parmeno</a>, coming to plead before you, should be judged in every point to speak with more justice than the plaintiff, how can you justly give judgement against me, who have absolutely no contract with this man? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:35'><b>&sect; 35</b>&nbsp;&nbsp;That I, on my part, have made my special plea with good right, and that <a href=/people/1876 target=_blank>Apaturius</a> has lodged against me a claim that is .baseless, and instituted a suit contrary to law, has, I think, been shown to you, men of the jury, by many proofs. The main point is this: <a href=/people/1876 target=_blank>Apaturius</a> will not even attempt to say that he has any articles showing an agreement between us. When he falsely states that my name was written in as surety in the agreement made with <a href=/people/1247 target=_blank>Parmeno</a>, demand of him the articles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:36'><b>&sect; 36</b>&nbsp;&nbsp;Meet him on this ground: that all men, when they make agreements with one another, seal the articles and deposit them with persons whom they can trust, for this very purpose, that, if a dispute arises between them, they may refer to the document and so settle the point at issue. But when a man, after doing away with the source of accurate knowledge, undertakes to deceive you with words, how can you with justice put any confidence in him? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:37'><b>&sect; 37</b>&nbsp;&nbsp;But perhaps some witness (for this is the easiest course for those who have chosen to do wrong and to bring baseless charges) will testify for him against me. If then, I take action against the witness, how will he prove that his testimony is true? By the articles of agreement? Well, then, let there be no delay about this; let the one who has them bring forward the articles at once. But if he says they have been lost, how, then, shall I find means of refuting the false testimony brought against me? If the document had been deposited with me, it would have been open to <a href=/people/1876 target=_blank>Apaturius</a> to charge that I had made away with it because of my guaranty; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0014.tlg033:38'><b>&sect; 38</b>&nbsp;&nbsp;but, if it was deposited with <a href=/people/657 target=_blank>Aristocles</a>, why is it, if the agreement has been lost without the plaintiff's knowledge, that instead of bringing suit against the man who received the agreement but does not produce it, he makes charges against me, bringing forward as a witness against me the man who made away with the agreement, against whom he ought to feel resentment, if it were not that they are leagued together in their evil scheming? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg033.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=433', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas433";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=433';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

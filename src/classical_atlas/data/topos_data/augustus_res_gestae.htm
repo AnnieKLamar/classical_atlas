@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Augustus, Res Gestae Divi Augusti' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Res Gestae Divi Augusti, The Achievements of the Divine Augustus, translated by Peter Astbury Brunt (1917-2005) and John Michael Moore, (OUP 1967), placed on line by Skidmore College, copyright not specified.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='14' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 14' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='unstated' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/614' content='urn:cts:latinLit:phi1221.phi007' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79033006' content='Augustus Caesar'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n50006187' content='Peter A. Brunt and John Michael Moore' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.skidmore.edu/academics/classics/courses/1999spring/hi361f/resgestae.html' /><h2>Augustus, Res Gestae Divi Augusti</h2>Res Gestae Divi Augusti, The Achievements of the Divine Augustus, translated by Peter Astbury Brunt (1917-2005) and John Michael Moore, (OUP 1967), placed on line by Skidmore College, copyright not specified. This text has 105 tagged references to 70 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi1221.phi007'>urn:cts:latinLit:phi1221.phi007</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q734095'>Q734095</a>;     <a href='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=p>
+                            <p id='urn:cts:latinLit:phi1221.phi007:p'><b>&sect; p</b>&nbsp;&nbsp;A copy is set out below of The achievements of the Divine <a href=/people/8 target=_blank>Augustus</a>, by which he brought the world under the empire of the Roman people, and of the expenses which he bore for the state and people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>; the original is engraved on two bronze pillars set up at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 14 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi1221.phi007:1'><b>&sect; 1</b>&nbsp;&nbsp;At the age of nineteen on my own responsibility and at my own expense I raised an army, with which I successfully championed the liberty of the republic when it was oppressed by the tyranny of a faction. 2 On that account the senate passed decrees in my honor enrolling me in its order in the consulship of Gaius <a href=/people/644 target=_blank>Pansa</a> and <a href=/people/1616 target=_blank>Aulus</a> <a href=/people/612 target=_blank>Hirtius</a>, assigning me the right to give my opinion among the consulars and giving me imperium. 3 It ordered me as a propraetor to provide in concert with the consuls that the republic should come to no harm. 4 In the same year, when both consuls had fallen in battle, the people appointed me consul and triumvir for the organization of the republic. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -43 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:phi1221.phi007:2'><b>&sect; 2</b>&nbsp;&nbsp;I drove into exile the murderers of my father, avenging their crime through tribunals established by law; and afterwards, when they made war on the republic, I twice defeated them in battle [42 BC]. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -42 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#2 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:phi1221.phi007:3'><b>&sect; 3</b>&nbsp;&nbsp;I undertook many civil and foreign wars by land and sea throughout the world, and as victor I spared the lives of all citizens who asked for mercy. 2 When foreign peoples could safely be pardoned I preferred to preserve rather than to exterminate them. 3 The Roman citizens who took the soldier's oath of obedience to me numbered about 500,000. I settled rather more than 300,000 of these in colonies or sent them back to their home towns after their period of service; to all these I assigned lands or gave money as rewards for their military service. 4 I captured six hundred ships, not counting ships smaller than triremes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#3 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:phi1221.phi007:4'><b>&sect; 4</b>&nbsp;&nbsp;I celebrated two ovations and three curule triumphs and I was twenty-one times saluted as imperator. The senate decreed still more triumphs to me, all of which I declined. I laid the bay leaves with which my fasces were wreathed in the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> after fulfilling all the vows which I had made in each war. 2 On fifty-five occasions the senate decreed that thanksgivings should be offered to the immortal gods on account of the successes on land and sea gained by me or by my legates acting under my auspices. The days on which thanksgivings were offered in accordance with decrees of the senate numbered eight hundred and ninety. 3 In my triumphs nine kings or children of kings were led before my chariot. 4 At the time of writing I have been consul thirteen times and am in the thirty-seventh year of tribunician power. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 14 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#4 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:phi1221.phi007:5'><b>&sect; 5</b>&nbsp;&nbsp;The dictatorship was offered to me by both senate and people in my absence and when I was at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> in the consulship of Marcus <a href=/people/71 target=_blank>Marcellus</a> and Lucius <a href=/people/3344 target=_blank>Arruntius</a>, but I refused it. 2 I did not decline in the great dearth of corn to undertake the charge of the corn-supply, which I so administered that within a few days I delivered the whole city from apprehension and immediate danger at my own cost and by my own efforts. 3 At that time the consulship was also offered to me, to be held each year for the rest of my life, and I refused it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -22 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#5 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:phi1221.phi007:6'><b>&sect; 6</b>&nbsp;&nbsp;In the consulship of Marcus <a href=/people/4740 target=_blank>Vinicius</a> and Quintus <a href=/people/464 target=_blank>Lucretius</a> [19 BC] and afterwards in that of Publius and Gnaeus <a href=/people/204 target=_blank>Lentulus</a> [18 BC], and thirdly in that of <a href=/people/1299 target=_blank>Paullus</a> <a href=/people/11073 target=_blank>Fabius Maximus</a> and Quintus <a href=/people/1301 target=_blank>Tubero</a> [11 BC], the senate and people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> agreed that I should be appointed supervisor of laws and morals without a colleague and with supreme power, but I would not accept any office inconsistent with the custom of our ancestors. 2 The measures that the senate then desired me to take I carried out in virtue of my tribunician power. On five occasions, of my own initiative, I asked for and received from the senate a colleague in that power. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -11 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#6 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:phi1221.phi007:7'><b>&sect; 7</b>&nbsp;&nbsp;I was triumvir for the organization of the republic for ten consecutive years. 2 Up to the day of writing I have been princeps senatus for forty years. 3 I am <a href=/people/12031 target=_blank>pontifex maximus</a>, augur, quindecimvir sacrisfaciundis, septemvir epulonum, frater arvalis, sodalis <a href=/people/1275 target=_blank>Titius</a>, fetialis. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#7 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:phi1221.phi007:8'><b>&sect; 8</b>&nbsp;&nbsp;In my fifth consulship [29 BC] I increased the number of patricians on the instructions of the people and the senate. 2 I revised the roll of the senate three times. In my sixth consulship with Marcus <a href=/people/91 target=_blank>Agrippa</a> as colleague [28 BC], I carried out a census of the people, and I performed a lustrum after a lapse of forty-two years; at that lustrum 4,063,000 Roman citizens were registered. 3 Then a second time I performed a lustrum with consular imperium and without a colleague, in the consulship of Gaius <a href=/people/2605 target=_blank>Censorinus</a> and Gaius <a href=/people/685 target=_blank>Asinius</a> [8 BC]; at that lustrum 4,233,000 citizens were registered. 4 Thirdly I performed a lustrum with consular imperium, with <a href=/people/370 target=_blank>Tiberius</a> Caesar, my son, as colleague, in the consulship of Sextus <a href=/people/151 target=_blank>Pompeius</a> and Sextus <a href=/people/2716 target=_blank>Appuleius</a>; at that lustrum 4,957,000 citizens were registered. 5 By new laws passed on my proposal I brought back into use many exemplary practices of our ancestors which were disappearing in our time, and in many ways I myself transmitted exemplary practices to posterity for their imitation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 14 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#8 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi1221.phi007:9'><b>&sect; 9</b>&nbsp;&nbsp;The senate decreed that vows should be undertaken every fifth year by the consuls and priests for my health. In fulfillment of these vows games have frequently been celebrated in my lifetime, sometimes by the four most distinguished colleges of priests, sometimes by the consuls. 2 Moreover, all the citizens, individually and on behalf of their towns, have unanimously and continuously offered prayers at all the pulvinaria for my health. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#9 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:phi1221.phi007:10'><b>&sect; 10</b>&nbsp;&nbsp;My name was inserted in the hymn of the Salii by a decree of the senate, and it was enacted by law that my person should be inviolable for ever and that I should hold the tribunician power for the duration of my life. 2 I declined to be made <a href=/people/12031 target=_blank>pontifex maximus</a> in the place of my colleague who was still alive, when the people offered me this priesthood which my father had held. Some years later, after the death of the man who had taken the opportunity of civil disturbance to seize it for himself, I received this priesthood, in the consulship of Publius <a href=/people/228 target=_blank>Sulpicius</a> and Gaius <a href=/people/4329 target=_blank>Valgius</a> [12 BC], and such a concourse poured in from the whole of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> to my election as has never been recorded at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> before that time. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -12 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#10 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:phi1221.phi007:11'><b>&sect; 11</b>&nbsp;&nbsp;The senate consecrated the altar of <a href=/people/1560 target=_blank>Fortuna</a> Redux before the temples of Honour and Virtue at the <a about=https://topostext.org/place/419125FPCp class=place long=12.4895 lat=41.8847>Porta Capena</a> in honour of my return, and it ordered that the pontifices and <a href=/people/12228 target=_blank>Vestal Virgins</a> should make an annual sacrifice there on the anniversary of my return to the city from <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> in the consulship of Quintus <a href=/people/464 target=_blank>Lucretius</a> and Marcus <a href=/people/4740 target=_blank>Vinicius</a> [12 October 19 BC], and it named the day the <a href=/people/8930 target=_blank>Augustalia</a> from my cognomen. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -19 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#11 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:phi1221.phi007:12'><b>&sect; 12</b>&nbsp;&nbsp;In accordance with the will of the senate some of the praetors and tribunes of the plebs with the consul Quintus <a href=/people/464 target=_blank>Lucretius</a> and the leading men were sent to <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a> to meet me, an honor that up to the present day has been decreed to no one besides myself. 2 On my return from Spain and Gaul in the consulship of <a href=/people/370 target=_blank>Tiberius</a> Nero and Publius <a href=/people/2541 target=_blank>Quintilius</a> after successfully arranging affairs in those provinces, the senate resolved that an <a about=https://topostext.org/place/419125SAPa class=place long=12.4755 lat=41.9061>altar</a> of the Augustan <a href=/people/280 target=_blank>Peace</a> should be consecrated next to the <a about=https://topostext.org/place/419125SCMa class=place long=12.481 lat=41.905>Campus Martius</a> in honor of my return, and ordered that the magistrates and priests and <a href=/people/12228 target=_blank>Vestal virgins</a> should perform an annual sacrifice there. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -13 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#12 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:phi1221.phi007:13'><b>&sect; 13</b>&nbsp;&nbsp;It was the will of our ancestors that the <a about=https://topostext.org/place/419125SJan class=place long=12.4851 lat=41.8933>gateway</a> of <a href=/people/983 target=_blank>Janus</a> <a href=/people/773 target=_blank>Quirinus</a> should be shut when victories had secured peace by land and sea throughout the whole empire of the Roman people; from the foundation of the city down to my birth, tradition records that it was shut only twice, but while I was the leading citizen the senate resolved that it should be shut on three occasions. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html#13 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:phi1221.phi007:14'><b>&sect; 14</b>&nbsp;&nbsp;My sons, Gaius and Lucius Caesar, of whom <a href=/people/2811 target=_blank>Fortune</a> bereaved me in their youth, were for my honor designated as consuls by the senate and people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> when they were fourteen, with the provision that they should enter on that magistracy after the lapse of five years. And the senate decreed that from the day when they were led into the forum they should take part in the councils of state. 2 Furthermore each of them was presented with silver shields and spears by the whole body of equites Romani and hailed as princeps iuventutis. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/3*.html#14 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:phi1221.phi007:15'><b>&sect; 15</b>&nbsp;&nbsp;To each member of the Roman plebs I paid under my father's will 300 sesterces [44 BC], and in my own name I gave them 400 each from the booty of war in my fifth consulship [29 BC], and once again in my tenth consulship [24 BC] I paid out 400 sesterces as a largesse to each man from my own patrimony, and in my eleventh consulship [23 BC] I bought grain with my own money and distributed twelve rations apiece, and in the twelfth year of my tribunician power [11 BC] I gave every man 400 sesterces for the third time. These largesses of mine never reached fewer than 250,000 persons. 2 In the eighteenth year of my tribunician power [5 BC] and my twelfth consulship I gave 240 sesterces apiece to 320,000 members of the urban plebs. 3 In my fifth consulship [29 BC] I gave 1,000 sesterces out of booty to every one of the colonists drawn from my soldiers; about 120,000 men in the colonies received this largesse at the time of my triumph. 4 In my thirteenth consulship [2 BC] I gave 60 denarii apiece to the plebs who were then in receipt of public grain ; they comprised a few more than 200,000 persons. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -2 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/3*.html#15 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:phi1221.phi007:16'><b>&sect; 16</b>&nbsp;&nbsp;I paid cash to the towns for the lands that I assigned to soldiers in my fourth consulship, and later in the consulship of Marcus <a href=/people/95 target=_blank>Crassus</a> and Gnaeus <a href=/people/204 target=_blank>Lentulus</a>. The sum amounted to about 600,000,000 sesterces paid for lands in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, and about 260,000,000 disbursed for provincial lands. Of all those who founded military colonies in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> or the provinces I was the first and only one to have done this in the recollection of my contemporaries. 2 Later, in the consulships of <a href=/people/370 target=_blank>Tiberius</a> Nero and Gnaeus <a href=/people/209 target=_blank>Piso</a> [7 BC], of Gaius <a href=/people/1531 target=_blank>Antistius</a> and <a href=/people/412 target=_blank>Decimus</a> <a href=/people/318 target=_blank>Laelius</a> [6 BC], of Gaius <a href=/people/1469 target=_blank>Calvisius</a> and Lucius Pasienus [4 BC], of Lucius <a href=/people/204 target=_blank>Lentulus</a> and Marcus <a href=/people/747 target=_blank>Messalla</a> [3 BC], and of Lucius <a href=/people/1657 target=_blank>Caninius</a> and Quintus <a href=/people/820 target=_blank>Fabricius</a> [2 BC], I paid monetary rewards to soldiers whom I settled in their home towns after completion of their service, and on this account I expended about 400,000,000 sesterces. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -6 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/3*.html#16 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi1221.phi007:17'><b>&sect; 17</b>&nbsp;&nbsp;Four times I assisted the treasury with my own money, so that I transferred to the administrators of the treasury 150,000,000 sesterces. 2 In the consulship of Marcus <a href=/people/128 target=_blank>Lepidus</a> and Lucius <a href=/people/3344 target=_blank>Arruntius</a> [AD 6], when the military treasury was founded by my advice for the purpose of paying rewards to soldiers who had served for twenty years or more, I transferred to it from my own patrimony 170,000,000 sesterces. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 6 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/3*.html#17 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:phi1221.phi007:18'><b>&sect; 18</b>&nbsp;&nbsp;From the consulship of Gnaeus and Publius <a href=/people/204 target=_blank>Lentulus</a> [18 BC] onwards, whenever the taxes did not suffice, I made distributions of grain and money from my own granary and patrimony, sometimes to 100,000 persons, sometimes to many more. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/3*.html#18 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:phi1221.phi007:19'><b>&sect; 19</b>&nbsp;&nbsp;I built the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Senate House</a>, and the Chalcidicum adjacent to it, the <a about=https://topostext.org/place/419125SApP class=place long=12.4855 lat=41.8891>temple</a> of <a href=/people/2 target=_blank>Apollo</a> on the <a about=https://topostext.org/place/419125LPal class=place long=12.4884 lat=41.8896>Palatine</a> with its porticoes, the <a about=https://topostext.org/place/419125SJul class=place long=12.48616 lat=41.89201>temple</a> of the divine <a href=/people/3 target=_blank>Julius</a>, the <a href=/people/12178 target=_blank>Lupercal</a>, the portico at the <a about=https://topostext.org/place/419125BCFl class=place long=12.4765 lat=41.8928>Flaminian circus</a>, which I permitted to bear the name of the portico of <a href=/people/321 target=_blank>Octavius</a> after the man who erected the previous portico on the same site, a pulvinar at the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus Maximus</a>, (2) the temples on the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> of <a href=/people/1 target=_blank>Jupiter</a> <a href=/people/3841 target=_blank>Feretrius</a> and <a href=/people/1 target=_blank>Jupiter</a> the Thunderer, the temple of <a href=/people/773 target=_blank>Quirinus</a>, the temples of <a href=/people/11 target=_blank>Minerva</a> and Queen <a href=/people/19 target=_blank>Juno</a> and <a href=/people/1 target=_blank>Jupiter</a> Libertas on the <a about=https://topostext.org/place/419125LAve class=place long=12.4792 lat=41.8835>Aventine</a>, the temple of the <a about=https://topostext.org/place/419125SLPe class=place long=12.4767 lat=41.895>Lares</a> at the top of the Sacred Way, the temple of the Di <a href=/people/12190 target=_blank>Penates</a> in the <a about=https://topostext.org/place/419125LVla class=place long=12.4887 lat=41.891>Velia</a>, the temple of Youth, and the <a about=https://topostext.org/place/419125SMMT class=place long=12.48494 lat=41.88952>temple</a> of the <a href=/people/2057 target=_blank>Great Mother</a> on the <a about=https://topostext.org/place/419125LPal class=place long=12.4884 lat=41.8896>Palatine</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:phi1221.phi007:20'><b>&sect; 20</b>&nbsp;&nbsp;I restored the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> and the <a about=https://topostext.org/place/419125BPom class=place long=12.47388 lat=41.89524>theatre of Pompey</a>, both works at great expense without inscribing my own name on either. 2 I restored the channels of the aqueducts, which in several places were falling into disrepair through age, and I brought water from a new spring into the aqueduct called <a about=https://topostext.org/place/419125AqMa class=place long=12.5103 lat=41.8975>Marcia</a>, doubling the supply. 3 I completed the <a about=https://topostext.org/place/419125SFJu class=place long=12.485 lat=41.8939>Forum Julium</a> and the <a about=https://topostext.org/place/419125BBJu class=place long=12.48483 lat=41.892>basilica</a> between the <a about=https://topostext.org/place/419125SCas class=place long=12.48563 lat=41.89172>temple</a> of <a href=/people/230 target=_blank>Castor</a> and <a about=https://topostext.org/place/419125SSat class=place long=12.48412 lat=41.89241>that</a> of <a href=/people/43 target=_blank>Saturn</a>, works begun and almost finished by my father, and when that same <a about=https://topostext.org/place/419125BBJu class=place long=12.48483 lat=41.892>basilica</a> was destroyed by fire [AD 12], I began to rebuild it on an enlarged site, to be dedicated in the name of my sons, and in case I do not complete it in my lifetime, I have given orders that it should be completed by my heirs. 4 In my sixth consulship [28 BC] I restored eighty-two temples of the gods in the city on the authority of the senate, neglecting none that required restoration at that time. 5 In my seventh consulship [27 BC] I restored the <a about=https://topostext.org/place/419125FPFl class=place long=12.4759 lat=41.9115>Via Flaminia</a> from the city as far as <a about=https://topostext.org/place/441126UAri class=place long=12.5753 lat=44.0602>Ariminium</a>, together with all bridges except the <a about=https://topostext.org/place/419125BBMi class=place long=12.4671 lat=41.9352>Mulvian</a> and the Minucian. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#20 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:phi1221.phi007:21'><b>&sect; 21</b>&nbsp;&nbsp;I built the <a about=https://topostext.org/place/419125SMUl class=place long=12.4869 lat=41.8942>temple</a> of <a href=/people/24 target=_blank>Mars</a> the Avenger and the <a about=https://topostext.org/place/389000ULib class=place long=-2.3551 lat=38.9416>Forum Augustum</a> on private ground from the proceeds of booty. I built the <a about=https://topostext.org/place/419125BTMa class=place long=12.4795 lat=41.8919>theatre</a> adjacent to the <a about=https://topostext.org/place/419125SApo class=place long=12.4797 lat=41.8925>temple</a> of <a href=/people/2 target=_blank>Apollo</a> on ground in large part bought from private owners, and provided that it should be called after Marcus <a href=/people/71 target=_blank>Marcellus</a>, my son-in-law. 2 From the proceeds of booty I dedicated gifts in the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> and in the <a about=https://topostext.org/place/419125SJul class=place long=12.48616 lat=41.89201>temple</a> of the divine <a href=/people/3 target=_blank>Julius</a>, <a about=https://topostext.org/place/419125SApo class=place long=12.4797 lat=41.8925>that</a> of <a href=/people/2 target=_blank>Apollo</a>, <a about=https://topostext.org/place/419125SVes class=place long=12.48621 lat=41.89171>that</a> of <a href=/people/325 target=_blank>Vesta</a> and of <a href=/people/24 target=_blank>Mars</a> <a about=https://topostext.org/place/419125SMUl class=place long=12.4869 lat=41.8942>the Avenger</a>; this cost me about 100,000,000 sesterces. 3 In my fifth consulship [28 BC] I remitted 55,000 lb. of aurum coronarium contributed by the municipia and colonies of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> to my triumphs, and later, whenever I was acclaimed imperator, I refused the aurum coronarium which the municipia and colonies continued to vote with the same good will as before. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#21 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:phi1221.phi007:22'><b>&sect; 22</b>&nbsp;&nbsp;I gave three gladiatorial games in my own name and five in that of my sons or grandsons; at these games some 10,000 men took part in combat. Twice in my own name and a third time in that of my grandson I presented to the people displays by athletes summoned from all parts. 2 I produced shows in my own name four times and in place of other magistrates twenty-three times. On behalf of the college of quindecimviri, as its president, with Marcus <a href=/people/91 target=_blank>Agrippa</a> as colleague, I produced the Secular Games in the consulship of Gaius <a href=/people/1111 target=_blank>Furnius</a> and Gaius <a href=/people/816 target=_blank>Silanus</a> [17 BC]. In my thirteenth consulship [2 BC] I was the first to produce the games of <a href=/people/24 target=_blank>Mars</a>, which thereafter in each succeeding year have been produced by the consuls in accordance with a decree of the senate and by statute. 3 I gave beast-hunts of African beasts in my own name or in that of my sons and grandsons in the circus or forum or amphitheater on twenty-six occasions, on which about 3,500 beasts were destroyed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#22 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:phi1221.phi007:23'><b>&sect; 23</b>&nbsp;&nbsp;I produced a naval battle as a show for the people at the place across the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a> now occupied by the grove of the Caesars, where a site 1,800 feet long and 1,200 broad was excavated. There thirty beaked triremes or biremes and still more smaller vessels were joined in battle. About 3,000 men, besides the rowers, fought in these fleets. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#23 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi1221.phi007:24'><b>&sect; 24</b>&nbsp;&nbsp;After my victory, I replaced in the temples of all the cities of the province of <a href=/people/4027 target=_blank>Asia</a> the ornaments which my late adversary, after despoiling the temples, had taken into his private possession. 2 Some eighty silver statues of me, on foot, on <a href=/people/10959 target=_blank>horse</a> and in chariots) had been set up in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>; I myself removed them, and with the money that they realized I set golden offerings in the <a about=https://topostext.org/place/419125SApP class=place long=12.4855 lat=41.8891>temple</a> of <a href=/people/2 target=_blank>Apollo</a>, in my own name and in the names of those who had honored me with the statues. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4*.html#24 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:phi1221.phi007:25'><b>&sect; 25</b>&nbsp;&nbsp;I made the sea peaceful and freed it of <a href=/people/10975 target=_blank>pirates</a>. In that war I captured about 30,000 slaves who had escaped from their masters and taken up arms against the republic, and I handed them over to their masters for punishment. 2 The whole of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> of its own free will swore allegiance to me and demanded me as the leader in the war in which I was victorious at <a about=https://topostext.org/place/389207LAkt class=place long=20.68 lat=38.942>Actium</a>. The Gallic and Spanish provinces, Africa, <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> and <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> swore the same oath of allegiance. 3 More than seven hundred senators served under my standards at that time, including eighty-three who previously or subsequently (down to the time of writing) were appointed consuls, and about one hundred and seventy who were appointed priests.. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#25 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:phi1221.phi007:26'><b>&sect; 26</b>&nbsp;&nbsp;I extended the territory of all those provinces of the Roman people on whose borders lay peoples not subject to our government. 2 I brought peace to the Gallic and Spanish provinces as well as to <a href=/people/557 target=_blank>Germany</a>, throughout the area bordering on the Ocean from <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Cadiz</a> to the mouth of the <a about=https://topostext.org/place/535100WAlb class=place long=10 lat=53.4726>Elbe</a>. 3 I secured the pacification of the <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> from the district nearest the <a about=https://topostext.org/place/421170WAdr class=place long=16.95 lat=42.09>Adriatic</a> to the <a about=https://topostext.org/place/430105RTyr class=demonym long=10.5 lat=43>Tuscan</a> sea, yet without waging an unjust war on any people. 4 My fleet sailed through the ocean eastwards from the mouth of the <a about=https://topostext.org/place/507071WRhi class=place long=7.1111 lat=50.736>Rhine</a> to the territory of the <a href=/people/946 target=_blank>Cimbri</a>, a country which no Roman had visited before either by land or sea, and the <a href=/people/946 target=_blank>Cimbri</a>, Charydes, <a href=/people/6912 target=_blank>Semnones</a> and other German peoples of that region sent ambassadors and sought my friendship and that of the Roman people. 5 At my command and under my auspices two armies were led almost at the same time into <a about=https://topostext.org/place/130350REth class=place long=35.01 lat=13.01>Ethiopia</a> and <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> Felix; vast enemy forces of both peoples were cut down in battle and many towns captured. <a about=https://topostext.org/place/130350REth class=place long=35.01 lat=13.01>Ethiopia</a> was penetrated as far as the town of Nabata, which adjoins <a about=https://topostext.org/place/169337UMer class=place long=33.7104 lat=16.938>Meroe</a>; in <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> the army advanced into the territory of the <a about=https://topostext.org/place/145440RSab class=ethnic long=44 lat=14.5>Sabaeans</a> to the town of Mariba. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#26 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:latinLit:phi1221.phi007:27'><b>&sect; 27</b>&nbsp;&nbsp;I added <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> to the empire of the Roman people. 2 Greater <a about=https://topostext.org/place/397443RArm class=place long=44.298 lat=39.702>Armenia</a> I might have made a province after its king, <a href=/people/5470 target=_blank>Artaxes</a> had been killed, but I preferred, following the model set by our ancestors, to hand over that kingdom to <a href=/people/189 target=_blank>Tigranes</a>, son of King <a href=/people/2290 target=_blank>Artavasdes</a> and grandson of King <a href=/people/12245 target=_blank>Tigranes</a>; <a href=/people/370 target=_blank>Tiberius</a> Nero, who was then my stepson, carried this out. When the same people later rebelled and went to war, I subdued them through the agency of my son Gaius and handed them over to be ruled by King <a href=/people/642 target=_blank>Ariobarzanes</a>, son of <a href=/people/667 target=_blank>Artabazus</a>, King of the <a about=https://topostext.org/place/355480RMed class=ethnic long=48 lat=35.5>Medes</a>, and after his death to his son <a href=/people/2290 target=_blank>Artavasdes</a>. When he was killed, I sent <a href=/people/189 target=_blank>Tigranes</a>, a scion of the royal <a about=https://topostext.org/place/397443RArm class=demonym long=44.298 lat=39.702>Armenian</a> house, to that kingdom. 3 I recovered all the provinces beyond the <a about=https://topostext.org/place/421170WAdr class=place long=16.95 lat=42.09>Adriatic</a> sea towards the east, together with <a about=https://topostext.org/place/328219PCyr class=place long=21.856 lat=32.819>Cyrene</a>, the greater part of them being then occupied by kings. I had previously recovered <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> and <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> which had been seized in the slave war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#27 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:latinLit:phi1221.phi007:28'><b>&sect; 28</b>&nbsp;&nbsp;I founded colonies of soldiers in Africa, <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>, both Spanish provinces, <a about=https://topostext.org/place/382219RAch class=place long=21.9 lat=38.2>Achaea</a>, <a href=/people/4027 target=_blank>Asia</a>, <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, Gallia Narbonensis and <a about=https://topostext.org/place/370306RPis class=place long=30.6 lat=37.01>Pisidia</a>. 2 <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> too has twenty-eight colonies founded by my authority, which were densely populated in my lifetime. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#28 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:latinLit:phi1221.phi007:29'><b>&sect; 29</b>&nbsp;&nbsp;By victories over enemies I recovered in Spain and in Gaul, and from the <a about=https://topostext.org/place/435167RDal class=ethnic long=16.7 lat=43.5>Dalmatians</a> several standards lost by other commanders. 2 I compelled the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> to restore to me the spoils and standards of three Roman armies and to ask as suppliants for the friendship of the Roman people. Those standards I deposited in the innermost shrine of the <a about=https://topostext.org/place/419125SMUl class=place long=12.4869 lat=41.8942>temple</a> of <a href=/people/24 target=_blank>Mars</a> the Avenger. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#29 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:latinLit:phi1221.phi007:30'><b>&sect; 30</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/450190RPan class=demonym long=19 lat=45>Pannonian</a> peoples, whom the army of the Roman people never approached before I was the leading citizen, were conquered through the agency of <a href=/people/370 target=_blank>Tiberius</a> Nero, who was then my stepson and legate; I brought them into the empire of the Roman people, and extended the frontier of <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> to the banks of the <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Danube</a>. 2 When an army of <a about=https://topostext.org/place/445250RDac class=ethnic long=25 lat=44.5>Dacians</a> crossed the <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Danube</a>, it was defeated and routed under my auspices, and later my army crossed the <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Danube</a> and compelled the <a about=https://topostext.org/place/445250RDac class=demonym long=25 lat=44.5>Dacian</a> peoples to submit to the commands of the Roman people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#30 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:latinLit:phi1221.phi007:31'><b>&sect; 31</b>&nbsp;&nbsp;Embassies from kings in <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> were frequently sent to me never before had they been seen with any Roman commander. 2 The <a href=/people/1286 target=_blank>Bastarnae</a>, <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a> and the kings of the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a> on either side of the river <a about=https://topostext.org/place/473393WTan class=place long=39.336 lat=47.268>Tanais</a>, and the kings of the <a about=https://topostext.org/place/407465RAlb class=ethnic long=46.5 lat=40.7>Albanians</a> and the <a about=https://topostext.org/place/420435RIbe class=ethnic long=43.5 lat=42>Iberians</a> and the <a about=https://topostext.org/place/355480RMed class=ethnic long=48 lat=35.5>Medes</a> sent embassies to seek our friendship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html#31 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:latinLit:phi1221.phi007:32'><b>&sect; 32</b>&nbsp;&nbsp;The following kings sought refuge with me as suppliants: <a href=/people/1518 target=_blank>Tiridates</a>, King of <a about=https://topostext.org/place/370585RPar class=person long=58.5 lat=37>Parthia</a>, and later <a href=/people/861 target=_blank>Phraates</a> son of King <a href=/people/861 target=_blank>Phraates</a>; <a href=/people/2290 target=_blank>Artavasdes</a>, King of the <a about=https://topostext.org/place/355480RMed class=ethnic long=48 lat=35.5>Medes</a> ; Artaxares, King of the <a about=https://topostext.org/place/360440RAdi class=place long=44 lat=36>Adiabeni</a>; Dumnobellaunus and Tincommius, Kings of the <a about=https://topostext.org/place/530-15IBri class=ethnic long=-1.5 lat=53>Britons</a>; Maelo, King of the <a href=/people/12069 target=_blank>Sugambri</a>; ... rus, King of the <a href=/people/11059 target=_blank>Marcomanni</a> and <a href=/people/11067 target=_blank>Suebi</a>. 2 <a href=/people/861 target=_blank>Phraates</a>, son of <a href=/people/2010 target=_blank>Orodes</a>, King of <a about=https://topostext.org/place/370585RPar class=person long=58.5 lat=37>Parthia</a>, sent all his sons and grandsons to me in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, not that he had been overcome in war, but because he sought our friendship by pledging his children. 3 While I was the leading citizen very many other peoples have experienced the good faith of the Roman people which had never previously exchanged embassies or had friendly relations with the Roman people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html#32 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:latinLit:phi1221.phi007:33'><b>&sect; 33</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/370585RPar class=demonym long=58.5 lat=37>Parthian</a> and <a about=https://topostext.org/place/355480RMed class=demonym long=48 lat=35.5>Median</a> peoples sent to me ambassadors of their nobility who sought and received kings from me, for the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> <a href=/people/12014 target=_blank>Vonones</a>, son of King <a href=/people/861 target=_blank>Phraates</a>, grandson of King <a href=/people/2010 target=_blank>Orodes</a>, and for the <a about=https://topostext.org/place/355480RMed class=ethnic long=48 lat=35.5>Medes</a>, <a href=/people/642 target=_blank>Ariobarzanes</a>, son of King <a href=/people/2290 target=_blank>Artavasdes</a>, grandson of King <a href=/people/642 target=_blank>Ariobarzanes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html#33 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:latinLit:phi1221.phi007:34'><b>&sect; 34</b>&nbsp;&nbsp;In my sixth and seventh consulships, after I had extinguished civil wars, and at a time when with universal consent I was in complete control of affairs, I transferred the republic from my power to the dominion of the senate and people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. 2 For this service of mine I was named <a href=/people/8 target=_blank>Augustus</a> by decree of the senate, and the door-posts of my house were publicly wreathed with bay leaves and a civic crown was fixed over my door and a golden shield was set in the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Curia Julia</a>, which, as attested by the inscription thereon, was given me by the senate and people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> on account of my courage, clemency, justice and piety. 3 After this time I excelled all in influence [auctoritas], although I possessed no more official power [potestas] than others who were my colleagues in the several magistracies. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -27 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html#34 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:latinLit:phi1221.phi007:35'><b>&sect; 35</b>&nbsp;&nbsp;In my thirteenth consulship the senate, the equestrian order and the whole people of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> gave me the title of Father of my Country, and resolved that this should be inscribed in the porch of my <a about=https://topostext.org/place/419125BDAg class=place long=12.4852 lat=41.8893>house</a> and in the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Curia Julia</a> and in the <a about=https://topostext.org/place/419125SFAu class=place long=12.4869 lat=41.8944>Forum Augustum</a> below the chariot which had been set there in my honor by decree of the senate. 2 At the time of writing I am in my seventy-sixth year. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 14 <a href=http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html#35 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=614', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas614";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=614';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

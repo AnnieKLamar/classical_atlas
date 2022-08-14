@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Pseudo-Plutarch, On Music' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Pseudo-Plutarch, On Music, in Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='150' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 150' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/155' content='urn:cts:greekLit:tlg0094.tlg002' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79026763' content='Pseudo-Plutarch'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n84801218' content='William Watson Goodwin (1831-1912)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://archive.org/details/plutarchsmorals01plut' /><h2>Pseudo-Plutarch, On Music</h2>Pseudo-Plutarch, On Music, in Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling.  This text has 85 tagged references to 44 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0094.tlg002'>urn:cts:greekLit:tlg0094.tlg002</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87198553'>Q87198553</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=002.1>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.1'><b>&sect; 002.1</b>&nbsp;&nbsp;CONCERNING MUSIC. ONESICRATES, SOTERICHUS, LYSIAS. <br />The wife of <a href=/people/182 target=_blank>Phocion</a> the just was always wont to maintain that her chiefest glory consisted in the warlike achievements of her husband. For my part, I am of opinion that all my glory, not only that peculiar to myself, but also what is common to all my familiar friends and relations, flows from the care and diligence of my master that taught me learning. For the most renowned performances of great commanders tend only to the preservation of some few private soldiers or the safety of a single city or nation, but make neither the soldiers nor the citizens nor the people any thing the better. But true learning, being the essence and body of felicity and the source of prudence, we find to be profitable and beneficial, not only to one house or city or nation, but to all the race of men. Therefore by how much the more the benefit and advantage of learning transcends the profits of military performances, by so much the more is it to be remembered and mentioned, as most worthy your study and esteem. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.2>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.2'><b>&sect; 002.2</b>&nbsp;&nbsp;For this reason, upon the second day of the <a href=/people/12227 target=_blank>Saturnalian</a> festival, the famous <a href=/people/5142 target=_blank>Onesicrates</a> invited certain persons, the best skilled in music, to a banquet; by name <a href=/people/4301 target=_blank>Soterichus</a> of <a about=https://topostext.org/place/312299PAle class=person long=29.897 lat=31.182>Alexandria</a>, and <a href=/people/142 target=_blank>Lysias</a>, one of those to whom he gave a yearly pension. After all had done and the table was cleared, — To dive, said he, most worthy friends, into the nature and reason of the human voice is not an argument proper for this merry meeting, as being a subject that requires a more sober scrutiny. But because our chiefest grammarians define the voice to be a percussion of the air made sensible to the ear, and for that we were yesterday discoursing of Grammar, — which is an art that can give the voice form and shape by means of letters, and store it up in the memory as a magazine, — let us consider what is the next science to this which may be said to relate to the voice. In my opinion, it must be music. For it is one of the chiefest and most religious duties belonging to man, to celebrate the praise of the Gods, who gave to him alone the most excelling advantage of articulate discourse, as <a href=/people/9 target=_blank>Homer</a> has observed in the following verses: With sacred hymns and songs that sweetly please, The Grecian youth all day the Gods appease; Their lofty paeans bright <a href=/people/2 target=_blank>Apollo</a> hears, And still the charming sounds delight his ears. Now then, you that are of the grand musical chorus, tell your friends, who was the first that brought music into use; what time has added for the advantage of the science; who have been the most famous of its professors; and lastly, for what and how far it may be beneficial to mankind. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.3>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.3'><b>&sect; 002.3</b>&nbsp;&nbsp;This the scholar propounded; to which <a href=/people/142 target=_blank>Lysias</a> made reply. Noble <a href=/people/5142 target=_blank>Onesicrates</a>, said he, you desire the solution of a hard question, that has been by many already proposed. For of the Platonics the most, of the <a href=/people/407 target=_blank>Peripatetic</a> philosophers the best, have made it their business to compile several treatises concerning the ancient music and the reasons why it came to lose its pristine perfection. Nay, the very grammarians and musicians themselves who arrived to the height of education have expended much time and study upon the same subject, whence has arisen great variety of discording opinions among the several writers. <a href=/people/268 target=_blank>Heraclides</a> in his Compendium of <a href=/people/1268 target=_blank>Music</a> asserts, that <a href=/people/393 target=_blank>Amphion</a>, the son of <a href=/people/1 target=_blank>Jupiter</a> and <a href=/people/792 target=_blank>Antiope</a>, was the first that invented playing on the harp and lyric poesy, being first instructed by his father; which is confirmed by a small manuscript, preserved in the city of <a about=https://topostext.org/place/380227PSik class=place long=22.7145 lat=37.9834>Sikyon</a>, wherein is set down a catalogue of the priests, poets, and musicians of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. In the same age, he tells us, <a href=/people/696 target=_blank>Linus</a> the <a about=https://topostext.org/place/385239IEub class=person long=23.87 lat=38.53>Euboean</a> composed several elegies; <a href=/people/5435 target=_blank>Anthes</a> of <a about=https://topostext.org/place/385235PAnt class=person long=23.448 lat=38.4987>Anthedon</a> in <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> was the first author of hymns, and <a href=/people/2686 target=_blank>Pierus</a> of <a about=https://topostext.org/place/402225RPie class=person long=22.5 lat=40.2>Pieria</a> the first that wrote in the praise of the <a href=/people/54 target=_blank>Muses</a>. <a href=/people/1462 target=_blank>Philammon</a> also, the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Delphian</a>, set forth in verse a poem in honor of the nativity of <a href=/people/127 target=_blank>Latona</a>, <a href=/people/28 target=_blank>Artemis</a>, and <a href=/people/2 target=_blank>Apollo</a>, and was the first that instituted dancing about the <a about=https://topostext.org/place/385225SApo class=place long=22.5011 lat=38.48225>temple</a> of <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>. <a href=/people/2354 target=_blank>Thamyras</a>, of Thracian extraction, had the best voice and the neatest manner of singing of any of his time; so that the poets feigned him to be a contender with the <a href=/people/54 target=_blank>Muses</a>. He is said to have described in a poem the <a href=/people/206 target=_blank>Titans</a>' war against the Gods. There was also <a href=/people/1474 target=_blank>Demodocus</a> the <a about=https://topostext.org/place/396199PKer class=person long=19.9156 lat=39.6063>Corcyraean</a>, who is said to have written the Destruction of <a about=https://topostext.org/place/400262UIli class=person long=26.2389 lat=39.9575>Troy</a>, and the Nuptials of <a href=/people/84 target=_blank>Vulcan</a> and <a href=/people/15 target=_blank>Venus</a>; and then Phemius of <a about=https://topostext.org/place/383207IIth class=person long=20.71 lat=38.34>Ithaca</a> composed a poem, entitled The Return of those who came back with <a href=/people/47 target=_blank>Agamemnon</a> from <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. Not that any of these stories before cited were complied in a style like prose without metre; they were rather like the poems of <a href=/people/695 target=_blank>Stesichorus</a> and other ancient lyric poets, who composed in heroic verse and added a musical accompaniment. The same <a href=/people/268 target=_blank>Heraclides</a> writes that <a href=/people/1164 target=_blank>Terpander</a>, the first that instituted the lyric nomes, set verses of <a href=/people/9 target=_blank>Homer</a> as well as his own to music according to each of these nomes, and sang them at public trials of skill. He also was the first to give names to the lyric nomes. In imitation of <a href=/people/1164 target=_blank>Terpander</a>, <a href=/people/4934 target=_blank>Clonas</a>, an elegiac and epic poet, first instituted nomes for flute-music, and also the songs called <a href=/people/8214 target=_blank>Prosodia</a>. And <a href=/people/2919 target=_blank>Polymnestus</a> the <a about=https://topostext.org/place/381272PCol class=person long=27.141 lat=38.111>Colophonian</a> in later times used the same measure in his compositions. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.4>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.4'><b>&sect; 002.4</b>&nbsp;&nbsp;Now the measures appointed by these persons, noble <a href=/people/5142 target=_blank>Onesicrates</a>, in reference to such songs as are to be sung to the flutes or pipes, were distinguished by these names, — <a href=/people/8847 target=_blank>Apothetus</a>, Elegiac, Comarchius, Schoenion, Cepion, Tenedius, and Trimeles (or of three parts). To these succeeding ages added another sort, which were called Polymnastia. But the measures set down for those that played and sung to the harp, being the invention of <a href=/people/1164 target=_blank>Terpander</a>, were much more ancient than the former. To these he gave the several appellations of <a about=https://topostext.org/place/384233RBoi class=demonym long=23.25 lat=38.35>Boeotian</a>, <a about=https://topostext.org/place/390271RAio class=demonym long=27.1 lat=39>Aeolian</a>, Trochaean, the Acute, Cepion, Terpandrian, and Tetraoedian. And <a href=/people/1164 target=_blank>Terpander</a> made preludes to be sung to the lyre in heroic verse. Besides, <a href=/people/155 target=_blank>Timotheus</a> testifies how that the lyric nomes were anciently appropriated to epic verses. For <a href=/people/155 target=_blank>Timotheus</a> merely intermixed the dithyrambic style with the ancient nomes in heroic measure, and thus sang them, that he might not seem to make too sudden an innovation upon the ancient music. But as for <a href=/people/1164 target=_blank>Terpander</a>, he seems to have been the most excellent composer to the harp of his age, for he is recorded to have been four times in succession a victor at the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Pythian</a> games. And certainly he was one of the most ancient musicians in the world; for <a href=/people/241 target=_blank>Glaucus</a> the <a about=https://topostext.org/place/406163RIta class=demonym long=16.3 lat=40.6>Italian</a> in his treatise of the ancient poets and musicians asserts him to have lived before <a href=/people/384 target=_blank>Archilochus</a>, affirming him to be the second next to those that first invented wind-music. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.5>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.5'><b>&sect; 002.5</b>&nbsp;&nbsp;<a href=/people/13 target=_blank>Alexander</a> in his Collections of <a about=https://topostext.org/place/400310RPhr class=person long=31 lat=40>Phrygia</a> says, that <a href=/people/873 target=_blank>Olympus</a> was the first that brought into Greece the manner of touching the strings with a quill; and next to him were the <a about=https://topostext.org/place/352248LIda class=person long=24.7708 lat=35.2263>Idaean</a> <a href=/people/12100 target=_blank>Dactyli</a>; Hyagnis was the first that sang to the pipe; after him his son <a href=/people/451 target=_blank>Marsyas</a>, then <a href=/people/873 target=_blank>Olympus</a>; that <a href=/people/1164 target=_blank>Terpander</a> imitated <a href=/people/9 target=_blank>Homer</a> in his verses and <a href=/people/143 target=_blank>Orpheus</a> in his musical compositions; but that <a href=/people/143 target=_blank>Orpheus</a> never imitated any one, since in his time there were none but such as composed to the pipe, which was a manner quite different from that of <a href=/people/143 target=_blank>Orpheus</a>. <a href=/people/4934 target=_blank>Clonas</a>, a composer of nomes for flute-music, and somewhat later than <a href=/people/1164 target=_blank>Terpander</a>, as the <a about=https://topostext.org/place/375223RArk class=ethnic long=22.3 lat=37.5>Arcadians</a> affirm, was born in <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a> or, as the <a about=https://topostext.org/place/384233RBoi class=ethnic long=23.25 lat=38.35>Boeotians</a> allege, at <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>. After <a href=/people/1164 target=_blank>Terpander</a> and <a href=/people/4934 target=_blank>Clonas</a> flourished <a href=/people/384 target=_blank>Archilochus</a>; yet there are some writers who affirm, that Ardalus the <a about=https://topostext.org/place/375234PTro class=person long=23.3484 lat=37.5033>Troezenian</a> taught the manner of composing to wind-music before <a href=/people/4934 target=_blank>Clonas</a>. There was also the poet <a href=/people/2919 target=_blank>Polymnestus</a>, the son of Meles the <a about=https://topostext.org/place/381272PCol class=person long=27.141 lat=38.111>Colophonian</a>, who invented the Polymnestian measures. They farther write that <a href=/people/4934 target=_blank>Clonas</a> invented the nomes <a href=/people/8847 target=_blank>Apothetus</a> and Schoenion. Of <a href=/people/2919 target=_blank>Polymnestus</a> mention is made by <a href=/people/166 target=_blank>Pindar</a> and <a href=/people/769 target=_blank>Alcman</a>, both lyric poets; but of several of the lyric nomes said to be instituted by <a href=/people/1164 target=_blank>Terpander</a> they make <a href=/people/1462 target=_blank>Philammon</a> (the ancient <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Delphian</a>) author. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.6>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.6'><b>&sect; 002.6</b>&nbsp;&nbsp;Now the music appropriated to the harp, such as it was in the time of <a href=/people/1164 target=_blank>Terpander</a>, continued in all its simplicity, till <a href=/people/3453 target=_blank>Phrynis</a> grew into esteem. For it was not the ancient custom to make lyric poems in the present style, or to intermix measures and rhythms. For in each nome they were careful to observe its own proper pitch; whence came the expression nome (from νόμος, law), because it was unlawful to alter the pitch appointed for each one. At length, falling from their devotion to the Gods, they began to sing the verses of <a href=/people/9 target=_blank>Homer</a> and other poets. This is manifest by the proems of <a href=/people/1164 target=_blank>Terpander</a>. Then for the form of the harp, it was such as Cepion, one of <a href=/people/1164 target=_blank>Terpander</a>'s scholars, first caused to be made, and it was called the Asian harp, because the <a about=https://topostext.org/place/392261ILes class=demonym long=26.2 lat=39.2075>Lesbian</a> harpers bordering upon Asia always made use of it. And it is said that Periclitus, a <a about=https://topostext.org/place/392261ILes class=person long=26.2 lat=39.2075>Lesbian</a> by birth, was the last harper who won a prize by his skill, which he did at one of the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> festivals called <a href=/people/5540 target=_blank>Carneia</a>; but he being dead, that succession of skilful musicians, which had so long continued among the <a about=https://topostext.org/place/392261ILes class=ethnic long=26.2 lat=39.2075>Lesbians</a>, expired. Some there are who erroneously believe that <a href=/people/1171 target=_blank>Hipponax</a> was contemporary with <a href=/people/1164 target=_blank>Terpander</a>, when it is plain that <a href=/people/1171 target=_blank>Hipponax</a> lived after Periclitus. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.7>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.7'><b>&sect; 002.7</b>&nbsp;&nbsp;Having thus discoursed of the several nomes appropriated to the stringed as well as to the wind instruments, we will now speak something in particular concerning those peculiar to the wind instruments. First they say, that <a href=/people/873 target=_blank>Olympus</a>, a <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> player upon the flute, invented a certain nome in honor of <a href=/people/2 target=_blank>Apollo</a>, which he called Polycephalus, or of many heads. This <a href=/people/873 target=_blank>Olympus</a>, they say, was descended from the first <a href=/people/873 target=_blank>Olympus</a>, the scholar of <a href=/people/451 target=_blank>Marsyas</a>, who invented several forms of composition in honor of the Gods; and he, being a boy beloved of <a href=/people/451 target=_blank>Marsyas</a>, and by him taught to play upon the flute, first brought into Greece the laws of harmony. Others ascribe the Polycephalus to <a href=/people/249 target=_blank>Crates</a>, the scholar of <a href=/people/873 target=_blank>Olympus</a>; though <a href=/people/2778 target=_blank>Pratinas</a> will have <a href=/people/873 target=_blank>Olympus</a> the younger to be the author of it. The Harmatian nome is also said to be invented by <a href=/people/873 target=_blank>Olympus</a>, the scholar of <a href=/people/451 target=_blank>Marsyas</a>. This <a href=/people/451 target=_blank>Marsyas</a> was by some said to be called Masses; which others deny, not allowing him any other name but that of <a href=/people/451 target=_blank>Marsyas</a>, the son of that Hyagnis who invented the art of playing upon the pipe. But that <a href=/people/873 target=_blank>Olympus</a> was the author of the Harmatian nome is plainly to be seen in <a href=/people/241 target=_blank>Glaucus</a>'s treatise of the ancient poets; and that <a href=/people/695 target=_blank>Stesichorus</a> of <a about=https://topostext.org/place/380138PHim class=person long=13.8225 lat=37.9708>Himera</a> imitated neither <a href=/people/143 target=_blank>Orpheus</a> nor <a href=/people/1164 target=_blank>Terpander</a> nor <a href=/people/449 target=_blank>Antilochus</a> nor <a href=/people/263 target=_blank>Thales</a>, but <a href=/people/873 target=_blank>Olympus</a>, and that he made use of the Harmatian nome and the dactylic dance, which some rather apply to the <a href=/people/3222 target=_blank>Orthian</a> mood, while others aver it to have been the invention of the <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>, for that some of the ancient pipers were <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.8>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.8'><b>&sect; 002.8</b>&nbsp;&nbsp;There was also another mood in use among the ancients, called Cradias, which <a href=/people/1171 target=_blank>Hipponax</a> says <a href=/people/2428 target=_blank>Mimnermus</a> always delighted in. For formerly they that played upon the flute sang also elegies at the same time set to notes. Which the description of the <a href=/people/11002 target=_blank>Panathenaea</a> concerning the musical combat makes manifest. Among the rest, <a href=/people/2661 target=_blank>Sacadas</a> of <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argos</a> set several odes and elegies to music, he himself being also a good flute-player and thrice a victor at the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Pythian</a> games. Of him <a href=/people/166 target=_blank>Pindar</a> makes mention. Now whereas in the time of <a href=/people/2919 target=_blank>Polymnestus</a> and <a href=/people/2661 target=_blank>Sacadas</a> there existed three musical moods, the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a>, <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a>, and <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a>, it is said that <a href=/people/2661 target=_blank>Sacadas</a> composed a strophe in every one of those moods, and then taught the choruses to sing the first after the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> manner, the second according to the <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a>, and the third after the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> manner; and this nome was called Trimeres (or threefold) by reason of the shifting of the moods, although in the <a about=https://topostext.org/place/380227PSik class=demonym long=22.7145 lat=37.9834>Sikyonian</a> catalogue of the poets <a href=/people/4934 target=_blank>Clonas</a> is said to be the inventor of this name. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.9>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.9'><b>&sect; 002.9</b>&nbsp;&nbsp;<a href=/people/1268 target=_blank>Music</a> then received its first constitution from <a href=/people/1164 target=_blank>Terpander</a> at <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. Of the second constitution, <a href=/people/3475 target=_blank>Thaletas</a> the <a about=https://topostext.org/place/351249UGor class=person long=24.95 lat=35.0594>Gortinean</a>, <a href=/people/4350 target=_blank>Xenodamus</a> the <a about=https://topostext.org/place/363230PKyt class=person long=23.0291 lat=36.2295>Cytherean</a>, <a href=/people/5317 target=_blank>Xenocritus</a> the <a about=https://topostext.org/place/386231ROpu class=person long=23.04 lat=38.65>Locrian</a>, <a href=/people/2919 target=_blank>Polymnestus</a> the <a about=https://topostext.org/place/381272PCol class=person long=27.141 lat=38.111>Colophonian</a>, and <a href=/people/2661 target=_blank>Sacadas</a> the <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argive</a> were deservedly acknowledged to be the authors. For these, having introduced the <a href=/people/7732 target=_blank>Gymnopaediae</a> into <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedemon</a>, settled the so-called Apodeixeis (or Exhibitions) among the <a about=https://topostext.org/place/375223RArk class=ethnic long=22.3 lat=37.5>Arcadians</a>, and the Endymatia in <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. Now <a href=/people/3475 target=_blank>Thaletas</a>, <a href=/people/4350 target=_blank>Xenodamus</a>, and <a href=/people/5317 target=_blank>Xenocritus</a>, and their scholars, were poets that addicted themselves altogether to making of paeans; <a href=/people/2919 target=_blank>Polymnestus</a> was all for the <a href=/people/3222 target=_blank>Orthian</a> or military strain, and <a href=/people/2661 target=_blank>Sacadas</a> for elegies. Others, and among the rest <a href=/people/2778 target=_blank>Pratinas</a>, affirm <a href=/people/4350 target=_blank>Xenodamus</a> to have been a maker of songs for dances (<a href=/people/7791 target=_blank>Hyporchemes</a>), and not of paeans; and a tune of <a href=/people/4350 target=_blank>Xenodamus</a> is preserved, which plainly appears to have been composed for a dance. Now that a paean differs from a song made for a dance is manifest from the poems of <a href=/people/166 target=_blank>Pindar</a>, who made both. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.10>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.10'><b>&sect; 002.10</b>&nbsp;&nbsp;<a href=/people/2919 target=_blank>Polymnestus</a> also composed nomes for flute-music; but in the <a href=/people/3222 target=_blank>Orthian</a> nome he made use of his lyric vein, as the students in harmony declare. But in this we cannot be positive, because we have nothing of certainty concerning it from antiquity; and whether <a href=/people/3475 target=_blank>Thaletas</a> of <a about=https://topostext.org/place/352252IKre class=person long=25.1836 lat=35.2052>Crete</a> was a composer of hymns is much doubted. For <a href=/people/241 target=_blank>Glaucus</a>, asserting <a href=/people/3475 target=_blank>Thaletas</a> to be born after <a href=/people/384 target=_blank>Archilochus</a>, says that he imitated the odes of <a href=/people/384 target=_blank>Archilochus</a>, only he made them longer, and used the Paeonic and Cretic rhythm, which neither <a href=/people/384 target=_blank>Archilochus</a> nor <a href=/people/143 target=_blank>Orpheus</a> nor <a href=/people/1164 target=_blank>Terpander</a> ever did; for <a href=/people/3475 target=_blank>Thaletas</a> learned these from <a href=/people/873 target=_blank>Olympus</a>, and became a good poet besides. As for <a href=/people/5317 target=_blank>Xenocritus</a> the <a about=https://topostext.org/place/382162PLoc class=person long=16.229 lat=38.216>Locrian</a> from <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, it is much questioned whether he was a maker of paeans or not, as being one that always took heroic subjects with dramatic action for his verses, for which reason some there were who called his arguments Dithyrambic. Moreover, <a href=/people/241 target=_blank>Glaucus</a> asserts <a href=/people/3475 target=_blank>Thaletas</a> to have preceded him in time. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.11>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.11'><b>&sect; 002.11</b>&nbsp;&nbsp;<a href=/people/873 target=_blank>Olympus</a>, by the report of <a href=/people/633 target=_blank>Aristoxenus</a>, is supposed by the musicians to have been the inventor of the enharmonic species of music; for before him there was no other than the diatonic and chromatic. And it is thought that the invention of the enharmonic species was thus brought to pass: for that <a href=/people/873 target=_blank>Olympus</a> before altogether composing and playing in the diatonic species, and having frequent occasion to shift to the diatonic parhypate, sometimes from the paramese and sometimes from the mese, skipping the diatonic lichanos, he found the beauty that appeared in the new character; and thus, admiring a conjunction or scheme so agreeable to proportion, he made this new species in the <a href=/people/476 target=_blank>Doric</a> mood. For now he held no longer to what belonged either to the diatonic or to the chromatic, but he was already come to the enharmonic. And the first foundations of enharmonic music which he laid were these: in enharmonics the first thing that appears is the spondiasmus, to which none of the divisions of the tetrachord seems properly to belong, unless any one will take the more intense spondiasmus to be diatonic. But he that maintained this would maintain a falsehood and an absurdity in harmony; a falsehood, because it would be less by a diesis than is required by the leading note; an absurdity in harmony, because, even if we should place the proper nature of the more intense spondiasmus in the simple chromatic, it would then come to pass, that two double tones would follow in order, the one compounded, the other uncompounded. For the thick enharmonic now used in the middle notes does not seem to be the invention of the fore-mentioned author. But this is more easily understood by hearing any musician play in the ancient style; for then you shall find the semi-tone in the middle parts to be uncompounded. These were the beginnings of enharmonic music; afterwards the semitone was also divided, as well in the <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> as <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> moods. But <a href=/people/873 target=_blank>Olympus</a> seems to have advanced music by producing something never known or heard of before, and to have gained to himself the honor of being the most excellent, not only in the Grecian but in all other music. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.12>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.12'><b>&sect; 002.12</b>&nbsp;&nbsp;Let us now proceed to rhythms; for there were several varieties of these, as well in musical as in rhythmical composition. And here <a href=/people/1164 target=_blank>Terpander</a>, among all those novelties with which he adorned music, introduced an elegant manner, that gave it much life. After him, beside the Terpandrian, which he did not relinquish, <a href=/people/2919 target=_blank>Polymnestus</a> brought in use another of his own, retaining however the former elegant manner, as did also <a href=/people/3475 target=_blank>Thaletas</a> and <a href=/people/2661 target=_blank>Sacadas</a>. Other innovations were also made by <a href=/people/769 target=_blank>Alkman</a> and <a href=/people/695 target=_blank>Stesichorus</a>, who nevertheless receded not from the ancient forms. But <a href=/people/9206 target=_blank>Crexus</a>, <a href=/people/155 target=_blank>Timotheus</a>, and <a href=/people/489 target=_blank>Philoxenus</a>, and those other poets of the same age, growing more arrogant and studious of novelty, affected those other manners now called Philanthropic and Thematic. For now the fewness of strings and the plainness and majesty of the old music are looked upon as absolutely out of date. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.13>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.13'><b>&sect; 002.13</b>&nbsp;&nbsp;And now, having discoursed to the best of my ability of the ancient music and the first inventors of it, and how succeeding ages brought it to more and more perfection, I shall make an end, and give way to my friend <a href=/people/4301 target=_blank>Soterichus</a>, not only greatly skilled in music but in all the rest of the sciences. For we have always labored rather on the practical than the contemplative part. Which when <a href=/people/142 target=_blank>Lysias</a> had said, he forbare speaking any farther; but then <a href=/people/4301 target=_blank>Soterichus</a> thus began. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.14>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.14'><b>&sect; 002.14</b>&nbsp;&nbsp;Most noble <a href=/people/5142 target=_blank>Onesicrates</a>, said he, since you have engaged us to speak our knowledge concerning the most venerable excellencies of music, which is most pleasing to the Gods, I cannot but approve the learning of our master <a href=/people/142 target=_blank>Lysias</a>, and his great memory in reciting all the inventors of the ancient music, and those who have written concerning it. But I must needs say, that he has given us this account, trusting only to what he has found recorded. We on the other side have not heard of any man that was the inventor of the benefits of music, but of the God <a href=/people/2 target=_blank>Apollo</a>, adorned with all manner of virtue. The flute was neither the invention of <a href=/people/451 target=_blank>Marsyas</a> nor <a href=/people/873 target=_blank>Olympus</a> nor Hyagnis; nor was the harp <a href=/people/2 target=_blank>Apollo</a>'s invention only, but as a God he was the inventor of all the music both of the flute and harp. This is manifest from the dances and sacrifices which were solemnized to <a href=/people/2 target=_blank>Apollo</a>, as <a href=/people/529 target=_blank>Alcaeus</a> and others in their hymns relate. His statue also placed in the Temple of <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a> holds in his right hand a bow; at his left the <a href=/people/5553 target=_blank>Graces</a> stand, with every one a musical instrument in her hands, one carrying a harp, another a flute, another with a shepherd's pipe set to her lips. And that this is no conceit of mine appears from this, that <a href=/people/1985 target=_blank>Anticles</a> and <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Ister</a> have testified the same in their commentaries upon these things. And the statue is reported to be so ancient, that the artificers were said to have lived in the time of <a href=/people/4 target=_blank>Hercules</a>. The youth also that carries the Tempic laurel into <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> is accompanied by one playing upon the flute. And the sacred presents of the <a href=/people/801 target=_blank>Hyperboreans</a> were sent of old to <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>, attended with flutes, pipes, and harps. Some have thought that the God himself played upon the flute, as the best of lyrics, <a href=/people/769 target=_blank>Alcman</a>, relates. <a href=/people/2304 target=_blank>Corinna</a> also asserts that <a href=/people/2 target=_blank>Apollo</a> was by <a href=/people/11 target=_blank>Minerva</a> taught to pipe. Venerable is therefore music altogether, as being the invention of the Gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.15>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.15'><b>&sect; 002.15</b>&nbsp;&nbsp;The ancients made use of it for its worth, as they did all other beneficial sciences. But our men of art, contemning its ancient majesty, instead of that manly, grave, heaven-born music, so acceptable to the Gods, have brought into the theatres a sort of effeminate musical tattling, mere sound without substance; which <a href=/people/12 target=_blank>Plato</a> utterly rejects in the third book of his commonwealth, refusing the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> harmony as fit only for lamentations. And they say that this was first instituted for doleful songs. <a href=/people/633 target=_blank>Aristoxenus</a>, in his first book of music, tells us how that <a href=/people/873 target=_blank>Olympus</a> sang an elegy upon the death of <a href=/people/826 target=_blank>Python</a> in the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> mood, though some will have Menalippides to be the author of that song. <a href=/people/166 target=_blank>Pindar</a>, in his paean on the nuptials of <a href=/people/479 target=_blank>Niobe</a>, asserts that the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> harmony was first used by <a href=/people/8823 target=_blank>Anthippus</a>. Others affirm, that <a href=/people/8442 target=_blank>Torebus</a> was the first that made use of that sort of harmony; among the rest, <a href=/people/23 target=_blank>Dionysius</a> the iambic writer. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.16>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.16'><b>&sect; 002.16</b>&nbsp;&nbsp;The mixed <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> moves the affections, and is fit for tragedies. This mood, as <a href=/people/633 target=_blank>Aristoxenus</a> alleges, was invented by <a href=/people/483 target=_blank>Sappho</a>, from whom the tragedians learned it and joined it with the <a href=/people/476 target=_blank>Doric</a>. The one becomes a majestic, lofty style, the other mollifies and stirs to pity; both which are the properties of tragedy. The history of music, however, made Pythoclides the flute-player to be the author of it; and <a href=/people/1074 target=_blank>Lysis</a> reports that <a href=/people/4180 target=_blank>Lamprocles</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, finding that the diazeuxis (or separation of two tetrachords) was not where almost all others thought it had been, but toward the treble, made such a scheme as is now from paramese to the highest hypate. But for the softer <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a>, being contrary to the mixed <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> and like the <a about=https://topostext.org/place/375275RIon class=demonym long=27.3 lat=38>Ionian</a>, they say it was invented by <a href=/people/859 target=_blank>Damon</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.17>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.17'><b>&sect; 002.17</b>&nbsp;&nbsp;But as for those sorts of harmony, the one being sad and doleful, the other loose and effeminate, <a href=/people/12 target=_blank>Plato</a> deservedly rejected them, and made choice of the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a>, as more proper for sober and warlike men; not being ignorant, however (as <a href=/people/633 target=_blank>Aristoxenus</a> discourses in his second book of music), that there might be something advantageous in the rest to a circumspect and wary commonwealth. For <a href=/people/12 target=_blank>Plato</a> gave much attention to the art of music, as being the hearer of <a href=/people/1130 target=_blank>Draco</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a> and <a href=/people/98 target=_blank>Metellus</a> the <a about=https://topostext.org/place/373136PAkr class=person long=13.5855 lat=37.2906>Agrigentine</a>; but considering, as we have intimated before, that there was much more majesty in the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> mood, it was that he preferred. He knew moreover that <a href=/people/769 target=_blank>Alcman</a>, <a href=/people/166 target=_blank>Pindar</a>, <a href=/people/262 target=_blank>Simonides</a>, and <a href=/people/1587 target=_blank>Bacchylides</a> had composed several <a href=/people/1895 target=_blank>Parthenia</a> in the <a href=/people/476 target=_blank>Doric</a> mood; and that several <a href=/people/8214 target=_blank>Prosodia</a> (or supplications to the Gods), several hymns and tragical lamentations, and now and then love verses, were composed to the same melody. But he contented himself with such songs as were made in honor of <a href=/people/24 target=_blank>Mars</a> or <a href=/people/11 target=_blank>Minerva</a>, or else such as were to be sung at solemn offerings, called Spondeia. For these he thought sufficient to fortify and raise the mind of a sober person; not being at all ignorant in the mean time of the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> and <a about=https://topostext.org/place/375275RIon class=demonym long=27.3 lat=38>Ionian</a>, of which he knew the tragedians made use. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.18>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.18'><b>&sect; 002.18</b>&nbsp;&nbsp;Moreover, the ancients well understood all the sorts of styles, although they used but few. For it was not their ignorance that confined them to such narrow instruments and so few strings; nor was it out of ignorance that <a href=/people/873 target=_blank>Olympus</a> and <a href=/people/1164 target=_blank>Terpander</a> and those that came after them would not admit of larger instruments and more variety of strings. This is manifest from the poems of <a href=/people/873 target=_blank>Olympus</a> and <a href=/people/1164 target=_blank>Terpander</a> and all those that were their imitators. For, being plain and without any more than three strings, these so far excelled those that were more numerously strung, insomuch that none could imitate <a href=/people/873 target=_blank>Olympus</a>'s play; and they were all inferior to him when they betook themselves to their polychords. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.19>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.19'><b>&sect; 002.19</b>&nbsp;&nbsp;Then again, that the ancients did not through ignorance abstain from the third string in the spondaic style, their use of it in play makes apparent. For had they not known the use of it, they would never have struck it in harmony with parhypate; but the elegancy and gravity that attended the spondaic style by omitting the third string induced them to transfer the music to paranete. The same reason may serve for nete; for this in play they struck in concord to mese, but in discord to paranete, although in song it did not seem to them proper to the slow spondaic motion. And not only did they do this, but they did the same with nete of the conjunct heptachords; for in play they struck it in concord to mese and lichanos, and in discord to paranete and parhypate; but in singing those touches were no way allowable, as being ungrateful to the ear and shaming the performer. As certain it is from the <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a> that <a href=/people/873 target=_blank>Olympus</a> and his followers were not ignorant of the third string; for they made use of it not only in pulsation, but in their hymns to the <a href=/people/11088 target=_blank>Mother of the Gods</a> and several other <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> songs. Nor is it less apparent, with regard to the ὑπάται, that they never abstained for want of skill from that tetrachord in the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> mood; indeed in other moods they knowingly made use of it, but removed it from the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> mood to preserve its elegant gravity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.20>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.20'><b>&sect; 002.20</b>&nbsp;&nbsp;The same thing was done also by the tragedians. For the tragedians have never to this day used either the chromatic or the enharmonic scale; while the lyre, many generations older than tragedy, used them from the very beginning. Now that the chromatic was more ancient than the enharmonic is plain. For we must necessarily account it of greater antiquity, according to the custom and use of men themselves; otherwise it cannot be said that any of the differences and distinctions were ancienter the one than the other. Therefore, if any one should allege that <a href=/people/174 target=_blank>Aeschylus</a> or <a href=/people/456 target=_blank>Phrynichus</a> abstained from the chromatic out of ignorance, would he not be thought to maintain a very great absurdity? Such a one might as well aver that <a href=/people/2907 target=_blank>Pancrates</a> lay under the same blindness, who avoided it in most, but made use of it in some things; therefore he forebore not out of ignorance, but judgment, imitating <a href=/people/166 target=_blank>Pindar</a> and <a href=/people/262 target=_blank>Simonides</a> and that which is at present called the ancient manner. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.21>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.21'><b>&sect; 002.21</b>&nbsp;&nbsp;The same may be said of <a href=/people/1032 target=_blank>Tyrtaeus</a> the <a about=https://topostext.org/place/376224UMan class=person long=22.3933 lat=37.6181>Mantinean</a>, <a href=/people/2091 target=_blank>Andreas</a> the <a about=https://topostext.org/place/379229PKor class=person long=22.8802 lat=37.9054>Corinthian</a>, <a href=/people/506 target=_blank>Thrasyllus</a> the <a about=https://topostext.org/place/378226PPhl class=person long=22.648 lat=37.846>Phliasian</a>, and several others, who, as we well know, abstained by choice from the chromatic, from transition, from the increased number of strings, and many other common forms of rhythms, tunes, diction, composition, and expression. <a href=/people/3473 target=_blank>Telephanes</a> of <a about=https://topostext.org/place/380233PMeg class=person long=23.34285 lat=37.997>Megara</a> was so great an enemy to the pipe made of reed (called syrinx), that he would not suffer the instrument maker to join it to the flute (pipe made of wood or horn), and chiefly for that reason forbore to go to the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Pythian</a> games. In short, if a man should be thought to be ignorant of that which he makes no use of, there would be found a great number of ignorant persons in this age. For we see that the admirers of the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> composition make no use of the Antiginedian; the followers of the Antiginedian reject the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a>; and other musicians refuse to imitate <a href=/people/155 target=_blank>Timotheus</a>, being almost all bewitched with the trifles and the idle poems of <a href=/people/2654 target=_blank>Polyidus</a>. On the other side, if we dive into the business of variety and compare antiquity with the present times, we shall find there was great variety then, and that frequently made use of. For then the variation of rhythm was more highly esteemed, and the change of their manner of play more frequent. We are now lovers of fables, they were then lovers of rhythm. Plain it is therefore, that the ancients did not refrain from broken measures out of ignorance, but out of judgment. And yet what wonder is this, when there are so many other things necessary to human life which are not unknown, though not made use of by those who have no occasion to use them? But they are refused, and the use of them is altogether neglected, as not being found proper on many occasions. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.22>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.22'><b>&sect; 002.22</b>&nbsp;&nbsp;Having already shown that <a href=/people/12 target=_blank>Plato</a> neither for want of skill nor for ignorance blamed all the other moods and casts of composition, we now proceed to show that he really was skilled in harmony. For in his discourse concerning the procreation of the soul, inserted into <a href=/people/169 target=_blank>Timaeus</a>, he has made known his great knowledge in all the sciences, and of music among the rest, in this manner: After this, saith he, he filled up the double and treble intervals, taking parts from thence, and adding them to the midst between them, so that there were in every interval two middle terms. This proem was the effect of his experience in music, as we shall presently make out. The means from whence every mean is taken are three, arithmetical, enharmonical, geometrical. Of these the first exceeds and is exceeded in number, the second in proportion, the third neither in number nor proportion. <a href=/people/12 target=_blank>Plato</a> therefore, desirous to show the harmony of the four elements in the soul, and harmonically also to explain the reason of that mutual concord arising from discording and jarring principles, undertakes to make out two middle terms of the soul in every interval, according to harmonical proportion. Thus in a musical octave there happen to be two middle distances, whose proportion we shall explain. As for the octaves, they keep a double proportion between their two extremes. For example, let the double arithmetical proportion be 6 and 12, this being the interval between the ὑπάτη μέσων and the νήτη διεζευγμένων; 6 therefore and 12 being the two extremes, the former note contains the number 6, and the latter 12. To these are to be added the intermediate numbers, to which the extremes must hold the proportion, the one of one and a third, and the other of one and a half. These are the numbers 8 and 9. For as 8 contains one and a third of 6, so 9 contains one and a half of 6; thus you have one extreme. The other is 12, containing 9 and a third part of 9, and 8 and half 8. These then being the numbers between 6 and 12, and the interval of the octave consisting of a diatessaron and diapente, it is plain that the number 8 belongs to mese, and the number 9 to paramese; which being so, it follows that hypate is to mese as paramese to nete of the disjunct tetrachords; for it is a fourth from the first term to the second of this proportion, and the same interval from the third term to the fourth. The same proportion will be also found in the numbers. For as 6 is to 8, so is 9 to 12; and as 6 is to 9, so is 8 to 12. For 8 is one and a third part of 6, and 12 of 9; while 9 is one and a half part of 6, and 12 of 8. What has been said may suffice to show how great was <a href=/people/12 target=_blank>Plato</a>'s zeal and learning in the liberal sciences. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.23>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.23'><b>&sect; 002.23</b>&nbsp;&nbsp;Now that there is something of majesty, something great and divine in music, <a href=/people/46 target=_blank>Aristotle</a>, who was <a href=/people/12 target=_blank>Plato</a>'s scholar, thus labors to convince the world: <a href=/people/443 target=_blank>Harmony</a>, saith he, descended from heaven, and is of a divine, noble, and angelic nature; but being fourfold as to its efficacy, it has two means, — the one arithmetical, the other enharmonical. As for its members, its dimensions, and its excesses of intervals, they are best discovered by number and equality of measure, the whole art being contained in two tetrachords. These are his words. The body of it, he saith, consists of discording parts, yet concording one with another; whose means nevertheless agree according to arithmetical proportion. For the upper string being fitted to the lowest in the ratio of two to one produces a perfect diapason. Thus, as we said before, nete consisting of twelve units, and hypate of six, the paramese accords with hypate according to the sesquialter proportion, and has nine units, whilst mese has eight units. So that the chiefest intervals through the whole scale are the diatessaron (which is the proportion of 4:3), the diapente (which is the proportion of 3:2), and the diapason (which is the proportion of 2:1); while the proportion of 9:8 appears in the interval of a tone. With the same inequalities of excess or diminution, all the extremes are differenced one from another, and the means from the means, either according to the quantity of the numbers or the measure of geometry; which <a href=/people/46 target=_blank>Aristotle</a> thus explains, observing that nete exceeds mese by a third part of itself, and hypate is exceeded by paramese in the same proportion, so that the excesses stand in proportion. For by the same parts of themselves they exceed and are exceeded; that is, the extremes (nete and hypate) exceed and are exceeded by mese and paramese in the same proportions, those of 4:3 and of 3:2. Now these excesses are in what is called harmonic progression. But the distances of nete from mese and of paramese from hypate, expressed in numbers, are in the same proportion (12:8 equals 9:6); for paramese exceeds mese by one-eighth of the latter. Again, nete is to hypate as 2:1; paramese to hypate as 3:2; and mese to hypate as 4:3. This, according to <a href=/people/46 target=_blank>Aristotle</a>, is the natural constitution of harmony, as regards its parts and its numbers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.24>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.24'><b>&sect; 002.24</b>&nbsp;&nbsp;But, according to natural philosophy, both harmony and its parts consist of even, odd, and also even-odd. Altogether it is even, as consisting of four terms; but its parts and proportions are even, odd, and even-odd. So nete is even, as consisting of twelve units; paramese is odd, of nine; mese even, of eight; and hypate even-odd, of six (i.e., 2×3). Whence it comes to pass, that music — herself and her parts — being thus constituted as to excesses and proportion, the whole accords with the whole, and also with each one of the parts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.25>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.25'><b>&sect; 002.25</b>&nbsp;&nbsp;But now as for the senses that are created within the body, such as are of celestial and heavenly extraction, and which by divine assistance affect the understanding of men by means of harmony, — namely, sight and hearing, — do by the very light and voice express harmony. And others which are their attendants, so far as they are senses, likewise exist by harmony; for they perform none of their effects without harmony; and although they are inferior to the other two, they are not independent of them. Nay, those two also, since they enter into human bodies at the very same time with God himself, claim by reason a vigorous and incomparable nature. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.26>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.26'><b>&sect; 002.26</b>&nbsp;&nbsp;Manifest from hence therefore it is, why the ancient Greeks, with more reason than others, were so careful to teach their children music. For they deemed it requisite by the assistance of music to form and compose the minds of youth to what was decent, sober, and virtuous; believing the use of music beneficially efficacious to incite to all serious actions, especially to the adventuring upon warlike dangers. To which purpose they made use of pipes or flutes when they advanced in battle array against their enemies; like the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>, who upon the same occasion caused the Castorean melody to be played before their battalions. Others inflamed their courage with harps, playing the same sort of harmony when they went to look danger in the face, as the <a about=https://topostext.org/place/352252IKre class=ethnic long=25.1836 lat=35.2052>Cretans</a> did for a long time. Others, even to our own times, continue to use the trumpet. The <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> made use of flutes at their wrestling matches called <a href=/people/10321 target=_blank>Stheneia</a>; which sort of sport was first instituted in honor of <a href=/people/303 target=_blank>Danaus</a>, but afterwards consecrated to <a href=/people/1 target=_blank>Jupiter</a> <a href=/people/784 target=_blank>Sthenius</a>, or <a href=/people/1 target=_blank>Jupiter</a> the Mighty. And now at this day it is the custom to make use of flutes at the games called Pentathla, although there is now nothing exquisite or antique, nothing like what was customary among men of old time, like the song composed by <a href=/people/2052 target=_blank>Hierax</a> for this very game; still, even though it is sorry stuff and nothing exquisite, it is accompanied by flute-music. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.27>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.27'><b>&sect; 002.27</b>&nbsp;&nbsp;But among the more ancient Greeks, music in theatres was never known, for they employed their whole musical skill in the worship of the Gods and the education of youth; at which time, there being no theatres erected, music was yet confined within the walls of their temples, as being that with which they worshipped the supreme Deity and sang the praises of virtuous men. And it is probable that the word θέατϱον, at a later period, and θεωϱεῖν (to behold) much earlier, were derived from θεός (God). But in our age is such another face of new inventions, that there is not the least remembrance or care of that use of music which related to education; for all our musicians make it their business to court the theatre <a href=/people/54 target=_blank>Muses</a>, and study nothing but compositions for the stage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.28>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.28'><b>&sect; 002.28</b>&nbsp;&nbsp;But some will say, Did the ancients invent nothing themselves? Yes, say I, they did invent, but their inventions were grave and decent. For they who have written the history of music attribute to <a href=/people/1164 target=_blank>Terpander</a> the addition of the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> nete, which before was not in use. Even the whole Mixolydian mood is a new invention. Such were also the <a href=/people/3222 target=_blank>Orthian</a> manner of melody with <a href=/people/3222 target=_blank>Orthian</a> rhythms, and also the Trochaeus Semantus. And if we believe <a href=/people/166 target=_blank>Pindar</a>, <a href=/people/1164 target=_blank>Terpander</a> was the inventor of the Scolion (or roundelay). <a href=/people/384 target=_blank>Archilochus</a> also invented the rhythmic composition of the iambic trimeter, the change to rhythms of different character, the melo-dramatic delivery, and the accompaniment proper to each of these. He is also presumed to be the author of epodes, tetrameters, the Cretic and the prosodiac rhythms, and the augmentation of the heroic verse. Some make him author also of the elegiac measure, as likewise of the extending the iambic to the paeon epibatus, the prolonged and heroic to the prosodiac and Cretic. And <a href=/people/384 target=_blank>Archilochus</a> is first said to have taught how iambics could be partly recited to the stroke of the lyre and partly sung; from him the tragedians learned it, and from them <a href=/people/9206 target=_blank>Crexus</a> took it, and made use of it in dithyrambics. It is thought that he invented also playing on the lyre at intervals in the song, whereas the ancients played only during the singing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.29>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.29'><b>&sect; 002.29</b>&nbsp;&nbsp;Of the Hypolydian mood they make <a href=/people/2919 target=_blank>Polymnestus</a> the inventor, and the first that taught the lowering and raising of the voice (ἔϰλυσις and ἐϰβολή). To the same <a href=/people/873 target=_blank>Olympus</a> to whom they also ascribe the first invention of Grecian and well-regulated nomic music they attribute likewise the finding out the enharmonic music, the prosodiac measure to which is composed the hymn to <a href=/people/24 target=_blank>Mars</a>, and the chorean measure which he used in the hymns to the <a href=/people/11088 target=_blank>Mother of the Gods</a>. Some report him to be the author also of the bacchius. And every one of the ancient songs show that this is so. But <a href=/people/2422 target=_blank>Lasus</a> of <a about=https://topostext.org/place/374232UHer class=person long=23.2535 lat=37.3834>Hermione</a>, transferring the rhythms to suit the dithyrambic time, and making use of an instrument with many notes, made an absolute innovation upon the ancient music, by the use of more notes, and those more widely distributed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.30>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.30'><b>&sect; 002.30</b>&nbsp;&nbsp;<a href=/people/73 target=_blank>Aristophanes</a> the comic poet, making mention of <a href=/people/489 target=_blank>Philoxenus</a>, complains of his introducing lyric verses among the cyclic choruses, where he brings in <a href=/people/1268 target=_blank>Music</a> thus speaking: He filled me with discordant measures airy, Wicked Hyperbolaei and Niglari; And to uphold the follies of his play, Like a lank radish bowed me every way. Other comedians have since set forth the absurdity of those who have been slicers and manglers of music. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.31>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.31'><b>&sect; 002.31</b>&nbsp;&nbsp;Now that the right moulding or ruin of ingenuous manners and civil conduct lies in a well-grounded musical education, <a href=/people/633 target=_blank>Aristoxenus</a> has made apparent. For, of those that were contemporary with him, he gives an account of <a href=/people/4705 target=_blank>Telesias</a> the <a about=https://topostext.org/place/383233PThe class=person long=23.3178 lat=38.3191>Theban</a>, who in his youth was bred up in the noblest excellences of music, and moreover studied the works of the most famous lyrics, <a href=/people/166 target=_blank>Pindar</a>, <a href=/people/23 target=_blank>Dionysius</a> the <a about=https://topostext.org/place/383233PThe class=person long=23.3178 lat=38.3191>Theban</a>, <a href=/people/3033 target=_blank>Lamprus</a>, <a href=/people/2778 target=_blank>Pratinas</a>, and all the rest who were accounted most eminent; who played also to perfection upon the flute, and was not a little industrious to furnish himself with all those other accomplishments of learning; but being past the prime of his age, he was so bewitched with the theatre's new fangles and the innovations of multiplied notes, that despising those noble precepts and that solid practice to which he had been educated, he betook himself to <a href=/people/489 target=_blank>Philoxenus</a> and <a href=/people/155 target=_blank>Timotheus</a>, and among those delighted chiefly in such as were most depraved with diversity of notes and baneful innovation. And yet, when he made it his business to make verses and labor both ways, as well in that of <a href=/people/166 target=_blank>Pindar</a> as that of <a href=/people/489 target=_blank>Philoxenus</a>, he could have no success in the latter. And the reason proceeded from the truth and exactness of his first education. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.32>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.32'><b>&sect; 002.32</b>&nbsp;&nbsp;Therefore, if it be the aim of any person to practise music with skill and judgment, let him imitate the ancient manner; let him also adorn it with those other sciences, and make philosophy his tutor, which is sufficient to judge what is in music decent and useful. For music being generally divided into three parts, diatonic, chromatic, and enharmonie, it behooves one who comes to learn music to understand poetry, which uses these three parts, and to know how to express his poetical inventions in proper musical form. First therefore we are to consider that all musical learning is a sort of habituation, which does not teach the reason of her precepts at one and the same time to the learner. Moreover, we are to understand that to such an education there is not requisite an enumeration of its several divisions, but every one learns by chance what either the master or scholar, according to the authority of the one and the liberty of the other, has most affection for. But the more prudent sort reject this chance-medley way of learning, as the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a> of old, the <a about=https://topostext.org/place/376224UMan class=ethnic long=22.3933 lat=37.6181>Mantineans</a>, and <a about=https://topostext.org/place/380225PPel class=ethnic long=22.5384 lat=38.0446>Pallenians</a>, who, making choice either of one single method or else but very few styles, used only that sort of music which they deemed most proper to regulate the inclinations of youths. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.33>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.33'><b>&sect; 002.33</b>&nbsp;&nbsp;This will be apparent, if any one shall examine every one of the parts, and see what is the subject of their several contemplations. For harmony takes cognizance of intervals, systems, classes of harmonious sounds, notes, tones, and systematical transmutations. Farther than this it goes not. And therefore it would be in vain to enquire of harmony, whether the poet have rightly and (so to speak) musically chosen the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> for the beginning, the mixed <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> and <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> for the end, or the Hypophrygian and <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> for the middle. For the industry of harmony reaches not to these, and it is defective in many other things, as not understanding the force and extent of elegant aptness and proper concinnity. Neither did ever the chromatic or enharmonic species arrive to such force of aptitude as to discover the nature and genius of the poem; for that is the work of the poet. It is as plain, that the sound of the system is different from the sound of the descant sung in the same system; which, however, does not belong to the consideration of harmonical studies. There is the same to be said concerning rhythms, for no rhythm can claim to itself the force of perfect aptitude. For we call a thing apt and proper when we consider the nature of it. The reason of this, we say, is either a certain plain and mixed composure, or both; like the enharmonic species of <a href=/people/873 target=_blank>Olympus</a>, by him set in the <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> mood and mixed with the paeon epibatos, which rendered the beginning of the key naturally elegant in what is called the nome of <a href=/people/11 target=_blank>Minerva</a>. For having made choice of his key and measure, he only changed the paeon epibatos for the trochee, which produced his enharmonic species. However, the enharmonic species and <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> tone remaining together with the whole system, the elegancy of the character was greatly altered. For that which was called harmony in the nome of <a href=/people/11 target=_blank>Minerva</a> was quite another thing from that in the introduction. He then that has both judgment as well as skill is to be accounted the most accurate musician. For he that understands the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> mood, not being able withal to discern by his judgment what is proper to it and when it is fit to be made use of, shall never know what he does; nay, he shall quite mistake the nature and custom of the key. Indeed it is much questioned among the <a about=https://topostext.org/place/387224RDor class=ethnic long=22.4 lat=38.7>Dorians</a> themselves, whether the enharmonic composers be competent judges of the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> songs. The same is to be said concerning the knowledge of rhythm. For he that understands a paeon may not understand the proper use of it, though he know the measure of which it consists. Because it is much doubted among those that make use of paeons, whether the bare knowledge make a man capable to determine concerning the proper use of those rhythms; or, as others say, whether it aspire to presume so far. Therefore it behooves that person to have two sorts of knowledge, who will undertake to judge of what is proper and what improper; first, of the custom and manner of elegancy for which such a composition was intended, and next of those things of which the composition consists. And thus, that neither the bare knowledge of harmony, nor of rhythm, nor of any other things that singly by themselves are but a part of the whole body of music, is sufficient to judge and determine either of the one or the other, what has been already said may suffice to prove. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.34>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.34'><b>&sect; 002.34</b>&nbsp;&nbsp;[Now then, there being three species into which all harmony is divided, equal in the magnitude of systems or intervals and force of notes and tetrachords, we find that the ancients never disputed about any more than one; for they never troubled themselves with the chromatic or diatonic, but differed only about the enharmonic; and there no farther than about the great interval called the diapason. The further subdivision indeed caused some little variance, but they nearly all agreed that harmony itself is but one. ] Therefore he must never think to be a true artist in the understanding and practice of music, who advances no farther than the single knowledge of this or that particular: but it behooves him to trace through all the particular members of it, and so to be master of the whole body, by understanding how to mix and join all the divided members. For he that understands only harmony is confined to a single manner. Wherefore, in short, it is requisite that the sense and understanding concur in judging the parts of music; and that they should neither be too hasty, like those senses which are rash and forward, nor too slow, like those which are dull and heavy; though it may happen sometimes, through the inequality of Nature, that the same senses may be too slow and too quick at the same time. Which things are to be avoided by a sense and judgment that would run an equal course. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.35>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.35'><b>&sect; 002.35</b>&nbsp;&nbsp;For there are three things at least that at the same instant strike the ear, — the note, the time, and the word or syllable. By the note we judge of the harmony, by the time of the rhythm, and by the word of the matter or subject of the song. As these proceed forth altogether, it is requisite the sense should give them entrance at the same moment. But this is certain, where the sense is not able to separate every one of these and consider the effects of each apart, there it can never apprehend what is well or what is amiss in any. First therefore let us discourse concerning coherence. For it is necessary that coherence accompany the discerning faculty. For judgment of good or bad is not to be made from notes disjoined, broken time, and shattered words, but from coherence. For there is in practice a certain commixture of parts which commonly are not compounded. So much as to coherence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.36>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.36'><b>&sect; 002.36</b>&nbsp;&nbsp;We are next to consider whether the masters of music are sufficiently capable of being judges of it. Now I aver the negative. For it is impossible to be a perfect musician and a good judge of music by the knowledge of those things that seem to be but parts of the whole body, as by excellency of hand upon the instrument, or singing readily at first sight, or exquisiteness of the ear, so far as this extends to the understanding of harmony and time. Neither does the knowledge of time and harmony, pulsation or elocution, or whatever else falls under the same consideration, perfect their judgment. Now for the reasons why a musician cannot gain a perfect judgment from any of these, we must endeavor to make them clear. First then it must be granted that, of things about which judgment is to be made, some are perfect and others imperfect. Those things which are perfect are the compositions in general, whether sung or played, and the expression of those, whether upon the instruments or by the voice, with the rest of the same nature. The imperfect are the things to these appertaining, and for whose sake they are made use of. Such are the parts of expression. A second reason may be found in poetry, with which the case is the same. For a man that hears a consort of voices or instruments can judge whether they sing or play in tune, and whether the language be plain or not. But every one of these are only parts of instrumental and vocal expression; not the end itself, but for the sake of the end. For by these and things of the same nature shall the elegancy of elocution be judged, whether it be proper to the poem which the performer undertakes to sing. The same is to be said of the several passions expressed in the poetry. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.37>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.37'><b>&sect; 002.37</b>&nbsp;&nbsp;The ancients now made principal account of the moral impression, and therefore preferred that fashion of the antique music which was grave and least affected. Therefore the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> are said to have punished deviation from the ancient music, and to have imposed a fine upon such as first adventured to play with more than seven strings, and to introduce the Mixolydian mood. <a href=/people/58 target=_blank>Pythagoras</a>, that grave philosopher, rejected the judging of music by the senses, affirming that the virtue of music could be appreciated only by the intellect. And therefore he did not judge of music by the ear, but by the harmonical proportion, and thought it sufficient to fix the knowledge of music within the compass of the diapason. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.38>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.38'><b>&sect; 002.38</b>&nbsp;&nbsp;But our musicians nowadays have so utterly exploded the most noble of all the moods, which the ancients greatly admired for its majesty, that hardly any among them make the least account of enharmonic distances. And so negligent and lazy are they grown, as to believe the enharmonic diesis to be too contemptible to fall under the apprehension of sense, and they therefore exterminate it out of their compositions, deeming those to be triflers that have any esteem for it or make use of the mood itself. For proof of which they think they bring a most powerful argument, which rather appears to be the dulness of their own senses; as if whatever fled their apprehensions were to be rejected as useless and of no value. And then again they urge that its magnitude cannot be perceived through its concord, like that of the semitone, tone, and other distances; not understanding, that at the same time they throw out the third, fifth, and seventh, of which the one consists of three, the other of five, and the last of seven dieses. And on the same principle all the intervals that are odd should be rejected as useless, inasmuch as none of them is perceptible through concord; and this would include all which by means of even the smallest diesis are measured by odd numbers. Whence it necessarily follows, that no division of the tetrachord would be of use but that which is to be measured by all even intervals, as in the syntonic diatonic, and in the toniaean chromatic. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.39>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.39'><b>&sect; 002.39</b>&nbsp;&nbsp;But these opinions are not only contrary to appearance, but repugnant one to another. For they themselves chiefly make use of those divisions of tetrachords in which most of the intervals are either unequal or irrational. To which purpose they always soften both lichanos and paranete, and lower even some of the standing sounds by an irrational interval, bringing the trite and paranete to approach them. And especially they applaud the use of those systems in which most of the intervals are irrational, by relaxing not only those tones which are by nature movable, but also some which are properly fixed; as it is plain to those that rightly understand these things. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.40>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.40'><b>&sect; 002.40</b>&nbsp;&nbsp;Now for the advantages that accrue to men from the use of music, the famous <a href=/people/9 target=_blank>Homer</a> has taught it us, introducing <a href=/people/17 target=_blank>Achilles</a>, in the height of his fury toward <a href=/people/47 target=_blank>Agamemnon</a>, appeased by the music which he learned from <a href=/people/1086 target=_blank>Chiron</a>, a person of great wisdom. For thus says he: Amused at ease, the god-like man they found, Pleased with the solemn harp's harmonious sound. The well-wrought harp from conquered <a about=https://topostext.org/place/396270PThe class=place long=27.0202 lat=39.5974>Thebe</a> came; Of polished silver was its costly frame. With this he soothes his angry soul, and sings The immortal deeds of heroes and of kings. Learn, says <a href=/people/9 target=_blank>Homer</a>, from hence the true use of music. For it became <a href=/people/17 target=_blank>Achilles</a>, the son of <a href=/people/109 target=_blank>Peleus</a> the Just, to sing the famous acts and achievements of great and valiant men. Also, in teaching the most proper time to make use of it, he found out a profitable and pleasing pastime for one's leisure hours. For <a href=/people/17 target=_blank>Achilles</a>, being both valiant and active, by reason of the disgust he had taken against <a href=/people/47 target=_blank>Agamemnon</a> withdrew from the war. <a href=/people/9 target=_blank>Homer</a> therefore thought he could not do better than by the laudable incitements of music and poetry to inflame the hero's courage for those achievements which he afterwards performed. And this he did, calling to mind the great actions of former ages. Such was then the ancient music, and such the advantages that made it profitable. To which end and purpose we read that <a href=/people/4 target=_blank>Hercules</a>, <a href=/people/17 target=_blank>Achilles</a>, and many others made use of it; whose master, wisest <a href=/people/1086 target=_blank>Chiron</a>, is recorded to have taught not only music, but morality and physic. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.41>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.41'><b>&sect; 002.41</b>&nbsp;&nbsp;In brief therefore, a rational person will not blame the sciences themselves, if any one make use of them amiss, but will adjudge such a failing to be the error of those that abuse them. So that whoever he be that shall give his mind to the study of music in his youth, if he meet with a musical education, proper for the forming and regulating his inclinations, he will be sure to applaud and embrace that which is noble and generous, and to rebuke and blame the contrary, as well in other things as in what belongs to music. And by that means he will become clear from all reproachful actions, for now having reaped the noblest fruit of music, he may be of great use, not only to himself but to the commonwealth: while music teaches him to abstain from every thing indecent both in word and deed, and to observe decorum, temperance, and regularity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.42>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.42'><b>&sect; 002.42</b>&nbsp;&nbsp;Now that those cities which were governed by the best laws took care always of a generous education in music, many testimonies may be produced. But for us it shall suffice to have instanced <a href=/people/1164 target=_blank>Terpander</a>, who appeased a sedition among the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>, and <a href=/people/3475 target=_blank>Thaletas</a> the <a about=https://topostext.org/place/352252IKre class=person long=25.1836 lat=35.2052>Cretan</a>, of whom <a href=/people/2778 target=_blank>Pratinas</a> writes that, being sent for by the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a> by advice of the oracle, he freed the city from a raging pestilence. <a href=/people/9 target=_blank>Homer</a> tells that the Grecians stopped the fury of another noisome pestilence by the power and charms of the same noble science: With sacred hymns and songs that sweetly please, The Grecian youth all day the Gods appease. Their lofty paeans bright <a href=/people/2 target=_blank>Apollo</a> hears, And still the charming sounds delight his ears. These verses, most excellent master, I thought requisite to add as the finishing stone to my musical discourse, which were by you cited before to show the force of harmony. For indeed the chiefest and sublimest end of music is the graceful return of our thanks to the Gods, and the next is to purify and bring our minds to a sober and harmonious temper. Thus, said <a href=/people/4301 target=_blank>Soterichus</a>, most excellent master, I have given you what may be called an encyclic discourse of music. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.43>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.43'><b>&sect; 002.43</b>&nbsp;&nbsp;Nor was <a href=/people/4301 target=_blank>Soterichus</a> a little admired for what he had spoken, as one that both by his countenance and speech had shown his zeal and affection for that noble science. After all, said <a href=/people/5142 target=_blank>Onesicrates</a>, I must needs applaud this in both of you, that you have kept within your own spheres and observed your proper limits. For <a href=/people/142 target=_blank>Lysias</a>, not insisting any further, undertook only to show us what was necessary to the making a good hand, as being an excellent performer himself. But <a href=/people/4301 target=_blank>Soterichus</a> has feasted us with a discovery of the benefit, the theory, the force, and right end of music. But one thing I think they have willingly left for me to say; for I cannot think them guilty of so much bashfulness that they should be ashamed to bring music into banquets, where certainly, if anywhere, it cannot but be very useful, which <a href=/people/9 target=_blank>Homer</a> also confirms to be true: Song and the merry dance, the joy of feasts. Not that I would have any one believe from these words, that <a href=/people/9 target=_blank>Homer</a> thought music useful only for pleasure and delight, there being a profounder meaning concealed in the verse. For he brought in music to be present at the banquets and revels of the ancients, as believing it then to be of greatest use and advantage to repel and mitigate the inflamming power of the wine. To which our <a href=/people/633 target=_blank>Aristoxenus</a> agrees, who alleges that music was introduced at banquets for this reason, that as wine intemperately drunk weakens both the body and mind, so music by its harmonious order and symmetry assuages and reduces them to their former constitution. And therefore it was that <a href=/people/9 target=_blank>Homer</a> reports that the ancients made use of music at their solemn festivals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=002.44>
+                            <p id='urn:cts:greekLit:tlg0094.tlg002:002.44'><b>&sect; 002.44</b>&nbsp;&nbsp;But for all this, my most honored friends, methinks you have forgot the chiefest thing of all, and that which renders music most majestic. For <a href=/people/58 target=_blank>Pythagoras</a>, <a href=/people/944 target=_blank>Archytas</a>, <a href=/people/12 target=_blank>Plato</a>, and many others of the ancient philosophers, were of opinion, that there could be no motion of the world or rolling of the spheres without the assistance of music, since the Supreme Deity created all things harmoniously. But it would be unseasonable now to enter upon such a discourse, especially at this time, when it would be absurd for <a href=/people/1268 target=_blank>Music</a> to transgress her highest and most musical office, which is to give the laws and limits of time and measure to all things. Therefore after he had sung a paean, and offered to <a href=/people/43 target=_blank>Saturn</a> and his offspring, with all the other Gods and the <a href=/people/54 target=_blank>Muses</a>, he dismissed the company. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0094.tlg002.perseus-grc1:002.44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=155', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas155";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=155';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

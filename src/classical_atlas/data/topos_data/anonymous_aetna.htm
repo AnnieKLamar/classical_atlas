@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Anonymous, Aetna' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Anonymous, Aetna, translated by John Wight Duff (1866-1944) and Arnold Mackay Duff (1900-??), from the Loeb Classical Library's Minor Latin Poets (1935), a work in the public domain nobly placed online in Greek and Latin by Bill Thayer at LacusCurtius' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='70' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 70' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/735' content='urn:cts:latinLit:phi0692.phi004' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/' content='Anonymous'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n79032222' content='John Wight Duff (1866-1944) and Arnold Mackay Duff (1900-??)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Aetna/text*.html' /><h2>Anonymous, Aetna</h2>Anonymous, Aetna, translated by John Wight Duff (1866-1944) and Arnold Mackay Duff (1900-??), from the Loeb Classical Library's Minor Latin Poets (1935), a work in the public domain nobly placed online in Greek and Latin by Bill Thayer at LacusCurtius This text has 55 tagged references to 23 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi0692.phi004'>urn:cts:latinLit:phi0692.phi004</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87771446'>Q87771446</a>;     <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi0692.phi004:1'><b>&sect; 1</b>&nbsp;&nbsp;<a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> shall be my poetic theme and the fires that break from her hollow furnaces. My poem shall tell what those mighty causes are which roll conflagrations on their way, what it is that chafes at governance, or whirls the clamorous heat-currents. Come with favour to be my inspirer in song, whether <a about=https://topostext.org/place/374253LKyn class=place long=25.272 lat=37.395>Cynthos</a> be thy dwelling-place, or <a about=https://topostext.org/place/347329SApo class=place long=32.864 lat=34.673>Hyla</a> please thee more than <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>, or <a about=https://topostext.org/place/395208SDod class=place long=20.7878 lat=39.5464>Dodona</a> be thy favourite: and with thee let the sister <a href=/people/54 target=_blank>Muses</a> hasten from the <a about=https://topostext.org/place/402225RPie class=demonym long=22.5 lat=40.2>Pierian</a> spring to forward my new emprise. On an unwonted track 'tis safer going if <a href=/people/2 target=_blank>Apollo</a> guide.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi0692.phi004:9'><b>&sect; 9</b>&nbsp;&nbsp;Who knows not of the Golden Age of the care-free King? when no man subdued fields to his will or sowed grain in them or fended harmful weeds from the crops which were to come; when plenteous harvests filled the barns to last the year; when, with no tread but his own, <a href=/people/5 target=_blank>Bacchus</a> ran into wine; when honies dripped from clinging leaves, and <a href=/people/11 target=_blank>Pallas</a> made flow her own especial streams of rich olive-oil: then had the country graciousness. To none was it e'er vouchsafed to know more joyously his own times.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi0692.phi004:17'><b>&sect; 17</b>&nbsp;&nbsp;Who has not told of the <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a> — mellay of warriors on farthest soil? Who but has uttered a dirge for <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Pergamos</a> set on her blazing <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> pyre and the mother mourning the poignant slaying of her sons, or the day that turned its course in horror, or the dragon's tooth sown mid the sprinkling of seed? Who has not lamented the lying signal of the ship that kept not troth, or chanted the plaint of <a href=/people/119 target=_blank>Minos</a>' day forlorn on a deserted shore? — yes, every form in which legend has been thrown into ancient song.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi0692.phi004:24'><b>&sect; 24</b>&nbsp;&nbsp;More gallantly I set my spirit toiling on a task untried; what are the forces for this mighty working, how great the energy which releases in dense array the eternal flames, thrusts masses of rock from the lowest depth with gigantic noise and burns everything near in rills of fire — this is the burden of my lay.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:latinLit:phi0692.phi004:29'><b>&sect; 29</b>&nbsp;&nbsp;First, let none be deceived by the fictions poets tell — that <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> is the home of a god, that the fire gushing from her swollen jaws is <a href=/people/84 target=_blank>Vulcan</a>'s fire, and that the echo in that cavernous prison comes from his restless work. No task so paltry have the gods. To meanest crafts one may not rightly lower the stars; their sway is royal, aloft in a remote heaven; they reck not to handle the toil of artisans.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:latinLit:phi0692.phi004:36'><b>&sect; 36</b>&nbsp;&nbsp;There is this second form of poetic error, different from the first. <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s furnaces, it is declared, are those the <a href=/people/350 target=_blank>Cyclopes</a> used, when, employing their strength in rhythmic strokes upon the anvil, they forged the dread thunderbolt beneath their heavy hammers and so gave <a href=/people/1 target=_blank>Jupiter</a> his panoply — a graceless tale with ne'er a pledge of truth.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:latinLit:phi0692.phi004:41'><b>&sect; 41</b>&nbsp;&nbsp;Next, there is a sacrilegious legend which molests with <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Phlegra</a>'s warfare the ever-living fires of <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s summit. In olden time the giants essayed impiously to thrust down the stars from the firmament, then capturing <a href=/people/1 target=_blank>Jove</a> to place his sovereignty elsewhere and impose their laws on vanquished heaven. These monsters have man's nature down to the belly; below 'tis a scaly <a href=/people/55 target=_blank>serpent</a> that forms the tortuous windings of their steps. Great mountains are built into a pile for waging the battle. <a about=https://topostext.org/place/398227LOss class=place long=22.6869 lat=39.7969>Ossa</a> weighs down <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a>; <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, topmost of the three, lies heavy on <a about=https://topostext.org/place/398227LOss class=place long=22.6869 lat=39.7969>Ossa</a>. Now they strive to climb the mountain-masses heaped in one; the sacrilegious host challenges to close fight the alarmed stars — challenges in hostile array all the gods to battle: the standards advance through constellations paralysed. From heaven <a href=/people/1 target=_blank>Jupiter</a> shrinks in alarm; weaponing his glittering right hand with flame, he withdraws the firmament in gloom. With mighty outcry the <a href=/people/11034 target=_blank>Giants</a> begin their onset; hereat thunders the deep voice of the Sire, and therewithal from every quarter the sustaining winds with their discordant host redouble the noise. Thick burst the torrents through the astonied clouds: all the warlike prowess of one and every god joins the common cause. Already was <a href=/people/11 target=_blank>Pallas</a> at her father's right and <a href=/people/24 target=_blank>Mars</a> at his left: already the rest of the gods take their stand, a glory on either flank. Then <a href=/people/1 target=_blank>Jupiter</a> discharges his bolt and lays the mountains low. From that scene the falling throng fled vanquished, the armies embattled against heaven: headlong the godless foe is driven, his camp with him, and Mother Earth urging her prostrate sons back to the fight they have lost. Then peace is restored to the firmament: then mid stars at rest comes <a href=/people/5 target=_blank>Bacchus</a>: the sky and the honour of a world preserved are now restored to the stars. As in the <a about=https://topostext.org/place/376145RSic class=demonym long=14.5 lat=37.6>Sicilian</a> sea <a href=/people/2137 target=_blank>Enceladus</a> lies dying, <a href=/people/1 target=_blank>Jupiter</a> whelms him under <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>. Beneath the mountain's mighty weight he tosses feverishly, and rebellious breathes fire from his throat.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=74>
+                            <p id='urn:cts:latinLit:phi0692.phi004:74'><b>&sect; 74</b>&nbsp;&nbsp;Such is the widespread licence of faulty rumour. Bards have genius: so their lay wins renown. 'Tis well-nigh all delusion that the stage gives us. Bards have beheld in poetry dark ghosts in the underworld and the pale realm of Dis amid the ashes of the dead. Bards have sung false lays of Stygian wave and Stygian <a href=/people/10953 target=_blank>hound</a>. Some have stretched over many an acre <a href=/people/992 target=_blank>Tityus</a> ugly in his punishment: others torment you, <a href=/people/383 target=_blank>Tantalus</a>, with a banquet spread around — torment you too with thirst. They sing of your judgements, <a href=/people/119 target=_blank>Minos</a>, and yours, <a href=/people/255 target=_blank>Aeacus</a>, in the world of shades: they also set <a href=/people/729 target=_blank>Ixion</a>'s wheel revolving — and whatsoe'er is deeper hid; earth is conscious of the falsehood. Nor yet do you, O earth, suffice them: they spy on the divine powers: they are not afraid to let their eyes peer into a heaven where they have no portion. They know the wars of gods, their unions hidden from us, all the sins of <a href=/people/1 target=_blank>Jove</a> in deceitful guise, as a <a href=/people/10955 target=_blank>bull</a> to trick <a href=/people/434 target=_blank>Europa</a>, a white swan for <a href=/people/596 target=_blank>Leda</a>, a streaming shower of precious ore for Danaë. Such freedom must be accorded to poetry; but with truth alone is my concern. I will sing the movement that makes fervent <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> boil and greedily gather its own stores of fire renewed.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=94>
+                            <p id='urn:cts:latinLit:phi0692.phi004:94'><b>&sect; 94</b>&nbsp;&nbsp;Wherever the earth's vast sphere extends, girt with the curving waves of farthest ocean, it is not solid all in all. Everywhere the ground has its long line of fissure, everywhere is cleft and, hollowed deeply with secret holes, hangs above narrow passages which it makes. As in a living creature veins run through the whole body with wandering course, along which passes every drop of blood to feed life for the selfsame organism, so the earth by its chasms draws in and distributes currents of air. Either, I mean, when of old the body of the universe was divided into sea, earth and stars, the first portion was given to the sky, then followed that of the sea, and earth sank down lowest of the three, albeit fissured by winding hollows; and, even as a heap springs out of stones of uneven shape thrown at random, so as to form a charybdis hollowed with frequent interstices within and hanging upon itself, even so in like conflagration the earth, too, loosened into tiny channels, does not all unite compactly or into narrow compass. Or maybe the cause of it is indeed ancient, though the formation is not coeval with its origin, but some air enters unchecked and works a road as it escapes: or water has eaten away the ground with the mud it perpetually makes and stealthily softens what blocks its course. Or again hot vapours cribbed and confined have overcome solidity and fire has sought a path for itself: or all these forces may have striven in their assigned places. No cause is here for mourning our ignorance, so long as the working of the true cause stands assured. Who does not believe that there are gulfs of emptiness in earth's recesses, when he sees springs so mighty emerge and so often plunge again in the depth of a chasm? That chasm could not speed it from any slender source: fit confluents must needs summon from everywhere their wandering ducts and the chasm draw from a full source the making of a mighty river. Moreover, rivers running with broad currents have found their own places of sinking. Either an abyss has snatched them headlong down and buried them in its fateful jaws, or they flow unseen, o'er-arched by closed caverns, then, coming to light far away, renew their unexpected course. If earth did not let out channels in different places, if some path did not give welcome to a river, truly no road would be assured for springs and streams, and sluggish earth, packed in a dense mass, would be rendered idle by its unmoving weight. But if rivers are buried in a sheer abyss of earth, if some which are buried come back to light and others without such burial rise from earth, no wonder is it that confined winds have liberating vents which are concealed. Proofs of this through facts indisputable, proofs which hold the eye, the earth will give you in due order. Oftentimes you may look out on vast cavities and tracts of land cut off ruinously and plunged into thick darkness; 'tis far-flung chaos and unending debris. Moreover, do you see how in forests there are lairs and caves of widely receding space which have dug far down their deep-sunk coverts? Undiscovered is the route of such working: only within there is an outflow. . . .</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=142>
+                            <p id='urn:cts:latinLit:phi0692.phi004:142'><b>&sect; 142</b>&nbsp;&nbsp;These (caves) will furnish true proofs of a depth unknown to us. Let but your mind guide you to a grasp of cunning research: from things manifest gather faith in the unseen. For as fire is always more unfettered and more furious in confined spaces, and as the rage of the winds is no less vehement there, so to this extent, underground and in earth's depths, must fire and wind cause greater changes, all the more loose their bonds, all the more drive off what blocks their course. Yet 'tis not into unyielding channels that the pent-up force of air or flames escapes. It hurtles on only where the nearest barriers give way, and cuts its course sideways just where the enclosure seems most frail. Hence comes the trembling, the quaking of earth, when compressed air stirs the pores till they gape and drives sluggish matter before it. But if earth had no openings, if its frame were entirely solid, it would give the eye no marvellous visions of its inner self; inert and packed into a weighty mass, it would remain immovable. But if perhaps you think that this mighty action is a growth from causes at the surface and its nourishment a growth from surface strength at the point where you perceive before you outstretched clefts and vast chasms — if so, you are wrong: the case is not yet clear to you, established in its true light. For all the onslaught of the winds makes for any open vacuum, but at their entry their forces slacken; altered by the spacious access to the chasm, they turn feeble and relax their spirit. For when the vacuum contains nothing to stop the winds or spur them in their delay, they flag; all the great abyss deploys them drifting to and fro, and on the very threshold they lose their speed. It must needs be in narrow gullies that the winds work their havoc. Hot glows the work: now the <a href=/people/1011 target=_blank>South Wind</a> presses or is pressed on by the thick swoop of the <a href=/people/2311 target=_blank>East Wind</a> and the North: now, again, both these winds by a current from the South. Hence the wind's fury: hence it can shatter the foundations of the ground with cruel cleavage. For that reason do cities totter in panic, and, if such belief be not impious, there is no truer presage that the universe will return to its primeval appearance.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=175>
+                            <p id='urn:cts:latinLit:phi0692.phi004:175'><b>&sect; 175</b>&nbsp;&nbsp;As this from the beginning has been the character and nature of the earth, everywhere <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> runs channels into its interior, while the surface-soil remains inert: <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> is the plain and truest proof of its own nature. There, with my guidance, you will not have to search for hidden causes: they will of themselves leap into your vision and force acknowledgement; for that mountain has countless marvels apparent to every eye. On this side are vast openings which terrify and plunge in an abyss, on another side the mountain rearranges its limbs projected too far. Elsewhere thick crags bar the path, and enormous is the confusion. They make a chequered weaving of their work and hem it round — some rocks quite subdued by fire, others compelled to endure fires yet [to make its look more imposing and its mental picture no unreal one]. Such is <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s seat, the field of phenomena so mighty: [such the enticing form and home of its hallowed activity].</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=189>
+                            <p id='urn:cts:latinLit:phi0692.phi004:189'><b>&sect; 189</b>&nbsp;&nbsp;Now my task demands who is the maker and what the cause of the conflagration — no cause that of slight or trivial import. A thousand fires in a moment of time will set before you the true cause. Facts and your eyes instruct you: facts unaided compel belief. Nay, they would instruct you by touch, were it safe to touch. But flames forbid it; <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s activity has the protection of fire which prevents approach, and the divine control over all is without witness; all such things you will descry from a distance. But there is no doubt what racks <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> within or who is the marvellous artificer that directs handiwork so great. A cloud of burnt sand is driven into a whirl; swiftly rush the flaming masses; from the depth foundations are upheaved. Now bursts a crash from <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> everywhere: now the flames show ghastly pale as they mingle with the dark downpour. Afar off even <a href=/people/1 target=_blank>Jupiter</a> marvels at the mighty fires and trembles speechless in his secret haunt, lest a fresh brood of <a href=/people/11034 target=_blank>Giants</a> be rising to renew long-buried war or lest <a href=/people/10685 target=_blank>Pluto</a> be growing ashamed of his kingdom and be changing hell for heaven; while outside all is covered with heap on heap of rock and crumbling sand. They come not so of their own accord; unsupported by the strength of any powerful body they fall. It is the winds which arouse all these forces of havoc: the rocks which they have massed thickly together they whirl in eddying storm and roll from the abyss. For this reason the rush of fire from the mountain is no surprise. Winds when swollen are called spirit, but air when sunk to rest. The violence of flame unaided is almost ineffectual; true, fire has always a natural velocity and perpetual motion, but some ally is needed for the propulsion of bodies. In itself it has no motive energy: where spirit is commander, it obeys. Spirit is emperor: fire serves in the army of this great captain.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=219>
+                            <p id='urn:cts:latinLit:phi0692.phi004:219'><b>&sect; 219</b>&nbsp;&nbsp;Now, since the character of <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s activity and of the soil is manifest, whence come the winds themselves? What feeds the conflagration? When they are suddenly arrested, what is the inherent cause of the hush? I shall follow up the inquiry. Infinite is the toil, yet fruitful too. Just rewards match the worker's task. Not <a href=/people/10978 target=_blank>cattle</a>-like to gaze on the worlds marvels merely with the eye, not to lie outstretched upon the ground feeding a weight of flesh, but to grasp the proof of things and search into doubtful causes, to hallow genius, to raise the head to the sky, to know the number and character of natal elements in the mighty universe (do they dread extinction or go on through the ages, and is the fabric fixed secure with everlasting chain?), to know the limit of the sun's track and the measure by which the moon's orbit falls short thereof (so that in her shorter course she flies through twelve rounds while he has a yearly path), to know what stars run in constant order and which stray irregularly from their true orbit, to know likewise the changes of the zodiac-signs and their immemorial laws [that six be sped during the night and as many return with the dawn], to know why lowering Phatne gives celestial warning of rain, what is the nature of the Moon-Goddess' red and her brother's pallid fire, why the year's seasons vary (why does spring, its youthful prime, die with the advent of summer? why does summer itself turn old, why does winter creep upon autumn and return in the season's cycle?), to know the axle of <a href=/people/2086 target=_blank>Helice</a>, to discern the ill-omened comet, to see on what side gleams the Morning-Star, where the Evening-Star, and whence the Bear-keeper, and which is <a href=/people/43 target=_blank>Saturn</a>'s steadfast star and which the warlike star of <a href=/people/24 target=_blank>Mars</a>, under what constellation the sailor must furl or spread his sails, to know the paths of the sea and learn betimes the courses of the heavens, whither <a href=/people/297 target=_blank>Orion</a> is hastening, over what land broods Sirius with warning sign; in fine, to refuse to let all the outspread marvels of this mighty universe remain unordered or buried in a mass of things, but to arrange them each clearly marked in the appointed place — all this is the mind's divine and grateful pleasure.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=252>
+                            <p id='urn:cts:latinLit:phi0692.phi004:252'><b>&sect; 252</b>&nbsp;&nbsp;Yet this is man's more primary task — to know the earth and mark all the many wonders nature has yielded there. This is for us a task more akin than the stars of heaven. For what kind of hope is it for mortal man, what madness could be greater — that he should wish to wander and explore in <a href=/people/1 target=_blank>Jove</a>'s domain and yet pass by the mighty fabric before his feet and lose it in his negligence? We torture ourselves wretchedly over little things: we let toil weigh us down: we peer into crannies and upturn every depth. The quest is now for a germ of silver, now for a vein of gold. Parts of the earth are tortured with flame and tamed with iron till they ransom themselves at a price; and, when they have owned their secret, they are silenced and abandoned to contempt and beggary. Day and night farmers hasten on the cultivation of their fields; hands grow hard with rural toil; we ponder the use of different soils. One is fertile and is more fruitful for corn,º another for the vine; this is the soil for plane-trees, this the worthiest of grass crops; this other is hard and better for grazing and trusty to a tree-plantation. The dried parts are held by the olive; elms like a soil more moist. Trivial motives torture men's minds and bodies — to have their barns overflowing, their wine-casks swelling with must, and their haylofts rising higher, charged with the full reapings of the field. So do ye tread the path of greed where sight reveals aught more precious.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=274>
+                            <p id='urn:cts:latinLit:phi0692.phi004:274'><b>&sect; 274</b>&nbsp;&nbsp;Everyone should imbue himself with noble accomplishments. They are the mind's harvest, the greatest guerdon in the world — to know what nature encloses in earth's hidden depth, to give no false report of her work, not to gaze speechless on the mystic growls and frenzied rages of the <a about=https://topostext.org/place/377150LAit class=demonym long=15.001 lat=37.748>Aetnaean</a> mount, not to blench at the sudden din, not to believe that the wrath of the gods has passed underground to a new home, or that hell is breaking its bounds; to learn what hinders winds, what nurtures them, whence their sudden calm and the silent covenant of their truce, why their furies increase, whether it chance that caverns deep down or the very inlets conserve them or that the earth, porous by reason of its minute openings, draws off into itself thin draughts of air (and this in fuller measure because <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>, rising with its stiff peak, is exposed on this side and on that to hostile winds and of necessity admits gales all round from different quarters and their concert brings more strength to their league), or whether they are driven inwards by clouds and the cloud-laden <a href=/people/1011 target=_blank>South Wind</a>, or whether they have gallantly encircled the summit and sweep on behind; then the water from the clouds, streaming down with headlong noise, presses on the sluggish air-currents, drives them before it, and with its buffeting condenses their elements. For just as the shore echoes for long the tuneful Triton-horn — the machinery is set in motion by a volume of water and the air which is perforce moved thereby, and then the trumpet bellows forth its prolonged blare; just as in some vast theatre a water-organ, whose musical modes harmonise through their unequal pipes, sounds its water-worked music thanks to the organist's skill, which starts a small draught of air while causing a rowing movement in the water below — even so the wind, dislodged by the rushing streams, raves and struggles in its narrow space and <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> murmurs loudly with the blast.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=302>
+                            <p id='urn:cts:latinLit:phi0692.phi004:302'><b>&sect; 302</b>&nbsp;&nbsp;Besides, we must believe that beneath the earth there arise causes of winds like those we see above ground; so that, whenever closely massed particles press against each other, they are forced out into a free space and escape the crush, and by their motive energy whirl and drag what is nearest along in their course, halting only when a safe position is reached.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=307>
+                            <p id='urn:cts:latinLit:phi0692.phi004:307'><b>&sect; 307</b>&nbsp;&nbsp;But perhaps you may be at variance with me in your belief that winds rise from other causes. It is undoubted (I claim) that there are rocks and caverns far below which fall forward with enormous crash, and that their fall disperses and sets in motion air-currents hard by: hence the gathering of winds. Again, fogs with their ample vapour pour out air, as they commonly do in plains and fields watered by a river. Rising from valleys the air makes a sombre cloud: rivulets bring gusts whose force is like the force of winds. Moisture from a distance breathes on the air-currents and whips them into strength. And, if a free space lets moisture have such power, its effects must be greater in proportion when within confined limits underground. These are the causes above and below ground which are at work. By compression they rouse the winds; they strive in narrow gorges; in that close strife their channel strangles them. As when a wave, drawn up again and again from the deep, has drunk full of the <a href=/people/2311 target=_blank>East Wind</a>'s violence, the billows redouble their number and the first are pushed on by the last, in that same way the (volcanic) wind feels the impact of the struggle which compresses it, wraps its own strength within its heavy mass and impels its close-packed particles through fiery passages. Wherever a path is found, it speeds on, ignoring any wind that would stay its course, until, driven by the confluent air-stream, as by so many forcing-pumps, it leaps forth and all over <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> discharges itself in blasts of angry fire.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=330>
+                            <p id='urn:cts:latinLit:phi0692.phi004:330'><b>&sect; 330</b>&nbsp;&nbsp;But if haply you imagine that the winds run down the same passage as that by which they are expelled and return, <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s own region will give your eyes facts for their notice and so compel denial. However brilliant the atmosphere, however rainless under the blue sky, though the dawn rise with golden beams and blush with crimson tint, yet in that quarter there is always a cloud of impenetrable gloom and of slow movement that hangs lumpishly around, moist in its showery countenance, looking forth from its height on the mountain's state and its vast recesses. <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> ignores it and never dislodges it with discharge of heat; wherever the bidding of a light breeze sends it, the cloud obeys, but then comes back. Further, look for yourself at worshippers who on the highest spur, just where there gapes open the freest view of the mountain's interior — source of such mighty upheavals — propitiate with incense the deities of heaven, provided nothing arouses the flames and the abyss remains in stupor. Do you then accept this as proving how that rushing volcanic spirit, the whirler of crags and soil, the darter of fires, is, when once it has controlled its powers and put a sudden check on the reins, never known to pluck asunder bodies of matter or dislodge them from their strong arch, even though by their weight they have a natural tendency to fall? Still, if I am wrong, appearance supports me: and such a great downward coursing rush eludes the eager glance of the eye. And so neither are they who stand near the crater struck and moved by the light wind, when the purified hand of the priest brandishes the sacred torches; yet it strikes their faces, and bodies set in motion invade our bodies: in so slight an instance there is a cause which repels force. The air in its complete calm draws up no cinder or light stubble, stirs no parched grass or thin bits of chaff. Straight on high rises the smoke from the incense-perfumed altars: so profound is that sleep of the air, a peace guiltless of rapine.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=359>
+                            <p id='urn:cts:latinLit:phi0692.phi004:359'><b>&sect; 359</b>&nbsp;&nbsp;Whether then it is through extraneous or internal causes that the winds make their puissant alliance, that volcanic rush carries up amid black sand streams of fire and pieces of the mountain: huge rocks shiver as they clash and burst into explosions together with blazing flames and lightning flashes; as when forests have fallen beneath the swoop of the South wind or when they moan under a Northern gale, they intertwine their arms in a knot and with the union of the branches the fire creeps on. Do not let yourself be deceived by the blockish rabble's falsehood that the activity of the mountain recesses flags through loss of power, that mere time lets them capture their forces again and after subjection fetch them back into battle. Banish the disgraceful thought and spurn lying rumour. Such squalid poverty fits not things divine nor begs for mean supplies nor solicits doles of air. Ever at hand are workers, the swarming band of the winds: there is an unseen cause enough to interrupt the free passage and compel a stoppage. Often a pile heaped up with huge fallen boulders chokes the gullies: it bars the ways against the struggle below, and beneath its weight, under a massive roof as it were, shows the winds unlike their former selves, gentle in their current, while the mountain is in cold inaction and the onlooker may still depart in safety. Later, after their silent spell, they press on the swifter for the delay: they dislodge the masses of rock which they face: they burst their bonds. Whatever slants across their path, they break a way through: their fury rises fiercer for each impact. Flame glitters with widespread havoc for its work, and in its rush wells far across the country-side: so after long quiescence the winds renew their brave displays.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=386>
+                            <p id='urn:cts:latinLit:phi0692.phi004:386'><b>&sect; 386</b>&nbsp;&nbsp;Now there remain to be discussed all the materials which govern the conflagration, what fuels summon the flames, what is <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s food. There is native material capable of being kindled by these causes; also a serviceable sort of earth which fire finds proper to its use. At one time the hot liquid of sulphur burns continuously; at another a fluid presents itself thickened with copious alum; oily bitumen is at hand and everything that by close encounter provokes flames to violence. Of such substance is <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> composed. And to show that this fuel is scattered deep within the mountain, we find springs of tainted water rippling at its very base. Some of this fuel lies obvious to the sight; in its solid part it is hard — a stone; but it contains an oily juice in which burns fire. Moreover, in divers places all over the mountain there are rocks of no specific name which liquefy. To them has been given a true and steadfast guardianship of flame. But the paramount source of that volcanic fire is the lava-stone. It above all claims <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> for its own. If perchance you held it in your hand and tested it by its firmness, you would not think it could burn or discharge fire, but no sooner do you question it with iron than it replies, and sparks attest its pain beneath the blow. Throw it into the midst of a strong fire, and let it wrest away its proud temper: so strip it of its strength. It will fuse quicker than iron, for its nature is subject to change and afraid of hurt under pressure from fire. But once it has absorbed the flames, there is no safer home for what is absorbed; preserving its edge, it hardens with steadfast fidelity what it confines. Such is its endurance after being overpowered. Rarely does it ever go back to its old strength and belch out fire. Throughout it is a carbonised block packed with a density of strength; narrow are the channels through which it receives and feeds its fires; slowly and unwillingly it releases them when collected. Yet not for this sole reason that lava forms the greatest part of the mountain does it remain triumphant and control the cause of volcanic fire. In truth the thing to marvel at is the vitality and pluck of the stone. Every other substance productive of fire dies after it has been lighted: nothing remains therein to be recovered — merely ashes and earth with not a seed of flame. But this lava-stone, submissive time and again, after absorbing a thousand fires, renews its strength and fails not till its heart is burnt out, and, now a light pumice-stone, has collapsed into cinders scattering a crumbling sand in its fall.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=426>
+                            <p id='urn:cts:latinLit:phi0692.phi004:426'><b>&sect; 426</b>&nbsp;&nbsp;Judge likewise by special places; take your stand by similar volcanic hollows. These have a larger store of natural fuel. But because this species of stone — colour attests this most surely — has nowhere contributed its resources, the fire has died away. <a about=https://topostext.org/place/408139IPit class=place long=13.883 lat=40.755>Aenaria</a>, we are told, once blazed out in sudden treachery, though to‑day its summit is quenched. Another witness is the region between <a about=https://topostext.org/place/408142PNea class=place long=14.24 lat=40.843>Neapolis</a> and <a about=https://topostext.org/place/408141PCum class=place long=14.058 lat=40.848>Cumae</a>, now cooled for many a year, though sulphur wells forth unceasingly in rich abundance. It is gathered for merchandise, so much more plentiful is it here than on <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>. The isle whose name comes from its own round shape is land that waxes fat not merely in sulphur and bitumen; a stone is found besides, fitted to beget fire, which aids eruption. But it rarely gives out smoke; if kindled, it burns with difficulty; for the supply feeds but for a little the short-lived flames. There survives too the island sanctified by <a href=/people/84 target=_blank>Vulcan</a>'s name. Most of its fire, however, has grown cold, and now the isle welcomes sea-tossed fleets and shelters them in its haven. What remains is the smaller portion — soil fairly rich in the abundance of its fuel, but not such as could match its power with that of <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s great supply. And yet this very island would long ago have been extinct had not its neighbour, the <a about=https://topostext.org/place/376145RSic class=demonym long=14.5 lat=37.6>Sicilian</a> mountain, always been secretly providing it with its own fuel and material, or through some sunken channel been driving the winds this way and that to feed the flames.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=449>
+                            <p id='urn:cts:latinLit:phi0692.phi004:449'><b>&sect; 449</b>&nbsp;&nbsp;But better than any signs and tested by real proofs, true fact encounters us: it seeks not to deceive the watcher. Round the sides and at the lowest base of <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> rocks fume with white heat and scattered boulders cool down in their pores, enabling you to believe the evidence that the lava-stone is food and cause of the burning: its failure gathers only starveling fires. When it has gathered flames, it discharges them and in the moment of impact kindles other fuel, forcing it to melt in a common blaze. No marvel is there in the appearance presented outside; if the action is abating, the upheaval is at a standstill. The more potent fire is in the crater: there the lava tempts more winningly all inflammable bodies within reach and sends sure forewarnings of the conflagration to come. As soon as it stirs its forces, and threatens havoc, it flies in different directions, dragging at once the soil with it: smitten in its branches . . . while the eruption is announced by a deep rumbling underground accompanied with fire. Then shall you think fit to flee in panic and yield place to the divine event. From the safety of a hill you will be able to observe all. For on a sudden the conflagration blazes out, loaded with its spoils; masses of burning matter advance; mutilated lumps of falling rock roll forth and whirl dark shoals of sand. They present vague shapes in human likeness — some of the stones suggest the defeated warrior, some a gallant host armed for a standing fight, unassailed by the flames; on one side pants the enemy unwearied and deploys his forces, on another the breath of fury wanes, even as when an army, vanquished in the victor's joyous triumph, lies prostrate on the field right to the gates of the camp. Then any stone that a surface fire has liquefied becomes, when the fire is quenched, more rugged — a sort of dirty slag like what you will see drop from iron when smelted. But when a heap has gradually sprung up raised from fallen rocks, they mount in a narrow-pointed pyramid. Just as a stone is calcined in a furnace and its moisture all burnt out inside and through the pores it steams on high, so the lava-stone loses its substance and is turned out a light pumice of inconsiderable weight: the lava-liquid begins to boil hotter and at last to advance more in the fashion of a gentle stream, as it lets its waves course down the slopes of the hills. By stages the waves advance some twice six miles. Nay, nothing can recall them: nothing checks these determined fires: no mass can hold them — 'tis vain: all is war together.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=490>
+                            <p id='urn:cts:latinLit:phi0692.phi004:490'><b>&sect; 490</b>&nbsp;&nbsp;Now woodland and crag, here again earth and soil are in the flood. The lava-river itself aids their supplies and adjusts the compliant material to its own course. But if perhaps in some deep valley it lags and stops, its rolling volume browses leisurely over the fields uneven as they are. Then it redoubles its billows and chides the laggard waves; as when a violent sea plunges headforemost with curving swell; and first it urges on its feeble waves, others beyond . . . advancing, it spreads far and wide, and choosing (what to envelop). . . . The lava-streams come to a standstill inside their margins and harden as they cool; slowly the fires shrink and the appearance of a waving harvest of flame is lost. Each mass in turn, as it stiffens, emits fumes, and, dragged by its very weight, rolls on with enormous din; whenever it has crashed pell-mell into some solid substance which resounds with the impact, it spreads abroad the fires of the concussion and shines with white-glowing core wherever it has been opened out. A host of sparks flash forth at every blow: the glowing rocks (look, you see the flashes in the distance — look, raining down in the distance!) fall with undiminished heat. Yet, though the rush has been known to throw its fires across the banks of the river Simaethus, hardly will anyone part those banks when once united by the hard-set lava. Very often for twenty days on end a mass of rock lies buried. But in vain I try to marshal each effect with its determined cause, if a lying fable remains unshaken in your mind, leading you to believe that it is a different substance which liquefies in fire, that the lava-streams harden in virtue of their cindery property, or that what burns is a mixture of sulphur and glutinous bitumen. For clay also, they assert, can fuse when its inner material is burnt out, and potters are a testimony to this: then by the process of cooling it recovers its hardness and tightens its pores. But this analogous indication is unimportant — an ineffectual reason given on hasty grounds. An unfailing token makes the truth evident to you. For as the essence of gleaming copper, both when fused with fire and when its solidity is unimpaired, remains constant and ever the same, so that in either state you may distinguish the copper portion, in no other way the lava-stone, whether dissolved into liquid flames or kept safe from them, retains and preserves its characteristics, and fire has not ruined its look. Moreover, the very constancy of its colour, not its smell or lightness, disproves any foreign elements. The stone crumbles more and more, but its mode of working has the same look and the earth therein is unchanged throughout. I do not, however, deny that specific stones take fire and when kindled burn fiercely within. It is a quality proper to them. The <a about=https://topostext.org/place/376145RSic class=ethnic long=14.5 lat=37.6>Sicilians</a> have given those very stones a name, rhytae, and by the title itself record that they are of a fusible character. Yet although these stones have a somewhat juicy substance to preserve heat within, they never liquefy unless they have been brought deeply into touch with the pores of the lava-stone. But if anyone wonders that the core of stone can be fused, let him ponder those truest of sayings in thy mysterious book, O <a href=/people/491 target=_blank>Heraclitus</a>, naught is unconquerable by fire, in which all the seeds of the universe are sown.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=541>
+                            <p id='urn:cts:latinLit:phi0692.phi004:541'><b>&sect; 541</b>&nbsp;&nbsp;But is this too great a marvel? Bodies of thickest grain and well-nigh solid we nevertheless often subdue by fire. Do you not see how copper's sturdy spirit yields to flame? Does not fire strip away the toughness of lead? Even iron's substance, hard though it be, is yet undone by fire. Massive nuggets of gold sweat out their rich ore in vaulted furnaces; and mayhap there lie in the depths of earth undiscovered minerals subject to similar ordinance. No place this for ingenuity: be you the judge and your eyes will triumph. The lava-stone is rigid; its surface barrier resists all fire, if you seek to burn it with small fires and in the open air. Well then, confine it in a narrow white-hot furnace — it cannot endure or stand firm against that fierce foe. It is vanquished: it relaxes its strength; in its captor's grip it melts. Now, what greater engines, think you, can skill apply with the hand, or what fires can it support with our human resources to compare with the mighty furnaces with which <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> burns, ever the mother of secret fire? Yet her fire is not of the limited heat within our own experience, but more akin to that of heaven or the kind of flame with which <a href=/people/1 target=_blank>Jupiter</a> himself is armed. With these mighty forces is allied the gigantic volcanic spirit forced out of straitened jaws, as when mechanics hasten to pit their strength against masses of natural iron, they stir the fires and, expelling the wind from panting bellows, rouse the current in close array. Such is the manner of its working: so goes far-famed <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a>'s burning. The earth draws in forces through her perforations; volcanic spirit compresses these into narrow space, and the path of conflagration lies through the mightiest rocks.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=569>
+                            <p id='urn:cts:latinLit:phi0692.phi004:569'><b>&sect; 569</b>&nbsp;&nbsp;Over the paths of the sea, through all that borders on ghastly ways of death, we hasten to visit the stately glories of man's achievement and temples elaborate with human wealth or to rehearse the story of antique citadels. Keenly we unearth the falsehoods told by ancient legend and we like to speed our course through every nation. Now 'tis our joy to see the walls which gird <a href=/people/1192 target=_blank>Ogygian</a> <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>, the walls reared by the brothers, the active one (<a href=/people/1305 target=_blank>Zethus</a>) and the tuneful one (<a href=/people/393 target=_blank>Amphion</a>) . . . and so for a happy hour we live in a bygone age. We marvel now at the stones charmed into place by duteous sons, with song and lyre, now at the sacrificial reck sundered as it rose from a single altar-stream, now at the seven chiefs and him whom the chasm snatched away. There the <a about=https://topostext.org/place/371224WEur class=place long=22.427 lat=37.093>Eurotas</a> and the <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> of <a href=/people/12417 target=_blank>Lycurgus</a> arrest us and the troop consecrated to war, the Three Hundred, the band true to themselves. Here again in manifold poetry is Cecropian <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> shown to us and her joy that <a href=/people/11 target=_blank>Minerva</a> won her soil. Here once upon a day, faithless <a href=/people/57 target=_blank>Theseus</a>, your promise escaped your mind, to hoist, as you were nearing home, the white sail for an advance signal to your anxious father. You too, <a href=/people/1213 target=_blank>Erigone</a>, were an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> lay, henceforth a star of renown; <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> is the home of you and yours. <a href=/people/1167 target=_blank>Philomela</a>'s call fills the groves with song and you, her sister (<a href=/people/1012 target=_blank>Procne</a>), find a guest's welcome in the home, while cruel <a href=/people/682 target=_blank>Tereus</a> lives an exile in the deserted fields. We wonder at <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> in ashes and her citadel bewept by the vanquished, the <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a>' doom owing to the fall of <a href=/people/40 target=_blank>Hector</a>. We behold the humble burial-mound of a mighty leader: and here lie vanquished alike untiring <a href=/people/17 target=_blank>Achilles</a> and (<a href=/people/112 target=_blank>Paris</a>) the avenger of heroic <a href=/people/40 target=_blank>Hector</a>. Moreover, Greek paintings or sculptures have held us entranced. Now the <a about=https://topostext.org/place/348326SAPa class=person long=32.574 lat=34.707>Paphian</a>'s tresses dripping (so art shows them), now the little boys playing at the feet of the pitiless <a about=https://topostext.org/place/431423RCol class=demonym long=42.28 lat=42.12>Colchian</a>, a sad group with a father veiled around the altar of the substituted hind, now the life-like glory of <a href=/people/771 target=_blank>Myron</a>'s art, yea a thousand examples of handiwork and crowds of masterpieces make us pause.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=600>
+                            <p id='urn:cts:latinLit:phi0692.phi004:600'><b>&sect; 600</b>&nbsp;&nbsp;These attractions you think you must visit — wavering between land and sea. But look upon the colossal work of the artist nature. You will behold no sights so great belonging to the human rabble — (this you will find) especially if you keep watch when the Dog-star is blazing in his heat. Yet there is a wonderful story of its own which attends the mountain: it is no less famous for a fire of goodness than for one of guilt. Once <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Aetna</a> burst open its caverns and glowed white-hot: as though its deep-pent furnaces were shattered, a vast wave of fire gushed forth afar upborne by the heat of the lava-stone, just as when the ether lightens under the fury of <a href=/people/1 target=_blank>Jupiter</a> and plagues the bright sky with murky gloom. Corn-crops in the fields and acres soft-waving under cultivation were ablaze with their lords. Forests and hills gleamed red. Scarce yet can they believe the foe has struck camp; yet they were quaking and he had already passed the gates of the neighbouring city. Then every man strives to save his goods with such courage and strength as avails him to snatch at them. One groans beneath a burden of gold; another collects his arms and piles them again about his foolish neck; another, faint under what he has seized, has his flight hindered by his poems! Here the poverty-stricken man hastens nimbly beneath the lightest of loads: everyone makes for safety with what he held dear upon his shoulders. But his spoil did not follow each owner safe to the end: fire devours them as they linger: it envelops the greedy ones in flame. They think they have escaped, but the fire catches them: it consumes its prisoners' booty: and the conflagration feeds itself, set on sparing none or only the dutiful. Two noble sons, <a href=/people/12229 target=_blank>Amphinomus</a> and his brother, gallantly facing an equal task, when fire now roared in homes hard by, saw how their lame father and their mother had sunk down (alas!) in the weariness of age upon the threshold. Forbear, ye avaricious throng, to lift the spoils ye love! For them a mother and a father are the only wealth: this is the spoil they will snatch from the burning. They hasten to escape through the heart of the fire, which grants safe-conduct unasked. O sense of loving duty, greatest of all goods, justly deemed the surest salvation for man among the virtues! The flames held it shame to touch those duteous youths and retired wherever they turned their steps. Blessed is that day: guiltless is that land. Cruel burnings reign to right and left. Flames slant aside as <a href=/people/12229 target=_blank>Amphinomus</a> rushes among them and with him his brother in triumph: both hold out safely under the burden which affection laid on them. There — round the couple — the greedy fire restrains itself. Unhurt they go free at last, taking with them their gods in safety. To them the lays of bards do homage: to them under an illustrious name has Ditis allotted a place apart. No mean destiny touches the sacred youths: their lot is a dwelling free from care, and the rightful rewards of the faithful.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Aetna/text*.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=735', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas735";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=735';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

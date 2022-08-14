@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Lycophron, Alexandra' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='The Alexandra of Lycophron, translated by Alexander William Mair (1875-1928), from the Loeb edition of 1921, now in the public domain, with thanks to www.theoi.com for making the text available on line. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-50' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -50' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/128' content='urn:cts:greekLit:tlg0341.tlg002' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n85216215' content='Lycophron'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr93029942' content='Alexander William Mair (1875-1928)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.library.theoi.com/' /><h2>Lycophron, Alexandra</h2>The Alexandra of Lycophron, translated by Alexander William Mair (1875-1928), from the Loeb edition of 1921, now in the public domain, with thanks to www.theoi.com for making the text available on line.  This text has 295 tagged references to 227 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0341.tlg002'>urn:cts:greekLit:tlg0341.tlg002</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q2643574'>Q2643574</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0341.tlg002.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1'><b>&sect; 1</b>&nbsp;&nbsp;ALL will I tell truly that thou askest from the utter beginning, and if the tale be prolonged, forgive me, master. For not quietly as of old did the maiden loose the varied voice of her <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>oracles</a>, but poured forth a weird confused cry, and uttered wild words from her bay-chewing mouth, imitating the speech of the dark <a href=/people/974 target=_blank>Sphinx</a>. Thereof what in heart and memory I hold, hear thou, O King, and, pondering with wise mind, wind and pursue the obscure paths of her riddles, whereso a clear track guides by a straight way through things wrapped in darkness. And I, cutting the utter bounding thread, will trace her paths of devious speech, striking the starting-point like winged runner. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:16'><b>&sect; 16</b>&nbsp;&nbsp;Dawn was just soaring over the steep crag of Phegion on swift wings of <a href=/people/1116 target=_blank>Pegasus</a>, leaving his bed by Cerne. <a href=/people/5362 target=_blank>Tithonus</a>, brother of thine by another mother, and the sailors loosed in calm weather the cables from the grooved rock and cut the landward ropes. And the centipede fair-faced stork-hued daughters of <a href=/people/8139 target=_blank>Phalacra</a> smote maiden-slaying <a href=/people/202 target=_blank>Thetis</a> with their blades, over <a about=https://topostext.org/place/373268IKal class=place long=26.9 lat=37.1>Calydnae</a> showing their white wings, their stern-ornaments, their sails outspread by the northern blasts of flaming stormwind: then <a href=/people/1106 target=_blank>Alexandra</a> opened her inspired <a href=/people/1394 target=_blank>Bacchis</a> lips on the high Hill of <a href=/people/4617 target=_blank>Doom</a> that was founded by the wandering <a href=/people/10978 target=_blank>cow</a> and thus began to speak: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:31'><b>&sect; 31</b>&nbsp;&nbsp;Alas! hapless nurse of mine burnt even aforetime by the warlike pineships of the <a href=/people/10960 target=_blank>lion</a> that was begotten in three evenings, whom of old <a href=/people/664 target=_blank>Triton</a>'s <a href=/people/10953 target=_blank>hound</a> of jagged teeth devoured with his jaws. But he, a living carver of the monster's liver, seething in steam of cauldron on a flameless hearth, shed to ground the bristles of his head; he the slayer of his children, the destroyer of my fatherland; who smote his second mother invulnerable with grievous shaft upon the breast; who, too, in the midst of the race-course seized in his arms the body of his wrestler sire beside the steep <a about=https://topostext.org/place/368228LKro class=place long=21.631 lat=37.641>hill of Cronus</a>, where is the horse-affrighting tomb of earth-born Ischenus; who also slew the fierce <a href=/people/10953 target=_blank>hound</a> that watched the <a about=https://topostext.org/place/383157LSky class=place long=15.715 lat=38.255>narrow straits</a> of the Ausonian sea, fishing over her cave, the <a href=/people/10955 target=_blank>bull</a>-slaying lioness whom her father restored again to life, burning her flesh with brands: she who feared not Leptynis, goddess of the underworld. But one day with swordless guile a dead corse slew him: yea, even him who of old overcame <a href=/people/10685 target=_blank>Hades</a>; I see thee, hapless city, fired a second time by Aeaceian hands and by such remains as the funeral fire spared to abide in Letrina of the son of <a href=/people/383 target=_blank>Tantalus</a> when his body was devoured by the flames, with the winged shafts of the neat-herd Teutarus; all which things the jealous spouse shall bring to light, sending her son to indicate the land, angered by her father's taunts, for her bed's sake and because of the alien bride. And herself, the skilled in drugs, seeing the baleful wound incurable of her husband wounded by the giant-slaying arrows of his adversary, shall endure to share his doom, from the topmost towers to the new slain corpse hurtling herself head foremost, and pierced by sorrow for the dead shall breathe forth her soul on the quivering body. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=69>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:69'><b>&sect; 69</b>&nbsp;&nbsp;I mourn, twice and three times for thee who lookest again to the battle of the spear and the harrying of thy halls and the destroying fire. I mourn for thee, my country, and for the grave of <a href=/people/190 target=_blank>Atlas</a>' daughter's diver son, who of old in a stitched vessel, like an <a about=https://topostext.org/place/450139RHis class=demonym long=13.9 lat=45>Istrian</a> fish-creel with four legs, sheathed his body in a leathern sack and, all alone, swam like a petrel of <a about=https://topostext.org/place/354245URhi class=place long=24.4729 lat=35.3711>Rheithymnia</a>, leaving <a about=https://topostext.org/place/405257UZer class=place long=25.6534 lat=40.4887>Zerynthos</a>, cave of the goddess to whom <a href=/people/10953 target=_blank>dogs</a> are slain, even <a about=https://topostext.org/place/403258LSao class=place long=25.587 lat=40.462>Saos</a>, the strong foundation of the <a href=/people/6407 target=_blank>Cyrbantes</a>, what time the plashing rain of <a href=/people/1 target=_blank>Zeus</a> laid waste with deluge all the earth. And their towers were hurled to the ground, and the people set themselves to swim, seeing their final doom before their eyes. And on oat and acorn and the sweet grape browsed the whales and the <a href=/people/10965 target=_blank>dolphins</a> and the <a href=/people/10989 target=_blank>seals</a> that are fain of the beds of mortal men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v50 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=86>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:86'><b>&sect; 86</b>&nbsp;&nbsp;I see the winged firebrand rushing to seize the dove, the <a href=/people/10953 target=_blank>hound</a> of <a about=https://topostext.org/place/368223UPep class=place long=22.2968 lat=36.8124>Pephnos</a>, whom the water-roaming vulture brought to birth, husked in a rounded shell. And thee, cuckold sailor, the downward path of <a about=https://topostext.org/place/392205WAch class=place long=20.4831 lat=39.2348>Acheron</a> shall receive, walking no more the byres of they father's rugged steadings, as one when thou wert arbiter of beauty for the three goddesses. But in place of stables thou shalt pass the <a about=https://topostext.org/place/365229LOno class=place long=22.933 lat=36.466>Jaws of the Ass</a> and <a about=https://topostext.org/place/367225PLas class=place long=22.4982 lat=36.7255>Las</a>, and instead of well-foddered crib and sheepfold and landsman's blade a ship and oars of <a href=/people/5888 target=_blank>Phereclus</a> shall carry thee to the two thoroughfares and the levels of <a about=https://topostext.org/place/368226PGyt class=place long=22.5623 lat=36.7637>Gytheion</a>, where, on the rocks dropping the bent teeth of the pine-ship's anchors to guard against the flood, thou shalt rest from gambols thy nine-sailed fleet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v50 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=102>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:102'><b>&sect; 102</b>&nbsp;&nbsp;And when thou, the <a href=/people/10952 target=_blank>wolf</a>, shalt have seized the unwed heifer, robbed of her two dove daughters and fallen into a second net of alien snares and caught by the decoy of the fowler, even while upon the beach she burns the firstlings of the flocks to the Thysad nymphs and the goddess <a href=/people/9045 target=_blank>Byne</a>, then shalt thou speed past <a about=https://topostext.org/place/362231USka class=place long=23.0579 lat=36.2218>Scandeia</a> and past the cape of <a about=https://topostext.org/place/359233IAig class=place long=23.3081 lat=35.8648>Aegilon</a>, a fierce hunter exulting in thy capture. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=109>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:109'><b>&sect; 109</b>&nbsp;&nbsp;And in the <a about=https://topostext.org/place/377241IHel class=place long=24.116 lat=37.678>Dragon's Isle</a> of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Acte</a>, dominion of the twyformed son of earth, thou shalt put from thee thy desire; but thou shalt see no morrow's aftermath of love, fondling in empty arms a chill embrace and a dreamland bed. For the sullen husband, whose spouse is Torone of <a about=https://topostext.org/place/400236LPal class=person long=23.41 lat=40.06>Phlegra</a>, even he to whom laughter and tears are alike abhorred and who is ignorant and reft of both; who once on a time crossed from <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> unto the coastland which is furrowed by the outflow of <a href=/people/664 target=_blank>Triton</a>; crossed not by sailing ship but by an untrodden path, like some moldwarp [mole], boring a secret passage in the cloven earth, made his ways beneath the sea, avoiding the stranger-slaying wrestling of his sons and sending to his sire prayers which were heard, even that he should set him with returning feet in his fatherland, whence he had come as a wanderer to <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Pallenia</a>, nurse of the earth-born — he, like <a href=/people/4375 target=_blank>Guneus</a>, a doer of justice and arbiter of the <a href=/people/180 target=_blank>Sun</a>'s daughter of <a about=https://topostext.org/place/408226PIch class=place long=22.5913 lat=40.764>Ichnae</a>, shall assail thee with evil words and rob thee of they bridal, casting thee forth in thy desire from thy wanton dove: thee who, regarding not the tombs of <a href=/people/398 target=_blank>Lycus</a> and <a href=/people/10656 target=_blank>Chimaereus</a>, glorious in oracles, nor thy love of <a href=/people/2566 target=_blank>Antheus</a> nor the pure salt of Aigaeon eaten by host and guest together, didst dare to sin against the gods and to overstep justice, kicking the table and overturning <a href=/people/554 target=_blank>Themis</a>, modeled in the ways of the she-bear that suckled thee. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=139>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:139'><b>&sect; 139</b>&nbsp;&nbsp;Therefore in vain shalt thou twang the noisy bowstring, making melodies that bring nor food nor fee; and in sorrow shalt thou come to thy fatherland that was burnt of old, embracing in thine arms the wraith of the five-times-married frenzied descendant of <a about=https://topostext.org/place/384214PPle class=place long=21.417 lat=38.402>Pleuron</a>. For the lame daughters of the ancient Sea with triple thread have decreed that her bedfellows shall share their marriage-feast among five bridegrooms. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=147>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:147'><b>&sect; 147</b>&nbsp;&nbsp;Two shall she see as ravening <a href=/people/10952 target=_blank>wolves</a>, winged wanton <a href=/people/10980 target=_blank>eagles</a> of sharp eyes; the third sprung from root of <a href=/people/8188 target=_blank>Plynos</a> and <a about=https://topostext.org/place/370287RKar class=demonym long=28.7 lat=37.01>Carian</a> waters, a half-<a about=https://topostext.org/place/352252IKre class=demonym long=25.1836 lat=35.2052>Cretan</a> barbarian, a <a about=https://topostext.org/place/376218PEpe class=demonym long=21.7847 lat=37.5659>Epeian</a>, no genuine <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> by birth: whose grandfather of old Ennaia Hercynna <a href=/people/1744 target=_blank>Erinys</a> Thuria, the Sword-Bearer, cut fleshless with her jaws and buried in her throat, devouring the gristle of his shoulder: his who came to youth again and escaped the grievous raping desire of the Lord of Ships and was sent by <a href=/people/298 target=_blank>Erechtheus</a> to <a about=https://topostext.org/place/377214PLet class=place long=21.4313 lat=37.6729>Letrina</a>'s fields to grind the smooth rock of <a href=/people/3429 target=_blank>Molpis</a> — whose body was served as sacrifice to Rainy <a href=/people/1 target=_blank>Zeus</a> — that he might overcome the wooer-slayer by the unholy device for slaying his father-in-law which the son of <a href=/people/7410 target=_blank>Cadmilus</a> devised; who drinking his last cup dived into his <a about=https://topostext.org/place/370240WMyr class=place long=24.01 lat=37.01>tomb in Nereus</a> — the tomb which bears his name — crying a blighting curse upon the race; even he who held the reins of swift-footed Psylla and Harpinna hoofed even as the <a href=/people/1202 target=_blank>Harpies</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=168>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:168'><b>&sect; 168</b>&nbsp;&nbsp;The fourth again shall she see own brother of the swooping falcon; him whom they shall proclaim to have won the second prize among his brothers in the wrestling of war. And the fifth she shall cause to pine upon his bed, distracted by her phantom face in his dreams; the husband to be of the stranger-frenzies lady of Cyta; even him whom one day the exile from <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Oenone</a> fathered, turning into men the six-footed host of ants, — the <a about=https://topostext.org/place/398223UPel class=person long=22.5 lat=39.5>Pelasgian</a> <a href=/people/233 target=_blank>Typhon</a>, out of seven sons consumed in the flame alone escaping the fiery ashes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v150 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=180>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:180'><b>&sect; 180</b>&nbsp;&nbsp;And he shall come upon his homeward path, raising the tawny <a href=/people/10963 target=_blank>wasps</a> from their holds, even as a child disturbs their nest with smoke. And they in their turn shall come, sacrificing cruelty to the blustering winds the heifer that bare the war-named son, the mother that was brought to bed of the dragon of <a about=https://topostext.org/place/389246PSky class=place long=24.568 lat=38.907>Scyrus</a>; for whom her husband shall search within the Salmydesian Sea, where she cuts the throats of Greeks, and shall dwell for a long space in the white-crested rock by the outflowing of the marshy waters of the <a about=https://topostext.org/place/490070RKel class=demonym long=7 lat=49>Celtic</a> stream; yearning for his wife whom at her slaying a hind shall rescue from the knife, offering her own throat instead. And the deep waste within the wash of the waves upon the beach shall be called the Chase of the bridegroom, mourning his ruin and his empty seafaring and her that vanished and was changed to an old witch, beside the sacrificial vessels and the lustral water and the bowl of <a href=/people/10685 target=_blank>Hades</a> bubbling from the depths with flame, whereon the dark lady will blow, potting the flesh of the dead as might a cook. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v150 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=200>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:200'><b>&sect; 200</b>&nbsp;&nbsp;And he lamenting shall pace the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> land for some five years yearning for his bride. And they, beside the altar of the primal prophet, <a href=/people/43 target=_blank>Cronus</a>, who devours the callow young with their mother, binding themselves by the yoke of a second oath, shall take in their arms the strong oar, invoking him who saved them in their former woes, even <a href=/people/5 target=_blank>Bacchus</a>, the Overthrower, to whom the <a href=/people/10955 target=_blank>bull</a>-god, one day in the shrine beside the cavern of <a href=/people/7586 target=_blank>Delphinius</a> the Gainful god, the lord of a thousand ships, a city-sacking host, shall make secret sacrifice. And in unlooked-for requital of his offerings the god of <a about=https://topostext.org/place/374218PPhi class=place long=21.842 lat=37.4075>Phigaleia</a>, the lusty Torch-god, shall stay the <a href=/people/10960 target=_blank>lion</a> from his banquet, entangling his foot in withes, so that he destroy not utterly the cornfield of men, nor lay it waste with tooth and devouring jaws. Long since I see the coil of trailing woes dragging in the brine and hissing against my fatherland dread threats and fiery ruin. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=219>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:219'><b>&sect; 219</b>&nbsp;&nbsp;Would that in sea-girt <a about=https://topostext.org/place/392261ILes class=place long=26.2 lat=39.2075>Issa</a> <a href=/people/83 target=_blank>Cadmus</a> had never begotten thee to be the guide of the foemen, fourth in descent from unhappy <a href=/people/190 target=_blank>Atlas</a>, even thee, <a href=/people/10615 target=_blank>Prylis</a>, who didst help to overthrow thine own kindred, prophet most sure of best fortune! And would that my father had not spurned the nightly terrors of the oracle of <a href=/people/3099 target=_blank>Aesacus</a> and that for the sake of my fatherland he had made away with the two in one doom, ashing their bodies with <a about=https://topostext.org/place/399253ILem class=demonym long=25.21 lat=39.93>Lemnian</a> fire. So had not such a flood of woes overwhelmed the land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=229>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:229'><b>&sect; 229</b>&nbsp;&nbsp;And now <a href=/people/1061 target=_blank>Palaemon</a>, to whom babes are slain, beholds the hoary Titanid bride of Ogenus seething with the corded gulls. And now two children are slain together with their father who is smitten on the collar-bone with the hard mill-stone, an omen of good beginning; those children which before escaped when cast out to death in an ark through the lying speech of the piper, to whom hearkened the sullen butcher of his children — he the gull-reared, captive of the nets of fishermen, friend of winkle and bandy sea-snail — and imprisoned his two children in a chest. And therewithal the wretch, who was not mindful to tell the bidding of the goddess mother but erred in forgetfulness, shall die upon his face, his breast pierced by the sword. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=243>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:243'><b>&sect; 243</b>&nbsp;&nbsp;And now <a about=https://topostext.org/place/388270PMyr class=place long=26.98 lat=38.847>Myrina</a> groans the sea-shores awaiting the snorting of <a href=/people/10959 target=_blank>horses</a>, when the fierce <a href=/people/10952 target=_blank>wolf</a> shall leap the swift leap of his <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a> foot upon the last beach and cause the clear spring to gush from the sand, opening fountains that hitherto were hidden. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=249>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:249'><b>&sect; 249</b>&nbsp;&nbsp;And now <a href=/people/24 target=_blank>Ares</a>, the dancer, fires the land, with his conch leading the chant of blood. And all the land lies ravaged before my eyes and, as it were fields of corn, bristle the fields of the gleaming spears. And in my ears seems a voice of lamentation from the tower tops reaching to the windless seats of air, with groaning women and rending of robes, awaiting sorrow upon sorrow. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v250 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=258>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:258'><b>&sect; 258</b>&nbsp;&nbsp;That woe, O my poor heart, that woe shall wound thee as a crowning sorrow, when the dusky, sworded, bright-eyed <a href=/people/10980 target=_blank>eagle</a> shall rage, with his wings marking out the land — the track traced by bandied crooked steps — and, crying with his mouth his dissonant and chilly cry, shall carry aloft the dearest nursling of all thy brothers, dearest to thee and to his sire the Lord of <a about=https://topostext.org/place/385233SPto class=place long=23.25193 lat=38.45915>Ptoon</a>, and, bloodying his body with talon and beak, shall stain with gore the land, both swamp and plain, a ploughman cleaving a smooth furrow in the earth. And having slain the <a href=/people/10955 target=_blank>bull</a> he takes the price thereof, weighed in the strict balance of the scales. But one day he shall for recompense pour in the scales an equal weight of the far-shining metal of <a about=https://topostext.org/place/385281WPac class=place long=28.0628 lat=38.4804>Pactolus</a>, and shall enter the cup of <a href=/people/5 target=_blank>Bacchus</a>, wept by the nymphs who love the clear water of <a about=https://topostext.org/place/402225WBap class=place long=22.4992 lat=40.1663>Bephyras</a> and the high seat of <a about=https://topostext.org/place/400225PLei class=place long=22.5343 lat=40.0244>Leibethron</a> above <a about=https://topostext.org/place/401225UPim class=place long=22.4931 lat=40.1434>Pimpleia</a>; even he, the trafficker in corpses, who, fearing beforehand his doom, shall endure to do upon his body a female robe, handling the noisy shuttle at the loom, and shall be the last to set his foot in the land of the foe, cowering, O brother, even in his sleep before thy spear. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v250 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=281>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:281'><b>&sect; 281</b>&nbsp;&nbsp;O <a href=/people/140 target=_blank>Fate</a>, what a pillar of our house shalt thou destroy, withdrawing her mainstay from my unhappy fatherland! But not with impunity, not without bitter toil and sorrow shall the <a href=/people/10975 target=_blank>pirate</a> <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> host laugh exulting in the doom of the fallen; but by the sterns running life's last lap shall they be burnt along with the ships of pine, calling full often to <a href=/people/1 target=_blank>Zeus</a> the Lord of Flight (Phyxion) to ward off bitter fate from them who perish. In that day nor trench nor defence of naval station nor stake-terraced palisade nor cornice shall avail nor battlements. But, like <a href=/people/10964 target=_blank>bees</a>, confused with smoke and rush of flame and hurling of brands, many a diver shall leap from deck to sternpeak and prowneck and benched seats and stain with blood the alien dust. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v250 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=297>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:297'><b>&sect; 297</b>&nbsp;&nbsp;And many chieftains, and many that bore away the choicest of the spoils won by Hellas and glories in their birth, shall thy mighty hands destroy, filled full with blood and eager for battle. But not the less sorrow shall I bear, bewailing, yea, all my life long, thy burial. For pitiful, pitiful shall that day be for mine eyes and crown of all my woes that Time, wheeling the moon's orb, shall be said to bring to pass. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=307>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:307'><b>&sect; 307</b>&nbsp;&nbsp;Ay! me, for they fair-fostered flower, too, I groan, O <a href=/people/10960 target=_blank>lion</a> whelp, sweet darling of thy kindred, who didst smite with fiery charm of shafts the fierce dragon and seize for a little loveless while in unescapable noose him that was smitten, thyself unwounded by thy victim: thou shalt forfeit thy head and stain thy father's altar-tomb with thy blood. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=314>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:314'><b>&sect; 314</b>&nbsp;&nbsp;O, me unhappy! the two nightingales and they fate, poor <a href=/people/10953 target=_blank>hound</a>, I weep. One, root and branch, the dust that gave her birth shall, yawning, swallow in a secret cleft, when she sees the approaching feet of lamentable doom, even where her ancestor's grove is, and where the groundling heifer of secret bridal lies in one tomb with her whelp, ere ever it drew the sweet milk and ere she cleansed her with fresh water from the soilure of childbed. And thee to cruel bridal and marriage sacrifice the sullen <a href=/people/10960 target=_blank>lion</a>, child of <a href=/people/1802 target=_blank>Iphis</a>, shall lead, imitating his dark mother's lustrations; over the deep pail the dread butcherly dragon shall cut thy throat, as it were a garlanded heifer, and slay thee with the thrice-descended sword of Candaon, shedding for the <a href=/people/10952 target=_blank>wolves</a> the blood of the first oath-sacrifice. And thee, again, an aged captive by the hollow strand, stoned by the public arm of the <a href=/people/12201 target=_blank>Doloncians</a>, roused thereto by the railing curses, a robe shall cover with a rain of stones, when thou shalt put on thee sable-tailed form of <a href=/people/1761 target=_blank>Maira</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=335>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:335'><b>&sect; 335</b>&nbsp;&nbsp;And he, slain beside the altar tomb of <a href=/people/47 target=_blank>Agamemnon</a>, shall deck the pedestal with his grey locks — even he who, a poor prisoner ransomed for his sister's veil, came to his country devastated with fire, and shrouded in dim darkness his former name — what time the fierce-crested <a href=/people/55 target=_blank>serpent</a>, seller of the land that bred him, kindles the grievous torch and draws the belly-bands and lets slip the travailing terrible ambush, and when the own cousin of the crafty reynard, son of <a href=/people/531 target=_blank>Sisyphus</a>, lights his evil beacon for them who sailed away to narrow <a about=https://topostext.org/place/398261ITen class=place long=26.0715 lat=39.8337>Leucophrys</a> and the two <a about=https://topostext.org/place/373268IKal class=place long=26.9 lat=37.1>islands</a> of child-devouring Porceus. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=348>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:348'><b>&sect; 348</b>&nbsp;&nbsp;And I, unhappy, who refused wedlock, within the building of my stony maiden chamber without ceiling, hiding my body in the unroofed tenement of my dark prison: I who spurned from my maiden bed the god Thoraios, Lord of <a about=https://topostext.org/place/385233SPto class=place long=23.25193 lat=38.45915>Ptoon</a>, Ruler of the Seasons, as one who had taken eternal maidenhood for my portion to uttermost old age, in imitation of her who abhors marriage, even <a href=/people/681 target=_blank>Pallas</a>, Driver of the Spoil, the Wardress of the Gates — in that day, as a dove, to the eyrie of the vulture, in frenzy shall be haled violently in crooked talons, I who often invoked the Maiden, Yoker of Oxen, the Sea-gull, to help and defend me from marriage. And she unto the ceiling of her shrine carven of wood shall turn up her eyes and be angry with the host, even she that fell from heaven and the throne of <a href=/people/1 target=_blank>Zeus</a>, to be a possession most precious to my great grandfather the King. And for the sin of one man all Hellas shall mourn the empty tombs of ten thousand children — not in receptacles of bones, but perched on rocks, nor hiding in urns the embalmed last ashes from the fire, as is the ritual of the dead, but a piteous name and legends on empty cairns, bathed with the burning tears of parents and of children and mourning of wives. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=373>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:373'><b>&sect; 373</b>&nbsp;&nbsp;O <a href=/people/10588 target=_blank>Opheltes</a> and <a about=https://topostext.org/place/383242UZar class=place long=24.1908 lat=38.2917>Zarax</a>, who keepest the secret places of the rocks, and yet cliffs, the Trychantes, and rugged Nedon, and all ye pits of <a about=https://topostext.org/place/386238LDir class=place long=23.843 lat=38.625>Dirphossus</a> and Diacria, and thou <a about=https://topostext.org/place/381245RHol class=place long=24.46 lat=38.14>haunt</a> of <a href=/people/1496 target=_blank>Phorcys</a>! what groaning shall ye hear of corpses cast up with decks broken in twain, and what tumult of the surge that may not be escaped, when the foaming water drags men backward in its swirling tides! And how many <a href=/people/10999 target=_blank>tunnies</a> with the sutures of their heads split upon the frying-pan! of whom the down-rushing thunderbolt in the darkness shall eat as they perish: when the destroyer shall lead them, their heads yet arching from the debauch, and light a torch to guide their feet in the darkness, sitting at his unsleeping art. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=387>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:387'><b>&sect; 387</b>&nbsp;&nbsp;And one, like a diving kingfisher, the wave shall carry through the narrow strait, a naked glutton-fish swept between the double reefs. And on the <a about=https://topostext.org/place/375252LGyR class=place long=25.21295 lat=37.5273>Gyrae</a> rocks drying his feathers dripping from the sea, he shall drain a second draught of the brine, hurled from the banks by the three-taloned spear, wherewith this dread punisher, that once was a thrall, shall smite him and compel him to run his race among the whales, blustering, like a cuckoo, his wild words of abuse. And his chilly <a href=/people/10965 target=_blank>dolphin</a>'s dead body cast upon the shore the rays of Seirius shall wither. And, rotten mummy-fish, among moss and seaweed <a href=/people/3726 target=_blank>Nesaia</a>'s sister shall hide him for pity, she that was the helper of the most mighty Quoit, the Lord of <a about=https://topostext.org/place/380221UKyn class=place long=22.128 lat=38.033>Cynaetha</a>. And his tomb beside the (<a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Ortygia</a>) Quail that was turned to stone shall trembling watch the surge of the <a about=https://topostext.org/place/381253WAeg class=place long=25.3 lat=38.1>Aegean sea</a>. And bitter in <a href=/people/10685 target=_blank>Hades</a> he shall abuse with evil taunts the goddess of Castnion and Melina, who shall entrap him in the unescapable meshes of desire, in a love that is no love but springing for him the bitter death-drawing snare of the <a href=/people/1744 target=_blank>Erinyes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=408>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:408'><b>&sect; 408</b>&nbsp;&nbsp;And woes of lamentation shall the whole land hear — all that <a about=https://topostext.org/place/397210WAra class=place long=21.0045 lat=39.6815>Aratthos</a> and the impassable <a about=https://topostext.org/place/400225PLei class=demonym long=22.5343 lat=40.0244>Leibethrian</a> gates of <a about=https://topostext.org/place/398228LDot class=place long=22.65 lat=39.56>Dotion</a> enclose: by all these, yea, even by the shore of <a about=https://topostext.org/place/392205WAch class=place long=20.4831 lat=39.2348>Acheron</a>, my bridal shall long be mourned. For in the maws of many sea-monsters shall be entombed the countless swarm devoured by their jaws with many rows of teeth; while others, strangers in a strange land, bereft of relatives, shall receive their graves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=417>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:417'><b>&sect; 417</b>&nbsp;&nbsp;For one <a about=https://topostext.org/place/410232RBis class=demonym long=23.2 lat=41>Bisaltian</a> <a about=https://topostext.org/place/408239PEio class=place long=23.877 lat=40.781>Eion</a> by the <a about=https://topostext.org/place/408238WStr class=place long=23.8489 lat=40.7858>Strymon</a>, close marching with the Apsynthians and <a about=https://topostext.org/place/410251WBis class=ethnic long=25.12 lat=41.03>Bistonians</a>, nigh to the <a about=https://topostext.org/place/408238UEdo class=ethnic long=23.9 lat=40.9>Edonians</a>, shall hide, the old nurse of youth, wrinkled as a crab, ere ever he behold <a about=https://topostext.org/place/389218LTym class=place long=21.822 lat=38.944>Tymphrestus</a>' crag: even him who of all men was most hated by his father, who pierced the lamps of his eyes and made him blind, when he entered the dove's bastard bed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=424>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:424'><b>&sect; 424</b>&nbsp;&nbsp;And three sea-gulls the glades of <a href=/people/3282 target=_blank>Cercaphus</a> shall entomb, not far from the waters of <a about=https://topostext.org/place/380272WAle class=place long=27.19174 lat=37.99515>Aleis</a>: one the swan of <a href=/people/3724 target=_blank>Molossus</a> Cypeus Coetus, who failed to guess the number of the brood-<a href=/people/10951 target=_blank>sow</a>'s young, when, dragging his rival into the cunning contest of the wild figs, himself, as the oracle foretold, shall err and sleep the destined sleep; the next, again, fourth in descent from <a href=/people/298 target=_blank>Erechtheus</a>, own brother of <a href=/people/2490 target=_blank>Aethon</a> in the fictitious tale; and third, the son of him that with stern mattock ploughed the wooden walls of the <a href=/people/4982 target=_blank>Ectenes</a>, whom Gongylates, the Counsellor, the Miller, slew and brake his head in pieces with his curse-expelling lash, what time the maiden daughters of <a href=/people/12253 target=_blank>Night</a> armed them that were the brothers of their own father for the lust of doom dealt by mutual hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=439>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:439'><b>&sect; 439</b>&nbsp;&nbsp;And two by the mouth of the streams of <a about=https://topostext.org/place/370356WPyr class=place long=35.6237 lat=36.9552>Pyramus</a>, <a href=/people/10953 target=_blank>hounds</a> of Deraenus, shall be slain by mutual slaughter, and fight their last battle at the foot of the towers of the daughter of <a href=/people/5346 target=_blank>Pamphylus</a>. And a steep sea-bitten fortress, even <a about=https://topostext.org/place/365353UMag class=place long=35.3471 lat=36.5458>Magarsus</a>, shall stand between their holy cairns, so that even when they have gone down to the habitations of the dead, they may not behold each other's tombs, bathed in blood. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=446>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:446'><b>&sect; 446</b>&nbsp;&nbsp;And five shall come to the <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Horned Isle</a> of Wasps and Satrachus and the <a about=https://topostext.org/place/347329SApo class=place long=32.864 lat=34.673>land of Hylates</a>, and dwell beside <a href=/people/12231 target=_blank>Morpho</a> the Lady of <a about=https://topostext.org/place/405257UZer class=person long=25.6534 lat=40.4887>Zerynthus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v450 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=450>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:450'><b>&sect; 450</b>&nbsp;&nbsp;One shall be he [<a href=/people/63 target=_blank>Ajax</a>] that shall be banished by his father's taunts from the <a about=https://topostext.org/place/379235CEur class=place long=23.4523 lat=37.8823>cave of Cychreus</a> and the waters of <a href=/people/9008 target=_blank>Bocarus</a>; even he my cousin, as a bastard breed, the ruin of his kin, the murderer of the colt begotten by the same father; of him who spent his sworded frenzy on the herds; whom the hide of the <a href=/people/10960 target=_blank>lion</a> made invulnerable by the bronze in battle and who possessed but one path to <a href=/people/10685 target=_blank>Hades</a> and the dead — that which the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> quiver covered, what time the <a href=/people/10960 target=_blank>lion</a>, burning sacrifice to Comyrus, uttered to his sire his prayer that was heard, while he dandled in his arms his comrade's cub. For he shall not persuade his father that the <a about=https://topostext.org/place/399253ILem class=demonym long=25.21 lat=39.93>Lemnian</a> thunderbolt of <a href=/people/1176 target=_blank>Enyo</a> — he the sullen <a href=/people/10955 target=_blank>bull</a> that never turned to flee — smote his own bowels with the gift of his bitterest foe, diving in sorrowful leap on the sword's edge in self-wrought slaughter. Far from his fatherland his sire shall drive <a href=/people/4733 target=_blank>Trambelus</a>' brother, whom my father's sister bare, when she has given to him who razed the towers as first-fruits of the spear. She it was that the babbler, the father of three daughters, standing up in the council of his townsmen, urged should be offered as dark banquet for the grey <a href=/people/10953 target=_blank>hound</a>, which with briny water was turning all the land to mud, spewing waves from his jaws and with fierce surge flooding all the ground. But, in place of the woodpecker, he swallowed in his throat a scorpion and bewailed to <a href=/people/2436 target=_blank>Phorcus</a> the burden of his evil travail, seeking to find counsel in his pain. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v450 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=478>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:478'><b>&sect; 478</b>&nbsp;&nbsp;The second [<a href=/people/2472 target=_blank>Agapenor</a>] who comes to the island is a country-man and a landsman, feeding on simple food, one of the <a about=https://topostext.org/place/375223RArk class=ethnic long=22.3 lat=37.5>sons of the oak</a>, the <a href=/people/10952 target=_blank>wolf</a>-shaped devourers of the flesh of <a href=/people/3110 target=_blank>Nyctimus</a>, a people that were before the moon, and who in the height of winter heated in the ashes of the fire their staple of oaken bread; he shall dig for copper and from the trench drag the soil, mining with mattock every pit. His father the tusk of <a about=https://topostext.org/place/388223LOit class=place long=22.25 lat=38.801>Oeta</a> slew, crushing his body in the regions of the belly. In sorrow, wretched man, he learnt the truth of the saying that the all-devising fate of men rolls many a thing betwixt the life and the draught of the cup. That same tusk, all flecked with glistening foam, when he had fallen took vengeance on his slayer, smiting with unescapable blow the dancer's ankle-bone. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v450 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=494>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:494'><b>&sect; 494</b>&nbsp;&nbsp;And the third [<a href=/people/1381 target=_blank>Acamas</a>] is the son of him who took from the hollow of the rock the arms of the giant; even he into whose secret bed shall come self-invited that heifer of <a about=https://topostext.org/place/397268LIda class=place long=26.8423 lat=39.6922>Ida</a> who shall go down to <a href=/people/10685 target=_blank>Hades</a> alive, worn out with lamentation, the mother of <a href=/people/8544 target=_blank>Munitus</a>, whom one day, as he hunts, a <a href=/people/55 target=_blank>viper</a> of <a about=https://topostext.org/place/408230RKre class=place long=23 lat=40.84>Crestone</a> shall kill, striking his heel with fierce sting; what time into his father's hands that father's father's mother, taken captive, shall lay the young cub reared in the dark: she on whom alone the <a href=/people/10952 target=_blank>wolves</a> which harried the people of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Acte</a> set the yoke of slavery in vengeance for the raped <a href=/people/11014 target=_blank>Bacchant</a>, those <a href=/people/10952 target=_blank>wolves</a> whose head a cloven egg-shell covers, to guard them from the bloody spear; all else the worm-eaten untouched <a href=/people/10989 target=_blank>seal</a> watches in the halls, a great marvel to the people of the country. Which things shall rear a ladder to the trace of the stars for the twin half-mortal Lapersii. Whom, O <a href=/people/1 target=_blank>Saviour Zeus</a>, never mayst thou send against my fatherland to succour the twice-raped corncrake, nor may they equip their winged ships and from the stern end set their naked swift foot in the landing-place of the <a href=/people/8978 target=_blank>Bebryces</a>! Neither may those others who are mightier than these <a href=/people/10960 target=_blank>lions</a>, the unapproachable in valour, whom <a href=/people/24 target=_blank>Ares</a> loves and divine <a href=/people/1176 target=_blank>Enyo</a> and the goddess that was born on the third day, Boarmia Longatis Homolois <a href=/people/2482 target=_blank>Bia</a>. The walls which the two working craftsmen, Drymas and Prophantus, Lord of <a about=https://topostext.org/place/379230UKro class=person long=22.952 lat=37.904>Cromna</a>, built for the king that brake his oath, would not avail for one day against the ravaging <a href=/people/10952 target=_blank>wolves</a>, to keep out their grievous ruinous assault, even though they have before the towers the mighty <a about=https://topostext.org/place/398238LKan class=person long=23.75 lat=39.916>Canastraean</a>, the native giant, as a bar against the foemen, eager to smite with well-aimed shaft the first harrier of the flocks. His spear shall a bold falcon first handsel, swooping a swift leap, best of the Greeks, for whom, when he is dead, the ready shore of the <a href=/people/12201 target=_blank>Doloncians</a> builds of old a tomb, even <a about=https://topostext.org/place/401262LMas class=place long=26.1666 lat=40.0544>Mazusia</a> jutting from the horn of the dry land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v500 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=535>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:535'><b>&sect; 535</b>&nbsp;&nbsp;But we have one, yea one beyond our hope, for gracious champion, even the god Drymnius Promatheus <a href=/people/4805 target=_blank>Aethiops</a> Gyrapsius, who, when they who are destined to suffer things dread and undesirable shall receive in their halls their fatal guest, the swooping robber, the wandering Orthanes, and when at banquet and festival they shall seek to propitiate the inexorable Lord of <a about=https://topostext.org/place/364292LKra class=place long=29.1931 lat=36.3805>Cragos</a>, shall put in the midst of their talk grievous wrangling. And first in words they shall tear each other with their teeth, exasperate with jeers; but anon the own cousins shall ply the spear, eager to prevent the violent rape of their cousin birds, and the carrying off of their kin, in vengeance for the traffic without gifts of wooing. Surely many a shaft shall the stream of <a href=/people/5568 target=_blank>Cnacion</a> behold hurled by the daring <a href=/people/10980 target=_blank>eagles</a>, incredible and marvellous for the <a about=https://topostext.org/place/377218UPhe class=ethnic long=21.7943 lat=37.6969>Pheraeans</a> to hear. One with his spear of cornel-wood shall slay one of the pair — a <a href=/people/10960 target=_blank>lion</a> joining battle with a <a href=/people/10955 target=_blank>bull</a>. The other in turn with his lance shall pierce the side of the <a href=/people/10961 target=_blank>ox</a> and bring him to the ground. But against him the undaunted ram shall butt a second blow, hurling the headstone of the <a about=https://topostext.org/place/370224UAmy class=demonym long=22.4502 lat=37.0363>Amyclaean</a> tomb. And bronze spear and thunderbolts together shall crush the <a href=/people/10955 target=_blank>bulls</a> — whereof one had such valour as even Sciastes Orchieus, the <a about=https://topostext.org/place/384230SApo class=person long=23.00886 lat=38.39014>Telphousian</a> lord, did not scorn, when he bent his bow in battle. And the one pair <a href=/people/10685 target=_blank>Hades</a> shall receive: the others the meadows of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> shall welcome as guests on every alternate day, brothers of mutual love, undying and dead. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v500 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=567>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:567'><b>&sect; 567</b>&nbsp;&nbsp;So their spear shall god lull to rest for us, granting us a brief remedy in our woe. But a cloud of others unapproachable in their might shall he rouse — whose rage not even the son of <a href=/people/4772 target=_blank>Rhoeo</a> shall lull nor stay, though he bid them abide for the space of nine years in his island, persuaded by his oracles, and though he promised that his three daughters shall give blameless sustenance to all who stay and roam the <a about=https://topostext.org/place/374253LKyn class=place long=25.272 lat=37.395>Cynthian hill</a> beside <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Inopus</a>, drinking the <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> waters of <a href=/people/664 target=_blank>Triton</a>. These daughters lusty Problastus taught to be skilled in contriving milled food and to make wine and fatty oil — even the dove grand-daughters of Zarax, skilled to turn things into wine. These shall heal the great and wasting hunger of the host of alien <a href=/people/10953 target=_blank>hounds</a>, coming one day to the <a about=https://topostext.org/place/400263URho class=place long=26.3003 lat=40.0093>grave</a> of <a href=/people/2933 target=_blank>Sithon</a>'s daughter. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v550 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=584>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:584'><b>&sect; 584</b>&nbsp;&nbsp;These things the Ancient Maidens whirl on with rushing thread on brazen spindles. But <a href=/people/774 target=_blank>Cepheus</a> and Praxandrus, not princes of a naval host but a nameless brood, fifth and fourth shall come to the land of the goddess queen of <a about=https://topostext.org/place/351336SAph class=place long=33.627 lat=35.095>Golgi</a>; whereof the one shall lead a <a about=https://topostext.org/place/370225RLak class=demonym long=22.5 lat=37.001>Laconian</a> troop from <a about=https://topostext.org/place/371225UThe class=place long=22.534 lat=37.0736>Therapna</a>; the other from <a about=https://topostext.org/place/382216POle class=place long=21.6406 lat=38.1537>Olenus</a> and <a about=https://topostext.org/place/381216PDym class=place long=21.5514 lat=38.1446>Dyme</a> shall lead his host of the men of <a about=https://topostext.org/place/381222PBou class=place long=22.2044 lat=38.1428>Bura</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v550 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=594>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:594'><b>&sect; 594</b>&nbsp;&nbsp;Another [i.e., <a href=/people/124 target=_blank>Diomedes</a>] shall found <a about=https://topostext.org/place/415156UArg class=place long=15.611 lat=41.553>Argyrippa</a>, a <a about=https://topostext.org/place/414155RDau class=demonym long=15.5 lat=41.4>Daunian</a> estate beside <a about=https://topostext.org/place/410155RAus class=demonym long=15.5 lat=41>Ausonian</a> Phylamus, seeing the bitter fate of his comrades turned to winged birds, who shall accept a sea life, after the manner of fishermen, like in form to bright-eyed swans. Seizing in their bills the spawn of fishes they shall dwell in an island which bears their leader's name, on a theatre-shaped rising ground, building in rows their close-set nests with firm bits of wood, after the manner of <a href=/people/1305 target=_blank>Zethus</a>. And together they shall betake them to the chase and by night to rest in the dell, avoiding all the alien crowd of men, but in folds of Grecian robes seeking their accustomed resting-place they shall eat crumbs from the hand and fragments of cake from the table, murmuring pleasantly, remembering, hapless ones, their former way of life. His wounding of the Lady of <a about=https://topostext.org/place/375234PTro class=place long=23.3484 lat=37.5033>Troezen</a> shall be part cause of his wild lustful <a href=/people/10953 target=_blank>bitch</a> shall be frenzied for adulterous bed. But the altar-tomb of Hoplosmia shall save him from doom, when already prepared for slaughter. And in the glen of <a about=https://topostext.org/place/410155RAus class=place long=15.5 lat=41>Ausonian</a> he shall stand like a colossus resting his feet on the boulders, the foundations of <a href=/people/4061 target=_blank>Amoebeus</a>, the builder of the walls, when he has cast out of his ship the ballast stones. And, disappointed by the judgement of his brother Alaenus, he shall cast an effectual curse upon the fields, that they may never send up the opulent corn-ear of <a href=/people/967 target=_blank>Deo</a>, when <a href=/people/1 target=_blank>Zeus</a> with his rain nurtures the soil, save only if one who draws his blood from his own <a about=https://topostext.org/place/386215RAit class=demonym long=21.5 lat=38.6>Aetolian</a> stock shall till the land, cleaving the furrows with team of <a href=/people/10961 target=_blank>oxen</a>. And with pillars which no man shall boast to have moved even a little by his might. For as on wings they shall come back again, traversing with trackless steps the terraces. And a high god shall he be called by many, even by those who dwell by the cavernous plain of <a href=/people/389 target=_blank>Io</a>, when he shall have slain the dragon that harried the <a href=/people/629 target=_blank>Phaeacians</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v600 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=633>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:633'><b>&sect; 633</b>&nbsp;&nbsp;And others shall sail to the sea-washed <a about=https://topostext.org/place/397032IGym class=place long=3.25 lat=39.65>Gymnesian rocks</a> — crab-like, clad in skins — where cloakless and unshod they shall drag out their lives, armed with three two-membered slings. Their mothers shall teach the far-shooting art to their young offspring by supperless discipline. For none of them shall chew bread with his jaws, until with well-aimed stone he shall have won the cake set as a mark above the board. These shall set foot on the rough shores that feed the <a about=https://topostext.org/place/420435RIbe class=ethnic long=43.5 lat=42>Iberians</a> near the gate of <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a> — a race sprung from ancient <a about=https://topostext.org/place/385229UArn class=place long=22.8616 lat=38.5112>Arne</a>, chieftains of the Temmices, yearning for <a about=https://topostext.org/place/384236UGra class=place long=23.62658 lat=38.38427>Graea</a> and the cliffs of Leontarne and <a about=https://topostext.org/place/383234PSko class=place long=23.387 lat=38.269>Scolusa</a> and <a about=https://topostext.org/place/385231UTeg class=place long=23.035 lat=38.513>Tegyra</a> and <a about=https://topostext.org/place/384232UOnc class=place long=23.1453 lat=38.3622>Onchestus</a>' seat and the flood of <a about=https://topostext.org/place/384234WThe class=place long=23.4069 lat=38.3824>Thermodon</a> and the waters of Hypsarnus. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v600 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=648>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:648'><b>&sect; 648</b>&nbsp;&nbsp;Others [<a href=/people/18 target=_blank>Odysseus</a> et al.] shall wander beside <a about=https://topostext.org/place/314186WSyr class=place long=18.6 lat=31.4>Syrtis</a> and the Libyan plains and the narrow meet of the <a about=https://topostext.org/place/409115WTyr class=place long=11.5 lat=40.9>Tyrrhenian Strait</a> and the <a about=https://topostext.org/place/383157LSky class=place long=15.715 lat=38.255>watching-place fatal to mariners</a> of the hybrid monster that formerly died by the hand of <a href=/people/2128 target=_blank>Mecisteus</a>, the hide-clad Spademan, the Cattle-driver, and the rocks of he harpy-limbed nightingales. There, devoured raw, <a href=/people/10685 target=_blank>Hades</a>, mine host, shall seize them all, torn with all manner of evil entreatment; and he shall leave but one [<a href=/people/18 target=_blank>Odysseus</a>] to tell of his slaughtered friends, even the man of the <a href=/people/10965 target=_blank>dolphin</a> device, who stole the <a about=https://topostext.org/place/335354RPho class=demonym long=35.4 lat=33.5>Phoenician</a> goddess. He shall see the dwelling of the one-eyed <a href=/people/10960 target=_blank>lion</a>, offering in his hands to that flesh-eater the cup of the vine as an after-supper draught. And he shall see the remnant that was spared by the arrows of Ceramyntes Peuceus <a href=/people/1061 target=_blank>Palaemon</a>. That remnant shall break in pieces all the well-turned hulls and shall with rushes pierce their evil spoil, as it were of fishes. Unhappy labour after labour shall await him, each more baleful than that which went before. What <a about=https://topostext.org/place/382156WCha class=place long=15.606 lat=38.248>Charybdis</a> shall not eat of his dead? What half-maiden Fury-<a href=/people/10953 target=_blank>hound</a>? What barren nightingale, slayer of the <a href=/people/553 target=_blank>Centaurs</a>, <a about=https://topostext.org/place/386215RAit class=demonym long=21.5 lat=38.6>Aetolian</a> or Curetid, shall not with her varied melody tempt them to waste away through fasting from food? What beast-moulding dragoness shall he not behold, mixing drugs with meal, and beast-shaped doom? And they, hapless ones, bewailing their fate shall feed in pigstyles, crunching grapestones mixed with grass and oilcake. But him the drowsy root shall save from harm and the coming of Ctaros, the Bright Three-headed god of <a about=https://topostext.org/place/380222PNon class=place long=22.255 lat=38.0189>Nonacris</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v650 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=681>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:681'><b>&sect; 681</b>&nbsp;&nbsp;And he shall come to the dark plain of the departed and shall seek the ancient seer of the dead, who knows the mating of men and women. He shall pour in a trench warm blood for the souls, and, brandishing before him his sword to terrify the dead, he shall there hear the thin voice of the ghosts, uttered from shadowy lips. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v650 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=688>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:688'><b>&sect; 688</b>&nbsp;&nbsp;Thereafter the island that crushed the back of the <a href=/people/11034 target=_blank>Giants</a> and the fierce storm of <a href=/people/233 target=_blank>Typhon</a>, shall receive him journeying alone: an island boiling with flame, wherein the king of the immortals established an ugly race of apes, in mockery of all who raised war against the sons of <a href=/people/43 target=_blank>Cronus</a>. And passing the tomb of <a href=/people/6282 target=_blank>Baius</a>, his steersman, and the dwellings of the <a about=https://topostext.org/place/454367WBos class=ethnic long=36.66 lat=45.36>Cimmerians</a> and the Acherusian waters swelling with heaving surge and Ossa and the <a href=/people/10978 target=_blank>cattle</a>-path built by the <a href=/people/10960 target=_blank>lion</a> and the grove of Obrimo, the Maiden who dwells beneath the earth, and the Fiery Stream, where the difficult Polydegmon hill stretches its head to the sky; from which hill's depths draw all streams and all springs throughout the <a about=https://topostext.org/place/410155RAus class=demonym long=15.5 lat=41>Ausonian</a> land; and leaving the high slope of Lethaeon and the lake <a about=https://topostext.org/place/408141WAve class=place long=14.0822 lat=40.8393>Aornus</a> rounded with a noose and the waters of <a href=/people/1315 target=_blank>Cocytus</a> wild and dark, stream of black <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a>, where Termieus made the seat of oath-swearing for the immortals, drawing the water in golden basins of libation, when he was about to go against the <a href=/people/11034 target=_blank>Giants</a> and <a href=/people/206 target=_blank>Titans</a> — he shall offer up a gift to Daeira and her consort, fastening his helmet to the head of a pillar. And he shall slay the triple daughters of <a href=/people/832 target=_blank>Tethys</a>' son, who imitated the strains of their melodious mother: self-hurled from the cliff's top they dive with their wings into the <a about=https://topostext.org/place/409115WTyr class=place long=11.5 lat=40.9>Tyrrhenian sea</a>, where the bitter thread spun by the <a href=/people/140 target=_blank>Fates</a> shall draw them. One of them washed ashore the tower of <a href=/people/4363 target=_blank>Phalerus</a> shall receive, and <a about=https://topostext.org/place/409144WGla class=place long=14.38181 lat=40.9333>Glanis</a> wetting the earth with its streams. There the inhabitants shall build a tomb for the maiden and with libations and sacrifice of <a href=/people/10961 target=_blank>oxen</a> shall yearly honour the bird goddess <a href=/people/3292 target=_blank>Parthenope</a>. And <a href=/people/4185 target=_blank>Leucosia</a> shall be cast on the jutting strand of <a href=/people/7638 target=_blank>Enipeus</a> and shall long haunt the rock that bears her name, where rapid Is and neighbouring Laris pour forth their waters. And <a href=/people/8534 target=_blank>Ligeia</a> shall come ashore at Tereina spitting out the wave. And her shall sailormen bury on the stony beach nigh to the eddies of <a href=/people/9906 target=_blank>Ocinarus</a>; and an <a href=/people/10961 target=_blank>ox</a>-horned <a href=/people/24 target=_blank>Ares</a> shall lave her tomb with his streams, cleansing with his waters the foundation of her whose children were turned into birds. And there one day in honour of the first goddess of the sisterhood shall the ruler of all the navy of Mopsops array for his mariners a torch-race, in obedience to an oracle, which one day the people of the <a about=https://topostext.org/place/408142PNea class=ethnic long=14.24 lat=40.843>Neopolitans</a> shall celebrate, even they who shall dwell on bluff crags beside <a about=https://topostext.org/place/408141HMis class=place long=14.0847 lat=40.7874>Misenum</a>'s sheltered haven untroubled by the waves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v700 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=738>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:738'><b>&sect; 738</b>&nbsp;&nbsp;And he shall shut up the blustering winds in the hide of an <a href=/people/10961 target=_blank>ox</a>, and wandering in woes that ebb and flow, he, the sea-gull, shall be burnt with the lash of the thunderbolt, clinging to the branch of a wild fig-tree so that the wave which draws spouting <a about=https://topostext.org/place/382156WCha class=place long=15.606 lat=38.248>Charybdis</a> to the deep may not swallow him in the surge. And, after brief pleasure in wedlock with the daughter of <a href=/people/190 target=_blank>Atlas</a>, he dares to set foot in his offhand vessel that never knew a dockyard and to steer, poor wretch, the bark which his own hands made, vainly fastened with dowels to the midst of the keel. Wherefrom Amphibaeus shall toss him forth, as it were the tiny unfledged brood of a halcyon's bride, and cast him, with midbeams and deck together, headlong as a diver into the waves, entangled in the ropes, and sleepless, swept in the secret places of the sea, he shall dwell with the citizen of Thracian <a about=https://topostext.org/place/385235PAnt class=place long=23.448 lat=38.4987>Anthedon</a>. And like a branch of pine, blast after blast shall toss him as a cork, leaping on him with their gusts. And hardly shall the frontlet of <a href=/people/9045 target=_blank>Byne</a> save him from the evil tide with torn breast and fingers wherewith he shall clutch the flesh-hooking rocks and be stained with blood by the sea-bitten spikes. And crossing to the island abhorred by <a href=/people/43 target=_blank>Cronus</a> — the isle of the Sickle that severed his privy parts — he a cloakless suppliant, babbling of awful sufferings, shall yelp out his fictitious tale of woe, paying the curse of the monster whom he blinded. Ah! not yet, not yet! Let no such sleep of forgetfulness find <a href=/people/1083 target=_blank>Melanthus</a>, the Lord of <a href=/people/10959 target=_blank>Horses</a>, bending. For he shall come, he shall come to <a href=/people/10179 target=_blank>Rheithron</a>'s sheltering haven and the cliffs of <a about=https://topostext.org/place/383204LNer class=place long=20.43 lat=38.34>Neriton</a>. And he shall behold all his house utterly overthrown from its foundation by lewd wife-stealers. And the vixen, primly coquetting, will make empty his halls, pouring forth the pour wight's wealth in banqueting. And he himself, poor parasite, shall see trouble beyond what he endured at the Scaean gates; he shall endure to bear with submissive back sullen threats from his own slaves and to be punished with jeers; shall endure, too, to submit to buffeting of fists and hurling of potsherds. For not alien stripes but the liberal seal of <a href=/people/533 target=_blank>Thoas</a> shall remain upon his sides, engraved with rods: stripes which he, our destroyer, shall consent without a murmur to have engraved upon him, putting the voluntary weal upon his frame, that he may ensnare the foemen, with spying wounds and with tears deceiving our king. He whom of old the Temmician hill of Bombyleia bare to be our chiefest bane — he alone of all his mariners, wretched one, shall win safely home. And lastly, like a sea-gull that roams the waves, worn all about by the salt water even as a shell and finding his possessions swallowed up in banqueting of the <a about=https://topostext.org/place/381208PPro class=ethnic long=20.7767 lat=38.146>Pronians</a> by the <a about=https://topostext.org/place/370225RLak class=demonym long=22.5 lat=37.001>Laconian</a> lady of fatal frenzy, ancient as a <a href=/people/10957 target=_blank>crow</a> he shall flee with his weapons the shelter of the sea and in wrinkled age die beside the woods of <a about=https://topostext.org/place/383204LNer class=place long=20.43 lat=38.34>Neriton</a>. The deadly spike, hard to heal, of the <a about=https://topostext.org/place/402920ISar class=demonym long=9.2 lat=40.2>Sardinian</a> fish shall wound his sides with its sting and kill him; and his son shall be called the butcher of his father, that son who shall be the own cousin of the bride of <a href=/people/17 target=_blank>Achilles</a>. <br />And in death he shall be garlanded as a seer by the <a about=https://topostext.org/place/393213REur class=ethnic long=21.7 lat=38.8>Eurytanian</a> folk and by the dweller in the steep abode of <a about=https://topostext.org/place/398211XVou class=place long=21.1108 lat=39.7673>Trampya</a>, wherein one day hereafter the <a about=https://topostext.org/place/400212RTym class=person long=21.2 lat=40>Tymphaean</a> dragon, even the king of the <a about=https://topostext.org/place/398213RAit class=ethnic long=21.29 lat=39.75>Aethices</a>, shall at a feast destroy <a href=/people/4 target=_blank>Heracles</a> sprung from the seed of <a href=/people/255 target=_blank>Aeacus</a> and <a href=/people/153 target=_blank>Perseus</a> and no stranger to the blood of <a href=/people/785 target=_blank>Temenus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v750 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=805>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:805'><b>&sect; 805</b>&nbsp;&nbsp;When he [<a href=/people/18 target=_blank>Odysseus</a>] is dead, Perge, hill of the <a about=https://topostext.org/place/430105RTyr class=ethnic long=10.5 lat=43>Tyrrhenians</a>, shall receive his ashes in the land of <a href=/people/8623 target=_blank>Gortyn</a>; when, as he breathes out his life, he shall bewail the fate of his son and his wife, whom her husband shall slay and himself next pass to <a href=/people/10685 target=_blank>Hades</a>, his throat cut by the hands of his sister, the own cousin of <a href=/people/1348 target=_blank>Glaucon</a> and <a href=/people/1981 target=_blank>Apsyrtus</a>. And having seen such a heap of woes he shall go down a second time to unturning <a href=/people/10685 target=_blank>Hades</a>, having never beheld a day of calm in all his life. O wretched one! how much better had it been for thee to remain in thy homeland driving <a href=/people/10961 target=_blank>oxen</a>, and to harness still the working stallion <a href=/people/10962 target=_blank>ass</a> to the yoke, frenzied with feigned pretence of madness, than to suffer the experience of such woes! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v800 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=820>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:820'><b>&sect; 820</b>&nbsp;&nbsp;And he [<a href=/people/53 target=_blank>Menelaus</a>] again — the husband seeking for his fatal bride snatched from him having heard rumours, and yearning for the winged phantom that fled to the sky — what secret places of the sea shall he not explore? What dry land shall he not come and search? First he shall visit the watching-place of <a href=/people/233 target=_blank>Typhon</a>, and the old hag turned to stone, and the jutting shores of the Erembi, abhorred by mariners. And he shall see the strong <a about=https://topostext.org/place/341356PByb class=place long=35.646 lat=34.119>city</a> of unhappy Myrrha, who was delivered of the pangs of child-birth by a branching tree; and the tomb of <a href=/people/9426 target=_blank>Gauas</a> whose death the <a href=/people/54 target=_blank>Muses</a> wrought — wept by the goddess of the Rushes, Arenta, the Stranger: <a href=/people/9426 target=_blank>Gauas</a> whom the wild <a href=/people/10951 target=_blank>boar</a> slew with white tusk. And he shall visit the towers of <a href=/people/774 target=_blank>Cepheus</a> and the place that was kicked by the foot of <a href=/people/33 target=_blank>Hermes</a> Laphrios, and the two rocks on which the petrel leapt in quest of food, but carried off in his jaws, instead of a woman, the <a href=/people/10980 target=_blank>eagle</a> son of the golden Sire — a male with winged sandals who destroyed his liver. By the harvester's blade shall be slain the hateful whale dismembered: the harvester who delivered of her pains in birth of <a href=/people/10959 target=_blank>horse</a> and man the stony-eyed weasel whose children sprang from her neck. Fashioning men as statues from top to toe he shall envelop them in stone — he that stole the lamp of his three wandering guides. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v800 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=847>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:847'><b>&sect; 847</b>&nbsp;&nbsp;And he shall visit the fields which drink in summer and the stream of Asbystes and the couch on the ground where he shall sleep among evil-smelling beasts. And all shall he endure for the sake of the Aegyan <a href=/people/10953 target=_blank>bitch</a>, her of three husbands, who bare only female children. And he shall come as a wanderer to the folk of the <a about=https://topostext.org/place/400182RIap class=ethnic long=16.9 lat=40.8>Iapyges</a> and offer gifts to the Maiden of the Spoils, even the mixing-bowl from <a about=https://topostext.org/place/350332PTam class=place long=33.2421855 lat=35.028422>Tamassus</a> and the shield of oxhide and fur-lined shoes of his wife. And he shall come to <a about=https://topostext.org/place/401165USir class=place long=16.6682 lat=40.1658>Siris</a> and the recesses of <a about=https://topostext.org/place/390172SLac class=place long=17.2051 lat=39.0289>Lacinium</a>, wherein a heifer shall fashion an orchard for the goddess Hopolosmia, furnished with trees. And it shall be for all time an ordinance for the women of the land to mourn the nine-cubit hero, third in descent from <a href=/people/255 target=_blank>Aeacus</a> and <a href=/people/1326 target=_blank>Doris</a>, the hurricane of battle strife, and not to deck their radiant limbs with gold, nor array them in fine-spun robes stained with purple — because a goddess to a goddess presents that great spur of land to be her dwelling-place. And he shall come to the inhospitable wrestling-arena of the <a href=/people/10955 target=_blank>bull</a> whom Colotis bare, even Alentia, Queen of the recesses of Longuros, rounding the <a href=/people/43 target=_blank>Cronos</a>' Sickle's leap and the water of Concheia, and Gonusa and the plains of the <a href=/people/11018 target=_blank>Sicanians</a>, and the shrine of the ravenous <a href=/people/10952 target=_blank>wolf</a> clad in the skin of a wild beast, which the descendant of <a href=/people/1490 target=_blank>Cretheus</a>, when he had brought his vessel to anchor, built with his fifty mariners. And the beach still preserves the oily scrapings of the bodies of the <a href=/people/11039 target=_blank>Minyans</a>, nor does the waves of the brine cleanse them, nor the long rubbing of the rainy shower. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v850 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=877>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:877'><b>&sect; 877</b>&nbsp;&nbsp;And others the shores and reefs near <a about=https://topostext.org/place/325206UTau class=place long=20.5677 lat=32.539>Taucheira</a> mourn, cast upon the desolate dwelling-place of <a href=/people/190 target=_blank>Atlas</a>, grinning on the points of their wreckage: where <a href=/people/872 target=_blank>Mopsus</a> of <a about=https://topostext.org/place/402221LTit class=place long=22.123 lat=40.161>Titaeron</a> died and was buried by the mariners, who set over his tomb's pedestal a broken blade from the ship <a href=/people/352 target=_blank>Argo</a>, for a possession of the dead, — where the Cinypheian stream fattens Ausigda with its waters, and where to <a href=/people/664 target=_blank>Triton</a>, descendant of <a href=/people/428 target=_blank>Nereus</a>, the <a about=https://topostext.org/place/431423RCol class=person long=42.28 lat=42.12>Colchian</a> woman gave as a gift the broad mixing-bowl wrought of gold, for that he showed them the navigable path whereby <a href=/people/1304 target=_blank>Tiphys</a> should guide through the narrow reefs his ship undamaged. And the twy-formed god, son of the sea, declares that the Greeks shall obtain the sovereignty of the land when the pastoral people of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> shall take from their fatherland and give to a <a href=/people/1290 target=_blank>Hellene</a> the home-returning gift. And the Asbytians, fearing his vows, shall hide the treasure from sight in low depths of the earth, whereon the blasts of <a href=/people/208 target=_blank>Boreas</a> shall cast with his mariners the hapless leader of the men of <a about=https://topostext.org/place/398220UKyp class=place long=22 lat=39.76>Cyphos</a> and the son of Tenthedron from <a about=https://topostext.org/place/392232USpa class=place long=23.2178 lat=39.1915>Palauthra</a>, king of the <a about=https://topostext.org/place/392227WAmp class=ethnic long=22.7455 lat=39.1729>Amphrysians</a> of Euryampus, and the lord of the Wolf that devoured the atonement and was stone and of the crags of <a about=https://topostext.org/place/389218LTym class=place long=21.822 lat=38.944>Tymphrestus</a>. Of whom some, unhappy, yearning for their fatherland of Aegoneia, others for <a about=https://topostext.org/place/389227PEch class=place long=22.7253 lat=38.8955>Echinos</a>, others for <a about=https://topostext.org/place/398223WTit class=place long=22.139 lat=39.726>Titaros</a> and for <a href=/people/1550 target=_blank>Iros</a> and for <a about=https://topostext.org/place/388224RTra class=place long=22.4 lat=38.75>Trachis</a> and <a about=https://topostext.org/place/398232RPer class=demonym long=22 lat=39.85>Perhaebic</a> <a about=https://topostext.org/place/399225UGon class=place long=22.496 lat=39.855>Gonnos</a> and <a about=https://topostext.org/place/397224UPha class=place long=22.3829 lat=39.7225>Phalanna</a>, and the fields of the <a about=https://topostext.org/place/399222UOlo class=ethnic long=22.1875 lat=39.8987>Olossonians</a>, and <a about=https://topostext.org/place/396229UKas class=place long=22.9204 lat=39.5904>Castanaia</a>, torn on the rocks shall bewail their fate that lacks the rites of funeral. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v850 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=909>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:909'><b>&sect; 909</b>&nbsp;&nbsp;One evil fate after another shall god arouse, presenting them with grievous calamity in place of return to their homes. Another shall the streams of <a about=https://topostext.org/place/391171WAis class=place long=17.11215 lat=39.08376>Aesarus</a> and the little city of Crimisa in the <a about=https://topostext.org/place/401162ROen class=demonym long=16.2 lat=40.1>Oenotrian</a> land receive: even the snake-bitten slayer of the fire-brand; for the Trumpet herself shall with her hand guide his arrow point, releasing the twanging <a about=https://topostext.org/place/460370WMai class=demonym long=37 lat=46>Maeotian</a> bowstring. On the banks of <a about=https://topostext.org/place/388223WDyr class=place long=22.415 lat=38.855>Dyras</a> he burnt of old the bold <a href=/people/10960 target=_blank>lion</a> [<a about=https://topostext.org/place/388223SPyr class=place long=22.299 lat=38.752>Pyre of Herakles</a> ], and armed his hands with the crooked <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> dragon that harped with unescapable teeth. And <a about=https://topostext.org/place/397165WCra class=place long=16.4688 lat=39.7086>Crathis</a> shall see his tomb when he is dead, sideways from the shrine of <a href=/people/7198 target=_blank>Alaeus</a> of <a about=https://topostext.org/place/363293UPat class=person long=29.316 lat=36.2618>Patara</a>, where Nauaethus belches seaward. The <a about=https://topostext.org/place/410155RAus class=demonym long=15.5 lat=41>Ausonian</a> <a about=https://topostext.org/place/380225PPel class=ethnic long=22.5384 lat=38.0446>Pellenians</a> shall slay him when he aids the leaders of the <a about=https://topostext.org/place/361281PLin class=ethnic long=28.0882 lat=36.0913>Lindians</a>, whom far from Thermydron and the mountains of <a about=https://topostext.org/place/356271IKar class=place long=27.1333 lat=35.5833>Carpathus</a> the fierce <a href=/people/10953 target=_blank>hound</a> <a href=/people/6993 target=_blank>Thrascias</a> shall send wandering to dwell in a strange and alien soil. But in Macalla, again, the people of the place shall build a great shrine above his grave and glorify him as an everlasting god with libations and sacrifice of <a href=/people/10961 target=_blank>oxen</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v900 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=930>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:930'><b>&sect; 930</b>&nbsp;&nbsp;In the sheltering arms of <a about=https://topostext.org/place/399166XAme class=place long=16.589 lat=39.9483>Lagaria</a> shall dwell the builder of the <a href=/people/10959 target=_blank>horse</a>. Afraid of the spear and the impetuous phalanx, he pays for the false oath of his father regarding the spear-won herds, which wretchedman, when the towers of <a href=/people/4339 target=_blank>Comaetho</a> were confounded by the army in the cause of loving marriage, he dared to swear by Aloetis <a about=https://topostext.org/place/355240PKyd class=place long=24.0187 lat=35.5158>Cydonia</a> <a href=/people/2550 target=_blank>Thraso</a>, and by the god of Crestone, Candaon or Mamertus, warrior <a href=/people/10952 target=_blank>wolf</a>. He even within his mother's womb arrayed hateful battle against his brother with blows of his hands, while he looked not yet on the bright light of Tito, nor had yet escaped the grievous pains of birth. And for his false oath the gods made his son grow to be a coward man, a good boxer but a skulker in the mellay of the spear. By his arts he most greatly helped the host; and by <a href=/people/3559 target=_blank>Ciris</a> and the bright waters of Cylistanus he shall dwell as an alien, far from his fatherland; and the tools wherewith he shall bore country, he shall consecrate in the shrine of Myndia. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v900 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=951>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:951'><b>&sect; 951</b>&nbsp;&nbsp;And others shall dwell in the land of the <a href=/people/11018 target=_blank>Sicanians</a>, wandering to the spot where <a href=/people/781 target=_blank>Laomedon</a>, stung by the ravages of the gluttonous sea-monster, gave to mariners to expose the three daughters of Phoenodamas that they should be devoured by ravenous wild beasts, there far off where they came to the land of the <a href=/people/10942 target=_blank>Laestrygonians</a> in the West, where dwells always abundant desolation. And those daughters in their turn built a great shrine for the <a about=https://topostext.org/place/405257UZer class=demonym long=25.6534 lat=40.4887>Zerynthian</a> mother of the wrestler, as a gift to the goddess, for as much as they had escaped from doom and lonely dwelling. Of these one the river <a href=/people/6392 target=_blank>Crimisus</a>, in the likeness of a <a href=/people/10953 target=_blank>dog</a>, took to be his bride: and she to the half-beast god bears a noble whelp, settler and founder of three places. That whelp shall guide the bastard scion of <a href=/people/316 target=_blank>Anchises</a> and bring him to the farthest bounds of the three-necked island, voyaging from <a about=https://topostext.org/place/420313RDar class=demonym long=21.32 lat=42.03>Dardanian</a> places. Hapless <a about=https://topostext.org/place/379128PAig class=place long=12.8399 lat=37.9392>Aegesta</a>! to thee by devising of the gods there shall be most great and age-long sorrow for my country when it is consumed by the breath of fire. And thou alone shalt groan for long, bewailing and lamenting unceasingly the unhappy overthrow of her towers. And all they people, clad in the sable garb of the suppliant, squalid and unkempt, shall drag out a sorrowful life, and the unshorn hair of their heads shall deck their backs, keeping the memory of ancient woes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v950 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=978>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:978'><b>&sect; 978</b>&nbsp;&nbsp;And many shall dwell in <a about=https://topostext.org/place/401165USir class=place long=16.6682 lat=40.1658>Siris</a> and Leutarnia's fields, where lies the unhappy <a href=/people/662 target=_blank>Calchas</a> who <a href=/people/531 target=_blank>Sisyphus</a>-like counted the unnumbered figs, and who was smitten on the head by the rounded scourge — where <a href=/people/2079 target=_blank>Sinis</a>' swift stream flows, watering the rich estate of <a href=/people/9130 target=_blank>Chonia</a>. There the unhappy men shall build a city like <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilios</a>, and shall vex the Maiden <a href=/people/3197 target=_blank>Laphria</a> Salpinx by slaying in the temple of the goddess the descendants of <a href=/people/1492 target=_blank>Xuthus</a> who formerly occupied the town. And her image shall shut its bloodless eyes, beholding the hateful destruction of <a about=https://topostext.org/place/375275RIon class=ethnic long=27.3 lat=38>Ionians</a> by <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a> and the kindred slaughter of the wild <a href=/people/10952 target=_blank>wolves</a>, when the minister son of the priestess dies and stains fir the altar with his dark blood. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v950 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=992>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:992'><b>&sect; 992</b>&nbsp;&nbsp;And others shall take to them the steep Tylesian hills and sea-washed <a href=/people/696 target=_blank>Linos</a>' hilly promontory, the territory of the <a href=/people/154 target=_blank>Amazon</a>, taking on them the yoke of a slave woman, whom, as servant of the brazen-mailed impetuous maiden, the wave shall carry wandering to an alien land: slave of that maiden whose eye, smitten as she breathes her last, shall bring doom to the ape-formed <a about=https://topostext.org/place/386215RAit class=demonym long=21.5 lat=38.6>Aetolian</a> pest, wounded by the bloody shaft. And the men of <a about=https://topostext.org/place/391171PCro class=place long=17.129 lat=39.081>Croton</a> shall sack the city of the <a href=/people/154 target=_blank>Amazon</a>, destroying the dauntless maiden <a href=/people/6066 target=_blank>Clete</a>, queen of the land that bears her name. But, ere that, many shall be laid low by her hand and bite the dust with their teeth, and not without labour shall the sons of Laureta sack the towers. Others, again, in Tereina, where <a href=/people/9906 target=_blank>Ocinarus</a> moistens the earth with his streams, bubbling with bright water, shall dwell, weary with bitter wandering. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v950 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1011>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1011'><b>&sect; 1011</b>&nbsp;&nbsp;And him, again, who won the second prize for beauty, and the <a href=/people/10951 target=_blank>boar</a> leader from the streams of <a about=https://topostext.org/place/384216WEve class=place long=21.552 lat=38.376>Lycormas</a>, the mighty son of <a href=/people/2818 target=_blank>Gorge</a>, on the one hand the Thracian blasts, falling on taut sails, shall carry to the sands of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>; on the other hand from <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> again the blast of the South wind shall carry them to the Argyrini and the glades of <a about=https://topostext.org/place/404194LKer class=place long=19.358 lat=40.396>Ceraunia</a>, shepherding the sea with grievous hurricane. And there they shall see a sorry wandering life, drinking the waters of Aias which springs from <a about=https://topostext.org/place/398213LLak class=place long=21.122 lat=39.684>Lacmon</a>. And neighbouring <a about=https://topostext.org/place/382223WKra class=place long=22.33 lat=38.17>Crathis</a> and the land of the Mylaces shall receive them in their bounds to dwell at <a about=https://topostext.org/place/449138UPol class=place long=13.8468 lat=44.8701>Polae</a>, the town of the <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a> whom the angry ruler of Aea and of <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Corinth</a>, the husband of Eiduia, sent to seek his daughter, tracking the keel that carried off the bride; they settled by the deep stream of Dizerus. Others wanderers shall dwell in the isle of <a about=https://topostext.org/place/359144IMel class=place long=14.44 lat=35.88>Melita</a>, near Othronus, round which <a href=/people/11018 target=_blank>Sicanian</a> wave laps beside <a about=https://topostext.org/place/367151LPac class=place long=15.131 lat=36.67>Pachynus</a>, grazing the steep promontory that in after time shall bear the name of the son of <a href=/people/531 target=_blank>Sisyphus</a> and the famous shrine of the maiden Longatis, where <a about=https://topostext.org/place/368151PHel class=place long=15.1073 lat=36.8424>Helorus</a> empties his chilly stream. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1000 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1033>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1033'><b>&sect; 1033</b>&nbsp;&nbsp;And in Othronus shall dwell the <a href=/people/10952 target=_blank>wolf</a> that slew his own grandfather, yearning afar for his ancestral stream of Coscynthus. Standing in the sea upon the rocks he shall declare to his countrymen the compact of the sailing army. For never will the ally of <a href=/people/194 target=_blank>Justice</a>, the <a about=https://topostext.org/place/377219PThe class=demonym long=21.8788 lat=37.7174>Telphusian</a> <a href=/people/10953 target=_blank>hound</a> that dwells by the streams of <a about=https://topostext.org/place/378218WLad class=place long=21.859 lat=37.682>Ladon</a>, allow the murderer to touch with his feet his fatherland, if he has not spent a great year in exile. Thence, fleeing from the terrible warfare of the <a href=/people/55 target=_blank>serpent</a>-shaped vermin, he shall sail to the city of <a about=https://topostext.org/place/405196UAma class=place long=19.6974 lat=40.3787>Amantia</a>, and coming nigh to the land of the <a about=https://topostext.org/place/405205RAti class=ethnic long=20.5 lat=40.5>Atintanians</a>, right beside Practis shall he dwell upon a steep hill, drinking the waters of <a about=https://topostext.org/place/403197RCha class=person long=19.7 lat=40.3>Chaonian</a> <a href=/people/6838 target=_blank>Polyanthes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1000 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1047>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1047'><b>&sect; 1047</b>&nbsp;&nbsp;And near the <a about=https://topostext.org/place/410155RAus class=demonym long=15.5 lat=41>Ausonian</a> false-tomb of <a href=/people/662 target=_blank>Calchas</a> one of the two brothers shall have an alien soil over his bones and to men sleeping in sheepskins on his tomb he shall declare in dreams his unerring message for all. And healer of diseases shall he be called by the <a about=https://topostext.org/place/414155RDau class=ethnic long=15.5 lat=41.4>Daunians</a>, when they wash the sick with the waters of Althaenus and invoke the son of <a href=/people/9338 target=_blank>Epius</a> to their aid, that he may come gracious unto men and flocks. There some time for the ambassadors of the <a about=https://topostext.org/place/386215RAit class=ethnic long=21.5 lat=38.6>Aetolians</a> shall dawn a sad and hateful day, when, coming to the land of the Salangi and the seats of the Angaesi, they shall ask the fields of their lord, the rich inheritance of goodly soil. Alive in a dark tomb within the recesses of a hollow cleft shall the savages hide them; and for them the Daunites shall set up a memorial of the dead without funeral rites, roofed with piled stones, giving them the land which they desired to get, — the land of the son of the dauntless <a href=/people/10951 target=_blank>boar</a> who devoured the brains of his enemy. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1050 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1067>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1067'><b>&sect; 1067</b>&nbsp;&nbsp;And the mariners of the descendants of <a href=/people/3108 target=_blank>Naubolus</a> shall come to <a href=/people/4018 target=_blank>Tecmessa</a>, where the hard horn of the <a about=https://topostext.org/place/387161PHip class=demonym long=16.1079 lat=38.6711>Hipponian</a> hill inclines to the sea of Lampeta. And in place of the bounds of <a about=https://topostext.org/place/384225UKri class=place long=22.469 lat=38.4712>Crisa</a> they shall till with <a href=/people/10961 target=_blank>ox</a>-drawn trailing ploughshare the <a about=https://topostext.org/place/391171PCro class=demonym long=17.129 lat=39.081>Crotonian</a> fields across the straits, longing for their native <a about=https://topostext.org/place/386225PLil class=place long=22.506 lat=38.626>Lilaea</a> and the plain of <a about=https://topostext.org/place/385228PAne class=place long=22.582 lat=38.478>Anemoreia</a> and <a about=https://topostext.org/place/385224PAmp class=place long=22.374 lat=38.53>Amphissa</a> and famous <a about=https://topostext.org/place/386229PAba class=place long=22.917 lat=38.587>Abae</a>. Poor Setaea! for thee waits an unhappy fate upon the rocks, where, most pitifully outstretched with brazen fetters on thy limbs, thou shalt die, because thou didst burn the fleet of thy masters: bewailing near <a about=https://topostext.org/place/382223WKra class=place long=22.33 lat=38.17>Crathis</a> thy body cast out and hung up for gory vultures to devour. And that cliff, looking on the sea, shall be called by thy name in memory of thy fate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1050 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1083>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1083'><b>&sect; 1083</b>&nbsp;&nbsp;And others again beside the <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a> streams of Membles and the Cerneatid isle shall sail forth and beyond the <a about=https://topostext.org/place/409115WTyr class=place long=11.5 lat=40.9>Tyrrhenian strait</a> occupy Lametian waters <a about=https://topostext.org/place/404160RLeu class=demonym long=16 lat=40.4>Leucanian</a> plains. And griefs and varied sufferings shall be the lot of these — bewailing their fate which allows them not to return home, on account of my haling to unhappy marriage. Nor shall they who after many days come gladly home kindle the flame of votive offering in gratitude to Cerdylas Larynthius. With such craft shall the hedgehog ruin their homes and mislead the housekeeping hens embittered against the cocks. Nor shall the ship-devouring hostile beacons abate their sorrow for his shattered scion, whom a new-dug habitation in the territory of <a about=https://topostext.org/place/394262PMet class=place long=26.1769 lat=39.3692>Methymna</a> shall hide. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1050 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1099>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1099'><b>&sect; 1099</b>&nbsp;&nbsp;One at the bath while he seeks for the difficult exits of the mesh about his neck, entangled in a net, shall search with blind hands the fringed stitching. And diving under the hot covering of the bath he shall sprinkle with his brains tripod and basin, when he is smitten in the midst of the skull with the well-sharpened axe. His piteous ghost shall wing its way to <a about=https://topostext.org/place/364225STai class=place long=22.4867 lat=36.4018>Taenarus</a>, having looked on the bitter housekeeping of the lioness. And I beside the bath shall lie on the ground, shattered by the <a href=/people/11016 target=_blank>Chalybdic</a> sword. For she shall cleave me — broad tendon and back — even as a woodcutter workman on the mountains cleaves trunk of pine or stem of oak — and, sand-<a href=/people/55 target=_blank>viper</a> as she is, will rend all my cold body in blood and set her foot on my neck and glut her laden soul of bitter bile, taking relentless vengeance on me in evil jealousy, as if I were a stolen bride and not a spear-won prize. And calling on my master and husband, who hears no more, I shall follow his track on wings of the wind. But a whelp, seeking vengeance for his father's blood, shall with his own hand plunge his sword in the entrails of the <a href=/people/55 target=_blank>viper</a>, with evil healing the evil pollution of his race. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1122>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1122'><b>&sect; 1122</b>&nbsp;&nbsp;And my husband, lord of a slave bride, shall be called <a href=/people/1 target=_blank>Zeus</a> by the crafty <a href=/people/4302 target=_blank>Spartiates</a>, obtaining highest honours from the children of <a href=/people/3112 target=_blank>Oebalus</a>. Nor shall my worship be nameless among men, nor fade hereafter in the darkness of oblivion. But the chiefs of the <a about=https://topostext.org/place/414155RDau class=ethnic long=15.5 lat=41.4>Daunians</a> shall build for me a shrine on the banks of the <a about=https://topostext.org/place/414160UElp class=place long=15.9973 lat=41.3997>Salpe</a>, and those also who inhabit the city of <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a>, beside the waters of the lake. And when girls wish to escape the yoke of maidens, refusing for bridegrooms men adorned with locks such as <a href=/people/40 target=_blank>Hector</a> wore, but with defect of form or reproach of birth, they will embrace my image with their arms, winning of mighty shield against marriage, having clothed them in the garb of the <a href=/people/1744 target=_blank>Erinyes</a> and dyed their faces with magic simples. By those staff-carrying women I shall long be called an immortal goddess. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1100 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1141>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1141'><b>&sect; 1141</b>&nbsp;&nbsp;And to many women robbed of their maiden daughters I shall bring sorrow hereafter. Long shall they bewail the leader who sinned against the laws of marriage, the <a href=/people/10975 target=_blank>pirate</a> of the <a about=https://topostext.org/place/350330RCyp class=demonym long=33 lat=35>Cyprian</a> goddess, when they shall send to the unkindly shrine their daughters reft of marriage. O <a about=https://topostext.org/place/386233PLar class=place long=23.288 lat=38.566>Larymna</a> and <a about=https://topostext.org/place/389225WSpe class=place long=22.467 lat=38.856>Spercheius</a> and <a about=https://topostext.org/place/388227WBoa class=place long=22.7072 lat=38.7843>Boagrius</a> and <a about=https://topostext.org/place/387231PKyn class=place long=23.0622 lat=38.7234>Cynus</a> and <a about=https://topostext.org/place/388227PSka class=place long=22.6569 lat=38.803>Scarpheia</a> and <a href=/people/10049 target=_blank>Phalorias</a> and city of <a about=https://topostext.org/place/387227PNar class=place long=22.7105 lat=38.7144>Naryx</a> and <a about=https://topostext.org/place/386231ROpu class=demonym long=23.04 lat=38.65>Locrian</a> streets of <a about=https://topostext.org/place/388227PThr class=place long=22.7113 lat=38.7759>Thronium</a> and Pyrnoean glades and all the house of Ileus son of <a href=/people/8554 target=_blank>Hodoedocus</a> — ye for the sake of my impious wedlock shall pay penance to the goddess <a href=/people/5022 target=_blank>Gygaea</a> <a href=/people/8738 target=_blank>Agrisa</a>, for the space of a thousand years fostering to old age your unwed daughters by the arbitrament of the lot. And they, aliens in an alien land, shall have without funeral rites a tomb, a sorry tomb in wave-washed sands, when <a href=/people/84 target=_blank>Hephaestus</a> burns with unfruitful plants the limbs of her that perishes from Traron's peaks, and tosses her ashes into the sea. And, to fill the place of those that shall die, others shall come by night to the fields of <a href=/people/2933 target=_blank>Sithon</a>'s daughter by secret paths and glancing fearfully, until they rush into the shrine of Ampheira as suppliants beseeching with their prayers <a href=/people/10321 target=_blank>Stheneia</a>. And they shall sweep and array the floor of the goddess and cleanse it with dew, having escaped the loveless anger of the citizens. For every man of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilios</a> shall keep watch for the maidens, with a stone in his hands, or a dark sword or hard <a href=/people/10955 target=_blank>bull</a>-slaying axe, or shaft from <a href=/people/8139 target=_blank>Phalacra</a>, eager to sate his hand athirst for blood. And the people shall not harm him who slays that race of reproach, but shall praise him and grave his name by ordinance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1150 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1174>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1174'><b>&sect; 1174</b>&nbsp;&nbsp;O mother, O unhappy mother! thy fame, too, shall not be unknown, but the maiden daughter of <a href=/people/153 target=_blank>Perseus</a>, Triform Brimo, shall make thee her attendant, terrifying with thy baying in the night all mortals who worship not with torches the images of the <a about=https://topostext.org/place/405257UZer class=demonym long=25.6534 lat=40.4887>Zerynthian</a> queen of <a about=https://topostext.org/place/408238WStr class=place long=23.8489 lat=40.7858>Strymon</a>, appeasing the goddess of <a about=https://topostext.org/place/394228PPhe class=place long=22.7539 lat=39.379>Pherae</a> with sacrifice. And the island spur of <a about=https://topostext.org/place/367151LPac class=place long=15.131 lat=36.67>Pachynus</a> shall hold thine awful cenotaph, piled by the hands of thy master, prompted by dreams when thou hast gotten the rites of death in front of the streams of <a about=https://topostext.org/place/368151PHel class=place long=15.1073 lat=36.8424>Helorus</a>. He shall pour on the shore offerings for thee, unhappy one, fearing the anger of the three-necked goddess, for that he shall hurl the first stone at thy stoning and begin the dark sacrifice to <a href=/people/10685 target=_blank>Hades</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1150 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1189>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1189'><b>&sect; 1189</b>&nbsp;&nbsp;And thou, O brother, most beloved of my heart, stay of our halls and of our whole fatherland, not in vain shalt thou redden the altar pedestal with blood of <a href=/people/10955 target=_blank>bulls</a>, giving full many a sacrificial offering to him who is lord of <a href=/people/3291 target=_blank>Ophion</a>'s throne. But he shall bring thee to the plain of his nativity, that land celebrated above others by the Greeks, where his mother, skilled in wrestling, having cast into <a href=/people/306 target=_blank>Tartarus</a> the former queen, delivered her of him in travail of secret birth, escaping the child-devouring unholy feast of her spouse; and the fattened not his belly with food, but swallowed instead the stone, wrapped in limb-fitting swaddling-clothes: savage <a href=/people/553 target=_blank>Centaur</a>, tomb of his own offspring. And in the <a about=https://topostext.org/place/000000GEly class=place long=23.73603 lat=37.96393>Islands of the Blest</a> thou shalt dwell, a mighty hero, defender of the arrows of pestilence, where the sown folk of <a href=/people/2134 target=_blank>Ogygus</a>, persuaded by the oracles of the Physician Lepsius Termintheus, shall lift thee from thy cairn in <a about=https://topostext.org/place/400263UOph class=place long=26.339 lat=40.027>Ophryneion</a> and bring thee to the tower of Calydnus and the land of the <a about=https://topostext.org/place/384233RBoi class=ethnic long=23.25 lat=38.35>Aonians</a> to be their saviour, when they are harassed by an armed host which seeks to sack their land and the shrine of <a href=/people/4776 target=_blank>Tenerus</a>. An the chiefs of the <a href=/people/4982 target=_blank>Ectenes</a> shall with libations celebrate thy glory in the highest, even as the immortals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1150 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1214>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1214'><b>&sect; 1214</b>&nbsp;&nbsp;And unto <a about=https://topostext.org/place/353252PKno class=place long=25.1631 lat=35.2978>Cnossus</a> and the halls of <a about=https://topostext.org/place/351249UGor class=place long=24.95 lat=35.0594>Gortyn</a> shall come the woe of me unhappy, and all the house of the rulers shall be overthrown. For not quietly shall the fisherman voyage, rowing his two-oared boat, to stir up <a href=/people/3999 target=_blank>Leucus</a>, guardian of the kingdom, and weaving hate with lying wiles. He shall spare neither the children of <a href=/people/5338 target=_blank>Meda</a> the wedded wife, in the rage of his mind, nor the daughter Cleisithera, whom her father shall betroth unhappily to the <a href=/people/55 target=_blank>serpent</a> whom he himself has reared. All will he slay with impious hands in the temple, maltreated and abused in the Trench of Oncaea. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1226>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1226'><b>&sect; 1226</b>&nbsp;&nbsp;And the fame of the race of my ancestors shall hereafter be exalted to the highest by their descendants, who shall with their spears win the foremost crown of glory, obtaining the sceptre and monarchy of earth and sea. Nor in the darkness of oblivion, my unhappy fatherland, shalt thou hide thy glory faded. Such a pair of <a href=/people/10960 target=_blank>lion</a> whelps shall a certain kinsman of mine leave, a breed eminent in strength: the son of Castnia called also Cheiras, — in counsel best and not to be despised in battle. He shall first come to occupy <a about=https://topostext.org/place/405229URha class=place long=22.942 lat=40.502>Rhaecelus</a> beside the steep crag of <a about=https://topostext.org/place/408233LKis class=place long=23.125 lat=40.58>Cissus</a> and the horned women of <a href=/people/4181 target=_blank>Laphystius</a>. And from <a about=https://topostext.org/place/410220RAlm class=place long=22.01 lat=40.97>Almopia</a> in his wandering <a about=https://topostext.org/place/430105RTyr class=place long=10.5 lat=43>Tyrsenia</a> shall receive him and Lingeus bubbling forth its stream of hot waters, and <a about=https://topostext.org/place/437104UPis class=place long=10.3992 lat=43.7105>Pisa</a> and the glades of <a about=https://topostext.org/place/420121UAgy class=place long=12.0994 lat=41.9987>Agylla</a>, rich in <a href=/people/10954 target=_blank>sheep</a>. And with him shall an erstwhile foe join a friendly army, winning him by oaths and prayers and clasped knees: even the Dwarf who in his roaming searched out every recess of sea and earth; and therewithal the two sons of the King of the <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>, whose spear one day shall be bent by the Housekeeping God of Wine, who shall fetter his limbs with twisted tendrils; even <a href=/people/2790 target=_blank>Tarchon</a> and <a href=/people/5304 target=_blank>Tyrsenus</a>, tawny <a href=/people/10952 target=_blank>wolves</a>, sprung from the blood of <a href=/people/4 target=_blank>Heracles</a>. There he shall find full of eatable a table which is afterwards devoured by his attendants and shall be reminded of an ancient prophecy. And he shall found in places of the Boreigonoi a settled land beyond the <a about=https://topostext.org/place/417129RLat class=ethnic long=12.9 lat=41.7>Latins</a> and <a about=https://topostext.org/place/414155RDau class=ethnic long=15.5 lat=41.4>Daunians</a> — even thirty towers, when he has numbered the offspring of the dark <a href=/people/10951 target=_blank>sow</a>, which he shall carry in his ship from the hills of <a about=https://topostext.org/place/397268LIda class=place long=26.8423 lat=39.6922>Ida</a> and places of <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a>, which shall rear such number of young at birth. And in one city he shall set up an image of that <a href=/people/10951 target=_blank>sow</a> and her suckling young, figuring them in bronze. And he shall build a shrine to Myndia <a href=/people/10900 target=_blank>Pallenis</a> and establish therein the images of his fathers' gods. He shall put aside his wife and children and all his rich possessions and honour these first, together with his aged sire, wrapping them in his robes, what time the spearmen <a href=/people/10953 target=_blank>hounds</a>, having devoured all the goods of his country together by casting of lots, to him alone shall give the choice to take and carry away what gift from his house he will. Wherefore being adjudged even by his foes to be most pious, he shall found a fatherland of highest renown in battle, a tower blest in the children of after days, by the tall glades of <a about=https://topostext.org/place/412131LKir class=place long=13.0827 lat=41.2301>Circaeon</a> and the great <a href=/people/320 target=_blank>Aeetes</a> haven, famous anchorage of the <a href=/people/352 target=_blank>Argo</a>, and the waters of the <a href=/people/1401 target=_blank>Marsionid</a> lake of Phorce and the Titonian stream of the cleft that sinks to unseen depths beneath the earth and the hill of Zosterius, where is the grim dwelling of the maiden <a href=/people/373 target=_blank>Sibylla</a>, roofed by the cavernous pit that shelters her. So many are the woes, hard to bear, which they shall suffer who are to lay waste my fatherland. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1200 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1282>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1282'><b>&sect; 1282</b>&nbsp;&nbsp;For what has the unhappy mother of <a href=/people/254 target=_blank>Prometheus</a> in common with the nurse of <a href=/people/1279 target=_blank>Sarpedon</a>? Whom the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>sea of Helle</a> and the <a href=/people/11008 target=_blank>Clashing Rocks</a> and <a about=https://topostext.org/place/416281USal class=place long=28.0911 lat=41.6372>Salmydessus</a> and the inhospitable wave, neighbour to the <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a>, sunder with strong cliffs and <a about=https://topostext.org/place/473393WTan class=place long=39.336 lat=47.268>Tanais</a> divides with his streams — <a about=https://topostext.org/place/473393WTan class=place long=39.336 lat=47.268>Tanais</a> who, undefiled, cleaves the middle of the lake which is most dear to <a about=https://topostext.org/place/460370WMai class=demonym long=37 lat=46>Maeotian</a> men who mourn their chilblained feet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1250 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1291>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1291'><b>&sect; 1291</b>&nbsp;&nbsp;My curse, first upon the Carnite sailor <a href=/people/10953 target=_blank>hounds</a>! the merchant <a href=/people/10952 target=_blank>wolves</a> who carried off from <a about=https://topostext.org/place/375227ULer class=place long=22.7182 lat=37.5511>Lerne</a> the ox-eyed girl, the <a href=/people/10955 target=_blank>bull</a>-maiden, to bring to the lord of <a about=https://topostext.org/place/298313PMem class=place long=31.255 lat=29.849>Memphis</a> a fatal bride, and raised the beacon of hatred for the two continents. For afterward the <a href=/people/414 target=_blank>Curetes</a>, <a about=https://topostext.org/place/352248LIda class=demonym long=24.7708 lat=35.2263>Idaean</a> <a href=/people/10951 target=_blank>boars</a>, seeking to avenge the rape by their heavy deed of violence, carried off captive in a <a href=/people/10955 target=_blank>bull</a>-formed vessel the <a about=https://topostext.org/place/335353USar class=demonym long=35.295 lat=33.4643>Saraptian</a> heifer to the <a about=https://topostext.org/place/352254CAig class=demonym long=25.4452 lat=35.1627>Dictaean</a> palace to be the bride of Asteros, the lord of <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>. Nor were they contended when they had taken like for like; but sent <a href=/people/361 target=_blank>Teucer</a> and his Draucian father <a href=/people/5242 target=_blank>Scamandrus</a> a raping army to the dwelling-place of the <a href=/people/8978 target=_blank>Bebryces</a> to war with <a href=/people/10966 target=_blank>mice</a>; of the seed of those men <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a> begat the authors of my race, when he married the noble <a about=https://topostext.org/place/352252IKre class=demonym long=25.1836 lat=35.2052>Cretan</a> maiden Arisba. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1250 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1309>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1309'><b>&sect; 1309</b>&nbsp;&nbsp;And second they sent the Atracian <a href=/people/10952 target=_blank>wolves</a> to steal for their leader of the single sandal the fleece that was protected by the watching dragon's ward. He came to Libyan Cytaea and put to sleep with simples that four-nostrilled <a href=/people/55 target=_blank>snake</a>, and handled the curved plough of the fire-breathing <a href=/people/10955 target=_blank>bulls</a>, and had his own body cut to pieces in a caldron and, not joyfully, seized the hide of the ram. But the self-invited <a href=/people/10957 target=_blank>crow</a> he carried off — her who slew her brother and destroyed her children — and set her as ballast in the chattering jay which uttered a mortal voice derived from <a about=https://topostext.org/place/403197RCha class=demonym long=19.7 lat=40.3>Chaonian</a> abode and well knew how to speed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1322>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1322'><b>&sect; 1322</b>&nbsp;&nbsp;And again he that took up from the rock his father's shoes and sword-belt and sword, the son of Phemius, on whose sad grave — whereto he was hurled without funeral rites — steep <a about=https://topostext.org/place/389246PSky class=place long=24.568 lat=38.907>Scyrus</a> long keeps watch beneath its hissing precipices — he went with the wild beast, the Initiate, who drew the milky breast of the hostile goddess <a href=/people/8454 target=_blank>Tropaea</a>, and stole the belt and roused a double feud, taking away the girdle and from <a about=https://topostext.org/place/412370UThe class=place long=36.967 lat=41.215>Themiscyra</a> carrying off the archer <a href=/people/3222 target=_blank>Orthosia</a>; and her sisters, the maidens of Neptunis, left <a href=/people/1556 target=_blank>Eris</a>, Lagmus and Telamus and the stream of <a about=https://topostext.org/place/412369WThe class=place long=36.942 lat=41.194>Thermodon</a> and the hill of Actaeum to seek vengeance and relentless rape. Across the dark <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Ister</a> they drove their <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> mares, shouting their battle-cry against the Greeks and the descendants of <a href=/people/298 target=_blank>Erechtheus</a>. And they sacked all <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Acte</a> with the spear and laid waste with fire the fields of Mopsopia. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1341>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1341'><b>&sect; 1341</b>&nbsp;&nbsp;And my ancestor laid waste the plain of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> and the country of the <a about=https://topostext.org/place/405217REor class=ethnic long=21.7 lat=40.5>Eordi</a> and the land of the Galadraei, and fixed his bounds beside the waters of <a about=https://topostext.org/place/399227WPen class=place long=22.7094 lat=39.9298>Peneius</a>, fettering them with a stern yoke laid upon their necks, in battle a young warrior, most eminent of his race. And she in return for these things sent her champion, the driver of the <a href=/people/10961 target=_blank>oxen</a>, him of the six ships, robed in a hide, and laid in ruins with the spade their steep hill; and him shall Gorgas, changing her mind, consecrate in the estate of the gods, even she that was the prime mover in his woes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1300 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1351>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1351'><b>&sect; 1351</b>&nbsp;&nbsp;And in turn the falcons set forth from <a about=https://topostext.org/place/383281LTmo class=place long=28.1016 lat=38.3237>Tmolus</a> and Cimpsus and the gold-producing streams of <a about=https://topostext.org/place/385281WPac class=place long=28.0628 lat=38.4804>Pactolus</a> and the waters of the lake where the spouse of <a href=/people/233 target=_blank>Typhon</a> couches in the hidden recess of her dread bed, and rioted into <a about=https://topostext.org/place/410155RAus class=demonym long=15.5 lat=41>Ausonian</a> <a about=https://topostext.org/place/420121UAgy class=place long=12.0994 lat=41.9987>Agylla</a> and in battles of the spear joined terrible wrestling with the <a about=https://topostext.org/place/443083RLig class=ethnic long=8.3 lat=44.3>Ligurians</a> and them who drew the root of their race from the blood of the <a about=https://topostext.org/place/402238LSit class=demonym long=23.8 lat=40.15>Sithonian</a> giants. And they took <a about=https://topostext.org/place/437104UPis class=place long=10.3992 lat=43.7105>Pisa</a> and subdued all the spear-won land that stands near the <a href=/people/9930 target=_blank>Umbrians</a> and the high cliffs of the Salpians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1362>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1362'><b>&sect; 1362</b>&nbsp;&nbsp;And, last, the fire-brand wakens the ancient strife, kindling anew with flame the ancient fire that already slept since she saw the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgians</a> dipping alien pitchers in the waters of <a about=https://topostext.org/place/401285WRhy class=place long=28.542 lat=40.1357>Rhyndacus</a>. But the other in turn in a frenzy of revenge shall repay the injury threefold and fourfold, laying waste the shore of the land across the sea. First there shall come a <a href=/people/1 target=_blank>Zeus</a> who bears the name of <a href=/people/1 target=_blank>Zeus</a> Lapersios; who shall come with swooping thunderbolt to burn all the habitations of the foe. With him shall I die, and when I flit among the dead I shall hear these further things which I am about to utter. And, second, the son of him that was slain in a net, like a dumb fish, shall lay waste with fire the alien land, coming, at the bidding of the oracles of the Physician, with a host of many tongues. And third, the son of the woodcutter king, beguiling the potter maiden of <a about=https://topostext.org/place/374273SDid class=place long=27.2561 lat=37.3848>Branchidae</a> to give him in his need earth mixed with water, wherewith to set on a tablet his finger-seal, shall found the mountain monarchy of the <a href=/people/8172 target=_blank>Phtheires</a>, when he has destroyed the host of the <a about=https://topostext.org/place/370287RKar class=ethnic long=28.7 lat=37.01>Carians</a> — the first to fight for hire — what time his wanton daughter shall abuse her nakedness and say in mockery of marriage that she will conclude her nuptials in the brothels of barbarians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1388>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1388'><b>&sect; 1388</b>&nbsp;&nbsp;And then, again, the fourth, of the seed of <a href=/people/1547 target=_blank>Dymas</a>, the <a href=/people/680 target=_blank>Codrus</a>-ancients of <a about=https://topostext.org/place/398213LLak class=place long=21.122 lat=39.684>Lacmon</a> and <a href=/people/9226 target=_blank>Cyrita</a> — who shall dwell in Thigros and the hill of Satnion and the extremity of the peninsula of him who of old was utterly hated by the goddess <a href=/people/9226 target=_blank>Cyrita</a>: the father of the crafty vixen who by daily traffic assuaged the raging hunger of her sire — even <a href=/people/2490 target=_blank>Aethon</a>, plougher of alien shires. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1350 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1397>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1397'><b>&sect; 1397</b>&nbsp;&nbsp;And the <a about=https://topostext.org/place/400310RPhr class=person long=31 lat=40>Phrygian</a>, avenging the blood of his brothers, will sack again the land that nursed the ruler of the dead, who in loveless wise pronounces relentless judgement on the departed. He shall spoil the ears of the <a href=/people/10962 target=_blank>ass</a>, lobes and all, and deck his temples, fashioning a terror for the ravenous blood-suckers. By him all the land of <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Phlegra</a> shall be enslaved and the ridge of Thrambus and spur of Titon by the sea and the plains of the <a about=https://topostext.org/place/402238LSit class=ethnic long=23.8 lat=40.15>Sithonians</a> and the fields of <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Pallene</a>, which the <a href=/people/10961 target=_blank>ox</a>-horned Brychon, who served the giants, fattens with his waters. And many woes, on this side and that alternately, shall be taken as an offering by Candaeus or Mamertus — or what name should be given to him who banquets in gory battles? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1412>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1412'><b>&sect; 1412</b>&nbsp;&nbsp;Yet the mother of <a href=/people/2139 target=_blank>Epimetheus</a> shall not yield but in return for all shall send a single giant of the seed of <a href=/people/153 target=_blank>Perseus</a>, who shall walk over the sea on foot and sail over the earth, smiting the dry land with the oar. And the shrines of <a href=/people/3197 target=_blank>Laphria</a> Mamerse shall be consumed with fire together with their defence of wooden walls, and shall blame for their hurt the prater of oracles, the false prophesying lackey of <a href=/people/10685 target=_blank>Pluto</a>. By his unapproachable host every fruit-bearing oak and wild tree flourishing on the mountain shall be devoured, stripping off its double covering of bark, and every flowing torrent shall be dried up, as they slake with open mouth their black thirst. And they shall raise overhead clouds of arrows hurtling from afar, whose shadow shall obscure the sun, like a <a about=https://topostext.org/place/454367WBos class=demonym long=36.66 lat=45.36>Cimmerian</a> darkness dimming the sun. And blooming for a brief space, as a <a about=https://topostext.org/place/386231ROpu class=demonym long=23.04 lat=38.65>Locrian</a> rose, and burning all things like withered ear of corn, he shall in his turn taste of homeward flight, glancing fearfully towards the oaken bulwark hard at hand, even as a girl in the dusky twilight frightened by a brazen sword. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1434>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1434'><b>&sect; 1434</b>&nbsp;&nbsp;And many contests and slaughters in between shall solve the struggles of men, contending for dread empire, now on land, now on the plough-turned backs of earth, until a tawny <a href=/people/10960 target=_blank>lion</a> — sprung from <a href=/people/255 target=_blank>Aeacus</a> and from <a href=/people/650 target=_blank>Dardanus</a>, <a about=https://topostext.org/place/394204RThp class=demonym long=20.4 lat=39.4>Thesprotian</a> at once and <a about=https://topostext.org/place/407228PCha class=demonym long=22.7812 lat=40.7042>Chalastraean</a> — shall lull to rest the grievous tumult, and, overturning on its face all the house of his kindred, shall compel the chiefs of the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> to cower and fawn upon the <a href=/people/10952 target=_blank>wolf</a>-leader of Galadra, and to hand over the sceptre of the ancient monarchy. With him, after six generations, my kinsman, an unique wrestler, shall join battle by sea and land and come to terms, and shall be celebrated among his friends as most excellent, when he has received the first fruits of the spear-won spoils. Why, unhappy, do I call to the unheeding rocks, to the deaf wave, and to the awful glades, twanging the idle noise of my lips? For Lepsieus has taken credit from me, daubing with rumour of falsity my words and the true prophetic wisdom of my oracles, for that he was robbed of the bridal which he sought to win. Yet will he make my oracles true. And in sorrow shall many a one know it, when there is no means any more to help my fatherland and shall praise the frenzied swallow. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -168 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1400 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=1461>
+                            <p id='urn:cts:greekLit:tlg0341.tlg002:1461'><b>&sect; 1461</b>&nbsp;&nbsp;So much she spake, and then sped back and went within her prison. But in her heart she wailed her latest <a href=/people/605 target=_blank>Siren</a> song — like some Mimallon of <a about=https://topostext.org/place/380272SKla class=person long=27.193 lat=38.0047>Claros</a> or babbler of <a href=/people/9776 target=_blank>Melancraera</a>, <a href=/people/8549 target=_blank>Neso</a>'s daughter, or <a about=https://topostext.org/place/384232LPhi class=demonym long=23.185 lat=38.3719>Phician</a> monster [Sphinx], mouthing darkly her perplexed words. And I came, O King, to announce to thee this the crooked speech of the maiden prophetess, since thou didst appoint me to be the warder of her stony dwelling and didst charge me to come as a messenger to report all to thee and truly recount her words. But may God turn her prophecies to fairer issue — even he that cares for thy throne, preserving the ancient inheritance of the <a href=/people/8978 target=_blank>Bebryces</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=https://el.wikisource.org/wiki/%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%B1_(%CE%9B%CF%85%CE%BA%CF%8C%CF%86%CF%81%CF%89%CE%BD)#v1450 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=128', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas128";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=128';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

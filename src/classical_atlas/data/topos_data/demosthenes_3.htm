@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Demosthenes 3, Olynthiac 3' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Olynthiac 3, Demosthenes, The Public Orations of Demosthenes (speeches 1-19), translated by Arthur Wallace Pickard-Cambridge (London 1912), digitized by Project Gutenberg and also available on the Internet Archive.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-349' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -349' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/403' content='urn:cts:greekLit:tlg0014.tlg003' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063465' content='Demosthenes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n50019718' content='Arthur Wallace Pickard-Cambridge (1873-1952)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.gutenberg.org' /><h2>Demosthenes 3, Olynthiac 3</h2>Olynthiac 3, Demosthenes, The Public Orations of Demosthenes (speeches 1-19), translated by Arthur Wallace Pickard-Cambridge (London 1912), digitized by Project Gutenberg and also available on the Internet Archive. This text has 28 tagged references to 11 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg003'>urn:cts:greekLit:tlg0014.tlg003</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q29788014'>Q29788014</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:1'><b>&sect; 1</b>&nbsp;&nbsp;Very different reflections suggest themselves to my mind, I men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, when I turn my eyes to our real situation, and when I think of the speeches that I hear. For I observe that the speeches are all concerned with the taking of vengeance upon <a href=/people/30 target=_blank>Philip</a>; whereas in reality matters have gone so far, that we have to take care that we are not ourselves the first to suffer: so that those who speak of vengeance are actually, as it seems to me, suggesting to you a false conception of the situation which you are discussing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:2'><b>&sect; 2</b>&nbsp;&nbsp;That there was a time when the city could both keep her own possessions in safety, and punish <a href=/people/30 target=_blank>Philip</a>, I am very well aware. For it was not long ago, but within my own lifetime, that both these things were so. But I am convinced that it is now quite enough for us as a first step to make sure of the preservation of our allies. If this is safely secured, we shall then be able to consider upon whom vengeance is to fall, and in what way. But until the first step is properly conceived, I consider it idle to say anything whatever about the last. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:3'><b>&sect; 3</b>&nbsp;&nbsp;If ever the most anxious deliberation was required, it is required in the present crisis; and my greatest difficulty is not to know what is the proper advice to give you in regard to the situation: I am at a loss rather to know, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, in what manner I should address you in giving it. For I am convinced by what I have heard with my own ears in this place that, for the most part, the objects of our policy have slipped from our grasp, not because we do not understand what our duty is, but because we will not do it; and I ask you to suffer me, if I speak without reserve, and to consider only whether I speak truly, and with this object in view — that the future may be better than the past. For you see that it is because certain speakers make your gratification the aim of their addresses, that things have gone on getting worse, till at last the extremity has been reached. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:4'><b>&sect; 4</b>&nbsp;&nbsp;I think it necessary, first, to remind you of a few of the events which have taken place. You remember, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that two or three years ago the news came that <a href=/people/30 target=_blank>Philip</a> was in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, besieging <a about=https://topostext.org/place/410277UHer class=place long=27.7842 lat=41.0156>Heraeon Teichos</a>. That was in the month of November. Amidst all the discussion and commotion which took place in this Assembly, you passed a resolution that forty warships should be launched, that men under forty-five years of age should embark in person, and that we should pay a war-tax of 60 talents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:5'><b>&sect; 5</b>&nbsp;&nbsp;That year came to an end, and there followed July, August, September. In the latter month, after the Mysteries, and with reluctance, you dispatched <a href=/people/472 target=_blank>Charidemus</a> with ten ships, carrying no soldiers, and 5 talents of silver. For so soon as news had come that <a href=/people/30 target=_blank>Philip</a> was sick or dead — both reports were brought — you dismissed the armament, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, thinking that there was no longer any occasion for the expedition. But it was the very occasion; for had we then gone to the scene of action with the same enthusiasm which marked our resolution to do so, <a href=/people/30 target=_blank>Philip</a> would not have been preserved to trouble us today. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:6'><b>&sect; 6</b>&nbsp;&nbsp;What was done then cannot be altered. But now a critical moment in another campaign has arrived; and it is in view of this, and to prevent you from falling into the same error, that I have recalled these facts. How then shall we use this opportunity, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>? For unless you will go to the rescue 'with might and main to the utmost of your power', mark how in every respect you will have served <a href=/people/30 target=_blank>Philip</a>'s interest by your conduct of the war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:7'><b>&sect; 7</b>&nbsp;&nbsp;At the outset the <a about=https://topostext.org/place/403234POly class=ethnic long=23.354 lat=40.2963>Olynthians</a> possessed considerable strength, and such was the position of affairs, that neither did <a href=/people/30 target=_blank>Philip</a> feel safe against them, nor they against <a href=/people/30 target=_blank>Philip</a>. We made peace with them, and they with us. It was as it were a stumbling-block in <a href=/people/30 target=_blank>Philip</a>'s path, and an annoyance to him, that a great city which had made a compact with us should sit watching for any opportunity he might offer. We thought that we ought to excite them to war with him by every means; and now this much-talked-of event has come to pass — by what means, I need not relate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:8'><b>&sect; 8</b>&nbsp;&nbsp;What course then is open to us, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, but to go to their aid resolutely and eagerly? I can see none. Apart from the shame in which we should be involved, if we let anything be lost through our negligence, I can see, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that the subsequent prospect would be alarming in no small degree, when the attitude of the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a> towards us is what it is, when the funds of the <a about=https://topostext.org/place/386227RPho class=ethnic long=22.7 lat=38.6>Phocians</a> are exhausted, and when there is no one to prevent <a href=/people/30 target=_blank>Philip</a>, so soon as he has made himself master of all that at present occupies him, from bringing his energies to bear upon the situation further south. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:9'><b>&sect; 9</b>&nbsp;&nbsp;But if any of you is putting off until then his determination to do his duty, he must be desirous of seeing the terrors of war close at hand, when he need only hear of them at a distance, and of seeking helpers for himself, when now he can give help to others. For that this is what it must come to, if we sacrifice the present opportunity, we must all, I think, be fairly well aware. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:10'><b>&sect; 10</b>&nbsp;&nbsp;'But,' some one may say, 'we have all made up our minds that we must go to their aid, and we will go. Only tell us how we are to do it.' Now do not be surprised, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, if I give an answer which will be astonishing to most of you. You must appoint a Legislative Commission. But when the commissioners meet, you must not enact a single law — you have laws enough — you must cancel the laws which, in view of present circumstances, are injurious to you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:11'><b>&sect; 11</b>&nbsp;&nbsp;I mean the laws which deal with the Festival Fund — to put it quite plainly — and some of those which deal with military service: for the former distribute your funds as festival-money to those who remain at home; while the latter give immunity to malingerers, and thereby also take the heart out of those who want to do their duty. When you have cancelled these laws, and made the path safe for one who would give the best advice, then you can look for some one to propose what you all know to be expedient. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:12'><b>&sect; 12</b>&nbsp;&nbsp;But until you have done this, you must not expect to find a man who will be glad to advise you for the best, and be ruined by you for his pains; for you will find no one, particularly when the only result will be that some unjust punishment will be inflicted on the proposer or mover of such measures, and that instead of helping matters at all, he will only have made it even more dangerous in future than it is at present to give you the best advice. Aye, and you should require the repeal of these laws, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, from the very persons who proposed them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:13'><b>&sect; 13</b>&nbsp;&nbsp;It is not fair that those who originally proposed them should enjoy the popularity which was fraught with such mischief to the whole State, and that the unpopularity, which would lead to an improvement in the condition of us all, should be visited to his cost upon one who now advises you for the best. Until you have thus prepared the way, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, you must entertain no expectation whatever that any one will be influential enough here to transgress these laws with impunity, or senseless enough to fling himself to certain ruin. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:14'><b>&sect; 14</b>&nbsp;&nbsp;At the same time, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, you must not fail to realize this further point. No resolution is worth anything, without the willingness to perform at least what you have resolved, and that heartily. For if decrees by themselves could either compel you to do what you ought, or could realize their several objects unaided, you would not be decreeing many things and performing few — nay, none — of the things that you decree, nor would <a href=/people/30 target=_blank>Philip</a> have insulted you so long. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:15'><b>&sect; 15</b>&nbsp;&nbsp;If decrees could have done it, he would have paid the penalty long ago. But it is not so. Actions come later than speeches and voting in order of procedure, but in effectiveness they are before either and stronger than either. It is action that is still needed; all else you already have. For you have those among you, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, who can tell you what your duty is; and no one is quicker than you are to understand the speaker's bidding. Aye, and you will be able to carry it out even now, if you act aright. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:16'><b>&sect; 16</b>&nbsp;&nbsp;What time, what opportunity, do you look for, better than the present? When, if not now, will you do your duty? Has not the man seized every position from us already? If he becomes master of this country too, will not our fate be the most shameful in the world? And the men whom we promised to be ready to save, if they went to war — are they not now at war? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:17'><b>&sect; 17</b>&nbsp;&nbsp;Is he not our enemy? Are not our possessions in his hands? Is he not a barbarian? Is he not anything that you choose to call him? In God's name, when we have let everything go, when we have all but put everything into his hands, shall we then inquire at large who is responsible for it all? That we shall never admit our own responsibility, I am perfectly sure. Just so amid the perils of war, none of those who have run away accuses himself; he accuses his general, his neighbour — any one but himself; and yet, I suppose, all who have run away have helped to cause the defeat. He who now blames the rest might have stood fast; and if every one had done so, the victory would have been theirs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:18'><b>&sect; 18</b>&nbsp;&nbsp;And so now, if a particular speaker's advice is not the best, let another rise and make a proposal, instead of blaming him; and if some other has better advice to give, carry it out, and good fortune be with you. What? Is the advice disagreeable? That is no longer the speaker's fault — unless, of course, he leaves out the prayer that you expect of him. There is no difficulty in the prayer, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>; a man need only compress all his desires into a short sentence. But to make his choice, when the question for discussion is one of practical policy, is by no means equally easy. Then a man is bound to choose what is best, instead of what is pleasant, if both are not possible at once. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:19'><b>&sect; 19</b>&nbsp;&nbsp;But suppose that some one is able, without touching the Festival Fund, to suggest other sources of supply for military purposes — is not he the better adviser? Certainly, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a> — if such a thing is possible. But I should be surprised if it ever has happened or ever should happen to any one to find, after spending what he has upon wrong objects, that what he has not is wealth enough to enable him to effect right ones. Such arguments as these find, I think, their great support in each man's personal desire, and, for that reason, nothing is easier than to deceive oneself; what a man desires, he actually fancies to be true. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:20'><b>&sect; 20</b>&nbsp;&nbsp;But the reality often follows no such principle. Consider the matter, therefore, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, after this fashion; consider in what way our objects can be realized under the circumstances, and in what way you will be able to make the expedition and to receive your pay. Surely it is not like sober or high-minded men to submit light-heartedly to the reproach which must follow upon any shortcomings in the operations of the war through want of funds — to seize your weapons and march against <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a> and <a about=https://topostext.org/place/380233PMeg class=ethnic long=23.34285 lat=37.997>Megarians</a>, and then to allow <a href=/people/30 target=_blank>Philip</a> to enslave Hellenic cities, because you cannot find rations for your troops. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:21'><b>&sect; 21</b>&nbsp;&nbsp;These words do not spring from a wanton determination to court the ill-will of any party among you. I am neither so foolish nor so unfortunate as to desire unpopularity when I do not believe that I am doing any good. But a loyal citizen ought, in my judgement, to care more for the safety of his country's fortunes than for the popularity of his utterances. Such, I have heard, and perhaps you have heard it also, was the principle which the orators of our forefather's time habitually followed in public life — those orators who are praised by all who rise to address you, though they are far from imitating them — the great <a href=/people/192 target=_blank>Aristides</a>, and <a href=/people/115 target=_blank>Nicias</a>, and my own namesake, and <a href=/people/92 target=_blank>Pericles</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:22'><b>&sect; 22</b>&nbsp;&nbsp;But ever since these speakers have appeared who are always asking you, 'what would you like?' 'what may I propose for you?' 'what can I do to please you?' the interests of the city have been wantonly given away for the sake of the pleasure and gratification of the moment; and we see the consequences — the fortunes of the speakers prosper, while your own are in a shameful plight. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:23'><b>&sect; 23</b>&nbsp;&nbsp;And yet consider, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, the main characteristics of the achievements of your forefathers' time, and those of your own. The description will be brief and familiar to you; for you need not have recourse to the history of others, when your own will furnish examples, by following which you may achieve prosperity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:24'><b>&sect; 24</b>&nbsp;&nbsp;Our forefathers, who were not courted and caressed by their politicians as you are by these persons today, were leaders of the Hellenes, with their goodwill, for forty-five years; they brought up into the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a> more than 10,000 talents; the king who then ruled <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a> obeyed them as a foreigner ought to obey a Hellenic people; serving in person, they set up many glorious trophies for victories by land and sea; and alone of all mankind they left behind them, as the crown of their exploits, a fame that is beyond the reach of envy. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:25'><b>&sect; 25</b>&nbsp;&nbsp;Such was the part they played in the Hellenic world: and now contemplate the manner of men they were in the city, both in public and in private life. As public men, they gave us buildings and objects of such beauty and grandeur, in the holy places they built and the offerings which they dedicated in them, that no room has been left for any of those that come after to surpass them: while in private life they were so modest, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:26'><b>&sect; 26</b>&nbsp;&nbsp;so intensely loyal to the spirit of the constitution, that if any one actually knows what the house of <a href=/people/192 target=_blank>Aristides</a>, or <a href=/people/260 target=_blank>Miltiades</a>, or any other of the glorious men of that day, is like, he can see that it is no more imposing than those of their neighbours. For it was not to win a fortune that they undertook affairs of State; but each thought it his duty to add to the common weal. And thus, acting in a spirit of good faith towards the Hellenes, of piety towards the gods, and of equality towards one another, they naturally attained great prosperity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:27'><b>&sect; 27</b>&nbsp;&nbsp;Such was the national life of those times, when those whom I have mentioned were the foremost men in the State. How do matters stand today, thanks to these worthy persons? Is there any likeness, any resemblance, to old times? Thanks to them (and though I might say much, I pass over all but this), when we had the field, as you see, completely open to us — when the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> had been ruined, and the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a> had their hands full, and no other power could seriously dispute the supremacy with us on the field of battle — when we could have retained our own possessions in safety, and have stood as umpires of the rights of others — we have been deprived of our own territory; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:28'><b>&sect; 28</b>&nbsp;&nbsp;we have spent more than 1,000 talents to no good purpose; the allies whom we had gained in the war, these persons have lost in time of peace; and we have trained <a href=/people/30 target=_blank>Philip</a> to be the powerful enemy to us that he is. Let any one rise and tell me how <a href=/people/30 target=_blank>Philip</a> has grown so strong, if we ourselves are not the source of his strength. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:29'><b>&sect; 29</b>&nbsp;&nbsp;'But, my good Sir,' you say, 'if we are badly off in these respects, we are at any rate better off at home.' And where is the proof of this? Is it in the whitewashing of the battlements, the mending of the roads, the fountains, and all such trumperies? Look then at the men whose policy gives you these things. Some of them who were poor have become rich; others, who were unknown to fame, have risen to honour; some of them have provided themselves with private houses more imposing than our public buildings; and the lower the fortunes of the city have fallen, the higher theirs have risen. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:30'><b>&sect; 30</b>&nbsp;&nbsp;What is the cause of all these things? Why is it that all was well then, and all is amiss today? It is because then the people itself dared to act and to serve in the army; and so the people was master of its politicians; all patronage was in its own hands; any separate individual was content to receive from the people his share of honour or office or other emolument. The reverse is now the case. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:31'><b>&sect; 31</b>&nbsp;&nbsp;All patronage is in the hands of the politicians, while you, the people, emasculated, stripped of money and allies, have been reduced to the position of servile supernumeraries, content if they give you distributions of festival-money, or organize a procession at the <a href=/people/12203 target=_blank>Boedromia</a>; and to crown all this bravery, you are expected also to thank them for giving you what is your own. They pen you up closely in the city; they entice you to these delights; they tame you till you come to their hand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:32'><b>&sect; 32</b>&nbsp;&nbsp;But a high and generous spirit can never, I believe, be acquired by men whose actions are mean and poor; for such as a man's practice is, such must his spirit be. And in all solemnity I should not be surprised if I suffered greater harm at your hands for telling you the things that I have told you, than the men who have brought them to pass. Even freedom of speech is not possible on all subjects in this place, and I wonder that it has been granted me today. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:33'><b>&sect; 33</b>&nbsp;&nbsp;If, even now, you will rid yourselves of these habits, if you will resolve to join the forces and to act worthily of yourselves, converting the superfluities which you enjoy at home into resources to secure our advantage abroad, then it may be, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, it may be, that you will gain some great and final good, and will be rid of these your perquisites, which are like the diet that a physician gives a sick man — diet which neither puts strength into him nor lets him die. For these sums which you now share among yourselves are neither large enough to give you any adequate assistance, nor small enough to let you renounce them and go about your business; but these it is that increase the indolence of every individual among you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:34'><b>&sect; 34</b>&nbsp;&nbsp;'Is it, then, paid service that you suggest?' some one will ask. I do, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>; and a system for immediate enforcement which will embrace all alike; so that each, while receiving his share of the public funds may supply whatever service the State requires of him. If we can remain at peace, then he will do better to stay at home, free from the necessity of doing anything discreditable through poverty. But if a situation like the present occurs, then supported by these same sums, he will serve loyally in person, in defence of his country. If a man is outside the military age, then let him take, in his place among the rest, that which he now receives irregularly and without doing any service, and let him act as an overseer and manager of business that must be done. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:35'><b>&sect; 35</b>&nbsp;&nbsp;In short, without adding or subtracting anything, beyond a small sum, and only removing the want of system, my plan reduces the State to order, making your receipt of payment, your service in the army or the courts, and your performance of any duty which the age of each of you allows, and the occasion requires, all part of one and the same system. But it has been no part of my proposal that we should assign the due of those who act to those who do nothing; that we should be idle ourselves and enjoy our leisure helplessly, listening to tales of victories won by somebody's mercenaries; for this is what happens now. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0014.tlg003:36'><b>&sect; 36</b>&nbsp;&nbsp;Not that I blame one who is doing some part of your duty for you; but I require you to do for yourselves the things for which you honour others, and not to abandon the position which your fathers won through many a glorious peril, and bequeathed to you. I think I have told you all that, in my belief, your interest demands. May you choose the course which will be for the good of the city and of you all! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg003.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -349                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=403', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas403";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=403';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

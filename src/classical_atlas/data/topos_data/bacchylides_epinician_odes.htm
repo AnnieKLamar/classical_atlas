@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Bacchylides, Epinician Odes' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Epinician Odes, Odes of Bacchylides, translated by Diane Arnson Svarlien (1991), who retains the copyright. Used by ToposText with her gracious permission. (For more on Dr. Arnson Svarlien).' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-450' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -450' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='Copyright Diane Arnson Svarlien, used by ToposText with permission.' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/16' content='urn:cts:greekLit:tlg0199.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n50058180' content='Bacchylides'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2007025816' content='Diane Arnson Svarlien' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>Bacchylides, Epinician Odes</h2>Epinician Odes, Odes of Bacchylides, translated by Diane Arnson Svarlien (1991), who retains the copyright. Used by ToposText with her gracious permission. (For more on Dr. Arnson Svarlien). This text has 123 tagged references to 52 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0199.tlg001'>urn:cts:greekLit:tlg0199.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87763178'>Q87763178</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.1'><b>&sect; 1.1</b>&nbsp;&nbsp;Epinicians <br />Ode 1: For <a href=/people/3302 target=_blank>Argeius</a> of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a> Boys' Boxing Match (?) at the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a> Date unknown. <br />Daughters of <a href=/people/1 target=_blank>Zeus</a> ruling on high, famed for the lyre, ... <a about=https://topostext.org/place/402225RPie class=person long=22.5 lat=40.2>Pierian</a> <a href=/people/54 target=_blank>Muses</a> ... weave [5] ... <a about=https://topostext.org/place/379230SIst class=demonym long=22.9932 lat=37.9159>Isthmian</a> land ... son-in-law of wise <a href=/people/428 target=_blank>Nereus</a> ... ... of the island [10] ... god-built gates of <a href=/people/170 target=_blank>Pelops</a>' shining island [15] ... ... yoked <a href=/people/10959 target=_blank>horses</a> to chariots, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.20'><b>&sect; 1.20</b>&nbsp;&nbsp;and they flew ... [45] ... thick ... maidens ... of sleep, like honey to the mind ... our ... ancient city ... [homes] on the shores of the sea ... [55] [and under] the rays of the sun ... ... and Makelo, loving the distaff, [75] ... by the fair-flowing stream ... speaks ... fawning with the voice ... ... I am bereaved ... with double-edged grief ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.80'><b>&sect; 1.80</b>&nbsp;&nbsp;deprivation ... totally ... ... on the third day warlike <a href=/people/119 target=_blank>Minos</a> came with a host of <a about=https://topostext.org/place/352252IKre class=ethnic long=25.1836 lat=35.2052>Cretans</a> [115] in fifty ships with flashing sterns. And by the will of <a href=/people/1 target=_blank>Zeus</a> Eukleios he subdued the deep-waisted maiden <a href=/people/5380 target=_blank>Dexithea</a>, and left with her half of his people, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.120>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.120'><b>&sect; 1.120</b>&nbsp;&nbsp;battle-loving men, to whom he gave the craggy land as their share; and then he sailed off to the lovely city of <a about=https://topostext.org/place/353252PKno class=place long=25.1631 lat=35.2978>Knossos</a>, the king, the son of <a href=/people/434 target=_blank>Europa</a>. And in the tenth month the bride with beautiful hair bore [125] <a href=/people/7686 target=_blank>Euxantius</a>, to be ruler over the glorious island ... ... daughters ... ... city cut deep by the sun's rays. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.120' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.140>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.140'><b>&sect; 1.140</b>&nbsp;&nbsp;From his (<a href=/people/7686 target=_blank>Euxantius</a>'?) family descended <a href=/people/3302 target=_blank>Argeius</a>, who has a strong hand and the spirit of a <a href=/people/10960 target=_blank>lion</a>, whenever the need for battle befalls him; and he is [145] light on his feet, and does not ... the fine qualities of his father, those which <a href=/people/2 target=_blank>Apollo</a>, famed for the bow, bestowed on <a href=/people/9988 target=_blank>Pantheides</a>: the art of healing, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.140' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.150>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.150'><b>&sect; 1.150</b>&nbsp;&nbsp;and friendly honor towards guests. With a good share of the <a href=/people/5553 target=_blank>Graces</a>, and admired by many men, when he ended his life he left behind five greatly-praised sons, [155] one of whom the son of <a href=/people/43 target=_blank>Cronus</a> seated on high has made a victor at the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a>, in return for good deeds, and has given a share of other shining garlands. I say it now and I always will: excellence has the greatest glory. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.150' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.160>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:1.160'><b>&sect; 1.160</b>&nbsp;&nbsp;<a href=/people/923 target=_blank>Wealth</a> keeps company with worthless men as well, and it tends to swell a man's thoughts; but he who does well to the gods cheers his heart with a more glorious hope. [165] If a mortal has been granted health and can live off his own goods, he rivals the most fortunate. There is joy in all human life as long as it lacks disease and helpless deprivation. The rich man desires great things the same way the poor man desires less. [175] But it is not sweet for mortals to get everything easily; they always seek to catch what flees from them. A man whose spirit is whirled about by the lightest ambitions has honor only as long as he lives. Excellence is a difficult struggle, but when the struggle is completed rightly it leaves a man, even when he dies, the enviable ornament of renown. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:1.160' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:2.1'><b>&sect; 2.1</b>&nbsp;&nbsp;Ode 2: For <a href=/people/3302 target=_blank>Argeius</a> of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a> Boys' Boxing Match (?) at the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a> Date unknown. <br />Fame, whose gifts are revered, speed to holy <a about=https://topostext.org/place/376243IKeo class=place long=24.3333 lat=37.6167>Ceos</a> bringing the gracious message: [5] that <a href=/people/3302 target=_blank>Argeius</a> won the victory in the battle of bold hands, and brought to mind the fine deeds which we, from the holy island of <a href=/people/7686 target=_blank>Euxantius</a>, have shown at the famous neck of the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a>, [10] winning seventy garlands. the native <a href=/people/54 target=_blank>Muse</a> summons the sweet clang of flutes, honoring the dear son of <a href=/people/9988 target=_blank>Pantheides</a> with victory songs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:2.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:3.1'><b>&sect; 3.1</b>&nbsp;&nbsp;Ode 3: For <a href=/people/314 target=_blank>Hieron</a> of <a about=https://topostext.org/place/371153PSyr class=person long=15.293 lat=37.0639>Syracuse</a> Chariot-Race at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> 468 B. C. <br /><a href=/people/2195 target=_blank>Clio</a>, giver of sweet gifts, sing the praises of the mistress of most fertile <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, <a href=/people/48 target=_blank>Demeter</a>, and of her violet-garlanded daughter, and of <a href=/people/314 target=_blank>Hieron</a>'s swift <a href=/people/10959 target=_blank>horses</a>, racers at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a>; [5] for they sped with majestic <a href=/people/335 target=_blank>Victory</a> and with <a href=/people/1497 target=_blank>Aglaia</a> by the wide-whirling <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>, where they made the son of <a href=/people/1778 target=_blank>Deinomenes</a> a prosperous man, a victor winning garlands. And the ... people shouted, [10] Ah! thrice-blessed man! <a href=/people/1 target=_blank>Zeus</a> has granted him the honor of ruling most widely over the Greeks, and he knows not to hide his towered wealth under black-cloaked darkness. [15] The temples teem with <a href=/people/10978 target=_blank>cattle</a>-sacrificing festivities; the streets teem with hospitality. Gold flashes and glitters, the gold of tall ornate tripods standing before the <a about=https://topostext.org/place/385225SApo class=place long=22.5011 lat=38.48225>temple</a>, where the <a about=https://topostext.org/place/385225PDel class=ethnic long=22.5056 lat=38.4806>Delphians</a> administer the great precinct </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -468 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:3.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:3.20'><b>&sect; 3.20</b>&nbsp;&nbsp;of <a href=/people/11033 target=_blank>Phoebus</a> beside the <a about=https://topostext.org/place/385225WCas class=demonym long=22.505 lat=38.483>Castalian</a> stream. A man should honor the god, for that is the greatest prosperity. For indeed, once the ruler of horse-taming <a about=https://topostext.org/place/385280RLyd class=place long=28 lat=38.5>Lydia</a>, [25] <a href=/people/105 target=_blank>Croesus</a> — when <a href=/people/1 target=_blank>Zeus</a> was bringing about the decreed fate, and <a about=https://topostext.org/place/385280PSar class=place long=28.0403 lat=38.4883>Sardis</a> was being sacked by the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> army — <a href=/people/105 target=_blank>Croesus</a> was protected by the god of the golden lyre, <a href=/people/2 target=_blank>Apollo</a>. When he had come to that unexpected day, [30] <a href=/people/105 target=_blank>Croesus</a> had no intention of waiting any longer for the tears of slavery. He had a pyre built before his bronze-walled courtyard, and he mounted the pyre with his dear wife and his daughters with beautiful hair; [35] they were weeping inconsolably. He raised his arms to the steep sky and shouted, overweening deity, where is the gratitude of the gods? Where is lord <a href=/people/2 target=_blank>Apollo</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -468 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:3.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:3.40'><b>&sect; 3.40</b>&nbsp;&nbsp;The palace of <a href=/people/868 target=_blank>Alyattes</a> falls into ruins ... countless ... ... city ... the <a about=https://topostext.org/place/385281WPac class=place long=28.0628 lat=38.4804>Pactolus</a> whirling with [gold runs red with blood], [45] women are brutally led out of the well-built halls. What was hated is loved. To die is sweetest. So he spoke, and he bid the slave with the delicate step to kindle the wooden structure. His daughters cried out, and threw their arms out towards their mother; for death is most hateful to mortals when it is right before their eyes. But when the flashing force of terrible fire began to shoot through the wood, [55] <a href=/people/1 target=_blank>Zeus</a> set a dark rain-cloud over it, and began to quench the golden flame. Nothing is unbelievable which is brought about by the gods' ambition. Then <a href=/people/2 target=_blank>Apollo</a>, born on <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>, brought the old man to live among the <a href=/people/801 target=_blank>Hyperboreans</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -468 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:3.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.60>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:3.60'><b>&sect; 3.60</b>&nbsp;&nbsp;along with his slender-ankled daughters, because of his piety, since of all mortals he sent the greatest gifts to holy <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a>. And of all mortal men who live in Greece, not one, O greatly-praised <a href=/people/314 target=_blank>Hieron</a>, will be willing [65] to say that he has sent more gold than you to <a href=/people/2 target=_blank>Loxias</a>. Every man who does not fatten himself with envy may praise a ... warlike man, a lover of <a href=/people/10959 target=_blank>horses</a>, [70] who has the scepter of ... <a href=/people/1 target=_blank>Zeus</a>, and a share of the violet-haired <a href=/people/54 target=_blank>Muses</a>. ... once ... ephemeral ... you consider; [life is] brief. [75] But winged hope loosens the wits of ephemeral creatures. Lord <a href=/people/2 target=_blank>Apollo</a> ... said to the son of <a href=/people/1414 target=_blank>Pheres</a>: Being a mortal, you must cultivate twin thoughts: that tomorrow will be the last day you see </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -468 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:3.60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:3.80'><b>&sect; 3.80</b>&nbsp;&nbsp;the sun's light, and that you will complete another fifty years of life deep in wealth. Cheer your spirit with pious deeds, for this is the highest of profits. [85] To the thoughtful, what I sing is intelligible. The deep air is undefiled. The water of the sea does not decay. Gold is a delight. It is not lawful for a man to bypass gray old age, and recover flourishing youth. [90] And yet the gleam of a mortal's excellence does not diminish along with the body — no, the <a href=/people/54 target=_blank>Muse</a> nurtures it. <a href=/people/314 target=_blank>Hieron</a>, you have displayed to mortals the most beautiful flowers of prosperity. [95] Silence is no ornament for a successful man. With remembrance of fine deeds a man will also sing the gracious recompense made by the honey-voiced <a about=https://topostext.org/place/376243IKeo class=demonym long=24.3333 lat=37.6167>Cean</a> nightingale. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -468 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:3.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:4.1'><b>&sect; 4.1</b>&nbsp;&nbsp;Ode 4: For <a href=/people/314 target=_blank>Hieron</a> of <a about=https://topostext.org/place/371153PSyr class=person long=15.293 lat=37.0639>Syracuse</a> Chariot Race at <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> 470 B. C. <br />Golden-haired <a href=/people/2 target=_blank>Apollo</a> still loves the state of <a about=https://topostext.org/place/371153PSyr class=place long=15.293 lat=37.0639>Syracuse</a> and honors <a href=/people/314 target=_blank>Hieron</a>, the city's lawful ruler. For his praises are sung as a <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Pythian</a> victor for a third time beside the navel of the high-ridged land, [5] through the excellence of his swift-footed <a href=/people/10959 target=_blank>horses</a>. <a href=/people/10587 target=_blank>Ourania</a>'s sweet-voiced cockerel, ruler of the lyre ... but with willing mind ... [10] showered with hymns. And yet a fourth time we would be honoring the son of <a href=/people/1778 target=_blank>Deinomenes</a> if some ... held the scales of <a href=/people/194 target=_blank>Justice</a> ... [15] he can be crowned with garlands, as the only man on earth who has accomplished this in the vale of <a about=https://topostext.org/place/384225PKir class=place long=22.4455 lat=38.4296>Cirrha</a> by the sea; and he has two <a about=https://topostext.org/place/376216SOly class=demonym long=21.63 lat=37.6378>Olympian</a> victories to sing of as well. What is better than to be loved by the gods and to be granted a share of every kind of noble deed? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -470 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:4.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.1'><b>&sect; 5.1</b>&nbsp;&nbsp;Ode 5: For <a href=/people/314 target=_blank>Hieron</a> of <a about=https://topostext.org/place/371153PSyr class=person long=15.293 lat=37.0639>Syracuse</a> Single-horse victory at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> 476 B. C. <br />Fortunate in your fate, commander of the <a about=https://topostext.org/place/371153PSyr class=ethnic long=15.293 lat=37.0639>Syracusans</a>, riders of whirling <a href=/people/10959 target=_blank>horses</a>: you, [5] if any man on earth today, will rightly understand this honor, sweet gift of the violet-garlanded <a href=/people/54 target=_blank>Muses</a>. Now, calm your righteous mind; rest it from cares, and consider: a hymn, woven with the help of the deep-waisted <a href=/people/5553 target=_blank>Graces</a>, [10] is sent from the holy island to your glorious city by your guest-friend, the brilliant servant of <a href=/people/10587 target=_blank>Ourania</a> with her golden headband. He wants [15] to pour forth his voice from his heart to praise <a href=/people/314 target=_blank>Hieron</a>. High above, slicing the deep air with his swift golden wings, the <a href=/people/10980 target=_blank>eagle</a>, messenger of loud-thundering, wide-ruling </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.20'><b>&sect; 5.20</b>&nbsp;&nbsp;<a href=/people/1 target=_blank>Zeus</a>, trusts boldly in his powerful strength, and thin-voiced birds crouch in fear. The peaks of the great earth do not restrain him, [25] nor the rough, choppy waves of the untiring sea. In the everlasting void he shifts his delicate wings, riding the gusts of the west wind, [30] a conspicuous sight for men. So now for me there are countless paths of song leading in every direction, thanks to dark-haired <a href=/people/335 target=_blank>Nike</a> and <a href=/people/24 target=_blank>Ares</a> with his bronze breastplate, to sing of your excellence, [35] noble sons of <a href=/people/1778 target=_blank>Deinomenes</a>. May the god not tire of doing good. Beside the wide-whirling <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>, golden-armed <a href=/people/683 target=_blank>Dawn</a> saw the victory of the chestnut <a href=/people/10959 target=_blank>horse</a> <a href=/people/3234 target=_blank>Pherenicus</a>, a runner swift as a wind-storm, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.40'><b>&sect; 5.40</b>&nbsp;&nbsp;and she saw him win in very holy <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a>. Laying my hand on the earth, I make this declaration: never in any contest has he been fouled by the dust of faster <a href=/people/10959 target=_blank>horses</a> [45] as he strained toward the finish-line. In force he is like <a href=/people/208 target=_blank>Boreas</a>; obeying his rider, he speeds a new victory and new applause to hospitable <a href=/people/314 target=_blank>Hieron</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.50>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.50'><b>&sect; 5.50</b>&nbsp;&nbsp;Prosperous is he to whom a god has given a share of fine things, and a rich life to live out with enviable luck. For no man on earth [55] was born to be fortunate in everything. So it was, they say, that the gate-destroying unconquerable son of <a href=/people/1 target=_blank>Zeus</a> of the flashing thunderbolt went down to the halls of slender-ankled <a href=/people/138 target=_blank>Persephone</a> to bring up into the light from <a href=/people/10685 target=_blank>Hades</a> the razor-toothed <a href=/people/10953 target=_blank>dog</a>, son of the fearsome <a href=/people/2142 target=_blank>Echidna</a>. There he saw the souls of miserable mortals by the streams of <a href=/people/1315 target=_blank>Cocytus</a>, [65] like leaves swirled by the wind along the <a href=/people/10954 target=_blank>sheep</a>-pasturing headlands of shining <a about=https://topostext.org/place/397268LIda class=place long=26.8423 lat=39.6922>Ida</a>. Among them, the shade of <a href=/people/2963 target=_blank>Porthaon</a>'s bold, [70] spear-wielding descendant stood out. When the marvellous hero, son of <a href=/people/1123 target=_blank>Alcmene</a>, saw him shining in his armor, he stretched the clear-sounding bowstring onto his bow, and opened the lid of his quiver and drew out a bronze-tipped [75] arrow. But the soul of <a href=/people/315 target=_blank>Meleager</a> appeared in front of him and spoke to him, knowing him well: Son of great <a href=/people/1 target=_blank>Zeus</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.80'><b>&sect; 5.80</b>&nbsp;&nbsp;stand where you are, and calm your spirit — Do not shoot a harsh arrow from your hands in vain against the souls of those who have perished. You have no need to fear. So he spoke. And the son of <a href=/people/495 target=_blank>Amphitryon</a> was astonished, [85] and said, What god or mortal raised such a fine young plant as you? In what land? Who killed you? No doubt <a href=/people/19 target=_blank>Hera</a> with her beautiful belt will soon [90] send that killer after me. But that must be the concern of golden-haired <a href=/people/429 target=_blank>Pallas</a>. And <a href=/people/315 target=_blank>Meleager</a> answered him, in tears, It is hard [95] for men on earth to sway the minds of the gods; for otherwise my father, horse-driving <a href=/people/490 target=_blank>Oineus</a>, would have appeased the anger of holy, white-armed <a href=/people/28 target=_blank>Artemis</a> with her garland of buds, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.100>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.100'><b>&sect; 5.100</b>&nbsp;&nbsp;when he entreated her with sacrifices of many <a href=/people/10956 target=_blank>goats</a> and red-backed <a href=/people/10978 target=_blank>cattle</a>. But the maiden goddess' anger was unconquerable; she sent an immensely violent [105] <a href=/people/10951 target=_blank>boar</a>, a ruthless fighter, to <a about=https://topostext.org/place/384215UKal class=place long=21.533 lat=38.372>Calydon</a>, the place of lovely choruses; there, his strength raging like a flood, he cut down vine-rows with his tusk, and slaughtered flocks, and whatever mortals came across his path. We, the best of the Hellenes, fought hard to sustain the hateful battle against him, for six days continuously. But when some god gave the upper hand to the <a about=https://topostext.org/place/386215RAit class=ethnic long=21.5 lat=38.6>Aitolians</a>, [115] we buried those whom the loud-roaring <a href=/people/10951 target=_blank>boar</a> had killed in his violent attacks: <a href=/people/932 target=_blank>Ancaeus</a>, and <a href=/people/2582 target=_blank>Agelaus</a>, the best of my dear brothers, whom </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.100' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.120>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.120'><b>&sect; 5.120</b>&nbsp;&nbsp;<a href=/people/1122 target=_blank>Althaea</a> bore in the far-famed halls of <a href=/people/490 target=_blank>Oineus</a>. Ruinous fate destroyed ... For not yet did the hostile goddess, the savage daughter of <a href=/people/127 target=_blank>Leto</a>, [stop] her anger. We fought hard for the beast's fiery hide [125] with the Couretes, steadfast in battle. Then I killed, among many others, <a href=/people/1102 target=_blank>Iphiclus</a> and noble Aphares, my mother's swift brothers; for strong-spirited <a href=/people/24 target=_blank>Ares</a> does not discern a friend in battle — shafts fly blindly from the hands against the souls of the enemy, and bring death [135] to whomever the god wishes. My mother, the hostile daughter of <a href=/people/994 target=_blank>Thestius</a>, did not take this into account; she brought about my evil fate, the fearless woman, and planned my destruction. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.120' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.140>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.140'><b>&sect; 5.140</b>&nbsp;&nbsp;She took the log of my swift doom out of the ornate chest, and burned it. <a href=/people/140 target=_blank>Fate</a> had marked off that this should be the boundary of my life. I happened to be slaying [145] <a href=/people/1302 target=_blank>Clymenus</a>, Daipylus' valiant son, whose body was flawless; I had overtaken him in front of the towers. The others were fleeing to the well-built ancient city of <a about=https://topostext.org/place/384214PPle class=place long=21.417 lat=38.402>Pleuron</a>. And my sweet soul diminished; I knew that my strength was gone, aiai! I breathed my last breath in tears, as I left behind splendid youth. [155] They say that was the only time that the son of <a href=/people/495 target=_blank>Amphitryon</a>, fearless in battle, ever wetted his eyes with tears, pitying the fate of the man who endured grief. And he answered him in this way: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.140' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.160>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.160'><b>&sect; 5.160</b>&nbsp;&nbsp;For mortals it is best never to be born, never to look on the light of the sun. But there is no profit in lamenting this; one must speak of what can be accomplished. [165] Is there, in the halls of battle-loving <a href=/people/490 target=_blank>Oineus</a>, any daughter, unsubdued by love, whose appearance is like yours? I would gladly make her my splendid bride. And to him the soul of <a href=/people/315 target=_blank>Meleager</a>, steadfast in battle, answered: I left behind at home <a href=/people/728 target=_blank>Deianeira</a>, with her neck like a fresh olive; golden [175] <a href=/people/168 target=_blank>Cypris</a>, charmer of mortals, is still unknown to her. White-armed <a href=/people/736 target=_blank>Calliope</a>, stop your well-made chariot right there. Sing of the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> ruler of the gods, <a href=/people/1 target=_blank>Zeus</a> son of <a href=/people/43 target=_blank>Cronus</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.160' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.180>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.180'><b>&sect; 5.180</b>&nbsp;&nbsp;and the untiring stream of the <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>, and the strength of <a href=/people/170 target=_blank>Pelops</a>, and <a about=https://topostext.org/place/376217PPis class=place long=21.653 lat=37.6395>Pisa</a>, where glorious <a href=/people/3234 target=_blank>Pherenicus</a> won victory in the race with his feet, and returned to <a about=https://topostext.org/place/371153PSyr class=place long=15.293 lat=37.0639>Syracuse</a> with its fine towers, [185] bringing to <a href=/people/314 target=_blank>Hieron</a> the leaf of good fortune. For the sake of truth we must give praise, pushing away envy with both hands, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.180' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.190>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:5.190'><b>&sect; 5.190</b>&nbsp;&nbsp;if any mortal man does well. A <a about=https://topostext.org/place/384233RBoi class=demonym long=23.25 lat=38.35>Boeotian</a> man, <a href=/people/86 target=_blank>Hesiod</a>, attendant of the sweet <a href=/people/54 target=_blank>Muses</a>, said this: He whom the gods honor has a good name among men as well. [195] I am easily persuaded to send to <a href=/people/314 target=_blank>Hieron</a> my illustrious voice, not ... from the path ... .For in this way the roots of fine fortune flourish; may the great father <a href=/people/1 target=_blank>Zeus</a> guard them, undisturbed, in peace. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -476 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:5.190' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:6.1'><b>&sect; 6.1</b>&nbsp;&nbsp;Ode 6: For Lachon of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a> [Boys'] Foot Race at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> 452 B. C. <br />Lachon has won from greatest <a href=/people/1 target=_blank>Zeus</a> the best glory with his feet by the streams of the <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a> ... [the victories] through which before [5] <a about=https://topostext.org/place/376243IKeo class=place long=24.3333 lat=37.6167>Ceos</a> rich in vines has been sung at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> as victorious in boxing and the foot race, by young men, luxuriant with garlands in their hair. [10] And now by the will of <a href=/people/335 target=_blank>Victory</a>, the hymn of <a href=/people/10587 target=_blank>Ourania</a>, ruler of song, honors you, wind-footed son of <a href=/people/353 target=_blank>Aristomenes</a>, in songs before your house, [15] since by your triumph in the foot race you brought glory to <a about=https://topostext.org/place/376243IKeo class=place long=24.3333 lat=37.6167>Ceos</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -452 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:6.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:7.1'><b>&sect; 7.1</b>&nbsp;&nbsp;Ode 7: For Lachon of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a> [Boys'] Foot Race at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> 452 B. C. <br />Shining daughter of Time and <a href=/people/12253 target=_blank>Night</a>, the fifty [months have brought] you, sixteenth day of the month at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> ... by the will of ... [5] ... to judge the speed of swift feet and preeminence in strength of limbs among the Greeks. The one to whom you give the most distinguished honor of victory is called glorious [10] and much envied among men. You have adorned with garlands [the son] of <a href=/people/353 target=_blank>Aristomenes</a>, Lachon ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -452 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:7.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:8.1'><b>&sect; 8.1</b>&nbsp;&nbsp;Ode 8: For Liparion of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a>? <br />... singing the praises of <a href=/people/10954 target=_blank>sheep</a>-sacrificing <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a>, and <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> and the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a>. I will make my boast, laying my hand on the earth - </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:8.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:8.20'><b>&sect; 8.20</b>&nbsp;&nbsp;every debt of praise shines in the light of truth — no Greek, boy or man, has won more victories in his age-group. [25] <a href=/people/1 target=_blank>Zeus</a>, whose spear is the thunderbolt, by the banks of the silver-whirling <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a> may you also fulfill his prayers for great god-given glory, and place on his head a gray-green wreath [30] of <a about=https://topostext.org/place/386215RAit class=demonym long=21.5 lat=38.6>Aitolian</a> olive in the famous games of <a about=https://topostext.org/place/400310RPhr class=person long=31 lat=40>Phrygian</a> <a href=/people/170 target=_blank>Pelops</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:8.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.1'><b>&sect; 9.1</b>&nbsp;&nbsp;Ode 9: For Automedes of <a about=https://topostext.org/place/378226PPhl class=person long=22.648 lat=37.846>Phlious</a> Pentathlon at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> Date unknown. <br />Graces with golden distaffs, give fame, which moves the minds of men; for the divinely inspired prophet of the violet-eyed <a href=/people/54 target=_blank>Muses</a> is ready to sing the praises of <a about=https://topostext.org/place/378226PPhl class=place long=22.648 lat=37.846>Phlious</a> and [5] the flourishing plain of <a about=https://topostext.org/place/378227SNem class=person long=22.7108 lat=37.8085>Nemean</a> <a href=/people/1 target=_blank>Zeus</a>, where white-armed <a href=/people/19 target=_blank>Hera</a> reared the <a href=/people/10954 target=_blank>sheep</a>-slaughtering, deep-voiced <a href=/people/10960 target=_blank>lion</a>, the first of <a href=/people/4 target=_blank>Heracles</a>' far-famed labors. [10] There the heroes with red shields, the best of the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, held games for the first time in honor of <a href=/people/1576 target=_blank>Archemorus</a>, whom a fiery-eyed monstrous dragon killed in his sleep: a sign of the slaughter to come. [15] Powerful fate! The son of <a href=/people/1978 target=_blank>Oicles</a> could not persuade them to go back to the streets thronged with good men. <a href=/people/1068 target=_blank>Hope</a> robs men [of their sense]: it was she who then sent <a href=/people/201 target=_blank>Adrastus</a> son of <a href=/people/1412 target=_blank>Talaus</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.20'><b>&sect; 9.20</b>&nbsp;&nbsp;to <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a> ... to <a href=/people/881 target=_blank>Polyneices</a> ... The mortal men who crown their golden hair with the triennial garland from those glorious games in <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> are illustrious; [25] and now a god has given it to the victorious Automedes, for he stood out among the pentathletes as the shining moon in the mid-month night sky outshines the light of the stars. [30] In such a way, amid the vast circling crowd of the Greeks, did he display his marvellous body, hurling the wheel-shaped discus, and raise a shout from the people as he flung the shaft of the dark-leaved elder-tree [35] from his hand into the steep sky. He executed the flashing movement of wrestling, and brought strong-limbed bodies down to the earth with such high-spirited strength, then returned to the dark-whirling waters of the <a about=https://topostext.org/place/383233WAso class=place long=23.5921 lat=38.3016>Asopus</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.40'><b>&sect; 9.40</b>&nbsp;&nbsp;whose fame has reached every land, even the farthest reaches of the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. And the women skilled with the spear who live by the fair-flowing stream of <a about=https://topostext.org/place/412369WThe class=place long=36.942 lat=41.194>Thermodon</a>, daughters of horse-driving <a href=/people/24 target=_blank>Ares</a>, [45] have met with your descendants, much-envied lord of rivers, and so has <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, the city of high gates. Countless reports of your offspring tread wide paths everywhere, of your daughters </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.50>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.50'><b>&sect; 9.50</b>&nbsp;&nbsp;with shining belts, whom the gods established, with good fortune, as founders of cities that were never to be sacked. Who does not know the well-built city of dark-haired <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>, [55] or renowned <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aigina</a>, who went to the bed of great <a href=/people/1 target=_blank>Zeus</a> and bore the hero ... who ... the land of the <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a> ... trials ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.60>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.60'><b>&sect; 9.60</b>&nbsp;&nbsp;... with beautiful robe ... and <a href=/people/3929 target=_blank>Peirene</a> with her twisted garland, and as many other [65] honorable daughters of the ancient resounding river who were overcome in the glorifying beds of gods. ... city ... victory ... the cries of flutes ... [70] ... to speak well of golden, violet-haired <a href=/people/168 target=_blank>Cypris</a>, the glorious mother of unbending passions for mortals [75] ... hymn ... ... even for one who is dead </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:9.80'><b>&sect; 9.80</b>&nbsp;&nbsp;... everlasting time, would always declare to later generations your victory at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a>. A fine deed which attains genuine songs of praise is stored up on high with the gods. [85] With the true remembrance of men, the finest adornment of the [deep-waisted] <a href=/people/54 target=_blank>Muses</a> is left behind even [after death]. There are many ... of men; but the mind of the gods distinguishes [90] what is hidden in the darkness of night ... and the better ... [95] ... few men ... what will be. ... gave ... grace ... and <a href=/people/5 target=_blank>Dionysus</a> ... city honored by the gods ... to dwell ... golden-sceptered ... whoever takes a fine thing ... praise ... for the son of <a href=/people/2456 target=_blank>Timoxenos</a> sing praises, with processions [of young men], for his victory in the pentathlon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:9.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:10.1'><b>&sect; 10.1</b>&nbsp;&nbsp;Ode 10: For an <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a> Foot Race at the <a about=https://topostext.org/place/379230SIst class=place long=22.9932 lat=37.9159>Isthmus</a> Date unknown. <br />Fame, you visit the races [of men? ], and ... [5] ... eyes ... peaceful respite ... now for him his sister's husband [10] has moved the clear-voiced island <a href=/people/10964 target=_blank>bee</a> so that the immortal ornament of the <a href=/people/54 target=_blank>Muses</a> will be at hand as a common joy for men, revealing your excellence to men on earth, [15] ... by the will of <a href=/people/335 target=_blank>Victory</a> you have crowned your golden head with blossoms and brought glory to broad <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> and fame to the Oineidae, when, in <a href=/people/25 target=_blank>Poseidon</a>'s far-famed games, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:10.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:10.20'><b>&sect; 10.20</b>&nbsp;&nbsp;you displayed to the Greeks the swift surge of your feet. For when he reached the finish-line of the racecourse, breathing out a storm of hot breath, and again moistened the cloaks of the spectators with olive oil, rushing into the close-packed crowd [25] when he rounded the fourth turn of the course, the spokesmen of the wise judges proclaimed him twice an <a about=https://topostext.org/place/379230SIst class=demonym long=22.9932 lat=37.9159>Isthmian</a> victor, and twice in <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a>, beside the sacred altar of <a href=/people/1 target=_blank>Zeus</a> son of <a href=/people/43 target=_blank>Cronus</a>. [30] Glorious <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a> also welcomed him fittingly, and spacious <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, and <a about=https://topostext.org/place/380227PSik class=place long=22.7145 lat=37.9834>Sikyon</a>, and those who dwell in <a about=https://topostext.org/place/380225PPel class=place long=22.5384 lat=38.0446>Pellene</a>, and in <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a> rich in grain, and on the holy [35] island <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aigina</a>. Each man seeks a different path on which to walk to attain conspicuous glory; and the forms of knowledge among men are countless. Indeed, a man is skillful if he has a share of honor from the <a href=/people/5553 target=_blank>Graces</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:10.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:10.40'><b>&sect; 10.40</b>&nbsp;&nbsp;and blooms with golden hope, or if he has some knowledge of the prophetic art; another man aims his artful bow at boys; others swell their spirits with fields and herds of <a href=/people/10978 target=_blank>cattle</a>. [45] The future begets unpredictable results: which way will fortune's scale incline? The finest thing is to be envied by many people as a noble man. I know also the great power of wealth, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:10.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.50>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.50'><b>&sect; 11.50</b>&nbsp;&nbsp;which makes even a useless man valuable. Why have I steered my song in its straight course so far off the road? Delight is appointed for mortals after victory ... of flutes ... [55] mix ... must ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.1'><b>&sect; 11.1</b>&nbsp;&nbsp;Ode 11: For <a href=/people/6193 target=_blank>Alexidamus</a> of <a about=https://topostext.org/place/404168PMet class=person long=16.824 lat=40.383>Metapontion</a> Boys' Wrestling at <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> Date unknown. <br /><a href=/people/335 target=_blank>Victory</a>, giver of sweet gifts — to you alone the father ... seated on high ... in golden <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, [5] standing beside <a href=/people/1 target=_blank>Zeus</a>, you judge the achievement of excellence for immortals and mortals alike. Be gracious, daughter of <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a> with her long hair, the upright judge. For your sake [10] even now <a about=https://topostext.org/place/404168PMet class=place long=16.824 lat=40.383>Metapontion</a>, the city honored by the gods, is filled with delight and with victory processions of young men with fine limbs. They sing the praises of the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Pythian</a> victor, the marvellous son of Phaiscus. [15] The <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>-born son of deep-waisted <a href=/people/127 target=_blank>Leto</a> received him with a propitious eye; and many garlands of flowers fell around <a href=/people/6193 target=_blank>Alexidamus</a> on the plain of <a about=https://topostext.org/place/384225PKir class=place long=22.4455 lat=38.4296>Cirrha</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.20'><b>&sect; 11.20</b>&nbsp;&nbsp;because of his all-conquering powerful wrestling. The sun did not see him, on that particular day, falling to the ground. And I will declare that in the sacred precinct [25] of revered <a href=/people/170 target=_blank>Pelops</a>, beside the beautiful stream of the <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>, if someone had not turned aside the straight path of justice, the gray-green olive for which all compete would have crowned his head [30] as he returned to his fatherland, calf-nurturing <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>. [For down to the earth? ] he brought the young man, by his crafty wits, in the land of lovely choruses. But either a god was responsible, or else [35] the wandering judgment of men took the highest honor out of his hands. But now <a href=/people/28 target=_blank>Artemis</a> of the wilds with her golden distaff, the Soother, famous for the bow, gave him shining victory. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.40'><b>&sect; 11.40</b>&nbsp;&nbsp;To her once the son of <a href=/people/941 target=_blank>Abas</a> and his daughters with beautiful robes set up an altar where many prayers are offered. All-powerful <a href=/people/19 target=_blank>Hera</a> drove these daughters in fear from the lovely halls [45] of <a href=/people/768 target=_blank>Proetus</a>; she yoked their minds to a violent maddening compulsion. For, while still virgins, they entered the sanctuary of the purple-belted goddess, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.50>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.50'><b>&sect; 11.50</b>&nbsp;&nbsp;and said that their father far surpassed in wealth the golden-haired consort of holy, widely powerful <a href=/people/1 target=_blank>Zeus</a>. In anger at them, she put a twisted thought into their minds, [55] and they fled to the wooded mountain with terrible screams, leaving behind the city of <a about=https://topostext.org/place/376228PTir class=place long=22.7997 lat=37.6003>Tiryns</a> and its god-built streets. For it was now the tenth year since the heroes with their bronze shields, fearless in battle, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.60>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.60'><b>&sect; 11.60</b>&nbsp;&nbsp;had left <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, the city loved by the gods, and lived in <a about=https://topostext.org/place/376228PTir class=place long=22.7997 lat=37.6003>Tiryns</a> with their much envied king, because an insurmountable quarrel [65] had arisen, from a slight beginning, between the brothers <a href=/people/768 target=_blank>Proetus</a> and <a href=/people/864 target=_blank>Acrisius</a>. They were destroying their people with lawless feuding and grievous battles, and the people entreated the sons of <a href=/people/941 target=_blank>Abas</a> [70] that, since they had as their share a land rich in barley, the younger one should be the founder of <a about=https://topostext.org/place/376228PTir class=place long=22.7997 lat=37.6003>Tiryns</a>, before they fell under ruinous compulsion. And <a href=/people/1 target=_blank>Zeus</a> son of <a href=/people/43 target=_blank>Cronus</a>, honoring the race of <a href=/people/303 target=_blank>Danaus</a> [75] and of horse-driving <a href=/people/6078 target=_blank>Lynceus</a>, was willing to put an end to their hateful woes. And the mighty <a href=/people/350 target=_blank>Cyclopes</a> came, and toiled to build a most beautiful wall for the glorious city, where the godlike </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.80'><b>&sect; 11.80</b>&nbsp;&nbsp;far-famed heroes lived when they had left behind horse-pasturing <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. It was from <a about=https://topostext.org/place/376228PTir class=place long=22.7997 lat=37.6003>Tiryns</a> that the dark-haired unsubdued daughters of <a href=/people/768 target=_blank>Proetus</a> rushed in their flight. [85] And woe overcame <a href=/people/768 target=_blank>Proetus</a>' heart, and an alien thought smote him. He decided to plant a double-edged sword in his chest; but his spearmen restrained him [90] with calming words and with the force of their hands. For thirteen whole months his daughters roamed wildly through the shadowy forests and fled through <a href=/people/10954 target=_blank>sheep</a>-nurturing <a about=https://topostext.org/place/375223RArk class=place long=22.3 lat=37.5>Arcadia</a>. [95] But when their father came to the beautiful stream of <a about=https://topostext.org/place/375220WGor class=place long=22.02354 lat=37.50335>Lusus</a>, he washed his skin with its water and called on <a href=/people/127 target=_blank>Leto</a>'s daughter with her crimson headdress, the ox-eyed goddess, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.100>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.100'><b>&sect; 11.100</b>&nbsp;&nbsp;stretching his hands to the rays of the steed-swift sun, and asked her to deliver his children from their deranged miserable madness. I will sacrifice to you twenty [105] unyoked red <a href=/people/10961 target=_blank>oxen</a>. And the huntress, whose father is the highest god, heard him praying. She persuaded <a href=/people/19 target=_blank>Hera</a>, and stopped the godless mania of the bud-garlanded girls. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.100' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.110>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.110'><b>&sect; 11.110</b>&nbsp;&nbsp;They built her a sanctuary and an altar right away, and stained it with the blood of <a href=/people/10954 target=_blank>sheep</a>, and set up choruses of women. From there you accompanied battle-loving <a about=https://topostext.org/place/382219RAch class=demonym long=21.9 lat=38.2>Achaean</a> men to their horse-nurturing city; [115] and with good fortune you dwell in <a about=https://topostext.org/place/404168PMet class=place long=16.824 lat=40.383>Metapontion</a>, golden mistress of the people. And a lovely precinct beside the fine waters of the Casas </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.110' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11.120>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:11.120'><b>&sect; 11.120</b>&nbsp;&nbsp;their ancestors established? when at last, by the counsels of the blessed gods, they sacked the well-built city of <a href=/people/64 target=_blank>Priam</a> together with the <a href=/people/1152 target=_blank>Atreidae</a> with their bronze breastplates. Whoever has a just mind will find, [125] throughout all time, countless deeds of valor done by the <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:11.120' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:12.1'><b>&sect; 12.1</b>&nbsp;&nbsp;Ode 12: For <a href=/people/2792 target=_blank>Teisias</a> of <a about=https://topostext.org/place/378234PAig class=person long=23.425 lat=37.75>Aigina</a> Wrestling at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> Date unknown. <br />Like a skillful helmsman, <a href=/people/2195 target=_blank>Clio</a>, mistress of song, guide my thoughts now in a straight course, if you ever did before. For to the prosperous [5] island of <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aigina</a> queenly <a href=/people/335 target=_blank>Victory</a> commands me to go, to my hospitable friends, and adorn the god-built city and the strong-limbed wrestling at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> ... ... friend ... [35] in the competitions of the neighboring people. They were honored with celebrations for thirty splendid victories, some in [<a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a>,] others in the neck of <a href=/people/170 target=_blank>Pelops</a>' holy island, full of pine, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:12.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12.40>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:12.40'><b>&sect; 12.40</b>&nbsp;&nbsp;others in the precinct of <a about=https://topostext.org/place/378227SNem class=person long=22.7108 lat=37.8085>Nemean</a> <a href=/people/1 target=_blank>Zeus</a>, god of brilliant lightning flashes ... these ... and at the silver-whirling [<a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>? ] ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:12.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.1'><b>&sect; 13.1</b>&nbsp;&nbsp;Ode 13: For <a href=/people/678 target=_blank>Pytheas</a> of <a about=https://topostext.org/place/378234PAig class=person long=23.425 lat=37.75>Aigina</a> Pancratium at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a>?483 B. C. [45] He shall stop them from arrogant violence, bringing about judgments of law for mortals: look how the descendant of <a href=/people/153 target=_blank>Perseus</a> brings his hand down heavily on the neck of the bloodthirsty <a href=/people/10960 target=_blank>lion</a> with every type of skill! [45] For the gleaming, man-subduing bronze refuses to pierce the <a href=/people/10960 target=_blank>lion</a>'s fearsome body; the sword was bent back. Someday, I prophesy, [55] [in this place] there will be a strenuous toil for the Greeks, competing for garlands in the pancratium. ... beside the altar of <a href=/people/1 target=_blank>Zeus</a>, the greatest ruler, the blossoms of glory-bringing <a href=/people/335 target=_blank>Victory</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.60>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.60'><b>&sect; 13.60</b>&nbsp;&nbsp;nurture for men golden, conspicuous fame throughout their lives — for a select few — and when the dark cloud of death covers them, [65] the undying glory of their fine deed is left behind, secure in its destiny. You too have attained this at <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a>, son of <a href=/people/1632 target=_blank>Lampon</a>; [70] your hair crowned with garlands of flourishing blossoms, [you walk] the lofty streets of the city [of <a href=/people/255 target=_blank>Aeacus</a>, so that] your ancestral island [teems] with gentle-voiced victory processions, in which mortals delight, [75] revealing your overweening strength in the pancratium. Kindly <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aigina</a>, daughter of the whirling river, [the son of <a href=/people/43 target=_blank>Cronus</a>] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.80>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.80'><b>&sect; 13.80</b>&nbsp;&nbsp;gave you great honor, shining [your new victory? ] like a torch among all Greeks. And a proud maiden [sings the praises of your strength? ] [85] ... often lightly springing with her feet like a carefree fawn on the flowery [hills] [90] with her far-famed [companions] who live nearby. The maidens wear garlands of crimson blossoms and rushes, the native decoration, and sing of your [child], [95] mistress of the all-hospitable [land], and of rosy-armed <a href=/people/9317 target=_blank>Endais</a>, who bore [godlike <a href=/people/109 target=_blank>Peleus</a>] and the helmeted warrior <a href=/people/258 target=_blank>Telamon</a>, having gone to bed with <a href=/people/255 target=_blank>Aeacus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.80' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.100>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.100'><b>&sect; 13.100</b>&nbsp;&nbsp;Of their battle-rousing sons I shall sing, and of swift <a href=/people/17 target=_blank>Achilles</a>, and the high-spirited son of beautiful <a href=/people/4142 target=_blank>Eriboea</a>, <a href=/people/63 target=_blank>Aias</a>, the shield-bearing hero, [105] who stood on the stern of his ship and stopped bold-hearted, bronze [helmeted] <a href=/people/40 target=_blank>Hector</a> in his rush to burn the ships with dread fire, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.100' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.110>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.110'><b>&sect; 13.110</b>&nbsp;&nbsp;at the time when the son of <a href=/people/109 target=_blank>Peleus</a> stirred fierce wrath [in his breast] and released the [Dardanians from ruin]. Before they had not left the [many-towered] [115] marvellous town of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a>, but had cowered, dazed by fear, before the fierce battle, when <a href=/people/17 target=_blank>Achilles</a> raged destructively across the plain, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.110' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.120>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.120'><b>&sect; 13.120</b>&nbsp;&nbsp;shaking his murderous spear. But when the fearless son of the violet-garlanded <a href=/people/590 target=_blank>Nereid</a> withdrew from battle, — as when the North wind, on the dark-blossoming sea, [125] afflicts the spirits of men beneath the waves, when it comes upon them as night begins, but it withdraws with the break of <a href=/people/683 target=_blank>Dawn</a>, who shines on mortals, and a gentle breeze smooths the sea; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.120' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.130>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.130'><b>&sect; 13.130</b>&nbsp;&nbsp;they billow their sail with the breath of the South wind, and eagerly reach unhoped-for dry land — in such a way, when the <a about=https://topostext.org/place/400262UIli class=ethnic long=26.2389 lat=39.9575>Trojans</a> heard that the spearman <a href=/people/17 target=_blank>Achilles</a> [135] was remaining in his tent because of the golden-haired woman <a href=/people/1768 target=_blank>Briseis</a> with lovely limbs, they raised their arms to the gods, seeing a bright </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.130' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.140>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.140'><b>&sect; 13.140</b>&nbsp;&nbsp;gleam from out of the storm. With all speed they left the walls of <a href=/people/781 target=_blank>Laomedon</a> and rushed onto the plain, bringing violent battle, [145] and roused terror in the Danaan. <a href=/people/24 target=_blank>Ares</a>, god of the spear, urged them on, and <a href=/people/2 target=_blank>Loxias</a> <a href=/people/2 target=_blank>Apollo</a>, lord of the <a about=https://topostext.org/place/365295RLyc class=ethnic long=29.5 lat=36.5>Lycians</a>. And they came to the shore of the sea, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.140' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.150>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.150'><b>&sect; 13.150</b>&nbsp;&nbsp;and fought beside the ships with their fine sterns, and the dark earth ran red with the blood of men slain by the hand of <a href=/people/40 target=_blank>Hector</a>, [155] ... heroes ... through the onslaught of godlike ... ... with great hopes, and arrogant shouts, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.150' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.160>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.160'><b>&sect; 13.160</b>&nbsp;&nbsp;the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> horsemen ... the dark-eyed ships ... the god-built city would have ... and feasts, in ... But before that could be they were doomed after all [165] to redden with blood the whirling <a about=https://topostext.org/place/400262WSka class=place long=26.213 lat=39.994>Scamander</a>, dying at the hands of the tower-destroying [<a href=/people/1328 target=_blank>Aeacidae</a>.] Of these, if ... or on a [pyre] piled high with wood ... [175] for all-shining Excellence is not hidden and effaced in the lightless [veil? ] of night, but always abounding in unfailing glory </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.160' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.180>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.180'><b>&sect; 13.180</b>&nbsp;&nbsp;she roams the earth and the shifting seas. And truly she honors the fame-bringing [island] of <a href=/people/255 target=_blank>Aeacus</a>; she guides the state with garland-loving <a href=/people/7660 target=_blank>Eucleia</a> [185] and sound-minded <a href=/people/3513 target=_blank>Eunomia</a>, to whom festivities belong, and who guards the cities of pious men in peace. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.180' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.190>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.190'><b>&sect; 13.190</b>&nbsp;&nbsp;Sing, young men, of the very glorious victory of <a href=/people/678 target=_blank>Pytheas</a>, and the helpful care of <a href=/people/156 target=_blank>Menander</a>, which often by the streams of the <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a> has been honored by [195] holy, great-spirited <a href=/people/11 target=_blank>Athena</a> of the golden chariot; before now she has garlanded the hair of countless men with crowns in the panhellenic contests. Let every man </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.190' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.200>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.200'><b>&sect; 13.200</b>&nbsp;&nbsp;who is not bullied by bold-tongued envy praise the man who is skillful, as is just. All works of mortals are open to fault-finding. But truth tends </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.200' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.205>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.205'><b>&sect; 13.205</b>&nbsp;&nbsp;to win the victory, and all-subduing time always [preserves] a fine deed. The [vain speech] of enemies diminishes, unseen ... ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.205' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13.220>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:13.220'><b>&sect; 13.220</b>&nbsp;&nbsp;warms the spirit with hope. With such hope I too, trusting in the [<a href=/people/54 target=_blank>Muses</a>] with their crimson headdresses, present a [crown] of songs, [of newly-combed wool], and honor the splendor-loving hospitality which [you], <a href=/people/1632 target=_blank>Lampon</a>, [have provided] for me; may you not regard [my gift for your son] as slight. And if it truly is flourishing <a href=/people/2195 target=_blank>Clio</a> who has distilled this gift in my [mind], songs filled with words of delight will proclaim him to all the people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:13.220' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:14.1'><b>&sect; 14.1</b>&nbsp;&nbsp;Ode 14: For <a href=/people/4489 target=_blank>Cleoptolemus</a> of <a about=https://topostext.org/place/394223RThs class=person long=22.3 lat=39.4>Thessaly</a> Chariot-Race at the <a href=/people/3728 target=_blank>Petraia</a> Date unknown: <br />To have a good allotment from the gods is the best thing for men. <a href=/people/2811 target=_blank>Fortune</a> can destroy even a noble man, if she comes as a grievous burden, [5] and can make a worthless man shine on high, if she works out well. Different people have different honors. There are countless forms of excellence among men, but one stands out among all of them: [10] when a man has conducted whatever lies at hand with a just mind. The voice of the lyre and clear-sounding choruses do not harmonize with the deep griefs of battle, [15] nor does the clang of clashing bronze with festivities. For every work of men [appropriateness] is the finest thing. When someone does well, a god [advances? ] him too. In gratitude to <a href=/people/4489 target=_blank>Cleoptolemus</a>, ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:14.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14.20>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:14.20'><b>&sect; 14.20</b>&nbsp;&nbsp;...we must now sing of the precinct of <a href=/people/25 target=_blank>Poseidon</a> <a href=/people/6788 target=_blank>Petraios</a>, and of the glorious son of <a href=/people/8233 target=_blank>Pyrrichus</a>, victorious with his <a href=/people/10959 target=_blank>horses</a>, who ... of hospitable and just ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:14.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14b.1>
+                            <p id='urn:cts:greekLit:tlg0199.tlg001:14b.1'><b>&sect; 14b.1</b>&nbsp;&nbsp;Ode 14b/16: For <a href=/people/2209 target=_blank>Aristoteles</a> of <a about=https://topostext.org/place/396224PLar class=person long=22.421 lat=39.6349>Larisa</a>: <br />Golden-throned <a href=/people/325 target=_blank>Hestia</a>, you who increase the great prosperity of the rich Agathocleadae, seated in the midst of city streets [5] near the fragrant river <a about=https://topostext.org/place/399227WPen class=place long=22.7094 lat=39.9298>Peneius</a> in the valleys of <a href=/people/10954 target=_blank>sheep</a>-nurturing <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>. From there <a href=/people/2209 target=_blank>Aristoteles</a> came to flourishing <a about=https://topostext.org/place/384225PKir class=place long=22.4455 lat=38.4296>Cirrha</a>, and was twice crowned, [10] for the glory of horse-mastering <a about=https://topostext.org/place/396224PLar class=place long=22.421 lat=39.6349>Larisa</a> ... </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -450 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0199.tlg001.perseus-grc1:14b.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -483                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=16', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas16";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=16';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

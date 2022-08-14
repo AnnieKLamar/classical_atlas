@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Plutarch, Conjugal Precepts, Moralia' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Conjugal Precepts , Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='102' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 102' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/261' content='urn:cts:greekLit:tlg0007.tlg078' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79026763' content='Plutarch'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n84801218' content='William Watson Goodwin (1831-1912)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://archive.org/details/plutarchsmorals01plut' /><h2>Plutarch, Conjugal Precepts, Moralia</h2>Conjugal Precepts , Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling. This text has 16 tagged references to 15 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0007.tlg078'>urn:cts:greekLit:tlg0007.tlg078</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q11884242'>Q11884242</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:1'><b>&sect; 1</b>&nbsp;&nbsp;PLUTARCH TO POLLIANUS AND EURYDICE SENDETH GREETING Now that the nuptial ceremonies are over, and that the priestess of <a href=/people/48 target=_blank>Demeter</a> has joined you both together in the bands of matrimony according to the custom of the country, I thought a short discourse of this nature might not be either unacceptable or unseasonable, but rather serve as a kind epithalamium to congratulate your happy conjunction; more especially, since there can be nothing more useful in conjugal society than the observance of wise and wholesome precepts, suitable to the harmony of matrimonial converse. For among the variety of musical moods and measures there is one which is called Hippothoros, a sort of composition to the flute and hautboy, made use of to encourage and provoke stallions to cover mares. But philosophy being furnished with many noble and profitable discourses, there is not any one subject that deserves a more serious study than that of wedlock, whereby they who are engaged in a long community of bed and board are more steadfastly united in affection, and made more pliable one to another in humor and condition. To this purpose, having reduced under several short heads and similes some certain instructions and admonitions which you, as tutored up in philosophy, have frequently already heard, I send you the collection as a present, beseeching the <a href=/people/54 target=_blank>Muses</a> so with their presence to assist the Goddess <a href=/people/15 target=_blank>Aphrodite</a>, that the harmony of your mutual society and complacency in domestic diligences may outcry the melodious concords of lute or harp, while you live united together by reason and philosophy. Therefore it was that the ancients placed the statue of <a href=/people/15 target=_blank>Aphrodite</a> by that of <a href=/people/33 target=_blank>Hermes</a>, to signify that the pleasures of matrimony chiefly consist in the sweetness of conversation. They also set the <a href=/people/5553 target=_blank>Graces</a> and <a href=/people/656 target=_blank>Peitho</a>, the goddess of persuasion, together, to show that the married couple were to act only by persuasion, and not to use the violences of wrangling and contention. <br /><a href=/people/76 target=_blank>Solon</a> advised that the bride should eat a quince before she entered the nuptial sheets; intimating thereby, in my opinion, that the man was to expect his first pleasures from the breath and speech of his new-married bed-fellow. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:2'><b>&sect; 2</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> it is the custom, when they veil the virgin bride, to set upon her head a chaplet of wild asparagus, which from a thorny stalk affords a most delicious fruit, to let us understand that a new-married woman, discreetly brooking at the beginning the first distates of marriage restraints, grows yieldingly complaisant at length, and makes conforming wedlock a happiness to each. And indeed such husbands who cannot bear with the little disdains and first froppishness of imprudent youth are like to those that choose the sour grapes and leave to others the ripe delicious clusters. On the other side, those young ladies that take a disdain to their husbands by reason of their first debates and encounters may be well compared to those that patiently endure the sting but fling away the honey. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:3'><b>&sect; 3</b>&nbsp;&nbsp;It especially behooves those people who are newly married to avoid the first occasions of discord and dissension; considering that vessels newly formed are subject to be bruised and put out of shape by many slight accidents, but when the materials come once to be settled and hardened by time, nor fire nor sword will hardly prejudice the solid substance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:4'><b>&sect; 4</b>&nbsp;&nbsp;Fire takes speedy hold of straw or hare's fur, but soon goes out again, unless fed with an addition of more fuel. Thus that same love, whose flames are nourished only by heat of youth and looser charms of beauty, seldom proves of long continuance or grows to wedlock maturity, unless it have taken a deep root in conformity of manners, and mutual affection be enlivened by the intermixture of souls as well as bodies, while prudence and discretion feed the noble flame. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:5'><b>&sect; 5</b>&nbsp;&nbsp;They who bait their hooks with intoxicated drugs with little pains surprise the hungry fish, but then they prove unsavory to the taste and dangerous to eat. Thus women that by the force of charms and philters endeavor to subdue their husbands to the satisfaction of their pleasure become at length the wives of madmen, sots, and fools. For they whom the sorceress <a href=/people/245 target=_blank>Circe</a> had enchanted, being then no better than <a href=/people/10951 target=_blank>swine</a> and <a href=/people/10962 target=_blank>asses</a>, were no longer able to please or do her service. But she loved <a href=/people/18 target=_blank>Ulysses</a> entirely, whose prudence avoided her venomous intoxications and rendered his conversation highly grateful. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:6'><b>&sect; 6</b>&nbsp;&nbsp;They who rather choose to be the mistresses of senseless fools than the obedient wives of wise and sober husbands are like those people that prefer misguidance of the blind before the conduct of them that can see and know the way. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:7'><b>&sect; 7</b>&nbsp;&nbsp;They will not believe that <a href=/people/930 target=_blank>Pasiphae</a>, the consort of a prince, could ever be enamored of a <a href=/people/10955 target=_blank>bull</a>, and yet themselves are so extravagant as to abandon the society of their husbands, — men of wisdom, temperance, and gravity, — and betake themselves to the bestial embraces of those who are given wholly to riot and debauchery as if they were <a href=/people/10953 target=_blank>dogs</a> or <a href=/people/10956 target=_blank>goats</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:8'><b>&sect; 8</b>&nbsp;&nbsp;Some men, either unable or unwilling to mount themselves into their saddles through infirmity or laziness, teach their <a href=/people/10959 target=_blank>horses</a> to fall upon their knees, and in that posture to receive their riders. In like manner there are some persons who, having married young ladies not less considerable for the nobility of their birth than their wealthy dowries, take little care themselves to improve the advantages of such a splendid conjunction, but with a severe moroseness labor to depress and degrade their wives, proud of the mastery and vaunting in domestic tyranny. Whereas in this case it becomes a man to use the reins of government with as equal regard to the quality and dignity of the woman as to the stature of the <a href=/people/10959 target=_blank>horse</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:9'><b>&sect; 9</b>&nbsp;&nbsp;We behold the moon then shining with a full and glorious orb, when farthest distant from the sun; but, as she warps back again to meet her illustrious mate, the nearer she makes her approach, the more she is eclipsed until no longer seen. Quite otherwise, a woman ought to display the charms of her virtue and the sweetness of her disposition in her husband's presence, but in his absence to retire to silence and reservedness at home. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:10'><b>&sect; 10</b>&nbsp;&nbsp;Nor can we approve the saying of <a href=/people/133 target=_blank>Herodotus</a>, that a woman lays aside her modesty with her shift. For surely then it is that a chaste woman chiefly vails herself with bashfulness, when, in the privacies of matrimonial duties, excess of love and maiden reverence become the secret signals and testimonies of mutual affection. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:11'><b>&sect; 11</b>&nbsp;&nbsp;As in musical concords, when the upper strings are so tuned as exactly to accord, the base always gives the tone; so in well-regulated and well-ordered families, all things are carried on with the harmonious consent and agreement of both parties, but the conduct and contrivance chiefly redounds to the reputation and management of the husband. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:12'><b>&sect; 12</b>&nbsp;&nbsp;It is a common proverb, that the sun is too strong for the north wind; for the more the wind ruffles and strives to force a man's upper garment from his back, the faster he holds it, and the closer he wraps it about his shoulders. But he who so briskly defended himself from being plundered by the wind, when once the sun begins to scald the air, all in a dropping sweat is then constrained to throw away not only his flowing garment but his tunic also. This puts us in mind of the practice of most women, who, being limited by their husbands in their extravagances of feasting and superfluities of habit, presently fill the house with noise and uproar; whereas, if they would but suffer themselves to be convinced by reason and soft persuasion, they would of themselves acknowledge their vanity and submit to moderation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:13'><b>&sect; 13</b>&nbsp;&nbsp;<a href=/people/41 target=_blank>Cato</a> ejected a certain Roman out of the senate for kissing his wife in the presence of his daughter. It is true, the punishment was somewhat too severe; but if kissing and colling and hugging in the sight of others be so unseemly, as indeed it is, how much more indecent is it to chide and brawl and maunder one at another while strangers are in company? If lawful familiarity and caresses between man and wife are not to be allowed but in their private retirements, shall the bitter interchanges and loud discoveries of invective and inconsiderate passion be thought an entertainment pleasingly proper for unconcerned and public ears? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:14'><b>&sect; 14</b>&nbsp;&nbsp;As there is little or no use to be made of a mirror, though in a frame of gold enchased with all the sparkling variety of the richest gems, unless it render back the true similitude of the image it receives; so is there nothing of profit in a wealthy dowry, unless the conditions, the temper, the humor of the wife be conformable to the natural disposition and inclination of the husband, and he sees the virtues of his own mind exactly represented in hers. Or, if a fair and beautiful mirror that makes a sad and pensive visage look jocund and gay, or a wanton or smiling countenance show pensive and mournful, is therefore presently rejected as of no value; thus may not she be thought an angry, peevish, and importunate woman, that louts and lowers upon the caresses of a husband, and when he courts the pastime of her affections, entertains him with frumps and taunts, but when she finds him serious in business, allures him then with her unseasonable toyings to pleasure and enjoyment? For the one is an offence of impertinency, the other a contempt of her husband's kindness. But, as geometricians affirm that lines and surfaces are not moved of themselves, but according to the motions of the bodies to which they belong, so it behooves a woman to challenge no peculiar passion or affection as her own, but to share with her husband in business, in his recreations, in his cares, and in his mirth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:15'><b>&sect; 15</b>&nbsp;&nbsp;As they who are offended to see their wives eat and drink freely in their company do but whet their appetites to glut and gormandize in corners by themselves; so they who refuse to frolic in retirement with their wives, or to let them participate of their private pastimes and dalliances, do but instruct them to cater for their own pleasures and delights. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:16'><b>&sect; 16</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> kings, when they contain themselves within the limits of their usual banquets, suffer their married wives to sit down at their tables; but when they once design to indulge the provocations of amorous heats and wine, then they send away their wives, and call for their concubines, their gypsies, and their songstresses, with their lascivious tunes and wanton galliards. Wherein they do well, not thinking it proper to debauch their wives with the tipsy frolics and dissolute extravagances of their intemperance. If therefore any private person, swayed by the unruly motions of his incontinency, happen at any time to make a trip with a kind she-friend or his wife's chambermaid, it becomes not the wife presently to lower and take pepper in the nose, but rather to believe that it was his respect to her which made him unwilling she should behold the follies of ebriety and foul intemperance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:17'><b>&sect; 17</b>&nbsp;&nbsp;Princes that be addicted to music increase the number of excellent musicians; if they be lovers of learning, all men strive to excel in reading and in eloquence; if given to martial exercises, a military ardor rouses straight the drowsy sloth of all their subjects. Thus husbands effeminately finical only teach their wives to paint and polish themselves with borrowed lustre. The studious of pleasure render them immodest and whorish. On the other side, men of serious, honest, and virtuous conversations make sober, chaste, and prudent wives. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:18'><b>&sect; 18</b>&nbsp;&nbsp;A young <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Lacedemonian</a> lass, being asked by an acquaintance of hers whether she had yet embraced her husband, made answer, No; but that he had embraced her. And after this manner, in my opinion, it behooves an honest woman to behave herself toward her husband, never to shun nor to disdain the caresses and dalliances of his amorous inclinations, when he himself begins; but never herself to offer the first occasion of provocation. For the one savors of impudent harlotry, the other displays a female pride and imperiousness void of conjugal affection. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:19'><b>&sect; 19</b>&nbsp;&nbsp;It behooves a woman not to make peculiar and private friendships of her own, but to esteem only her husband's acquaintance and familiars as hers. Now as the Gods are our chiefest and most beneficial friends, it behooves her to worship and adore only those Deities which her husband reputes and reverences for such. But as for quaint opinions and superstitious innovations, let them be exterminated from her outermost threshold. For no sacrifices or services can be acceptable to the Gods, performed by women, as it were, by stealth and in secret, without the knowledge of the husband. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:20'><b>&sect; 20</b>&nbsp;&nbsp;<a href=/people/12 target=_blank>Plato</a> asserts those cities to be the most happy and best regulated where these expressions, This is mine, This is not mine, are seldomest made use of. For that then the citizens enjoy in common, so far as is convenient, those things that are of greatest importance. But in wedlock those expressions are utterly to be abolished. For as the physicians say that the right side being bruised or beaten communicates its pain to the left; so indeed the husband ought to sympathize in the sorrows and afflictions of the woman, and much more does it become the wife to be sensible of the miseries and calamities of the husband; to the intent that, as knots are made fast by knitting the bows of a thread one within another, so the ligaments of conjugal society may be strengthened by the mutual interchange of kindness and affection. This Nature herself instructs us, by mixing us in our bodies; while she takes a part from each, and then blending the whole together produces a being common to both, to the end that neither may be able to discern or distinguish what was belonging to another, or lay claim to assured propriety. Therefore is community of estate and purses chiefly requisite among married couples, whose principal aim it ought to be to mix and incorporate their purchases and disbursements into one substance, neither pretending to call this hers or that his, but accounting all inseparably peculiar to both. However, as in a goblet where the proportion of water exceeds the juice of the grape, yet still we call the mixture wine; in like manner the house and estate must be reputed the possession of the husband, although the woman brought the chiefest part. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:21'><b>&sect; 21</b>&nbsp;&nbsp;<a href=/people/69 target=_blank>Helen</a> was covetous, <a href=/people/112 target=_blank>Paris</a> luxurious. On the other side, <a href=/people/18 target=_blank>Ulysses</a> was prudent, <a href=/people/264 target=_blank>Penelope</a> chaste. Happy therefore was the match between the latter; but the nuptials of the former brought an <a href=/people/12111 target=_blank>Iliad</a> of miseries as well upon the Greeks as barbarians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:22'><b>&sect; 22</b>&nbsp;&nbsp;The question being put by some of his friends to a certain Roman, why he had put away his wife, both sober, beautiful, chaste, and rich, the gentleman, putting forth his foot and showing his buskin, said: Is not this a new, handsome, complete shoe? — yet no man but myself knows where it pinches me. Therefore ought not a woman to boast either of her dower, her parentage, or beauty; but in such things as most delight a husband, pleasantness of converse, sweetness of disposition, and briskness of humor, there to show nothing of harshness, nothing distasteful, nothing offensive, but from day today to study behavior jocund, blithe, and conformable to his temper. For as physicians are much more afraid of fevers that proceed from hidden causes, which have been by little and little contracting for a long time together, than those that receive their nourishment from apparent and manifest unconcoctions; thus, if daily continued, the petty snubs and frumps between man and wife, though perhaps unknown to others, are of that force that above all things else they canker conjugal affection, and destroy the pleasure of cohabitation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:23'><b>&sect; 23</b>&nbsp;&nbsp;King <a href=/people/30 target=_blank>Philip</a> so far doted on a fair <a about=https://topostext.org/place/394223RThs class=demonym long=22.3 lat=39.4>Thessalian</a> lady, that she was suspected to have used some private arts of fascination towards him. Wherefore <a href=/people/272 target=_blank>Olympias</a> labored to get the supposed sorceress into her power. But when the queen had viewed her well, and duly examined her beauty, beheld the <a href=/people/5553 target=_blank>Graces</a> of her deportment, and considered her discourse bespake her no less than a person of noble descent and education; Hence, fond suspicions, hence vainer calumnies! said she, for I plainly find the charms which thou makest use of are in thyself. Certainly therefore a lawful wife surpasses the common acceptation of happiness when, without enhancing the advantages of her wealth, nobility, and form, or vaunting the possession of <a href=/people/15 target=_blank>Aphrodite</a>'s cestus itself, she makes it her business to win her husband's affection by her virtue and sweetness of disposition. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:24'><b>&sect; 24</b>&nbsp;&nbsp;Another time the same <a href=/people/272 target=_blank>Olympias</a>, understanding that a young courtier had married a lady, beautiful indeed, but of no good report, said: Sure, the Hotspur had little brains, otherwise he would never have married with his eyes. For they are fools who in the choice of a wife believe the report of their sight or fingers; like those who telling out the portion in their thoughts take the woman upon content, never examining what her conditions are, or whether she is proper to make him a fit wife or no? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:25'><b>&sect; 25</b>&nbsp;&nbsp;<a href=/people/16 target=_blank>Socrates</a> was wont to give this advice to young men that accustomed themselves to their mirrors: — if ill-favored, to correct their deformity by the practice of virtue; if handsome, not to blemish their outward form with inward vice. In like manner, it would not be amiss for a mistress of a family, when she holds her mirror in her hands, to discourse her own thoughts: — if deformed, thus, Should I prove lewd and wicked too? — on the other side, thus the fair one, What if chaste beside? For it adds a kind of veneration to a woman not so handsome, that she is more beloved for the perfections of her mind than the outside <a href=/people/5553 target=_blank>Graces</a> of her body. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:26'><b>&sect; 26</b>&nbsp;&nbsp;<a href=/people/23 target=_blank>Dionysius</a>, the tyrant of <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, sent several costly presents of rich apparel, necklaces, and bracelets to the daughters of <a href=/people/107 target=_blank>Lysander</a>, which however the father would never permit the virgins to accept, saying: These gaudy presents will procure more infamy than honor to my daughters. And indeed, before <a href=/people/107 target=_blank>Lysander</a>, <a href=/people/131 target=_blank>Sophocles</a> in one of his tragedies had uttered the following sentence to the same effect: Mistake not, silly wretch; this pompous trim Rather disgraces than proclaims thee great, And shows the rage of thy lascivious heat. For, as <a href=/people/249 target=_blank>Crates</a> said, that is ornament which adorns; and that adorns a woman which renders her more comely and decent. This is an honor conferred upon her, not by the lustre of gold, the sparkling of emeralds and diamonds, nor splendor of the purple tincture, but by the real embellishments of gravity, discretion, humility, and modesty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:27'><b>&sect; 27</b>&nbsp;&nbsp;They who offer to <a href=/people/19 target=_blank>Hera</a> as the Goddess of Wedlock never consecrate the gall with the other parts of the sacrifice, but having drawn it forth, they cast it behind the altar. Which constitution of the lawgiver fairly implies that all manner of passionate anger and bitterness of reproach should be exterminated from the thresholds of nuptial cohabitation. Not but that a certain kind of austerity becomes the mistress of a family; which however should be like that of wine, profitable and delightful, not like aloes, biting and medicinally ungrateful to the palate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:28'><b>&sect; 28</b>&nbsp;&nbsp;<a href=/people/12 target=_blank>Plato</a> observing the morose and sour humor of <a href=/people/365 target=_blank>Xenocrates</a>, otherwise a person of great virtue and worth, admonished him to sacrifice to the <a href=/people/5553 target=_blank>Graces</a>. In like manner, I am of opinion that it behooves a woman of moderation to crave the assistance of the <a href=/people/5553 target=_blank>Graces</a> in her behavior towards her husband, thereby (according to the saying of <a href=/people/435 target=_blank>Metrodorus</a>) to render their society mutually harmonious to each other, and to preserve her from being waspishly proud, out of a conceit of her fidelity and virtue. For it becomes not a frugal woman to be neglectful of decent neatness, nor one who has great respect to her husband to refrain complacency in her conversation; seeing that, as the over-rigid humor of a wife renders her honesty irksome, so sluttery begets a hatred of her sparing and pinching housewifery. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:29'><b>&sect; 29</b>&nbsp;&nbsp;She who is afraid to laugh or to appear merry and gay before her husband, for fear of waking his jealousy, may be said to resemble one that forbears to anoint herself at all, lest she should be thought to use unnecessary or harlotry perfumes, or that neglects to wash her face, to avoid the suspicion of painting. Thus we find that poets and orators, who desire to shun the tiring tediousness of a low, vulgar, and drowsy style, ingeniously labor to detain and move both their readers and their auditors by the quaintness of their invention, grandeur of the subject, and lively representation of the humors and conditions which they bring upon the stage. From whence a discreet mistress of a family may likewise learn to avoid all manner of over-nice curiosity and squeamish affectation, all excess of jollity savoring of the courtesan, and every thing tending to profuse pomp; but she will rather employ all her wit and art in exhibiting to her husband all the <a href=/people/5553 target=_blank>Graces</a> of life and character, accustoming him to honesty and decency joined with pleasure and delight. Nevertheless, if there be any woman so severe and reserved by nature that no means can be found to make her blithe and sportive, it behooves her husband to give way to her temper; and, as <a href=/people/182 target=_blank>Phocion</a> answered <a href=/people/74 target=_blank>Antipater</a>, who commanded him to do an ill thing that misbecame his quality, I cannot be thy friend and flatter thee at one and the same time, in like manner ought a man to rest satisfied with the virtues of a chaste wife, though her serious disposition will not permit her to act the airy part of a mistress. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:30'><b>&sect; 30</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> women were anciently never wont to wear shoes, to the end they might accustom themselves to stay at home. But altogether different is the humor of our women; for they, unless allowed their jewels, their bracelets, and necklaces, their gaudy vestments, gowns, and petticoats, all bespangled with gold, and their embroidered buskins, will never stir abroad. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:31'><b>&sect; 31</b>&nbsp;&nbsp;<a href=/people/1487 target=_blank>Theano</a>, as she was dressing herself one morning in her chamber, by chance discovered some part of her naked arm. Upon which, one of the company crying out, Oh, what a lovely arm is there! — 'Tis very true, said she, but yet not common. Thus ought a chaste and virtuous woman not only to keep her naked arms from open view, but to lock up her very words and set a guard upon her lips, especially in the company of strangers, since there is nothing which sooner discovers the qualities and conditions of a woman than her discourse. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:32'><b>&sect; 32</b>&nbsp;&nbsp;<a href=/people/402 target=_blank>Phidias</a> made the statue of <a href=/people/15 target=_blank>Aphrodite</a> at <a about=https://topostext.org/place/378214PEli class=place long=21.374 lat=37.89>Elis</a> with one foot upon the shell of a tortoise, to signify two great duties of a virtuous woman, which are to keep at home and be silent. For she is only to speak to her husband, or by her husband. Nor is she to take amiss the uttering her mind in that manner, through another more proper organ. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:33'><b>&sect; 33</b>&nbsp;&nbsp;Princes and kings honor themselves in giving honor to philosophers and learned men. On the other side, great personages admired and courted by philosophers are no way honored by their flatteries, which are rather a prejudice and stain to the reputation of those that use them. Thus it is with women, who in honoring and submitting to their husbands win for themselves honor and respect, but when they strive to get the mastery, they become a greater reproach to themselves than to those that are so ignominiously henpecked. But then again, it behooves a husband to control his wife, not as a master does his vassal, but as the soul governs the body, with the gentle hand of mutual friendship and reciprocal affection. For as the soul commands the body, without being subject to its pleasures and inordinate desires, in like manner should a man so exercise his authority over his wife, as to soften it with complaisance and kind requital of her loving submission. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:34'><b>&sect; 34</b>&nbsp;&nbsp;Philosophers assert that, of bodies which consist of several parts, some are composed of parts distinct and separate, as a navy or army royal; others of contiguous parts, as a house or a ship; and others of parts united at the first conception, equally partaking of life and motion and growing together, as are the bodies of all living creatures. Thus, where people wed for pure affection, that marriage may be said to resemble those bodies whose parts are solidly fixed together. They who marry for the sake of great portions, or else desirous of offspring, are like to bodies whose parts are contiguous and cleave close to one another; and they who only bed together, if there be any such, resemble bodies whose parts are distinct and without dependency. Now, as physicians say that liquids are the only bodies which most easily intermix without any difference of propriety or respect one with another; so should it be said of people joined together in matrimony, that there is a perfect mixture of bodies and estates, of friends and relations. Therefore the Roman law prohibits new married people from giving and receiving mutual presents one from another; not that they should not participate one with another, but to show that they were not to enjoy any thing but what they possess in common. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:35'><b>&sect; 35</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/326143ULep class=place long=14.2905 lat=32.6383>Leptis</a>, a city of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>, it was an ancient custom for the bride, the next day after the nuptial solemnity, to send home to the mother of the bridegroom to borrow a boiler, which she not only refused to lend, but sent back word that she had none to spare; to the end that the new married woman, having by that means tried the disposition of her mother-in-law, if afterwards she found her humor peevish and perverse, might with more patience brook her unkindness, as being no more than what she expected. Rather it becomes the daughter to avoid all occasions of distaste. For it is natural to some mothers to be jealous that the wife deprives her of that filial tenderness which she expects from her son. For which there is no better cure than for a wife so to contrive the gaining of her husband's love as not to lessen or withdraw his affection from his mother. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:36'><b>&sect; 36</b>&nbsp;&nbsp;It is generally observed that mothers are fondest of their sons, as expecting from them their future assistance when they grow into years, and that fathers are kindest to their daughters, as standing most in need of their paternal succor. And perhaps, out of that mutual respect which the man and his wife bear one to another, either of them would seem to carry greater affection for that which is proper and familiar to the other. But this pleasing controversy is easily reconciled. For it becomes a woman to show the choicest of her respects and to be more complaisant to the kindred of her husband than to her own to make her complaints to them, and conceal her discontents from her own relations. For the trust which she reposes in them causes them to confide in her, and her esteem of them increases their respects to her. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:37'><b>&sect; 37</b>&nbsp;&nbsp;The commanders of the Grecian auxiliaries that marched in aid of <a href=/people/27 target=_blank>Cyrus</a> gave these instructions to their soldiers, that, if their enemies advanced whooping and hallowing to the combat, they should receive the charge, observing an exact silence; but on the other side, if they came on silently, then to rend the air with their martial shouts. Thus prudent wives, when their husbands in the heat of their passion rant and tear the house down, should make no returns, but quietly hold their peace; but if they only frown out their discontents in moody anger, then, with soft language and gently reasoning the case, they may endeavor to appease and qualify their fury. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:38'><b>&sect; 38</b>&nbsp;&nbsp;Rightly therefore are they reprehended by <a href=/people/75 target=_blank>Euripides</a>, who introduce the harp and other instruments of music at their compotations. For music ought rather to be made use of for the mitigation of wrath and to allay the sorrows of mourning, not to heighten the voluptuousness of those that are already drowned in jollity and delight. Believe yourselves then to be in an error that sleep together for pleasure, but when angry and at variance make two beds, and that never at that time call to your assistance the Goddess <a href=/people/15 target=_blank>Aphrodite</a>, who better than any other knows how to apply a proper remedy to such distempers; as <a href=/people/9 target=_blank>Homer</a> teaches us, where he brings in <a href=/people/19 target=_blank>Hera</a> using this expression: Your deadly feuds will I myself appease, And th' amorous bed shall be the charming place Where all your strife shall in embracing cease. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:39'><b>&sect; 39</b>&nbsp;&nbsp;Though it becomes a man and his wife at all times to avoid all occasions of quarrelling one with another, yet is there no time so unseasonable for contention as when they are between the same sheets. As the woman in difficult labor said to those that were about to lay her upon her bed; How, said she, can this bed cure these pains, since it was in this very bed that my pleasures were the cause of all my throes? And still less will those reproaches and contests which the bed produces be reconciled at any other time or place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:40'><b>&sect; 40</b>&nbsp;&nbsp;<a href=/people/1148 target=_blank>Hermione</a> seems to be in the right, speaking to this effect in one of the tragedies of <a href=/people/75 target=_blank>Euripides</a>: The lewd discourse of women void of shame Ruined my honor and my virtuous name. However, these mischiefs rarely happen but where women at variance and jealous of their husbands open not only their door but their ears to whole swarms of twattling gossips, that widen the difference. For then it behooves a prudent woman to shut her ears and beware of listening to such enchanting tattlers, calling to mind the answer of <a href=/people/30 target=_blank>Philip</a>, when he was exasperated by his friends against the Greeks for cursing and reviling him, notwithstanding all the benefits they had received at his hands: What would they have done, said he, had we used them with unkindness and severity? The same should be the reply of a prudent woman to those she-devils, when they bewail her condition, and cry, A woman so loving, so chaste and modest, and yet abused by her husband! For then should she make answer, What would he do, should I begin to hate him and to do him wrong? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:41'><b>&sect; 41</b>&nbsp;&nbsp;A certain master, whose slave had been run away from him for several months together, after a long search at length found him suddenly in a workhouse, and said, Where could I have desired to meet with thee more to my wish than in such a place as this? Thus, when a woman is grown jealous of her husband and meditates nothing but present divorce, before she be too hasty, let her reason with herself in this manner: In what condition would my rival choose to see me with greater satisfaction than as I am, all in a fret and fume, enraged against my husband, and ready to abandon both my house and marriage-bed together? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:42'><b>&sect; 42</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> have three sacred ploughed fields: the first at <a about=https://topostext.org/place/380237SAtS class=place long=23.6902 lat=37.933>Sciron</a>, in memory of the first invention by their ancestors of sowing; the second at <a about=https://topostext.org/place/381236LRaP class=place long=23.56 lat=38.06>Rharia</a>; and the third under the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a>, which they call the Bouzygion in commemoration of the first yoking of <a href=/people/10961 target=_blank>oxen</a> to the plough. But more sacred than all these is the nuptial ploughing and sowing, in order to the procreation of children. And therefore <a href=/people/131 target=_blank>Sophocles</a> rightly calls <a href=/people/15 target=_blank>Aphrodite</a> the fruitful <a href=/people/1067 target=_blank>Cytherea</a>. For which reason it highly imports both the man and the woman, when bound together by the holy tie of wedlock, to abstain from all unlawful and forbidden copulation, and from ploughing and sowing where they never desire to reap any fruit of their labor, or, if the harvest come to perfection, they conceal and are ashamed to own it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:43'><b>&sect; 43</b>&nbsp;&nbsp;The orator <a href=/people/367 target=_blank>Gorgias</a>, in a full assembly of the Grecians, resorting from all parts to the <a about=https://topostext.org/place/376216SOly class=demonym long=21.63 lat=37.6378>Olympic</a> games, making an oration to the people, wherein he exhorted them to live in peace, unity, and concord among one another, <a href=/people/1083 target=_blank>Melanthus</a> cried out aloud: This man pretends to give us advice, and preaches here in public nothing but love and union, who in his own private family is not able to keep his wife and his maid from being continually together by the ears, and yet there are only they three in the house. For it seems that <a href=/people/367 target=_blank>Gorgias</a> had a kindness for his servant, which made her mistress jealous. And therefore it behooves that man to have his family in exquisite order who will undertake to regulate the failing of his friends or the public miscarriages, especially since the misbehavior of men toward their wives is far sooner divulged among the people than the transgressions of women against their husbands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:44'><b>&sect; 44</b>&nbsp;&nbsp;It is reported that the scent of sweet perfumes will make a <a href=/people/556 target=_blank>cat</a> grow mad. Now, supposing those strong perfumes which are used by many men should prove offensive to their wives, would it not be a great piece of unnatural unkindness to discompose a woman with continual fits rather than deny himself a pleasure so trivial? But when it is not their husbands' perfuming themselves, but their lascivious wandering after lewd and extravagant women, that disturbs and disorders their wives, it is a great piece of injustice, for the tickling pleasure of a few minutes, to afflict and disquiet a virtuous woman. For since they who are conversant with <a href=/people/10964 target=_blank>bees</a> will often abstain from women, to prevent the persecution of those little but implacable enemies of unclean dalliance, much rather ought a man to be pure from the pollutions of harlotry, when he approaches his chaste and lawful wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:45'><b>&sect; 45</b>&nbsp;&nbsp;They whose business it is to manage elephants never put on white frocks, nor dare they that govern wild <a href=/people/10955 target=_blank>bulls</a> appear in red, those creatures being scared and exasperated by those colors. And some report that tigers, when they hear a drum beat afar off, grow mad and exercise their savage fury upon themselves. If then there are some men that are offended at the gay and sumptuous habit of their wives, and others that brook as ill their gadding to plays and balls, what reason is there that women should not refrain those vanities rather than perplex and discontent their husbands, with whom it becomes their modesty to live with patience and sobriety. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:46'><b>&sect; 46</b>&nbsp;&nbsp;What said a woman to King <a href=/people/30 target=_blank>Philip</a>, that pulled and hauled her to him by violence against her will? Let me go, said she, for when the candles are out, all women are alike. This is aptly applied to men addicted to adultery and lust. But a virtuous wife, when the candle is taken away, ought then chiefly to differ from all other women. For when her body is not to be seen, her chastity, her modesty, and her peculiar affection to her husband ought then to shine with their brightest lustre. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:47'><b>&sect; 47</b>&nbsp;&nbsp;<a href=/people/12 target=_blank>Plato</a> admonishes old men to carry themselves with most gravity in the presence of young people, to the end the awe of their example may imprint in youth the greater respect and reverence of age. For the loose and vain behavior of men stricken in years breeds a contempt of gray hairs, and never can expect veneration from juvenility. Which sober admonition should instruct the husband to bear a greater respect to his wife than to all other women in the world, seeing that the nuptial chamber must be to her either the school of honor and chastity or that of incontinency and wantonness. For he that allows himself those pleasures that he forbids his wife, acts like a man that would enjoin his wife to oppose those enemies to which he has himself already surrendered. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0007.tlg078:48'><b>&sect; 48</b>&nbsp;&nbsp;As to what remains, in reference to superfluity of habit and decent household furniture, remember, dear <a href=/people/1047 target=_blank>Eurydice</a>, what Timoxenas has written to Aristylla. And do you, Pollianus, never believe that women will be weaned from those toys and curiosities wherein they take a kind of pride, and which serve for an alleviation of their domestic solitude, while you yourself admire the same things in other women, and are taken with the gayety of golden beakers, magnificent pictures for your houses, and rich trappings for your mules and <a href=/people/10959 target=_blank>horses</a>. For it were a strange moroseness to debar a woman those ornamental vanities which naturally her sex admire, nor will it easily be endured without regret, where she sees the man much more indulgent to his own humor. Since then thou art arrived at those years which are proper for the study of such sciences as are attained by reason and demonstration, endeavor to complete this knowledge by conversing with persons that may be serviceable to thee in such a generous design. And as for thy wife, like the industrious <a href=/people/10964 target=_blank>bee</a>, gather everywhere from the fragrant flowers of good instruction, replenish thyself with whatever may be of advantage to her, and impart the same to her again in loving and familiar discourse, both for thy own and her improvement. For father thou and mother art to her; She now is thine, and not the parent's care. Nor is it less to thy commendation to hear what she returns: And you, my honored husband, are my guide And tutor in philosophy beside, From whose instructions I at once improve The fruits of knowledge and the sweets of love. For such studies as these fix the contemplations of women upon what is laudable and serious, and prevent their wasting time upon impertinent and pernicious vanity. For that lady that is studious in geometry will never affect the dissolute motions of dancing. And she that is taken with the sublime notions of <a href=/people/12 target=_blank>Plato</a> and <a href=/people/62 target=_blank>Xenophon</a> will look with disdain upon the charms and enchantments of witches and sorcerers; and if any ridiculous astrologer promises to pull the moon down from the sky, she will laugh at the ignorance and folly of the women who believe in him, being herself well grounded in astronomy, and having heard about Aganice, the daughter of <a href=/people/7746 target=_blank>Hegetor</a>, a <a about=https://topostext.org/place/394223RThs class=person long=22.3 lat=39.4>Thessalian</a> lord, who understanding the reason of the eclipses of the moon, and knowing beforehand the time of her being obscured by the shadow of the earth, made the credulous women believe that it was she who at those times unhinged the moon and removed her from the sky. True it is, that never any woman brought forth a perfect child without the assistance and society of man, but there are many whose imaginations are so strongly wrought upon by the sight or bare relation of monstrous spectacles, that they bring into the world several sorts of immature and shapeless productions. Thus, unless great care be taken by men to manure and cultivate the inclinations of their wives with wholesome and virtuous precepts, they often breed among themselves the false conceptions of extravagant and loose desires. But do thou, <a href=/people/1047 target=_blank>Eurydice</a>, make it thy business to be familiar with the learned proverbs of wise and learned men, and always to embellish thy discourse with their profitable sentences, to the end thou mayst be the admiration of other women, that shall behold thee so richly adorned without the expense or assistance of jewels or embroideries. For pearls and diamonds are not the purchase of an ordinary purse; but the ornaments of <a href=/people/1487 target=_blank>Theano</a>, Cleobuline, <a href=/people/2412 target=_blank>Gorgo</a> the wife of King <a href=/people/12466 target=_blank>Leonidas</a>, <a href=/people/3476 target=_blank>Timoclea</a> the sister of <a href=/people/145 target=_blank>Theagenes</a>, the ancient Roman <a href=/people/1822 target=_blank>Claudia</a>, or <a href=/people/858 target=_blank>Cornelia</a> the daughter of <a href=/people/22 target=_blank>Scipio</a>, — already so celebrated and renowned for their virtues, — will cost but little, yet nothing will set thee out more glorious or illustrious to the world, or render thy life more comfortable and happy. For if <a href=/people/483 target=_blank>Sappho</a>, only because she could compose an elegant verse, had the confidence to write to a haughty and wealthy dame in her time: Dead thou shalt lie forgotten in thy tomb, Since not for thee <a about=https://topostext.org/place/402225RPie class=demonym long=22.5 lat=40.2>Pierian</a> roses bloom, why may it not be much more lawful for thee to boast those great perfections that give thee a greater privilege, not only to gather the flowers, but to reap the fruits themselves, which the <a href=/people/54 target=_blank>Muses</a> bestow upon the lovers and real owners of learning and philosophy? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg078.perseus-grc1:1.48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2019                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=261', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas261";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=261';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

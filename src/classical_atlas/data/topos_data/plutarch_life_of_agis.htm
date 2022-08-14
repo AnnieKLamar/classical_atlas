@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Plutarch, Life of Agis' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Life of Agis, Plutarch's Lives, translated by Bernadotte Perrin (1847-1920), from the Loeb Classical Library edition of 1914, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='110' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 110' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/174' content='urn:cts:greekLit:tlg0007.tlg051a' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79026763' content='Plutarch'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n86857201' content='Bernadotte Perrin (1847-1920)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/home.html' /><h2>Plutarch, Life of Agis</h2>Life of Agis, Plutarch's Lives, translated by Bernadotte Perrin (1847-1920), from the Loeb Classical Library edition of 1914, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 63 tagged references to 26 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0007.tlg051a'>urn:cts:greekLit:tlg0007.tlg051a</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87210075'>Q87210075</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=Agis.1.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.1.1'><b>&sect; Agis.1.1</b>&nbsp;&nbsp;The Life of <a href=/people/175 target=_blank>Agis</a><br />Not without rhyme or reason is the supposition of some writers that the tale about <a href=/people/729 target=_blank>Ixion</a> — how it was the cloud that he embraced instead of <a href=/people/19 target=_blank>Hera</a> and begat from thence the <a href=/people/553 target=_blank>Centaurs</a> — has an application to lovers of glory. For such men, consorting with glory, which we may call an image of virtue, produce nothing that is genuine and of true lineage, but much that is bastard and monstrous, being swept now along one course and now along another in their attempts to satisfy desire and passion. The herdsmen of <a href=/people/131 target=_blank>Sophocles</a> say, in speaking of their flock: — Of these, indeed, though masters, we are yet the slaves, And to them we must listen even though they're dumb. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.1.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.1.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.1.2'><b>&sect; Agis.1.2</b>&nbsp;&nbsp;And this, in truth, is the experience of public men who act in conformity with the desires and impulses of multitudes, making themselves attendants and slaves in order that they may be called popular leaders and rulers. For just as a ship's lookout, who sees what lies ahead before the ship's captain does, nevertheless turns to him for orders and does what he ordains, so the public man whose eyes are fixed on glory is a servant of the multitude, although he has the name of ruler. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.1.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.1'><b>&sect; Agis.2.1</b>&nbsp;&nbsp;The man, indeed, whose goodness is complete and perfect will have no need at all of glory, except so far as glory gives him access to achievement by reason of the confidence men have in him; but a man who is still young and is fond of honours may be allowed to plume and exalt himself somewhat even upon glory, provided that glory is the outcome of noble deeds. For virtues, which are incipient and budding in the young, are confirmed in their proper development, as <a href=/people/129 target=_blank>Theophrastus</a> says, by the praises of men, and complete their growth under the incentive of pride. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.2'><b>&sect; Agis.2.2</b>&nbsp;&nbsp;But excess is everywhere harmful, and in the case of men who cherish political ambitions, it is deadly; for it sweeps them away into manifest folly and madness as they grasp after great power, when they refuse to regard what is honourable as glorious, but consider that what is glorious is good. Therefore, what <a href=/people/182 target=_blank>Phocion</a> said to <a href=/people/74 target=_blank>Antipater</a>, who demanded from him some dishonourable service, Thou canst not have <a href=/people/182 target=_blank>Phocion</a> as thy friend and at the same time thy flatterer, this, or something akin to this, must be said to the multitude: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.3'><b>&sect; Agis.2.3</b>&nbsp;&nbsp;Ye cannot have the same man as your ruler and your slave. Since in this case also one certainly can apply the fable of the <a href=/people/55 target=_blank>serpent</a> whose tail rebelled against its head and demanded the right to lead in turn instead of always following; so it took the lead, and by the folly of its progress got itself into mischief and lacerated the head, which was compelled, contrary to nature, to follow a part that had neither eyes nor ears. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.4'><b>&sect; Agis.2.4</b>&nbsp;&nbsp;This, as we see, has been the experience of many of the men whose whole political activity is directed towards the winning of popular favour; they made themselves dependent on the multitude, which is borne about at random, and then could neither recover themselves nor put a stop to the progress of disorder. These remarks upon the glory which comes from the favour of the multitude I have been led to make because I was reminded of its great influence by the fortunes of <a href=/people/70 target=_blank>Tiberius</a> and Caius <a href=/people/177 target=_blank>Gracchus</a>. They were men of most generous natures, and had a most generous rearing, and adopted most generous political principles; and yet they were ruined, I will not say by an immoderate desire for glory, but rather by a fear of losing it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.5'><b>&sect; Agis.2.5</b>&nbsp;&nbsp;For after they had enjoyed great kindness from their fellow citizens, they were ashamed to leave it unpaid, like a debt of money; and so they were forever striving by the excellence of their political services to surpass the honours conferred upon them, and were honoured all the more in consequence of their grateful political services. In this way, after kindling an equal ardour in themselves towards the people and in the people towards themselves, they engaged in enterprises wherein, though they knew it not, it was no longer honourable for them to persist, and already disgraceful for them to stop. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.2.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.2.6'><b>&sect; Agis.2.6</b>&nbsp;&nbsp;As to this matter, however, my reader will judge for himself from my narrative; and I shall compare with the <a href=/people/1832 target=_blank>Gracchi</a> a pair of popular leaders in <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, <a href=/people/175 target=_blank>Agis</a> and <a href=/people/81 target=_blank>Cleomenes</a> the kings. For these also tried to exalt the people, just as the <a href=/people/1832 target=_blank>Gracchi</a> did, and tried to restore an honourable and just civil polity which had lapsed for a long time; and like the <a href=/people/1832 target=_blank>Gracchi</a> they incurred the hatred of the nobles, who were unwilling to relax their wonted greed. It is true that the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> were not brothers; still, they adopted political courses which were kindred and brother to one another. The occasion was as follows. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.2.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.3.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.3.1'><b>&sect; Agis.3.1</b>&nbsp;&nbsp;When once the love of silver and gold had crept into the city, closely followed by greed and parsimony in the acquisition of wealth and by luxury, effeminacy, and extravagance in the use and enjoyment of it, <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> fell away from most of her noble traits, and continued in a low estate that was unworthy of her down to the times when <a href=/people/175 target=_blank>Agis</a> and <a href=/people/212 target=_blank>Leonidas</a> were kings. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.3.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.3.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.3.2'><b>&sect; Agis.3.2</b>&nbsp;&nbsp;<a href=/people/175 target=_blank>Agis</a> was of the <a href=/people/2409 target=_blank>Eurypontid</a> royal house, a son of <a href=/people/1590 target=_blank>Eudamidas</a>, and the sixth in descent from the <a href=/people/51 target=_blank>Agesilaus</a> who crossed into Asia and became the most powerful Greek of his time. For <a href=/people/51 target=_blank>Agesilaus</a> had a son <a href=/people/239 target=_blank>Archidamus</a>, who was slain by the <a about=https://topostext.org/place/405188RMes class=ethnic long=18 lat=40.3>Messapians</a> at <a about=https://topostext.org/place/404176UMan class=place long=17.6411 lat=40.4074>Mandurion</a> in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>; <a href=/people/239 target=_blank>Archidamus</a> had an elder son <a href=/people/175 target=_blank>Agis</a>, and a younger son <a href=/people/1590 target=_blank>Eudamidas</a>, who, after <a href=/people/175 target=_blank>Agis</a> was slain by <a href=/people/74 target=_blank>Antipater</a> at <a about=https://topostext.org/place/374221PMeg class=place long=22.1273 lat=37.4124>Megalopolis</a> leaving no issue, became king; <a href=/people/1590 target=_blank>Eudamidas</a> was succeeded by <a href=/people/239 target=_blank>Archidamus</a>, <a href=/people/239 target=_blank>Archidamus</a> by another <a href=/people/1590 target=_blank>Eudamidas</a>, and <a href=/people/1590 target=_blank>Eudamidas</a> by <a href=/people/175 target=_blank>Agis</a>, subject of this Life. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.3.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.3.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.3.3'><b>&sect; Agis.3.3</b>&nbsp;&nbsp;<a href=/people/212 target=_blank>Leonidas</a>, on the other hand, the son of <a href=/people/599 target=_blank>Cleonymus</a>, was of the other royal house, the <a href=/people/8730 target=_blank>Agiad</a>, and was eighth in descent from the <a href=/people/117 target=_blank>Pausanias</a> who defeated <a href=/people/252 target=_blank>Mardonius</a> at <a about=https://topostext.org/place/382233LPlB class=place long=23.3012 lat=38.2446>Plataea</a>. For <a href=/people/117 target=_blank>Pausanias</a> had a son <a href=/people/2346 target=_blank>Pleistoanax</a>, and <a href=/people/2346 target=_blank>Pleistoanax</a> a son <a href=/people/117 target=_blank>Pausanias</a>, upon whose exile and flight from <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> to <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a> his elder son <a href=/people/977 target=_blank>Agesipolis</a> became king; <a href=/people/977 target=_blank>Agesipolis</a>, dying without issue, was succeeded by a younger brother <a href=/people/450 target=_blank>Cleombrotus</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.3.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.3.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.3.4'><b>&sect; Agis.3.4</b>&nbsp;&nbsp;and <a href=/people/450 target=_blank>Cleombrotus</a>, in turn, had two sons, <a href=/people/977 target=_blank>Agesipolis</a> and <a href=/people/81 target=_blank>Cleomenes</a>, of whom <a href=/people/977 target=_blank>Agesipolis</a> reigned only a short time and left no sons, while <a href=/people/81 target=_blank>Cleomenes</a>, who became king after him, lived to lose his elder son <a href=/people/1612 target=_blank>Acrotatus</a>, but left behind him a younger son <a href=/people/599 target=_blank>Cleonymus</a>; <a href=/people/599 target=_blank>Cleonymus</a>, however, did not come to the throne, but <a href=/people/1216 target=_blank>Areus</a>, who was a grandson of <a href=/people/81 target=_blank>Cleomenes</a> and son of <a href=/people/1612 target=_blank>Acrotatus</a>; <a href=/people/1216 target=_blank>Areus</a> fell in battle at <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Corinth</a>, and his son <a href=/people/1612 target=_blank>Acrotatus</a> came to the throne; <a href=/people/1612 target=_blank>Acrotatus</a> also was defeated and slain at <a about=https://topostext.org/place/374221PMeg class=place long=22.1273 lat=37.4124>Megalopolis</a>, by the tyrant <a href=/people/226 target=_blank>Aristodemus</a>, leaving his wife with child; and after she had given birth to a son, <a href=/people/212 target=_blank>Leonidas</a> the son of <a href=/people/599 target=_blank>Cleonymus</a> was made the child's guardian. But the young king died before reaching manhood, and the kingship therefore devolved upon <a href=/people/212 target=_blank>Leonidas</a>, who was altogether unacceptable to the people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.3.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.3.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.3.6'><b>&sect; Agis.3.6</b>&nbsp;&nbsp;For although the destruction of the constitution had already led to a general decline in manners, there was in <a href=/people/212 target=_blank>Leonidas</a> a very marked departure from the traditions of his country, since for a long time he had frequented oriental courts and had been a servile follower of <a href=/people/72 target=_blank>Seleucus</a>, and now sought to transfer the pride and pomp which prevailed abroad into Hellenic relations and a constitutional government, where they were out of place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.3.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.4.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.4.1'><b>&sect; Agis.4.1</b>&nbsp;&nbsp;<a href=/people/175 target=_blank>Agis</a>, on the contrary, far surpassed in native excellence and in loftiness of spirit not only <a href=/people/212 target=_blank>Leonidas</a>, but almost all the kings who had followed the great <a href=/people/51 target=_blank>Agesilaus</a>. Therefore, even before he had reached his twentieth year, and although he had been reared amid the wealth and luxury of women, namely, his mother <a href=/people/4824 target=_blank>Agesistrata</a> and his grandmother <a href=/people/4074 target=_blank>Archidamia</a> (who were the richest people in <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>), he at once set his face against pleasures. He put away from his person the adornments which were thought to befit the grace of his figure, laid aside and avoided every extravagance, prided himself on his short <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> cloak, observed sedulously the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> customs in his meals and baths and general ways of living, and declared that he did not want the royal power at all unless by means of it he could restore the ancient laws and discipline. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.4.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.5.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.5.1'><b>&sect; Agis.5.1</b>&nbsp;&nbsp;And here I may say that the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Lacedemonian</a> state began to suffer distemper and corruption soon after its subversion of the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> supremacy filled it with gold and silver. However, since the number of families instituted by <a href=/people/12417 target=_blank>Lycurgus</a> was still preserved in the transmission of estates, and father left to son his inheritance, to some extent the continuance of this order and equality sustained the state in spite of its errors in other respects. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.5.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.5.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.5.2'><b>&sect; Agis.5.2</b>&nbsp;&nbsp;But when a certain powerful man came to be ephor who was headstrong and of a violent temper, <a href=/people/10829 target=_blank>Epitadeus</a> by name, he had a quarrel with his son, and introduced a law permitting a man during his lifetime to give his estate and allotment to any one he wished, or in his will and testament so to leave it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.5.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.5.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.5.3'><b>&sect; Agis.5.3</b>&nbsp;&nbsp;This man, then, satisfied a private grudge of his own in introducing the law; but his fellow citizens welcomed the law out of greed, made it valid, and so destroyed the most excellent of institutions. For the men of power and influence at once began to acquire estates without scruple, ejecting the rightful heirs from their inheritances; and speedily the wealth of the state streamed into the hands of a few men, and poverty became the general rule, bringing in its train lack of leisure for noble pursuits and occupations unworthy of freemen, along with envy and hatred towards the men of property. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.5.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.5.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.5.4'><b>&sect; Agis.5.4</b>&nbsp;&nbsp;Thus there were left of the old <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> families not more than seven hundred, and of these there were perhaps a hundred who possessed land and allotment; while the ordinary throng, without resources and without civic rights, lived in enforced idleness, showing no zeal or energy in warding off foreign wars, but ever watching for some opportunity to subvert and change affairs at home. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.5.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.6.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.6.1'><b>&sect; Agis.6.1</b>&nbsp;&nbsp;<a href=/people/175 target=_blank>Agis</a>, therefore, thinking it a noble achievement, as it was, to equalize and restore to full numbers the body of citizens, began to sound the inclinations of people. The young men, as he found, quickly and beyond his expectations gave ear to him, and stripped themselves for the contest in behalf of virtue, like him casting aside their old ways of living as worn-out garments in order to attain liberty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.6.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.6.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.6.2'><b>&sect; Agis.6.2</b>&nbsp;&nbsp;But most of the older men, since they were now far gone in corruption, feared and shuddered at the name of <a href=/people/12417 target=_blank>Lycurgus</a> as if they had run away from their master and were being led back to him, and they upbraided <a href=/people/175 target=_blank>Agis</a> for bewailing the present state of affairs and yearning after the ancient dignity of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. <a href=/people/107 target=_blank>Lysander</a>, however, the son of <a href=/people/3873 target=_blank>Libys</a>, <a href=/people/3205 target=_blank>Mandrocleidas</a> the son of Ecphanes, as well as <a href=/people/51 target=_blank>Agesilaus</a>, approved of the king's aspirations and supported him in them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.6.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.6.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.6.3'><b>&sect; Agis.6.3</b>&nbsp;&nbsp;<a href=/people/107 target=_blank>Lysander</a> was in the highest repute among the citizens, and <a href=/people/3205 target=_blank>Mandrocleidas</a> was the ablest Greek of his time in setting schemes on foot, and his sagacity and craft were mingled with daring; <a href=/people/51 target=_blank>Agesilaus</a>, who was the king's uncle on his mother's side, and a powerful orator, though otherwise effeminate and avaricious, was openly urged on and encouraged by his son <a href=/people/1135 target=_blank>Hippomedon</a>, who had won fair fame in many wars, and had great influence because he stood in favour with the young men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.6.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.6.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.6.4'><b>&sect; Agis.6.4</b>&nbsp;&nbsp;But what really induced <a href=/people/51 target=_blank>Agesilaus</a> to take part in the king's enterprise was the multitude of his debts, of which he hoped to rid himself by changing the constitution. As soon, then, as <a href=/people/175 target=_blank>Agis</a> had won over <a href=/people/51 target=_blank>Agesilaus</a>, he straightway sought with the aid of his uncle to persuade his mother, who was a sister of <a href=/people/51 target=_blank>Agesilaus</a>, and owing to the multitude of her retainers, friends, and debtors, had great influence in the state and took a large part in public affairs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.6.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.7.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.7.1'><b>&sect; Agis.7.1</b>&nbsp;&nbsp;When she heard her son's plea, she was at first amazed, and tried to stop the young man from attempting what she thought was neither possible nor profitable; but <a href=/people/51 target=_blank>Agesilaus</a> tried to show her that the king's project would be feasible and its accomplishment advantageous, and the king himself besought his mother to contribute her wealth for the advancement of his ambition and glory. For in the matter of property, he said, he could not equal the other kings </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.7.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.7.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.7.2'><b>&sect; Agis.7.2</b>&nbsp;&nbsp;(since the servants and slaves of the satraps and overseers of <a href=/people/21 target=_blank>Ptolemy</a> and <a href=/people/72 target=_blank>Seleucus</a> had larger possessions than all the kings of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> put together); but if in self-restraint, simplicity, and magnanimity he should surpass their luxury, and thereby establish equality and community of possession among the citizens, he would win the name and fame of a really great king. The women, lifted up by the young man's high ambition, were so changed in their purposes, and possessed, as it were, by so great an inspiration to take the noble course, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.7.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.7.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.7.3'><b>&sect; Agis.7.3</b>&nbsp;&nbsp;that they joined in urging and hastening on the projects of <a href=/people/175 target=_blank>Agis</a>, sent for their friends among the men and invited them to help, and held conference with the women besides, since they were well aware that the men of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> were always obedient to their wives, and allowed them to meddle in public affairs more than they themselves were allowed to meddle in domestic concerns. Now, at this time the greater part of the wealth of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> was in the hands of the women, and this made the work of <a href=/people/175 target=_blank>Agis</a> a grievous and difficult one. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.7.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.7.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.7.4'><b>&sect; Agis.7.4</b>&nbsp;&nbsp;For the women were opposed to it, not only because they would be stripped of the luxury which, in the general lack of higher culture, made their lives seem happy, but also because they saw that the honour and influence which they enjoyed in consequence of their wealth would be cut off. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.7.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.7.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.7.5'><b>&sect; Agis.7.5</b>&nbsp;&nbsp;So they had recourse to <a href=/people/212 target=_blank>Leonidas</a>, and besought him, since he was an older man, to withstand <a href=/people/175 target=_blank>Agis</a> and hinder what he was trying to accomplish. <a href=/people/212 target=_blank>Leonidas</a>, accordingly, was desirous of aiding the rich, but he feared the people, who were eager for a revolution. He therefore made no open opposition to <a href=/people/175 target=_blank>Agis</a>, but secretly sought to damage his undertaking and bring it to nought by slandering him to the chief magistrates, declaring that he was purchasing a tyranny by offering to the poor the property of the rich, and by distribution of land and remission of debts was buying a large body-guard for himself, not many citizens for <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.7.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.8.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.8.1'><b>&sect; Agis.8.1</b>&nbsp;&nbsp;However, <a href=/people/175 target=_blank>Agis</a> procured <a href=/people/107 target=_blank>Lysander</a>'s election as ephor, and at once employed him to introduce a bill into the senate, the chief provisions of which were that debtors should be relieved of their debts, and that the land should be divided up, that which lay between the water-course at <a about=https://topostext.org/place/380225PPel class=place long=22.5384 lat=38.0446>Pellene</a> and <a about=https://topostext.org/place/370223LTay class=place long=22.35 lat=36.9535>Taygetus</a>, <a about=https://topostext.org/place/364232LMal class=place long=23.198 lat=36.436>Malea</a>, and <a about=https://topostext.org/place/372224PSel class=place long=22.4397 lat=37.1884>Sellasia</a>, into forty-five hundred lots, and that which lay outside this into fifteen thousand; that this larger land should be apportioned among those of the provincials who were capable of bearing arms, and the smaller among the genuine <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a>; that the number of these <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> should be filled up from the provincials and foreigners who had received the rearing of freemen and were, besides, of vigorous bodies and in the prime of life; and that these should be formed into fifteen public messes by four hundreds and two hundreds, and should practise the mode of life which the ancient <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> had followed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.8.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.9.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.9.1'><b>&sect; Agis.9.1</b>&nbsp;&nbsp;The rhetra was introduced in the senate, and the senators were divided in opinion. <a href=/people/107 target=_blank>Lysander</a> therefore called together a general assembly and discussed the matter himself with the citizens, and <a href=/people/3205 target=_blank>Mandrocleidas</a> and <a href=/people/51 target=_blank>Agesilaus</a> begged them not to suffer the insolent opposition of a few to blind them to the prostration of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>'s dignity, but to call to mind the earlier oracles which bade them beware of the love of riches as a fatal thing for <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, as well as the oracles which had lately been brought to them from <a href=/people/930 target=_blank>Pasiphae</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.9.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.9.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.9.2'><b>&sect; Agis.9.2</b>&nbsp;&nbsp;Now there was a temple of <a href=/people/930 target=_blank>Pasiphae</a> at <a about=https://topostext.org/place/368223PTha class=place long=22.3257 lat=36.7862>Thalamae</a>, and her oracle there was held in honour. Some say that <a href=/people/930 target=_blank>Pasiphae</a> was one of the daughters of <a href=/people/190 target=_blank>Atlas</a>, and the mother of <a href=/people/577 target=_blank>Ammon</a> by <a href=/people/1 target=_blank>Zeus</a>, and some that <a href=/people/631 target=_blank>Cassandra</a> the daughter of <a href=/people/64 target=_blank>Priam</a> died at <a about=https://topostext.org/place/368223PTha class=place long=22.3257 lat=36.7862>Thalamae</a>, and was called <a href=/people/930 target=_blank>Pasiphae</a> because she declared her oracles to all. <a href=/people/724 target=_blank>Phylarchus</a>, however, says that she was a daughter of <a href=/people/2081 target=_blank>Amyclas</a>, <a href=/people/762 target=_blank>Daphne</a> by name, and that, fleeing the embraces of <a href=/people/2 target=_blank>Apollo</a>, she was changed into the tree of like name, after which she was honoured by the god with the gift of prophetic power. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.9.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.9.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.9.3'><b>&sect; Agis.9.3</b>&nbsp;&nbsp;Be this as it may, it was now said that the oracles brought from this goddess ordained that all <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> should be on an equality according to the original law made by <a href=/people/12417 target=_blank>Lycurgus</a>. And finally, King <a href=/people/175 target=_blank>Agis</a> came forward and after a brief discourse said that he offered very large contributions to the constitutions which he was trying to establish; for in the first place he put into the common stock his own estate, which included extensive tillage and pasture, and apart from this six hundred talents in money; and, besides, his mother and his grandmother did likewise, together with their relatives and friends, and they were the wealthiest among the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.9.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.10.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.10.1'><b>&sect; Agis.10.1</b>&nbsp;&nbsp;The people, accordingly, were filled with amazement at the magnanimity of the young man, and were delighted, feeling that after a lapse of nearly two hundred years a king had appeared who was worthy of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>; but <a href=/people/212 target=_blank>Leonidas</a>, now more than ever, strove in opposition. For he reasoned that he would be compelled to do as <a href=/people/175 target=_blank>Agis</a> had done, and that he would not get the same gratitude for it among the citizens, but that if all the rich alike made their property a part of the common fund, the honour for it would be given to him alone who had led the way. He therefore asked <a href=/people/175 target=_blank>Agis</a> if he thought that <a href=/people/12417 target=_blank>Lycurgus</a> had shown himself a just and worthy man, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.10.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.10.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.10.2'><b>&sect; Agis.10.2</b>&nbsp;&nbsp;and when <a href=/people/175 target=_blank>Agis</a> said that he did, When, then, said <a href=/people/212 target=_blank>Leonidas</a>, did <a href=/people/12417 target=_blank>Lycurgus</a> either grant abolition of debts or admit foreigners into citizenship — a man who held that the state was in no healthy way at all if it did not practise expulsion of foreigners? But <a href=/people/175 target=_blank>Agis</a> replied that he was not astonished to find <a href=/people/212 target=_blank>Leonidas</a>, who had been reared in foreign lands and had children by an oriental marriage, ignorant that <a href=/people/12417 target=_blank>Lycurgus</a> had banished from the state debts and loans along with coined money, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.10.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.10.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.10.3'><b>&sect; Agis.10.3</b>&nbsp;&nbsp;and that foreigners in the cities were held by him in less displeasure than men to whom the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> practices and ways of living were not congenial; these, indeed, he sought to drive away, not because he was hostile to their persons, but because he feared lest their lives and manners should contaminate the citizens, and breed in them a love of luxury, effeminacy, and greed; for certainly <a href=/people/1164 target=_blank>Terpander</a> and <a href=/people/263 target=_blank>Thales</a> and <a href=/people/582 target=_blank>Pherecydes</a> were foreigners, and yet, because the teachings of their songs and philosophy always accorded with those of <a href=/people/12417 target=_blank>Lycurgus</a>, they were held in surpassing honour at <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.10.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.10.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.10.4'><b>&sect; Agis.10.4</b>&nbsp;&nbsp;Thou praisest Ecprepes, said <a href=/people/175 target=_blank>Agis</a>, who, as ephor, cut out with an adze two of the nine lute-strings of <a href=/people/3453 target=_blank>Phrynis</a> the musician, a and likewise the magistrates in the time of <a href=/people/155 target=_blank>Timotheus</a>, who did the same thing in their turn, but thou blamest me for trying to remove luxury, extravagance, and ostentation from <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, as if those magistrates also were not on the watch to prevent the pompous and superfluous in music from making such advances as our lives and manners have come to, whose excess and discord has made the city dissonant and out of tune with itself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.10.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.11.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.11.1'><b>&sect; Agis.11.1</b>&nbsp;&nbsp;After this, the common people took sides with <a href=/people/175 target=_blank>Agis</a>, but the men of wealth entreated <a href=/people/212 target=_blank>Leonidas</a> not to abandon them. And by prayers and arguments with senators, whose power lay in their privilege of presenting all measures to the people, they so far prevailed that by a single vote the proposed rhetra was rejected. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.11.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.11.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.11.2'><b>&sect; Agis.11.2</b>&nbsp;&nbsp;<a href=/people/107 target=_blank>Lysander</a>, however, who was still ephor, set on foot an indictment of <a href=/people/212 target=_blank>Leonidas</a> by virtue of an ancient law which forbade any descendant of <a href=/people/4 target=_blank>Heracles</a> to beget children by a foreign woman, and ordained that anyone who left <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> to settle among foreigners should be put to death. After instructing others to spread these charges against <a href=/people/212 target=_blank>Leonidas</a>, he himself, with his colleagues, proceeded to observe the traditional sign from heaven. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.11.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.11.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.11.3'><b>&sect; Agis.11.3</b>&nbsp;&nbsp;This is observed as follows. Every ninth year the ephors select a clear and moonless night, and in silent session watch the face of the heavens. If, then, a star shoots across the sky, they decide that their kings have transgressed in their dealings with the gods, and suspend them from their office, until an oracle from <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> or <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> comes to the succour of the kings thus found guilty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.11.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.11.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.11.4'><b>&sect; Agis.11.4</b>&nbsp;&nbsp;This sign <a href=/people/107 target=_blank>Lysander</a> now declared had been given him, and indicted <a href=/people/212 target=_blank>Leonidas</a>, and produced witnesses showing that he was the father of two children by a woman of Asia who had been given him to wife by one of the lieutenants of <a href=/people/72 target=_blank>Seleucus</a>; and that owing to the woman's dislike and hatred of him he had come back home against his own wishes, where he had assumed the royal dignity, to which there was then no direct successor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.11.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.11.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.11.5'><b>&sect; Agis.11.5</b>&nbsp;&nbsp;Besides bringing this indictment, <a href=/people/107 target=_blank>Lysander</a> tried to persuade <a href=/people/450 target=_blank>Cleombrotus</a> to lay claim to the royal dignity. <a href=/people/450 target=_blank>Cleombrotus</a> was a son-in law of <a href=/people/212 target=_blank>Leonidas</a>, and one of the royal line. <a href=/people/212 target=_blank>Leonidas</a>, accordingly, took fright, and fled as a suppliant to the temple of <a href=/people/11 target=_blank>Athena</a> of the <a about=https://topostext.org/place/371224SACh class=place long=22.42338 lat=37.08265>Brazen House</a>. His daughter also forsook <a href=/people/450 target=_blank>Cleombrotus</a> and became a suppliant with her father. When <a href=/people/212 target=_blank>Leonidas</a> was summoned to the trial and did not appear, he was deposed, and <a href=/people/450 target=_blank>Cleombrotus</a> was made king in his place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.11.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.12.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.12.1'><b>&sect; Agis.12.1</b>&nbsp;&nbsp;At this point, <a href=/people/107 target=_blank>Lysander</a>'s term expired and he went out of office. The new board of ephors encouraged <a href=/people/212 target=_blank>Leonidas</a> to leave his suppliant's asylum, and brought an indictment against <a href=/people/107 target=_blank>Lysander</a> and <a href=/people/3205 target=_blank>Mandrocleidas</a> for violating the law in proposing an abolition of debts and a distribution of land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.12.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.12.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.12.2'><b>&sect; Agis.12.2</b>&nbsp;&nbsp;Thus put in legal peril, <a href=/people/107 target=_blank>Lysander</a> and <a href=/people/3205 target=_blank>Mandrocleidas</a> persuaded the two kings to act together and disregard the edicts of the ephors; for that board of magistrates, they said, derived its power from dissension between the two kings, by giving their vote to the king who offered the better advice, whenever the other was at variance with the public good; but when the two kings were in accord, their power was indissoluble, and it would be unlawful for the ephors to contend against them, although when the kings were in contention with one another it was the privilege of the ephors to act as arbiters between them, but not to interfere when they were of one mind. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.12.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.12.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.12.3'><b>&sect; Agis.12.3</b>&nbsp;&nbsp;Persuaded by these arguments, both the kings went with their friends into the market place, removed the ephors from their seats, and appointed others in their stead, one of whom was <a href=/people/51 target=_blank>Agesilaus</a>. Then they armed a large body of young men and set free all who were in prison, thus striking fear into their opponents, who thought they would put many of them to death. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.12.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.12.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.12.4'><b>&sect; Agis.12.4</b>&nbsp;&nbsp;No one, however, lost his life at their hands; on the contrary, when <a href=/people/175 target=_blank>Agis</a> learned that <a href=/people/51 target=_blank>Agesilaus</a> had plotted to make away with <a href=/people/212 target=_blank>Leonidas</a> as he was trying to withdraw to <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a>, and had sent men to assault him on the road, he sent out another company of trusted followers who took <a href=/people/212 target=_blank>Leonidas</a> under their protection and brought him safely to <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.12.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.13.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.13.1'><b>&sect; Agis.13.1</b>&nbsp;&nbsp;Thus the enterprise of the kings was making good progress and no one tried to oppose or hinder them, when one man, <a href=/people/51 target=_blank>Agesilaus</a>, upset and ruined everything. He allowed a most shameful disease of avarice to wreck a most noble and most truly <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> plan. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.13.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.13.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.13.2'><b>&sect; Agis.13.2</b>&nbsp;&nbsp;For since he was an exceedingly large owner of valuable land, but owed huge sums of money, being unable to pay his debts and unwilling to give up his lands, he persuaded <a href=/people/175 target=_blank>Agis</a> that if both his projects should be carried through at the same time the resulting convulsion in the state would be great; but that if the men of property should first be won over by a remission of their debts, they would afterwards accept the distribution of land contentedly and quietly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.13.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.13.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.13.3'><b>&sect; Agis.13.3</b>&nbsp;&nbsp;This was also the opinion of <a href=/people/107 target=_blank>Lysander</a>, who was deceived in like manner by <a href=/people/51 target=_blank>Agesilaus</a>. So they caused mortgages (the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> call them klaria, or allotment pledges) to be brought into the market-place, heaped them altogether, and set fire to them. As the flames rose, the men of wealth and the lenders of money went away with heavy hearts; but <a href=/people/51 target=_blank>Agesilaus</a>, as if in mockery of them, declared that his eyes had never seen a brighter or purer flame than that. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.13.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.13.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.13.4'><b>&sect; Agis.13.4</b>&nbsp;&nbsp;And now the multitude demanded also that the land should at once be divided, and the kings gave orders that this should be done; but <a href=/people/51 target=_blank>Agesilaus</a> would always interpose some obstacle or make some excuse, and so consumed time until it became the duty of <a href=/people/175 target=_blank>Agis</a> to head a military expedition, when the <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a>, who were their allies, sent for aid from <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. For the <a about=https://topostext.org/place/386215RAit class=ethnic long=21.5 lat=38.6>Aitolians</a> were expected to invade <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a> by way of <a about=https://topostext.org/place/380233PMeg class=place long=23.34285 lat=37.997>Megara</a>; and <a href=/people/12271 target=_blank>Aratus</a>, the general of the <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a>, in an effort to prevent this, was assembling a force and wrote a letter to the ephors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.13.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.14.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.14.1'><b>&sect; Agis.14.1</b>&nbsp;&nbsp;These at once sent out <a href=/people/175 target=_blank>Agis</a>, who was exalted in spirit by the ambition and ardour of the soldiers under him. For being young men for the most part and poor, and having now immunity from their debts and absolution, and expecting that they would receive allotments of land if they returned from the expedition, their devotion to <a href=/people/175 target=_blank>Agis</a> was astonishing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.14.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.14.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.14.2'><b>&sect; Agis.14.2</b>&nbsp;&nbsp;And they were a spectacle to the cities as they marched through the <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a> without doing any injury, without rudeness, and almost without noise, so that the other Greeks were amazed and asked themselves what must have been the discipline of a <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> army under the command of the great <a href=/people/51 target=_blank>Agesilaus</a>, or the famous <a href=/people/107 target=_blank>Lysander</a>, or <a href=/people/212 target=_blank>Leonidas</a> of old, since towards a stripling who was almost the youngest of the whole army so great reverence and fear were felt by his soldiers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.14.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.14.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.14.3'><b>&sect; Agis.14.3</b>&nbsp;&nbsp;And indeed the young man himself, owing to his simplicity, his love of hardships, and the pride he took in clothing and arming himself with no more splendour than a common soldier, won the admiration and devotion of the multitudes; for to the rich, certainly, his innovating ways were not pleasing, owing to a fear that they might prove a disturbing force and set a bad example among the common people everywhere. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.14.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.15.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.15.1'><b>&sect; Agis.15.1</b>&nbsp;&nbsp;<a href=/people/12271 target=_blank>Aratus</a>, when <a href=/people/175 target=_blank>Agis</a> joined him near <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Corinth</a>, was still deliberating whether or not to meet the enemy in open battle. Here <a href=/people/175 target=_blank>Agis</a> displayed great ardour, and courage which was sane and calculating. For he declared that in his opinion it was best to fight a decisive battle and not to abandon the gate of the <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a> and suffer the enemy to pass inside: However, he said, I will do as seems best to <a href=/people/12271 target=_blank>Aratus</a>, for <a href=/people/12271 target=_blank>Aratus</a> is an older man, and is general of the <a about=https://topostext.org/place/382219RAch class=ethnic long=21.9 lat=38.2>Achaeans</a>; I did not come hither to be their leader or to give them orders, but to give them aid and share their expedition. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.15.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.15.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.15.2'><b>&sect; Agis.15.2</b>&nbsp;&nbsp;<a href=/people/12343 target=_blank>Baton</a> of <a about=https://topostext.org/place/420351PSin class=person long=35.143 lat=42.025>Sinope</a>, however, says that <a href=/people/175 target=_blank>Agis</a> himself was unwilling to give battle although <a href=/people/12271 target=_blank>Aratus</a> urged it; but<a href=/people/12343 target=_blank>Baton</a> has not read what <a href=/people/12271 target=_blank>Aratus</a> wrote about this matter, urging in self-defence that he thought it better, now that the husbandmen had gathered in almost all their crops, to suffer the enemy to pass by, instead of risking everything in battle. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.15.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.15.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.15.3'><b>&sect; Agis.15.3</b>&nbsp;&nbsp;When, therefore, <a href=/people/12271 target=_blank>Aratus</a> decided not to give battle, and dismissed his allies with praises for their proffered aid, <a href=/people/175 target=_blank>Agis</a>, who had won universal admiration, led his forces back to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, where there was already much commotion and a revolution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.15.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.16.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.16.1'><b>&sect; Agis.16.1</b>&nbsp;&nbsp;For <a href=/people/51 target=_blank>Agesilaus</a>, who was one of the ephors, being now freed from what had kept him in restraint before, shrank from no injustice that brought him money, nay, contrary to the customary arrangement of the calendar, and when the time for it had not yet come, he inserted a thirteenth month and exacted taxes for it. Moreover, in fear of the victims of his injustice and hated by all men, he kept an armed bodyguard, and would go down to his magistracy under their protection. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.16.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.16.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.16.2'><b>&sect; Agis.16.2</b>&nbsp;&nbsp;And as for the kings, he wished men to think that he utterly despised the one, and held <a href=/people/175 target=_blank>Agis</a> in some slight honour more because of his near relationship than because he was king. He also spread reports that he was going to be ephor again. For this reason his enemies lost no time in taking the great hazard, and banding together, openly brought home <a href=/people/212 target=_blank>Leonidas</a> from <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a> to exercise the royal power. Even the common people were glad to see this done, for they were incensed at their deception in the promised division of the land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.16.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.16.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.16.3'><b>&sect; Agis.16.3</b>&nbsp;&nbsp;<a href=/people/51 target=_blank>Agesilaus</a>, accordingly, was taken out of the country and saved by his son <a href=/people/1135 target=_blank>Hippomedon</a>, who entreated his fellow-citizens, and was beloved of all because of his valour; and as for the kings, <a href=/people/175 target=_blank>Agis</a> fled for refuge to the temple of <a href=/people/11 target=_blank>Athena</a> of the <a about=https://topostext.org/place/371224SACh class=place long=22.42338 lat=37.08265>Brazen House</a>, while <a href=/people/450 target=_blank>Cleombrotus</a> went as a suppliant to the sanctuary of <a href=/people/25 target=_blank>Poseidon</a>; for <a href=/people/212 target=_blank>Leonidas</a> was thought to be more bitter against him, and in fact he left <a href=/people/175 target=_blank>Agis</a> unmolested and went up against <a href=/people/450 target=_blank>Cleombrotus</a> with soldiers. And when he arrived he denounced <a href=/people/450 target=_blank>Cleombrotus</a> angrily because, though a son-in law, he had plotted against him, robbed him of the royal power, and helped in driving him from the country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.16.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.17.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.17.1'><b>&sect; Agis.17.1</b>&nbsp;&nbsp;<a href=/people/450 target=_blank>Cleombrotus</a>, on his part, had naught to say for himself, but sat perplexed and speechless; <a href=/people/4118 target=_blank>Chilonis</a>, however, the daughter of <a href=/people/212 target=_blank>Leonidas</a>, who before this had felt herself wronged in the wrongs done to her father, and when <a href=/people/450 target=_blank>Cleombrotus</a> was made king had left him and ministered to her father in his misfortunes, — sharing his suppliant life while he was in the city, and in his exile continually grieving for him and cherishing bitter thoughts of <a href=/people/450 target=_blank>Cleombrotus</a> — at this time changed back again with the changed fortunes of the men, and was seen sitting as a suppliant with her husband, her arms thrown about him, and a little child clinging to her on either side. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.17.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.17.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.17.2'><b>&sect; Agis.17.2</b>&nbsp;&nbsp;All beholders were moved to wonder and tears at the fidelity and devotion of the woman, who, touching her robes and her hair, alike unkempt, said: This garb, my father, and this appearance, are not due to my pity for <a href=/people/450 target=_blank>Cleombrotus</a>; nay, ever since thy sorrows and thine exile grief has been my steadfast mate and companion. Must I, then, now that thou art king in <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> and victorious over thine enemies, continue to live in this sad state, or put on the splendid attire of royalty, after seeing the husband of my youth slain at thy hands? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.17.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.17.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.17.3'><b>&sect; Agis.17.3</b>&nbsp;&nbsp;That husband, unless he persuades and wins thee over by the tears of his wife and children, will pay a more grievous penalty for his evil designs than thou desirest, for he shall see me, his most beloved one, dead, before he is. For with what assurance could I live and face the other women, I, whose prayers awakened no pity in either husband or father? Nay, both as wife and as daughter I was born to share only the misfortune and dishonour of the men nearest and dearest to me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.17.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.17.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.17.4'><b>&sect; Agis.17.4</b>&nbsp;&nbsp;As for my husband, even if he had some plausible excuse for his course, I robbed him of it at that time by taking thy part and testifying to what he had done; but thou makest his crime an easy one to defend by showing men that royal power is a thing so great and so worth fighting for that for its sake it is right to slay a son-in law and ignore a child. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -250 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.17.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.18.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.18.1'><b>&sect; Agis.18.1</b>&nbsp;&nbsp;Uttering such supplications <a href=/people/4118 target=_blank>Chilonis</a> rested her face upon the head of <a href=/people/450 target=_blank>Cleombrotus</a> and turned her eyes, all melted and marred with grief, upon the bystanders. Then <a href=/people/212 target=_blank>Leonidas</a>, after conference with his friends, bade <a href=/people/450 target=_blank>Cleombrotus</a> leave his asylum and go into exile, but begged his daughter to remain, and not to abandon him, since he loved her so much, and had made her a free gift of her husband's life. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.18.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.18.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.18.2'><b>&sect; Agis.18.2</b>&nbsp;&nbsp;He could not persuade her, however, but when her husband rose to go she put one of her children in his arms, took up the other one herself, and went forth in his company after an obeisance to the altar of the god; so that if <a href=/people/450 target=_blank>Cleombrotus</a> had not been wholly corrupted by vain ambition, he would have considered that exile was a greater blessing for him than the kingdom, because it restored to him his wife. After removing <a href=/people/450 target=_blank>Cleombrotus</a> from his asylum, <a href=/people/212 target=_blank>Leonidas</a> expelled the officiating ephors from their office, appointed others in their place, and at once began to lay plots against the life of <a href=/people/175 target=_blank>Agis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.18.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.18.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.18.3'><b>&sect; Agis.18.3</b>&nbsp;&nbsp;To begin with, he tried to persuade <a href=/people/175 target=_blank>Agis</a> to leave his asylum and share the royal power with him, because, being a young man and ambitious, he had been one of those who <a href=/people/51 target=_blank>Agesilaus</a> had completely deceived. But <a href=/people/175 target=_blank>Agis</a> continued to be suspicious and would not leave his asylum. So <a href=/people/212 target=_blank>Leonidas</a> himself stopped trying to cheat and play tricks upon him, but <a href=/people/3527 target=_blank>Amphares</a>, <a href=/people/7571 target=_blank>Damochares</a>, and <a href=/people/312 target=_blank>Arcesilaus</a> did not. They were wont to go up to the temple and converse with <a href=/people/175 target=_blank>Agis</a>; and once they actually took him in charge and brought him down from the temple for a bath, and after he had bathed, restored him again to the temple. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.18.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.18.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.18.4'><b>&sect; Agis.18.4</b>&nbsp;&nbsp;They were all comrades of his, but <a href=/people/3527 target=_blank>Amphares</a> had also borrowed recently some costly vestures and beakers from <a href=/people/4824 target=_blank>Agesistrata</a>, and therefore plotted to destroy the king and the women, that he might not have to return what he had borrowed. And he, certainly, more than anyone else, as we are told, followed the counsels of <a href=/people/212 target=_blank>Leonidas</a> and embittered the ephors, of whom he was one, against <a href=/people/175 target=_blank>Agis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.18.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.1'><b>&sect; Agis.19.1</b>&nbsp;&nbsp;Now <a href=/people/175 target=_blank>Agis</a> spent most of his time in the sanctuary, but was wont to go down from time to time to his bath. There, then, they determined to seize him, when he was outside the sanctuary. So they waited till he had finished his bath, and then came to meet him with friendly greetings, and walked along with him, conversing and jesting with him after the manner of youthful comrades. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.2'><b>&sect; Agis.19.2</b>&nbsp;&nbsp;But at a certain point the road branched off towards the prison, and when they were come to that place, <a href=/people/3527 target=_blank>Amphares</a>, by virtue of his office, laid hands on <a href=/people/175 target=_blank>Agis</a> and said: I shall lead thee, <a href=/people/175 target=_blank>Agis</a>, to the ephors, to answer for thy measures of state; and <a href=/people/7571 target=_blank>Damochares</a>, who was tall and robust, threw his cloak about the king's neck and dragged him along. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.3'><b>&sect; Agis.19.3</b>&nbsp;&nbsp;Others pushed him along from behind, as had been agreed, and since he had no helper but was without a friend, they thrust him into the prison. At once <a href=/people/212 target=_blank>Leonidas</a> was at hand with a large band of mercenaries and surrounded the prison, while the ephors went in to <a href=/people/175 target=_blank>Agis</a>. After sending for those of the senators who were of the same mind as themselves, as though the king were to have a trial, the ephors ordered <a href=/people/175 target=_blank>Agis</a> to defend his conduct of affairs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.4'><b>&sect; Agis.19.4</b>&nbsp;&nbsp;The young king laughed at their dissimulation, whereupon <a href=/people/3527 target=_blank>Amphares</a> threatened that he would rue the day and be punished for his temerity; but another ephor, as though plainly offering <a href=/people/175 target=_blank>Agis</a> a way of escape from the charges against him, asked him if he had done what he did under compulsion from <a href=/people/107 target=_blank>Lysander</a> and <a href=/people/51 target=_blank>Agesilaus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.5'><b>&sect; Agis.19.5</b>&nbsp;&nbsp;And when <a href=/people/175 target=_blank>Agis</a> answered that he had suffered compulsion from no one, but that in admiration and imitation of <a href=/people/12417 target=_blank>Lycurgus</a> he had adopted the same public policy as his, the same ephor asked again if he repented of what he had done. But the young king declared that he had no repentance for what he had most excellently planned, and would not have, even if he saw that he was to suffer the extremest penalty. So they condemned him to death, and ordered the officers to lead him into the Dechas, as it was called. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.6'><b>&sect; Agis.19.6</b>&nbsp;&nbsp;This is a chamber of the prison in which they strangle those who are under sentence of death. But <a href=/people/7571 target=_blank>Damochares</a>, when he saw that the officers did not dare to lay hands on <a href=/people/175 target=_blank>Agis</a>, and likewise that even the mercenaries who were there shrank from the deed and were loth to do it, feeling as they did that it was contrary to the laws of God and man to lay hands upon the person of a king, heaped threats and abuse upon them and himself dragged <a href=/people/175 target=_blank>Agis</a> into the chamber of death. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.19.7>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.19.7'><b>&sect; Agis.19.7</b>&nbsp;&nbsp;For already many people were aware of the arrest, and there was a noisy throng at the door and many torches, and the mother and grandmother of <a href=/people/175 target=_blank>Agis</a> were there, with cries and prayers that the king of the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Spartans</a> should have a hearing and a trial before the citizens. For this reason especially the ephors hastened on the king's execution, believing that he would be taken out of their hands in the night if the concourse should increase. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.19.7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.20.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.20.1'><b>&sect; Agis.20.1</b>&nbsp;&nbsp;<a href=/people/175 target=_blank>Agis</a>, then, on his way to the halter, saw one of the officers shedding tears of sympathy for him. My man, said he, cease weeping; for even though I am put to death in this lawless and unjust manner, I have the better of my murderers. And saying these words, he offered his neck to the noose without hesitation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.20.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.20.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.20.2'><b>&sect; Agis.20.2</b>&nbsp;&nbsp;But <a href=/people/3527 target=_blank>Amphares</a> went to the door of the prison, where <a href=/people/4824 target=_blank>Agesistrata</a> fell at his feet in an appeal to his friendship and intimacy. <a href=/people/3527 target=_blank>Amphares</a> lifted her up and assured her that <a href=/people/175 target=_blank>Agis</a> was not to suffer violence or death; and he bade her, if she wished, go in to her son. And when <a href=/people/4824 target=_blank>Agesistrata</a> begged that her mother might go in with her, <a href=/people/3527 target=_blank>Amphares</a> said there was nothing to prevent. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.20.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.20.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.20.3'><b>&sect; Agis.20.3</b>&nbsp;&nbsp;So he admitted both the women, and after ordered the door of the prison to be locked again, delivered <a href=/people/4074 target=_blank>Archidamia</a> first to the executioners. She was now a very aged woman, and had lived all her days in very high repute among her countrywomen. After she had been put to death, <a href=/people/3527 target=_blank>Amphares</a> ordered <a href=/people/4824 target=_blank>Agesistrata</a> to enter the chamber of execution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.20.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.20.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.20.4'><b>&sect; Agis.20.4</b>&nbsp;&nbsp;So she went in, and when she saw her son lying dead upon the ground, and her mother's dead body still hanging in the noose, with her own hands she helped the officers to take her down, laid her body out by the side of <a href=/people/175 target=_blank>Agis</a>, and composed and covered it. Then, embracing her son and kissing his face, she said: My son, it was thy too great regard for others, and thy gentleness and humanity, which has brought thee to ruin, us as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.20.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.20.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.20.5'><b>&sect; Agis.20.5</b>&nbsp;&nbsp;Then <a href=/people/3527 target=_blank>Amphares</a>, who stood at the door and saw and heard what she did and said, came in and said angrily to her: If, then, thou hast been of the same mind as thy son, thou shalt suffer the same fate. And <a href=/people/4824 target=_blank>Agesistrata</a>, as she rose to present her neck to the noose, said: My only prayer is that this may bring good to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.20.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.21.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.21.1'><b>&sect; Agis.21.1</b>&nbsp;&nbsp;When tidings of the sad event had been carried to the city and the three bodies were carried forth for burial, the fear felt by the citizens was not so strong as to prevent them from manifesting sorrow over what had been done, and hatred for <a href=/people/212 target=_blank>Leonidas</a> and <a href=/people/3527 target=_blank>Amphares</a>. It was thought that nothing more dreadful or heinous had been done in <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> since the <a about=https://topostext.org/place/387224RDor class=ethnic long=22.4 lat=38.7>Dorians</a> had dwelt in <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.21.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.21.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.21.2'><b>&sect; Agis.21.2</b>&nbsp;&nbsp;For against a king of the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>, as it seems, not even their enemies would willingly raise their hands if they met him in battle, but they would spare him, out of fear and reverence for his dignity. And for this reason, although there had been many conflicts between <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a> and other Greeks, only one <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> king had been slain up to the time of <a href=/people/26 target=_blank>Philip</a> of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedon</a>, namely, <a href=/people/450 target=_blank>Cleombrotus</a>, who was smitten by a spear at <a about=https://topostext.org/place/383231ULeu class=place long=23.1717 lat=38.2567>Leuctra</a>. The <a about=https://topostext.org/place/372218RMes class=ethnic long=21.8 lat=37.2>Messenians</a>, however, say that <a href=/people/121 target=_blank>Theopompus</a> also fell in battle, at the hands of <a href=/people/353 target=_blank>Aristomenes</a>; but the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a> deny this, and say that their king was only wounded. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.21.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=Agis.21.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg051a:Agis.21.3'><b>&sect; Agis.21.3</b>&nbsp;&nbsp;This matter may be disputed; but <a href=/people/175 target=_blank>Agis</a> was certainly the first king of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> to be put to death by the ephors. And yet he had chosen a line of conduct that was noble and worthy of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, and was of an age in which men are usually pardoned for their errors, and his friends could with more justice blame him than his enemies, because he spared the life of <a href=/people/212 target=_blank>Leonidas</a>, and, most mild and gentle man that he was, put faith in his other foes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg051a.perseus-grc1:Agis.21.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -241                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=174', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas174";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=174';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

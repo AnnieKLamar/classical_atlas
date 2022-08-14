@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Isocrates 14, Nicocles or the Cyprians' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Nicocles or the Cyprians, Isocrates, Speeches 3-19, translated by George Norlin (1871-1942), from the Loeb edition of 1928/1980, digitized by the Perseus Project. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-370' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -370' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/77' content='urn:cts:greekLit:tlg0010.tlg014' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n78080925' content='Isocrates'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n86088666' content='George Norlin (1871-1942)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>Isocrates 14, Nicocles or the Cyprians</h2>Nicocles or the Cyprians, Isocrates, Speeches 3-19, translated by George Norlin (1871-1942), from the Loeb edition of 1928/1980, digitized by the Perseus Project.  This text has 7 tagged references to 7 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0010.tlg014'>urn:cts:greekLit:tlg0010.tlg014</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87746378'>Q87746378</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:1'><b>&sect; 1</b>&nbsp;&nbsp;Speech 3 <a href=/people/878 target=_blank>Nicocles</a> or the Cyprians <br />There are people who frown upon eloquence and censure men who study philosophy, asserting that those who engage in such occupations do so, not for the sake of virtue, but for their own advantage. Now, I should be glad if those who take this position would tell me why they blame men who are ambitious to speak well, but applaud men who desire to act rightly; for if it is the pursuit of one's own advantage which gives them offense, we shall find that more and greater advantages are gained from actions than from speech. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:2'><b>&sect; 2</b>&nbsp;&nbsp;Moreover, it is passing strange if the fact has escaped them that we reverence the gods and practice justice, and cultivate the other virtues, not that we may be worse off than our fellows, but that we may pass our days in the enjoyment of as many good things as possible. They should not, therefore, condemn these means by which one may gain advantage without sacrifice of virtue, but rather those men who do wrong in their actions or who deceive by their speech and put their eloquence to unjust uses. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:3'><b>&sect; 3</b>&nbsp;&nbsp;I am astonished that those who hold the view to which I have just referred do not rail also against wealth and strength and courage; for if they are really hostile to eloquence because there are men who do wrong and speak falsehood, they ought to disparage as well all other good things; for there will be found also among men who possess these some who do wrong and use these advantages to the injury of many. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:4'><b>&sect; 4</b>&nbsp;&nbsp;Nevertheless, it is not fair to decry strength because there are persons who assault people whom they encounter, nor to traduce courage because there are those who slay men wantonly, nor in general to transfer to things the depravity of men, but rather to put the blame on the men themselves who misuse the good things, and who, by the very powers which might help their fellow-countrymen, endeavor to do them harm. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:5'><b>&sect; 5</b>&nbsp;&nbsp;But the fact is that since they have not taken the trouble to make distinctions after this manner in each instance, they are ill-disposed to all eloquence; and they have gone so far astray as not to perceive that they are hostile to that power which of all the faculties that belong to the nature of man is the source of most of our blessings. For in the other powers which we possess we are in no respect superior to other living creatures; nay, we are inferior to many in swiftness and in strength and in other resources; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:6'><b>&sect; 6</b>&nbsp;&nbsp;but, because there has been implanted in us the power to persuade each other and to make clear to each other whatever we desire, not only have we escaped the life of wild beasts, but we have come together and founded cities and made laws and invented arts; and, generally speaking, there is no institution devised by man which the power of speech has not helped us to establish. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:7'><b>&sect; 7</b>&nbsp;&nbsp;For this it is which has laid down laws concerning things just and unjust, and things base and honorable; and if it were not for these ordinances we should not be able to live with one another. It is by this also that we confute the bad and extol the good. Through this we educate the ignorant and appraise the wise; for the power to speak well is taken as the surest index of a sound understanding, and discourse which is true and lawful and just is the outward image of a good and faithful soul. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:8'><b>&sect; 8</b>&nbsp;&nbsp;With this faculty we both contend against others on matters which are open to dispute and seek light for ourselves on things which are unknown; for the same arguments which we use in persuading others when we speak in public, we employ also when we deliberate in our own thoughts; and, while we call eloquent those who are able to speak before a crowd, we regard as sage those who most skilfully debate their problems in their own minds. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:9'><b>&sect; 9</b>&nbsp;&nbsp;And, if there is need to speak in brief summary of this power, we shall find that none of the things which are done with intelligence take place without the help of speech, but that in all our actions as well as in all our thoughts speech is our guide, and is most employed by those who have the most wisdom. Therefore, those who dare to speak with disrespect of educators and teachers of philosophy deserve our opprobrium no less than those who profane the sanctuaries of the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:10'><b>&sect; 10</b>&nbsp;&nbsp;I, myself, welcome all forms of discourse which are capable of benefiting us even in a small degree; however, I regard those as the best and most worthy of a king, and most appropriate to me, which give directions on good morals and good government; and especially those which teach how men in power should deal with the people, and how the rank and file should be disposed to their rulers. For I observe that it is through such discourses that states attain the highest prosperity and greatness. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:11'><b>&sect; 11</b>&nbsp;&nbsp;On the former topic, how a ruler should act, you have heard <a href=/people/222 target=_blank>Isocrates</a> speak; on the following topic, what his subjects must do, I shall attempt to discourse, not with any thought of excelling him, but because this is the most fitting subject for me to discuss with you. For if I did not make clear what I desire you to do, I could not reasonably be angry with you if you were to mistake my purpose; but if, after I have announced my policy beforehand, none of my desires are carried out, then I should justly blame those who fail to obey me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:12'><b>&sect; 12</b>&nbsp;&nbsp;And I believe that I should most effectively exhort you and urge you to remember my words and heed them, not if I should confine myself to giving you advice and then, after counting out my precepts, make an end, but if, before doing this, I should prove to you, first, that you ought to be content with our present government, not only from necessity, nor because we have lived under it all our lives, but because it is the best of all governments; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:13'><b>&sect; 13</b>&nbsp;&nbsp;and, second, that I hold this office, not illegally nor as a usurper, but with the just sanction of gods and men, and by virtue of my earliest ancestors, and of my father and of myself. For, once these claims have been established, who will not condemn himself to the severest punishment if he fails to heed my counsels and commands? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:14'><b>&sect; 14</b>&nbsp;&nbsp;Speaking, then, of forms of government (for this was the subject I set out to lay before you), I imagine that we all believe that it is altogether monstrous that the good and the bad should be thought worthy of the same privileges, and that it is of the very essence of justice that distinctions should be made between them, and that those who are unlike should not be treated alike but should fare and be rewarded in each case according to their deserts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:15'><b>&sect; 15</b>&nbsp;&nbsp;Now oligarchies and democracies seek equality for those who share in the administration of them; and the doctrine is in high favor in those governments that one man should not have the power to get more than another — a principle which works in the interest of the worthless! Monarchies, on the other hand, make the highest award to the best man, the next highest to the next best, and in the same proportion to the third and the fourth and so on. Even if this practice does not obtain everywhere, such at least is the intention of the polity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:16'><b>&sect; 16</b>&nbsp;&nbsp;And, mark you, monarchies more than other governments keep an appraising eye upon the characters and actions of men, as everyone will admit. Who, then, that is of sound mind would not prefer to share in a form of government under which his own worth shall not pass unnoticed, rather than be lost in the hurly-burly of the mob and not be recognized for what he is? Furthermore, we should be right in pronouncing monarchy also a milder government, in proportion as it is easier to give heed to the will of a single person than to seek to please many and manifold minds. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:17'><b>&sect; 17</b>&nbsp;&nbsp;Now one might multiply arguments to prove that this form of government is more agreeable and mild and just than others; yet, even from those I have advanced it is easy to see this at a glance. As for its other advantages, we can best appreciate how far monarchies excel other governments in planning and carrying out any course of action required of them if we place their most important practices side by side and try to review them. In the first place, then, men who enter upon office for an annual term are retired to private life before they have gained any insight into public affairs or any experience in handling them; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:18'><b>&sect; 18</b>&nbsp;&nbsp;while men who are permanently in charge of the same duties, even though they fall short of the others in natural ability, at any rate have a great advantage over them in experience. In the next place, the former neglect many things, because each looks to the others to do them; while the latter neglect nothing, knowing that whatever is done depends upon their own efforts. Then again, men who live in oligarchies or democracies are led by their mutual rivalries to injure the commonwealth while those who live in monarchies, not having anyone to envy, do in all circumstances so far as possible what is best. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:19'><b>&sect; 19</b>&nbsp;&nbsp;Furthermore, the former are dilatory in action, for they spend most of their time over their private concerns; and when they do assemble in council, you will find them more often quarrelling with each other than deliberating together; while the latter, for whom no councils or times of meeting are prescribed, but who apply themselves to the state's business both day and night, do not let opportunities pass them by, but act in each case at the right moment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:20'><b>&sect; 20</b>&nbsp;&nbsp;Again, the former are ill-disposed toward each other and would rather have their predecessors and their successors in office administer the state as badly as possible, in order that they may win for themselves as much credit as possible; while the latter, because they are in control of affairs throughout their lives, are at all times actuated by feelings of good will. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:21'><b>&sect; 21</b>&nbsp;&nbsp;But the greatest difference is this: men under other governments give attention to the affairs of state as if they were the concern of others; monarchs, as if they were their own concern; and the former employ as their advisers on state affairs the most self-assertive of their citizens, while the latter single out and employ the most sagacious; and the former honor those who are skilful in haranguing the crowd, while the latter honor those who understand how to deal with affairs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:22'><b>&sect; 22</b>&nbsp;&nbsp;And not only in matters of ordinary routine and of daily occurrence do monarchies excel, but in war they have compassed every advantage; for in raising troops, and handling them so as to mislead and forestall the enemy, and in winning people over, now by persuasion, now by force, now by bribery, now by other means of conciliation, one-man rule is more efficient than the other forms of government. And of this one may be assured by facts no less than by words; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:23'><b>&sect; 23</b>&nbsp;&nbsp;for, in the first place, we all know that the empire of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> attained its great magnitude, not because of the intelligence of the population, but because they more than other peoples respect the royal office; secondly, that <a href=/people/23 target=_blank>Dionysius</a>, the tyrant, taking charge of <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> when the rest of it had been devastated by war and when his own country, <a about=https://topostext.org/place/371153PSyr class=place long=15.293 lat=37.0639>Syracuse</a>, was in a state of siege, not only delivered it from the dangers which then threatened, but also made it the greatest of Hellenic states; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:24'><b>&sect; 24</b>&nbsp;&nbsp;and again, we know that while the <a about=https://topostext.org/place/369103PCar class=ethnic long=10.32 lat=36.85>Carthaginians</a> and the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>, who are the best governed peoples of the world, are ruled by oligarchies at home, yet, when they take the field, they are ruled by kings. One might also point out that the state which more than any other abhors absolute rule meets with disaster when it sends out many generals, and with success when it wages war under a single leader. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:25'><b>&sect; 25</b>&nbsp;&nbsp;And, indeed, how could any one show more convincingly than through these instances that monarchy is the most excellent of governments? For we see that those who are permanently ruled by kings have the greatest powers; that those who live in well- conducted oligarchies, when it comes to matters about which they are most concerned, appoint one man, in some cases a general, in others a king, to have full powers over their armies in the field; and that those who abhor absolute rule, whenever they send out many leaders, fail to accomplish a single one of their designs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:26'><b>&sect; 26</b>&nbsp;&nbsp;And, if there is need to speak also of things old in story, it is said that even the gods are ruled by <a href=/people/1 target=_blank>Zeus</a> as king. If the saying is true, it is clear that the gods also prefer this regime; but if, on the other hand, no one knows the truth about this matter, and we by our own conjecture have simply supposed it to be so, it is a proof that we all hold monarchy in the highest esteem; for we should never have said that the gods live under it if we did not believe it to be far superior to all other governments. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:27'><b>&sect; 27</b>&nbsp;&nbsp;Now as to polities, while it is not possible either to search out or declare every detail in which they differ from each other, yet for our present purpose, at least, enough has been said. But to show that I hold my office by natural right is a story much sooner told and less open to dispute. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:28'><b>&sect; 28</b>&nbsp;&nbsp;For who does not know how <a href=/people/361 target=_blank>Teucer</a>, the founder of our race, taking with him the ancestors of the rest of our people, came hither over seas and built for them a city and portioned out the land; and that, after his other descendants had lost the throne, my father, <a href=/people/417 target=_blank>Evagoras</a>, won it back again by undergoing the greatest dangers, and wrought so great a change that <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> no longer rule over <a about=https://topostext.org/place/352339PSal class=ethnic long=33.9030525 lat=35.1799505>Salaminians</a>, while they, to whom it belonged in the beginning, are today in possession of the kingdom? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:29'><b>&sect; 29</b>&nbsp;&nbsp;Now, of the matters which I proposed to discuss, it remains for me to speak to you about myself, in order that you may realize that I, who rule over you, am of such character that, not only on account of my ancestors, but of myself also, I might justly claim even greater honor than I now enjoy. For I I think you would all agree that the most sovereign of the virtues are temperance and justice, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:30'><b>&sect; 30</b>&nbsp;&nbsp;since not only do they benefit us in themselves, but, if we should be minded to look into the natures, powers, and uses of human relations, we would find that those which do not partake of these qualities are the causes of great evils, whereas those which are attended by temperance and justice are greatly beneficial to the life of man. If, then, any of my predecessors have gained renown for these virtues, I consider that it is also my right to enjoy the same renown. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:31'><b>&sect; 31</b>&nbsp;&nbsp;As to my sense of justice, you can best observe it from these facts: When I was established in power I found the royal treasury empty, all the revenues squandered, the affairs of the state in utter disorder and calling for great care, watchfulness, and outlay of money; and, although I knew that rulers of the other sort in similar straits resort to every shift in order to right their own affairs, and that they feel constrained to do many things which are against their nature, nevertheless I did not fall a victim to any of these temptations; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:32'><b>&sect; 32</b>&nbsp;&nbsp;nay, I attended so devotedly and honorably to my duties that I left nothing undone which could contribute to the greatness of the state and advance its prosperity; and toward the citizens of the state I behaved with such mildness that no one has suffered exile or death or confiscation of property or any such misfortune during my reign. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:33'><b>&sect; 33</b>&nbsp;&nbsp;And though Hellas was closed to us because of the war which had arisen, and though we were being robbed on every side, I solved most of these difficulties, paying to some their claims in full, to others in part, asking some to postpone theirs, and satisfying others as to their complaints by whatever means I could. Furthermore, though the inhabitants of the island were hostile to me, and the Great King, while outwardly reconciled, was really in an ugly mood, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:34'><b>&sect; 34</b>&nbsp;&nbsp;I calmed and appeased both parties by assisting the King zealously and by treating the islanders justly. For I am so far from coveting what belongs to others that, while rulers of the other sort, when they are stronger than their neighbors by ever so little, cut off portions of their territory and seek to get the advantage of them, I did not think it right to take even the land which was offered to me, but prefer rather to hold through just means what is my own than to acquire through base means territory many times greater than that which I now possess. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:35'><b>&sect; 35</b>&nbsp;&nbsp;But why need I take the time to speak in detail, especially when I can make clear in a word the truth about myself? For it will be acknowledged that I have never wronged any man; that, on the contrary, I have been of service to many more of my own citizens and of the Hellenes at large and have bestowed upon them both greater gifts than all who have ruled before me put together. And surely those who pride themselves on justice and who profess to be above considerations of money ought to be able to speak in such high terms of their own conduct. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:36'><b>&sect; 36</b>&nbsp;&nbsp;And now on the subject of temperance, also, I have still more important things to recount. For, since I realized that all men are most jealous for their wives and children, being above all quick to resent offenses against them, and that wantonness in these relations is responsible for the greatest evils — many ere now, of princely rank as well as of private station, having lost their lives because of it -, I so strictly avoided all these grounds of offense that, from the time when I became king, no one can charge me with having approached any woman but my own wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:37'><b>&sect; 37</b>&nbsp;&nbsp;I was not, of course, unaware that those kings also are highly thought of by the multitude who are just in their dealings with their citizens, even though they provide themselves with pleasures from outside their households; but I desired both to put myself as far above such suspicions as possible and at the same time to set up my conduct as a pattern to my people, knowing that the multitude are likely to spend their lives in practices in which they see their rulers occupied. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:38'><b>&sect; 38</b>&nbsp;&nbsp;Then again, I considered that it is also the duty of kings to be as much better than private citizens as they are superior to them in rank; and that those kings act contrary to all reason who compel their subjects to live decently but are themselves less continent than those over whom they rule. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:39'><b>&sect; 39</b>&nbsp;&nbsp;Moreover, I saw that while the majority of people are masters of themselves in other matters, even the best are slaves to the passions whose objects are boys and women; and therefore I wanted to show that I could be strong in those things in which I should be superior, not merely to people in general, but even to those who pride themselves on their virtue. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:40'><b>&sect; 40</b>&nbsp;&nbsp;Furthermore, I had no patience with the perversity of men who take women in marriage and make them partners in all the relations of life, and then are not satisfied with the compacts which they have made but by their own lawless pleasures bring pain to those whom they expect never to cause them pain and who, though honest in all other partnerships, are without conscience in the partnership of marriage, when they ought to cherish this relationship the more faithfully inasmuch as it is more intimate and more precious than all others. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:41'><b>&sect; 41</b>&nbsp;&nbsp;More than that, they are unconsciously storing up for themselves feuds and factions at home in the royal palace. And yet, if kings are to rule well, they must try to preserve harmony, not only in the states over which they hold dominion, but also in their own households and in their places of abode; for all these things are the works of temperance and justice. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:42'><b>&sect; 42</b>&nbsp;&nbsp;Nor was I of the same mind as most kings in regard to the begetting of children. I did not think I should have some children by a woman of humbler station and others by one of higher degree, nor that I should leave after me bastard progeny, as well as progeny of legitimate birth; but that all my children should be able to trace their lineage back through the same father and the same mother to <a href=/people/417 target=_blank>Evagoras</a>, my father, among mortals, to the <a href=/people/1328 target=_blank>Aeacides</a> among the demigods, and to <a href=/people/1 target=_blank>Zeus</a> among the gods, and that not one of the children sprung from my loins should be cheated of this noble origin. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:43'><b>&sect; 43</b>&nbsp;&nbsp;Though many motives impelled me to abide by these principles, not the least incentive was that I saw that courage and cleverness and the other qualities which are held in high esteem are shared by many even among the base, whereas justice and temperance are the possessions of the good and noble alone. I conceived, therefore, that the noblest thing that I could do was to be able to excel my fellows in those virtues in which the bad have no share, and which are the truest and the most abiding and deserve the greatest praise. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:44'><b>&sect; 44</b>&nbsp;&nbsp;For these reasons, and with these thoughts in mind, I was more assiduous than anyone else in the practice of temperance, and I chose for my pleasures, not those which are found in acts which yield no honor, but those which are found in the good repute which rewards nobility of character. However, we ought not to test all the virtues in the same set of conditions, but should test justice when a man is in want, temperance when he is in power, continence when he is in the prime of youth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:45'><b>&sect; 45</b>&nbsp;&nbsp;Now in all these situations no one will deny that I have given proof of my nature. When I was left by my father without means, I was so just in my dealings as to injure not one of my citizens; but when I gained the power to do whatever I pleased, I proved myself more temperate than men in private station; and I showed my self-control in both circumstances at an age in which we find that the great majority of men most frequently go morally astray. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:46'><b>&sect; 46</b>&nbsp;&nbsp;I should probably hesitate to say all this before an audience of other people, not that I lack pride in what I have accomplished, but because I might fail to convince them on the evidence of my words alone; you, however, are yourselves my witnesses that all I have said is true. Now men who are moral by nature deserve our praise and admiration, but still more do those deserve it who are such in obedience to reason; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:47'><b>&sect; 47</b>&nbsp;&nbsp;for those who are temperate by chance and not by principle may perchance be persuaded to change, but those who, besides being so inclined by nature, have formed the conviction that virtue is the greatest good in the world, will, it is evident, stand firm in this position all their lives. But the reason why I have spoken at some length both about myself and the other subjects which I have discussed is that I might leave you no excuse for not doing willingly and zealously whatever I counsel and command. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:48'><b>&sect; 48</b>&nbsp;&nbsp;I declare it to be the duty of each one of you to perform whatever tasks you are assigned with diligence and justice for if you fall short in either of these qualities, your conduct must needs suffer by that defect. Do not belittle nor despise a single one of your appointed tasks, thinking that nothing depends upon it; but, knowing that the whole depends for its success or failure on each of the parts, be careful in everything. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:49'><b>&sect; 49</b>&nbsp;&nbsp;Display no less concern in my interests than in your own, and do not think that the honors enjoyed by those who successfully administer my affairs are a small reward. Keep your hands off the possessions of others in order that you may be more secure in the possession of your own estates. You should be such in your dealings with others as you expect me to be in my dealings with you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:49' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:50'><b>&sect; 50</b>&nbsp;&nbsp;Do not strive to gain riches rather than a good name, knowing that both among the Hellenes and the barbarians as well those who have the highest reputation for virtue have at their command the greatest number of good things. Consider that the making of money unjustly will produce, not wealth, but danger. Do not think that getting is gain or spending is loss; for neither the one nor the other has the same significance at all times, but either, when done in season and with honor, benefits the doer. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:51'><b>&sect; 51</b>&nbsp;&nbsp;And do not regard any one of my orders as a hardship; for those of you who make themselves most serviceable to my interests will most advance the interests of their own households. Let none of you imagine that even what he secretly thinks in his own heart will be hidden from me; nay, let him believe that, though I may be absent in body, yet my thoughts are present at what goes on; for, being of this opinion, you will be more restrained in your deliberations on all matters. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:51' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:52'><b>&sect; 52</b>&nbsp;&nbsp;Never conceal from me anything that you possess, or that you are doing, or that you intend to do, knowing that where there are things hidden, fears in great number must needs arise. Seek not to be artful nor underhand in your public life, but to be so honest and open that, even if anyone wants to slander you, it will not be easy to do so. Scrutinize your actions and believe that they are evil when you wish to hide from me what you do, and good when my knowledge of them will be likely to make me think better of you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:52' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:53'><b>&sect; 53</b>&nbsp;&nbsp;Do not keep silent if you see any who are disloyal to my rule, but expose them and believe that those who aid in concealing crime deserve the same punishment as those who commit it. Consider fortunate, not those who escape detection when they do evil, but those who are innocent of all wrongdoing for it is probable that the former will suffer such ills as they themselves inflict, while the latter will receive the reward which they deserve. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:54'><b>&sect; 54</b>&nbsp;&nbsp;Do not form political societies or unions without my sanction; for such associations may be an advantage in the other forms of government, but in monarchies they are a danger. Abstain not merely from wrongdoing, but also from such conduct as must needs arouse suspicion. Believe that my friendship is very sure and abiding. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:55'><b>&sect; 55</b>&nbsp;&nbsp;Preserve the present order and do not desire any change, knowing that revolutions inevitably destroy states and lay waste the homes of the people. Do not think that it is their natural dispositions alone which make rulers harsh or gentle, but the character of the citizens as well; for many before now have been compelled by the depravity of their subjects to rule more harshly than they wished. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:55' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:56'><b>&sect; 56</b>&nbsp;&nbsp;Be confident, but less because of my mildness than because of your own goodness. Consider that in my safety lies your own security; for while my fortunes are on a firm foundation, your own will be likewise. You should be self-effacing in your attitude toward my authority, abiding by our customs and preserving the royal laws, but conspicuous in your services on behalf of the state and in the other duties which are assigned to you by my command. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:56' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:57'><b>&sect; 57</b>&nbsp;&nbsp;Exhort the young to virtue not only by your precepts but by exemplifying in your conduct what good men ought to be. Teach your children to be obedient, and habituate them to devote themselves above all to the discipline which I have described; for if they learn to submit to authority they will be able to exercise authority over many; and if they are faithful and just they will be given a share in my privileges; but if they turn out to be bad they will be in danger of losing all the privileges which they possess. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:57' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:58'><b>&sect; 58</b>&nbsp;&nbsp;Consider that you will pass on to your children the greatest and surest wealth if you can leave them my good will. Consider that the most miserable and unfortunate of men are those who have proved faithless to those who put their faith in them; for such men are doomed to despair and to fear of everything and to distrust of friends no less than of foes throughout the remainder of their lives. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:58' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:59'><b>&sect; 59</b>&nbsp;&nbsp;Emulate, not those who have most possessions, but those who in their hearts know no evil; for with such a conscience one can live out his life most happily. Do not imagine that vice can profit more than virtue, and that it is only its name which is uglier; but consider that even as are the names which things have received, so, also, are their qualities. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:60'><b>&sect; 60</b>&nbsp;&nbsp;Do not be jealous of those who are highest in my favor, but emulate them, and by making yourselves serviceable try to rise to the level of those who are above you. Believe that you should love and honor those whom your king loves and honors, in order that you may win from me these same distinctions. Even as are the words which you speak about me in my presence, so let your thoughts of me be in my absence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:61'><b>&sect; 61</b>&nbsp;&nbsp;Manifest your good will towards me in deeds rather than in words. Do not do to others that which angers you when they do it to you. Practice nothing in your deeds for which you condemn others in your words. Expect to fare well or ill according as you are disposed well or ill toward me. Be not satisfied with praising good men, but imitate them as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:61' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:62'><b>&sect; 62</b>&nbsp;&nbsp;Regard my words as your law, and try to abide by them, knowing that those of you who most faithfully do what I desire will most quickly be able to live as they themselves desire. This is the conclusion of the whole matter: just as you think those who are ruled by you should conduct themselves toward you, so you also should conduct yourselves toward my rule. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:62' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:63'><b>&sect; 63</b>&nbsp;&nbsp;And if you do this, why need I speak at length of what the results will be? For if I continue to treat you as in time past, and you continue to give me your service and support, you will soon see your own life advanced, my empire increased, and the state made happy and prosperous. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:63' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=64>
+                            <p id='urn:cts:greekLit:tlg0010.tlg014:64'><b>&sect; 64</b>&nbsp;&nbsp;You could, therefore, well afford, for the sake of blessings so great, to spare no effort and even to undergo all manner of toil and peril; and yet it lies in your power, without suffering any hardship, but merely by being loyal and true, to bring all these things to pass. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0010.tlg014.perseus-grc1:64' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -370                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=77', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas77";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=77';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

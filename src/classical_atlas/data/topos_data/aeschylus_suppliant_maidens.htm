@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Aeschylus, Suppliant Maidens' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Suppliant Maidens, Aeschylus, Seven Tragedies, translated by Herbert Weir Smyth (1857-1937), from the Loeb edition of 1926, now in the public domain, with thanks to www.theoi.com and the Perseus Project for making the text available on-line.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-463' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -463' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/11' content='urn:cts:greekLit:tlg0085.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79055702' content='Aeschylus'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr89005381' content='Herbert Weir Smyth (1857-1937)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.library.theoi.com/' /><h2>Aeschylus, Suppliant Maidens</h2>Suppliant Maidens, Aeschylus, Seven Tragedies, translated by Herbert Weir Smyth (1857-1937), from the Loeb edition of 1926, now in the public domain, with thanks to www.theoi.com and the Perseus Project for making the text available on-line. This text has 60 tagged references to 28 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0085.tlg001'>urn:cts:greekLit:tlg0085.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q1216139'>Q1216139</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:1'><b>&sect; 1</b>&nbsp;&nbsp;[Enter a company of maidens, who have fled from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> and just landed on the shores of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>; with them is their father.] <br />CHORUS: May <a href=/people/1 target=_blank>Zeus</a> who guards suppliants look graciously upon our company, which boarded a ship and put to sea from the outlets of the fine sand of the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. For we have fled <a href=/people/1 target=_blank>Zeus</a>' land whose pastures border <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, and are fugitives, not because of some public decree pronounced against blood crime, but because of our own act to escape the suit of man, since we abhor as impious all marriage with the sons of <a href=/people/1155 target=_blank>Egyptus</a>. It was <a href=/people/303 target=_blank>Danaus</a>, our father, adviser and leader, who, considering well our course, decided, as the best of all possible evils, that we flee with all speed over the waves of the sea and find a haven on <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>' shore. For from there descends our race, sprung from the caress and breath of <a href=/people/1 target=_blank>Zeus</a> on the gnat-tormented heifer. <br />To what kinder land than this could we come with these wool-wreathed branches in our hands, sole weapons of the suppliant? O realm, O land, and clear water; gods on high and earth-bound powers, grievous in your vengeance, which inhabit the tomb; and you, <a href=/people/1 target=_blank>Zeus</a> the Savior, invoked third, the guardian of the habitations of righteous men: receive as suppliants this band of women with the compassionate spirit of the land. But the thronging swarm of violent men born of <a href=/people/1155 target=_blank>Egyptus</a>, should they set foot upon this marshy land, drive them seaward — and with them their swift ship — and there may they encounter a cruel sea with thunder, lightning, and rain-charged winds, and perish by the tempest's buffeting blasts, if they ever lay their hands on us, their cousins, and mount unwilling beds from which Right holds them aloof. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:40'><b>&sect; 40</b>&nbsp;&nbsp;And now I invoke, as our champion from beyond the sea, the calf born of <a href=/people/1 target=_blank>Zeus</a>, the offspring of the flower-grazing <a href=/people/10978 target=_blank>cow</a>, our ancestress, the caress of <a href=/people/1 target=_blank>Zeus</a>' breath. The appointed period confirmed itself in a name suited to the event — <a href=/people/1212 target=_blank>Epaphus</a>, to whom she gave birth. To him I cry for help. And now in the region wherein our first mother pastured, by recounting the story of her distress of long ago, I shall now set forth reliable proofs to the inhabitants of the land; and other evidence, though unexpected, will yet appear. Men will come to know the truth as my tale proceeds. <br />Now if by chance there be some neighbor in the land who knows the song of birds, when our complaint greets his ear, he will fancy that he hears the voice of <a href=/people/2364 target=_blank>Metis</a>, <a href=/people/682 target=_blank>Tereus</a>' piteous wife, the hawk-chased nightingale. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:63'><b>&sect; 63</b>&nbsp;&nbsp;For she, constrained to leave her green leaves, laments pitifully her accustomed haunts, and composes the tale of her own child's doom — how he perished, destroyed by her own hand, victim of the wrath of an unnatural mother. <br />Even so I, indulging my grief in <a about=https://topostext.org/place/375275RIon class=demonym long=27.3 lat=38>Ionian</a> strains, pain my tender face summered by <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>'s sun and my heart unexercised in tears; and I gather the flowers of grief, anxious whether there is any friendly kinsman here to champion our band which has fled from the haze-shrouded land. <br />But, gods of our race, hear, and regard with favor the cause of righteousness; if you refuse youth fulfillment of its arrogant desires, and readily abhor violence, you would be righteous toward marriage. Even for those who flee hard-pressed from war there is an altar, a shelter against harm through respect for the powers of heaven. <br />But may <a href=/people/1 target=_blank>Zeus</a> grant that it go well with us. For <a href=/people/1 target=_blank>Zeus</a>' desire is hard to trace: it shines everywhere, even in gloom, together with fortune obscure to mortal men. <br />Safely it falls, and not upon its back, whatever deed comes to pass at <a href=/people/1 target=_blank>Zeus</a>' nod; for the pathways of his understanding stretch dark and tangled, beyond comprehension. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:63' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=96>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:96'><b>&sect; 96</b>&nbsp;&nbsp;From their high-towering hopes he hurls mankind to utter destruction; yet he does not marshal any armed violence — all that is wrought by the powers divine is free from toil. Seated on his holy throne, unmoved, in mysterious ways he accomplishes his will. <br />So let him look upon human outrageousness — in what way it shoots up men in their wooing of us, sprouted from thoughts of evil intent, having a frenzied purpose as its irresistible spur, and deluded, turning its thoughts to folly. <br />Such piteous strains of woe I utter in my pain, now shrill, now deep, blended with falling tears — Alas, alas! groans appropriate to funeral wails; though I live, I chant my own dirge. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:96' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=117>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:117'><b>&sect; 117</b>&nbsp;&nbsp;I invoke <a href=/people/2833 target=_blank>Apia</a>'s hilly land — for well, O land, you understand my barbarous speech -, and many times I lay my hands upon my <a about=https://topostext.org/place/336354PSid class=demonym long=35.371 lat=33.56>Sidonian</a> veil and tear its linen fabric to shreds. <br />Sacrifices in satisfaction of vows are given freely to the gods when all fares well, if only there be escape from death. Alas, alas, perplexing troubles! Where will this wave of trouble bear me away? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:117' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=128>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:128'><b>&sect; 128</b>&nbsp;&nbsp;I invoke <a href=/people/2833 target=_blank>Apia</a>'s hilly land — for well, O land, you understand my barbarous speech -, and many times I lay my hands upon my <a about=https://topostext.org/place/336354PSid class=demonym long=35.371 lat=33.56>Sidonian</a> veil and tear its linen fabric to shreds. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:128' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=134>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:134'><b>&sect; 134</b>&nbsp;&nbsp;Our oars, indeed, and our timbered ship, bound with yellow rope to withstand the sea, sped me on by help of favoring winds, unharmed by all tempests; nor have I reason for complaint. But may the all-seeing Father establish a kindly issue in due time — <br />That the mighty race of our honorable mother escape the embrace of man (ah me), unwedded, unvanquished. <br />And may <a href=/people/1 target=_blank>Zeus</a>' pure daughter, she who holds securely the sacred wall, willingly, meeting my will, look upon me; and, grieved at our pursuit, come with all her might, a virgin to a virgin's aid, to deliver me — <br />That the mighty race of our honorable mother may escape the embrace of man (ah me), unwedded, unvanquished. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:134' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=154>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:154'><b>&sect; 154</b>&nbsp;&nbsp;Yet, if she will not, we, a dark, sun-burned race, with suppliant boughs will invoke the underworld <a href=/people/1 target=_blank>Zeus</a>, <a href=/people/1 target=_blank>Zeus</a> the great host of the dead; for if the gods of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> hear us not, we will hang ourselves. <br />Ah <a href=/people/1 target=_blank>Zeus</a>! On account of the poisonous hate of <a href=/people/389 target=_blank>Io</a> vengeance from the gods pursues us. I know your consort's sky-conquering spite; for a stormy sea follows a harsh wind. <br />And <a href=/people/1 target=_blank>Zeus</a> shall then be liable to the charge of injustice that he hates the child of the heifer, the child whom he himself begat long ago, his very own, and now he holds his face averted from our prayers. May he from above hear our call! <br />Ah <a href=/people/1 target=_blank>Zeus</a>! On account of the poisonous hate of <a href=/people/389 target=_blank>Io</a> vengeance from the gods pursues us. I know your consort's sky-conquering spite; for a stormy sea follows a harsh wind. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:154' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=167>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:167'><b>&sect; 167</b>&nbsp;&nbsp;DANAUS: My children, you must be prudent. A prudent captain of your voyage was your reliable old father here with whom you came. And now that I have considered with foresight what may befall us here on land, I charge you, record my injunctions on the tablets of your minds and guard them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:167' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=180>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:180'><b>&sect; 180</b>&nbsp;&nbsp;I see dust, the voiceless herald of an army; the axle-driven wheels are not silent in their sockets. I behold a throng, armed with shields and holding spears, with steeds and curved chariots. Perhaps they are the princes of the land come to look on us, informed by messengers. But whether a harmless man or one driven by savage wrath rouses this expedition, it is better, damsels, in any case, to seat yourselves at that mound sacred to the assembled gods. Stronger than a castle is an altar — an impenetrable shield. As quick as you can, gather in your left hands your white-wreathed suppliant boughs, sacred emblems of <a href=/people/1 target=_blank>Zeus</a> the merciful. Reply to the strangers, as is fitting for aliens, in piteous and plaintive language of necessity, telling them clearly of your flight, how it was unstained by deed of blood. Above all let no arrogance accompany your speech, and reveal nothing impious in your peaceful eyes, from your respectful face. In your speech neither interrupt, nor hesitate — for this would offend these people. And remember to be submissive: you are an alien, a fugitive, and in need. Bold speech does not suit the weak. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:180' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=204>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:204'><b>&sect; 204</b>&nbsp;&nbsp;CHORUS: Father, your words are prudent, and they fall on prudent ears. I will take heed of your wise words, and hold them in memory. May <a href=/people/1 target=_blank>Zeus</a>, the author of our race, behold us! <br />DANAUS: May he indeed behold you, and with a gracious eye. <br />CHORUS: I would like even now to be seated by your side. <br />DANAUS: Then do not delay, but put your purpose into action. <br />CHORUS: O <a href=/people/1 target=_blank>Zeus</a>, have pity upon our troubles lest we are ruined. <br />DANAUS: If he wishes it so, all will end well. CHORUS [A verse is here lost.] <br />DANAUS: Invoke now also that bird of <a href=/people/1 target=_blank>Zeus</a><br />CHORUS: We invoke the saving beams of the sun. <br />DANAUS: Pure <a href=/people/2 target=_blank>Apollo</a>, too, who, though a god, was exiled once from heaven. <br />CHORUS: Knowing our lot, he may well have pity on mortals. <br />DANAUS: May he have pity indeed, and stand by ready to defend. <br />CHORUS: Whom, further, of these divinities must I invoke? <br />DANAUS: I behold a trident here, the token of its god. <br />CHORUS: Well did he send us here and well may he receive us in this land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:204' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=220>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:220'><b>&sect; 220</b>&nbsp;&nbsp;DANAUS: Here, too, is <a href=/people/33 target=_blank>Hermes</a>, according to the Hellenic custom. <br />CHORUS: May he then announce good tidings to the free! <br />DANAUS: Honor to the mutual altar of all these protecting powers; and seat yourselves on holy ground like a flock of doves in dread of hawks of the same feathered tribe — kindred, yet foes, who would defile their race. If bird prey on bird, how can it be pure? And how can man be pure who would seize from an unwilling father an unwilling bride? For such an act, not even in <a href=/people/10685 target=_blank>Hades</a>, after death, shall he escape arraignment for outrage. There also among the dead, so men tell, another <a href=/people/1 target=_blank>Zeus</a> holds a last judgment upon misdeeds. Take heed and reply in this manner, that victory may attend your cause. [Enter the King of <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argos</a> with men-at-arms.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:220' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=234>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:234'><b>&sect; 234</b>&nbsp;&nbsp;KING: From where comes this band we address, clothed in foreign attire and luxuriating in closely-woven and barbaric robes? For your apparel is not that of the women of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, nor yet of any part of Hellas. How you have gained courage thus fearlessly to come to this land, unheralded and friendless and without guides, this makes me wonder. And yet, truly, I see that branches usually carried by suppliants are laid by your side before the gods assembled here — as to this alone can Hellas guess with confidence. As for the rest, there is still much I should with reason leave to conjecture, if your voice were not here to inform me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:234' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:246'><b>&sect; 246</b>&nbsp;&nbsp;CHORUS: You have not spoken falsely about our clothing. But, for my part, how am I to address you? As commoner, as spokesman, bearer of the sacred wand, or as ruler of the realm? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:246' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:249'><b>&sect; 249</b>&nbsp;&nbsp;KING: As for that, answer and speak to me with confidence. For I am <a href=/people/1165 target=_blank>Pelasgus</a>, offspring of Palaechthon, whom the earth brought forth, and lord of this land; and after me, their king, is rightly named the race of the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgi</a>, who harvest the land. Of all the region through which the pure <a about=https://topostext.org/place/408238WStr class=place long=23.8489 lat=40.7858>Strymon</a> flows, on the side toward the setting sun, I am the lord. There lies within the limits of my rule the land of the <a about=https://topostext.org/place/398232RPer class=ethnic long=22 lat=39.85>Perrhaebi</a>, the parts beyond <a about=https://topostext.org/place/400208LPin class=place long=20.75 lat=40>Pindus</a> close to the <a about=https://topostext.org/place/415220RPai class=ethnic long=22.01 lat=41.5>Paeonians</a>, and the mountain ridge of <a about=https://topostext.org/place/395208SDod class=place long=20.7878 lat=39.5464>Dodona</a>; the edge of the watery sea borders my kingdom. I rule up to these boundaries. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:249' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=260>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:260'><b>&sect; 260</b>&nbsp;&nbsp;The ground where we stand is Apian land itself, and has borne that name since antiquity in honor of a healer. For <a href=/people/360 target=_blank>Apis</a>, seer and healer, the son of <a href=/people/2 target=_blank>Apollo</a>, came from <a about=https://topostext.org/place/384218UNau class=place long=21.8313 lat=38.3997>Naupactus</a> on the farther shore and purified this land of monsters deadly to man, which <a href=/people/3304 target=_blank>Earth</a>, defiled by the pollution of bloody deeds of old, caused to spring up — plagues charged with wrath, an ominous colony of swarming <a href=/people/55 target=_blank>serpents</a>. Of these plagues <a href=/people/360 target=_blank>Apis</a> worked the cure by sorcery and spells to the content of the <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> land, and for reward thereafter earned for himself remembrance in prayers. <br />Now that you have my testimony, declare your lineage and speak further — yet our people do not take pleasure in long discourse. <br />CHORUS: Our tale is brief and clear. <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> we claim to be by birth, offspring of a <a href=/people/10978 target=_blank>cow</a> blest in its children. And the truth of this I shall confirm in full. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:260' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=277>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:277'><b>&sect; 277</b>&nbsp;&nbsp;KING: Foreign maidens, your tale is beyond my belief — how your race can be from <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. For you are more similar to the women of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> and in no way similar to those native to our land. The <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>, too, might foster such a stock, and like yours is the <a about=https://topostext.org/place/350330RCyp class=demonym long=33 lat=35>Cyprian</a> impress stamped upon female images by male craftsmen. And of such aspect, I have heard, are nomad women, who ride on <a href=/people/10950 target=_blank>camels</a> for steeds, having padded saddles, and dwell in a land neighboring the <a about=https://topostext.org/place/130350REth class=ethnic long=35.01 lat=13.01>Aethiopians</a>. And had you been armed with the bow, certainly I would have guessed you to be the unwed, flesh-devouring <a href=/people/154 target=_blank>Amazons</a>. But inform me, and I will better comprehend how it is that you trace your race and lineage from <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:277' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=292>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:292'><b>&sect; 292</b>&nbsp;&nbsp;CHORUS: Is there a report that once in this land of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> <a href=/people/389 target=_blank>Io</a> was ward of <a href=/people/19 target=_blank>Hera</a>'s house? <br />KING: Certainly she was; the tradition prevails far and wide. <br />CHORUS: And is there some story, too, that <a href=/people/1 target=_blank>Zeus</a> was joined in love with a mortal? <br />KING: This entanglement was not secret from <a href=/people/19 target=_blank>Hera</a>. <br />CHORUS: What then was the result of this royal strife? <br />KING: The goddess of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> transformed the woman into a <a href=/people/10978 target=_blank>cow</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:292' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=300>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:300'><b>&sect; 300</b>&nbsp;&nbsp;CHORUS: And while she was a horned <a href=/people/10978 target=_blank>cow</a>, did not <a href=/people/1 target=_blank>Zeus</a> approach her? <br />KING: So they say, making his form that of a <a href=/people/10955 target=_blank>bull</a> lusting for a mate. <br />CHORUS: What answer then did <a href=/people/1 target=_blank>Zeus</a>' stubborn consort give? <br />KING: She placed the all-seeing one to stand watch over the <a href=/people/10978 target=_blank>cow</a>. <br />CHORUS: What manner of all-seeing herdsman with a single duty do you mean? <br />KING: <a href=/people/2816 target=_blank>Argus</a>, a son of <a href=/people/3304 target=_blank>Earth</a>, whom <a href=/people/33 target=_blank>Hermes</a> slew. <br />CHORUS: What else did she contrive against the unfortunate <a href=/people/10978 target=_blank>cow</a>? <br />KING: A sting, torment of <a href=/people/10978 target=_blank>cattle</a>, constantly driving her on. <br />CHORUS: They call it a gadfly, those who dwell by the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. <br />KING: Well then, it drove her by a long course out of the land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:300' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=310>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:310'><b>&sect; 310</b>&nbsp;&nbsp;CHORUS: Your account agrees with mine in all respects. <br />KING: So she came to <a about=https://topostext.org/place/313300UCan class=place long=30.0772 lat=31.3107>Canobus</a> and to <a about=https://topostext.org/place/298313PMem class=place long=31.255 lat=29.849>Memphis</a>. <br />CHORUS: And <a href=/people/1 target=_blank>Zeus</a> begot a son by the touching of his hand. <br />KING: Who is it then that claims to be the <a href=/people/10978 target=_blank>cow</a>'s <a href=/people/1 target=_blank>Zeus</a>-begotten calf? <br />CHORUS: <a href=/people/1212 target=_blank>Epaphus</a>, and truly named from laying on of hands. <br />KING: [And who was begotten of <a href=/people/1212 target=_blank>Epaphus</a>? ] <br />CHORUS: <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>, who reaps the fruit of the largest portion of the earth. <br />KING: [What offspring, then, did <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> have? ] CHORUS: [<a href=/people/394 target=_blank>Agenor</a> was her first child born.] <br />KING: And who was his offspring? <br />CHORUS: <a href=/people/575 target=_blank>Belus</a>, who had two sons and was father of my father here. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:310' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=320>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:320'><b>&sect; 320</b>&nbsp;&nbsp;KING: Now tell me his wisely-given name. <br />CHORUS: <a href=/people/303 target=_blank>Danaus</a>: and he has a brother with fifty sons. <br />KING: Reveal his name ungrudgingly. <br />CHORUS: <a href=/people/1155 target=_blank>Egyptus</a>; and now that you know my ancient lineage, I pray you to help a band that is <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> by descent. <br />KING: I think you indeed have some share in this land from old. But how did you bring yourselves to leave the home of your fathers? What stroke of fortune befell you? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:320' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=328>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:328'><b>&sect; 328</b>&nbsp;&nbsp;CHORUS: Lord of the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgians</a>, of varying color are the ills of mankind, and nowhere can you find trouble of the same plume. For who dreamed that a kindred race, sprung of old, would thus in unexpected flight find haven at <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, fleeing in terror through loathing of the marriage-bed? <br />KING: Why have you come as suppliants of these gods congregated here, holding in your hands those white-wreathed, fresh-plucked boughs? <br />CHORUS: So as not to be made slave to <a href=/people/1155 target=_blank>Egyptus</a>' race. <br />KING: By reason of hatred? Or do you speak of unlawfulness? <br />CHORUS: Who would purchase their lords from among their kin? <br />KING: In this way families have enhanced their power. <br />CHORUS: And it is easy then, if things go ill, to separate from a wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:328' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=340>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:340'><b>&sect; 340</b>&nbsp;&nbsp;KING: How then am I to deal with you in accordance with my sacred duty? <br />CHORUS: By not surrendering us at the demand of <a href=/people/1155 target=_blank>Egyptus</a>' sons. <br />KING: A serious request — to take upon myself a dangerous war. <br />CHORUS: But <a href=/people/194 target=_blank>Justice</a> protects her champions. <br />KING: True, if she had a share in the matter from the beginning. <br />CHORUS: Show reverence for the ship of state thus crowned. <br />KING: I shrink as I gaze upon these shaded shrines. <br />CHORUS: Yet heavy is the wrath of <a href=/people/1 target=_blank>Zeus</a>, god of the suppliant. Son of Palaechthon, lord of the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgians</a>, hear me with a benign heart. Behold me, your suppliant, a fugitive, running around like a heifer chased by <a href=/people/10952 target=_blank>wolves</a> upon precipitous crags, where, confident in his help, she lows to tell the herdsman of her distress. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:340' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=354>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:354'><b>&sect; 354</b>&nbsp;&nbsp;KING: I see a company of assembled gods assenting beneath the shade of fresh-plucked boughs. Nevertheless may this affair of claimants to the friendship of our city bring no mischief in its wake! And let no feud come upon the state from causes unforeseen and unforestalled; for the state has no need of such trouble. <br />CHORUS: Indeed, may <a href=/people/194 target=_blank>Justice</a>, daughter of <a href=/people/1 target=_blank>Zeus</a> the Apportioner, <a href=/people/194 target=_blank>Justice</a> who protects the suppliant, look upon our flight that it bring no mischief in its wake. But you, aged in experience, learn from one of younger birth. If you show mercy to a suppliant . . . from a man of holiness. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:354' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=365>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:365'><b>&sect; 365</b>&nbsp;&nbsp;KING: It is not my own house at whose hearth you sit. If the state is stained by pollution in its commonalty, in common let the people strive to work out the cure. For myself, I will pledge no promise before I have communicated these events to all the citizens. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:365' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=370>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:370'><b>&sect; 370</b>&nbsp;&nbsp;CHORUS: You are the state, you are the people. Being subject to no judge, you rule the altar, your country's hearth by your will's sole ordinance; and, enthroned in sole sovereignty, you determine every issue. Beware pollution! <br />KING: Pollution on my enemies! But without harm I do not know how to help you. And yet again, it is not well advised to slight these supplications. I am perplexed, and fear possesses my soul whether to act, or not to act and take what fortune sends. <br />CHORUS: Look to him who looks down from above, to him, the guardian of mortals sore-distressed, who appeal to their neighbors, yet do not obtain the justice that is their right. The wrath of <a href=/people/1 target=_blank>Zeus</a>, the suppliant's god, remains, and will not be softened by a sufferer's complaints. <br />KING: If the sons of <a href=/people/1155 target=_blank>Egyptus</a> have authority over you by the law of your country claiming that they are nearest of kin, who would wish to contest it? You must plead in accordance with the laws of the land you have fled, that they have no authority over you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:370' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=392>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:392'><b>&sect; 392</b>&nbsp;&nbsp;CHORUS: Never, oh never, may I fall subject to the power and authority of these men. I am determined to flee to escape this marriage that offends my soul, piloting my course by the stars. Take <a href=/people/194 target=_blank>Justice</a> as your ally, and render judgment for the cause deemed righteous by the gods. <br />KING: The judgment is not easy — do not make me the judge. I have declared already that, though I am ruler, I will not do this thing without the consent of my people, lest hereafter, if any evil befall, the people should say, You honored aliens and brought ruin upon your own land. <br />CHORUS: Kindred to both in blood, <a href=/people/1 target=_blank>Zeus</a> surveys both sides alike in this dispute with an impartial scale, apportioning, as is due, to the wicked their wrongdoing and to the godly their works of righteousness. When these things are thus equally balanced, why do you fear to act justly? <br />KING: Surely there is need of deep and salutary counsel; need for a keen-sighted eye, not confused, to descend, like some diver, into the depths; that to the state above all things this matter may not work mischief, but may end well for us; that strife may not seize you for its prize, nor yet that we surrender you from these seats of sanctuary, and bring upon ourselves the dire, abiding vengeance of the all-destroying god, who, even in the realm of <a href=/people/257 target=_blank>Death</a>, does not set his victim free. Surely you cannot think there is no need of salutary counsel? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:392' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=418>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:418'><b>&sect; 418</b>&nbsp;&nbsp;CHORUS: Take counsel, and, as is your sacred duty, prove yourself our sacred champion. Do not betray the fugitive who has been impiously cast out and driven from afar. And see me not ravished from this sanctuary of many gods, oh you who hold sovereign power over the land. Recognize men's wantonness, and guard against wrath. Do not see your suppliant dragged, in spite of justice, from the images of the gods, like a <a href=/people/10959 target=_blank>horse</a> by the bridle, and see rude hands laid upon my fine-woven robes. For be assured of this — whichever end you bring to pass, to your children and house does it remain to make full payment. Consider these just ordinances of God. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:418' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=438>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:438'><b>&sect; 438</b>&nbsp;&nbsp;KING: I have considered them; and I am driven to this cruel predicament. I must take upon myself a mighty war against one side or the other. There is no escape, it is as firmly fixed as a ship's hull drawn tight by windlasses. There is no result without grievous hurt. Now when goods are plundered from a homestead, other goods may come by grace of <a href=/people/1 target=_blank>Zeus</a>, guardian of household wealth; as a tongue that has shot arrows beside the mark, one speech may be the healer of another. But to avoid the shedding of kindred blood, surely there is need of sacrifice and that many a victim fall to many a god as a deliverance from impending harm. For truly, it is to my undoing that I have come into this quarrel; and yet I prefer to be unskilled rather than practised in the lore of foretelling ill. But may my judgment belie itself and all go well! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:438' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=455>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:455'><b>&sect; 455</b>&nbsp;&nbsp;CHORUS: Hear now the end of my appeals for compassion. <br />KING: I hear; say on. It shall not escape me. <br />CHORUS: I have breast-bands and girdles to gather up my robes. <br />KING: Such things are proper, no doubt, for women. <br />CHORUS: In these then, be sure, I have a beautiful instrument — <br />KING: Tell me what speech you plan to utter. <br />CHORUS: If you will not give some pledge to this group — <br />KING: What will the contrivance of the sashes do for you? <br />CHORUS: To adorn these images with tablets of strange sort. <br />KING: Your words are riddling; come, explain in simple speech. <br />CHORUS: To hang ourselves from the statues of these gods. <br />KING: I detect a threat that is a lash upon my heart. <br />CHORUS: You have grasped my intention, for I have cleared your vision. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:455' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=468>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:468'><b>&sect; 468</b>&nbsp;&nbsp;KING: And on many sides there are difficulties hard to wrestle with; for, like a flood, a multitude of ills bursts on me. It is a sea of ruin, fathomless and impassable, which I am launched upon, and nowhere is there a haven from distress. For should I not pay the debt due to you, the pollution you name is beyond all range of speech; yet if I take my stand before the walls and try the issue of battle with the sons of <a href=/people/1155 target=_blank>Egyptus</a>, your kinsmen, how will the cost not mount to a cruel price — men's blood to stain the ground for women's sake? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:468' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=478>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:478'><b>&sect; 478</b>&nbsp;&nbsp;And yet the wrath of <a href=/people/1 target=_blank>Zeus</a> who guards the suppliant compels my reverence; for supreme among mortals is the fear of him. Aged father of these maidens, take these boughs straightway in your arms and place them upon other altars of the country's gods, that all the natives may see the sign that you have come in suppliance. And let no random word fall against me; for the people could complain against authority. It may well be that some, stirred to compassion at the sight, will hate the wantonness of the troop of males, and that the people will be more friendly towards you; for all men are well disposed to the weaker cause. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:478' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=490>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:490'><b>&sect; 490</b>&nbsp;&nbsp;DANAUS: We consider it worth much to have gained a champion who is compassionate. Yet send escorts and guides of the country's people with me so we may find where the gods who protect your city have their altars at the temple porches and their . . . seats, and that we may go safely through the town. My shape is unlike yours, for <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> and <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a> rear a different race. Beware lest boldness give birth to fear; for through ignorance men have slain those they love. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:490' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=500>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:500'><b>&sect; 500</b>&nbsp;&nbsp;KING: Come, men, the stranger speaks well. Be his guides to the altars of the city and to the sanctuaries of the gods. Do not speak at length with whomever you meet on the way while you are bringing this seafarer to be a suppliant at the hearths of the gods. (Exit <a href=/people/303 target=_blank>Danaus</a> with attendants.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:500' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=504>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:504'><b>&sect; 504</b>&nbsp;&nbsp;CHORUS: You told him, and let him go as directed. But what of me? What am I to do? Where do you assign security to me? <br />KING: Leave your boughs here, tokens of your distress. <br />CHORUS: Behold, I leave them at your signal and command. <br />KING: Go now along this level space about the sanctuary. <br />CHORUS: But it is not holy ground. How can it keep me safe? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:504' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=510>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:510'><b>&sect; 510</b>&nbsp;&nbsp;KING: Be assured, we will not surrender you to winged creatures' ravishment. <br />CHORUS: But what about those whom we dread worse than evil <a href=/people/55 target=_blank>serpents</a>? <br />KING: Speak with good omen, as I have spoken auspiciously to you. <br />CHORUS: No wonder I am fretful through alarm of mind. <br />KING: Excessive fear is always uncontrolled. <br />CHORUS: Cheer my heart by deeds as well as words. <br />KING: Your father will not leave you here alone for long. I am going now to call together the people of the land, that I may make the masses friendly; and I will instruct your father in what things he should say. Now stay here and beseech the gods of the land with prayers to grant what you desire, while I go to advance your cause. May persuasion and efficacious fortune attend me! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:510' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=524>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:524'><b>&sect; 524</b>&nbsp;&nbsp;CHORUS: Lord of lords, most blessed among the blessed, power most perfect among the perfect, O blessed <a href=/people/1 target=_blank>Zeus</a>, hear! And from your offspring ward off in utter abhorrence the lust of men, and into the purple sea cast their black-benched madness! <br />Look benignly upon the women's cause, look upon our race ancient in story, and recall the happy tale of our ancestress, the woman of your love. Show that you remember all, you who laid your hand upon <a href=/people/389 target=_blank>Io</a>. It is from <a href=/people/1 target=_blank>Zeus</a> that we claim descent, and it is from this, our homeland, that we went forth. <br />I have come here to the prints of ancient feet, my mother's, even to the region where she was watched while she browsed among the flowers — into that pasture, from which <a href=/people/389 target=_blank>Io</a>, tormented by the gad-fly's sting, fled in frenzy, traversing many tribes of men, and according to fate, cut in two the surging <a about=https://topostext.org/place/411291WBos class=place long=29.0753 lat=41.1194>strait</a>, marking off the land upon the farther shore. <br />And through the land of Asia she gallops, straight through <a href=/people/10954 target=_blank>sheep</a>-pasturing <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a>, and she passes the <a about=https://topostext.org/place/390271PTeu class=place long=27.0548 lat=39.0352>city</a> of <a href=/people/1433 target=_blank>Teuthras</a> among the <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>, and the hollow vales of <a about=https://topostext.org/place/385280RLyd class=place long=28 lat=38.5>Lydia</a>, across the mountains of the <a about=https://topostext.org/place/370340RCil class=ethnic long=34.01 lat=37.01>Cilicians</a> and the <a about=https://topostext.org/place/370320RPam class=ethnic long=32.01 lat=37.01>Pamphylians</a>, speeding over ever-flowing rivers and earth deep and rich, and the land of <a href=/people/15 target=_blank>Aphrodite</a> that teems with wheat. <br />Harassed by the sting of the winged herdsman she gains at last the fertile groves sacred to <a href=/people/1 target=_blank>Zeus</a>, that snow-fed pasture assailed by <a href=/people/5302 target=_blank>Typho</a>'s fury, and the water of the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> that no disease may touch — maddened by her ignominious toils and frenzied with the pain of <a href=/people/19 target=_blank>Hera</a>'s torturing goad. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:524' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=565>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:565'><b>&sect; 565</b>&nbsp;&nbsp;And mortals, who in those days dwelled in the land, shook with pallid terror at the terrible sight as they beheld a being fearsome, half-human, part <a href=/people/10978 target=_blank>cow</a> and part of woman; and they were astonished at the monstrous thing. And then, at last, who was it who calmed the far-wandering, the wretched, the sting-tormented <a href=/people/389 target=_blank>Io</a>? <br /><a href=/people/1 target=_blank>Zeus</a>, it was, through endless time, the lord, . . . and by the unharming might of his hand, and by his divine breath, she gained rest, and let fall the sorrowing shame of tears. And, taking <a href=/people/1 target=_blank>Zeus</a> as her support, according to a true story, she bore a blameless son — <br />Throughout long ages blessed. All the earth cries aloud, This is in very truth the offspring of life-giving <a href=/people/1 target=_blank>Zeus</a>; for who else could have endured the suffering plotted by <a href=/people/19 target=_blank>Hera</a>? Call this the work of <a href=/people/1 target=_blank>Zeus</a> and this his race sprung from <a href=/people/1212 target=_blank>Epaphus</a> and you will hit the truth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:565' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=590>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:590'><b>&sect; 590</b>&nbsp;&nbsp;Which of the gods has accomplished deeds which, with good reason, warrant more justly my appeal to him? Father himself and lord, he planted us with his own hand; he is the mighty fashioner of our race, ancient in wisdom, who devises everything, whose breath makes all things prosper, <a href=/people/1 target=_blank>Zeus</a> himself. <br />He does not sit upon his throne by mandate of another and hold his dominion beneath a mightier. No one sits above him whose power he holds in awe. He speaks, and it is done — he hastens to execute whatever his counselling mind conceives. (Re-enter <a href=/people/303 target=_blank>Danaus</a>.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:590' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=600>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:600'><b>&sect; 600</b>&nbsp;&nbsp;DANAUS: Be of good cheer, my children, all goes well on the part of the citizens. Decrees, carrying full authority, have been passed. <br />CHORUS: Hail, our envoy, harbinger of tidings most welcome, But tell us — to what end has the decision been carried, and to what course does the majority of the people's votes incline? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:600' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=605>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:605'><b>&sect; 605</b>&nbsp;&nbsp;DANAUS: Action was taken by the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, not by any doubtful vote but in such a way as to make my aged heart renew its youth. For the air bristled with right hands held aloft as, in full vote, they ratified this resolution into law: That we are settlers in this land, and are free, subject to no seizure, and secure from robbery of man; that no one, native or alien, lead us captive; but, if they turn to violence, any landholder who refuses to rescue us, should both forfeit his rights and suffer public banishment. Such was the persuasive speech that the king of the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgians</a> delivered on our behalf, uttering the solemn warning that never in the future should the city feed the great wrath of <a href=/people/1 target=_blank>Zeus</a>, protector of the suppliant; and declaring that, should a twofold defilement — from strangers and from natives at once — arise before the city, it would become fodder for distress past all relief. Hearing these words, the <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> people, waiting for no proclamation of crier, voted by uplifted hand that this should be so. It was the <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a> people, won readily to assent, who heard the subtle windings of his speech; but it was <a href=/people/1 target=_blank>Zeus</a> who brought the end to pass. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:605' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=625>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:625'><b>&sect; 625</b>&nbsp;&nbsp;CHORUS: Come, let us invoke blessings upon the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> in return for blessings. And may <a href=/people/1 target=_blank>Zeus</a>, god of strangers, behold the offerings of gratitude voiced by a stranger's lips, that they may in true fulfilment reach their perfect goal. <br />Divinely-born gods! Hear now as I pour forth libations for blessings upon our kindred. Never may the wanton lord of war, insatiate of battle-cry, <a href=/people/24 target=_blank>Ares</a>, who reaps a human harvest in alien fields, destroy this <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a> land by fire; for they had compassion for us, and cast a vote in our favor, respecting our pitiable flock, suppliants in the name of <a href=/people/1 target=_blank>Zeus</a>. <br />Nor did they cast their votes for the side of the males, disregarding the women's cause, since they honored the avenging eye of <a href=/people/1 target=_blank>Zeus</a>, against which there is no battling, and what house would have it defiling its roof?15 For he sits heavily upon it. They take reverent heed of their kin, petitioners of holy <a href=/people/1 target=_blank>Zeus</a>; therefore with pure altars shall they please the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:625' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=656>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:656'><b>&sect; 656</b>&nbsp;&nbsp;Therefore let there fly forth from our overshadowed lips a prayer of gratitude. Never may pestilence empty this city of its men nor strife stain the soil of the land with the blood of slain inhabitants. But may the flower of its youth be unplucked, and may <a href=/people/24 target=_blank>Ares</a>, the partner of <a href=/people/15 target=_blank>Aphrodite</a>'s bed, he who makes havoc of men, not shear off their bloom. <br />And may the altars, where the elders gather, blaze in honor of venerable men. Thus may their state be regulated well, if they hold in awe mighty <a href=/people/1 target=_blank>Zeus</a>, and, most of all, <a href=/people/1 target=_blank>Zeus</a> the warden of the guest, who by venerable enactment guides destiny straight. We pray that other guardians be always renewed, and that <a href=/people/28 target=_blank>Artemis</a>-<a href=/people/409 target=_blank>Hecate</a> watch over the childbirth of their women. <br />And let no murderous havoc come upon the realm to ravage it, by arming <a href=/people/24 target=_blank>Ares</a> — foe to the dance and lute, parent of tears — and the shout of civil strife. And may the joyless swarm of diseases settle far from the heads of the inhabitants, and to all the young people may <a href=/people/9711 target=_blank>Lyceus</a> be graciously disposed. <br />May <a href=/people/1 target=_blank>Zeus</a> cause the earth to bring forth its tribute of fruit by the produce of every season; may their grazing <a href=/people/10978 target=_blank>cattle</a> in the fields have abundant increase, and may they obtain all things from the heavenly powers. May minstrels sing hymns of praise at the altars; and from pure lips let there proceed the phorminx-loving chant. <br />May the people who control the state guard its privileges free from fear — a prudent government counselling wisely for the public prosperity. And should they have recourse to arms may they inflict no loss, but grant just rights of covenant to the stranger within their gates. <br />And may they worship forever the gods who possess the land with native honors of laurel bough held aloft, and <a href=/people/10961 target=_blank>oxen</a> slain, even as their fathers did before their time. Since reverence for parents stands written third among the statutes of <a href=/people/194 target=_blank>Justice</a>, to whom honor supreme is due. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:656' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=710>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:710'><b>&sect; 710</b>&nbsp;&nbsp;DANAUS: I commend these sensible prayers, dear children; but do not be troubled yourselves when you hear the unexpected and startling tidings your father has to tell. From my post of look-out here on the sanctuary of suppliants I see that ship; for it is well-marked and does not escape me: the trimming of its sail, its side-guards, and the prow that with its eyes scans its onward course, obeying — all too well for those to whom it is unfriendly — the guiding rudder at the stern. The men on board are plainly seen, their black limbs showing from their white attire. The rest of the ships and all the assisting fleet stand clear in view: but the leading ship herself has furled her sail and draws near the shore with full sweep of sounding oars. Yet you must face the matter calmly and with self-control, and not be unmindful of these gods. For my part, I will secure allies and advocates to urge our cause, and return. Perhaps some herald or envoys may come, eager to seize you as a prize and drag you away, but nothing will happen: do not fear them. Yet in the event that we should be slow in bringing aid, it would be better not to forget for a moment the means of help you have here at hand. Courage! In good time, assuredly, and on the day ordained, he who dishonors the gods will suffer punishment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:710' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=734>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:734'><b>&sect; 734</b>&nbsp;&nbsp;CHORUS: Father, I am afraid. With what swift wings the ships approach! There is not much time left. I am possessed by dreadful fear if truly my long flight has been of no profit. Father, I am consumed with fright. <br />DANAUS: Since the vote of the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> was final, be of good cheer, my children; they will fight in your defence, I know this well. <br />CHORUS: Abominable is the lustful race of <a href=/people/1155 target=_blank>Egyptus</a> and insatiate of battle; and you know that all too well. In ships, stout-timbered and dark-prowed, they have sailed here, attended by a mighty black host, and in their wrath overtaken us. <br />DANAUS: But they will find here a force with arms well-seasoned by the noonday heat. <br />CHORUS: Do not leave me forlorn, I implore you, father. A woman abandoned to herself is nothing. There is no <a href=/people/24 target=_blank>Ares</a> in her. They are of evil mind, and guileful of purpose, with impure hearts, thinking no more of altars than carrion birds. <br />DANAUS: This would profit us well, my children, should they incur both Heaven's hate and yours. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:734' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=755>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:755'><b>&sect; 755</b>&nbsp;&nbsp;CHORUS: Father, no fear of tridents or of things held sacred in the sight of Heaven will ever keep their hands from us. They are overweening, maddened, with unholy rage, shameless <a href=/people/10953 target=_blank>dogs</a> that do not respect the gods. <br />DANAUS: Yet there is a saying that <a href=/people/10952 target=_blank>wolves</a> are stronger than <a href=/people/10953 target=_blank>dogs</a>; the papyrus-fruit does not conquer the wheat-ear. <br />CHORUS: Since they have the tempers of lewd and impious beasts, we must guard against them quickly. <br />DANAUS: A fleet in getting under way is not so speedy, nor yet in anchoring, when the securing cables must be brought ashore; and even at anchorage shepherds of ships do not feel immediately secure, above all if they have arrived on a harborless coast when the sun is sinking into night. In a cautious pilot night is likely to beget anxiety. Then, too, the disembarking of an army cannot be effected with success before a ship has gained confidence in her moorings. But, for all your terror, remember not to neglect the gods. [I will return] when I have secured aid. The city will find no fault with a messenger, old in years, but with youth in his heart and on his tongue. <br />CHORUS: O land of hills, land of our righteous veneration, what is to be our lot? To what region in the Apian land are we to flee, if anywhere there be some dark hiding-place? Ah that I might become black smoke that draws near to the clouds of <a href=/people/1 target=_blank>Zeus</a>; or, soaring aloft without wings, vanish out of sight like viewless dust and dissolve into nothingness! <br />The evil is no longer escapable; my heart is darkened and trembling; the look-out my father held has brought me ruin. I am undone with terror. Rather would I meet my doom in a noose than suffer the embraces of a man I loathe. <a href=/people/257 target=_blank>Death</a> before that, with <a href=/people/10685 target=_blank>Hades</a> for my lord and master! <br />Ah that somewhere in the upper air I might find a seat against which the dank clouds turn into snow, or some bare, inaccessible crag, beyond sight, brooding in solitude, beetling, vulture-haunted, to bear witness to my plunge into the depths before I am ever forced into a marriage that would pierce my heart! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:755' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=800>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:800'><b>&sect; 800</b>&nbsp;&nbsp;Thereafter I refuse not to become a booty for <a href=/people/10953 target=_blank>dogs</a> and a banquet for the local birds; for death is freedom from misery-loving evils. Come death, death be my doom, before the marriage-bed! How can I yet find some means of escape to deliver me from marriage? <br />Shriek aloud, with a cry that reaches heaven, strains of supplication to the gods; O father, give heed that they are somehow accomplished to my safety and tranquility. Behold deeds of violence with no kind glance in your just eyes! Have respect for your suppliants, O <a href=/people/1 target=_blank>Zeus</a>, omnipotent upholder of the land! <br />For the males of the race of <a href=/people/1155 target=_blank>Egyptus</a>, intolerable in their wantonness, chase after me, a fugitive, with clamorous lewdness and seek to lay hold of me with violence. But yours alone is the beam of the balance, and without you what is accomplished for mortals? (The herald of the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a> is seen at a distance, with armed followers.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:800' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=825>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:825'><b>&sect; 825</b>&nbsp;&nbsp;Ho! Ha! Here on the land is the <a href=/people/10975 target=_blank>pirate</a> from the ship! Before that, <a href=/people/10975 target=_blank>pirate</a>, may you perish . . . I see in this the prelude of suffering wrought by violence. Oh! Oh! Fly for protection! Savagery beyond bearing by its insolence on sea and land alike. Lord of the land, protect us! <br />HERALD: Away with you, away to the ship, as fast as your feet can carry you! If you won't, your hair shall be torn out; you'll be pricked with goads, and off will come your heads with abundant letting of gory blood. Away with you, away — and curses on you! — to the ships. <br />CHORUS: Would that you had perished on your course over the great briny flood along with your lordly arrogance and your riveted ship! . . . <br />HERALD: I order you to stop your shrieking. . . . Ho there! leave the sanctuary: be off to the ship! I do not respect one without honor and city. <br />CHORUS: Never again may my eyes behold the <a href=/people/10978 target=_blank>cattle</a>-nurturing stream from which increase comes to men and vigor of the blood of life. I am a native here, of ancient nobility . . . old man. <br />HERALD: You will get yourself speedily on board, on board, I say, whether you will or not, by force, by force. . . . <br />CHORUS: Alas, alas! So may you perish past all help, driven from your course over the surging waves by eastern breezes off the sandy tomb of <a href=/people/1279 target=_blank>Sarpedon</a>! <br />HERALD: Wail and shout and call upon the gods — you will not escape the <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> ship. Cry out, utter a strain of woe more bitter still. <br />CHORUS: Alas, alas the brutal outrage with which, you crocodile, you boast arrogantly, bellowing on the sea. May the mighty <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>, who watches you, overwhelm your arrogance and destroy you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:825' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=882>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:882'><b>&sect; 882</b>&nbsp;&nbsp;HERALD: Go to the double-prowed ship as quickly as possible. Let no one delay, for dragging by force has no mercy on locks of hair. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:882' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=885>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:885'><b>&sect; 885</b>&nbsp;&nbsp;CHORUS: Alas, father; the help of the sacred images deludes me. Like a <a href=/people/10968 target=_blank>spider</a>, he is carrying me seaward step by step — a nightmare, a black nightmare! Oh! Oh! <a href=/people/3304 target=_blank>Mother Earth</a>, mother <a href=/people/3304 target=_blank>Earth</a>, avert his fearful cries! O father <a href=/people/1 target=_blank>Zeus</a>, son of <a href=/people/3304 target=_blank>Earth</a>! <br />HERALD: I do not fear the native gods, be assured. They did not rear me, nor by their nurture did they bring me to old age. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:885' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=895>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:895'><b>&sect; 895</b>&nbsp;&nbsp;CHORUS: He rages close to me, the two-footed <a href=/people/55 target=_blank>serpent</a>. Like some <a href=/people/55 target=_blank>viper</a> he lays hold of me and bites my foot. Alas, alas! <a href=/people/3304 target=_blank>Mother Earth</a>, mother <a href=/people/3304 target=_blank>Earth</a>, avert his fearful cries! O father <a href=/people/1 target=_blank>Zeus</a>, son of <a href=/people/3304 target=_blank>Earth</a>! <br />HERALD: If you will not resign yourself and get to the ship, rending will have no pity on the fabric of your garments. <br />CHORUS: We are lost! O King, we are suffering impious violence! <br />HERALD: Oh, you will soon see many kings in <a href=/people/1155 target=_blank>Egyptus</a>' sons. Be of good cheer: you will not have to blame lack of government. <br />CHORUS: Listen! Chiefs and rulers of the city, I am threatened with violence! <br />HERALD: I think I will have to seize you by the hair and drag you off since you are slow to heed my orders. (Enter the King with retainers.] <br />KING: You there! What are you doing? What kind of arrogance has incited you to do such dishonor to this realm of <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a> men? Indeed, do you think you have come to a land of women? For a barbarian dealing with Hellenes, you act insolently. Many are the misses of your wits, and your hits are none. <br />HERALD: And in this case where have I gone wrong and transgressed my right? <br />KING: First of all, you do not know how to act as a stranger. <br />HERALD: I not know? How so, when I simply find and take my own that I had lost? <br />KING: To what patrons of your land was your notice given? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:895' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=920>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:920'><b>&sect; 920</b>&nbsp;&nbsp;HERALD: To <a href=/people/33 target=_blank>Hermes</a>, the Searcher, greatest of patrons. <br />KING: For all your notice to the gods, you do them no reverence. <br />HERALD: I revere the deities by the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. <br />KING: While ours are nothing, as I understand you? <br />HERALD: I shall carry off these maids unless someone tears them away. <br />KING: If you so much as touch them, you will regret it, and right soon. <br />HERALD: I hear you; and your speech is far from hospitable. <br />KING: No, since I have no hospitality for despoilers of the gods. <br />HERALD: I will go and tell <a href=/people/1155 target=_blank>Egyptus</a>' sons about this. <br />KING: My proud spirit will not ponder on this threat. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:920' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=930>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:930'><b>&sect; 930</b>&nbsp;&nbsp;HERALD: But that I may know and tell a plainer tale — for it is fitting that a herald make exact report on each detail — what message am I to deliver? Who is it, am I to tell on my return, that has despoiled me of this band of women, their own cousins? It is not, I suppose, by voice of witnesses that the god of battle judges cases like this; nor is it by the gift of silver that he settles dispute; no! If that be the case, many a one shall fall and shuffle off his life. <br />KING: My name? Why should I tell you? In due course of time you will learn it, you and your companions. As for these maids, if, convinced by god-fearing argument, they consent of their own free will and heartily, you may take them. But to this purpose a decree has been passed by the unanimous resolve of the people of the State, never, under compulsion, to surrender this association of women. Through their resolve the rivet has been driven home, to remain fixed and fast. Not on tablets is this inscribed, nor has it been sealed in folds of books: you hear the truth from free-spoken lips. Now get out of my sight immediately! <br />HERALD: I think we are about to involve ourselves in a new war. But may victory and authority rest with the men! <br />KING: It is men, I believe, you will find in the dwellers of this land; and they are no drinkers of diluted wine. [Exit Herald.] But take courage, all of you, and together with your handmaidens, proceed to our well-fenced town, encircled by sturdy devices of towers. As for places inside to lodge, there are plenty of the public sort. For on no modest scale do I myself live, where, in company with many others, you may occupy abodes suitably prepared; or, if it is more pleasing to you, it is free for you also to make your home in dwellings of separate sort. Of these select what is best and most to your desires. A protector you have in me and in all the inhabitants, whose resolve this is that now takes effect. Why wait for others of higher authority? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:930' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=966>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:966'><b>&sect; 966</b>&nbsp;&nbsp;CHORUS: In blessings may you abound, noble <a about=https://topostext.org/place/398223UPel class=demonym long=22.5 lat=39.5>Pelasgian</a>, in requital for your blessings! But, if it pleases you, send our brave father <a href=/people/303 target=_blank>Danaus</a> here to be our adviser and leader of our counsels. For it befits him, rather than ourselves, to advise us where we should establish our home and what neighborhood is friendly. All the world is ready to cast reproach on those who speak a foreign tongue. But may all be for the best! [Exit the King.] And you, dear handmaidens, preserving your fair fame and provoking no angry utterances on the part of the native folk, take up your stations even as <a href=/people/303 target=_blank>Danaus</a> has allotted her duty of attendance unto each. (Enter <a href=/people/303 target=_blank>Danaus</a> with a bodyguard.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:966' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=980>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:980'><b>&sect; 980</b>&nbsp;&nbsp;DANAUS: My children, it is right to offer prayers to the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> and to sacrifice and pour libations to them as to <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> gods; for they are our saviors in no doubtful manner. They heard from my lips the conduct of your cousins toward their own kinfolk, and were moved to bitterness against them; but to me they assigned this escort of spearmen, that I might have rank and honor, and might not be ambushed and perish by the death of the spear, and so an ever-living burden come upon the land. Recipients of such favors as these, it becomes us to hold gratitude in yet higher honor from the bottom of our hearts. And in addition to the many other wise injunctions of your father recorded in your memory, inscribe this too — that an unknown company is proved by time. For in an alien's case, all the world bears an evil tongue in readiness, and it is easy lightly to utter defiling slander. Therefore I would have you bring no shame upon me, now when your youthful loveliness attracts men's gaze. The tender ripeness of summer fruit is in no way easy to protect; beasts despoil it — and men, why not? — and brutes that fly and those that walk the earth. <a href=/people/38 target=_blank>Love</a>'s goddess spreads news abroad of fruit bursting ripe. . . . So all men, as they pass, mastered by desire, shoot an alluring arrow of the eye at the delicate beauty of virgins. See to it, therefore, that we do not suffer that in fear for which we have endured great toil and ploughed the great waters with our ship; and that we bring no shame to ourselves and exultation to our enemies. Housing of two kinds is at our disposition, the one <a href=/people/1165 target=_blank>Pelasgus</a> offers, the other, the city, and to occupy free of cost. These terms are easy. Only pay heed to these behests of your father, and count your chastity more precious than your life. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:980' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1014>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:1014'><b>&sect; 1014</b>&nbsp;&nbsp;CHORUS: May the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> gods grant us good fortune in all the rest! But, concerning the bloom of my virginity, father, be of good cheer, for, unless some evil has been devised of Heaven, I will not swerve from the former pathway of my thoughts. <br />CHORUS [OF THE DANAIDS]: Come now away, glorifying the blessed gods, lords of the city both those who guard the town and those who dwell about <a about=https://topostext.org/place/377227WEra class=place long=22.70838 lat=37.59848>Erasinus</a>' ancient stream. And you handmaidens take up the song. Let the theme of our praise be this city of the <a about=https://topostext.org/place/398223UPel class=ethnic long=22.5 lat=39.5>Pelasgians</a>, and no longer let the homage of our hymns be paid to <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>'s floods where they seek the sea, but to the rivers that pour their gentle draught through the land and increase the birth of children, soothing its soil with their fertilizing streams. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:1014' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1030>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:1030'><b>&sect; 1030</b>&nbsp;&nbsp;May pure <a href=/people/28 target=_blank>Artemis</a> look upon this band in compassion, and may marriage never come through <a href=/people/1067 target=_blank>Cytherea</a>'s compulsion. May that prize belong to my enemies! <br />CHORUS OF HANDMAIDENS: Yet there is no disdain of <a href=/people/168 target=_blank>Cypris</a> in this our friendly hymn; for she, together with <a href=/people/19 target=_blank>Hera</a>, holds power nearest to <a href=/people/1 target=_blank>Zeus</a>, and for her solemn rites the goddess of varied wiles is held in honor. And in the train of their mother are <a href=/people/1185 target=_blank>Desire</a> and she to whom nothing is denied, winning <a href=/people/656 target=_blank>Persuasion</a>; and to <a href=/people/443 target=_blank>Harmonia</a> has been given a share of <a href=/people/15 target=_blank>Aphrodite</a>, and to the whispering touches of the Loves. <br />But for the fugitives I have boding fears of blasts of harm and cruel distress and bloody wars. How did they make such a smooth voyage when pursuit followed fast upon their track? Whatever is fated, that will come to pass. The mighty, untrammelled will of <a href=/people/1 target=_blank>Zeus</a> cannot be transgressed. Marriage has been the destiny of many women before our time. <br />A DANAID: May mighty <a href=/people/1 target=_blank>Zeus</a> defend me from marriage with <a href=/people/1155 target=_blank>Egyptus</a>' race! <br />A HANDMAIDEN: That would indeed be best. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:1030' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1055>
+                            <p id='urn:cts:greekLit:tlg0085.tlg001:1055'><b>&sect; 1055</b>&nbsp;&nbsp;A DANAID: But you would move the immovable. <br />A HANDMAIDEN: And you do not know what the future has in store. <br />A DANAID: How should I scan the mind of <a href=/people/1 target=_blank>Zeus</a>, a sight unfathomable? <br />A HANDMAIDEN: Let the words of your prayer be moderate. <br />A DANAID: What sense of proportion would you now teach me? <br />A HANDMAIDEN: Do not ask too much of the gods. <br />CHORUS OF DANAIDS AND HANDMAIDENS: May sovereign <a href=/people/1 target=_blank>Zeus</a> spare me cruel marriage with a man I hate, that very <a href=/people/1 target=_blank>Zeus</a> who mercifully freed <a href=/people/389 target=_blank>Io</a> from pain, restoring her with healing hand by kindly force. And may he award victory to the women! I praise that which is better than evil, two parts of good mixed with one of bad; and I praise that, through god-given means of deliverance, conflicting rights, in accordance with my prayers, should follow the course of justice. (Exeunt omnes.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg001.perseus-grc1:1055' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=11', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas11";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=11';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

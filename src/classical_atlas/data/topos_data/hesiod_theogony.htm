@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Hesiod, Theogony' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Theogony, Hesiod, Works and Days, Theogony, Shield of Heracles, Miscellany, and Fragments, translated by Hugh Gerard Evelyn-White (1874-1924), from the Loeb edition of 1914, now in the public domain, with thanks to www.theoi.com for making the text available on line.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-650' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -650' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/4' content='urn:cts:greekLit:tlg0020.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n50062731' content='Hesiod'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88014906' content='Hugh Gerard Evelyn-White (1874-1924)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.library.theoi.com/' /><h2>Hesiod, Theogony</h2>Theogony, Hesiod, Works and Days, Theogony, Shield of Heracles, Miscellany, and Fragments, translated by Hugh Gerard Evelyn-White (1874-1924), from the Loeb edition of 1914, now in the public domain, with thanks to www.theoi.com for making the text available on line. This text has 81 tagged references to 50 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0020.tlg001'>urn:cts:greekLit:tlg0020.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q156498'>Q156498</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1'><b>&sect; 1</b>&nbsp;&nbsp;From the <a about=https://topostext.org/place/384228LHel class=person long=23.0154 lat=38.3207>Heliconian</a> <a href=/people/54 target=_blank>Muses</a> let us begin to sing, who hold the great and holy mount of <a about=https://topostext.org/place/384228LHel class=place long=23.0154 lat=38.3207>Helicon</a>, and dance on soft feet about the deep-blue spring and the altar of the almighty son of <a href=/people/43 target=_blank>Cronos</a>, and, when they have washed their tender bodies in <a about=https://topostext.org/place/383231WPer class=place long=23.0911 lat=38.3511>Permessus</a> or in the <a href=/people/10959 target=_blank>Horse</a>'s Spring (<a about=https://topostext.org/place/383230WHip class=place long=23.031 lat=38.319>Hippocrene</a>) or <a href=/people/6719 target=_blank>Olmeius</a>, make their fair, lovely dances upon highest <a about=https://topostext.org/place/384228LHel class=place long=23.0154 lat=38.3207>Helicon</a> and move with vigorous feet. Thence they arise and go abroad by night, veiled in thick mist, and utter their song with lovely voice, praising <a href=/people/1 target=_blank>Zeus</a> the aegis-holder and queenly <a href=/people/19 target=_blank>Hera</a> of <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argos</a> who walks on golden sandals and the daughter of <a href=/people/1 target=_blank>Zeus</a> the aegis-holder bright-eyed <a href=/people/11 target=_blank>Athene</a>, and <a href=/people/11033 target=_blank>Phoebus</a> <a href=/people/2 target=_blank>Apollo</a>, and <a href=/people/28 target=_blank>Artemis</a> who delights in arrows, and <a href=/people/25 target=_blank>Poseidon</a> the earth-holder who shakes the earth, and reverend <a href=/people/554 target=_blank>Themis</a> and quick-glancing <a href=/people/15 target=_blank>Aphrodite</a>, and <a href=/people/576 target=_blank>Hebe</a> with the crown of gold, and fair <a href=/people/1417 target=_blank>Dione</a>, <a href=/people/127 target=_blank>Leto</a>, <a href=/people/1418 target=_blank>Iapetus</a>, and <a href=/people/43 target=_blank>Cronos</a> the crafty counsellor, <a href=/people/683 target=_blank>Eos</a> and great <a href=/people/180 target=_blank>Helius</a> and bright <a href=/people/339 target=_blank>Selene</a>, <a href=/people/3304 target=_blank>Earth</a> too, and great <a href=/people/527 target=_blank>Oceanus</a>, and dark <a href=/people/12253 target=_blank>Night</a>, and the holy race of all the other deathless ones that are for ever. And one day they taught <a href=/people/86 target=_blank>Hesiod</a> glorious song while he was shepherding his <a href=/people/10954 target=_blank>lambs</a> under holy <a about=https://topostext.org/place/384228LHel class=place long=23.0154 lat=38.3207>Helicon</a>, and this word first the goddesses said to me — the <a href=/people/54 target=_blank>Muses</a> of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympus</a>, daughters of <a href=/people/1 target=_blank>Zeus</a> who holds the aegis: Shepherds of the wilderness, wretched things of shame, mere bellies, we know how to speak many false things as though they were true; but we know, when we will, to utter true things. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:29'><b>&sect; 29</b>&nbsp;&nbsp;So said the ready-voiced daughters of great <a href=/people/1 target=_blank>Zeus</a>, and they plucked and gave me a rod, a shoot of sturdy laurel, a marvellous thing, and breathed into me a divine voice to celebrate things that shall be and things there were aforetime; and they bade me sing of the race of the blessed gods that are eternally, but ever to sing of themselves both first and last. But why all this about oak or stone? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:36'><b>&sect; 36</b>&nbsp;&nbsp;Come thou, let us begin with the <a href=/people/54 target=_blank>Muses</a> who gladden the great spirit of their father <a href=/people/1 target=_blank>Zeus</a> in <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> with their songs, telling of things that are and that shall be and that were aforetime with consenting voice. Unwearying flows the sweet sound from their lips, and the house of their father <a href=/people/1 target=_blank>Zeus</a> the loud-thunderer is glad at the lily-like voice of the goddesses as it spread abroad, and the peaks of snowy <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> resound, and the homes of the immortals. And they uttering their immortal voice, celebrate in song first of all the reverend race of the gods from the beginning, those whom <a href=/people/3304 target=_blank>Earth</a> and wide <a href=/people/459 target=_blank>Heaven</a> begot, and the gods sprung of these, givers of good things. Then, next, the goddesses sing of <a href=/people/1 target=_blank>Zeus</a>, the father of gods and men, as they begin and end their strain, how much he is the most excellent among the gods and supreme in power. And again, they chant the race of men and strong giants, and gladden the heart of <a href=/people/1 target=_blank>Zeus</a> within <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, — the <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/54 target=_blank>Muses</a>, daughters of <a href=/people/1 target=_blank>Zeus</a> the aegis-holder. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:53'><b>&sect; 53</b>&nbsp;&nbsp;Them in <a about=https://topostext.org/place/402225RPie class=place long=22.5 lat=40.2>Pieria</a> did <a href=/people/767 target=_blank>Mnemosyne</a> (<a href=/people/767 target=_blank>Memory</a>), who reigns over the hills of <a href=/people/4378 target=_blank>Eleuther</a>, bear of union with the father, the son of <a href=/people/43 target=_blank>Cronos</a>, a forgetting of ills and a rest from sorrow. For nine nights did wise <a href=/people/1 target=_blank>Zeus</a> lie with her, entering her holy bed remote from the immortals. And when a year was passed and the seasons came round as the months waned, and many days were accomplished, she bare nine daughters, all of one mind, whose hearts are set upon song and their spirit free from care, a little way from the topmost peak of snowy <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. There are their bright dancing-places and beautiful homes, and beside them the <a href=/people/5553 target=_blank>Graces</a> and <a href=/people/1185 target=_blank>Himerus</a> (Desire) live in delight. And they, uttering through their lips a lovely voice, sing the laws of all and the goodly ways of the immortals, uttering their lovely voice. Then went they to <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, delighting in their sweet voice, with heavenly song, and the dark earth resounded about them as they chanted, and a lovely sound rose up beneath their feet as they went to their father. And he was reigning in heaven, himself holding the lightning and glowing thunderbolt, when he had overcome by might his father <a href=/people/43 target=_blank>Cronos</a>; and he distributed fairly to the immortals their portions and declared their privileges. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=75>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:75'><b>&sect; 75</b>&nbsp;&nbsp;These things, then, the <a href=/people/54 target=_blank>Muses</a> sang who dwell on <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, nine daughters begotten by great <a href=/people/1 target=_blank>Zeus</a>, <a href=/people/4486 target=_blank>Cleio</a> and <a href=/people/2973 target=_blank>Euterpe</a>, <a href=/people/10731 target=_blank>Thaleia</a>, <a href=/people/2956 target=_blank>Melpomene</a> and <a href=/people/2374 target=_blank>Terpsichore</a>, and <a href=/people/1527 target=_blank>Erato</a> and <a href=/people/5352 target=_blank>Polyhymnia</a> and <a href=/people/10587 target=_blank>Urania</a> and <a href=/people/736 target=_blank>Calliope</a>, who is the chiefest of them all, for she attends on worshipful princes: whomsoever of heaven-nourished princes the daughters of great <a href=/people/1 target=_blank>Zeus</a> honour, and behold him at his birth, they pour sweet dew upon his tongue, and from his lips flow gracious words. All the people look towards him while he settles causes with true judgements: and he, speaking surely, would soon make wise end even of a great quarrel; for therefore are there princes wise in heart, because when the people are being misguided in their assembly, they set right the matter again with ease, persuading them with gentle words. And when he passes through a gathering, they greet him as a god with gentle reverence, and he is conspicuous amongst the assembled: such is the holy gift of the <a href=/people/54 target=_blank>Muses</a> to men. For it is through the <a href=/people/54 target=_blank>Muses</a> and far-shooting <a href=/people/2 target=_blank>Apollo</a> that there are singers and harpers upon the earth; but princes are of <a href=/people/1 target=_blank>Zeus</a>, and happy is he whom the <a href=/people/54 target=_blank>Muses</a> love: sweet flows speech from his mouth. For though a man have sorrow and grief in his newly-troubled soul and live in dread because his heart is distressed, yet, when a singer, the servant of the <a href=/people/54 target=_blank>Muses</a>, chants the glorious deeds of men of old and the blessed gods who inhabit <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, at once he forgets his heaviness and remembers not his sorrows at all; but the gifts of the goddesses soon turn him away from these. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:75' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=104>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:104'><b>&sect; 104</b>&nbsp;&nbsp;Hail, children of <a href=/people/1 target=_blank>Zeus</a>! Grant lovely song and celebrate the holy race of the deathless gods who are for ever, those that were born of <a href=/people/3304 target=_blank>Earth</a> and starry <a href=/people/459 target=_blank>Heaven</a> and gloomy <a href=/people/12253 target=_blank>Night</a> and them that briny Sea did rear. Tell how at the first gods and earth came to be, and rivers, and the boundless sea with its raging swell, and the gleaming stars, and the wide heaven above, and the gods who were born of them, givers of good things, and how they divided their wealth, and how they shared their honours amongst them, and also how at the first they took many-folded <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. These things declare to me from the beginning, ye <a href=/people/54 target=_blank>Muses</a> who dwell in the house of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, and tell me which of them first came to be. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:104' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=116>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:116'><b>&sect; 116</b>&nbsp;&nbsp;Verily at the first <a href=/people/1434 target=_blank>Chaos</a> came to be, but next wide-bosomed <a href=/people/3304 target=_blank>Earth</a>, the ever-sure foundations of all the deathless ones who hold the peaks of snowy <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, and dim <a href=/people/306 target=_blank>Tartarus</a> in the depth of the wide-pathed <a href=/people/3304 target=_blank>Earth</a>, and <a href=/people/38 target=_blank>Eros</a> (<a href=/people/38 target=_blank>Love</a>), fairest among the deathless gods, who unnerves the limbs and overcomes the mind and wise counsels of all gods and all men within them. From <a href=/people/1434 target=_blank>Chaos</a> came forth <a href=/people/933 target=_blank>Erebus</a> and black <a href=/people/12253 target=_blank>Night</a>; but of <a href=/people/12253 target=_blank>Night</a> were born <a href=/people/2576 target=_blank>Aether</a> and <a href=/people/10726 target=_blank>Day</a>, whom she conceived and bare from union in love with <a href=/people/933 target=_blank>Erebus</a>. And <a href=/people/3304 target=_blank>Earth</a> first bare starry <a href=/people/459 target=_blank>Heaven</a>, equal to herself, to cover her on every side, and to be an ever-sure abiding-place for the blessed gods. And she brought forth long Hills, graceful haunts of the goddess-<a href=/people/159 target=_blank>Nymphs</a> who dwell amongst the glens of the hills. She bare also the fruitless deep with his raging swell, <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, without sweet union of love. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:116' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=134>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:134'><b>&sect; 134</b>&nbsp;&nbsp;But afterwards she lay with <a href=/people/459 target=_blank>Heaven</a> and bare deep-swirling <a href=/people/527 target=_blank>Oceanus</a>, <a href=/people/2461 target=_blank>Coeus</a> and <a href=/people/2559 target=_blank>Crius</a> and <a href=/people/1062 target=_blank>Hyperion</a> and <a href=/people/1418 target=_blank>Iapetus</a>, <a href=/people/6146 target=_blank>Theia</a> and <a href=/people/243 target=_blank>Rhea</a>, <a href=/people/554 target=_blank>Themis</a> and <a href=/people/767 target=_blank>Mnemosyne</a> and gold-crowned <a href=/people/10647 target=_blank>Phoebe</a> and lovely <a href=/people/832 target=_blank>Tethys</a>. After them was born <a href=/people/43 target=_blank>Cronos</a> the wily, youngest and most terrible of her children, and he hated his lusty sire. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:134' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=139>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:139'><b>&sect; 139</b>&nbsp;&nbsp;And again, she bare the <a href=/people/350 target=_blank>Cyclopes</a>, overbearing in spirit, <a href=/people/4029 target=_blank>Brontes</a>, and <a href=/people/3115 target=_blank>Steropes</a> and stubborn-hearted <a href=/people/6124 target=_blank>Arges</a>, who gave <a href=/people/1 target=_blank>Zeus</a> the thunder and made the thunderbolt: in all else they were like the gods, but one eye only was set in the midst of their fore-heads. And they were surnamed <a href=/people/350 target=_blank>Cyclopes</a> (Orb-eyed) because one orbed eye was set in their foreheads. <a href=/people/3102 target=_blank>Strength</a> and might and craft were in their works. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:139' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=147>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:147'><b>&sect; 147</b>&nbsp;&nbsp;And again, three other sons were born of <a href=/people/3304 target=_blank>Earth</a> and <a href=/people/459 target=_blank>Heaven</a>, great and doughty beyond telling, <a href=/people/4341 target=_blank>Cottus</a> and <a href=/people/1609 target=_blank>Briareos</a> and <a href=/people/4031 target=_blank>Gyes</a>, presumptuous children. From their shoulders sprang an hundred arms, not to be approached, and each had fifty heads upon his shoulders on their strong limbs, and irresistible was the stubborn strength that was in their great forms. For of all the children that were born of <a href=/people/3304 target=_blank>Earth</a> and <a href=/people/459 target=_blank>Heaven</a>, these were the most terrible, and they were hated by their own father from the first. And he used to hide them all away in a secret place of <a href=/people/3304 target=_blank>Earth</a> so soon as each was born, and would not suffer them to come up into the light: and <a href=/people/459 target=_blank>Heaven</a> rejoiced in his evil doing. But vast <a href=/people/3304 target=_blank>Earth</a> groaned within, being straitened, and she made the element of grey flint and shaped a great sickle, and told her plan to her dear sons. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:147' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=163>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:163'><b>&sect; 163</b>&nbsp;&nbsp;And she spoke, cheering them, while she was vexed in her dear heart: My children, gotten of a sinful father, if you will obey me, we should punish the vile outrage of your father; for he first thought of doing shameful things. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:163' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=167>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:167'><b>&sect; 167</b>&nbsp;&nbsp;So she said; but fear seized them all, and none of them uttered a word. But great <a href=/people/43 target=_blank>Cronos</a> the wily took courage and answered his dear mother: Mother, I will undertake to do this deed, for I reverence not our father of evil name, for he first thought of doing shameful things. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:167' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=173>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:173'><b>&sect; 173</b>&nbsp;&nbsp;So he said: and vast <a href=/people/3304 target=_blank>Earth</a> rejoiced greatly in spirit, and set and hid him in an ambush, and put in his hands a jagged sickle, and revealed to him the whole plot. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:173' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=176>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:176'><b>&sect; 176</b>&nbsp;&nbsp;And <a href=/people/459 target=_blank>Heaven</a> came, bringing on night and longing for love, and he lay about <a href=/people/3304 target=_blank>Earth</a> spreading himself full upon her. Then the son from his ambush stretched forth his left hand and in his right took the great long sickle with jagged teeth, and swiftly lopped off his own father's members and cast them away to fall behind him. And not vainly did they fall from his hand; for all the bloody drops that gushed forth <a href=/people/3304 target=_blank>Earth</a> received, and as the seasons moved round she bare the strong <a href=/people/1744 target=_blank>Erinyes</a> and the great <a href=/people/11034 target=_blank>Giants</a> with gleaming armour, holding long spears in their hands and the <a href=/people/159 target=_blank>Nymphs</a> whom they call Meliae all over the boundless earth. And so soon as he had cut off the members with flint and cast them from the land into the surging sea, they were swept away over the main a long time: and a white foam spread around them from the immortal flesh, and in it there grew a maiden. First she drew near holy <a about=https://topostext.org/place/363230PKyt class=place long=23.0291 lat=36.2295>Cythera</a>, and from there, afterwards, she came to sea-girt <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, and came forth an awful and lovely goddess, and grass grew up about her beneath her shapely feet. Her gods and men call <a href=/people/15 target=_blank>Aphrodite</a>, and the foam-born goddess and rich-crowned <a href=/people/1067 target=_blank>Cytherea</a>, because she grew amid the foam, and <a href=/people/1067 target=_blank>Cytherea</a> because she reached <a about=https://topostext.org/place/363230PKyt class=place long=23.0291 lat=36.2295>Cythera</a>, and Cyprogenes because she was born in billowy <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, and Philommedes because sprang from the members. And with her went <a href=/people/38 target=_blank>Eros</a>, and comely <a href=/people/1185 target=_blank>Desire</a> followed her at her birth at the first and as she went into the assembly of the gods. This honour she has from the beginning, and this is the portion allotted to her amongst men and undying gods, — the whisperings of maidens and smiles and deceits with sweet delight and love and graciousness. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:176' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=207>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:207'><b>&sect; 207</b>&nbsp;&nbsp;But these sons whom be begot himself great <a href=/people/459 target=_blank>Heaven</a> used to call <a href=/people/206 target=_blank>Titans</a> (Strainers) in reproach, for he said that they strained and did presumptuously a fearful deed, and that vengeance for it would come afterwards. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:207' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=211>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:211'><b>&sect; 211</b>&nbsp;&nbsp;And <a href=/people/12253 target=_blank>Night</a> bare hateful <a href=/people/4617 target=_blank>Doom</a> and black <a href=/people/140 target=_blank>Fate</a> and <a href=/people/257 target=_blank>Death</a>, and she bare <a href=/people/422 target=_blank>Sleep</a> and the tribe of Dreams. And again the goddess murky <a href=/people/12253 target=_blank>Night</a>, though she lay with none, bare Blame and painful Woe, and the <a href=/people/597 target=_blank>Hesperides</a> who guard the rich, golden apples and the trees bearing fruit beyond glorious Ocean. Also she bare the Destinies and ruthless avenging <a href=/people/140 target=_blank>Fates</a>, <a href=/people/1726 target=_blank>Clotho</a> and <a href=/people/1920 target=_blank>Lachesis</a> and <a href=/people/1929 target=_blank>Atropos</a>, who give men at their birth both evil and good to have, and they pursue the transgressions of men and of gods: and these goddesses never cease from their dread anger until they punish the sinner with a sore penalty. Also deadly <a href=/people/12253 target=_blank>Night</a> bare <a href=/people/623 target=_blank>Nemesis</a> (Indignation) to afflict mortal men, and after her, <a href=/people/3764 target=_blank>Deceit</a> and <a href=/people/1249 target=_blank>Friendship</a> and hateful Age and hard-hearted <a href=/people/1556 target=_blank>Strife</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:211' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=226>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:226'><b>&sect; 226</b>&nbsp;&nbsp;But abhorred <a href=/people/1556 target=_blank>Strife</a> bare painful <a href=/people/3943 target=_blank>Toil</a> and Forgetfulness and Famine and tearful Sorrows, Fightings also, <a href=/people/1373 target=_blank>Battles</a>, Murders, Manslaughters, Quarrels, Lying Words, Disputes, <a href=/people/7622 target=_blank>Lawlessness</a> and Ruin, all of one nature, and <a href=/people/2524 target=_blank>Oath</a> who most troubles men upon earth when anyone wilfully swears a false oath. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:226' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=233>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:233'><b>&sect; 233</b>&nbsp;&nbsp;And Sea begat <a href=/people/428 target=_blank>Nereus</a>, the eldest of his children, who is true and lies not: and men call him the Old Man because he is trusty and gentle and does not forget the laws of righteousness, but thinks just and kindly thoughts. And yet again he got great <a href=/people/2376 target=_blank>Thaumas</a> and proud <a href=/people/1496 target=_blank>Phorcys</a>, being mated with <a href=/people/3304 target=_blank>Earth</a>, and fair-cheeked <a href=/people/2951 target=_blank>Ceto</a> and <a href=/people/4797 target=_blank>Eurybia</a> who has a heart of flint within her. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:233' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:240'><b>&sect; 240</b>&nbsp;&nbsp;And of <a href=/people/428 target=_blank>Nereus</a> and rich-haired <a href=/people/1326 target=_blank>Doris</a>, daughter of Ocean the perfect river, were born children, passing lovely amongst goddesses, <a href=/people/10608 target=_blank>Ploto</a>, Eucrante, <a href=/people/8575 target=_blank>Sao</a>, and <a href=/people/1147 target=_blank>Amphitrite</a>, and <a href=/people/4796 target=_blank>Eudora</a>, and <a href=/people/202 target=_blank>Thetis</a>, <a href=/people/5379 target=_blank>Galene</a> and <a href=/people/1610 target=_blank>Glauce</a>, <a href=/people/3284 target=_blank>Cymothoe</a>, Speo, <a href=/people/5391 target=_blank>Thoe</a> and lovely <a href=/people/6084 target=_blank>Halie</a>, and <a href=/people/2685 target=_blank>Pasithea</a>, and <a href=/people/1527 target=_blank>Erato</a>, and rosy-armed <a href=/people/8636 target=_blank>Eunice</a>, and gracious <a href=/people/1763 target=_blank>Melite</a>, and <a href=/people/7663 target=_blank>Eulimene</a>, and <a href=/people/1103 target=_blank>Agaue</a>, <a href=/people/4795 target=_blank>Doto</a>, <a href=/people/7098 target=_blank>Proto</a>, <a href=/people/6116 target=_blank>Pherusa</a>, and <a href=/people/6135 target=_blank>Dynamene</a>, and <a about=https://topostext.org/place/380234UNis class=place long=23.364 lat=37.9764>Nisaea</a>, and <a href=/people/3492 target=_blank>Actaea</a>, and Protomedea, <a href=/people/1326 target=_blank>Doris</a>, Panopea, and comely <a href=/people/1498 target=_blank>Galatea</a>, and lovely <a href=/people/3746 target=_blank>Hippothoe</a>, and rosy-armed <a href=/people/8662 target=_blank>Hipponoe</a>, and <a href=/people/5588 target=_blank>Cymodoce</a> who with <a href=/people/10537 target=_blank>Cymatolege</a> and <a href=/people/1147 target=_blank>Amphitrite</a> easily calms the waves upon the misty sea and the blasts of raging winds, and <a href=/people/8527 target=_blank>Cymo</a>, and <a href=/people/8644 target=_blank>Eione</a>, and rich-crowned Alimede, and <a href=/people/8621 target=_blank>Glauconome</a>, fond of laughter, and Pontoporea, Leagore, Euagore, and Laomedea, and <a href=/people/10610 target=_blank>Polynoe</a>, and <a href=/people/993 target=_blank>Autonoe</a>, and <a href=/people/4756 target=_blank>Lysianassa</a>, and Euarne, lovely of shape and without blemish of form, and <a href=/people/2133 target=_blank>Psamathe</a> of charming figure and divine <a href=/people/5337 target=_blank>Menippe</a>, <a href=/people/8549 target=_blank>Neso</a>, <a href=/people/10719 target=_blank>Eupompe</a>, <a href=/people/1872 target=_blank>Themisto</a>, <a href=/people/5354 target=_blank>Pronoe</a>, and Nemertes who has the nature of her deathless father. These fifty daughters sprang from blameless <a href=/people/428 target=_blank>Nereus</a>, skilled in excellent crafts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:240' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=265>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:265'><b>&sect; 265</b>&nbsp;&nbsp;And <a href=/people/2376 target=_blank>Thaumas</a> wedded <a href=/people/388 target=_blank>Electra</a> the daughter of deep-flowing Ocean, and she bare him swift <a href=/people/403 target=_blank>Iris</a> and the long-haired <a href=/people/1202 target=_blank>Harpies</a>, <a href=/people/5381 target=_blank>Aello</a> (Storm-swift) and Ocypetes (Swift-flier) who on their swift wings keep pace with the blasts of the winds and the birds; for quick as time they dart along. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:265' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=270>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:270'><b>&sect; 270</b>&nbsp;&nbsp;And again, <a href=/people/2951 target=_blank>Ceto</a> bare to <a href=/people/1496 target=_blank>Phorcys</a> the fair-cheeked <a href=/people/7727 target=_blank>Graiae</a>, sisters grey from their birth: and both deathless gods and men who walk on earth call them <a href=/people/7727 target=_blank>Graiae</a>, Pemphredo well-clad, and saffron-robed <a href=/people/1176 target=_blank>Enyo</a>, and the <a href=/people/1237 target=_blank>Gorgons</a> who dwell beyond glorious Ocean in the frontier land towards <a href=/people/12253 target=_blank>Night</a> where are the clear-voiced <a href=/people/597 target=_blank>Hesperides</a>, Sthenno, and <a href=/people/2028 target=_blank>Euryale</a>, and <a href=/people/655 target=_blank>Medusa</a> who suffered a woeful fate: she was mortal, but the two were undying and grew not old. With her lay the Dark-haired One in a soft meadow amid spring flowers. And when <a href=/people/153 target=_blank>Perseus</a> cut off her head, there sprang forth great <a href=/people/2813 target=_blank>Chrysaor</a> and the <a href=/people/10959 target=_blank>horse</a> <a href=/people/1116 target=_blank>Pegasus</a> who is so called because he was born near the springs (pegae) of Ocean; and that other, because he held a golden blade (aor) in his hands. Now <a href=/people/1116 target=_blank>Pegasus</a> flew away and left the earth, the mother of flocks, and came to the deathless gods: and he dwells in the house of <a href=/people/1 target=_blank>Zeus</a> and brings to wise <a href=/people/1 target=_blank>Zeus</a> the thunder and lightning. But <a href=/people/2813 target=_blank>Chrysaor</a> was joined in love to <a href=/people/2480 target=_blank>Callirrhoe</a>, the daughter of glorious Ocean, and begot three-headed <a href=/people/1730 target=_blank>Geryones</a>. Him mighty <a href=/people/4 target=_blank>Heracles</a> slew in sea-girt <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Erythea</a> by his shambling <a href=/people/10961 target=_blank>oxen</a> on that day when he drove the wide-browed <a href=/people/10961 target=_blank>oxen</a> to holy <a about=https://topostext.org/place/376228PTir class=place long=22.7997 lat=37.6003>Tiryns</a>, and had crossed the ford of Ocean and killed <a href=/people/6742 target=_blank>Orthus</a> and <a href=/people/1528 target=_blank>Eurytion</a> the herdsman in the dim stead out beyond glorious Ocean. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:270' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=295>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:295'><b>&sect; 295</b>&nbsp;&nbsp;And in a hollow cave she bare another monster, irresistible, in no wise like either to mortal men or to the undying gods, even the goddess fierce <a href=/people/2142 target=_blank>Echidna</a> who is half a nymph with glancing eyes and fair cheeks, and half again a huge <a href=/people/55 target=_blank>snake</a>, great and awful, with speckled skin, eating raw flesh beneath the secret parts of the holy earth. And there she has a cave deep down under a hollow rock far from the deathless gods and mortal men. There, then, did the gods appoint her a glorious house to dwell in: and she keeps guard in <a href=/people/4870 target=_blank>Arima</a> beneath the earth, grim <a href=/people/2142 target=_blank>Echidna</a>, a nymph who dies not nor grows old all her days. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:295' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=306>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:306'><b>&sect; 306</b>&nbsp;&nbsp;Men say that <a href=/people/2193 target=_blank>Typhaon</a> the terrible, outrageous and lawless, was joined in love to her, the maid with glancing eyes. So she conceived and brought forth fierce offspring; first she bare <a href=/people/6742 target=_blank>Orthus</a> the <a href=/people/10953 target=_blank>hound</a> of <a href=/people/1730 target=_blank>Geryones</a>, and then again she bare a second, a monster not to be overcome and that may not be described, <a href=/people/752 target=_blank>Cerberus</a> who eats raw flesh, the brazen-voiced <a href=/people/752 target=_blank>hound of Hades</a>, fifty-headed, relentless and strong. And again she bore a third, the evil-minded <a href=/people/1205 target=_blank>Hydra</a> of <a about=https://topostext.org/place/375227ULer class=person long=22.7182 lat=37.5511>Lerna</a>, whom the goddess, white-armed <a href=/people/19 target=_blank>Hera</a> nourished, being angry beyond measure with the mighty <a href=/people/4 target=_blank>Heracles</a>. And her <a href=/people/4 target=_blank>Heracles</a>, the son of <a href=/people/1 target=_blank>Zeus</a>, of the house of <a href=/people/495 target=_blank>Amphitryon</a>, together with warlike <a href=/people/502 target=_blank>Iolaus</a>, destroyed with the unpitying sword through the plans of <a href=/people/11 target=_blank>Athene</a> the spoil-driver. She was the mother of <a href=/people/1239 target=_blank>Chimaera</a> who breathed raging fire, a creature fearful, great, swift-footed and strong, who had three heads, one of a grim-eyed <a href=/people/10960 target=_blank>lion</a>; in her hinderpart, a dragon; and in her middle, a <a href=/people/10956 target=_blank>goat</a>, breathing forth a fearful blast of blazing fire. Her did <a href=/people/1116 target=_blank>Pegasus</a> and noble <a href=/people/807 target=_blank>Bellerophon</a> slay; but <a href=/people/2142 target=_blank>Echidna</a> was subject in love to <a href=/people/6742 target=_blank>Orthus</a> and brought forth the deadly <a href=/people/974 target=_blank>Sphinx</a> which destroyed the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Cadmeans</a>, and the <a href=/people/2903 target=_blank>Nemean lion</a>, which <a href=/people/19 target=_blank>Hera</a>, the good wife of <a href=/people/1 target=_blank>Zeus</a>, brought up and made to haunt the hills of <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a>, a plague to men. There he preyed upon the tribes of her own people and had power over <a about=https://topostext.org/place/378227LTre class=place long=22.7223 lat=37.7867>Tretus</a> of <a about=https://topostext.org/place/378227SNem class=place long=22.7108 lat=37.8085>Nemea</a> and <a about=https://topostext.org/place/379227LApe class=place long=22.74 lat=37.861>Apesas</a>: yet the strength of stout <a href=/people/4 target=_blank>Heracles</a> overcame him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:306' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=333>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:333'><b>&sect; 333</b>&nbsp;&nbsp;And <a href=/people/2951 target=_blank>Ceto</a> was joined in love to <a href=/people/1496 target=_blank>Phorcys</a> and bare her youngest, the awful <a href=/people/55 target=_blank>snake</a> who guards the apples all of gold in the secret places of the dark earth at its great bounds. This is the offspring of <a href=/people/2951 target=_blank>Ceto</a> and <a href=/people/1496 target=_blank>Phorcys</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:333' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=334>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:334'><b>&sect; 334</b>&nbsp;&nbsp;And <a href=/people/832 target=_blank>Tethys</a> bare to Ocean eddying rivers, <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nilus</a>, and <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>, and deep-swirling <a about=https://topostext.org/place/450120WEri class=place long=12.0293 lat=44.9753>Eridanus</a>, <a about=https://topostext.org/place/408238WStr class=place long=23.8489 lat=40.7858>Strymon</a>, and <a about=https://topostext.org/place/376275WMae class=place long=27.4713 lat=37.622>Meander</a>, and the fair stream of <a about=https://topostext.org/place/442277WIst class=place long=27.742 lat=44.206>Ister</a>, and <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>, and <a href=/people/962 target=_blank>Rhesus</a>, and the silver eddies of <a about=https://topostext.org/place/383211WAch class=place long=21.1067 lat=38.3388>Achelous</a>, <a about=https://topostext.org/place/418238WNes class=place long=24.771 lat=41.0916>Nessus</a>, and <a href=/people/3683 target=_blank>Rhodius</a>, <a about=https://topostext.org/place/403218WHal class=place long=21.507 lat=40.561>Haliacmon</a>, and <a href=/people/3851 target=_blank>Heptaporus</a>, <a about=https://topostext.org/place/403273WGra class=place long=27.2716 lat=40.3067>Granicus</a>, and <a about=https://topostext.org/place/403278WAis class=place long=27.6022 lat=40.2674>Aesepus</a>, and holy <a about=https://topostext.org/place/400262WSim class=place long=26.248 lat=39.9617>Simois</a>, and <a about=https://topostext.org/place/399227WPen class=place long=22.7094 lat=39.9298>Peneus</a>, and <a about=https://topostext.org/place/385281WHer class=place long=28.1113 lat=38.5178>Hermus</a>, and <a about=https://topostext.org/place/389270WKai class=place long=27.011 lat=38.957>Caicus</a> fair stream, and great <a about=https://topostext.org/place/411306WSan class=place long=30.645 lat=41.109>Sangarius</a>, <a about=https://topostext.org/place/378218WLad class=place long=21.859 lat=37.682>Ladon</a>, <a about=https://topostext.org/place/417323WPar class=place long=32.2517 lat=41.6747>Parthenius</a>, <a about=https://topostext.org/place/384216WEve class=place long=21.552 lat=38.376>Euenus</a>, Ardescus, and divine <a about=https://topostext.org/place/400262WSka class=place long=26.213 lat=39.994>Scamander</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:334' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=346>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:346'><b>&sect; 346</b>&nbsp;&nbsp;Also she brought forth a holy company of daughters who with the lord <a href=/people/2 target=_blank>Apollo</a> and the Rivers have youths in their keeping — to this charge <a href=/people/1 target=_blank>Zeus</a> appointed them — <a href=/people/656 target=_blank>Peitho</a>, and <a href=/people/4030 target=_blank>Admete</a>, and <a href=/people/3518 target=_blank>Ianthe</a>, and <a href=/people/388 target=_blank>Electra</a>, and <a href=/people/1326 target=_blank>Doris</a>, and <a href=/people/10616 target=_blank>Prymno</a>, and <a href=/people/10587 target=_blank>Urania</a> divine in form, <a href=/people/6151 target=_blank>Hippo</a>, <a href=/people/991 target=_blank>Clymene</a>, Rhodea, and <a href=/people/2480 target=_blank>Callirrhoe</a>, <a href=/people/10722 target=_blank>Zeuxo</a> and <a href=/people/4492 target=_blank>Clytie</a>, and <a href=/people/5715 target=_blank>Idyia</a>, and <a href=/people/10592 target=_blank>Pasithoe</a>, Plexaura, and Galaxaura, and lovely <a href=/people/1417 target=_blank>Dione</a>, Melobosis and <a href=/people/5391 target=_blank>Thoe</a> and handsome <a href=/people/2962 target=_blank>Polydora</a>, <a href=/people/10521 target=_blank>Cerceis</a> lovely of form, and soft eyed Plouto, <a href=/people/3727 target=_blank>Perseis</a>, Ianeira, <a href=/people/7064 target=_blank>Acaste</a>, <a href=/people/6085 target=_blank>Xanthe</a>, <a href=/people/3728 target=_blank>Petraea</a> the fair, <a href=/people/10560 target=_blank>Menestho</a>, and <a href=/people/434 target=_blank>Europa</a>, <a href=/people/2364 target=_blank>Metis</a>, and <a href=/people/1387 target=_blank>Eurynome</a>, and <a href=/people/10637 target=_blank>Telesto</a> saffron-clad, <a href=/people/12237 target=_blank>Chryseis</a>nd Asia and charming <a href=/people/829 target=_blank>Calypso</a>, <a href=/people/4796 target=_blank>Eudora</a>, and <a href=/people/2811 target=_blank>Tyche</a>, Amphirho, and Ocyrrhoe, and <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a> who is the chiefest of them all. These are the eldest daughters that sprang from Ocean and <a href=/people/832 target=_blank>Tethys</a>; but there are many besides. For there are three thousand neat-ankled daughters of Ocean who are dispersed far and wide, and in every place alike serve the earth and the deep waters, children who are glorious among goddesses. And as many other rivers are there, babbling as they flow, sons of Ocean, whom queenly <a href=/people/832 target=_blank>Tethys</a> bare, but their names it is hard for a mortal man to tell, but people know those by which they severally dwell. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:346' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=371>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:371'><b>&sect; 371</b>&nbsp;&nbsp;And <a href=/people/6146 target=_blank>Theia</a> was subject in love to <a href=/people/1062 target=_blank>Hyperion</a> and bare great <a href=/people/180 target=_blank>Helius</a> (Sun) and clear <a href=/people/339 target=_blank>Selene</a> (Moon) and <a href=/people/683 target=_blank>Eos</a> (Dawn) who shines upon all that are on earth and upon the deathless Gods who live in the wide heaven. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:371' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=375>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:375'><b>&sect; 375</b>&nbsp;&nbsp;And <a href=/people/4797 target=_blank>Eurybia</a>, bright goddess, was joined in love to <a href=/people/2559 target=_blank>Crius</a> and bare great <a href=/people/1464 target=_blank>Astraeus</a>, and <a href=/people/4351 target=_blank>Pallas</a>, and <a href=/people/10600 target=_blank>Perses</a> who also was eminent among all men in wisdom. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:375' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=378>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:378'><b>&sect; 378</b>&nbsp;&nbsp;And <a href=/people/683 target=_blank>Eos</a> bare to <a href=/people/1464 target=_blank>Astraeus</a> the strong-hearted winds, brightening <a href=/people/444 target=_blank>Zephyrus</a>, and <a href=/people/208 target=_blank>Boreas</a>, headlong in his course, and <a href=/people/2367 target=_blank>Notus</a>, — a goddess mating in love with a god. And after these Erigenia bare the star <a href=/people/7133 target=_blank>Eosphorus</a> (Dawn-bringer), and the gleaming stars with which heaven is crowned. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:378' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=383>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:383'><b>&sect; 383</b>&nbsp;&nbsp;And <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a> the daughter of Ocean was joined to <a href=/people/4351 target=_blank>Pallas</a> and bare <a href=/people/1036 target=_blank>Zelus</a> (Emulation) and trim-ankled <a href=/people/335 target=_blank>Nike</a> (Victory) in the house. Also she brought forth Cratos (<a href=/people/3102 target=_blank>Strength</a>) and <a href=/people/2482 target=_blank>Bia</a> (<a href=/people/2482 target=_blank>Force</a>), wonderful children. These have no house apart from <a href=/people/1 target=_blank>Zeus</a>, nor any dwelling nor path except that wherein God leads them, but they dwell always with <a href=/people/1 target=_blank>Zeus</a> the loud-thunderer. For so did <a href=/people/3731 target=_blank>Styx</a> the deathless daughter of Ocean plan on that day when the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a> Lightener called all the deathless gods to great <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, and said that whosoever of the gods would fight with him against the <a href=/people/206 target=_blank>Titans</a>, he would not cast him out from his rights, but each should have the office which he had before amongst the deathless gods. And he declared that he who was without office and rights as is just. So deathless <a href=/people/3731 target=_blank>Styx</a> came first to <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> with her children through the wit of her dear father. And <a href=/people/1 target=_blank>Zeus</a> honoured her, and gave her very great gifts, for her he appointed to be the great oath of the gods, and her children to live with him always. And as he promised, so he performed fully unto them all. But he himself mightily reigns and rules. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:383' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=404>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:404'><b>&sect; 404</b>&nbsp;&nbsp;Again, <a href=/people/1280 target=_blank>Phoebe</a> came to the desired embrace of <a href=/people/2461 target=_blank>Coeus</a>. Then the goddess through the love of the god conceived and brought forth dark-gowned <a href=/people/127 target=_blank>Leto</a>, always mild, kind to men and to the deathless gods, mild from the beginning, gentlest in all <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. Also she bare <a href=/people/2083 target=_blank>Asteria</a> of happy name, whom <a href=/people/2561 target=_blank>Perses</a> once led to his great house to be called his dear wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:404' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=410>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:410'><b>&sect; 410</b>&nbsp;&nbsp;And she conceived and bare <a href=/people/409 target=_blank>Hecate</a> whom <a href=/people/1 target=_blank>Zeus</a> the son of <a href=/people/43 target=_blank>Cronos</a> honoured above all. He gave her splendid gifts, to have a share of the earth and the unfruitful sea. She received honour also in starry heaven, and is honoured exceedingly by the deathless gods. For to this day, whenever any one of men on earth offers rich sacrifices and prays for favour according to custom, he calls upon <a href=/people/409 target=_blank>Hecate</a>. Great honour comes full easily to him whose prayers the goddess receives favourably, and she bestows wealth upon him; for the power surely is with her. For as many as were born of <a href=/people/3304 target=_blank>Earth</a> and Ocean amongst all these she has her due portion. The son of <a href=/people/43 target=_blank>Cronos</a> did her no wrong nor took anything away of all that was her portion among the former <a href=/people/206 target=_blank>Titan</a> gods: but she holds, as the division was at the first from the beginning, privilege both in earth, and in heaven, and in sea. Also, because she is an only child, the goddess receives not less honour, but much more still, for <a href=/people/1 target=_blank>Zeus</a> honours her. Whom she will she greatly aids and advances: she sits by worshipful kings in judgement, and in the assembly whom she will is distinguished among the people. And when men arm themselves for the battle that destroys men, then the goddess is at hand to give victory and grant glory readily to whom she will. Good is she also when men contend at the games, for there too the goddess is with them and profits them: and he who by might and strength gets the victory wins the rich prize easily with joy, and brings glory to his parents. And she is good to stand by horsemen, whom she will: and to those whose business is in the grey discomfortable sea, and who pray to <a href=/people/409 target=_blank>Hecate</a> and the loud-crashing <a href=/people/25 target=_blank>Earth-Shaker</a>, easily the glorious goddess gives great catch, and easily she takes it away as soon as seen, if so she will. She is good in the byre with <a href=/people/33 target=_blank>Hermes</a> to increase the stock. The droves of <a href=/people/10978 target=_blank>kine</a> and wide herds of <a href=/people/10956 target=_blank>goats</a> and flocks of fleecy <a href=/people/10954 target=_blank>sheep</a>, if she will, she increases from a few, or makes many to be less. So, then. albeit her mother's only child, she is honoured amongst all the deathless gods. And the son of <a href=/people/43 target=_blank>Cronos</a> made her a nurse of the young who after that day saw with their eyes the light of all-seeing <a href=/people/683 target=_blank>Dawn</a>. So from the beginning she is a nurse of the young, and these are her honours. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:410' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=453>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:453'><b>&sect; 453</b>&nbsp;&nbsp;But <a href=/people/243 target=_blank>Rhea</a> was subject in love to <a href=/people/43 target=_blank>Cronos</a> and bare splendid children, <a href=/people/325 target=_blank>Hestia</a>, <a href=/people/48 target=_blank>Demeter</a>, and gold-shod <a href=/people/19 target=_blank>Hera</a> and strong <a href=/people/10685 target=_blank>Hades</a>, pitiless in heart, who dwells under the earth, and the loud-crashing <a href=/people/25 target=_blank>Earth-Shaker</a>, and wise <a href=/people/1 target=_blank>Zeus</a>, father of gods and men, by whose thunder the wide earth is shaken. These great <a href=/people/43 target=_blank>Cronos</a> swallowed as each came forth from the womb to his mother's knees with this intent, that no other of the proud sons of <a href=/people/459 target=_blank>Heaven</a> should hold the kingly office amongst the deathless gods. For he learned from <a href=/people/3304 target=_blank>Earth</a> and starry <a href=/people/459 target=_blank>Heaven</a> that he was destined to be overcome by his own son, strong though he was, through the contriving of great <a href=/people/1 target=_blank>Zeus</a>. Therefore he kept no blind outlook, but watched and swallowed down his children: and unceasing grief seized <a href=/people/243 target=_blank>Rhea</a>. But when she was about to bear <a href=/people/1 target=_blank>Zeus</a>, the father of gods and men, then she besought her own dear parents, <a href=/people/3304 target=_blank>Earth</a> and starry <a href=/people/459 target=_blank>Heaven</a>, to devise some plan with her that the birth of her dear child might be concealed, and that retribution might overtake great, crafty <a href=/people/43 target=_blank>Cronos</a> for his own father and also for the children whom he had swallowed down. And they readily heard and obeyed their dear daughter, and told her all that was destined to happen touching <a href=/people/43 target=_blank>Cronos</a> the king and his stout-hearted son. So they sent her to <a about=https://topostext.org/place/352254PLyk class=place long=25.3682 lat=35.2081>Lyctus</a>, to the rich land of <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, when she was ready to bear great <a href=/people/1 target=_blank>Zeus</a>, the youngest of her children. Him did vast <a href=/people/3304 target=_blank>Earth</a> receive from <a href=/people/243 target=_blank>Rhea</a> in wide <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a> to nourish and to bring up. Thither came <a href=/people/3304 target=_blank>Earth</a> carrying him swiftly through the black night to <a about=https://topostext.org/place/352254PLyk class=place long=25.3682 lat=35.2081>Lyctus</a> first, and took him in her arms and hid him in a remote cave beneath the secret places of the holy earth on thick-wooded Mount <a about=https://topostext.org/place/353253LAig class=place long=25.43 lat=35.147>Aegeum</a>; but to the mightily ruling son of <a href=/people/459 target=_blank>Heaven</a>, the earlier king of the gods, she gave a great stone wrapped in swaddling clothes. Then he took it in his hands and thrust it down into his belly: wretch! he knew not in his heart that in place of the stone his son was left behind, unconquered and untroubled, and that he was soon to overcome him by force and might and drive him from his honours, himself to reign over the deathless gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:453' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=492>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:492'><b>&sect; 492</b>&nbsp;&nbsp;After that, the strength and glorious limbs of the prince increased quickly, and as the years rolled on, great <a href=/people/43 target=_blank>Cronos</a> the wily was beguiled by the deep suggestions of <a href=/people/3304 target=_blank>Earth</a>, and brought up again his offspring, vanquished by the arts and might of his own son, and he vomited up first the stone which he had swallowed last. And <a href=/people/1 target=_blank>Zeus</a> set it fast in the wide-pathed earth at goodly <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a> under the glens of <a about=https://topostext.org/place/385226LPar class=place long=22.6219 lat=38.5354>Parnassus</a>, to be a sign thenceforth and a marvel to mortal men. And he set free from their deadly bonds the brothers of his father, sons of <a href=/people/459 target=_blank>Heaven</a> whom his father in his foolishness had bound. And they remembered to be grateful to him for his kindness, and gave him thunder and the glowing thunderbolt and lightening: for before that, huge <a href=/people/3304 target=_blank>Earth</a> had hidden these. In them he trusts and rules over mortals and immortals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:492' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=507>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:507'><b>&sect; 507</b>&nbsp;&nbsp;Now <a href=/people/1418 target=_blank>Iapetus</a> took to wife the neat-ankled mad <a href=/people/991 target=_blank>Clymene</a>, daughter of Ocean, and went up with her into one bed. And she bare him a stout-hearted son, <a href=/people/190 target=_blank>Atlas</a>: also she bare very glorious <a href=/people/912 target=_blank>Menoetius</a> and clever <a href=/people/254 target=_blank>Prometheus</a>, full of various wiles, and scatter-brained <a href=/people/2139 target=_blank>Epimetheus</a> who from the first was a mischief to men who eat bread; for it was he who first took of <a href=/people/1 target=_blank>Zeus</a> the woman, the maiden whom he had formed. But <a href=/people/912 target=_blank>Menoetius</a> was outrageous, and far-seeing <a href=/people/1 target=_blank>Zeus</a> struck him with a lurid thunderbolt and sent him down to <a href=/people/933 target=_blank>Erebus</a> because of his mad presumption and exceeding pride. And <a href=/people/190 target=_blank>Atlas</a> through hard constraint upholds the wide heaven with unwearying head and arms, standing at the borders of the earth before the clear-voiced <a href=/people/597 target=_blank>Hesperides</a>; for this lot wise <a href=/people/1 target=_blank>Zeus</a> assigned to him. And ready-witted <a href=/people/254 target=_blank>Prometheus</a> he bound with inextricable bonds, cruel chains, and drove a shaft through his middle, and set on him a long-winged <a href=/people/10980 target=_blank>eagle</a>, which used to eat his immortal liver; but by night the liver grew as much again everyway as the long-winged bird devoured in the whole day. That bird <a href=/people/4 target=_blank>Heracles</a>, the valiant son of shapely-ankled <a href=/people/1123 target=_blank>Alcmene</a>, slew; and delivered the son of <a href=/people/1418 target=_blank>Iapetus</a> from the cruel plague, and released him from his affliction — not without the will of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a> who reigns on high, that the glory of <a href=/people/4 target=_blank>Heracles</a> the <a about=https://topostext.org/place/383233PThe class=person long=23.3178 lat=38.3191>Theban</a>-born might be yet greater than it was before over the plenteous earth. This, then, he regarded, and honoured his famous son; though he was angry, he ceased from the wrath which he had before because <a href=/people/254 target=_blank>Prometheus</a> matched himself in wit with the almighty son of <a href=/people/43 target=_blank>Cronos</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:507' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=545>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:545'><b>&sect; 545</b>&nbsp;&nbsp;For when the gods and mortal men had a dispute at <a href=/people/9763 target=_blank>Mecone</a>, even then <a href=/people/254 target=_blank>Prometheus</a> was forward to cut up a great <a href=/people/10961 target=_blank>ox</a> and set portions before them, trying to befool the mind of <a href=/people/1 target=_blank>Zeus</a>. Before the rest he set flesh and inner parts thick with fat upon the hide, covering them with an <a href=/people/10961 target=_blank>ox</a> paunch; but for <a href=/people/1 target=_blank>Zeus</a> he put the white bones dressed up with cunning art and covered with shining fat. Then the father of men and of gods said to him: Son of <a href=/people/1418 target=_blank>Iapetus</a>, most glorious of all lords, good sir, how unfairly you have divided the portions! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:545' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=548>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:548'><b>&sect; 548</b>&nbsp;&nbsp;So said <a href=/people/1 target=_blank>Zeus</a> whose wisdom is everlasting, rebuking him. But wily <a href=/people/254 target=_blank>Prometheus</a> answered him, smiling softly and not forgetting his cunning trick: <a href=/people/1 target=_blank>Zeus</a>, most glorious and greatest of the eternal gods, take which ever of these portions your heart within you bids. So he said, thinking trickery. But <a href=/people/1 target=_blank>Zeus</a>, whose wisdom is everlasting, saw and failed not to perceive the trick, and in his heart he thought mischief against mortal men which also was to be fulfilled. With both hands he took up the white fat and was angry at heart, and wrath came to his spirit when he saw the white <a href=/people/10961 target=_blank>ox</a>-bones craftily tricked out: and because of this the tribes of men upon earth burn white bones to the deathless gods upon fragrant altars. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:548' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=558>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:558'><b>&sect; 558</b>&nbsp;&nbsp;But <a href=/people/1 target=_blank>Zeus</a> who drives the clouds was greatly vexed and said to him: Son of <a href=/people/1418 target=_blank>Iapetus</a>, clever above all! So, sir, you have not yet forgotten your cunning arts! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:558' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=560>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:560'><b>&sect; 560</b>&nbsp;&nbsp;So spake <a href=/people/1 target=_blank>Zeus</a> in anger, whose wisdom is everlasting; and from that time he was always mindful of the trick, and would not give the power of unwearying fire to the <a about=https://topostext.org/place/388224RMal class=demonym long=22.4 lat=38.8>Melian</a> race of mortal men who live on the earth. But the noble son of <a href=/people/1418 target=_blank>Iapetus</a> outwitted him and stole the far-seen gleam of unwearying fire in a hollow fennel stalk. And <a href=/people/1 target=_blank>Zeus</a> who thunders on high was stung in spirit, and his dear heart was angered when he saw amongst men the far-seen ray of fire. Forthwith he made an evil thing for men as the price of fire; for the very famous Limping God formed of earth the likeness of a shy maiden as the son of <a href=/people/43 target=_blank>Cronos</a> willed. And the goddess bright-eyed <a href=/people/11 target=_blank>Athene</a> girded and clothed her with silvery raiment, and down from her head she spread with her hands a broidered veil, a wonder to see; and she, <a href=/people/11 target=_blank>Pallas Athene</a>, put about her head lovely garlands, flowers of new-grown herbs. Also she put upon her head a crown of gold which the very famous Limping God made himself and worked with his own hands as a favour to <a href=/people/1 target=_blank>Zeus</a> his father. On it was much curious work, wonderful to see; for of the many creatures which the land and sea rear up, he put most upon it, wonderful things, like living beings with voices: and great beauty shone out from it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:560' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=585>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:585'><b>&sect; 585</b>&nbsp;&nbsp;But when he had made the beautiful evil to be the price for the blessing, he brought her out, delighting in the finery which the bright-eyed daughter of a mighty father had given her, to the place where the other gods and men were. And wonder took hold of the deathless gods and mortal men when they saw that which was sheer guile, not to be withstood by men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:585' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=590>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:590'><b>&sect; 590</b>&nbsp;&nbsp;For from her is the race of women and female kind: of her is the deadly race and tribe of women who live amongst mortal men to their great trouble, no helpmeets in hateful poverty, but only in wealth. And as in thatched hives <a href=/people/10964 target=_blank>bees</a> feed the drones whose nature is to do mischief — by day and throughout the day until the sun goes down the <a href=/people/10964 target=_blank>bees</a> are busy and lay the white combs, while the drones stay at home in the covered skeps and reap the toil of others into their own bellies — even so <a href=/people/1 target=_blank>Zeus</a> who thunders on high made women to be an evil to mortal men, with a nature to do evil. And he gave them a second evil to be the price for the good they had: whoever avoids marriage and the sorrows that women cause, and will not wed, reaches deadly old age without anyone to tend his years, and though he at least has no lack of livelihood while he lives, yet, when he is dead, his kinsfolk divide his possessions amongst them. And as for the man who chooses the lot of marriage and takes a good wife suited to his mind, evil continually contends with good; for whoever happens to have mischievous children, lives always with unceasing grief in his spirit and heart within him; and this evil cannot be healed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:590' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=613>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:613'><b>&sect; 613</b>&nbsp;&nbsp;So it is not possible to deceive or go beyond the will of <a href=/people/1 target=_blank>Zeus</a>; for not even the son of <a href=/people/1418 target=_blank>Iapetus</a>, kindly <a href=/people/254 target=_blank>Prometheus</a>, escaped his heavy anger, but of necessity strong bands confined him, although he knew many a wile. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:613' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=617>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:617'><b>&sect; 617</b>&nbsp;&nbsp;But when first their father was vexed in his heart with <a href=/people/9904 target=_blank>Obriareus</a> and <a href=/people/4341 target=_blank>Cottus</a> and <a href=/people/4031 target=_blank>Gyes</a>, he bound them in cruel bonds, because he was jealous of their exceeding manhood and comeliness and great size: and he made them live beneath the wide-pathed earth, where they were afflicted, being set to dwell under the ground, at the end of the earth, at its great borders, in bitter anguish for a long time and with great grief at heart. But the son of <a href=/people/43 target=_blank>Cronos</a> and the other deathless gods whom rich-haired <a href=/people/243 target=_blank>Rhea</a> bare from union with <a href=/people/43 target=_blank>Cronos</a>, brought them up again to the light at <a href=/people/3304 target=_blank>Earth</a>'s advising. For she herself recounted all things to the gods fully, how that with these they would gain victory and a glorious cause to vaunt themselves. For the <a href=/people/206 target=_blank>Titan</a> gods and as many as sprang from <a href=/people/43 target=_blank>Cronos</a> had long been fighting together in stubborn war with heart-grieving toil, the lordly <a href=/people/206 target=_blank>Titans</a> from high <a about=https://topostext.org/place/390227LOth class=place long=22.7097 lat=39.0169>Othrys</a>, but the gods, givers of good, whom rich-haired <a href=/people/243 target=_blank>Rhea</a> bare in union with <a href=/people/43 target=_blank>Cronos</a>, from <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. So they, with bitter wrath, were fighting continually with one another at that time for ten full years, and the hard strife had no close or end for either side, and the issue of the war hung evenly balanced. But when he had provided those three with all things fitting, nectar and ambrosia which the gods themselves eat, and when their proud spirit revived within them all after they had fed on nectar and delicious ambrosia, then it was that the father of men and gods spoke amongst them: Hear me, bright children of <a href=/people/3304 target=_blank>Earth</a> and <a href=/people/459 target=_blank>Heaven</a>, that I may say what my heart within me bids. A long while now have we, who are sprung from <a href=/people/43 target=_blank>Cronos</a> and the <a href=/people/206 target=_blank>Titan</a> gods, fought with each other every day to get victory and to prevail. But do you show your great might and unconquerable strength, and face the <a href=/people/206 target=_blank>Titans</a> in bitter strife; for remember our friendly kindness, and from what sufferings you are come back to the light from your cruel bondage under misty gloom through our counsels. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:617' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=654>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:654'><b>&sect; 654</b>&nbsp;&nbsp;So he said. And blameless <a href=/people/4341 target=_blank>Cottus</a> answered him again: Divine one, you speak that which we know well: nay, even of ourselves we know that your wisdom and understanding is exceeding, and that you became a defender of the deathless ones from chill doom. And through your devising we are come back again from the murky gloom and from our merciless bonds, enjoying what we looked not for, O lord, son of <a href=/people/43 target=_blank>Cronos</a>. And so now with fixed purpose and deliberate counsel we will aid your power in dreadful strife and will fight against the <a href=/people/206 target=_blank>Titans</a> in hard battle. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:654' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=664>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:664'><b>&sect; 664</b>&nbsp;&nbsp;So he said: and the gods, givers of good things, applauded when they heard his word, and their spirit longed for war even more than before, and they all, both male and female, stirred up hated battle that day, the <a href=/people/206 target=_blank>Titan</a> gods, and all that were born of <a href=/people/43 target=_blank>Cronos</a> together with those dread, mighty ones of overwhelming strength whom <a href=/people/1 target=_blank>Zeus</a> brought up to the light from <a href=/people/933 target=_blank>Erebus</a> beneath the earth. An hundred arms sprang from the shoulders of all alike, and each had fifty heads growing upon his shoulders upon stout limbs. These, then, stood against the <a href=/people/206 target=_blank>Titans</a> in grim strife, holding huge rocks in their strong hands. And on the other part the <a href=/people/206 target=_blank>Titans</a> eagerly strengthened their ranks, and both sides at one time showed the work of their hands and their might. The boundless sea rang terribly around, and the earth crashed loudly: wide <a href=/people/459 target=_blank>Heaven</a> was shaken and groaned, and high <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> reeled from its foundation under the charge of the undying gods, and a heavy quaking reached dim <a href=/people/306 target=_blank>Tartarus</a> and the deep sound of their feet in the fearful onset and of their hard missiles. So, then, they launched their grievous shafts upon one another, and the cry of both armies as they shouted reached to starry heaven; and they met together with a great battle-cry. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:664' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=687>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:687'><b>&sect; 687</b>&nbsp;&nbsp;Then <a href=/people/1 target=_blank>Zeus</a> no longer held back his might; but straight his heart was filled with fury and he showed forth all his strength. From <a href=/people/459 target=_blank>Heaven</a> and from <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> he came forthwith, hurling his lightning: the bold flew thick and fast from his strong hand together with thunder and lightning, whirling an awesome flame. The life-giving earth crashed around in burning, and the vast wood crackled loud with fire all about. All the land seethed, and Ocean's streams and the unfruitful sea. The hot vapour lapped round the earthborn <a href=/people/206 target=_blank>Titans</a>: flame unspeakable rose to the bright upper air: the flashing glare of the thunder- stone and lightning blinded their eyes for all that there were strong. Astounding heat seized <a href=/people/1434 target=_blank>Chaos</a>: and to see with eyes and to hear the sound with ears it seemed even as if <a href=/people/3304 target=_blank>Earth</a> and wide <a href=/people/459 target=_blank>Heaven</a> above came together; for such a mighty crash would have arisen if <a href=/people/3304 target=_blank>Earth</a> were being hurled to ruin, and <a href=/people/459 target=_blank>Heaven</a> from on high were hurling her down; so great a crash was there while the gods were meeting together in strife. Also the winds brought rumbling earthquake and duststorm, thunder and lightning and the lurid thunderbolt, which are the shafts of great <a href=/people/1 target=_blank>Zeus</a>, and carried the clangour and the warcry into the midst of the two hosts. An horrible uproar of terrible strife arose: mighty deeds were shown and the battle inclined. But until then, they kept at one another and fought continually in cruel war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:687' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=713>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:713'><b>&sect; 713</b>&nbsp;&nbsp;And amongst the foremost <a href=/people/4341 target=_blank>Cottus</a> and <a href=/people/1609 target=_blank>Briareos</a> and <a href=/people/4031 target=_blank>Gyes</a> insatiate for war raised fierce fighting: three hundred rocks, one upon another, they launched from their strong hands and overshadowed the <a href=/people/206 target=_blank>Titans</a> with their missiles, and buried them beneath the wide-pathed earth, and bound them in bitter chains when they had conquered them by their strength for all their great spirit, as far beneath the earth to <a href=/people/306 target=_blank>Tartarus</a>. For a brazen anvil falling down from heaven nine nights and days would reach the earth upon the tenth: and again, a brazen anvil falling from earth nine nights and days would reach <a href=/people/306 target=_blank>Tartarus</a> upon the tenth. Round it runs a fence of bronze, and night spreads in triple line all about it like a neck-circlet, while above grow the roots of the earth and unfruitful sea. There by the counsel of <a href=/people/1 target=_blank>Zeus</a> who drives the clouds the <a href=/people/206 target=_blank>Titan</a> gods are hidden under misty gloom, in a dank place where are the ends of the huge earth. And they may not go out; for <a href=/people/25 target=_blank>Poseidon</a> fixed gates of bronze upon it, and a wall runs all round it on every side. There <a href=/people/4031 target=_blank>Gyes</a> and <a href=/people/4341 target=_blank>Cottus</a> and great-souled <a href=/people/9904 target=_blank>Obriareus</a> live, trusty warders of <a href=/people/1 target=_blank>Zeus</a> who holds the aegis. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:713' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=736>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:736'><b>&sect; 736</b>&nbsp;&nbsp;And there, all in their order, are the sources and ends of gloomy earth and misty <a href=/people/306 target=_blank>Tartarus</a> and the unfruitful sea and starry heaven, loathsome and dank, which even the gods abhor. It is a great gulf, and if once a man were within the gates, he would not reach the floor until a whole year had reached its end, but cruel blast upon blast would carry him this way and that. And this marvel is awful even to the deathless gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:736' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=744>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:744'><b>&sect; 744</b>&nbsp;&nbsp;There stands the awful home of murky <a href=/people/12253 target=_blank>Night</a> wrapped in dark clouds. In front of it the son of <a href=/people/1418 target=_blank>Iapetus</a> stands immovably upholding the wide heaven upon his head and unwearying hands, where <a href=/people/12253 target=_blank>Night</a> and <a href=/people/10726 target=_blank>Day</a> draw near and greet one another as they pass the great threshold of bronze: and while the one is about to go down into the house, the other comes out at the door. And the house never holds them both within; but always one is without the house passing over the earth, while the other stays at home and waits until the time for her journeying come; and the one holds all-seeing light for them on earth, but the other holds in her arms <a href=/people/422 target=_blank>Sleep</a> the brother of <a href=/people/257 target=_blank>Death</a>, even evil <a href=/people/12253 target=_blank>Night</a>, wrapped in a vaporous cloud. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:744' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=758>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:758'><b>&sect; 758</b>&nbsp;&nbsp;And there the children of dark <a href=/people/12253 target=_blank>Night</a> have their dwellings, <a href=/people/422 target=_blank>Sleep</a> and <a href=/people/257 target=_blank>Death</a>, awful gods. The glowing Sun never looks upon them with his beams, neither as he goes up into heaven, nor as he comes down from heaven. And the former of them roams peacefully over the earth and the sea's broad back and is kindly to men; but the other has a heart of iron, and his spirit within him is pitiless as bronze: whomsoever of men he has once seized he holds fast: and he is hateful even to the deathless gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:758' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=767>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:767'><b>&sect; 767</b>&nbsp;&nbsp;There, in front, stand the echoing halls of the god of the lower-world, strong <a href=/people/10685 target=_blank>Hades</a>, and of awful <a href=/people/138 target=_blank>Persephone</a>. A fearful <a href=/people/10953 target=_blank>hound</a> guards the house in front, pitiless, and he has a cruel trick. On those who go in he fawns with his tail and both is ears, but suffers them not to go out back again, but keeps watch and devours whomsoever he catches going out of the gates of strong <a href=/people/10685 target=_blank>Hades</a> and awful <a href=/people/138 target=_blank>Persephone</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:767' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=775>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:775'><b>&sect; 775</b>&nbsp;&nbsp;And there dwells the goddess loathed by the deathless gods, terrible <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a>, eldest daughter of back-flowing Ocean. She lives apart from the gods in her glorious house vaulted over with great rocks and propped up to heaven all round with silver pillars. Rarely does the daughter of <a href=/people/2376 target=_blank>Thaumas</a>, swift- footed <a href=/people/403 target=_blank>Iris</a>, come to her with a message over the sea's wide back. But when strife and quarrel arise among the deathless gods, and when any of them who live in the house of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> lies, then <a href=/people/1 target=_blank>Zeus</a> sends <a href=/people/403 target=_blank>Iris</a> to bring in a golden jug the great oath of the gods from far away, the famous cold water which trickles down from a high and beetling rock. Far under the wide-pathed earth a branch of <a href=/people/527 target=_blank>Oceanus</a> flows through the dark night out of the holy stream, and a tenth part of his water is allotted to her. With nine silver-swirling streams he winds about the earth and the sea's wide back, and then falls into the main; but the tenth flows out from a rock, a sore trouble to the gods. For whoever of the deathless gods that hold the peaks of snowy <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> pours a libation of her water is forsworn, lies breathless until a full year is completed, and never comes near to taste ambrosia and nectar, but lies spiritless and voiceless on a strewn bed: and a heavy trance overshadows him. But when he has spent a long year in his sickness, another penance and an harder follows after the first. For nine years he is cut off from the eternal gods and never joins their councils of their feasts, nine full years. But in the tenth year he comes again to join the assemblies of the deathless gods who live in the house of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. Such an oath, then, did the gods appoint the eternal and primaeval water of <a about=https://topostext.org/place/380222WSty class=place long=22.2039 lat=37.9836>Styx</a> to be: and it spouts through a rugged place. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:775' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=807>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:807'><b>&sect; 807</b>&nbsp;&nbsp;And there, all in their order, are the sources and ends of the dark earth and misty <a href=/people/306 target=_blank>Tartarus</a> and the unfruitful sea and starry heaven, loathsome and dank, which even the gods abhor. And there are shining gates and an immoveable threshold of bronze having unending roots and it is grown of itself. And beyond, away from all the gods, live the <a href=/people/206 target=_blank>Titans</a>, beyond gloomy <a href=/people/1434 target=_blank>Chaos</a>. But the glorious allies of loud-crashing <a href=/people/1 target=_blank>Zeus</a> have their dwelling upon Ocean's foundations, even <a href=/people/4341 target=_blank>Cottus</a> and <a href=/people/4031 target=_blank>Gyes</a>; but <a href=/people/1609 target=_blank>Briareos</a>, being goodly, the deep-roaring <a href=/people/25 target=_blank>Earth-Shaker</a> made his son-in-law, giving him Cymopolea his daughter to wed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:807' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=820>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:820'><b>&sect; 820</b>&nbsp;&nbsp;But when <a href=/people/1 target=_blank>Zeus</a> had driven the <a href=/people/206 target=_blank>Titans</a> from heaven, huge <a href=/people/3304 target=_blank>Earth</a> bare her youngest child <a href=/people/1031 target=_blank>Typhoeus</a> of the love of <a href=/people/306 target=_blank>Tartarus</a>, by the aid of golden <a href=/people/15 target=_blank>Aphrodite</a>. <a href=/people/3102 target=_blank>Strength</a> was with his hands in all that he did and the feet of the strong god were untiring. From his shoulders grew an hundred heads of a <a href=/people/55 target=_blank>snake</a>, a fearful dragon, with dark, flickering tongues, and from under the brows of his eyes in his marvellous heads flashed fire, and fire burned from his heads as he glared. And there were voices in all his dreadful heads which uttered every kind of sound unspeakable; for at one time they made sounds such that the gods understood, but at another, the noise of a <a href=/people/10955 target=_blank>bull</a> bellowing aloud in proud ungovernable fury; and at another, the sound of a <a href=/people/10960 target=_blank>lion</a>, relentless of heart; and at anothers, sounds like whelps, wonderful to hear; and again, at another, he would hiss, so that the high mountains re-echoed. And truly a thing past help would have happened on that day, and he would have come to reign over mortals and immortals, had not the father of men and gods been quick to perceive it. But he thundered hard and mightily: and the earth around resounded terribly and the wide heaven above, and the sea and Ocean's streams and the nether parts of the earth. Great <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> reeled beneath the divine feet of the king as he arose and earth groaned thereat. And through the two of them heat took hold on the dark-blue sea, through the thunder and lightning, and through the fire from the monster, and the scorching winds and blazing thunderbolt. The whole earth seethed, and sky and sea: and the long waves raged along the beaches round and about, at the rush of the deathless gods: and there arose an endless shaking. <a href=/people/10685 target=_blank>Hades</a> trembled where he rules over the dead below, and the <a href=/people/206 target=_blank>Titans</a> under <a href=/people/306 target=_blank>Tartarus</a> who live with <a href=/people/43 target=_blank>Cronos</a>, because of the unending clamour and the fearful strife. So when <a href=/people/1 target=_blank>Zeus</a> had raised up his might and seized his arms, thunder and lightning and lurid thunderbolt, he leaped form <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> and struck him, and burned all the marvellous heads of the monster about him. But when <a href=/people/1 target=_blank>Zeus</a> had conquered him and lashed him with strokes, <a href=/people/1031 target=_blank>Typhoeus</a> was hurled down, a maimed wreck, so that the huge earth groaned. And flame shot forth from the thunder- stricken lord in the dim rugged glens of the mount, when he was smitten. A great part of huge earth was scorched by the terrible vapour and melted as tin melts when heated by men's art in channelled crucibles; or as iron, which is hardest of all things, is softened by glowing fire in mountain glens and melts in the divine earth through the strength of <a href=/people/84 target=_blank>Hephaestus</a>. Even so, then, the earth melted in the glow of the blazing fire. And in the bitterness of his anger <a href=/people/1 target=_blank>Zeus</a> cast him into wide <a href=/people/306 target=_blank>Tartarus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:820' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=869>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:869'><b>&sect; 869</b>&nbsp;&nbsp;And from <a href=/people/1031 target=_blank>Typhoeus</a> come boisterous winds which blow damply, except <a href=/people/2367 target=_blank>Notus</a> and <a href=/people/208 target=_blank>Boreas</a> and clear <a href=/people/444 target=_blank>Zephyr</a>. These are a god-sent kind, and a great blessing to men; but the others blow fitfully upon the seas. Some rush upon the misty sea and work great havoc among men with their evil, raging blasts; for varying with the season they blow, scattering ships and destroying sailors. And men who meet these upon the sea have no help against the mischief. Others again over the boundless, flowering earth spoil the fair fields of men who dwell below, filling them with dust and cruel uproar. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:869' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=881>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:881'><b>&sect; 881</b>&nbsp;&nbsp;But when the blessed gods had finished their toil, and settled by force their struggle for honours with the <a href=/people/206 target=_blank>Titans</a>, they pressed far-seeing <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a> to reign and to rule over them, by <a href=/people/3304 target=_blank>Earth</a>'s prompting. So he divided their dignities amongst them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:881' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=886>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:886'><b>&sect; 886</b>&nbsp;&nbsp;Now <a href=/people/1 target=_blank>Zeus</a>, king of the gods, made <a href=/people/2364 target=_blank>Metis</a> his wife first, and she was wisest among gods and mortal men. But when she was about to bring forth the goddess bright-eyed <a href=/people/11 target=_blank>Athene</a>, <a href=/people/1 target=_blank>Zeus</a> craftily deceived her with cunning words and put her in his own belly, as <a href=/people/3304 target=_blank>Earth</a> and starry <a href=/people/459 target=_blank>Heaven</a> advised. For they advised him so, to the end that no other should hold royal sway over the eternal gods in place of <a href=/people/1 target=_blank>Zeus</a>; for very wise children were destined to be born of her, first the maiden bright-eyed <a href=/people/1857 target=_blank>Tritogeneia</a>, equal to her father in strength and in wise understanding; but afterwards she was to bear a son of overbearing spirit, king of gods and men. But <a href=/people/1 target=_blank>Zeus</a> put her into his own belly first, that the goddess might devise for him both good and evil. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:886' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=901>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:901'><b>&sect; 901</b>&nbsp;&nbsp;Next he married bright <a href=/people/554 target=_blank>Themis</a> who bare the <a href=/people/2317 target=_blank>Horae</a> (Hours), and <a href=/people/3513 target=_blank>Eunomia</a> (Order), <a href=/people/194 target=_blank>Dike</a> (Justice), and blooming <a href=/people/280 target=_blank>Eirene</a> (Peace), who mind the works of mortal men, and the <a href=/people/140 target=_blank>Moerae</a> (Fates) to whom wise <a href=/people/1 target=_blank>Zeus</a> gave the greatest honour, <a href=/people/1726 target=_blank>Clotho</a>, and <a href=/people/1920 target=_blank>Lachesis</a>, and <a href=/people/1929 target=_blank>Atropos</a> who give mortal men evil and good to have. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:901' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=907>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:907'><b>&sect; 907</b>&nbsp;&nbsp;And <a href=/people/1387 target=_blank>Eurynome</a>, the daughter of Ocean, beautiful in form, bare him three fair-cheeked <a href=/people/5553 target=_blank>Charites</a> (Graces), <a href=/people/1497 target=_blank>Aglaea</a>, and <a href=/people/4799 target=_blank>Euphrosyne</a>, and lovely <a href=/people/10730 target=_blank>Thaleia</a>, from whose eyes as they glanced flowed love that unnerves the limbs: and beautiful is their glance beneath their brows. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:907' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=912>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:912'><b>&sect; 912</b>&nbsp;&nbsp;Also he came to the bed of all-nourishing <a href=/people/48 target=_blank>Demeter</a>, and she bare white-armed <a href=/people/138 target=_blank>Persephone</a> whom <a href=/people/7168 target=_blank>Aidoneus</a> carried off from her mother; but wise <a href=/people/1 target=_blank>Zeus</a> gave her to him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:912' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=915>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:915'><b>&sect; 915</b>&nbsp;&nbsp;And again, he loved <a href=/people/767 target=_blank>Mnemosyne</a> with the beautiful hair: and of her the nine gold-crowned <a href=/people/54 target=_blank>Muses</a> were born who delight in feasts and the pleasures of song. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:915' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=918>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:918'><b>&sect; 918</b>&nbsp;&nbsp;And <a href=/people/127 target=_blank>Leto</a> was joined in love with <a href=/people/1 target=_blank>Zeus</a> who holds the aegis, and bare <a href=/people/2 target=_blank>Apollo</a> and <a href=/people/28 target=_blank>Artemis</a> delighting in arrows, children lovely above all the sons of <a href=/people/459 target=_blank>Heaven</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:918' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=921>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:921'><b>&sect; 921</b>&nbsp;&nbsp;Lastly, he made <a href=/people/19 target=_blank>Hera</a> his blooming wife: and she was joined in love with the king of gods and men, and brought forth <a href=/people/576 target=_blank>Hebe</a> and <a href=/people/24 target=_blank>Ares</a> and <a href=/people/672 target=_blank>Eileithyia</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:921' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=924>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:924'><b>&sect; 924</b>&nbsp;&nbsp;But <a href=/people/1 target=_blank>Zeus</a> himself gave birth from his own head to bright-eyed <a href=/people/1857 target=_blank>Tritogeneia</a>, the awful, the strife-stirring, the host-leader, the unwearying, the queen, who delights in tumults and wars and battles. But <a href=/people/19 target=_blank>Hera</a> without union with <a href=/people/1 target=_blank>Zeus</a> — for she was very angry and quarrelled with her mate — bare famous <a href=/people/84 target=_blank>Hephaestus</a>, who is skilled in crafts more than all the sons of <a href=/people/459 target=_blank>Heaven</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:924' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=930>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:930'><b>&sect; 930</b>&nbsp;&nbsp;But <a href=/people/19 target=_blank>Hera</a> was very angry and quarrelled with her mate. And because of this strife she bare without union with <a href=/people/1 target=_blank>Zeus</a> who holds the aegis a glorious son, <a href=/people/84 target=_blank>Hephaestus</a>, who excelled all the sons of <a href=/people/459 target=_blank>Heaven</a> in crafts. But <a href=/people/1 target=_blank>Zeus</a> lay with the fair- cheeked daughter of Ocean and <a href=/people/832 target=_blank>Tethys</a> apart from <a href=/people/19 target=_blank>Hera</a> . . . ((lacuna)) deceiving <a href=/people/2364 target=_blank>Metis</a> (Thought) although she was full wise. But he seized her with his hands and put her in his belly, for fear that she might bring forth something stronger than his thunderbolt: therefore did <a href=/people/1 target=_blank>Zeus</a>, who sits on high and dwells in the aether, swallow her down suddenly. But she straightway conceived <a href=/people/11 target=_blank>Pallas Athene</a>: and the father of men and gods gave her birth by way of his head on the banks of the river <a href=/people/5294 target=_blank>Trito</a>. And she remained hidden beneath the inward parts of <a href=/people/1 target=_blank>Zeus</a>, even <a href=/people/2364 target=_blank>Metis</a>, <a href=/people/11 target=_blank>Athena</a>'s mother, worker of righteousness, who was wiser than gods and mortal men. There the goddess (<a href=/people/11 target=_blank>Athena</a>) received that whereby she excelled in strength all the deathless ones who dwell in <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, she who made the host-scaring weapon of <a href=/people/11 target=_blank>Athena</a>. And with it (<a href=/people/1 target=_blank>Zeus</a>) gave her birth, arrayed in arms of war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:930' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=930>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:930'><b>&sect; 930</b>&nbsp;&nbsp;And of <a href=/people/1147 target=_blank>Amphitrite</a> and the loud-roaring <a href=/people/25 target=_blank>Earth-Shaker</a> was born great, wide-ruling <a href=/people/664 target=_blank>Triton</a>, and he owns the depths of the sea, living with his dear mother and the lord his father in their golden house, an awful god. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:930' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=933>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:933'><b>&sect; 933</b>&nbsp;&nbsp;Also <a href=/people/1067 target=_blank>Cytherea</a> bare to <a href=/people/24 target=_blank>Ares</a> the shield-piercer Panic and Fear, terrible gods who drive in disorder the close ranks of men in numbing war, with the help of <a href=/people/24 target=_blank>Ares</a>, sacker of towns: and <a href=/people/443 target=_blank>Harmonia</a> whom high-spirited <a href=/people/83 target=_blank>Cadmus</a> made his wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:933' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=938>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:938'><b>&sect; 938</b>&nbsp;&nbsp;And <a href=/people/525 target=_blank>Maia</a>, the daughter of <a href=/people/190 target=_blank>Atlas</a>, bare to <a href=/people/1 target=_blank>Zeus</a> glorious <a href=/people/33 target=_blank>Hermes</a>, the herald of the deathless gods, for she went up into his holy bed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:938' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=940>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:940'><b>&sect; 940</b>&nbsp;&nbsp;And <a href=/people/205 target=_blank>Semele</a>, daughter of <a href=/people/83 target=_blank>Cadmus</a> was joined with him in love and bare him a splendid son, joyous <a href=/people/5 target=_blank>Dionysus</a>, — a mortal woman an immortal son. And now they both are gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:940' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=943>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:943'><b>&sect; 943</b>&nbsp;&nbsp;And <a href=/people/1123 target=_blank>Alcmena</a> was joined in love with <a href=/people/1 target=_blank>Zeus</a> who drives the clouds and bare mighty <a href=/people/4 target=_blank>Heracles</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:943' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=945>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:945'><b>&sect; 945</b>&nbsp;&nbsp;And <a href=/people/84 target=_blank>Hephaestus</a>, the famous Lame One, made <a href=/people/1497 target=_blank>Aglaea</a>, youngest of the <a href=/people/5553 target=_blank>Graces</a>, his buxom wife. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:945' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=947>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:947'><b>&sect; 947</b>&nbsp;&nbsp;And golden-haired <a href=/people/5 target=_blank>Dionysus</a> made brown-haired <a href=/people/421 target=_blank>Ariadne</a>, the daughter of <a href=/people/119 target=_blank>Minos</a>, his buxom wife: and the son of <a href=/people/43 target=_blank>Cronos</a> made her deathless and unageing for him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:947' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=950>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:950'><b>&sect; 950</b>&nbsp;&nbsp;And mighty <a href=/people/4 target=_blank>Heracles</a>, the valiant son of neat-ankled <a href=/people/1123 target=_blank>Alcmena</a>, when he had finished his grievous toils, made <a href=/people/576 target=_blank>Hebe</a> the child of great <a href=/people/1 target=_blank>Zeus</a> and gold-shod <a href=/people/19 target=_blank>Hera</a> his shy wife in snowy <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>. Happy he! For he has finished his great works and lives amongst the dying gods, untroubled and unaging all his days. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:950' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=956>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:956'><b>&sect; 956</b>&nbsp;&nbsp;And <a href=/people/3727 target=_blank>Perseis</a>, the daughter of Ocean, bare to unwearying <a href=/people/180 target=_blank>Helios</a> <a href=/people/245 target=_blank>Circe</a> and <a href=/people/320 target=_blank>Aeetes</a> the king. And <a href=/people/320 target=_blank>Aeetes</a>, the son of <a href=/people/180 target=_blank>Helios</a> who shows light to men, took to wife fair-cheeked <a href=/people/5715 target=_blank>Idyia</a>, daughter of Ocean the perfect stream, by the will of the gods: and she was subject to him in love through golden <a href=/people/15 target=_blank>Aphrodite</a> and bare him neat-ankled <a href=/people/165 target=_blank>Medea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:956' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=963>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:963'><b>&sect; 963</b>&nbsp;&nbsp;And now farewell, you dwellers on <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> and you islands and continents and thou briny sea within. Now sing the company of goddesses, sweet-voiced <a href=/people/54 target=_blank>Muses</a> of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympus</a>, daughter of <a href=/people/1 target=_blank>Zeus</a> who holds the aegis, — even those deathless one who lay with mortal men and bare children like unto gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:963' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=969>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:969'><b>&sect; 969</b>&nbsp;&nbsp;<a href=/people/48 target=_blank>Demeter</a>, bright goddess, was joined in sweet love with the hero <a href=/people/1611 target=_blank>Iasion</a> in a thrice-ploughed fallow in the rich land of <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, and bare <a href=/people/641 target=_blank>Plutus</a>, a kindly god who goes everywhere over land and the sea's wide back, and him who finds him and into whose hands he comes he makes rich, bestowing great wealth upon him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:969' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=975>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:975'><b>&sect; 975</b>&nbsp;&nbsp;And <a href=/people/443 target=_blank>Harmonia</a>, the daughter of golden <a href=/people/15 target=_blank>Aphrodite</a>, bare to <a href=/people/83 target=_blank>Cadmus</a> <a href=/people/311 target=_blank>Ino</a> and <a href=/people/205 target=_blank>Semele</a> and fair-cheeked <a href=/people/1211 target=_blank>Agave</a> and <a href=/people/993 target=_blank>Autonoe</a> whom long haired <a href=/people/1282 target=_blank>Aristaeus</a> wedded, and <a href=/people/1494 target=_blank>Polydorus</a> also in rich-crowned <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:975' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=979>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:979'><b>&sect; 979</b>&nbsp;&nbsp;And the daughter of Ocean, <a href=/people/2480 target=_blank>Callirrhoe</a> was joined in the love of rich <a href=/people/15 target=_blank>Aphrodite</a> with stout hearted <a href=/people/2813 target=_blank>Chrysaor</a> and bare a son who was the strongest of all men, <a href=/people/1730 target=_blank>Geryones</a>, whom mighty <a href=/people/4 target=_blank>Heracles</a> killed in sea-girt <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Erythea</a> for the sake of his shambling <a href=/people/10961 target=_blank>oxen</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:979' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=984>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:984'><b>&sect; 984</b>&nbsp;&nbsp;And <a href=/people/683 target=_blank>Eos</a> bare to <a href=/people/5362 target=_blank>Tithonus</a> brazen-crested <a href=/people/1491 target=_blank>Memnon</a>, king of the <a about=https://topostext.org/place/130350REth class=ethnic long=35.01 lat=13.01>Ethiopians</a>, and the Lord <a href=/people/2284 target=_blank>Emathion</a>. And to <a href=/people/4337 target=_blank>Cephalus</a> she bare a splendid son, strong <a href=/people/273 target=_blank>Phaethon</a>, a man like the gods, whom, when he was a young boy in the tender flower of glorious youth with childish thoughts, laughter-loving <a href=/people/15 target=_blank>Aphrodite</a> seized and caught up and made a keeper of her shrine by night, a divine spirit. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:984' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=993>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:993'><b>&sect; 993</b>&nbsp;&nbsp;And [<a href=/people/2578 target=_blank>Jason</a>] the son of <a href=/people/467 target=_blank>Aeson</a> by the will of the gods led away from <a href=/people/320 target=_blank>Aeetes</a>, <a href=/people/165 target=_blank>Medea</a>, the daughter of <a href=/people/320 target=_blank>Aeetes</a> the heaven-nurtured king, when he had finished the many grievous labours which the great king, over bearing <a href=/people/390 target=_blank>Pelias</a>, that outrageous and presumptuous doer of violence, put upon him. But when the son of <a href=/people/467 target=_blank>Aeson</a> had finished them, he came to <a about=https://topostext.org/place/394230UIol class=place long=22.9689 lat=39.3663>Iolcus</a> after long toil bringing the coy-eyed girl with him on his swift ship, and made her his buxom wife. And she was subject to <a href=/people/2578 target=_blank>Iason</a>, shepherd of the people, and bare a son <a href=/people/6654 target=_blank>Medeus</a> whom <a href=/people/1086 target=_blank>Cheiron</a> the son of <a href=/people/1767 target=_blank>Philyra</a> brought up in the mountains. And the will of great <a href=/people/1 target=_blank>Zeus</a> was fulfilled. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:993' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1000>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1000'><b>&sect; 1000</b>&nbsp;&nbsp;But of the daughters of <a href=/people/428 target=_blank>Nereus</a>, the <a href=/people/11094 target=_blank>Old Man of the Sea</a>, <a href=/people/2133 target=_blank>Psamathe</a> the fair goddess, was loved by <a href=/people/255 target=_blank>Aeacus</a> through golden <a href=/people/15 target=_blank>Aphrodite</a> and bare <a href=/people/791 target=_blank>Phocus</a>. And the silver-shod goddess <a href=/people/202 target=_blank>Thetis</a> was subject to <a href=/people/109 target=_blank>Peleus</a> and brought forth <a href=/people/10960 target=_blank>lion</a>-hearted <a href=/people/17 target=_blank>Achilles</a>, the destroyer of men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1000' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1008>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1008'><b>&sect; 1008</b>&nbsp;&nbsp;And <a href=/people/1067 target=_blank>Cytherea</a> with the beautiful crown was joined in sweet love with the hero <a href=/people/316 target=_blank>Anchises</a> and bare <a href=/people/37 target=_blank>Aeneas</a> on the peaks of <a about=https://topostext.org/place/397268LIda class=place long=26.8423 lat=39.6922>Ida</a> with its many wooded glens. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1008' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1011>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1011'><b>&sect; 1011</b>&nbsp;&nbsp;And <a href=/people/245 target=_blank>Circe</a> the daughter of <a href=/people/180 target=_blank>Helius</a>, <a href=/people/1062 target=_blank>Hyperion</a>'s son, loved steadfast <a href=/people/18 target=_blank>Odysseus</a> and bare <a href=/people/2084 target=_blank>Agrius</a> and <a href=/people/266 target=_blank>Latinus</a> who was faultless and strong: also she brought forth <a href=/people/1979 target=_blank>Telegonus</a> by the will of golden <a href=/people/15 target=_blank>Aphrodite</a>. And they ruled over the famous <a about=https://topostext.org/place/430105RTyr class=ethnic long=10.5 lat=43>Tyrenians</a>, very far off in a recess of the holy islands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1011' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1017>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1017'><b>&sect; 1017</b>&nbsp;&nbsp;And the bright goddess <a href=/people/829 target=_blank>Calypso</a> was joined to <a href=/people/18 target=_blank>Odysseus</a> in sweet love, and bare him <a href=/people/3109 target=_blank>Nausithous</a> and <a href=/people/10571 target=_blank>Nausinous</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1017' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1019>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1019'><b>&sect; 1019</b>&nbsp;&nbsp;These are the immortal goddesses who lay with mortal men and bare them children like unto gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1019' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1021>
+                            <p id='urn:cts:greekLit:tlg0020.tlg001:1021'><b>&sect; 1021</b>&nbsp;&nbsp;But now, sweet-voiced <a href=/people/54 target=_blank>Muses</a> of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympus</a>, daughters of <a href=/people/1 target=_blank>Zeus</a> who holds the aegis, sing of the company of women. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-grc1:1021' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=4', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas4";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=4';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>
