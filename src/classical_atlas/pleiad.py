@@ -385,11 +385,11 @@ class Pleiad:
         print("Location types relevant to " + self.title + ":")
         for location_type in self.location_types_info.keys():
             print("--- " + str(location_type) + " ---")
-            print (self.location_types_info[location_type])
+            print(self.location_types_info[location_type])
 
     def print_association_certainty_info(self):
         """Print explanations for association certainties"""
-        print("Explanation of association certainties relevent to " + self.title + ":")
+        print("Explanation of association certainties relevant to " + self.title + ":")
         for certainty_type in self.association_certainty_info.keys():
             print("--- " + str(certainty_type) + " ---")
             print(self.association_certainty_info[certainty_type])
@@ -406,7 +406,7 @@ class Pleiad:
         """Print summary of titles of locations associated with a place"""
         print("Locations relevant to " + self.title + ":")
         for location in self.locations.keys():
-            print("     " + str(location.title) + " (" + str(location.start_date) + ", ") + str(location.end_date) + ")"
+            print("     " + str(location.title) + " (" + str(location.start_date) + ", " + str(location.end_date) + ")")
 
     def print_location_association_certainties(self):
         """Print summary of locations and association certainties"""
@@ -429,7 +429,7 @@ class Pleiad:
             c_title = self.connections[connection][1]
             c_start = self.connections[connection][2]
             c_end = self.connections[connection][3]
-            print(c_title + " (id: " + str(connection) + "): " )
+            print(c_title + " (id: " + str(connection) + "): ")
             print("     connection type: " + str(c_type))
             print("     date range: " + str(c_start) + ", " + str(c_end))
 
@@ -473,8 +473,3 @@ class Pleiad:
     def place_type_info(self):
         print(self.place_types)
         print("https://pleiades.stoa.org/vocabularies/place-types")
-
-
-
-
-

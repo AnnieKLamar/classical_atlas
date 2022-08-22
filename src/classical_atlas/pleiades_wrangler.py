@@ -74,6 +74,19 @@ def find_keyword(list_of_pleiads, keyword, print_results=False):
 
 
 def get_pleiades_as_nodes(list_of_pleiades):
+    """
+    Add nodes representing places to a graph.
+
+    Parameters
+    ----------
+    list_of_pleiades : list
+        a list of Pleiades objects
+
+    Returns
+    -------
+    Graph
+        a NetworkX Graph with nodes representing places
+    """
     G = nx.Graph()
     for pl in list_of_pleiades:
         G.add_node(pl)
@@ -81,6 +94,19 @@ def get_pleiades_as_nodes(list_of_pleiades):
 
 
 def add_connections_as_edges(graph):
+    """
+    Adds edges between places with connections.
+
+    Parameters
+    ----------
+    graph : Graph
+        a networkX Graph with defined nodes
+
+    Returns
+    -------
+    Graph
+        a networkX Graph with added edges
+    """
     temp = []
     for node in graph.nodes:
         temp.append(node)
@@ -94,20 +120,41 @@ def add_connections_as_edges(graph):
             graph.add_edge(pl, match, connection_type=pl.connections[connection][0])
     return graph
 
-#add method: add texts with references to place as node attribute
 
-#add method: replace PLeiades IDs with titles in topos places dictionary
+def get_pleiades_network_shortcut():
+    """
+    Get a network of representing the entire Pleiades dataset.
 
-def main():
+    Returns
+    -------
+    graph
+        a NetworkX graph with nodes representing Pleiades places and edges representing connections between places
+    """
     pleiades = make_pleiades_objects()
-    #test1 = pleiades[21]
-    #test2 = pleiades[5]
-    #test3 = pleiades[31]
     gr = get_pleiades_as_nodes(pleiades)
     gr = add_connections_as_edges(gr)
-    print(len(gr.nodes))
-    print(len(gr.edges))
+    return gr
 
 
-if __name__ == "__main__":
-    main()
+def add_topos_text_data_to_network(graph):
+    """
+    Add topos text data to the network.
+
+    Parameters
+    ----------
+    graph : Graph
+        a graph with nodes representing Pleiades objects
+
+    Returns
+    -------
+    Graph
+        a Graph with added node attributes of list of textual references
+    """
+    df = topos_wrangler.get_topos_data()
+    topos_refs = topos_wrangler.switch_to_pleiades_ids(df, topos_wrangler.parse_topos_place_refs())
+    topos_refs = topos_wrangler.swap_key_value_pairs(topos_refs)
+    G = nx.Graph()
+    for topos_id in topos_refs.keys():
+        for node in graph.nodes:
+            if node.id == topos_id:
+                G.add_node(node, textual_refs=topos_refs[topos_id])
