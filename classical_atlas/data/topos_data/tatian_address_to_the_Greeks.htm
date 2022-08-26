@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Tatian, Address to the Greeks' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Address of Tatian to the Greeks, translated by Benjamin Plummer Pratten (1817–1889) [but given as Jonathan Edwards Ryland (1798-1866) in the pirated U.S. edition], from Ante-Nicene Fathers, Vol. II, a work in the public domain nobly placed online by Roger Pearse at tertullian.org. Also at Wikisource. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='160' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 160' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/546' content='urn:cts:greekLit:tlg1766.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n81090447' content='Tatian'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr87000496' content='Benjamin Plummer Pratten (1817–1889)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.tertullian.org/fathers2/ANF-02/anf02-37.htm#P1114_299739' /><h2>Tatian, Address to the Greeks</h2>Address of Tatian to the Greeks, translated by Benjamin Plummer Pratten (1817–1889) [but given as Jonathan Edwards Ryland (1798-1866) in the pirated U.S. edition], from Ante-Nicene Fathers, Vol. II, a work in the public domain nobly placed online by Roger Pearse at tertullian.org. Also at Wikisource.  This text has 105 tagged references to 53 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg1766.tlg001'>urn:cts:greekLit:tlg1766.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q19074050'>Q19074050</a>;     <a href='http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:1'><b>&sect; 1</b>&nbsp;&nbsp;Be not, O Greeks, so very hostilely disposed towards the Barbarians, nor look with ill will on their opinions. For which of your institutions has not been derived from the Barbarians? The most eminent of the <a about=https://topostext.org/place/366291UTel class=ethnic long=29.1058 lat=36.6209>Telmessians</a> invented the art of divining by dreams; the <a about=https://topostext.org/place/370287RKar class=ethnic long=28.7 lat=37.01>Carians</a>, that of prognosticating by the stars; the <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a> and the most ancient <a about=https://topostext.org/place/372324UIsa class=ethnic long=32.3526 lat=37.1895>Isaurians</a>, augury by the flight of birds; the <a about=https://topostext.org/place/350330RCyp class=ethnic long=33 lat=35>Cyprians</a>, the art of inspecting victims. To the <a about=https://topostext.org/place/325444UBab class=ethnic long=44.421 lat=32.542>Babylonians</a> you owe astronomy; to the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, magic; to the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a>, geometry; to the <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a>, instruction by alphabetic writing. Cease, then, to miscall these imitations inventions of your own. <a href=/people/143 target=_blank>Orpheus</a>, again, taught you poetry and song; from him, too, you learned the mysteries. The Tuscans taught you the plastic art; from the annals of the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a> you learned to write history; you acquired the art of playing the flute from <a href=/people/451 target=_blank>Marsyas</a> and <a href=/people/873 target=_blank>Olympus</a>: these two rustic <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a> constructed the harmony of the shepherd's pipe. The <a about=https://topostext.org/place/430105RTyr class=ethnic long=10.5 lat=43>Tyrrhenians</a> invented the trumpet; the <a href=/people/350 target=_blank>Cyclopes</a>, the smith's art; and a woman who was formerly a queen of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, as <a href=/people/637 target=_blank>Hellanicus</a> tells us, the method of joining together epistolary tablets: her name was <a href=/people/1741 target=_blank>Atossa</a>. Wherefore lay aside this conceit, and be not ever boasting of your elegance of diction; for, while you applaud yourselves, your own people will of course side with you. But it becomes a man of sense to wait for the testimony of others, and it becomes men to be of one accord also in the pronunciation of their language. But, as matters stand, to you alone it has happened not to speak alike even in common intercourse; for the way of speaking among the <a about=https://topostext.org/place/387224RDor class=ethnic long=22.4 lat=38.7>Dorians</a> is not the same as that of the inhabitants of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, nor do the <a about=https://topostext.org/place/390271RAio class=ethnic long=27.1 lat=39>Aeolians</a> speak like the <a about=https://topostext.org/place/375275RIon class=ethnic long=27.3 lat=38>Ionians</a>. And, since such a discrepancy exists where it ought not to be, I am at a loss whom to call a Greek. And, what is strangest of all, you hold in honour expressions not of native growth, and by the intermixture of barbaric words have made your language a medley. On this account we have renounced your wisdom, though I was once a great proficient in it; for, as the comic poet says: <br />These are gleaners' grapes and small talk, <br />Twittering places of swallows, corrupters of art. <br />Yet those who eagerly pursue it shout lustily, and croak like so many ravens. You have, too, contrived the art of rhetoric to serve injustice and slander, selling the free power of your speech for hire, and often representing the same thing at one time as right, at another time as not good. The poetic art, again, you employ to describe battles, and the amours of the gods, and the corruption of the soul. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/1 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:2'><b>&sect; 2</b>&nbsp;&nbsp;What noble thing have you produced by your pursuit of philosophy? Who of your most eminent men has been free from vain boasting? <a href=/people/99 target=_blank>Diogenes</a>, who made such a parade of his independence with his tub, was seized with a bowel complaint through eating a raw polypus, and so lost his life by gluttony. <a href=/people/345 target=_blank>Aristippus</a>, walking about in a purple robe, led a profligate life, in accordance with his professed opinions. <a href=/people/12 target=_blank>Plato</a>, a philosopher, was sold by <a href=/people/23 target=_blank>Dionysius</a> for his gormandizing propensities. And <a href=/people/46 target=_blank>Aristotle</a>, who absurdly placed a limit to Providence and made happiness to consist in the things which give pleasure, quite contrary to his duty as a preceptor flattered <a href=/people/13 target=_blank>Alexander</a>, forgetful that he was but a youth; and he, showing how well he had learned the lessons of his master, because his friend would not worship him shut him up and and carried him about like a bear or a leopard. He in fact obeyed strictly the precepts of his teacher in displaying manliness and courage by feasting, and transfixing with his spear his intimate and most beloved friend, and then, under a semblance of grief, weeping and starving himself, that he might not incur the hatred of his friends. I could laugh at those also who in the present day adhere to his tenets: people who say that sublunary things are not under the care of Providence; and so, being nearer the earth than the moon, and below its orbit, they themselves look after what is thus left uncared for; and as for those who have neither beauty, nor wealth, nor bodily strength, nor high birth, they have no happiness, according to <a href=/people/46 target=_blank>Aristotle</a>. Let such men philosophize, for me! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/2 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:3'><b>&sect; 3</b>&nbsp;&nbsp;I cannot approve of <a href=/people/491 target=_blank>Heraclitus</a>, who, being self-taught and arrogant, said, I have explored myself. Nor can I praise him for hiding his poem in the temple of <a href=/people/28 target=_blank>Artemis</a>, in order that it might be published afterwards as a mystery; and those who take an interest in such things say that <a href=/people/75 target=_blank>Euripides</a> the tragic poet came there and read it, and, gradually learning it by heart, carefully handed down to posterity this darkness of <a href=/people/491 target=_blank>Heraclitus</a>. <a href=/people/257 target=_blank>Death</a>, however, demonstrated the stupidity of this man; for, being attacked by dropsy, as he had studied the art of medicine as well as philosophy, he plastered himself with <a href=/people/10978 target=_blank>cow</a>-dung, which, as it hardened, contracted the flesh of his whole body, so that he was pulled in pieces, and thus died. Then, one cannot listen to <a href=/people/130 target=_blank>Zeno</a>, who declares that at the conflagration the same man will rise again to perform the same actions as before; for instance, <a href=/people/835 target=_blank>Anytus</a> and <a href=/people/746 target=_blank>Meletus</a> to accuse, <a href=/people/867 target=_blank>Busiris</a> to murder his guests, and <a href=/people/4 target=_blank>Hercules</a> to repeat his labours; and in this doctrine of the conflagration he introduces more wicked than just persons — one <a href=/people/16 target=_blank>Socrates</a> and a <a href=/people/4 target=_blank>Hercules</a>, and a few more of the same class, but not many, for the bad will be found far more numerous than the good. And according to him the Deity will manifestly be the author of evil, dwelling in sewers and worms, and in the perpetrators of impiety. The eruptions of fire in <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, moreover, confute the empty boasting of <a href=/people/227 target=_blank>Empedocles</a>, in that, though he was no god, he falsely almost gave himself out for one. I laugh, too, at the old wife's talk of <a href=/people/582 target=_blank>Pherecydes</a>, and the doctrine inherited from him by <a href=/people/58 target=_blank>Pythagoras</a>, and that of <a href=/people/12 target=_blank>Plato</a>, an imitation of his, though some think otherwise. And who would give his approval to the cynogamy of <a href=/people/249 target=_blank>Crates</a>, and not rather, repudiating the wild and tumid speech of those who resemble him, turn to the investigation of what truly deserves attention? Wherefore be not led away by the solemn assemblies of philosophers who are no philosophers, who dogmatize one against the other, though each one vents but the crude fancies of the moment. They have, moreover, many collisions among themselves; each one hates the other; they indulge in conflicting opinions, and their arrogance makes them eager for the highest places. It would better become them, moreover, not to pay court to kings unbidden, nor to flatter men at the head of affairs, but to wait till the great ones come to them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/3 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:4'><b>&sect; 4</b>&nbsp;&nbsp;For what reason, men of Greece, do you wish to bring the civil powers, as in a pugilistic encounter, into collision with us? And, if I am not disposed to comply with the usages of some of them, why am I to be abhorred as a vile miscreant? Does the sovereign order the payment of tribute, I am ready to render it. Does my master command me to act as a bondsman and to serve, I acknowledge the serfdom. Man is to be honoured as a fellow-man; God alone is to be feared: He who is not visible to human eyes, nor comes within the compass of human art. Only when I am commanded to deny Him, will I not obey, but will rather die than show myself false and ungrateful. Our God did not begin to be in time: He alone is without beginning, and He Himself is the beginning of all things. God is a Spirit, not pervading matter, but the Maker of material spirits, and of the forms that are in matter; He is invisible, impalpable, being Himself the Father of both sensible and invisible things. Him we know from His creation, and apprehend His invisible power by His works. I refuse to adore that workmanship which He has made for our sakes. The sun and moon were made for us: how, then, can I adore my own servants? How can I speak of stocks and stones as gods? For the Spirit that pervades matter is inferior to the more divine spirit; and this, even when assimilated to the soul, is not to be honoured equally with the perfect God. Nor even ought the ineffable God to be presented with gifts; for He who is in want of nothing is not to be misrepresented by us as though He were indigent.But I will set forth our views more distinctly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/4 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:5'><b>&sect; 5</b>&nbsp;&nbsp;God was in the beginning; but the beginning, we have been taught, is the power of the Logos. For the Lord of the universe, who is Himself the necessary ground (υπόστασις) of all being, in as much as no creature was yet in existence, was alone; but in as much as He was all power, Himself the necessary ground of things visible and invisible, with Him were all things; with Him, by Logos-power (δια λογικής δυνάμεως), the Logos Himself also, who was in Him, subsists. And by His simple will the Logos springs forth; and the Logos, not coming forth in vain, becomes the first-begotten work of the Father. Him (the Logos) we know to be the beginning of the world. But He came into being by participation, not by abscission; for what is cut off is separated from the original substance, but that which comes by participation, making its choice of function, does not render him deficient from whom it is taken. For just as from one torch many fires are lighted, but the light of the first torch is not lessened by the kindling of many torches, so the Logos, coming forth from the Logos-power of the Father, has not divested of the Logos-power Him who begat Him. I myself, for instance, talk, and you hear; yet, certainly, I who converse do not become destitute of speech (λόγος) by the transmission of speech, but by the utterance of my voice I endeavour to reduce to order the unarranged matter in your minds. And as the Logos begotten in the beginning, begat in turn our world, having first created for Himself the necessary matter, so also I, in imitation of the Logos, being begotten again, and having become possessed of the truth, am trying to reduce to order the confused matter which is kindred with myself. For matter is not, like God, without beginning, nor, as having no beginning, is of equal power with God; it is begotten, and not produced by any other being, but brought into existence by the Framer of all things alone. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/5 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:6'><b>&sect; 6</b>&nbsp;&nbsp;And on this account we believe that there will be a resurrection of bodies after the consummation of all things; not, as the <a href=/people/11086 target=_blank>Stoics</a> affirm, according to the return of certain cycles, the same things being produced and destroyed for no useful purpose, but a resurrection once for all, when our periods of existence are completed, and in consequence solely of the constitution of things under which men alone live, for the purpose of passing judgment upon them. Nor is sentence upon us passed by <a href=/people/119 target=_blank>Minos</a> or <a href=/people/718 target=_blank>Rhadamanthus</a>, before whose decease not a single soul, according to the mythic tales, was judged; but the Creator, God Himself, becomes the arbiter. And, although you regard us as mere triflers and babblers, it troubles us not, since we have faith in this doctrine. For just as, not existing before I was born, I knew not who I was, and only existed in the potentiality (υποστασις) Of fleshly matter, but being born, after a former state of nothingness, I have obtained through my birth a certainty of my existence; in the same way, having been born, and through death existing no longer, and seen no longer, I shall exist again, just as before I was not, but was afterwards born. Even though fire destroy all traces of my flesh, the world receives the vaporized matter; and though dispersed through rivers and seas, or torn in pieces by wild beasts, I am laid up in the storehouses of a wealthy Lord. And, although the poor and the godless know not what is stored up, yet God the Sovereign, when He pleases, will restore the substance that is visible to Him alone to its pristine condition. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/6 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:7'><b>&sect; 7</b>&nbsp;&nbsp;For the heavenly Logos, a spirit emanating from the Father and a Logos from the Logos-power, in imitation of the Father who begat Him made man an image of immortality, so that, as incorruption is with God, in like manner, man, sharing in a part of God, might have the immortal principle also. The Logos, too, before the creation of men, was the Framer of angels. And each of these two orders of creatures was made free to act as it pleased, not having the nature of good, which again is with God alone, but is brought to perfection in men through their freedom of choice, in order that the bad man may be justly punished, having become depraved through his own fault, but the just man be deservedly praised for his virtuous deeds, since in the exercise of his free choice he refrained from transgressing the will of God. Such is the constitution of things in reference to angels and men. And the power of the Logos, having in itself a faculty to foresee future events, not as fated, but as taking place by the choice of free agents, foretold from time to time the issues of things to come; it also became a forbidder of wickedness by means of prohibitions, and the encomiast of those who remained good. And, when men attached themselves to one who was more subtle than the rest, having regard to his being the first-born, and declared him to be God, though he was resisting' the law of God, then the power of the Logos excluded the beginner of the folly and his adherents from all fellowship with Himself. And so he who was made in the likeness of God, since the more powerful spirit is separated from him, becomes mortal; but that first-begotten one through his transgression and ignorance becomes a demon; and they who imitated him, that is his illusions, are become a host of demons, and through their freedom of choice have been given up to their own infatuation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/7 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:8'><b>&sect; 8</b>&nbsp;&nbsp;But men form the material (υπόθεσις) of their apostasy. For, having shown them a plan of the position of the stars, like dice-players, they introduced <a href=/people/140 target=_blank>Fate</a>, a flagrant injustice. For the judge and the judged are made so by <a href=/people/140 target=_blank>Fate</a>; the murderers and the murdered, the wealthy and the needy, are the offspring of the same <a href=/people/140 target=_blank>Fate</a>; and every nativity is regarded as a theatrical entertainment by those beings of whom <a href=/people/9 target=_blank>Homer</a> says: <br />Among the gods rose laughter irrepressible. <br />But must not those who are spectators of single combats and are partisans on one side or the other, and he who marries and is a paederast and an adulterer, who laughs and is angry, who flees and is wounded, be regarded as mortals? For, by whatever actions they manifest to men their characters, by these they prompt their hearers to copy their example. And are not the demons themselves, with <a href=/people/1 target=_blank>Zeus</a> at their head, subjected to <a href=/people/140 target=_blank>Fate</a>, being overpowered by the same passions as men? And, besides, how are those beings to be worshipped among whom there exists such a great contrariety of opinions? For <a href=/people/243 target=_blank>Rhea</a>, whom the inhabitants of the <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> mountains call <a href=/people/366 target=_blank>Cybele</a>, enacted emasculation on account of <a href=/people/1108 target=_blank>Attis</a>, of whom she was enamoured; but <a href=/people/15 target=_blank>Aphrodite</a> is delighted with conjugal embraces. <a href=/people/28 target=_blank>Artemis</a> is a poisoner; <a href=/people/2 target=_blank>Apollo</a> heals diseases. And after the decapitation of the <a href=/people/655 target=_blank>Gorgon</a>, the beloved of <a href=/people/25 target=_blank>Poseidon</a>, whence sprang the <a href=/people/10959 target=_blank>horse</a> <a href=/people/1116 target=_blank>Pegasus</a> and <a href=/people/2813 target=_blank>Chrysaor</a>, <a href=/people/11 target=_blank>Athene</a> and <a href=/people/114 target=_blank>Asclepios</a> divided between them the drops of blood; and, while he saved men's lives by means of them, she, by the same blood, became a homicide and the instigator of wars. From regard to her reputation, as it appears to me, the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> attributed to the earth the son born of her connection with <a href=/people/84 target=_blank>Hephaistos</a>, that <a href=/people/11 target=_blank>Athene</a> might not be thought to be deprived of her virility by <a href=/people/84 target=_blank>Hephaistos</a>, as <a href=/people/697 target=_blank>Atalanta</a> by <a href=/people/315 target=_blank>Meleager</a>. This limping manufacturer of buckles and earrings, as is likely, deceived the motherless child and orphan with these girlish ornaments. <a href=/people/25 target=_blank>Poseidon</a> frequents the seas; <a href=/people/24 target=_blank>Ares</a> delights in wars; <a href=/people/2 target=_blank>Apollo</a> is a player on the cithara; <a href=/people/5 target=_blank>Dionysus</a> is absolute sovereign of the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a>; <a href=/people/43 target=_blank>Kronos</a> is a tyrannicide; <a href=/people/1 target=_blank>Zeus</a> has intercourse with his own daughter, who becomes pregnant by him. I may instance, too, <a about=https://topostext.org/place/380235SEle class=place long=23.538 lat=38.0411>Eleusis</a>, and the mystic Dragon, and <a href=/people/143 target=_blank>Orpheus</a>, who says: <br />Close the gates against the profane! <br />Aidoneus carries off <a href=/people/138 target=_blank>Kore</a>, and his deeds have been made into mysteries; <a href=/people/48 target=_blank>Demeter</a> bewails her daughter, and some persons are deceived by the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>. In the precincts of the temple of the son of <a href=/people/127 target=_blank>Leto</a> is a spot called Omphalos; but Omphalos is the burial-place of <a href=/people/5 target=_blank>Dionysus</a>. You now I laud, O <a href=/people/762 target=_blank>Daphne</a>!-by conquering the incontinence of <a href=/people/2 target=_blank>Apollo</a>, you disproved his power of vaticination; for, not foreseeing what would occur to you, he derived no advantage from his art. Let the far-shooting god tell me how <a href=/people/444 target=_blank>Zephyrus</a> slew <a href=/people/2564 target=_blank>Hyacinthus</a>. <a href=/people/444 target=_blank>Zephyrus</a> conquered him; and in accordance with the saying of the tragic poet: <br />A breeze is the most honourable chariot of the gods, - <br />conquered by a slight breeze, <a href=/people/2 target=_blank>Apollo</a> lost his beloved. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/8 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:9'><b>&sect; 9</b>&nbsp;&nbsp;Such are the demons; these are they who laid down the doctrine of <a href=/people/140 target=_blank>Fate</a>. Their fundamental principle was the placing of animals in the heavens. For the creeping things on the earth, and those that swim in the waters, and the quadrupeds on the mountains, with which they lived when expelled from heaven: these they dignified with celestial honour, in order that they might themselves be thought to remain in heaven, and, by placing the constellations there, might make to appear rational the irrational course of life on earth. Thus the high-spirited and he who is crushed with toil, the temperate and the intemperate, the indigent and the wealthy, are what they are simply from the controllers of their nativity. For the delineation of the zodiacal circle is the work of gods. And, when the light of one of them predominates, as they express it, it deprives all the rest of their honour; and he who now is conquered, at another time gains the predominance. And the seven planets are well pleased with them, as if they were amusing themselves with dice. But we are superior to <a href=/people/140 target=_blank>Fate</a>, and instead of wandering (πλανητων) demons, we have learned to know one Lord who wanders not; and, as we do not follow the guidance of <a href=/people/140 target=_blank>Fate</a>, we reject its lawgivers. Tell me, I adjure you did <a href=/people/702 target=_blank>Triptolemus</a> <a href=/people/10951 target=_blank>sow</a> wheat and prove a benefactor to the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> after their sorrow? And why was not <a href=/people/48 target=_blank>Demeter</a>, before she lost her daughter, a benefactress to men? The <a href=/people/10953 target=_blank>Dog</a> of <a href=/people/1213 target=_blank>Erigone</a> is shown in the heavens, and the Scorpion the helper of <a href=/people/28 target=_blank>Artemis</a>, and <a href=/people/1086 target=_blank>Chiron</a> the <a href=/people/553 target=_blank>Centaur</a>, and the divided <a href=/people/352 target=_blank>Argo</a>, and the Bear of <a href=/people/1033 target=_blank>Callisto</a>. Yet how, before these performed the aforesaid deeds, were the heavens unadorned? And to whom will it not appear ridiculous that the Deltotum should be placed among the stars, according to some, on account of <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, or, as others say, on account of the first letter in the name of <a href=/people/1 target=_blank>Zeus</a> (Διος)? For why are not <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> and <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a> honoured in heaven? And why have not the letters of the names of the brothers of <a href=/people/1 target=_blank>Zeus</a>, who shared the kingdom with him, been fixed there too? And how is it that <a href=/people/43 target=_blank>Kronos</a>, who was put in chains and ejected from his kingdom, is constituted a manager of <a href=/people/140 target=_blank>Fate</a>? How, too, can he give kingdoms who no longer reigns himself? Reject, then, these absurdities, and do not become transgressors by hating us unjustly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/9 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:10'><b>&sect; 10</b>&nbsp;&nbsp;There are legends of the metamorphosis of men: with you the gods also are metamorphosed. <a href=/people/243 target=_blank>Rhea</a> becomes a tree; <a href=/people/1 target=_blank>Zeus</a> a dragon, on account of <a href=/people/138 target=_blank>Persephone</a>; the sisters of <a href=/people/273 target=_blank>Phaethon</a> are changed into poplars, and <a href=/people/127 target=_blank>Leto</a> into a bird of little value, on whose account what is now <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a> was called <a href=/people/3650 target=_blank>Ortygia</a>. A god, forsooth, becomes a swan, or takes the form of an <a href=/people/10980 target=_blank>eagle</a>, and, making <a href=/people/1283 target=_blank>Ganymede</a> his cupbearer, glories in a vile affection. How can I reverence gods who are eager for presents, and angry if they do not receive them? Let them have their <a href=/people/140 target=_blank>Fate</a>! I am not willing to adore wandering stars. What is that hair of <a href=/people/743 target=_blank>Berenice</a>? Where were her stars before her death? And how was the dead <a href=/people/673 target=_blank>Antinous</a> fixed as a beautiful youth in the moon? Who carried him thither: unless perchance, as men, perjuring themselves for hire, are credited when they say in ridicule of the gods that kings have ascended into heaven, so some one, in like manner, has put this man also among the gods, and been recompensed with honour and reward? Why have you robbed God? Why do you dishonour His workmanship? You sacrifice a <a href=/people/10954 target=_blank>sheep</a>, and you adore the same animal. The <a href=/people/10955 target=_blank>Bull</a> is in the heavens, and you slaughter its image. The Kneeler crushes a noxious animal; and the <a href=/people/10980 target=_blank>eagle</a> that devours the man-maker <a href=/people/254 target=_blank>Prometheus</a> is honoured. The swan is noble, forsooth, because it was an adulterer; and the <a href=/people/526 target=_blank>Dioscuri</a>, living on alternate days, the ravishers of the daughters of <a href=/people/935 target=_blank>Leucippus</a>, are also noble! Better still is <a href=/people/69 target=_blank>Helen</a>, who forsook the flaxen-haired <a href=/people/53 target=_blank>Menelaus</a>, and followed the turbaned and gold-adorned <a href=/people/112 target=_blank>Paris</a>. A just man also is <a href=/people/1229 target=_blank>Sophron</a>, who transported this adulteress to the <a about=https://topostext.org/place/000000GEly class=place long=23.73603 lat=37.96393>Elysian</a> fields! But even the daughter of <a href=/people/1724 target=_blank>Tyndarus</a> is not gifted with immortality, and <a href=/people/75 target=_blank>Euripides</a> has wisely represented this woman as put to death by <a href=/people/120 target=_blank>Orestes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/10 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:11'><b>&sect; 11</b>&nbsp;&nbsp;How, then, shall I admit this nativity according to <a href=/people/140 target=_blank>Fate</a>, when I see such managers of <a href=/people/140 target=_blank>Fate</a>? I do not wish to be a king; I am not anxious to be rich; I decline military command; I detest fornication; I am not impelled by an insatiable love of gain to go to sea; I do not contend for chaplets; I am free from a mad thirst for fame; I despise death; I am superior to every kind of disease; grief does not consume my soul. Am I a slave, I endure servitude. Am I free, I do not make a vaunt of my good birth. I see that the same sun is for all, and one death for all, whether they live in pleasure or destitution. The rich man <a href=/people/10951 target=_blank>sows</a>, and the poor man partakes of the same sowing. The wealthiest die, and beggars have the same limits to their life. The rich lack many things, and are glorious only through the estimation they are held in; but the poor man and he who has very moderate desires, seeking as he does only the things suited to his lot, more easily obtains his purpose. How is it that you are fated to be sleepless through avarice? Why are you fated to grasp at things often, and often to die? Die to the world, repudiating the madness that is in it. Live to God, and by apprehending Him lay aside your old nature. We were not created to die, but we die by our own fault. Our free-will has destroyed us; we who were free have become slaves; we have been sold through sin. Nothing evil has been created by God; we Ourselves have manifested wickedness; but we, who have manifested it, are able again to reject it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/11 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:12'><b>&sect; 12</b>&nbsp;&nbsp;We recognise two varieties of spirit, one of which is called the soul (ψυχη), but the other is greater than the soul, an image and likeness of God: both existed in the first men, that in one sense they might be material, and in another superior to matter. The case stands thus: we can see that the whole structure of the world, and the whole creation, has been produced from matter, and the matter itself brought into existence by God; so that on the one hand it may be regarded as rude and unformed before it was separated into parts, and on the other as arranged in beauty and order after the separation was made. Therefore in that separation the heavens were made of matter, and the stars that are in them; and the earth and all that is upon it has a similar constitution: so that there is a common origin of all things. But, while such is the case, there yet are certain differences in the things made of matter, so that one is more beautiful, and another is beautiful but surpassed by something better. For as the constitution of the body is under one management, and is engaged in doing that which is the cause of its having been made, yet though this is the case, there are certain differences of dignity in it, and the eye is one thing, and another the ear, and another the arrangement of the hair and the distribution of the intestines, and the compacting together of the marrow and the bones and the tendons; and though one part differs from another, there is yet all the harmony of a concert of music in their arrangement: in like manner the world, according to the power of its Maker containing some things of superior splendour, but some unlike these, received by the will of the Creator a material spirit. And these things severally it is possible for him to perceive who does not conceitedly reject those most divine explanations which in the course of time have been consigned to writing, and make those who study them great lovers of God. Therefore the demons, as you call them, having received their structure from matter and obtained the spirit which inheres in it, became intemperate and greedy; some few, indeed, turning to what was purer, but others choosing what was inferior in matter, and conforming their manner of life to it. These beings, produced from matter, but very remote from right conduct, you, O Greeks, worship. For, being turned by their own folly to vain gloriousness, and shaking off the reins [of authority], they have been forward to become robbers of Deity; and the Lord of all has suffered them to besport themselves, till the world, coming to an end, be dissolved, and the Judge appear, and all those men who, while assailed by the demons, strive after the knowledge of the perfect God obtain as the result of their conflicts a more perfect testimony in the day of judgment. There is, then, a spirit in the stars, a spirit in angels, a spirit in plants and the waters, a spirit in men, a spirit in animals; but, though one and the same, it has differences in itself. And while we say these things not from mere hearsay, nor from probable conjectures and sophistical reasoning, but using words of a certain diviner speech, do you who are willing hasten to learn. And you who do not reject with contempt the <a about=https://topostext.org/place/475310RSky class=person long=31.01 lat=47.5>Scythian</a> <a href=/people/606 target=_blank>Anacharsis</a>, do not disdain to be taught by those who follow a barbaric code of laws. Give at least as favourable a reception to our tenets as you would to the prognostications of the <a about=https://topostext.org/place/325444UBab class=ethnic long=44.421 lat=32.542>Babylonians</a>. Hearken to us when we speak, if only as you would to an oracular oak. And yet the things just referred to are the trickeries of frenzied demons, while the doctrines we inculcate are far beyond the apprehension of the world. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/12 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:13'><b>&sect; 13</b>&nbsp;&nbsp;The soul is not in itself immortal, O Greeks, but mortal. Yet it is possible for it not to die. If, indeed, it knows not the truth, it dies, and is dissolved with the body, but rises again at last at the end of the world with the body, receiving death by punishment in immortality. But, again, if it acquires the knowledge of God, it dies not, although for a time it be dissolved. In itself it is darkness, and there is nothing luminous in it. And this is the meaning of the saying, The darkness comprehendeth not the light. For the soul does not preserve the spirit, but is preserved by it, and the light comprehends the darkness. The Logos, in truth, is the light of God, but the ignorant soul is darkness. On this account, if it continues solitary, it tends downward towards matter, and dies with the flesh; but, if it enters into union with the Divine Spirit, it is no longer helpless, but ascends to the regions whither the Spirit guides it: for the dwelling-place of the spirit is above, but the origin of the soul is from beneath. Now, in the beginning the spirit was a constant companion of the soul, but the spirit forsook it because it was not willing to follow. Yet, retaining as it were a spark of its power, though unable by reason of the separation to discern the perfect, while seeking for God it fashioned to itself in its wandering many gods, following the sophistries of the demons. But the Spirit of God is not with all, but, taking up its abode with those who live justly, and intimately combining with the soul, by prophecies it announced hidden things to other souls. And the souls that are obedient to wisdom have attracted to themselves the cognate spirit; but the disobedient, rejecting the minister of the suffering God, have shown themselves to be fighters against God, rather than His worshippers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/13 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:14'><b>&sect; 14</b>&nbsp;&nbsp;And such are you also, O Greeks, profuse in words, but with minds strangely warped; and you acknowledge the dominion of many rather than the rule of one, accustoming yourselves to follow demons as if they were mighty. For, as the inhuman robber is wont to overpower those like himself by daring; so the demons, going to great lengths in wickedness, have utterly deceived the souls among you which are left to themselves by ignorance and false appearances. These! beings do not indeed die easily, for they do not partake of flesh; but while living they practise the ways of death, and die themselves as often as they teach their followers to sin. Therefore, what is now their chief distinction, that they do not die like men, they will retain when about to suffer punishment: they will not partake of everlasting life, so as to receive this instead of death in a blessed immortality. And as we, to whom it now easily happens to die, afterwards receive the immortal with enjoyment, or the painful with immortality, so the demons, who abuse the present life to purposes of wrong-doing, dying continually even while they live, will have hereafter the same immortality, like that which they had during the time they lived, but in its nature like that of men, who voluntarily performed what the demons prescribed to them during their lifetime. And do not fewer kinds of sin break out among men owing to the brevity of their lives, while on the part of these demons transgression is more abundant owing to their boundless existence? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/14 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:15'><b>&sect; 15</b>&nbsp;&nbsp;But further, it becomes us now to seek for what we once had, but have lost, to unite the soul with the Holy Spirit, and to strive after union with God. The human soul consists of many parts, and is not simple; it is composite, so as to manifest itself through the body; for neither could it ever appear by itself without the body, nor does the flesh rise again without the soul. Man is not, as the croaking philosophers say, merely a rational animal, capable of understanding and knowledge; for, according to them, even irrational creatures appear possessed of understanding and knowledge. But man alone is the image and likeness of God; and I mean by man, not one who performs actions similar to those of animals, but one who has advanced far beyond mere humanity — to God Himself. This question we have discussed more minutely in the treatise concerning animals. But the principal point to be spoken of now is, what is intended by the image and likeness of God. That which cannot be compared is no other than abstract being; but that which is compared is no other than that which is like. The perfect God is without flesh; but man is flesh. The bond of the flesh is the soul; that which encloses the soul is the flesh. Such is the nature of man's constitution; and, if it be like a temple, God is pleased to dwell in it by the spirit, His representative; but, if it be not such a habitation, man excels the wild beasts in articulate language only: in other respects his manner of life is like theirs, as one who is not a likeness of God. But none of the demons possess flesh; their structure is spiritual, like that of fire or air. And only by those whom the Spirit of God dwells in and fortifies are the bodies of the demons easily seen, not at all by others: I mean those who possess only soul; for the inferior has not the ability to apprehend the superior. On this account the nature of the demons has no place for repentance; for they are the reflection of matter and of wickedness. But matter desired to exercise lordship over the soul; and according to their free-will these gave laws of death to men; but men, after the loss of immortality, have conquered death by submitting to death in faith; and by repentance a call has been given to them, according to the word which says, Since they were made a little lower than the angels. And, for every one who has been conquered, it is possible again to conquer, if he rejects the condition which brings death. And what that is, may be easily seen by men who long for immortality. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/15 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:16'><b>&sect; 16</b>&nbsp;&nbsp;But the demons who rule over men are not the souls of men; for how should these be capable of action after death? unless man, who while living was void of understanding and power, should be believed when dead to be endowed with more of active power. But neither could this be the case, as we have shown elsewhere. And it is difficult to conceive that the immortal soul, which is impeded by the members of the body, should become more intelligent when it has migrated from it. For the demons, inspired with frenzy against men by reason of their own wickedness, pervert their minds, which already incline downwards, by various deceptive scenic representations, that they may be disabled from rising to the path that leads to heaven. But from us the things which are in the world are not hidden, and the divine is easily apprehended by us if the power that makes souls immortal visits us. The demons are seen also by the men possessed of soul, when, as sometimes, they exhibit themselves to men, either that they may be thought to be something, or as evil-disposed friends may do harm to them as to enemies, or afford occasions of doing them honour to those who resemble them. For, if it were possible, they would without doubt pull down heaven itself with the rest of creation. But now this they can by no means effect, for they have not the power; but they make war by means of the lower matter against the matter that is like themselves. Should any one wish to conquer them, let him repudiate matter. Being armed with the breastplate of the celestial Spirit, he will be able to preserve all that is encompassed by it. There are, indeed, diseases and disturbances of the matter that is in us; but, when such things happen, the demons ascribe the causes of them to themselves, and approach a man whenever disease lays hold of him. Sometimes they themselves disturb the habit of the body by a tempest of folly; but, being smitten by the word of God, they depart in terror, and the sick man is healed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/16 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:17'><b>&sect; 17</b>&nbsp;&nbsp;Concerning the sympathies and antipathies of <a href=/people/139 target=_blank>Democritus</a> what can we say but this, that, according to the common saying, the man of <a about=https://topostext.org/place/410250PAbd class=place long=24.9833 lat=40.95>Abdera</a> is an Abderologist? But, as he who gave the name to the city, a friend of <a href=/people/4 target=_blank>Hercules</a> as it is said, was devoured by the <a href=/people/10959 target=_blank>horses</a> of <a href=/people/2615 target=_blank>Diomedes</a>, so he who boasted of the Magian <a href=/people/4636 target=_blank>Ostanes</a> will be delivered up in the day of consummation as fuel for the eternal fire. And you, if you do not cease from your laughter, will gain the same punishment as the jugglers. Wherefore, O Greeks, hearken to me, addressing you as from an eminence, nor in mockery transfer your own want of reason to the herald of the truth. A diseased affection (πάθος) is not destroyed by a counter-affection (αντιπαθεια), nor is a maniac cured by hanging little amulets of leather upon him. There are visitations of demons; and he who is sick, and he who says he is in love, and he who hates, and he who wishes to be revenged, accept them as helpers. And this is the method of their operation: just as the forms of alphabetic letters and the lines composed of them cannot of themselves indicate what is meant, but men have invented for themselves signs of their thoughts, knowing by their peculiar combination what the order of the letters was intended to express; so, in like manner, the various kinds of roots and the mutual relation of the sinews and bones can effect nothing of themselves, but are the elemental matter with which the depravity of the demons works, who have determined for what purpose each of them is available. And, when they see that men consent to be served by means of such things, they take them and make them their slaves. But how can it be honourable to minister to adulteries? How can it be noble to stimulate men in hating one another? Or how is it becoming to ascribe to matter the relief of the insane, and not to God? For by their art they turn men aside from the pious acknowledgment of God, leading them to place confidence in herbs and roots. But God, if He had prepared these things to effect just what men wish, would be a Producer of evil things; whereas He Himself produced everything which has good qualities, but the profligacy of the demons has made use of the productions of nature for evil purposes, and the appearance of evil which these wear is from them, and not from the perfect God. For how comes it to pass that when alive I was in no wise evil, but that now I am dead and can do nothing, my remains, which are incapable of motion or even sense, should effect something cognizable by the senses? And how shall he who has died by the most miserable death be able to assist in avenging any one? If this were possible, much more might he defend himself from his own enemy; being able to assist others, much more might he constitute himself his own avenger. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/17 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:18'><b>&sect; 18</b>&nbsp;&nbsp;But medicine and everything included in it is an invention of the same kind. If any one is healed by matter, through trusting to it, much more will he be healed by having recourse to the power of God. As noxious preparations arc material compounds, so are curatives of the same nature. If, however, we reject the baser matter, some persons often endeavour to heal by a union of one of these bad things with some other, and will make use of the bad to attain the good. But, just as he who dines with a robber, though he may not be a robber himself, partakes of the punishment on account of his intimacy with him, so he who is not bad but associates with the bad, having dealings with them for some supposed good, will be punished by God the Judge for partnership in the same object. Why is he who trusts in the system of matter not willing to trust in God? For what reason do you not approach the more powerful Lord, but rather seek to cure yourself, like the <a href=/people/10953 target=_blank>dog</a> with grass, or the stag with a <a href=/people/55 target=_blank>viper</a>, or the <a href=/people/10951 target=_blank>hog</a> with river-crabs, or the <a href=/people/10960 target=_blank>lion</a> with apes? Why you deify the objects of nature? And why, when you cure your neighbour, are you called a benefactor? Yield to the power of the Logos! The demons do not cure, but by their art make men their captives. And the most admirable <a href=/people/2001 target=_blank>Justin</a> has rightly denounced them as robbers. For, as it is the practice of some to capture persons and then to restore them to their friends for a ransom, so those who are esteemed gods, invading the bodies of certain persons, and producing a sense of their presence by dreams, command them to come forth into public, and in the sight of all, when they have taken their fill of the things of this world, fly away from the sick, and, destroying the disease which they had produced, restore men to their former state </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/18 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:19'><b>&sect; 19</b>&nbsp;&nbsp;But do you, who have not the perception of these things, be instructed by us who know them: though you do profess to despise death, and to be sufficient of yourselves for everything. But this is a discipline in which your philosophers are so greatly deficient, that some of them receive from the king of the Romans aurei yearly, for no useful service they perform, but that they may not even wear a long beard without being paid for it! <a href=/people/4945 target=_blank>Crescens</a>, who made his nest in the great city, surpassed all men in paederasty, and was strongly addicted to the love of money. Yet this man, who professed to despise death, was so afraid of death, that he endeavoured to inflict on <a href=/people/2001 target=_blank>Justin</a>, and indeed on me, the punishment of death, as being an evil, because by proclaiming the truth he convicted the philosophers of being gluttons and cheats. But whom of the philosophers, save you only, was he accustomed to inveigh against? If you say, in agreement with our tenets, that death is not to be dreaded, do not court death from an insane love of fame among men, like <a href=/people/269 target=_blank>Anaxagoras</a>, but become despisers of death by reason of the knowledge of God. The construction of the world is excellent, but the life men live in it is bad; and we may see those greeted with applause as in a solemn assembly who know not God. For what is divination? and why are ye deceived by it? It is a minister to thee of worldly lusts. You wish make war, and you take <a href=/people/2 target=_blank>Apollo</a> as a counsellor of slaughter. You want to carry off a maiden by force, and you select a divinity to be your accomplice. You are ill by your own fault; and, as <a href=/people/47 target=_blank>Agamemnon</a> wished for ten councillors, so you wish to have gods with you. Some woman by drinking water gets into a frenzy, and loses her senses by the fumes of frankincense, and you say that she has the gift of prophecy. <a href=/people/2 target=_blank>Apollo</a> was a prognosticator and a teacher of soothsayers: in the matter of <a href=/people/762 target=_blank>Daphne</a> he deceived himself. An oak, forsooth, is oracular, and birds utter presages! And so you are inferior to animals and plants! It would surely be a fine thing for you to become a divining rod, or to assume the wings of a bird! He who makes you fond of money also foretells your getting rich; he who excites to seditions and wars also predicts victory in war. If you are superior to the passions, you will despise all worldly things. Do not abhor us who have made this attainment, but, repudiating the demons, follow the one God. All things were made by Him, and without Him not one thing was made. If there is poison in natural productions, this has supervened through our sinfulness. I am able to show the perfect truth of these things; only do you hearken, and he who believes will understand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/19 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:20'><b>&sect; 20</b>&nbsp;&nbsp;Even if you be healed by drugs (I grant you that point by courtesy), yet it behooves you to give testimony of the cure to God. For the world still draws us down, and through weakness I incline towards matter. For the wings of the soul were the perfect spirit, but, having cast this off through sin, it flutters like a nestling and falls to the ground. Having left the heavenly companionship, it hankers after communion with inferior things. The demons were driven forth to another abode; the first created human beings were expelled from their place: the one, indeed, were cast down from heaven; but the other were driven from earth, yet not out of this earth, but from a more excellent order of things than exists here now. And now it behooves us, yearning after that pristine state, to put aside everything that proves a hindrance. The heavens are not infinite, O man, but finite and bounded; and beyond them are the superior worlds which have not a change of seasons, by which various, diseases are produced, but, partaking of every happy temperature, have perpetual day, and light unapproachable by men below. Those who have composed elaborate descriptions of the earth have given an account of its various regions so far as this was possible to man; but, being unable to speak of that which is beyond, because Of the impossibility of personal observation, they have assigned as the cause the existence of tides; and that one sea is filled with weed, and another with mud; and that some localities are burnt up with heat, and others cold and frozen. We, however, have learned things which were unknown to us, through the teaching of the prophets, who, being fully persuaded that the heavenly spirit along with the soul will acquire a clothing of mortality, foretold things which other minds were unacquainted with. But it is possible for every one who is naked to obtain this apparel, and to return to its ancient kindred. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/20 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:21'><b>&sect; 21</b>&nbsp;&nbsp;We do not act as fools, O Greeks, nor utter idle tales, when we announce that God was born in the form of a man. I call on you who reproach us to compare your mythical accounts with our narrations. <a href=/people/11 target=_blank>Athene</a>, as they say, took the form of <a href=/people/892 target=_blank>Deiphobus</a> for the sake of <a href=/people/40 target=_blank>Hector</a>, and the unshorn <a href=/people/11033 target=_blank>Phoebus</a> for the sake of <a href=/people/996 target=_blank>Admetus</a> fed the trailing-footed <a href=/people/10961 target=_blank>oxen</a>, and the spouse us came as an old woman to <a href=/people/205 target=_blank>Semele</a>. But, while you treat seriously such things, how can you deride us? Your <a href=/people/114 target=_blank>Asclepios</a> died, and he who ravished fifty virgins in one night at <a about=https://topostext.org/place/383232PThe class=place long=23.1549 lat=38.2935>Thespiae</a> lost his life by delivering himself to the devouring flame. <a href=/people/254 target=_blank>Prometheus</a>, fastened to <a about=https://topostext.org/place/433424LCau class=place long=42.45 lat=43.351>Caucasus</a>, suffered punishment for his good deeds to men. According to you, <a href=/people/1 target=_blank>Zeus</a> is envious, and hides the dream from men, wishing their destruction. Wherefore, looking at your own memorials, vouchsafe us your approval, though it were only as dealing in legends similar to your own. We, however, do not deal in folly, but your legends are only idle tales. If you speak of the origin of the gods, you also declare them to be mortal. For what reason is <a href=/people/19 target=_blank>Hera</a> now never pregnant? Has she grown old? or is there no one to give you information? Believe me now, O Greeks, and do not resolve your myths and gods into allegory. If you attempt to do this, the divine nature as held by you is overthrown by your own selves; for, if the demons with you are such as they are said to be, they are worthless as to character; or, if regarded as symbols of the powers of nature, they are not what they are called. But I cannot be persuaded to pay religious homage to the natural elements, nor can I undertake to persuade my neighbour. And <a href=/people/435 target=_blank>Metrodorus</a> of <a about=https://topostext.org/place/403267UPit class=person long=26.6992 lat=40.3467>Lampsacus</a>, in his treatise concerning <a href=/people/9 target=_blank>Homer</a>, has argued very foolishly, turning everything into allegory. For he says that neither <a href=/people/19 target=_blank>Hera</a>, nor <a href=/people/11 target=_blank>Athene</a>, nor <a href=/people/1 target=_blank>Zeus</a> are what those persons suppose who consecrate to them sacred enclosures and groves, but parts of nature and certain arrangements of the elements. <a href=/people/40 target=_blank>Hector</a> also, and <a href=/people/17 target=_blank>Achilles</a>, and <a href=/people/47 target=_blank>Agamemnon</a>, and all the Greeks in general, and the Barbarians with <a href=/people/69 target=_blank>Helen</a> and <a href=/people/112 target=_blank>Paris</a>, being of the same nature, you will of course say are introduced merely for the sake of the machinery of the poem, not one of these personages having really existed. But these things we have put forth only for argument's sake; for it is not allowable even to compare our notion of God with those who are wallowing in matter and mud. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/21 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:22'><b>&sect; 22</b>&nbsp;&nbsp;And of what sort are your teachings? Who must not treat with contempt your solemn festivals, which, being held in honour of wicked demons, cover men with infamy? I have often seen a man -and have been amazed to see, and the amazement has ended in contempt, to think how he is one thing internally, but outwardly counterfeits what he is not — giving himself excessive airs of daintiness and indulging in all sorts of effeminacy; sometimes darting his eyes about; sometimes throwing his hands hither and thither, and raving with his face smeared with mud; sometimes personating <a href=/people/15 target=_blank>Aphrodite</a>, sometimes <a href=/people/2 target=_blank>Apollo</a>; a solitary accuser of all the gods, an epitome of superstition, a vituperator of heroic deeds, an actor of murders, a chronicler of adultery, a storehouse of madness, a teacher of cynaedi, an instigator of capital sentences; and yet such a man is praised by all. But I have rejected all his falsehoods, his impiety, his practices: in short, the man altogether. But you are led captive by such men, while you revile those who do not take a part in your pursuits. I have no mind to stand agape at a number of singers, nor do I desire to be affected in sympathy with a man when he is winking and gesticulating in an unnatural manner. What wonderful or extraordinary thing is performed among you? They utter ribaldry in affected tones, and go through indecent movements; your daughters and your sons behold them giving lessons in adultery on the stage. Admirable places, forsooth, are your lecture-rooms, where every base action perpetrated by night is proclaimed aloud, and the hearers are regaled with the utterance of infamous discourses! Admirable, too, are your mendacious poets, who by their fictions beguile their hearers from the truth! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/22 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:23'><b>&sect; 23</b>&nbsp;&nbsp;I have seen men weighed down by bodily exercise, and carrying about the burden of their flesh, before whom rewards and chaplets are set, while the adjudicators cheer them on, not to deeds of virtue, but to rivalry in violence and discord; and he who excels in giving blows is crowned. These are the lesser evils; as for the greater, who would not shrink from telling them? Some, giving themselves up to idleness for the sake of profligacy, sell themselves to be killed; and the indigent barters himself away, while the rich man buys others to kill him. And for these the witnesses take their seats, and the boxers meet in single combat, for no reason whatever, nor does any one come down into the arena to succour. Do such exhibitions as these redound to your credit? He who is chief among you collects a legion of blood-stained murderers, engaging to maintain them; and these ruffians are sent forth by him, and you assemble at the spectacle to be judges, partly of the wickedness of the adjudicator, and partly of that of the men who engage in the combat. And he who misses the murderous exhibition is grieved, because he was not doomed to be a spectator of wicked and impious and abominable deeds. You slaughter animals for the purpose of eating their flesh, and you purchase men to supply a cannibal banquet for the soul, nourishing it by the most impious bloodshedding. The robber commits murder for the sake of plunder, but the rich man purchases gladiators for the sake of their being killed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/23 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:24'><b>&sect; 24</b>&nbsp;&nbsp;What advantage should I gain from him who is brought on the stage by <a href=/people/75 target=_blank>Euripides</a> raving mad, and acting the matricide of <a href=/people/564 target=_blank>Alcmaeon</a>; who does not even retain his natural behaviour, but with his mouth wide open goes about sword in hand, and, screaming aloud, is burned to death, habited in a robe unfit for man? Away, too, with the mythical tales of <a href=/people/1811 target=_blank>Acusilaus</a>, and <a href=/people/156 target=_blank>Menander</a>, a versifier of the same class! And why should I admire the mythic piper? Why should I busy myself about the <a about=https://topostext.org/place/383233PThe class=person long=23.3178 lat=38.3191>Theban</a> <a href=/people/4419 target=_blank>Antigenides</a>, like <a href=/people/633 target=_blank>Aristoxenus</a>? We leave you to these worthless things; and do you either believe our doctrines, or, like us, give up yours. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/24 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:25'><b>&sect; 25</b>&nbsp;&nbsp;What great and wonderful things have your philosophers effected? They leave uncovered one of their shoulders; they let their hair grow long; they cultivate their beards; their nails are like the claws of wild beasts. Though they say that they want nothing, yet, like <a href=/people/5355 target=_blank>Proteus</a>, they need a currier for their wallet, and a weaver for their mantle, and a wood-cutter for their staff, and the rich, and a cook also for their gluttony. O man competing with the <a href=/people/10953 target=_blank>dog</a>, you know not God, and so have turned to the imitation of an irrational animal. You cry out in public with an assumption of authority, and take upon you to avenge your own self; and if you receive nothing, you indulge in abuse, and philosophy is with you the art of getting money. You follow the doctrines of <a href=/people/12 target=_blank>Plato</a>, and a disciple of <a href=/people/106 target=_blank>Epicurus</a> lifts up his voice to oppose you. Again, you wish to be a disciple of <a href=/people/46 target=_blank>Aristotle</a>, and a follower of <a href=/people/139 target=_blank>Democritus</a> rails at you. <a href=/people/58 target=_blank>Pythagoras</a> says that he was <a href=/people/1131 target=_blank>Euphorbus</a>, and he is the heir of the doctrine of <a href=/people/582 target=_blank>Pherecydes</a>; but <a href=/people/46 target=_blank>Aristotle</a> impugns the immortality of the soul. You who receive from your predecessors doctrines which clash with one another, you the inharmonious, are fighting against the harmonious. One of you asserts that God is body, but I assert that He is without body; that the world is indestructible, but I say that it is to be destroyed; that a conflagration will take place at various times, but I say that it will come to pass once for all; that <a href=/people/119 target=_blank>Minos</a> and <a href=/people/718 target=_blank>Rhadamanthus</a> are judges, but I say that God Himself is Judge; that the soul alone is endowed with immortality, but I say that the flesh also is endowed with it. What injury do we inflict upon you, O Greeks? Why do you hate those who follow the word of God, as if they were the vilest of mankind? It is not we who eat human flesh -they among you who assert such a thing have been suborned as false witnesses; it is among you that <a href=/people/170 target=_blank>Pelops</a> is made a supper for the gods, although beloved by <a href=/people/25 target=_blank>Poseidon</a>, and <a href=/people/43 target=_blank>Kronos</a> devours his children, and <a href=/people/1 target=_blank>Zeus</a> swallows <a href=/people/2364 target=_blank>Metis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/25 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:26'><b>&sect; 26</b>&nbsp;&nbsp;Cease to make a parade of sayings which you have derived from others, and to deck yourselves like the daw in borrowed plumes. If each state were to take away its contribution to your speech, your fallacies would lose their power. While inquiring what God is, you are ignorant of what is in yourselves; and, while staring all agape at the sky, you stumble into pitfalls. The reading of your books is like walking through a labyrinth, and their readers resemble the cask of the <a href=/people/1622 target=_blank>Danaids</a>. Why do you divide time, saying that one part is past, and another present, and another future? For how can the future be passing when the present exists? As those who are sailing imagine in their ignorance, as the ship is borne along, that the hills are in motion, so you do not know that it is you who are passing along, but that time (ο αιων) remains present as long as the Creator wills it to exist. Why am I called to account for uttering my opinions, and why are you in such haste to put them all down? Were not you born in the same manner as ourselves, and placed under the same government of the world? Why say that wisdom is with you alone, who have not another sun, nor other risings of the stars, nor a more distinguished origin, nor a death preferable to that of other men? The grammarians have been the beginning of this idle talk; and you who parcel out wisdom are cut off from the wisdom that is according to truth, and assign the names of the several parts to particular men; and you know not God, but in your fierce contentions destroy one another. And on this account you are all nothing worth. While you arrogate to yourselves the sole right of discussion, you discourse like the blind man with the deaf. Why do you handle the builder's tools without knowing how to build? Why do you busy yourselves with words, while you keep aloof from deeds, puffed up with praise, but cast down by misfortunes? Your modes of acting are contrary to reaSon, for you make a pompons appearance in public, but hide your teaching in corners. Finding you to be such men as these, we have abandoned you, and no longer concern ourselves with your tenets, but follow the word of God. Why, O man, do you set the letters of the alphabet at war with one another? Why do you, as in a boxing match, make their sounds clash together with your mincing <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> way of speaking, whereas you ought to speak more according to nature? For if you adopt the <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> dialect though not an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a>, pray why do you not speak like the <a about=https://topostext.org/place/387224RDor class=ethnic long=22.4 lat=38.7>Dorians</a>? How is it that one appears to you more rugged, the other more pleasant for intercourse? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/26 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:27'><b>&sect; 27</b>&nbsp;&nbsp;And if you adhere to their teaching, why do you fight against me for choosing such views of doctrine as I approve? Is it not unreasonable that, while the robber is not to be punished for the name he bears, but only when the truth about him has been clearly ascertained, yet we are to be assailed with abuse on a judgment formed without examination? <a href=/people/917 target=_blank>Diagoras</a> was an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a>, but you punished him for divulging the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> mysteries; yet you who read his <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a> discourses hate us. You possess the commentaries of <a href=/people/1049 target=_blank>Leo</a>, and are displeased with our refutations of them; and having in your hands the opinions of <a href=/people/1363 target=_blank>Apion</a> concerning the <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> gods, you denounce us as most impious. The tomb of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a> is shown among you, though some one says that the <a about=https://topostext.org/place/352252IKre class=ethnic long=25.1836 lat=35.2052>Cretans</a> are liars. Your assembly of many gods is nothing. Though their despiser <a href=/people/106 target=_blank>Epicurus</a> acts as a torch-bearer, I do not any the more conceal from the rulers that view of God which I hold in relation to His government of the universe. Why do you advise me to be false to my principles? Why do you who say that you despise death exhort us to use art in order to escape it? I have not the heart of a deer; but your zeal for dialectics resembles the loquacity of <a href=/people/1306 target=_blank>Thersites</a>. How can I believe one who tells me that the sun is a red-hot mass and the moon an earth? Such assertions are mere logomachies, and not a sober exposition of truth. How can it be otherwise than foolish to credit the books of <a href=/people/133 target=_blank>Herodotus</a> relating to the history of <a href=/people/4 target=_blank>Hercules</a>, which tell of an upper earth from which the <a href=/people/10960 target=_blank>lion</a> came down that was killed by <a href=/people/4 target=_blank>Hercules</a>? And what avails the <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> style, the piled summations of philosophers, the plausibilities of syllogisms, the measurements of the earth, the positions of the stars, and the course of the sun? To be occupied in such inquiries is the work of one who imposes opinions on himself as if they were laws. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/27 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:28'><b>&sect; 28</b>&nbsp;&nbsp;On this account I reject your legislation also; for there ought to be one common polity for all; but now there are as many different codes as there are states, so that things held disgraceful in some are honourable in others. The Greeks consider intercourse with a mother as unlawful, but this practice is esteemed most becoming by the <a about=https://topostext.org/place/295540RPer class=person long=54 lat=29.5>Persian</a> <a href=/people/12091 target=_blank>Magi</a>; paederasty is condemned by the Barbarians, but by the Romans, who endeavour to collect herds of boys like grazing <a href=/people/10959 target=_blank>horses</a>, it is honoured with certain privileges. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/28 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:29'><b>&sect; 29</b>&nbsp;&nbsp;Wherefore, having seen these things, and moreover also having been admitted to the mysteries, and having everywhere examined the religious rites performed by the effeminate and the pathic, and having found among the Romans their Latiarian <a href=/people/1 target=_blank>Jupiter</a> delighting in human gore and the blood of slaughtered men, and <a href=/people/28 target=_blank>Artemis</a> not far from the great city sanctioning acts of the same kind, and one demon here and another there instigating to the perpetration of evil: retiring by myself, I sought how I might be able to discover the truth. And, while I was giving my most earnest attention to the matter, I happened to meet with certain barbaric writings, too old to be compared with the opinions of the Greeks, and too divine to be compared with their errors; and I was led to put faith in these by the unpretending east of the language, the inartificial character of the writers, the foreknowledge displayed of future events, the excellent quality of the precepts, and the declaration of the government of the universe as centred in one Being. And, my soul being taught of God, I discern that the former class of writings lead to condemnation, but that these put an end to the slavery that is in the world, and rescue us from a multiplicity of rulers and ten thousand tyrants, while they give us, not indeed what we had not before received, but what we had received but were prevented by error from retaining. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/29 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:30'><b>&sect; 30</b>&nbsp;&nbsp;Therefore, being initiated and instructed in these things, I wish to put away my former errors as the follies of childhood. For we know that the nature of wickedness is like that of the smallest seeds; since it has waxed strong from a small beginning, but will again be destroyed if we obey the words of God and do not scatter ourselves. For He has become master of all we have by means of a certain hidden treasure, which while we are digging for we are indeed covered with dust, but we secure it as our fixed possession. He who receives the whole of this treasure has obtained command of the most precious wealth. Let these things, then, be said to our friends. But to you Greeks what can I say, except to request you not to rail at those who are better than yourselves, nor if they are called Barbarians to make that an occasion of banter? For, if you are willing, you will be able to find out the cause of mews not being able to understand one another's language; for to those who wish to examine our principles I will give a simple and copious account of them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/30 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:31'><b>&sect; 31</b>&nbsp;&nbsp;But now it seems proper for me to demonstrate that our philosophy is older than the systems of the Greeks. <a href=/people/11035 target=_blank>Moses</a> and <a href=/people/9 target=_blank>Homer</a> shall be our limits, each of them being of great antiquity; the one being the oldest of poets and historians, and the other the founder of all barbarian wisdom. Let us, then, institute a comparison between them; and we shall find that our doctrines are older, not only than those of the Greeks, but than the invention of letters. And I will not bring forward witnesses from among ourselves, but rather have recourse to Greeks. To do the former would be foolish, because it would not be allowed by you; but the other will surprise you, when, by contending against you with your own weapons, I adduce arguments of which you had no suspicion. Now the poetry of <a href=/people/9 target=_blank>Homer</a>, his parentage, and the time in which he flourished have been investigated by the most ancient writers: by <a href=/people/145 target=_blank>Theagenes</a> of <a about=https://topostext.org/place/381156PRhe class=person long=15.644 lat=38.109>Rhegium</a>, who lived in the time of <a href=/people/214 target=_blank>Cambyses</a>, <a href=/people/2261 target=_blank>Stesimbrotus</a> of <a about=https://topostext.org/place/408247PTha class=person long=24.7138 lat=40.7799>Thasos</a> and <a href=/people/739 target=_blank>Antimachus</a> of <a about=https://topostext.org/place/381272PCol class=person long=27.141 lat=38.111>Colophon</a>, <a href=/people/133 target=_blank>Herodotus</a> of <a about=https://topostext.org/place/370274PHal class=person long=27.4238 lat=37.0323>Halicarnassus</a>, and <a href=/people/23 target=_blank>Dionysius</a> the <a about=https://topostext.org/place/403234POly class=person long=23.354 lat=40.2963>Olynthian</a>; after them, by <a href=/people/225 target=_blank>Ephorus</a> of <a about=https://topostext.org/place/408141PCum class=person long=14.058 lat=40.848>Cumae</a>, and <a href=/people/453 target=_blank>Philochorus</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, <a href=/people/4605 target=_blank>Megaclides</a> and <a href=/people/1696 target=_blank>Chamaeleon</a> the <a href=/people/407 target=_blank>Peripatetics</a>; afterwards by the grammarians, <a href=/people/2360 target=_blank>Zenodotus</a>, <a href=/people/73 target=_blank>Aristophanes</a>, <a href=/people/219 target=_blank>Callimachus</a>, <a href=/people/249 target=_blank>Crates</a>, <a href=/people/132 target=_blank>Eratosthenes</a>, <a href=/people/340 target=_blank>Aristarchus</a>, and <a href=/people/110 target=_blank>Apollodorus</a>. Of these, <a href=/people/249 target=_blank>Crates</a> says that he flourished before the return of the <a href=/people/324 target=_blank>Heraclidae</a>, and within years after the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war; <a href=/people/132 target=_blank>Eratosthenes</a> says that it was after the 100th year from the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a>; <a href=/people/340 target=_blank>Aristarchus</a>, that it was about the time of the Ionian migration, which was years after that event; but, according to <a href=/people/453 target=_blank>Philochorus</a>, after the Ionian migration, in the archonship of <a href=/people/875 target=_blank>Archippus</a> at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, years after the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war; <a href=/people/110 target=_blank>Apollodorus</a> says it was years after the Ionian migration, which would be years after the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war. Some say that he lived years before the Olympiads, which would be years after the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. Others carry it down to a later date, and say that <a href=/people/9 target=_blank>Homer</a> was a contemporary of <a href=/people/384 target=_blank>Archilochus</a> ; but <a href=/people/384 target=_blank>Archilochus</a> flourished about the 23d Olympiad, in the time of <a href=/people/870 target=_blank>Gyges</a> the <a about=https://topostext.org/place/385280RLyd class=person long=28 lat=38.5>Lydian</a>, years after <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. Thus, concerning the age of the aforesaid poet, I mean <a href=/people/9 target=_blank>Homer</a>, and the discrepancies of those who have spoken of him, we have said enough in a summary manner for those who are able to investigate with accuracy. For it is possible to show that the opinions held about the facts themselves also are false. For, where the assigned dates do not agree together, it is impossible that the history should be true. For what is the cause of error in writing, but the narrating of things that are not true? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/31 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:32'><b>&sect; 32</b>&nbsp;&nbsp;But with us there is no desire of vainglory, nor do we indulge in a variety of opinions. For having renounced the popular and earthly, and obeying the commands of God, and following the law of the Father of immortality, we reject everything which rests upon human opinion. Not only do the rich among us pursue our philosophy, but the poor enjoy instruction gratuitously; for the things which come from God surpass the requital of worldly gifts. Thus we admit all who desire to hear, even old women and striplings; and, in short, persons of every age are treated by us with respect, but every kind of licentiousness is kept at a distance. And in speaking we do not utter falsehood. It would be an excellent thing if your continuance in unbelief should receive a check; but, however that may be, let our cause remain confirmed by the judgment pronounced by God. Laugh, if you please; but you will have to weep hereafter. Is it not absurd that <a href=/people/125 target=_blank>Nestor</a>, who was slow at cutting his <a href=/people/10959 target=_blank>horses</a>' reins owing to his weak and sluggish old age, is, according to you, to be admired for attempting to rival the young men in fighting, while you deride those among us who struggle against old age and occupy themselves with the things pertaining to God? Who would not laugh when you tell us that the <a href=/people/154 target=_blank>Amazons</a>, and <a href=/people/332 target=_blank>Semiramis</a>, and certain other warlike women existed, while you cast reproaches on our maidens? <a href=/people/17 target=_blank>Achilles</a> was a youth, yet is believed to have been very magnanimous; and <a href=/people/385 target=_blank>Neoptolemus</a> was younger, but strong; <a href=/people/448 target=_blank>Philoctetes</a> was weak, but the divinity had need of him against <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. What sort of man was <a href=/people/1306 target=_blank>Thersites</a>? yet he held a command in the army, and, if he had not through doltishness had such an unbridled tongue, he would not have been reproached for being peak-headed and bald. As for those who wish to learn our philosophy, we do not test them by their looks, nor do we judge of those who come to us by their outward appearance; for we argue that there may be strength of mind in all, though they may be weak in body. But your proceedings are full of envy and abundant stupidity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/32 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:33'><b>&sect; 33</b>&nbsp;&nbsp;Therefore I have been desirous to prove from the things which are esteemed honourable among you, that our institutions are marked by sober mindedness, but that yours are in close affinity with madness. You who say that we talk nonsense among women and boys, among maidens and old women, and scoff at us for not being with you, hear what silliness prevails among the Greeks. For their works of art are devoted to worthless objects, while they are held in higher estimation by you than even your gods; and you behave yourselves unbecomingly in what relates to woman. For <a href=/people/1050 target=_blank>Lysippus</a> cast a statue of <a href=/people/5206 target=_blank>Praxilla</a>, whose poems contain nothing useful, and <a href=/people/2242 target=_blank>Menestratus</a> one of Learchis, and Selanion one of <a href=/people/483 target=_blank>Sappho</a> the courtesan, and <a href=/people/3432 target=_blank>Naucydes</a> one of <a href=/people/2308 target=_blank>Erinna</a> the <a about=https://topostext.org/place/392261ILes class=person long=26.2 lat=39.2075>Lesbian</a>, and Boiscus one of <a href=/people/2902 target=_blank>Myrtis</a>, and <a href=/people/11030 target=_blank>Cephisodotus</a> one of <a href=/people/6676 target=_blank>Myro</a> of <a about=https://topostext.org/place/410290UByz class=person long=28.9836 lat=41.0119>Byzantium</a>, and Gomphus one of Praxigoris, and Amphistratus one of Clito. And what shall I say about Anyta, <a href=/people/2263 target=_blank>Telesilla</a>, and Mystis? Of the first <a href=/people/2312 target=_blank>Euthycrates</a> and <a href=/people/11030 target=_blank>Cephisodotus</a> made a statue, and of the second <a href=/people/1333 target=_blank>Niceratus</a>, and of the third Aristodotus; <a href=/people/2312 target=_blank>Euthycrates</a> made one of Mnesiarchis the <a about=https://topostext.org/place/379273PEph class=person long=27.3397 lat=37.9419>Ephesian</a>, Selanion one of <a href=/people/2304 target=_blank>Corinna</a>, and <a href=/people/2312 target=_blank>Euthycrates</a> one of Thalarchis the <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argive</a>. My object in referring to these women is, that you may not regard as something strange what you find among us, and that, comparing the statues which are before your eyes, you may not treat the women with scorn who among us pursue philosophy. This <a href=/people/483 target=_blank>Sappho</a> is a lewd, love-sick female, and sings her own wantonness; but all our women are chaste, and the maidens at their distaffs sing of divine things more nobly than that damsel of yours. Wherefore be ashamed, you who are professed disciples of women yet scoff at those of the sex who hold our doctrine, as well as at the solemn assemblies they frequent. What a noble infant did <a href=/people/5016 target=_blank>Glaucippe</a> present to you, who brought forth a prodigy, as is shown by her statue cast by <a href=/people/1333 target=_blank>Niceratus</a>, the son of <a href=/people/1046 target=_blank>Euctemon</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>! But, if <a href=/people/5016 target=_blank>Glaucippe</a> brought forth an elephant, was that a reason why she should enjoy public honours? <a href=/people/688 target=_blank>Praxiteles</a> and <a href=/people/133 target=_blank>Herodotus</a> made for you <a href=/people/987 target=_blank>Phryne</a> the courtesan, and <a href=/people/2312 target=_blank>Euthycrates</a> cast a brazen statue of Panteuchis, who was pregnant by a whoremonger; and <a href=/people/3017 target=_blank>Dinomenes</a>, because Besantis queen of the <a about=https://topostext.org/place/415220RPai class=ethnic long=22.01 lat=41.5>Paeonians</a> gave birth to a black infant, took pains to preserve her memory by his art. I condemn <a href=/people/58 target=_blank>Pythagoras</a> too, who made a figure of <a href=/people/434 target=_blank>Europa</a> on the <a href=/people/10955 target=_blank>bull</a>; and you also, who honour the accuser of <a href=/people/1 target=_blank>Zeus</a> on account of his artistic skill. And I ridicule the skill of <a href=/people/771 target=_blank>Myron</a>, who made a heifer and upon it a <a href=/people/335 target=_blank>Victory</a> because by carrying off the daughter of <a href=/people/394 target=_blank>Agenor</a> it had borne away the prize for adultery and lewdness. The <a about=https://topostext.org/place/403234POly class=person long=23.354 lat=40.2963>Olynthian</a> <a href=/people/133 target=_blank>Herodotus</a> made statues of <a href=/people/1312 target=_blank>Glycera</a> the courtesan and <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argeia</a> the harper. <a href=/people/2499 target=_blank>Bryaxis</a> made a statue of <a href=/people/930 target=_blank>Pasiphae</a>; and, by having a memorial of her lewdness, it seems to have been almost your desire that the women of the present time should be like her. A certain <a href=/people/1684 target=_blank>Melanippe</a> was a wise woman, and for that reason <a href=/people/1784 target=_blank>Lysistratus</a> made her statue. But, forsooth, you will not believe that among us there are wise women! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/33 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:34'><b>&sect; 34</b>&nbsp;&nbsp;Worthy of very great honour, certainly, was the tyrant <a href=/people/654 target=_blank>Phalaris</a>, who devoured sucklings, and accordingly is exhibited by the workmanship of <a href=/people/1516 target=_blank>Polystratus</a> the <a about=https://topostext.org/place/390209UAmb class=person long=20.9538 lat=39.0419>Ambraciot</a>, even to this day, as a very wonderful man! The <a about=https://topostext.org/place/373136PAkr class=ethnic long=13.5855 lat=37.2906>Agrigentines</a> dreaded to look on that countenance of his, because of his cannibalism; but people of culture now make it their boast that they behold him in his statue! Is it not shameful that fratricide is honoured by you who look on the statues of <a href=/people/881 target=_blank>Polynices</a> and <a href=/people/542 target=_blank>Eteocles</a>, and that you have not rather buried them with their maker <a href=/people/58 target=_blank>Pythagoras</a>? Destroy these memorials of iniquity! Why should I contemplate with admiration the figure of the woman who bore thirty children, merely for the sake of the artist <a href=/people/2022 target=_blank>Periclymenus</a>? One ought to turn away with disgust from one who bore off the fruits of great incontinence, and whom the Romans compared to a <a href=/people/10951 target=_blank>sow</a>, which also on a like account, they say, was deemed worthy of a mystic worship. <a href=/people/24 target=_blank>Ares</a> committed adultery with <a href=/people/15 target=_blank>Aphrodite</a>, and <a href=/people/1584 target=_blank>Andron</a> made an image of their offspring <a href=/people/443 target=_blank>Harmonia</a>. <a href=/people/1229 target=_blank>Sophron</a>, who committed to writing trifles and absurdities, was more celebrated for his skill in casting metals, of which specimens exist even now. And not only have his tales kept the fabulist <a href=/people/80 target=_blank>Aesop</a> in everlasting remembrance, but also the plastic art of <a href=/people/226 target=_blank>Aristodemus</a> has increased his celebrity. How is it then that you, who have so many poetesses whose productions are mere trash, and innumerable courtesans, and worthless men, are not ashamed to slander the reputation of our women? What care I to know that Euanthe gave birth to an infant in the Peripatus, or to gape with wonder at the art of <a href=/people/659 target=_blank>Callistratus</a>, or to fix my gaze on the <a href=/people/487 target=_blank>Neaera</a> of <a href=/people/2599 target=_blank>Calliades</a>? For she was a courtesan. <a href=/people/620 target=_blank>Lais</a> was a prostitute, and <a href=/people/12087 target=_blank>Turnus</a> made her a monument of prostitution. Why are you not ashamed of the fornication of <a href=/people/355 target=_blank>Hephaestion</a>, even though <a href=/people/486 target=_blank>Philo</a> has represented him very artistically? And for what reason do you honour the hermaphrodite <a href=/people/1283 target=_blank>Ganymede</a> by <a href=/people/2002 target=_blank>Leochares</a>, as if you possessed something admirable? <a href=/people/688 target=_blank>Praxiteles</a> even made a statue of a woman with the stain of impurity upon it. It behooved you, repudiating everything of this kind, to seek what is truly worthy of attention, and not to turn with disgust from our mode of life while receiving with approval the shameful productions of <a href=/people/1787 target=_blank>Philaenis</a> and <a href=/people/9306 target=_blank>Elephantis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/34 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:35'><b>&sect; 35</b>&nbsp;&nbsp;The things which I have thus set before you I have not learned at second hand. I have visited many lands; I have followed rhetoric, like yourselves; I have fallen in with many arts and inventions; and finally, when sojourning in the city of the Romans, I inspected the multiplicity of statues brought thither by you: for I do not attempt, as is the custom with many, to strengthen my own views by the opinions of others, but I wish to give you a distinct account of what I myself have seen and felt. So, bidding farewell to the arrogance of Romans and the idle talk of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, and all their ill-connected opinions, I embraced our barbaric philosophy. I began to show how this was more ancient than your institutions, but left my task unfinished, in order to discuss a matter which demanded more immediate attention; but now it is time I should attempt to speak concerning its doctrines. Be not offended with our teaching, nor undertake an elaborate reply filled with trifling and ribaldry, saying, <a href=/people/4311 target=_blank>Tatian</a>, aspiring to be above the Greeks, above the infinite number of philosophic inquirers, has struck out a new path, and embraced the doctrines of Barbarians. For what grievance is it, that men manifestly ignorant should be reasoned with by a man of like nature with themselves? Or how can it be irrational, according to your own sophist, to grow old always learning something? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/35 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:36'><b>&sect; 36</b>&nbsp;&nbsp;But let <a href=/people/9 target=_blank>Homer</a> be not later than the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war; let it be granted that he was contemporary with it, or even that he was in the army of <a href=/people/47 target=_blank>Agamemnon</a>, and, if any so please, that he lived before the invention of letters. The <a href=/people/11035 target=_blank>Moses</a> before mentioned will be shown to have been many years older than the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, and far more ancient than the building of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, or than <a href=/people/1235 target=_blank>Tros</a> and <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a>. To demonstrate this I will call in as witnesses the <a href=/people/1042 target=_blank>Chaldeans</a>, the <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> and the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a>. And what more need I say? For it behooves one who professes to persuade his hearers to make his narrative of events very concise. <a href=/people/4093 target=_blank>Berosus</a>, a <a about=https://topostext.org/place/325444UBab class=demonym long=44.421 lat=32.542>Babylonian</a>, a priest of their god <a href=/people/575 target=_blank>Belus</a>, born in the time of <a href=/people/6 target=_blank>Alexander</a>, composed for <a href=/people/2146 target=_blank>Antiochus</a>, the third after him, the history of the <a href=/people/1042 target=_blank>Chaldeans</a> in three books; and, narrating the acts of the kings, he mentions one of them, <a href=/people/5816 target=_blank>Nabuchodonosor</a> by name, who made war against the <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> and the <a href=/people/7828 target=_blank>Jews</a>: events which we know were announced by our prophets, and which happened much later than the age of <a href=/people/11035 target=_blank>Moses</a>, seventy years before the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> empire. But <a href=/people/4093 target=_blank>Berosus</a> is a very trustworthy man, and of this <a href=/people/358 target=_blank>Juba</a> is a witness, who, writing concerning the <a href=/people/196 target=_blank>Assyrians</a>, says that he learned the history from <a href=/people/4093 target=_blank>Berosus</a>: there are two books of his concerning the <a href=/people/196 target=_blank>Assyrians</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/36 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:37'><b>&sect; 37</b>&nbsp;&nbsp;After the <a href=/people/1042 target=_blank>Chaldeans</a>, the testimony of the <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> is as follows. There were among them three men, <a href=/people/679 target=_blank>Theodotus</a>, <a href=/people/4169 target=_blank>Hypsicrates</a>, and Mochus; Chaitus translated their books into Greek, and also composed with exactness the lives of the philosophers. Now, in the histories of the aforesaid writers it is shown that the abduction of <a href=/people/434 target=_blank>Europa</a> happened under one of the kings, and an account is given of the coming of <a href=/people/53 target=_blank>Menelaus</a> into <a about=https://topostext.org/place/335354RPho class=place long=35.4 lat=33.5>Phoenicia</a>, and of the matters relating to Chiramus, who gave his daughter in marriage to <a href=/people/574 target=_blank>Solomon</a> the king of the <a href=/people/7828 target=_blank>Jews</a>, and supplied wood of all kind of trees for the building of the temple. <a href=/people/156 target=_blank>Menander</a> of <a about=https://topostext.org/place/391272PPer class=person long=27.1842 lat=39.1325>Pergamus</a> composed a history concerning the same things. But the age of Chiramus is somewhere about the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war; but <a href=/people/574 target=_blank>Solomon</a>, the contemporary of Chiramus, lived much later than the age of <a href=/people/11035 target=_blank>Moses</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/37 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:38'><b>&sect; 38</b>&nbsp;&nbsp;Of the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a> also there are accurate chronicles. <a href=/people/21 target=_blank>Ptolemy</a>, not the king, but a priest of <a about=https://topostext.org/place/310315UMen class=place long=31.516 lat=30.958>Mendes</a>, is the interpreter of their affairs. This writer, narrating the acts of the kings, says that the departure of the <a href=/people/7828 target=_blank>Jews</a> from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> to the places whither they went occurred in the time of king <a href=/people/2286 target=_blank>Amosis</a>, under the leadership of <a href=/people/11035 target=_blank>Moses</a>. He thus speaks: <a href=/people/2286 target=_blank>Amosis</a> lived in the time of king <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>. After him, <a href=/people/1363 target=_blank>Apion</a> the grammarian, a man most highly esteemed, in the fourth book of his Aegyptiaca (there are five books of his), besides many other things, says that <a href=/people/2286 target=_blank>Amosis</a> destroyed Avaris in the time of the <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, as the <a about=https://topostext.org/place/310315UMen class=person long=31.516 lat=30.958>Mendesian</a> <a href=/people/21 target=_blank>Ptolemy</a> wrote in his annals. But the time from <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a> to the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> occupies twenty generations. The steps of the demonstration are the following: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/38 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:39'><b>&sect; 39</b>&nbsp;&nbsp;The kings of the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> were these: <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, <a href=/people/817 target=_blank>Phoroneus</a>, <a href=/people/360 target=_blank>Apis</a>, Criasis, <a href=/people/1413 target=_blank>Triopas</a>, <a href=/people/3302 target=_blank>Argeius</a>, <a href=/people/854 target=_blank>Phorbas</a>, Crotopas, <a href=/people/3967 target=_blank>Sthenelaus</a>, <a href=/people/303 target=_blank>Danaus</a>, <a href=/people/6078 target=_blank>Lynceus</a>, <a href=/people/768 target=_blank>Proetus</a>, <a href=/people/941 target=_blank>Abas</a>, <a href=/people/864 target=_blank>Acrisius</a>, <a href=/people/153 target=_blank>Perseus</a>, <a href=/people/3967 target=_blank>Sthenelaus</a>, <a href=/people/247 target=_blank>Eurystheus</a>, <a href=/people/126 target=_blank>Atreus</a>, <a href=/people/598 target=_blank>Thyestes</a>, and <a href=/people/47 target=_blank>Agamemnon</a>, in the eighteenth year of whose reign <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> was taken. And every intelligent person will most carefully observe that, according to the tradition of the Greeks, they possessed no historical composition; for <a href=/people/83 target=_blank>Cadmus</a>, who taught them letters, came into <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> many generations later. But after <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, under <a href=/people/817 target=_blank>Phoroneus</a>, a check was with difficulty given to their savage and nomadic life, and they entered upon a new order of things. Wherefore, if <a href=/people/11035 target=_blank>Moses</a> is shown to be contemporary with <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, he is four hundred years older than the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war. But this is demonstrated from the succession of the <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a>, [and of the <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a>, the Ptolemaic, and the Antiochian] kings. Hence, if the most illustrious deeds among the Greeks were recorded and made known after <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, it is manifest that this must have been after <a href=/people/11035 target=_blank>Moses</a>. In the time of <a href=/people/817 target=_blank>Phoroneus</a>, who was after <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, <a href=/people/2134 target=_blank>Ogygus</a> is mentioned among the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, in whose time was the first deluge; and in the time of <a href=/people/854 target=_blank>Phorbas</a> was <a href=/people/2954 target=_blank>Actaeus</a>, from whom <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> was called <a href=/people/3492 target=_blank>Actaea</a>; and in the time of <a href=/people/1413 target=_blank>Triopas</a> were <a href=/people/254 target=_blank>Prometheus</a>, and <a href=/people/2139 target=_blank>Epimetheus</a>, and Arias, and <a href=/people/447 target=_blank>Cecrops</a> of double nature, and <a href=/people/389 target=_blank>Io</a>; in the time of Crotopas was the burning of <a href=/people/273 target=_blank>Phaethon</a> and the flood of <a href=/people/10993 target=_blank>Deucalion</a>; in the time of <a href=/people/844 target=_blank>Sthenelus</a> was the reign of <a href=/people/1385 target=_blank>Amphictyon</a> and the coming of <a href=/people/303 target=_blank>Danaus</a> into <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>Peloponnesus</a>, and the founding of <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardania</a> by <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a>, and the return of <a href=/people/434 target=_blank>Europa</a> from phoenicia to <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>; in the time of <a href=/people/6078 target=_blank>Lynceus</a> was the abduction of <a href=/people/138 target=_blank>Kore</a>, and the founding of the temple in <a about=https://topostext.org/place/380235SEle class=place long=23.538 lat=38.0411>Eleusis</a>, and the husbandry of <a href=/people/702 target=_blank>Triptolemus</a>, and the coming of <a href=/people/83 target=_blank>Cadmus</a> to <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>, and the reign of <a href=/people/119 target=_blank>Minos</a>; in the time of <a href=/people/768 target=_blank>Proetus</a> was the war of <a href=/people/793 target=_blank>Eumolpus</a> against the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>; in the time of <a href=/people/864 target=_blank>Acrisius</a> was the coming over of <a href=/people/170 target=_blank>Pelops</a> from <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a>, and the coming of <a href=/people/356 target=_blank>Ion</a> to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and the second <a href=/people/447 target=_blank>Cecrops</a>, and the deeds of <a href=/people/153 target=_blank>Perseus</a> and <a href=/people/5 target=_blank>Dionysus</a>, and <a href=/people/905 target=_blank>Musaeus</a>, the disciple of <a href=/people/143 target=_blank>Orpheus</a>; and in the reign of <a href=/people/47 target=_blank>Agamemnon</a> <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> was taken. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/39 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:40'><b>&sect; 40</b>&nbsp;&nbsp;Therefore, from what has been said it is evident that <a href=/people/11035 target=_blank>Moses</a> was older than the ancient heroes, wars, and demons. And we ought rather to believe him, who stands before them in point of age, than the Greeks, who, without being aware of it, drew his doctrines [as] from a fountain. For many of the sophists among them, stimulated by curiosity, endeavoured to adulterate whatever they learned from <a href=/people/11035 target=_blank>Moses</a>, and from those who have philosophized like him, first that they might be considered as having something of their own, and secondly, that covering up by a certain rhetorical artifice whatever things they did not understand, they might misrepresent the truth as if it were a fable. But what the learned among the Greeks have said concerning our polity and the history of our laws, and how many and what kind of men have written of these things, will be shown in the treatise against those who have discoursed of divine things. ] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/40 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:41'><b>&sect; 41</b>&nbsp;&nbsp;But the matter of principal importance is to endeavour with all accuracy to make it clear that <a href=/people/11035 target=_blank>Moses</a> is not only older than <a href=/people/9 target=_blank>Homer</a>, but than all the writers that were before him — older than <a href=/people/696 target=_blank>Linus</a>, <a href=/people/1462 target=_blank>Philammon</a>, <a href=/people/1343 target=_blank>Thamyris</a>, <a href=/people/393 target=_blank>Amphion</a>, <a href=/people/905 target=_blank>Musaeus</a>, <a href=/people/143 target=_blank>Orpheus</a>, <a href=/people/1474 target=_blank>Demodocus</a>, Phemius, <a href=/people/373 target=_blank>Sibylla</a>, <a href=/people/969 target=_blank>Epimenides</a> of <a about=https://topostext.org/place/352252IKre class=person long=25.1836 lat=35.2052>Crete</a>, who came to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, <a href=/people/1065 target=_blank>Aristaeus</a> of <a about=https://topostext.org/place/406276IPro class=person long=27.6167 lat=40.6167>Proconnesus</a>, who wrote the <a href=/people/11015 target=_blank>Arimaspia</a>, <a href=/people/8899 target=_blank>Asbolus</a> the <a href=/people/553 target=_blank>Centaur</a>, Isatis, <a href=/people/7618 target=_blank>Drymon</a>, <a href=/people/12252 target=_blank>Euclus</a> the <a about=https://topostext.org/place/350330RCyp class=person long=33 lat=35>Cyprian</a>, <a href=/people/920 target=_blank>Horus</a> the <a about=https://topostext.org/place/377269PSam class=person long=26.935 lat=37.695>Samian</a>, and <a href=/people/10138 target=_blank>Pronapis</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>. Now, <a href=/people/696 target=_blank>Linus</a> was the teacher of <a href=/people/4 target=_blank>Hercules</a>, but <a href=/people/4 target=_blank>Hercules</a> preceded the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war by one generation; and this is manifest from his son <a href=/people/760 target=_blank>Tlepolemus</a>, who served in the army against <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. And <a href=/people/143 target=_blank>Orpheus</a> lived at the same time as <a href=/people/4 target=_blank>Hercules</a>; moreover, it is said that all the works attributed to him were composed by <a href=/people/3440 target=_blank>Onomacritus</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, who lived during the reign of the Pisistratids, about the fiftieth Olympiad. <a href=/people/905 target=_blank>Musaeus</a> was a disciple of <a href=/people/143 target=_blank>Orpheus</a>. <a href=/people/393 target=_blank>Amphion</a>, since he preceded the siege of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> by two generations, forbids our collecting further particulars about him for those who are desirous of information. <a href=/people/1474 target=_blank>Demodocus</a> and Phemius lived at the very time of the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> war; for the one resided with the suitors, and the other with the <a href=/people/629 target=_blank>Phaeacians</a>. <a href=/people/1343 target=_blank>Thamyris</a> and <a href=/people/1462 target=_blank>Philammon</a> were not much earlier than these. Thus, concerning their several performances in each kind, and their times and the record of them, we have written very fully, and, as I think, with all exactness. But, that we may complete. what is still wanting, I will give my explanation respecting the men who are esteemed wise. <a href=/people/119 target=_blank>Minos</a>, who has been thought to excel in every kind of wisdom, and mental acuteness, and legislative capacity, lived in the time of <a href=/people/6078 target=_blank>Lynceus</a>, who reigned after <a href=/people/303 target=_blank>Danaus</a> in the eleventh generation after <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>. <a href=/people/78 target=_blank>Lycurgus</a>, who was born long after the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, gave laws to the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>. <a href=/people/1130 target=_blank>Draco</a> is found to have lived about the thirty-ninth Olympiad, <a href=/people/76 target=_blank>Solon</a> about the forty-sixth, and <a href=/people/58 target=_blank>Pythagoras</a> about the sixty-second. We have shown that the Olympiads commenced years after the taking of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. These facts being demonstrated, we shall briefly remark concerning the age of the seven wise men. The oldest of these, <a href=/people/263 target=_blank>Thales</a>, lived about the fiftieth Olympiad; and I have already spoken briefly of those who came after him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/41 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg1766.tlg001:42'><b>&sect; 42</b>&nbsp;&nbsp;These things, O Greeks, I <a href=/people/4311 target=_blank>Tatian</a>, a disciple of the barbarian philosophy, have composed for you. I was born in the land of the <a href=/people/196 target=_blank>Assyrians</a>, having been first instructed in your doctrines, and afterwards in those which I now undertake to proclaim. Henceforward, knowing who God is and what is His work, I present myself to you prepared for an examination concerning my doctrines, while I adhere immoveably to that mode of life which is according to God. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href=http://cts.perseids.org/read/greekLit/tlg1766/tlg001/perseus-grc1/42 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 1867                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=546', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas546";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=546';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

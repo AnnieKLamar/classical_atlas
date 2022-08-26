@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Xenophon, Oikonomikos' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Xenophon, Oikonomikos (Revenues), translated by Henry Graham Dakyns (1838–1911), edition of 1893, now in the public domain, text derived from Project Gutenberg.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-354' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -354' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/95' content='urn:cts:greekLit:tlg0032.tlg003' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n80036673' content='Xenophon'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n87914526' content='Henry Graham Dakyns (1838–1911)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.gutenberg.org' /><h2>Xenophon, Oikonomikos</h2>Xenophon, Oikonomikos (Revenues), translated by Henry Graham Dakyns (1838–1911), edition of 1893, now in the public domain, text derived from Project Gutenberg. This text has 42 tagged references to 20 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0032.tlg003'>urn:cts:greekLit:tlg0032.tlg003</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q2555163'>Q2555163</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:1.1'><b>&sect; 1.1</b>&nbsp;&nbsp;For myself I hold to the opinion that the qualities of the leading statesmen in a state, whatever they be, are reproduced in the character of the constitution itself. As, however, it has been maintained by certain leading statesmen in <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> that the recognised standard of right and wrong is as high at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> as elsewhere, but that, owing to the pressure of poverty on the masses, a certain measure of injustice in their dealing with the allied states could not be avoided; I set myself to discover whether by any manner of means it were possible for the citizens of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> to be supported solely from the soil of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> itself, which was obviously the most equitable solution. For if so, herein lay, as I believed, the antidote at once to their own poverty and to the feeling of suspicion with which they are regarded by the rest of Hellas. I had no sooner begun my investigation than one fact presented itself clearly to my mind, which is that the country itself is made by nature to provide the amplest resources. And with a view to establishing the truth of this initial proposition I will describe the physical features of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:1.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:1.2'><b>&sect; 1.2</b>&nbsp;&nbsp;In the first place, the extraordinary mildness of the climate is proved by the actual products of the soil. Numerous plants which in many parts of the world appear as stunted leafless growths are here fruit-bearing. And as with the soil so with the sea indenting our coasts, the varied productivity of which is exceptionally great. Again with regard to those kindly fruits of earth which Providence bestows on man season by season, one and all they commence earlier and end later in this land. Nor is the supremacy of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> shown only in those products which year after year flourish and grow old, but the land contains treasures of a more perennial kind. Within its folds lies imbedded by nature an unstinted store of marble, out of which are chiselled temples and altars of rarest beauty and the glittering splendour of images sacred to the gods. This marble, moreover, is an object of desire to many foreigners, Hellenes and barbarians alike. Then there is land which, although it yields no fruit to the sower, needs only to be quarried in order to feed many times more mouths than it could as corn-land. Doubtless we owe it to a divine dispensation that our land is veined with silver; if we consider how many neighbouring states lie round us by land and sea and yet into none of them does a single thinnest vein of silver penetrate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:1.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:1.3'><b>&sect; 1.3</b>&nbsp;&nbsp;Indeed it would be scarcely irrational to maintain that the city of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> lies at the navel, not of Hellas merely, but of the habitable world. So true is it, that the farther we remove from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> the greater the extreme of heat or cold to be encountered; or to use another illustration, the traveller who desires to traverse the confines of Hellas from end to end will find that, whether he voyages by sea or by land, he is describing a circle, the centre of which is <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:1.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.4>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:1.4'><b>&sect; 1.4</b>&nbsp;&nbsp;Once more, this land though not literally sea-girt has all the advantages of an island, being accessible to every wind that blows, and can invite to its bosom or waft from its shore all products, since it is peninsular; whilst by land it is the emporium of many markets, as being a portion of the continent. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:1.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.5>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:1.5'><b>&sect; 1.5</b>&nbsp;&nbsp;Lastly, while the majority of states have barbarian neighbours, the source of many troubles, <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> has as her next-door neighbours civilised states which are themselves far remote from the barbarians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:1.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:2.1'><b>&sect; 2.1</b>&nbsp;&nbsp;All these advantages, to repeat what I have said, may, I believe, be traced primarily to the soil and position of <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> itself. But these natural blessings may be added to: in the first place, by a careful handling of our resident alien population. And, for my part, I can hardly conceive of a more splendid source of revenue than lies open in this direction. Here you have a self-supporting class of residents conferring large benefits upon the state, and instead of receiving payment themselves, contributing on the contrary to the gain of the exchequer by the sojourners' tax. Nor, under the term careful handling, do I demand more than the removal of obligations which, whilst they confer no benefit on the state, have an air of inflicting various disabilities on the resident aliens. And I would further relieve them from the obligation of serving as hoplites side by side with the citizen proper; since, beside the personal risk, which is great, the trouble of quitting trades and homesteads is no trifle. Incidentally the state itself would benefit by this exemption, if the citizens were more in the habit of campaigning with one another, rather than shoulder to shoulder with <a about=https://topostext.org/place/385280RLyd class=ethnic long=28 lat=38.5>Lydians</a>, <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a>, Syrians, and barbarians from all quarters of the world, who form the staple of our resident alien class. Besides the advantage (of so weeding the ranks), it would add a positive lustre to our city, were it admitted that the men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, her sons, have reliance on themselves rather than on foreigners to fight her battles. And further, supposing we offered our resident aliens a share in various other honourable duties, including the cavalry service, I shall be surprised if we do not increase the goodwill of the aliens themselves, whilst at the same time we add distinctly to the strength and grandeur of our city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:2.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:2.2'><b>&sect; 2.2</b>&nbsp;&nbsp;In the next place, seeing that there are at present numerous building sites within the city walls as yet devoid of houses, supposing the state were to make free grants of such land to foreigners for building purposes in cases where there could be no doubt as to the respectability of the applicant, if I am not mistaken, the result of such a measure will be that a larger number of persons, and of a better class, will be attracted to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> as a place of residence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:2.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:2.3'><b>&sect; 2.3</b>&nbsp;&nbsp;Lastly, if we could bring ourselves to appoint, as a new government office, a board of guardians of foreign residents like our Guardians of Orphans, with special privileges assigned to those guardians who should show on their books the greatest number of resident aliens — such a measure would tend to improve the goodwill of the class in question, and in all probability all people without a city of their own would aspire to the status of foreign residents in <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and so further increase the revenues of the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:2.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.1'><b>&sect; 3.1</b>&nbsp;&nbsp;At this point I propose to offer some remarks in proof of the attractions and advantages of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> as a centre of commercial enterprise. In the first place, it will hardly be denied that we possess the finest and safest <a about=https://topostext.org/place/379236UKan class=place long=23.642 lat=37.942>harbourage</a> for shipping, where vessels of all sorts can come to moorings and be laid up in absolute security as far as stress of weather is concerned. But further than that, in most states the trader is under the necessity of lading his vessel with some merchandise or other in exchange for his cargo, since the current coin has no circulation beyond the frontier. But at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> he has a choice: he can either in return for his wares export a variety of goods, such as human beings seek after, or, if he does not desire to take goods in exchange for goods, he has simply to export silver, and he cannot have a more excellent freight to export, since wherever he likes to sell it he may look to realise a large percentage on his capital. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.2'><b>&sect; 3.2</b>&nbsp;&nbsp;Or again, supposing prizes were offered to the magistrates in charge of the market for equitable and speedy settlements of points in dispute to enable any one so wishing to proceed on his voyage without hindrance, the result would be that far more traders would trade with us and with greater satisfaction. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.3'><b>&sect; 3.3</b>&nbsp;&nbsp;It would indeed be a good and noble institution to pay special marks of honour, such as the privilege of the front seat, to merchants and shipowners, and on occasion to invite to hospitable entertainment those who, through something notable in the quality of ship or merchandise, may claim to have done the state a service. The recipients of these honours will rush into our arms as friends, not only under the incentive of gain, but of distinction also. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.4>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.4'><b>&sect; 3.4</b>&nbsp;&nbsp;Now the greater the number of people attracted to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> either as visitors or as residents, clearly the greater the development of imports and exports. More goods will be sent out of the country, there will be more buying and selling, with a consequent influx of money in the shape of rents to individuals and dues and customs to the state exchequer. And to secure this augmentation of the revenues, mind you, not the outlay of one single penny; nothing needed beyond one or two philanthropic measures and certain details of supervision. (9) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.5>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.5'><b>&sect; 3.5</b>&nbsp;&nbsp;With regard to the other sources of revenue which I contemplate, I admit, it is different. For these I recognise the necessity of a capital to begin with. I am not, however, without good hope that the citizens of this state will contribute heartily to such an object, when I reflect on the large sums subscribed by the state on various late occasions, as, for instance, when reinforcements were sent to the <a about=https://topostext.org/place/375223RArk class=ethnic long=22.3 lat=37.5>Arcadians</a> under the command of <a href=/people/1784 target=_blank>Lysistratus</a>, and again at the date of the generalship of <a href=/people/9481 target=_blank>Hegesileos</a>. I am well aware that ships of war are frequently despatched and that too although it is uncertain whether the venture will be for the better or for the worse, and the only certainty is that the contributor will not recover the sum subscribed nor have any further share in the object for which he gave his contribution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.6>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.6'><b>&sect; 3.6</b>&nbsp;&nbsp;But for a sound investment I know of nothing comparable with the initial outlay to form this fund. Any one whose contribution amounts to ten minae may look forward to a return as high as he would get on bottomry, of nearly one-fifth, as the recipient of three obols a day. The contributor of five minae will on the same principle get more than a third, while the majority of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> will get more than cent per cent on their contribution. That is to say, a subscription of one mina will put the subscriber in possession of nearly double that sum, and that, moreover, without setting foot outside <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, which, as far as human affairs go, is as sound and durable a security as possible. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.7>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.7'><b>&sect; 3.7</b>&nbsp;&nbsp;Moreover, I am of opinion that if the names of contributors were to be inscribed as benefactors for all time, many foreigners would be induced to contribute, and possibly not a few states, in their desire to obtain the right of inscription; indeed I anticipate that some kings, tyrants, and satraps will display a keen desire to share in such a favour. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.8>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:3.8'><b>&sect; 3.8</b>&nbsp;&nbsp;To come to the point. Were such a capital once furnished, it would be a magnificent plan to build lodging-houses for the benefit of shipmasters in the neighbourhood of the harbours, in addition to those which exist; and again, on the same principle, suitable places of meeting for merchants, for the purposes of buying and selling; and thirdly, public lodging-houses for persons visiting the city. Again, supposing dwelling-houses and stores for vending goods were fitted up for retail dealers in <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Piraeus</a> and the city, they would at once be an ornament to the state and a fertile source of revenue. Also it seems to me it would be a good thing to try and see if, on the principle on which at present the state possesses public warships, it would not be possible to secure public merchant vessels, to be let out on the security of guarantors just like any other public property. If the plan were found feasible this public merchant navy would be a large source of extra revenue. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:3.8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.1'><b>&sect; 4.1</b>&nbsp;&nbsp;I come to a new topic. I am persuaded that the establishment of the silver mines on a proper footing would be followed by a large increase in wealth apart from the other sources of revenue. And I would like, for the benefit of those who may be ignorant, to point out what the capacity of these mines really is. You will then be in a position to decide how to turn them to better account. It is clear, I presume, to every one that these mines have for a very long time been in active operation; at any rate no one will venture to fix the date at which they first began to be worked. Now in spite of the fact that the silver ore has been dug and carried out for so long a time, I would ask you to note that the mounds of rubbish so shovelled out are but a fractional portion of the series of hillocks containing veins of silver, and as yet unquarried. Nor is the silver-bearing region gradually becoming circumscribed. On the contrary it is evidently extending in wider area from year to year. That is to say, during the period in which thousands of workers have been employed within the mines no hand was ever stopped for want of work to do. Rather, at any given moment, the work to be done was more than enough for the hands employed. And so it is today with the owners of slaves working in the mines; no one dreams of reducing the number of his hands. On the contrary, the object is perpetually to acquire as many additional hands as the owner possibly can. The fact is that with few hands to dig and search, the find of treasure will be small, but with an increase in labour the discovery of the ore itself is more than proportionally increased. So much so, that of all operations with which I am acquainted, this is the only one in which no sort of jealousy is felt at a further development of the industry. I may go a step farther; every proprietor of a farm will be able to tell you exactly how many yoke of <a href=/people/10961 target=_blank>oxen</a> are sufficient for the estate, and how many farm hands. To send into the field more than the exact number requisite every farmer would consider a dead loss. But in silver mining (operations) the universal complaint is the want of hands. Indeed there is no analogy between this and other industries. With an increase in the number of bronze-workers articles of bronze may become so cheap that the bronze-worker has to retire from the field. And so again with ironfounders. Or again, in a plethoric condition of the corn and wine market these fruits of the soil will be so depreciated in value that the particular husbandries cease to be remunerative, and many a farmer will give up his tillage of the soil and betake himself to the business of a merchant, or of a shopkeeper, to banking or money-lending. But the converse is the case in the working of silver; there the larger the quantity of ore discovered and the greater the amount of silver extracted, the greater the number of persons ready to engage in the operation. One more illustration: take the case of movable property. No one when he has got sufficient furniture for his house dreams of making further purchases on this head, but of silver no one ever yet possessed so much that he was forced to cry enough. On the contrary, if ever anybody does become possessed of an immoderate amount he finds as much pleasure in digging a hole in the ground and hoarding it as in the actual employment of it. And from a wider point of view: when a state is prosperous there is nothing which people so much desire as silver. The men want money to expend on beautiful armour and fine <a href=/people/10959 target=_blank>horses</a>, and houses, and sumptuous paraphernalia of all sorts. The women betake themselves to expensive apparel and ornaments of gold. Or when states are sick, either through barrenness of corn and other fruits, or through war, the demand for current coin is even more imperative (whilst the ground lies unproductive), to pay for necessaries or military aid. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.2'><b>&sect; 4.2</b>&nbsp;&nbsp;And if it be asserted that gold is after all just as useful as silver, without gainsaying the proposition I may note this fact about gold, that, with a sudden influx of this metal, it is the gold itself which is depreciated whilst causing at the same time a rise in the value of silver. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.3'><b>&sect; 4.3</b>&nbsp;&nbsp;The above facts are, I think, conclusive. They encourage us not only to introduce as much human labour as possible into the mines, but to extend the scale of operations within, by increase of plant, etc., in full assurance that there is no danger either of the ore itself being exhausted or of silver becoming depreciated. And in advancing these views I am merely following a precedent set me by the state herself. So it seems to me, since the state permits any foreigner who desires it to undertake mining operations on a footing of equality with her own citizens. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.4>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.4'><b>&sect; 4.4</b>&nbsp;&nbsp;But, to make my meaning clearer on the question of maintenance, I will at this point explain in detail how the silver mines may be furnished and extended so as to render them much more useful to the state. Only I would premise that I claim no sort of admiration for anything which I am about to say, as though I had hit upon some recondite discovery. Since half of what I have to say is at the present moment still patent to the eyes of all of us, and as to what belongs to past history, if we are to believe the testimony of our fathers, things were then much of a piece with what is going on now. No, what is really marvellous is that the state, with the fact of so many private persons growing wealthy at her expense, and under her very eyes, should have failed to imitate them. It is an old story, trite enough to those of us who have cared to attend to it, how once on a time <a href=/people/115 target=_blank>Nicias</a>, the son of <a href=/people/1333 target=_blank>Niceratus</a>, owned a thousand men in the silver mines, whom he let out to <a href=/people/3254 target=_blank>Sosias</a>, a Thracian, on the following terms. <a href=/people/3254 target=_blank>Sosias</a> was to pay him a net obol a day, without charge or deduction, for every slave of the thousand, and be responsible for keeping up the number perpetually at that figure. So again <a href=/people/919 target=_blank>Hipponicus</a> had six hundred slaves let out on the same principle, which brought him in a net mina a day without charge or deduction. Then there was Philemonides, with three hundred, bringing him in half a mina, and others, I make no doubt there were, making profits in proportion to their respective resources and capital. But there is no need to revert to ancient history. At the present moment there are hundreds of human beings in the mines let out on the same principle. And given that my proposal were carried into effect, the only novelty in it is that, just as the individual in acquiring the ownership of a gang of slaves finds himself at once provided with a permanent source of income, so the state, in like fashion, should possess herself of a body of public slaves, to the number, say, of three for every <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> citizen. As to the feasibility of our proposals, I challenge any one whom it may concern to test the scheme point by point, and to give his verdict. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.5>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.5'><b>&sect; 4.5</b>&nbsp;&nbsp;With regard to the price then of the men themselves, it is obvious that the public treasury is in a better position to provide funds than any private individuals. What can be easier than for the Council to invite by public proclamation all whom it may concern to bring their slaves, and to buy up those produced? Assuming the purchase to be effected, is it credible that people will hesitate to hire from the state rather than from the private owner, and actually on the same terms? People have at all events no hesitation at present in hiring consecrated grounds, sacred victims, houses, etc., or in purchasing the right of farming taxes from the state. To ensure the preservation of the purchased property, the treasury can take the same securities precisely from the lessee as it does from those who purchase the right of farming its taxes. Indeed, fraudulent dealing is easier on the part of the man who has purchased such a right than of the man who hires slaves. Since it is not easy to see how the exportation of public money is to be detected, when it differs in no way from private money. Whereas it will take a clever thief to make off with these slaves, marked as they will be with the public stamp, and in face of a heavy penalty attached at once to the sale and exportation of them. Up to this point then it would appear feasible enough for the state to acquire property in men and to keep a safe watch over them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.6>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.6'><b>&sect; 4.6</b>&nbsp;&nbsp;But with reference to an opposite objection which may present itself to the mind of some one: what guarantee is there that, along with the increase in the supply of labourers, there will be a corresponding demand for their services on the part of contractors? It may be reassuring to note, first of all, that many of those who have already embarked on mining operations will be anxious to increase their staff of labourers by hiring some of these public slaves (remember, they have a large capital at stake; and again, many of the actual labourers now engaged are growing old); and secondly, there are many others, <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> and foreigners alike, who, though unwilling and indeed incapable of working physically in the mines, will be glad enough to earn a livelihood by their wits as superintendents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.7>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.7'><b>&sect; 4.7</b>&nbsp;&nbsp;Let it be granted, however, that at first a nucleus of twelve hundred slaves is formed. It is hardly too sanguine a supposition that out of the profits alone, within five or six years this number may be increased to at least six thousand. Again, out of that number of six thousand — supposing each slave to being in an obol a day clear of all expenses — we get a revenue of sixty talents a year. And supposing twenty talents out of this sum laid out on the purchase of more slaves, there will be forty talents left for the state to apply to any other purpose it may find advisable. By the time the round number of ten thousand is reached the yearly income will amount to a hundred talents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.8>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.8'><b>&sect; 4.8</b>&nbsp;&nbsp;As a matter of fact, the state will receive much more than these figures represent, as any one here will bear me witness who can remember what the dues derived from slaves realised before the troubles at <a about=https://topostext.org/place/382238DDek class=place long=23.794 lat=38.151>Decelea</a>. Testimony to the same effect is borne by the fact, that in spite of the countless number of human beings employed in the silver mines within the whole period, the mines present exactly the same appearance today as they did within the recollection of our forefathers. And once more everything that is taking place today tends to prove that, whatever the number of slaves employed, you will never have more than the works can easily absorb. The miners find no limit of depth in sinking shafts or laterally in piercing galleries. To open cuttings in new directions today is just as possible as it was in former times. In fact no one can take on himself to say whether there is more ore in the regions already cut into, or in those where the pick has not yet struck. Well then, it may be asked, why is it that there is not the same rush to make new cuttings now as in former times? The answer is, because the people concerned with the mines are poorer nowadays. The attempt to restart operations, renew plant, etc., is of recent date, and any one who ventures to open up a new area runs a considerable risk. Supposing he hits upon a productive field, he becomes a rich man, but supposing he draws a blank, he loses the whole of his outlay; and that is a danger which people of the present time are shy of facing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.9>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.9'><b>&sect; 4.9</b>&nbsp;&nbsp;The citizens of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> are divided, as we all know, into ten tribes. Let the state then assign to each of these ten tribes an equal number of slaves, and let the tribes agree to associate their fortunes and proceed to open new cuttings. What will happen? Any single tribe hitting upon a productive lode will be the means of discovering what is advantageous to all. Or, supposing two or three, or possibly the half of them, hit upon a lode, clearly these several operations will proportionally be more remunerative still. That the whole ten will fail is not at all in accordance with what we should expect from the history of the past. It is possible, of course, for private persons to combine in the same way, and share their fortunes and minimise their risks. Nor need you apprehend, sirs, that a state mining company, established on this principle, will prove a thorn in the side of the private owner, or the private owner prove injurious to the state. But rather like allies who render each other stronger the more they combine, so in these silver mines, the greater number of companies at work the larger the riches they will discover and disinter. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.10>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.10'><b>&sect; 4.10</b>&nbsp;&nbsp;This then is a statement, as far as I can make it clear, of the method by which, with the proper state organisation, every <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> may be supplied with ample maintenance at the public expense. Possibly some of you may be calculating that the capital requisite will be enormous. They may doubt if a sufficient sum will ever be subscribed to meet all the needs. All I can say is, even so, do not despond. It is not as if it were necessary that every feature of the scheme should be carried out at once, or else there is to be no advantage in it at all. On the contrary, whatever number of houses are erected, or ships are built, or slaves purchased, etc., these portions will begin to pay at once. In fact, the bit-by-bit method of proceeding will be more advantageous than a simultaneous carrying into effect of the whole plan, to this extent: if we set about erecting buildings wholesale we shall make a more expensive and worse job of it than if we finish them off gradually. Again, if we set about bidding for hundreds of slaves at once we shall be forced to purchase an inferior type at a higher cost. Whereas, if we proceed tentatively, as we find ourselves able, we can complete any well-devised attempt at our leisure, and, in case of any obvious failure, take warning and not repeat it. Again, if everything were to be carried out at once, it is we, sirs, who must make the whole provision at our expense. Whereas, if part were proceeded with and part stood over, the portion of revenue in hand will help to furnish what is necessary to go on with. But to come now to what every one probably will regard as a really grave danger, lest the state may become possessed of an over large number of slaves, with the result that the works will be overstocked. That again is an apprehension which we may escape if we are careful not to put into the works more hands from year to year than the works themselves demand. Thus I am persuaded that the easiest method of carrying out this scheme, as a whole, is also the best. If, however, you are persuaded that, owing to the extraordinary property taxes to which you have been subjected during the present war, you will not be equal to any further contributions at present, what you should do is this: during the current year resolve to carry on the financial administration of the state within the limits of a sum equivalent to that which your dues realised before the peace. That done, you are at liberty to take any surplus sum, whether directly traceable to the peace itself, or to the more courteous treatment of our resident aliens and traders, or to the growth of the imports and exports, coincident with the collecting together of larger masses of human beings, or to an augmentation of harbour and market dues: this surplus, I say, however derived, you should take and invest so as to bring in the greatest revenue. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.11>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.11'><b>&sect; 4.11</b>&nbsp;&nbsp;Again, if there is an apprehension on the part of any that the whole scheme will crumble into nothing on the first outbreak of war, I would only beg these alarmists to note that, under the condition of things which we propose to bring about, war will have more terrors for the attacking party than for this state. Since what possession I should like to know can be more serviceable for war than that of men? Think of the many ships which they will be capable of manning on public service. Think of the number who will serve on land as infantry (in the public service) and will bear hard upon the enemy. Only we must treat them with courtesy. For myself, my calculation is, that even in the event of war we shall be quite able to keep a firm hold of the silver mines. I may take it, we have in the neighbourhood of the mines certain fortresses — one on the southern slope in <a about=https://topostext.org/place/377240DAna class=place long=23.9508 lat=37.7273>Anaphlystus</a>; and we have another <a about=https://topostext.org/place/377241FTAN class=place long=24.0672 lat=37.7394>fort</a> on the northern side in <a about=https://topostext.org/place/377241DTho class=place long=24.0516 lat=37.7392>Thoricus</a>, the two being about seven and a half miles apart. Suppose then a third breastwork were to be placed between these, on the highest point of <a about=https://topostext.org/place/377240DBes class=place long=23.996 lat=37.7244>Besa</a>, that would enable the operatives to collect into one out of all the fortresses, and at the first perception of a hostile movement it would only be a short distance for each to retire into safety. In the event of an enemy advancing in large numbers they might certainly make off with whatever corn or wine or <a href=/people/10978 target=_blank>cattle</a> they found outside. But even if they did get hold of the silver ore, it would be little better to them than a heap of stones. But how is an enemy ever to march upon the mines in force? The nearest state, <a about=https://topostext.org/place/380233PMeg class=place long=23.34285 lat=37.997>Megara</a>, is distant, I take it, a good deal over sixty miles; and the next closest, <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a>, a good deal nearer seventy. Supposing then an enemy to advance from some such point to attack the mines, he cannot avoid passing <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>; and presuming his force to be small, we may expect him to be annihilated by our cavalry and frontier police. I say, presuming his force to be small, since to march with anything like a large force, and thereby leave his own territory denuded of troops, would be a startling achievement. Why, the fortified city of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> will be much closer the states of the attacking parties than they themselves will be by the time they have got to the mines. But, for the sake of argument, let us suppose an enemy to have arrived in the neighbourhood of <a about=https://topostext.org/place/377241RLau class=place long=24.05 lat=37.71>Laurium</a>; how is he going to stop there without provisions? To go out in search of supplies with a detachment of his force would imply risk, both for the foraging party and for those who have to do the fighting; whilst, if they are driven to do so in force each time, they may call themselves besiegers, but they will be practically in a state of siege themselves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.12>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.12'><b>&sect; 4.12</b>&nbsp;&nbsp;But it is not the income derived from the slaves alone to which we look to help the state towards the effective maintenance of her citizens, but with the growth and concentration of a thick population in the mining district various sources of revenue will accrue, whether from the market at <a about=https://topostext.org/place/377240DSou class=place long=24.0521 lat=37.6812>Sounion</a>, or from the various state buildings in connection with the silver mines, from furnaces and all the rest. Since we must expect a thickly populated city to spring up here, if organised in the way proposed, and plots of land will become as valuable to owners out there as they are to those who possess them in the neighbourhood of the capital. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4.13>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:4.13'><b>&sect; 4.13</b>&nbsp;&nbsp;If, at this point, I may assume my proposals to have been carried into effect, I think I can promise, not only that our city shall be relieved from a financial strain, but that she shall make a great stride in orderliness and in tactical organisation, she shall grow in martial spirit and readiness for war. I anticipate that those who are under orders to go through gymnastic training will devote themselves with a new zeal to the details of the training school, now that they will receive a larger maintenance whilst under the orders of the trainer in the torch race. So again those on garrison duty in the various fortresses, those enrolled as peltasts, or again as frontier police to protect the rural districts, one and all will carry out their respective duties more ardently when the maintenance appropriate to these several functions is duly forthcoming. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:4.13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:5.1'><b>&sect; 5.1</b>&nbsp;&nbsp;But now, if it is evident that, in order to get the full benefit of all these sources of revenue, peace is an indispensable condition — if that is plain, I say, the question suggests itself, would it not be worth while to appoint a board to act as guardians of peace? Since no doubt the election of such a magistracy would enhance the charm of this city in the eyes of the whole world, and add largely to the number of our visitors. But if any one is disposed to take the view, that by adopting a persistent peace policy, this city will be shorn of her power, that her glory will dwindle and her good name be forgotten throughout the length and breadth of Hellas, the view so taken by our friends here is in my poor judgment somewhat unreasonable. For they are surely the happy states, they, in popular language, are most fortune-favoured, which endure in peace the longest season. And of all states <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> is pre-eminently adapted by nature to flourish and wax strong in peace. The while she abides in peace she cannot fail to exercise an attractive force on all. From the mariner and the merchant upwards, all seek her, flocking they come; the wealthy dealers in corn and wine and oil, the owner of many <a href=/people/10978 target=_blank>cattle</a>. And not these only, but the man who depends upon his wits, whose skill it is to do business and make gain out of money and its employment. And here another crowd, artificers of all sorts, artists and artisans, professors of wisdom, philosophers, and poets, with those who exhibit and popularise their works. And next a new train of pleasure-seekers, eager to feast on everything sacred or secular, which may captivate and charm eye and ear. Or once again, where are all those who seek to effect a rapid sale or purchase of a thousand commodities, to find what they want, if not at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:5.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:5.2'><b>&sect; 5.2</b>&nbsp;&nbsp;But if there is no desire to gainsay these views — only that certain people, in their wish to recover that headship which was once the pride of our city, are persuaded that the accomplishment of their hopes is to be found, not in peace but in war, I beg them to reflect on some matters of history, and to begin at the beginning, the <a href=/people/538 target=_blank>Median</a> war. Was it by high-handed violence, or as benefactors of the Hellenes, that we obtained the headship of the naval forces, and the trusteeship of the treasury of Hellas? Again, when through the too cruel exercise of her presidency, as men thought, <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> was deprived of her empire, is it not the case that even in those days, as soon as we held aloof from injustice we were once more reinstated by the islanders, of their own free will, as presidents of the naval force? Nay, did not the very <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a>, in return for certain benefits, grant to us <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> to exercise leadership over them? And at another date the Lacedemonans suffered us <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> to arrange the terms of hegemony at our discretion, not as driven to such submission, but in requital of kindly treatment. And today, owing to the chaos which reigns in Hellas, if I mistake not, an opportunity has fallen to this city of winning back our fellow-Hellenes without pain or peril or expense of any sort. It is given to us to try and harmonise states which are at war with one another: it is given to us to reconcile the differences of rival factions within those states themselves, wherever existing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:5.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:5.3'><b>&sect; 5.3</b>&nbsp;&nbsp;Make it but evident that we are minded to preserve the independence of the <a about=https://topostext.org/place/385225SDel class=demonym long=22.50108 lat=38.48264>Delphic</a> shrine in its primitive integrity, not by joining in any war but by the moral force of embassies throughout the length and breadth of Hellas — and I for one shall not be astonished if you find our brother Hellenes of one sentiment and eager under seal of solemn oaths to proceed against those, whoever they may be, who shall seek to step into the place vacated by the <a about=https://topostext.org/place/386227RPho class=ethnic long=22.7 lat=38.6>Phocians</a> and to occupy the sacred shrine. Make it but evident that you intend to establish a general peace by land and sea, and, if I mistake not, your efforts will find a response in the hearts of all. There is no man but will pray for the salvation of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> next to that of his own fatherland. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:5.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.4>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:5.4'><b>&sect; 5.4</b>&nbsp;&nbsp;Again, is any one persuaded that, looking solely to riches and money-making, the state may find war more profitable than peace? If so, I cannot conceive a better method to decide that question than to allow the mind to revert to the past history of the state and to note well the sequence of events. He will discover that in times long gone by during a period of peace vast wealth was stored up in the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a>, the whole of which was lavishly expended during a subsequent period of war. He will perceive, if he examines closely, that even at the present time we are suffering from its ill effects. Countless sources of revenue have failed, or if they have still flowed in, been lavishly expended on a multiplicity of things. Whereas, now that peace is established by sea, our revenues have expanded and the citizens of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> have it in their power to turn these to account as they like best. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:5.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5.5>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:5.5'><b>&sect; 5.5</b>&nbsp;&nbsp;But if you turn on me with the question, Do you really mean that even in the event of unjust attacks upon our city on the part of any, we are still resolutely to observe peace towards that offender? I answer distinctly, No! But, on the contrary, I maintain that we shall all the more promptly retaliate on such aggression in proportion as we have done no wrong to any one ourselves. Since that will be to rob the aggressor of his allies. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:5.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6.1>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:6.1'><b>&sect; 6.1</b>&nbsp;&nbsp;But now, if none of these proposals be impracticable or even difficult of execution; if rather by giving them effect we may conciliate further the friendship of Hellas, whilst we strengthen our own administration and increase our fame; if by the same means the people shall be provided with the necessaries of life, and our rich men be relieved of expenditure on war; if with the large surplus to be counted on, we are in a position to conduct our festivals on an even grander scale than heretofore, to restore our temples, to rebuild our forts and docks, and to reinstate in their ancient privileges our priests, our senators, our magistrates, and our knights — surely it were but reasonable to enter upon this project speedily, so that we too, even in our own day, may witness the unclouded dawn of prosperity in store for our city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:6.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6.2>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:6.2'><b>&sect; 6.2</b>&nbsp;&nbsp;But if you are agreed to carry out this plan, there is one further counsel which I would urge upon you. Send to <a about=https://topostext.org/place/395208SDod class=place long=20.7878 lat=39.5464>Dodona</a> and to <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>, I would beg you, and consult the will of Heaven whether such a provision and such a policy on our part be truly to the interest of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> both for the present and for the time to come. If the consent of Heaven be thus obtained, we ought then, I say, to put a further question: whose special favour among the gods shall we seek to secure with a view to the happier execution of these measures? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:6.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6.3>
+                            <p id='urn:cts:greekLit:tlg0032.tlg003:6.3'><b>&sect; 6.3</b>&nbsp;&nbsp;And in accordance with that answer, let us offer a sacrifice of happy omen to the deities so named, and commence the work; since if these transactions be so carried out with the will of God, have we not the right to prognosticate some further advance in the path of political progress for this whole state? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg003.perseus-grc1:6.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -354                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=95', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas95";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=95';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

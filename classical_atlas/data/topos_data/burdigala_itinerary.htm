@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Burdigala Itinerary' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Anonymous Pilgrim of Bordeaux, pilgrimage itinerary dated 333-34 AD, JBK's rough partial translation from the public-domain Latin text at servus.christus.rex.org placed on line by Eugenio Alliata, ofm (who offers a full English translation and notes).' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='334' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 334' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='freely available for any non-commercial purpose' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/231' content='urn:cts:latinLit:stoa0329.stoa001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/https://en.wikipedia.org/wiki/Itinerarium_Burdigalense' content='Anonymous'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2005086093' content='Brady Kiesling' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://servus.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html#60' /><h2>Burdigala Itinerary</h2>Anonymous Pilgrim of Bordeaux, pilgrimage itinerary dated 333-34 AD, JBK's rough partial translation from the public-domain Latin text at servus.christus.rex.org placed on line by Eugenio Alliata, ofm (who offers a full English translation and notes). This text has 243 tagged references to 170 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:stoa0329.stoa001'>urn:cts:latinLit:stoa0329.stoa001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q776772'>Q776772</a>;     <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=549>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:549'><b>&sect; 549</b>&nbsp;&nbsp;Itinerary from <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> and from <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Heraclea</a> through <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Avlona</a> and the city of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> to <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Mediolanum</a>, thus: <br />City <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>, on the Garonna River, on which to the ocean about 100 leagues. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=550>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:550'><b>&sect; 550</b>&nbsp;&nbsp;Change-station Stomatas 7 leagues. <br />Change-station Sirione 9 leagues. <br />City Vasatas 9 leagues. <br />Change-station Tres Arbores 5 leagues. <br />Change-station Oscineio 8 leagues. <br />Change-station Scittio 8 leagues. <br />Cities <a about=https://topostext.org/place/438001UElu class=place long=0.1014 lat=43.8609>Elusa</a> 8 leagues. <br />Change-station Vanesia 12 leagues. <br />City <a about=https://topostext.org/place/436006UAuc class=place long=0.5871 lat=43.6463>Auscius</a> 8 leagues. <br />Change-station Ad Sextum 6 leagues. <br />Change-station Hungunuerro 7 leagues. <br />Change-station Bucconis 7 leagues. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=551>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:551'><b>&sect; 551</b>&nbsp;&nbsp;Change-station Ad Iovem 7 leagues. <br />City <a about=https://topostext.org/place/436014UTol class=place long=1.443 lat=43.6044>Tholosa</a> 7 leagues. <br />Change-station Ad Nonum 9 miles. <br />Change-station Ad Vicesimum 11 miles. <br />inn Elusione 9 miles. <br />Change-station Sostomago 9 miles. <br />village Hebromago 10 miles. <br />Change-station Cedros 6 miles. <br />Castle <a about=https://topostext.org/place/432024UCar class=place long=2.3641 lat=43.2058>Carcassone</a> 8 miles. <br />Change-station Tricensimum 8 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=552>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:552'><b>&sect; 552</b>&nbsp;&nbsp;Change-station Hosuerbas 15 miles. <br />City <a about=https://topostext.org/place/432030UNar class=place long=3.004 lat=43.181>Narbone</a> 15 miles. <br />City <a about=https://topostext.org/place/433032UBae class=place long=3.2131 lat=43.3412>Beterris</a> 16 miles. <br />inn <a about=https://topostext.org/place/434034UCes class=place long=3.4206 lat=43.3951>Cessarone</a> 12 miles. <br />Change-station Foro Domiti 18 miles. <br />Change-station Sostantione 15 miles. <br />Change-station Ambrosi 15 miles. <br />City <a about=https://topostext.org/place/438044UNem class=place long=4.3604 lat=43.8384>Nemauso</a> 15 miles. <br />Change-station Ponte Aerarium 12 miles. <br />City <a about=https://topostext.org/place/437046UAre class=place long=4.6309 lat=43.6777>Arelate</a> 8 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=553>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:553'><b>&sect; 553</b>&nbsp;&nbsp;From <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> to <a about=https://topostext.org/place/437046UAre class=place long=4.6309 lat=43.6777>Arelate</a> 237 miles, change-stations 30, inns 11. <br />Change-station Arnagine 8 miles. <br />Change-station Bellinto 10 miles. <br />City Auenione 5 miles. <br />Change-station Cypresseta 5 miles. <br />City <a about=https://topostext.org/place/441048UCol class=place long=4.8074 lat=44.138>Arausione</a> 15 miles. <br />Change-station Ad Letoce 13 miles. <br />Change-station Novem Craris 10 miles. <br />inn Acuno 10 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=554>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:554'><b>&sect; 554</b>&nbsp;&nbsp;Change-station Bantianis 12 miles. <br />Change-station Umbenno 12 miles. <br />City <a about=https://topostext.org/place/449049UCol class=place long=4.8895 lat=44.9316>Valentia</a> 9 miles. <br />Change-station Cerebelliaca 12 miles. <br />inn <a href=/people/964 target=_blank>Augusta</a> 10 miles. <br />Change-station Darentiaca 12 miles. <br />City Dea <a href=/people/12040 target=_blank>Vocontiorum</a> 16 miles. <br />inn Luco 12 miles. <br />Change-station Vologatis 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=555>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:555'><b>&sect; 555</b>&nbsp;&nbsp;Where Gaura mountain is climbed. <br />Change-station Cambono 8 miles. <br />inn Monte Seleuci 8 miles. <br />Change-station Daviano 8 miles. <br />Change-station Ad <a href=/people/9402 target=_blank>Finem</a> 12 miles. <br />inn <a about=https://topostext.org/place/446061UVap class=place long=6.0781 lat=44.5582>Vappinco</a> 11 miles. <br />inn Catorigas 12 miles. <br />inn Ebreduno 16 miles. <br />Where the Cottian <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> begin. <br />Change-station Ramae 17 miles. <br />inn Byrigante 17 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=556>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:556'><b>&sect; 556</b>&nbsp;&nbsp;Where you ascend <a href=/people/5770 target=_blank>Matrona</a>. <br />Change-station Gesdaone 10 miles. <br />inn Ad Marte 9 miles. <br />City <a about=https://topostext.org/place/451070USeg class=place long=7.0449 lat=45.1333>Segussione</a> 16 miles. <br />Where <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> begins. <br />Change-station Ad Duodecimum 12 miles. <br />inn At the Border 12 miles. <br />Change-station Ad Octauum 8 miles. <br />City <a about=https://topostext.org/place/45177UAug class=place long=7.6854 lat=45.0733>Taurinis</a> 8 miles. <br />Change-station Ad <a href=/people/7581 target=_blank>Decimum</a> 10 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=557>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:557'><b>&sect; 557</b>&nbsp;&nbsp;inn Quadratis 12 miles. <br />Change-station Ceste 11 miles. <br />inn <a about=https://topostext.org/place/444066URig class=place long=6.6479 lat=44.3862>Rigomago</a> 8 miles. <br />Change-station Ad Medias 10 miles. <br />Change-station Ad Cottias 13 miles. <br />inn <a about=https://topostext.org/place/451088ULau class=place long=8.7941 lat=45.1224>Laumello</a> 12 miles. <br />Change-station Duriis 8 miles. <br />City <a about=https://topostext.org/place/452092UTic class=place long=9.1529 lat=45.1846>Ticino</a> 12 miles. <br />Change-station Ad <a href=/people/7581 target=_blank>Decimum</a> 10 miles. <br />City <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Mediolanum</a> 10 miles. <br />[inn Fluuio Frigido 12 miles]. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=558>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:558'><b>&sect; 558</b>&nbsp;&nbsp;From <a about=https://topostext.org/place/437046UAre class=place long=4.6309 lat=43.6777>Arelate</a> to <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Milan</a> 547 miles, change-stations 63, inns 22. <br />Change-station Argentea 10 miles. <br />Change-station Ponte Aureoli 10 miles. <br />City <a about=https://topostext.org/place/457097UBer class=place long=9.663 lat=45.704>Bergamo</a> 13 miles. <br />Change-station Tellegate 12 miles. <br />Change-station Tetellus 10 miles. <br />City <a about=https://topostext.org/place/455102UBri class=place long=10.2229 lat=45.5398>Brixa</a> 10 miles. <br />inn Ad Flexum 11 miles. <br />Change-station Beneventum 10 miles. <br />City <a about=https://topostext.org/place/454110UVer class=place long=10.997 lat=45.4472>Verona</a> 10 miles. <br />Change-station Cadiano 10 miles. <br />Change-station Aureos 10 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=559>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:559'><b>&sect; 559</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/455115UVic class=place long=11.5403 lat=45.5459>Vincentia</a> 11 miles. <br />Change-station Ad <a href=/people/9402 target=_blank>Finem</a> 11 miles. <br />City <a about=https://topostext.org/place/454119UPat class=place long=11.8766 lat=45.4096>Patavi</a> 10 miles. <br />Change-station Ad Duodecimum 12 miles. <br />Change-station Ad Nonum 11 miles. <br />City <a about=https://topostext.org/place/455124UAlt class=place long=12.3994 lat=45.5462>Altino</a> 9 miles. <br />Change-station Sanos 10 miles. <br />City <a about=https://topostext.org/place/458128UIul class=place long=12.8454 lat=45.7559>Concordia</a> 9 miles. <br />Change-station Apicilia 9 miles. <br />Change-station Ad <a href=/people/8473 target=_blank>Undecimum</a> 11 miles. <br />City <a about=https://topostext.org/place/458134UAqu class=place long=13.368 lat=45.7692>Aquileia</a> 11 miles. <br />From <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Milan</a> to <a about=https://topostext.org/place/458134UAqu class=place long=13.368 lat=45.7692>Aquileia</a> 125 miles, change-stations 24, inns 9. <br />Change-station Ad <a href=/people/8473 target=_blank>Undecimum</a> 11 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=560>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:560'><b>&sect; 560</b>&nbsp;&nbsp;Change-station Ad Fornolus 12 miles. <br />Change-station Castra 12 miles. <br />Where the Julian <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> rise. <br />Ad pirum Summit of the <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> 9 miles. <br />inn Longatico 10 miles. <br />Change-station Ad Nonum 9 miles. <br />City <a about=https://topostext.org/place/460145UEmo class=place long=14.5016 lat=46.0453>Emona</a> 14 miles. <br />Change-station Ad Quartodecimo 10 miles. <br />inn <a about=https://topostext.org/place/450121UAdr class=place long=12.0554 lat=45.049>Hadrante</a> 13 miles. <br />Border of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> and Norci. <br />Change-station Ad Medias 13 miles. <br />City Celeia 13 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=561>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:561'><b>&sect; 561</b>&nbsp;&nbsp;Change-station Lotodos 12 miles. <br />inn Ragindone 12 miles. <br />Change-station Pultovia 12 miles. <br />City <a about=https://topostext.org/place/464158UPoe class=place long=15.839 lat=46.415>Poetovione</a> 12 miles. <br />You cross the bridge and enter Lower <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a>. <br />Change-station Ramista 9 miles. <br />inn Aqua Viva 9 miles. <br />Change-station Populis 10 miles. <br />City Iovia 9 miles. <br />Change-station Sunista 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=562>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:562'><b>&sect; 562</b>&nbsp;&nbsp;Change-station Peritur 12 miles. <br />inn Lentolis 12 miles. <br />Change-station Cardono 10 miles. <br />Change-station Cocconis 12 miles. <br />inn Serota 10 miles. <br />Change-station Bolentia 10 miles. <br />inn Maurianis 9 miles. <br />You enter Upper <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a>. <br />Change-station Serena 8 miles. <br />inn Vereis 10 miles. <br />Change-station Iovalia 8 miles. <br />Change-station Mersella 8 miles. <br />City <a about=https://topostext.org/place/456187UMur class=place long=18.6963 lat=45.5602>Mursa</a> 10 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=563>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:563'><b>&sect; 563</b>&nbsp;&nbsp;Change-station Leutuoano 12 miles. <br />City <a about=https://topostext.org/place/453188UCib class=place long=18.8042 lat=45.2891>Cibalis</a> 12 miles. <br />Change-station Caelena 11 miles. <br />inn <a href=/people/10461 target=_blank>Ulmo</a> 11 miles. <br />Change-station Spaneta 10 miles. <br />Change-station Vedulia 8 miles. <br />City <a about=https://topostext.org/place/450196USir class=place long=19.6102 lat=44.9666>Sirmium</a> 8 miles. <br />From <a about=https://topostext.org/place/458134UAqu class=place long=13.368 lat=45.7692>Aquileia</a> to <a about=https://topostext.org/place/450196USir class=place long=19.6102 lat=44.9666>Sirmium</a> is 241 miles, inns 17, change-stations 38. <br />Change-station Fossis 9 miles. <br />City Bassianis 10 miles. <br />Change-station Noviciani 12 miles. <br />Change-station Altina 11 miles. <br />City <a about=https://topostext.org/place/448205USin class=place long=20.4504 lat=44.8235>Singiduno</a> 8 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=564>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:564'><b>&sect; 564</b>&nbsp;&nbsp;Border of <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a> and <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Misia</a>. <br />Change-station Ad Sextum 6 miles. <br />Change-station Tricornia Castra 6 miles. <br />Change-station Ad Sextum Miliarem 7 miles. <br />City Aureo Monte 6 miles. <br />Change-station Vingeio 6 miles. <br />City Margo 9 miles. <br />City <a about=https://topostext.org/place/447212UVim class=place long=21.2161 lat=44.7368>Viminacio</a> 10 miles. <br />Where <a href=/people/1446 target=_blank>Diocletian</a> killed <a href=/people/11052 target=_blank>Carinus</a>. <br />Change-station Ad Nonum 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=565>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:565'><b>&sect; 565</b>&nbsp;&nbsp;inn Munecipio 9 miles. <br />Change-station Iovis Pago 10 miles. <br />Change-station Bao 7 miles. <br />inn Idomo 9 miles. <br />Change-station Ad Octavum 9 miles. <br />inn Oromago 8 miles. <br />Border of <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Myssia</a> and Asia. <br />Change-station Sarmatorum 12 miles. <br />Change-station Caminitas 11 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=566>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:566'><b>&sect; 566</b>&nbsp;&nbsp;inn Ipompeis 9 miles. <br />Change-station Rampiana 12 miles. <br />City <a about=https://topostext.org/place/433219UNai class=place long=21.9489 lat=43.3102>Naisso</a> 12 miles. <br />Change-station Redicibus 12 miles. <br />Change-station <a href=/people/10461 target=_blank>Ulmo</a> 7 miles. <br />inn Romansiana 9 miles. <br />Change-station Latina 9 miles. <br />inn Turribus 9 miles. <br />Change-station Translitis 12 miles. <br />Change-station Ballanstra 10 miles. <br />inn Meldia 9 miles. <br />Change-station Scretisca 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=567>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:567'><b>&sect; 567</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/427233USer class=place long=23.3283 lat=42.6975>Serdica</a> 11 miles. <br />From <a about=https://topostext.org/place/450196USir class=place long=19.6102 lat=44.9666>Sirmium</a> to <a about=https://topostext.org/place/427233USer class=place long=23.3283 lat=42.6975>Serdica</a> 431 miles, change-stations 24, inns 13. <br />Change-station Extuomne 8 miles. <br />inn Buragara 9 miles. <br />Change-station Sparata 8 miles. <br />inn Hilica 10 miles. <br />Change-station Soneio 9 miles. <br />Border of <a about=https://topostext.org/place/445250RDac class=place long=25 lat=44.5>Dacia</a> and <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>. <br />Change-station Ponte Ucasi 6 miles. <br />inn Bona Inn 6 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=568>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:568'><b>&sect; 568</b>&nbsp;&nbsp;Change-station Alusore 9 miles. <br />inn Basapare 12 miles. <br />Change-station Tugugero 9 miles. <br />City <a about=https://topostext.org/place/421247PPhi class=place long=24.751 lat=42.1468>Filopopuli</a> 12 miles. <br />Change-station Sernota 10 miles. <br />Change-station Paramuole 8 miles. <br />inn Cillio 12 miles. <br />Change-station Carassura 9 miles. <br />inn Arzo 11 miles. <br />Change-station <a href=/people/6749 target=_blank>Palae</a> 7 miles. <br />inn Castozobra 11 miles. <br />Change-station Rhamis 7 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=569>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:569'><b>&sect; 569</b>&nbsp;&nbsp;inn Burdista 11 miles. <br />Change-station Daphabae 11 miles. <br />inn Nicae 9 miles. <br />Change-station Tarpodizo 10 miles. <br />Change-station Urisio 7 miles. <br />inn Virgoles 7 miles. <br />Change-station Narco 8 miles. <br />inn <a about=https://topostext.org/place/413275UDro class=place long=27.544 lat=41.3001>Drizupara</a> 9 miles. <br />Change-station Tipso 8 miles. <br />inn Tunorullo 8 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=570>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:570'><b>&sect; 570</b>&nbsp;&nbsp;Change-station Beodizo 8 miles. <br />City <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Heraclea</a> 9 miles. <br />Change-station Baunne 12 miles. <br />inn <a about=https://topostext.org/place/411282USel class=place long=28.2477 lat=41.0785>Salambria</a> 10 miles. <br />Change-station Callum 10 miles. <br />inn <a about=https://topostext.org/place/410286UAth class=place long=28.59 lat=41.034>Atyra</a> 10 miles. <br />inn <a href=/people/8238 target=_blank>Regio</a> 12 miles. <br />City <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=571>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:571'><b>&sect; 571</b>&nbsp;&nbsp;From <a about=https://topostext.org/place/427233USer class=place long=23.3283 lat=42.6975>Serdica</a> to <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> 341 miles, change-stations 12, inns 20. <br />All told from <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> to <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> 2221 miles, change-stations 230, inns 112. <br />We then traveled in the consulship of Dalmaticus and Zenophilus (333 AD) from the 3rd day before the calends of June (30 May) from <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Calcedonia</a> and returned to <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> on the 7th day before the calends of January (25 December) in the same year. <br />From <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> you cross the sea, come to <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Calcedonia</a>, and travel in the province of <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>. <br />Change-station Nassete 7.5 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=572>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:572'><b>&sect; 572</b>&nbsp;&nbsp;inn Pandicia 7.5 miles. <br />Change-station Pontamus 13 miles. <br />inn <a about=https://topostext.org/place/408295ULib class=place long=29.5398 lat=40.7696>Libissa</a> 9 miles. <br />Here lies <a href=/people/14 target=_blank>Hannibal</a>, who was king of the Africans. <br />Change-station Brunga 12 miles. <br />City <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nicomedia</a> 9 miles. <br />From <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> to <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nicomedia</a> 58 miles, change-stations 7, inns 3. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=573>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:573'><b>&sect; 573</b>&nbsp;&nbsp;Change-station Hyribolum 10 miles. <br />inn Libum 11 miles. <br />Change-station Liada 12 miles. <br />City <a about=https://topostext.org/place/404297PNic class=place long=29.7168 lat=40.4266>Nicia</a> 9 miles. <br />Change-station Schinae 8 miles. <br />inn Mido 7 miles. <br />Change-station Chogeae 6 miles. <br />Change-station Thateso 10 miles. <br />inn Tutaio 9 miles. <br />Change-station Protunica 11 miles. <br />Change-station Artemis 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=574>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:574'><b>&sect; 574</b>&nbsp;&nbsp;inn Dablae 6 miles. <br />inn Ceratae miles vi. <br />Border of Bithinia and <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a>. <br />Change-station Border 10 miles. <br />inn <a about=https://topostext.org/place/402311UDad class=place long=31.1095 lat=40.1959>Dadastano</a> 6 miles. <br />Change-station Trans Monte 6 miles. <br />Change-station Miles 11 miles. <br />City <a about=https://topostext.org/place/395316UGer class=place long=31.6285 lat=39.5252>Iuliopolis</a> 8 miles. <br />Change-station Hieronpotamum 13 miles. <br />inn Agannia 11 miles. <br />Change-station Petrobrogen 6 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=575>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:575'><b>&sect; 575</b>&nbsp;&nbsp;inn Mnizos 10 miles. <br />Change-station Prasmon 12 miles. <br />inn Malogordis 9 miles. <br />Change-station Cenaxem Palidem 13 miles. <br />City <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Anchira</a> of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> 13 miles. <br />From <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nicomedia</a> to <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Anchira</a> of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> 825 miles, change-stations 26, inns 12. <br />Change-station Delemna 10 miles. <br />inn Curueunta 11 miles. <br />Change-station Rosolodiaco 12 miles. <br />Change-station Aliassum 13 miles. <br />City Aspona 18 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=576>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:576'><b>&sect; 576</b>&nbsp;&nbsp;Change-station Galea 13 miles. <br />Change-station Andrapa 9 miles. <br />Border of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> and <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a>. <br />inn Parnasso 13 miles. <br />inn Iogola 16 miles. <br />inn Nitalis 18 miles. <br />Change-station Argustana 13 miles. <br />City Colonia 15 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=577>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:577'><b>&sect; 577</b>&nbsp;&nbsp;Change-station Momoasson 12 miles. <br />inn Anathiango 13 miles. <br />Change-station Chusa 12 miles. <br />inn Sasima 12 miles. <br />inn Andavilis 16 miles. Here is the Villa of Pammati, where curule <a href=/people/10959 target=_blank>horses</a> come from. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=578>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:578'><b>&sect; 578</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/378346PTya class=place long=34.57 lat=37.82>Thyana</a> 18 miles, where <a href=/people/333 target=_blank>Apollonius</a> the mage was from. <br />City Faustinopoli 12 miles. <br />Change-station Caena 13 miles. <br />inn Opodando 12 miles. <br />Change-station Pilas 14 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=579>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:579'><b>&sect; 579</b>&nbsp;&nbsp;Border of <a about=https://topostext.org/place/388350RCap class=place long=35 lat=38.8>Cappadocia</a> and Cilicia. <br />inn Mansucrinae 12 miles. <br />City <a about=https://topostext.org/place/369349UTar class=place long=34.897 lat=36.9122>Tarsus</a> 12 miles. Where the Apostle Paul was from. <br />From <a about=https://topostext.org/place/392289UAnk class=place long=32.863 lat=39.95>Anchira</a> of <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> to <a about=https://topostext.org/place/369349UTar class=place long=34.897 lat=36.9122>Tarsus</a> 334 miles, [580] change-stations 25, inns 18. <br />Change-station Pargais 13 miles. <br />City <a about=https://topostext.org/place/370353UAda class=place long=35.328 lat=36.988>Adana</a> 14 miles. <br />City Mansista 18 miles. <br />Change-station Tardequeia 15 miles. <br />inn Catavolo 16 miles. <br />inn Baiae 17 miles. <br />inn <a about=https://topostext.org/place/366362UAle class=place long=36.166 lat=36.589>Alexandria</a> Scabiosa 16 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=581>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:581'><b>&sect; 581</b>&nbsp;&nbsp;Change-station Pictanus 9 miles. <br />Border of Cilicia and <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>. <br />inn Pagrios 8 miles. <br />City <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antiochia</a> 16 miles. <br />From <a about=https://topostext.org/place/369349UTar class=place long=34.897 lat=36.9122>Tarsus</a> of Cilicia to <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antiochia</a> 114 miles, change-stations 10, inns 7. <br />To <a about=https://topostext.org/place/361361UDap class=place long=36.1442 lat=36.13>Daphne</a> palace 5 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=582>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:582'><b>&sect; 582</b>&nbsp;&nbsp;Change-station Hysdata 11 miles. <br />inn Platanus 8 miles. <br />Change-station Baccaias 8 miles. <br />inn Catelas 16 miles. <br />City <a about=https://topostext.org/place/355358PLao class=place long=35.7849 lat=35.52>Ladica</a> 16 miles. <br />City <a about=https://topostext.org/place/353359UGab class=place long=35.9243 lat=35.3616>Gabala</a> 14 miles. <br />City Balaneas 13 miles. <br />Border of <a about=https://topostext.org/place/335360RCSy class=place long=36 lat=33.5>Coele Syria</a> and <a about=https://topostext.org/place/335354RPho class=place long=35.4 lat=33.5>Phoenicia</a>. <br />Change-station Maraccas 10 miles. <br />inn Antaradus 16 miles. There is a city in the sea (<a about=https://topostext.org/place/349359PAra class=place long=35.859 lat=34.856>Aradus</a>) 2 miles from shore. <br />Change-station Spiclin 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=583>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:583'><b>&sect; 583</b>&nbsp;&nbsp;Change-station Basiliscum 12 miles. <br />inn <a href=/people/1105 target=_blank>Arcas</a> 8 miles. <br />Change-station Bruttus 4 miles. <br />City <a about=https://topostext.org/place/344358UTri class=place long=35.812 lat=34.449>Tripoli</a> 12 miles. <br />Change-station Triclis 12 miles. <br />Change-station Bruttos alia 12 miles. <br />Change-station Alcobile 12 miles. <br />Change-station Heldua 12 miles. <br />City <a about=https://topostext.org/place/339355UBer class=place long=35.5056 lat=33.896>Birito</a> 12 miles. <br />Change-station Parphirion 8 miles. <br />City <a about=https://topostext.org/place/336354PSid class=place long=35.371 lat=33.56>Sidona</a> 8 miles from where it is 9 miles to <a about=https://topostext.org/place/335353USar class=place long=35.295 lat=33.4643>Sarepta</a> where Elias went up to the widow and begged for food. <br />Change-station Ad Nonum 4 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=584>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:584'><b>&sect; 584</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/333352PTyr class=place long=35.196 lat=33.272>Tyre</a> 12 miles. <br />From <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antiochia</a> to <a about=https://topostext.org/place/333352PTyr class=place long=35.196 lat=33.272>Tyre</a> 417 miles, change-stations 20, inns 11. <br />Change-station Alexandroschene 12 miles. <br />Change-station Ecdeppa 12 miles. <br />City <a about=https://topostext.org/place/329351UPto class=place long=35.0817 lat=32.9278>Ptolomaida</a> 8 miles. <br />Change-station Calamon 12 miles. <br />inn <a about=https://topostext.org/place/328350USyk class=place long=34.9553 lat=32.8239>Sicaminos</a> 3 miles. There is Mt. Carmel, where Elias used to sacrifice. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=585>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:585'><b>&sect; 585</b>&nbsp;&nbsp;Change-station Certha 8 miles. <br />Border of <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> <a about=https://topostext.org/place/335354RPho class=place long=35.4 lat=33.5>Phoenicia</a> and <a about=https://topostext.org/place/320350RPal class=place long=35.0001 lat=32.0206>Palestine</a>. <br />City <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea Palestina</a> or Judaean 8 miles. <br />From <a about=https://topostext.org/place/333352PTyr class=place long=35.196 lat=33.272>Tyre</a> to <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea Palestina</a> 73 miles, change-stations 2, inns 3. Here is the bath of the centurion <a href=/people/89 target=_blank>Cornelius</a>, who did many charities. At the 3rd milestone [586] Mt. Syna, where the spring is where a woman who bathes becomes pregnant. <br />City Maximianopoli 18 miles. <br />City Isdradela 10 miles, where King <a href=/people/6183 target=_blank>Ahab</a> sat and Elias used to prophesy. Here is the field where <a href=/people/546 target=_blank>David</a> killed Goliath. <br />City <a about=https://topostext.org/place/325355UScy class=place long=35.5019 lat=32.502>Scithopoli</a> 12 miles </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=587>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:587'><b>&sect; 587</b>&nbsp;&nbsp;Aser, where the villa of Job was, 16 miles. <br />City <a about=https://topostext.org/place/322352UNea class=place long=35.2629 lat=32.2165>Neapoli</a> 15 miles. <br />Here is <a about=https://topostext.org/place/322353SGar class=place long=35.2732 lat=32.2009>Mount Gerizim</a>. Here the <a about=https://topostext.org/place/322351USeb class=ethnic long=35.1904 lat=32.2765>Samaritans</a> say that Abraham offered sacrifice, and one reaches the top of the mountain by steps, three hundred in number. Beyond this, at the foot of the mountain itself, is a place called <a about=https://topostext.org/place/322353UShe class=place long=35.2821 lat=32.2136>Sichem</a>. Here is a tomb in which Joseph is laid, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=588>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:588'><b>&sect; 588</b>&nbsp;&nbsp;in the 'parcel of ground' which Jacob his father gave to him. From thence Dinah, the daughter of Jacob, was carried off by the children of the Amorites. A mile from thence is a place named Sichar, from which the woman of <a about=https://topostext.org/place/322351USeb class=person long=35.1904 lat=32.2765>Samaria</a> came down to the same place in which Jacob dug the well, to draw water from it, and our Lord Jesus Christ talked with her; in which place are plane-trees, which Jacob planted, and a bath which is supplied with water from the well. <br />Twenty-eight miles from thence on the left hand, as one goes towards <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a>, is a village named Bethar. A mile from thence is the place where Jacob slept when he was journeying into Mesopotamia, and here is the almond tree; here Jacob saw the vision and the angel wrestled with him. Here was King Jeroboam when the prophet was sent to him, that he should turn himself to the Most High God; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=589>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:589'><b>&sect; 589</b>&nbsp;&nbsp;and the prophet was ordered not to eat bread with the false prophet whom the king had with him, and because he was beguiled by the false prophet and ate bread with him, as he was returning a lion fell upon the prophet on the way and slew him. <br />Thence to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> - 12 miles. <br />Total from <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea</a> Palaestina to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> 116 miles, 4 inns, 4 change-stations. <br />Thence to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> - 12 miles. <br />Total from <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea</a> Palaestina to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> 116 miles, 4 inns, 4 change stations. <br />There are in <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> two large pools at the side of the temple, that is, one upon the right hand, and one upon the left, which were made by Solomon; and further in the city are twin pools, with five porticoes, which are called Bethsaida. There persons who have been sick for many years are cured; the pools contain water which is red when it is disturbed. There is also here a crypt, in which Solomon used to torture devils.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=590>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:590'><b>&sect; 590</b>&nbsp;&nbsp;Here is also the corner of an exceeding high tower, where our Lord ascended and the tempter said to Him, 'If thou be the Son of God, cast thyself down from hence.' . And the Lord answered, 'Thou shalt not tempt the Lord thy God, but him only shalt thou serve.'. There is a great corner-stone, of which it was said, 'The stone which the builders rejected is become the head of the corner.'. Under the pinnacle of the tower are many rooms, and here was Solomon's palace. There also is the chamber in which he sat and wrote the Wisdom; this chamber is covered with a single stone. There are also large subterranean reservoirs for water and pools constructed with great labour. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=591>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:591'><b>&sect; 591</b>&nbsp;&nbsp;And in the building itself, where stood the <a about=https://topostext.org/place/318352STem class=place long=35.2353 lat=31.778>temple</a> which Solomon built, they say that the blood of Zacharias which was shed upon the stone pavement before the altar remains to this day. There are also to be seen the marks of the nails in the shoes of the soldiers who slew him, throughout the whole enclosure, so plain that you would think they were impressed upon wax. There are two statues of Hadrian, and not far from the statues there is a perforated stone, to which the Jews come every year and anoint it, bewail themselves with groans, rend their garments, and so depart. There also is the house of Hezekiah King of Judah. Also as you come out of <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> to go up Mount Sion, on the left hand, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=592>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:592'><b>&sect; 592</b>&nbsp;&nbsp;below in the valley, beside the wall, is a pool which is called Siloe and has four porticoes; and there is another large pool outside it. This spring runs for six days and nights, but on the seventh day, which is the Sabbath, it does not run at all, either by day or by night. On this side one goes up Sion, and sees where the house of Caiaphas the priest was, and there still stands a column against which Christ was beaten with rods. Within, however, inside the wall of Sion, is seen the place where was David's palace. Of seven synagogues which once were there, one alone remains; the rest are ploughed over and sown upon, as said Isaiah the prophet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=593>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:593'><b>&sect; 593</b>&nbsp;&nbsp;From thence as you go out of the wall of Sion, as you walk towards the gate of Neapolis, towards the right, below in the valley, are walls, where was the house or praetorium of Pontius Pilate. Here our Lord was tried before His passion. On the left hand is the little hill of Golgotha where the Lord was crucified. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=594>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:594'><b>&sect; 594</b>&nbsp;&nbsp;About a stone's throw from thence is a vault wherein His body was laid, and rose again on the third day. There, at present, by the command of the Emperor Constantine, has been built a basilica, that is to say, a church of wondrous beauty, having at the side reservoirs from which water is raised, and a bath behind in which infants are washed. <br />Also as one goes from <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> to the gate which is to the eastward, in order to ascend the Mount of Olives, is the valley called that of Josaphat. Towards the left, where are vineyards, is a stone at the place where Judas Iscariot betrayed Christ; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=595>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:595'><b>&sect; 595</b>&nbsp;&nbsp;on the right is a palm-tree, branches of which the children carried off and strewed in the way when Christ came. Not far from thence, about a stone's-throw, are two notable tombs of wondrous beauty; in the one, which is a true monolith, lies Isaiah the prophet, and in the other Hezekiah, King of the Jews. <br />From thence you ascend to the Mount of Olives, where before the Passion, the Lord taught His disciples. There by the orders of Constantine a basilica of wondrous beauty has been built. Not far from thence is the little hill which the Lord ascended to pray, when he took Peter and John with Him, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=596>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:596'><b>&sect; 596</b>&nbsp;&nbsp;and Moses and Elias were beheld. <br />A mile and a half to the eastward is the village called Bethany. There is a vault in which Lazarus, whom the Lord raised, was laid. <br />From <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> to <a about=https://topostext.org/place/318354UHie class=place long=35.4438 lat=31.87>Jericho</a> - 18 miles. <br />On the right hand side, as one descends from the mount, behind a tomb, is the sycamore tree into which Zacchaeus climbed that he might see Christ. A mile-and-a-half from the town is the fountain of Elisha. Formerly if any woman drank of it she did not bear children. Beside it lies an earthenware vessel. Elisha threw salt into it, and came and stood over the fountain and said, 'Thus saith the Lord, I have cleansed these waters, and if any woman drink of this fountain she shall bear children'. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=597>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:597'><b>&sect; 597</b>&nbsp;&nbsp;Above the same fountain is the house of the harlot Rahab, to whom the spies came, and she hid them, and alone was saved when <a about=https://topostext.org/place/318354UHie class=place long=35.4438 lat=31.87>Jericho</a> was destroyed. Here stood the city of <a about=https://topostext.org/place/318354UHie class=place long=35.4438 lat=31.87>Jericho</a>, round whose walls the children of Israel circled with the Ark of the Covenant, and the walls fell down. Nothing is to be seen of it except the place where the Ark of the Covenant stood, and the twelve stones which the children of Israel brought out of <a about=https://topostext.org/place/318355WJor class=place long=35.5465 lat=31.837>Jordan</a>. There Jesus, the son of Nave, circumcised the children of Israel and buried their foreskins. <br />From <a about=https://topostext.org/place/318354UHie class=place long=35.4438 lat=31.87>Jericho</a> to the <a about=https://topostext.org/place/315355WAsp class=place long=35.4778 lat=31.4929>Dead Sea</a> - 9 miles <br />The water of it is very bitter, and in it there is no kind of fish whatever, nor any vessel; and if a man casts himself into it in order to swim, the water turns him over. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=598>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:598'><b>&sect; 598</b>&nbsp;&nbsp;From thence to the <a about=https://topostext.org/place/318355WJor class=place long=35.5465 lat=31.837>Jordan</a>, where the Lord was baptized by John - 5 miles <br />There is a place by the river, a little hill upon the further bank, from which Elijah was caught up into heaven. <br />From <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> going to <a about=https://topostext.org/place/317352UBet class=place long=35.2021 lat=31.7122>Bethlehem</a> - 6 miles <br />On the road, on the right hand, is a tomb, in which lies Rachel, the wife of Jacob. Two miles from thence, on the left hand, is <a about=https://topostext.org/place/317352UBet class=place long=35.2021 lat=31.7122>Bethlehem</a>, where our Lord Jesus Christ was born. A basilica has been built there by the orders of Constantine. Not far from thence is the tomb of Ezekiel, Asaph, Job, Jesse, David, and Solomon, whose names are inscribed in Hebrew letters upon the wall as you go down into the vault itself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=599>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:599'><b>&sect; 599</b>&nbsp;&nbsp;From thence to Bethasora - 14 miles <br />There is the fountain in which Philip baptized the eunuch. <br />Thence to Terebinthus - 8 miles <br />Here Abraham dwelt, and dug a well under a terebinth tree, and spoke with angels, and ate food with them. Here a basilica of wondrous beauty has been built by the command of Constantine. <br />From Terebinthus to <a about=https://topostext.org/place/315351UHeb class=place long=35.1085 lat=31.5243>Hebron</a> - 2 miles <br />Here is a monument of square form built of stone of wondrous beauty, in which lie Abraham, Isaac, Jacob, Sara, Rebecca, and Leah. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=600>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:600'><b>&sect; 600</b>&nbsp;&nbsp;And from <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> as follows: <br />City <a about=https://topostext.org/place/318349UNik class=place long=34.9894 lat=31.8392>Nicopoli</a> 22 miles. <br />City <a about=https://topostext.org/place/319348ULyd class=place long=34.893 lat=31.9509>Lidda</a> 10 miles. <br />Change-station <a about=https://topostext.org/place/321349UAnt class=place long=34.9306 lat=32.1049>Antipatrida</a> 10 miles. <br />Change-station Betthar 10 miles. <br />City <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea</a> 16 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=601>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:601'><b>&sect; 601</b>&nbsp;&nbsp;From <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinopolis</a> to <a about=https://topostext.org/place/318352PJer class=place long=35.2341 lat=31.7751>Jerusalem</a> in all 1164 miles, change-stations 69, inns 58. <br />and through <a about=https://topostext.org/place/318349UNik class=place long=34.9894 lat=31.8392>Nicopolis</a> to <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea</a> 73.5 miles, change-stations 5, inns 3. <br />And from <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Heraclea</a> through Macedonia: <br />Change-station <a about=https://topostext.org/place/410277UHer class=place long=27.7842 lat=41.0156>Aerea</a> 16 miles. <br />inn <a about=https://topostext.org/place/410275UBis class=place long=27.508 lat=40.9784>Registo</a> 12 miles. <br />Change-station Bedizo 12 miles. <br />City <a about=https://topostext.org/place/409271UApr class=place long=27.105 lat=40.927>Apris</a> 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=602>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:602'><b>&sect; 602</b>&nbsp;&nbsp;Change-station Zesutera 12 miles. <br />Border of Europe and <a href=/people/2660 target=_blank>Rhodope</a>. <br />inn Sirogellis 10 miles. <br />Change-station Drippa 14 miles. <br />inn <a about=https://topostext.org/place/409264PKyp class=place long=26.3921 lat=40.9245>Gipsila</a> 12 miles. <br />Change-station Demas 12 miles. <br />City <a about=https://topostext.org/place/409260UTra class=place long=26.033 lat=40.8653>Traianopoli</a> 13 miles. <br />Change-station Ad Unimpara 8 miles. <br />Change-station <a about=https://topostext.org/place/408259PSal class=place long=25.8751 lat=40.8447>Salei</a> 7.5 miles. <br />Change-station Melalico 8 miles. <br />inn Berozicha 15 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=603>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:603'><b>&sect; 603</b>&nbsp;&nbsp;Change-station Breierophara 10 miles. <br />City <a about=https://topostext.org/place/411253UPor class=place long=25.3253 lat=41.1286>Maximianopolis</a> 10 miles. <br />Change-station Ad stabulo dio 12 miles. <br />Change-station Rumbodona 10 miles. <br />City <a about=https://topostext.org/place/411248UTop class=place long=24.7662 lat=41.086>Epyrum</a> 10 miles. <br />Change-station <a about=https://topostext.org/place/410246UPur class=place long=24.6086 lat=40.9774>Purdis</a> 8 miles. <br />Border of <a href=/people/2660 target=_blank>Rhodope</a> and Macedonia. <br />inn Hercontroma 9 miles. <br />Change-station <a about=https://topostext.org/place/409244PNea class=place long=24.414 lat=40.9343>Neapolis</a> 9 miles. <br />City <a about=https://topostext.org/place/410243PPhi class=place long=24.285 lat=41.012>Philippi</a> 10 miles, [604] where Paul and <a href=/people/1850 target=_blank>Silas</a> were in prison. <br />Change-station Ad Duodecimum 12 miles. <br />Change-station <a about=https://topostext.org/place/410240UDom class=place long=23.967 lat=40.951>Domeros</a> 7 miles. <br />City <a about=https://topostext.org/place/408238PAmp class=place long=23.847 lat=40.822>Amphipolis</a> 13 miles. <br />Change-station <a about=https://topostext.org/place/407237UPen class=place long=23.6985 lat=40.7332>Pennana</a> 10 miles. <br />Change-station <a about=https://topostext.org/place/407237PBor class=place long=23.6781 lat=40.6769>Peripidis</a> 10 miles, where the poet <a href=/people/75 target=_blank>Euripides</a> is buried. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=605>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:605'><b>&sect; 605</b>&nbsp;&nbsp;inn <a about=https://topostext.org/place/406235UApo class=place long=23.4697 lat=40.6237>Appollonia</a> 11 miles. <br />Change-station <a about=https://topostext.org/place/406233UMel class=place long=23.304 lat=40.649>Heracleustibus</a> 11 miles. <br />Change-station <a about=https://topostext.org/place/407231UDuo class=place long=23.0987 lat=40.6567>Duo Dea</a> 14 miles. <br />City <a about=https://topostext.org/place/406229PThs class=place long=22.9555 lat=40.6426>Thessalonica</a> 13 miles. <br />Change-station <a about=https://topostext.org/place/407228UAde class=place long=22.7854 lat=40.6908>Ad Decimum</a> 10 miles. <br />Change-station <a about=https://topostext.org/place/407227UGep class=place long=22.6719 lat=40.7247>Gephira</a> 10 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=606>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:606'><b>&sect; 606</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/408225PPel class=place long=22.518 lat=40.754>Polli</a>, where <a href=/people/6 target=_blank>Alexander</a> the Great of Macedon was, 10 miles. <br />Change-station <a about=https://topostext.org/place/408223UKyr class=place long=22.301 lat=40.8312>Scurio</a> 15 miles. <br />City <a about=https://topostext.org/place/408221PEde class=place long=22.0572 lat=40.7967>Edissa</a> 15 miles. <br />Change-station <a about=https://topostext.org/place/408219UAdu class=place long=21.8631 lat=40.7824>Ad Duodecimum</a> 12 miles. <br />inn <a about=https://topostext.org/place/408217UCel class=place long=21.689 lat=40.785>Cellis</a> 16 miles. <br />Change-station <a about=https://topostext.org/place/407216UGra class=place long=21.6404 lat=40.7485>Grande</a> 14 miles. <br />Change-station <a about=https://topostext.org/place/409215UMel class=place long=21.4657 lat=40.8639>Melitonus</a> 14 miles. <br />City <a about=https://topostext.org/place/410213PHer class=place long=21.342 lat=41.011>Heraclea</a> 13 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=607>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:607'><b>&sect; 607</b>&nbsp;&nbsp;Change-station Parambole 12 miles. <br />Change-station Brucida 19 miles. <br />Border of Macedonia and Epirus. <br />City <a about=https://topostext.org/place/411208ULyc class=place long=20.794 lat=41.114>Cledo</a> 13 miles. <br />Change-station Patras 12 miles. <br />inn Claudanon 4 miles. <br />Change-station In Tabernas 9 miles. <br />inn Grandavia 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=608>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:608'><b>&sect; 608</b>&nbsp;&nbsp;Change-station Treiecto 9 miles. <br />inn <a about=https://topostext.org/place/411200USca class=place long=20.0181 lat=41.1129>Hiscampis</a> 9 miles. <br />Change-station <a about=https://topostext.org/place/420200UAdQ class=place long=20.0155 lat=41.0942>Ad Quintum</a> — 6 miles. <br />inn Coladiana 15 miles. <br />inn Marusio 13 miles. <br />inn Absos 14 miles. <br />Change-station Stefanaphana 12 miles. <br />City <a about=https://topostext.org/place/407195PApo class=place long=19.4727 lat=40.7215>Appollonia</a> 18 miles. <br />Change-station Stefana 12 miles. <br />inn <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Aulona</a> Treiectum 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=609>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:609'><b>&sect; 609</b>&nbsp;&nbsp;In all from <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Heraclea</a> through Macedonia to <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Aulon</a> 868 miles, change-stations 58, inns, 25. <br />Across the sea is 1000 stades which makes 100 miles and you come to <a about=https://topostext.org/place/401185UHyd class=place long=18.491 lat=40.1457>Odronto</a> inn one mile: <br />Change-station Ad Duodecimum 13 miles. <br />inn Clipeas 12 miles. <br />Change-station Valentia 13 miles. <br />City <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brindisi</a> 11 miles. <br />inn Spilenaees 14 miles. <br />Change-station Ad <a href=/people/7581 target=_blank>Decimum</a> 11 miles. <br />City <a about=https://topostext.org/place/409174UEgn class=place long=17.3913 lat=40.8878>Leonatiae</a> 10 miles. <br />Change-station Turres Aurilianas 15 miles. <br />Change-station Turres Iuliana 9 miles. <br />City <a about=https://topostext.org/place/411169UBar class=place long=16.8703 lat=41.1292>Beroes</a> 11 miles. <br />Change-station Butontones 11 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=610>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:610'><b>&sect; 610</b>&nbsp;&nbsp;City <a about=https://topostext.org/place/411165URub class=place long=16.4862 lat=41.1169>Rubos</a> 11 miles. <br />Change-station Ad Quintumdecimum 15 miles. <br />City <a about=https://topostext.org/place/412161UCan class=place long=16.0651 lat=41.2205>Canusio</a> 15 miles. <br />Change-station <a href=/people/8473 target=_blank>Undecimum</a> 11 miles. <br />City <a about=https://topostext.org/place/413156UHer class=place long=15.6219 lat=41.3106>Serdonis</a> 15 miles. <br />City Aecas 18 miles. <br />Change-station <a about=https://topostext.org/place/411154UAqu class=place long=15.4246 lat=41.05>Aquilonis</a> 10 miles. <br />Border of <a about=https://topostext.org/place/410163RApu class=place long=16.3 lat=41>Apulia</a> and <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a>. <br />inn Ad <a about=https://topostext.org/place/412151UAeT class=place long=15.0985 lat=41.2423>Equum Magnum</a> 8 miles. <br />Change-station village Forno Novo 12 miles. <br />City <a about=https://topostext.org/place/411148PBen class=place long=14.78 lat=41.13>Benevento</a> 10 miles. <br />City and inn <a about=https://topostext.org/place/411146UCau class=place long=14.6417 lat=41.0673>Claudiis</a> 12 miles. <br />Change-station Novas 9 miles. <br />City <a about=https://topostext.org/place/411143PCap class=place long=14.25 lat=41.086>Capua</a> 12 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=611>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:611'><b>&sect; 611</b>&nbsp;&nbsp;In all from <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Avlona</a> to <a about=https://topostext.org/place/411143PCap class=place long=14.25 lat=41.086>Capua</a> 289 miles, change-stations 25, inns 13. <br />Change-station Ad Octavum 8 miles. <br />Change-station Ponte Campano 9 miles. <br />City <a about=https://topostext.org/place/411139USin class=place long=13.9122 lat=41.1226>Sonuessa</a> 9 miles. <br />City <a about=https://topostext.org/place/412138UMin class=place long=13.7684 lat=41.242>Menturnas</a> 9 miles. <br />City <a about=https://topostext.org/place/413136UFor class=place long=13.6012 lat=41.2557>Formis</a> 9 miles. <br />City <a about=https://topostext.org/place/414134UFun class=place long=13.4279 lat=41.3574>Fundis</a> 12 miles. <br />City <a about=https://topostext.org/place/413133UTar class=place long=13.2486 lat=41.292>Tarracina</a> 13 miles. <br />Change-station Ad Medias 10 miles. <br />Change-station <a about=https://topostext.org/place/415130UFAp class=place long=12.9937 lat=41.468>Appi Foro</a> 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=612>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:612'><b>&sect; 612</b>&nbsp;&nbsp;Change-station Sponsas 7 miles. <br />City <a about=https://topostext.org/place/417127UAri class=place long=12.6704 lat=41.7197>Aricia</a> and Albona 14 miles. <br />Change-station Ad Nono 7 miles. <br />To the City of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> 9 miles. <br />From <a about=https://topostext.org/place/411143PCap class=place long=14.25 lat=41.086>Capua</a> to the City of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> 136 miles, change-stations 14, inns 9. <br />From <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Heraclea</a> through <a about=https://topostext.org/place/405195UAul class=place long=19.4732 lat=40.4849>Avlona</a> to the city of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> 1113 miles, change-stations 117, inns 46. <br />From the City to <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Milan</a>: <br />Change-station Rubras 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=613>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:613'><b>&sect; 613</b>&nbsp;&nbsp;Change-station Ad Vicensimum 11 miles. <br />Change-station Aqua Viva 12 miles. <br />City <a about=https://topostext.org/place/424125UOcr class=place long=12.4662 lat=42.4136>Ucriculo</a> 12 miles. <br />City <a about=https://topostext.org/place/425125UNeq class=place long=12.5156 lat=42.5176>Narniae</a> 12 miles. <br />City <a about=https://topostext.org/place/426126UInt class=place long=12.6433 lat=42.5604>Interamna</a> 9 miles. <br />Change-station Tribus Tabernis 3 miles. <br />Change-station Fani Fugitivi 10 miles. <br />City <a about=https://topostext.org/place/427127USpo class=place long=12.7403 lat=42.7352>Spolitio</a> 7 miles. <br />Change-station Sacraria 8 miles. <br />City <a about=https://topostext.org/place/457122UTar class=place long=12.243 lat=45.6663>Trevis</a> 4 miles. <br />City Fulginis 5 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=614>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:614'><b>&sect; 614</b>&nbsp;&nbsp;City Foro Flamini 3 miles. <br />City <a about=https://topostext.org/place/407147UNuc class=place long=14.6664 lat=40.7426>Noceria</a> 12 miles. <br />City Ptanias 8 miles. <br />inn Herbelloni 7 miles. <br />Change-station Ad Hesis 10 miles. <br />Change-station Ad Cale 14 miles. <br />Change-station Intercisa 9 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=615>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:615'><b>&sect; 615</b>&nbsp;&nbsp;City Foro Semproni 9 miles. <br />Change-station Ad Octavo 9 miles. <br />City <a about=https://topostext.org/place/438130UFFo class=place long=13.0181 lat=43.8443>Fano Furtunae</a> 8 miles. <br />City <a about=https://topostext.org/place/439129UPis class=place long=12.9145 lat=43.9109>Pisauro</a> [milia 8 <br />City <a about=https://topostext.org/place/441126UAri class=place long=12.5753 lat=44.0602>Ariminum</a>] 24 miles. <br />[From <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> ] to <a about=https://topostext.org/place/441126UAri class=place long=12.5753 lat=44.0602>Ariminum</a> [224 miles, change-stations 24, inns 14]. <br />Change-station Conpetu 12 miles. <br />City <a about=https://topostext.org/place/441122UCae class=place long=12.256 lat=44.137>Cesena</a> 6 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=616>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:616'><b>&sect; 616</b>&nbsp;&nbsp;City Foro <a href=/people/8198 target=_blank>Populi</a> 6 miles. <br />City <a about=https://topostext.org/place/442120UFLi class=place long=12.0427 lat=44.221>Foro Livi</a> 6 miles. <br />City <a about=https://topostext.org/place/443119UFav class=place long=11.8841 lat=44.2856>Faventia</a> 5 miles. <br />City <a about=https://topostext.org/place/444117UFCo class=place long=11.711 lat=44.3535>Foro Corneli</a> 10 miles. <br />City <a about=https://topostext.org/place/444115UCla class=place long=11.5045 lat=44.4344>Claterno</a> 13 miles. <br />City <a about=https://topostext.org/place/445113UBon class=place long=11.3418 lat=44.4946>Bononia</a> 10 miles. <br />Change-station Ad Medias 15 miles. <br />Change-station Victoriolas 10 miles. <br />City <a about=https://topostext.org/place/446109UMut class=place long=10.925 lat=44.6472>Mutena</a> 3 miles. <br />Change-station Ponte Secies 5 miles. <br />City <a about=https://topostext.org/place/447106UReg class=place long=10.6307 lat=44.6976>Regio</a> 8 miles. <br />Change-station Canneto 10 miles. <br />City <a about=https://topostext.org/place/448103UPar class=place long=10.3279 lat=44.8015>Parme</a> 8 miles. <br />Change-station Ad Tarum 7 miles. <br />inn Fidentiae 8 miles. <br />Change-station Ad Fonteclos 8 miles. <br />City <a about=https://topostext.org/place/450097UPla class=place long=9.6931 lat=45.0526>Placentia</a> 13 miles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=617>
+                            <p id='urn:cts:latinLit:stoa0329.stoa001:617'><b>&sect; 617</b>&nbsp;&nbsp;Change-station Ad Rota 11 miles. <br />Change-station Tribus Tabernis 5 miles. <br />City Laude 8 miles. <br />Change-station Ad Nonum 7 miles. <br />City <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Mediolanum</a> 7 miles. <br />From the city of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> to <a about=https://topostext.org/place/455092UMed class=place long=9.189 lat=45.4634>Milan</a> 416 miles, change-stations 44, inns 24. <br />End of the itinerary. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334 <a href='http://www.christusrex.org/www1/ofm/pilgr/bord/10Bord01Lat.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 334                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=231', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas231";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=231';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

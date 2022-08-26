@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Aristophanes, Clouds' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Clouds, Aristophanes, Eleven Plays, translated and published by "The Athenian Society" in 1912, now in the public domain, text derived from Project Gutenberg' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-423' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -423' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/59' content='urn:cts:greekLit:tlg0019.tlg003' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79072756' content='Aristophanes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n85143190' content='The Athenian Society (1912)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.gutenberg.org' /><h2>Aristophanes, Clouds</h2>Clouds, Aristophanes, Eleven Plays, translated and published by "The Athenian Society" in 1912, now in the public domain, text derived from Project Gutenberg This text has 48 tagged references to 34 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0019.tlg003'>urn:cts:greekLit:tlg0019.tlg003</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q868447'>Q868447</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1'><b>&sect; 1</b>&nbsp;&nbsp;STREPSIADES: Great gods! will these nights never end? will daylight never come? I heard the cock crow long ago and my slaves are snoring still! Ah! 'twas not so formerly. Curses on the War! has it not done me ills enough? Now I may not even chastise my own slaves. Again there's this brave lad, who never wakes the whole long night, but, wrapped in his five coverlets, farts away to his heart's content. Come! let me nestle in well and snore too, if it be possible ... oh! misery, 'tis vain to think of sleep with all these expenses, this stable, these debts, which are devouring me, thanks to this fine cavalier, who only knows how to look after his long locks, to show himself off in his chariot and to dream of <a href=/people/10959 target=_blank>horses</a>! And I, I am nearly dead, when I see the moon bringing the third decade in her train and my liability falling due.... Slave! light the lamp and bring me my tablets. Who are all my creditors? Let me see and reckon up the interest. What is it I owe? ... Twelve minae to <a href=/people/6765 target=_blank>Pasias</a>.... What! twelve minae to <a href=/people/6765 target=_blank>Pasias</a>? ... Why did I borrow these? Ah! I know! 'Twas to buy that thoroughbred, which cost me so dear. How I should have prized the stone that had blinded him! <br />PHIDIPPIDES (in his sleep). That's not fair, <a href=/people/486 target=_blank>Philo</a>! Drive your chariot straight, I say. <br />STREPSIADES: 'Tis this that is destroying me. He raves about <a href=/people/10959 target=_blank>horses</a>, even in his sleep. <br />PHIDIPPIDES (still sleeping). How many times round the track is the race for the chariots of war? <br />STREPSIADES: 'Tis your own father you are driving to death ... to ruin. Come! what debt comes next, after that of <a href=/people/6765 target=_blank>Pasias</a>? ... Three minae to <a href=/people/3528 target=_blank>Amynias</a> for a chariot and its two wheels. <br />PHIDIPPIDES (still asleep). Give the <a href=/people/10959 target=_blank>horse</a> a good roll in the dust and lead him home. <br />STREPSIADES: Ah! wretched boy! 'tis my money that you are making roll. My creditors have distrained on my goods, and here are others again, who demand security for their interest. <br />PHIDIPPIDES (awaking). What is the matter with you, father, that you groan and turn about the whole night through? <br />STREPSIADES: I have a bum-bailiff in the bedclothes biting me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:37'><b>&sect; 37</b>&nbsp;&nbsp;PHIDIPPIDES: For pity's sake, let me have a little sleep. <br />STREPSIADES: Very well, sleep on! but remember that all these debts will fall back on your shoulders. Oh! curses on the go-between who made me marry your mother! I lived so happily in the country, a commonplace, everyday life, but a good and easy one — had not a trouble, not a care, was rich in <a href=/people/10964 target=_blank>bees</a>, in <a href=/people/10954 target=_blank>sheep</a> and in olives. Then forsooth I must marry the niece of <a href=/people/789 target=_blank>Megacles</a>, the son of <a href=/people/789 target=_blank>Megacles</a>; I belonged to the country, she was from the town; she was a haughty, extravagant woman, a true <a href=/people/7528 target=_blank>Coesyra</a>. On the nuptial day, when I lay beside her, I was reeking of the dregs of the wine-cup, of cheese and of wool; she was redolent with essences, saffron, tender kisses, the love of spending, of good cheer and of wanton delights. I will not say she did nothing; no, she worked hard ... to ruin me, and pretending all the while merely to be showing her the cloak she had woven for me, I said, Wife, you go too fast about your work, your threads are too closely woven and you use far too much wool. <br />A SLAVE: There is no more oil in the lamp. <br />STREPSIADES: Why then did you light such a guzzling lamp? Come here, I am going to beat you! <br />SLAVE: What for? <br />STREPSIADES: Because you have put in too thick a wick.... Later, when we had this boy, what was to be his name? 'Twas the cause of much quarrelling with my loving wife. She insisted on having some reference to a <a href=/people/10959 target=_blank>horse</a> in his name, that he should be called <a href=/people/727 target=_blank>Xanthippus</a>, <a href=/people/4480 target=_blank>Charippus</a> or <a href=/people/3549 target=_blank>Callippides</a>. I wanted to name him Phidonides after his grandfather. We disputed long, and finally agreed to style him <a href=/people/5178 target=_blank>Phidippides</a>.... She used to fondle and coax him, saying, Oh! what a joy it will be to me when you have grown up, to see you, like my father, <a href=/people/789 target=_blank>Megacles</a>, clothed in purple and standing up straight in your chariot driving your steeds toward the town. And I would say to him, When, like your father, you will go, dressed in a skin, to fetch back your <a href=/people/10956 target=_blank>goats</a> from <a href=/people/5887 target=_blank>Phelleus</a>. Alas! he never listened to me and his madness for <a href=/people/10959 target=_blank>horses</a> has shattered my fortune. But by dint of thinking the livelong night, I have discovered a road to salvation, both miraculous and divine. If he will but follow it, I shall be out of my trouble! First, however, he must be awakened, but let it be done as gently as possible. How shall I manage it? <a href=/people/5178 target=_blank>Phidippides</a>! my little <a href=/people/5178 target=_blank>Phidippides</a>! <br />PHIDIPPIDES: What is it, father! <br />STREPSIADES: Kiss me and give me your hand. <br />PHIDIPPIDES: There! What's it all about? <br />STREPSIADES: Tell me! do you love me? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=85>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:85'><b>&sect; 85</b>&nbsp;&nbsp;PHIDIPPIDES: By <a href=/people/25 target=_blank>Poseidon</a>, the equestrian <a href=/people/25 target=_blank>Poseidon</a>! yes, I swear I do. <br />STREPSIADES: Oh, do not, I pray you, invoke this god of <a href=/people/10959 target=_blank>horses</a>; 'tis he who is the cause of all my cares. But if you really love me, and with your whole heart, my boy, believe me. <br />PHIDIPPIDES: Believe you? about what? <br />STREPSIADES: Alter your habits forthwith and go and learn what I tell you. <br />PHIDIPPIDES: Say on, what are your orders? <br />STREPSIADES: Will you obey me ever so little? <br />PHIDIPPIDES: By <a href=/people/5 target=_blank>Bacchus</a>, I will obey you. <br />STREPSIADES: Very well then! Look this way. Do you see that little door and that little house? <br />PHIDIPPIDES: Yes, father. But what are you driving at? <br />STREPSIADES: That is the school of wisdom. There, they prove that we are coals enclosed on all sides under a vast extinguisher, which is the sky. If well paid, these men also teach one how to gain law-suits, whether they be just or not. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:85' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=99>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:99'><b>&sect; 99</b>&nbsp;&nbsp;PHIDIPPIDES: What do they call themselves? <br />STREPSIADES: I do not know exactly, but they are deep thinkers and most admirable people. <br />PHIDIPPIDES: Bah! the wretches! I know them; you mean those quacks with livid faces, those barefoot fellows, such as that miserable <a href=/people/16 target=_blank>Socrates</a> and <a href=/people/1002 target=_blank>Chaerephon</a>. <br />STREPSIADES: Silence! say nothing foolish! If you desire your father not to die of hunger, join their company and let your <a href=/people/10959 target=_blank>horses</a> go. <br />PHIDIPPIDES: No, by <a href=/people/5 target=_blank>Bacchus</a>! even though you gave me the pheasants that <a href=/people/2238 target=_blank>Leogoras</a> rears. <br />STREPSIADES: Oh! my beloved son, I beseech you, go and follow their teachings. <br />PHIDIPPIDES: And what is it I should learn? <br />STREPSIADES: 'Twould seem they have two courses of reasoning, the true and the false, and that, thanks to the false, the worst law-suits can be gained. If then you learn this science, which is false, I shall not pay an obolus of all the debts I have contracted on your account. <br />PHIDIPPIDES: No, I will not do it. I should no longer dare to look at our gallant horsemen, when I had so tarnished my fair hue of honour. <br />STREPSIADES: Well then, by <a href=/people/48 target=_blank>Demeter</a>! I will no longer support you, neither you, nor your team, nor your saddle-horse. Go and hang yourself, I turn you out of house and home. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:99' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=125>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:125'><b>&sect; 125</b>&nbsp;&nbsp;PHIDIPPIDES: My uncle <a href=/people/789 target=_blank>Megacles</a> will not leave me without <a href=/people/10959 target=_blank>horses</a>; I shall go to him and laugh at your anger. <br />STREPSIADES: One rebuff shall not dishearten me. With the help of the gods I will enter this school and learn myself. But at my age, memory has gone and the mind is slow to grasp things. How can all these fine distinctions, these subtleties be learned? Bah! why should I dally thus instead of rapping at the door? Slave, slave! (He knocks and calls.) <br />A DISCIPLE: A plague on you! Who are you? <br />STREPSIADES: <a href=/people/3699 target=_blank>Strepsiades</a>, the son of <a href=/people/5891 target=_blank>Phido</a>, of the deme of <a about=https://topostext.org/place/379238DKik class=place long=23.8393 lat=37.9384>Cicynna</a>. <br />DISCIPLE: 'Tis for sure only an ignorant and illiterate fellow who lets drive at the door with such kicks. You have brought on a miscarriage — of an idea! <br />STREPSIADES: Pardon me, pray; for I live far away from here in the country. But tell me, what was the idea that miscarried? <br />DISCIPLE: I may not tell it to any but a disciple. <br />STREPSIADES: Then tell me without fear, for I have come to study among you. <br />DISCIPLE: Very well then, but reflect, that these are mysteries. Lately, a flea bit <a href=/people/1002 target=_blank>Chaerephon</a> on the brow and then from there sprang on to the head of <a href=/people/16 target=_blank>Socrates</a>. <a href=/people/16 target=_blank>Socrates</a> asked <a href=/people/1002 target=_blank>Chaerephon</a>, How many times the length of its legs does a flea jump? <br />STREPSIADES: And how ever did he set about measuring it? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:125' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=148>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:148'><b>&sect; 148</b>&nbsp;&nbsp;DISCIPLE: Oh! 'twas most ingenious! He melted some wax, seized the flea and dipped its two feet in the wax, which, when cooled, left them shod with true <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> buskins. These he slipped off and with them measured the distance. <br />STREPSIADES: Ah! great <a href=/people/1 target=_blank>Zeus</a>! what a brain! what subtlety! <br />DISCIPLE: I wonder what then would you say, if you knew another of <a href=/people/16 target=_blank>Socrates</a>' contrivances? <br />STREPSIADES: What is it? Pray tell me. <br />DISCIPLE: <a href=/people/1002 target=_blank>Chaerephon</a> of the deme of <a about=https://topostext.org/place/379238DSph class=person long=23.834 lat=37.905>Sphettia</a> asked him whether he thought a gnat buzzed through its proboscis or through its rear. <br />STREPSIADES: And what did he say about the gnat? <br />DISCIPLE: He said that the gut of the gnat was narrow, and that, in passing through this tiny passage, the air is driven with force towards the breech; then after this slender channel, it encountered the rump, which was distended like a trumpet, and there it resounded sonorously. <br />STREPSIADES: So the rear of a gnat is a trumpet. Oh! what a splendid discovery! Thrice happy <a href=/people/16 target=_blank>Socrates</a>! 'Twould not be difficult to succeed in a law-suit, knowing so much about the gut of a gnat! <br />DISCIPLE: Not long ago a lizard caused him the loss of a sublime thought. <br />STREPSIADES: In what way, an it please you? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:148' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=170>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:170'><b>&sect; 170</b>&nbsp;&nbsp;DISCIPLE: One night, when he was studying the course of the moon and its revolutions and was gazing open-mouthed at the heavens, a lizard shitted upon him from the top of the roof. <br />STREPSIADES: This lizard, that relieved itself over <a href=/people/16 target=_blank>Socrates</a>, tickles me. <br />DISCIPLE: Yesternight we had nothing to eat. <br />STREPSIADES: Well! What did he contrive, to secure you some supper? <br />DISCIPLE: He spread over the table a light layer of cinders, bending an iron rod the while; then he took up a pair of compasses and at the same moment unhooked a piece of the victim which was hanging in the palaestra. <br />STREPSIADES: And we still dare to admire <a href=/people/263 target=_blank>Thales</a>! Open, open this home of knowledge to me quickly! Haste, haste to show me <a href=/people/16 target=_blank>Socrates</a>; I long to become his disciple. But do, do open the door. (The disciple admits <a href=/people/3699 target=_blank>Strepsiades</a>.) Ah! by <a href=/people/4 target=_blank>Heracles</a>! what country are those animals from? <br />DISCIPLE: Why, what are you astonished at? What do you think they resemble? <br />STREPSIADES: The captives of <a about=https://topostext.org/place/370217UPyl class=place long=21.66 lat=36.9517>Pylos</a>. But why do they look so fixedly on the ground? <br />DISCIPLE: They are seeking for what is below the ground. <br />STREPSIADES: Ah! 'tis onions they are seeking. Do not give yourselves so much trouble; I know where there are some, fine and large ones. But what are those fellows doing, who are bent all double? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:170' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=192>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:192'><b>&sect; 192</b>&nbsp;&nbsp;DISCIPLE: They are sounding the abysses of <a href=/people/306 target=_blank>Tartarus</a>. <br />STREPSIADES: And what is their rump looking at in the heavens? <br />DISCIPLE: It is studying astronomy on its own account. But come in; so that the master may not find us here. <br />STREPSIADES: Not yet, not yet; let them not change their position. I want to tell them my own little matter. <br />DISCIPLE: But they may not stay too long in the open air and away from school. <br />STREPSIADES: In the name of all the gods, what is that? Tell me. (Pointing to a celestial globe.) <br />DISCIPLE: That is astronomy. <br />STREPSIADES: And that? (Pointing to a map.) <br />DISCIPLE: Geometry. <br />STREPSIADES: What is that used for? <br />DISCIPLE: To measure the land. <br />STREPSIADES: But that is apportioned by lot. <br />DISCIPLE: No, no, I mean the entire earth. <br />STREPSIADES: Ah! what a funny thing! How generally useful indeed is this invention! <br />DISCIPLE: There is the whole surface of the earth. Look! Here is <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>. <br />STREPSIADES: <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>! you are mistaken; I see no courts sitting. <br />DISCIPLE: Nevertheless it is really and truly the <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> territory. <br />STREPSIADES: And where are my neighbours of <a about=https://topostext.org/place/379238DKik class=place long=23.8393 lat=37.9384>Cicynna</a>? <br />DISCIPLE: They live here. This is <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a>; you see this island, that is so long and narrow. <br />STREPSIADES: I know. 'Tis we and <a href=/people/92 target=_blank>Pericles</a>, who have stretched it by dint of squeezing it. And where is <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedemon</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:192' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=215>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:215'><b>&sect; 215</b>&nbsp;&nbsp;DISCIPLE: <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedemon</a>? Why, here it is, look. <br />STREPSIADES: How near it is to us! Think it well over, it must be removed to a greater distance. <br />DISCIPLE: But, by <a href=/people/1 target=_blank>Zeus</a>, that is not possible. <br />STREPSIADES: Then, woe to you! And who is this man suspended up in a basket? <br />DISCIPLE: 'Tis he himself. <br />STREPSIADES: Who himself? <br />DISCIPLE: <a href=/people/16 target=_blank>Socrates</a>. <br />STREPSIADES: <a href=/people/16 target=_blank>Socrates</a>! Oh! I pray you, call him right loudly for me. <br />DISCIPLE: Call him yourself; I have no time to waste. <br />STREPSIADES: <a href=/people/16 target=_blank>Socrates</a>! my little <a href=/people/16 target=_blank>Socrates</a>! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:215' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=223>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:223'><b>&sect; 223</b>&nbsp;&nbsp;SOCRATES: Mortal, what do you want with me? <br />STREPSIADES: First, what are you doing up there? Tell me, I beseech you. <br />SOCRATES: I traverse the air and contemplate the sun. <br />STREPSIADES: Thus 'tis not on the solid ground, but from the height of this basket, that you slight the gods, if indeed.... <br />SOCRATES: I have to suspend my brain and mingle the subtle essence of my mind with this air, which is of the like nature, in order to clearly penetrate the things of heaven. I should have discovered nothing, had I remained on the ground to consider from below the things that are above; for the earth by its force attracts the sap of the mind to itself. 'Tis just the same with the water-cress. <br />STREPSIADES: What? Does the mind attract the sap of the water-cress? Ah! my dear little <a href=/people/16 target=_blank>Socrates</a>, come down to me! I have come to ask you for lessons. <br />SOCRATES: And for what lessons? <br />STREPSIADES: I want to learn how to speak. I have borrowed money, and my merciless creditors do not leave me a moment's peace; all my goods are at stake. <br />SOCRATES: And how was it you did not see that you were getting so much into debt? <br />STREPSIADES: My ruin has been the madness for <a href=/people/10959 target=_blank>horses</a>, a most rapacious evil; but teach me one of your two methods of reasoning, the one whose object is not to repay anything, and, may the gods bear witness, that I am ready to pay any fee you may name. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:223' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:244'><b>&sect; 244</b>&nbsp;&nbsp;SOCRATES: By which gods will you swear? To begin with, the gods are not a coin current with us. <br />STREPSIADES: But what do you swear by then? By the iron money of <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a>? <br />SOCRATES: Do you really wish to know the truth of celestial matters? <br />STREPSIADES: Why, truly, if 'tis possible. <br />SOCRATES: ... and to converse with the clouds, who are our genii? <br />STREPSIADES: Without a doubt. <br />SOCRATES: Then be seated on this sacred couch. <br />STREPSIADES: I am seated. <br />SOCRATES: Now take this chaplet. <br />STREPSIADES: Why a chaplet? Alas! <a href=/people/16 target=_blank>Socrates</a>, would you sacrifice me, like <a href=/people/528 target=_blank>Athamas</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:244' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=257>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:257'><b>&sect; 257</b>&nbsp;&nbsp;SOCRATES: No, these are the rites of initiation. <br />STREPSIADES: And what is it I am to gain? <br />SOCRATES: You will become a thorough rattle-pate, a hardened old stager, the fine flour of the talkers.... But come, keep quiet. <br />STREPSIADES: By <a href=/people/1 target=_blank>Zeus</a>! You lie not! Soon I shall be nothing but wheat-flour, if you powder me in this fashion. <br />SOCRATES: Silence, old man, give heed to the prayers.... Oh! most mighty king, the boundless air, that keepest the earth suspended in space, thou bright <a href=/people/2576 target=_blank>Aether</a> and ye venerable goddesses, the Clouds, who carry in your loins the thunder and the lightning, arise, ye sovereign powers and manifest yourselves in the celestial spheres to the eyes of the sage. <br />STREPSIADES: Not yet! Wait a bit, till I fold my mantle double, so as not to get wet. And to think that I did not even bring my travelling cap! What a misfortune! <br />SOCRATES: Come, oh! Clouds, whom I adore, come and show yourselves to this man, whether you be resting on the sacred summits of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>, crowned with hoar-frost, or tarrying in the gardens of Ocean, your father, forming sacred choruses with the <a href=/people/159 target=_blank>Nymphs</a>; whether you be gathering the waves of the <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a> in golden vases or dwelling in the <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotic</a> marsh or on the snowy rocks of <a about=https://topostext.org/place/386265LMim class=place long=26.4695 lat=38.5885>Mimas</a>, hearken to my prayer and accept my offering. May these sacrifices be pleasing to you. <br />CHORUS: Eternal Clouds, let us appear, let us arise from the roaring depths of Ocean, our father; let us fly towards the lofty mountains, spread our damp wings over their forest-laden summits, whence we will dominate the distant valleys, the harvest fed by the sacred earth, the murmur of the divine streams and the resounding waves of the sea, which the unwearying orb lights up with its glittering beams. But let us shake off the rainy fogs, which hide our immortal beauty and sweep the earth from afar with our gaze. <br />SOCRATES: Oh, venerated goddesses, yes, you are answering my call! (To <a href=/people/3699 target=_blank>Strepsiades</a>.) Did you hear their voices mingling with the awful growling of the thunder? <br />STREPSIADES: Oh! adorable Clouds, I revere you and I too am going to let off my thunder, so greatly has your own affrighted me. Faith! whether permitted or not, I must, I must shit! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:257' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=298>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:298'><b>&sect; 298</b>&nbsp;&nbsp;SOCRATES: No scoffing; do not copy those accursed comic poets. Come, silence! a numerous host of goddesses approaches with songs. <br />CHORUS: Virgins, who pour forth the rains, let us move toward <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, the rich country of <a href=/people/429 target=_blank>Pallas</a>, the home of the brave; let us visit the dear land of <a href=/people/447 target=_blank>Cecrops</a>, where the secret rites are celebrated, where the mysterious sanctuary flies open to the initiate.... What victims are offered there to the deities of heaven! What glorious temples! What statues! What holy prayers to the rulers of <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a>! At every season nothing but sacred festivals, garlanded victims, are to be seen. Then Spring brings round again the joyous feasts of <a href=/people/5 target=_blank>Dionysus</a>, the harmonious contests of the choruses and the serious melodies of the flute. <br />STREPSIADES: By <a href=/people/1 target=_blank>Zeus</a>! Tell me, <a href=/people/16 target=_blank>Socrates</a>, I pray you, who are these women, whose language is so solemn; can they be demigoddesses? <br />SOCRATES: Not at all. They are the Clouds of heaven, great goddesses for the lazy; to them we owe all, thoughts, speeches, trickery, roguery, boasting, lies, sagacity. <br />STREPSIADES: Ah! that was why, as I listened to them, my mind spread out its wings; it burns to babble about trifles, to maintain worthless arguments, to voice its petty reasons, to contradict, to tease some opponent. But are they not going to show themselves? I should like to see them, were it possible. <br />SOCRATES: Well, look this way in the direction of <a about=https://topostext.org/place/382237LPar class=place long=23.716 lat=38.174>Parnes</a>; I already see those who are slowly descending. <br />STREPSIADES: But where, where? Show them to me. <br />SOCRATES: They are advancing in a throng, following an oblique path across the dales and thickets. <br />STREPSIADES: 'Tis strange! I can see nothing. <br />SOCRATES: There, close to the entrance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:298' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=326>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:326'><b>&sect; 326</b>&nbsp;&nbsp;STREPSIADES: Hardly, if at all, can I distinguish them. <br />SOCRATES: You must see them clearly now, unless your eyes are filled with gum as thick as pumpkins. <br />STREPSIADES: Aye, undoubtedly! Oh! the venerable goddesses! Why, they fill up the entire stage. <br />SOCRATES: And you did not know, you never suspected, that they were goddesses? <br />STREPSIADES: No, indeed; methought the Clouds were only fog, dew and vapour. <br />SOCRATES: But what you certainly do not know is that they are the support of a crowd of quacks, both the diviners, who were sent to <a about=https://topostext.org/place/397164PTho class=place long=16.49 lat=39.716>Thurium</a>, the notorious physicians, the well-combed fops, who load their fingers with rings down to the nails, and the braggarts, who write dithyrambic verses, all these are idlers whom the Clouds provide a living for, because they sing them in their verses. <br />STREPSIADES: 'Tis then for this that they praise the rapid flight of the moist clouds, which veil the brightness of day and the waving locks of the hundred-headed <a href=/people/5302 target=_blank>Typho</a> and the impetuous tempests, which float through the heavens, like birds of prey with aerial wings, loaded with mists and the rains, the dew, which the clouds outpour. As a reward for these fine phrases they bolt well-grown, tasty mullet and delicate thrushes. <br />SOCRATES: Yes, thanks to these. And is it not right and meet? <br />STREPSIADES: Tell me then why, if these really are the Clouds, they so very much resemble mortals. This is not their usual form. <br />SOCRATES: What are they like then? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:326' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=345>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:345'><b>&sect; 345</b>&nbsp;&nbsp;STREPSIADES: I don't know exactly; well, they are like great packs of wool, but not like women — no, not in the least.... And these have noses. <br />SOCRATES: Answer my questions. <br />STREPSIADES: Willingly! Go on, I am listening. <br />SOCRATES: Have you not sometimes seen clouds in the sky like a <a href=/people/553 target=_blank>centaur</a>, a leopard, a <a href=/people/10952 target=_blank>wolf</a> or a <a href=/people/10955 target=_blank>bull</a>? <br />STREPSIADES: Why, certainly I have, but what then? <br />SOCRATES: They take what metamorphosis they like. If they see a debauchee with long flowing locks and hairy as a beast, like the son of <a href=/people/5318 target=_blank>Xenophantes</a>, they take the form of a <a href=/people/553 target=_blank>Centaur</a> in derision of his shameful passion. <br />STREPSIADES: And when they see <a href=/people/369 target=_blank>Simon</a>, that thiever of public money, what do they do then? <br />SOCRATES: To picture him to the life, they turn at once into <a href=/people/10952 target=_blank>wolves</a>. <br />STREPSIADES: So that was why yesterday, when they saw <a href=/people/599 target=_blank>Cleonymus</a>, who cast away his buckler because he is the veriest poltroon amongst men, they changed into deer. <br />SOCRATES: And today they have seen <a href=/people/2041 target=_blank>Clisthenes</a>; you see ... they are women. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:345' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=356>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:356'><b>&sect; 356</b>&nbsp;&nbsp;STREPSIADES: Hail, sovereign goddesses, and if ever you have let your celestial voice be heard by mortal ears, speak to me, oh! speak to me, ye all-powerful queens. <br />CHORUS: Hail! veteran of the ancient times, you who burn to instruct yourself in fine language. And you, great high-priest of subtle nonsense, tell us your desire. To you and <a href=/people/924 target=_blank>Prodicus</a> alone of all the hollow orationers of today have we lent an ear — to <a href=/people/924 target=_blank>Prodicus</a>, because of his knowledge and his great wisdom, and to you, because you walk with head erect, a confident look, barefooted, resigned to everything and proud of our protection. <br />STREPSIADES: Oh! <a href=/people/3304 target=_blank>Earth</a>! What august utterances! how sacred! how wondrous! <br />SOCRATES: That is because these are the only goddesses; all the rest are pure myth. <br />STREPSIADES: But by the <a href=/people/3304 target=_blank>Earth</a>! is our Father, <a href=/people/1 target=_blank>Zeus</a>, the <a about=https://topostext.org/place/401224LOly class=demonym long=22.3586 lat=40.0856>Olympian</a>, not a god? <br />SOCRATES: <a href=/people/1 target=_blank>Zeus</a>! what <a href=/people/1 target=_blank>Zeus</a>? Are you mad? There is no <a href=/people/1 target=_blank>Zeus</a>. <br />STREPSIADES: What are you saying now? Who causes the rain to fall? Answer me that! <br />SOCRATES: Why, 'tis these, and I will prove it. Have you ever seen it raining without clouds? Let <a href=/people/1 target=_blank>Zeus</a> then cause rain with a clear sky and without their presence! <br />STREPSIADES: By <a href=/people/2 target=_blank>Apollo</a>! that is powerfully argued! For my own part, I always thought it was <a href=/people/1 target=_blank>Zeus</a> pissing into a sieve. But tell me, who is it makes the thunder, which I so much dread? <br />SOCRATES: 'Tis these, when they roll one over the other. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:356' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=375>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:375'><b>&sect; 375</b>&nbsp;&nbsp;STREPSIADES: But how can that be? you most daring among men! <br />SOCRATES: Being full of water, and forced to move along, they are of necessity precipitated in rain, being fully distended with moisture from the regions where they have been floating; hence they bump each other heavily and burst with great noise. <br />STREPSIADES: But is it not <a href=/people/1 target=_blank>Zeus</a> who forces them to move? <br />SOCRATES: Not at all; 'tis aerial Whirlwind. <br />STREPSIADES: The Whirlwind! ah! I did not know that. So <a href=/people/1 target=_blank>Zeus</a>, it seems, has no existence, and 'tis the Whirlwind that reigns in his stead? But you have not yet told me what makes the roll of the thunder? <br />SOCRATES: Have you not understood me then? I tell you, that the Clouds, when full of rain, bump against one another, and that, being inordinately swollen out, they burst with a great noise. <br />STREPSIADES: How can you make me credit that? <br />SOCRATES: Take yourself as an example. When you have heartily gorged on stew at the <a href=/people/11002 target=_blank>Panathenaea</a>, you get throes of stomach-ache and then suddenly your belly resounds with prolonged growling. <br />STREPSIADES: Yes, yes, by <a href=/people/2 target=_blank>Apollo</a>! I suffer, I get colic, then the stew sets a-growling like thunder and finally bursts forth with a terrific noise. At first, 'tis but a little gurgling pappax, pappax! then it increases, papapappax! and when I seek relief, why, 'tis thunder indeed, papapappax! pappax!! papapappax!!! just like the clouds. <br />SOCRATES: Well then, reflect what a noise is produced by your belly, which is but small. Shall not the air, which is boundless, produce these mighty claps of thunder? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:375' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=395>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:395'><b>&sect; 395</b>&nbsp;&nbsp;STREPSIADES: But tell me this. Whence comes the lightning, the dazzling flame, which at times consumes the man it strikes, at others hardly singes him. Is it not plain, that 'tis <a href=/people/1 target=_blank>Zeus</a> hurling it at the perjurers? <br />SOCRATES: Out upon the fool! the driveller! he still savours of the golden age! If <a href=/people/1 target=_blank>Zeus</a> strikes at the perjurers, why has he not blasted <a href=/people/369 target=_blank>Simon</a>, <a href=/people/599 target=_blank>Cleonymus</a> and <a href=/people/2671 target=_blank>Theorus</a>? Of a surety, greater perjurers cannot exist. No, he strikes his own Temple, and <a about=https://topostext.org/place/376240LSou class=place long=24.0247 lat=37.6498>Sounion</a>, the promontory of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and the towering oaks. Now, why should he do that? An oak is no perjurer. <br />STREPSIADES: I cannot tell, but it seems to me well argued. What is the thunder then? <br />SOCRATES: When a dry wind ascends to the Clouds and gets shut into them, it blows them out like a bladder; finally, being too confined, it bursts them, escapes with fierce violence and a roar to flash into flame by reason of its own impetuosity. <br />STREPSIADES: Forsooth, 'tis just what happened to me one day. 'Twas at the feast of <a href=/people/1 target=_blank>Zeus</a>! I was cooking a <a href=/people/10951 target=_blank>sow</a>'s belly for my family and I had forgotten to slit it open. It swelled out and, suddenly bursting, discharged itself right into my eyes and burnt my face. <br />CHORUS: Oh, mortal! you, who desire to instruct yourself in our great wisdom, the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, the Greeks will envy you your good fortune. Only you must have the memory and ardour for study, you must know how to stand the tests, hold your own, go forward without feeling fatigue, caring but little for food, abstaining from wine, gymnastic exercises and other similar follies, in fact, you must believe as every man of intellect should, that the greatest of all blessings is to live and think more clearly than the vulgar herd, to shine in the contests of words. <br />STREPSIADES: If it be a question of hardiness for labour, of spending whole nights at work, of living sparingly, of fighting my stomach and only eating chick-pease, rest assured, I am as hard as an anvil. <br />SOCRATES: Henceforward, following our example, you will recognize no other gods but <a href=/people/1434 target=_blank>Chaos</a>, the Clouds and the Tongue, these three alone. <br />STREPSIADES: I would not speak to the others, even if I should meet them in the street; not a single sacrifice, not a libation, not a grain of incense for them! <br />CHORUS: Tell us boldly then what you want of us; you cannot fail to succeed, if you honour and revere us and if you are resolved to become a clever man. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:395' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=428>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:428'><b>&sect; 428</b>&nbsp;&nbsp;STREPSIADES: Oh, sovereign goddesses, 'tis but a very small favour that I ask of you; grant that I may distance all the Greeks by a hundred stadia in the art of speaking. <br />CHORUS: We grant you this, and henceforward no eloquence shall more often succeed with the people than your own. <br />STREPSIADES: May the god shield me from possessing great eloquence! 'Tis not what I want. I want to be able to turn bad lawsuits to my own advantage and to slip through the fingers of my creditors. <br />CHORUS: It shall be as you wish, for your ambitions are modest. Commit yourself fearlessly to our ministers, the sophists. <br />STREPSIADES: This will I do, for I trust in you. Moreover there is no drawing back, what with these cursed <a href=/people/10959 target=_blank>horses</a> and this marriage, which has eaten up my vitals. So let them do with me as they will; I yield my body to them. Come blows, come hunger, thirst, heat or cold, little matters it to me; they may flay me, if I only escape my debts, if only I win the reputation of being a bold rascal, a fine speaker, impudent, shameless, a braggart, and adept at stringing lies, an old stager at quibbles, a complete table of the laws, a thorough rattle, a <a href=/people/10958 target=_blank>fox</a> to slip through any hole; supple as a leathern strap, slippery as an eel, an artful fellow, a blusterer, a villain; a knave with a hundred faces, cunning, intolerable, a gluttonous <a href=/people/10953 target=_blank>dog</a>. With such epithets do I seek to be greeted; on these terms, they can treat me as they choose, and, if they wish, by <a href=/people/48 target=_blank>Demeter</a>! they can turn me into sausages and serve me up to the philosophers. <br />CHORUS: Here have we a bold and well-disposed pupil indeed. When we shall have taught you, your glory among the mortals will reach even to the skies. <br />STREPSIADES: Wherein will that profit me? <br />CHORUS: You will pass your whole life among us and will be the most envied of men. <br />STREPSIADES: Shall I really ever see such happiness? <br />CHORUS: Clients will be everlastingly besieging your door in crowds, burning to get at you, to explain their business to you and to consult you about their suits, which, in return for your ability, will bring you in great sums. But, <a href=/people/16 target=_blank>Socrates</a>, begin the lessons you want to teach this old man; rouse his mind, try the strength of his intelligence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:428' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=478>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:478'><b>&sect; 478</b>&nbsp;&nbsp;SOCRATES: Come, tell me the kind of mind you have; 'tis important I know this, that I may order my batteries against you in a new fashion. <br />STREPSIADES: Eh, what! in the name of the gods, are you purposing to assault me then? <br />SOCRATES: No. I only wish to ask you some questions. Have you any memory? <br />STREPSIADES: That depends. if anything is owed me, my memory is excellent, but if I owe, alas! I have none whatever. <br />SOCRATES: Have you a natural gift for speaking? <br />STREPSIADES: For speaking, no; for cheating, yes. <br />SOCRATES: How will you be able to learn then? <br />STREPSIADES: Very easily, have no fear. <br />SOCRATES: Thus, when I throw forth some philosophical thought anent things celestial, you will seize it in its very flight? <br />STREPSIADES: Then I am to snap up wisdom much as a <a href=/people/10953 target=_blank>dog</a> snaps up a morsel? <br />SOCRATES: Oh! the ignoramus! the barbarian! I greatly fear, old man, 'twill be needful for me to have recourse to blows. Now, let me hear what you do when you are beaten. <br />STREPSIADES: I receive the blow, then wait a moment, take my witnesses and finally summon my assailant at law. <br />SOCRATES: Come, take off your cloak. <br />STREPSIADES: Have I robbed you of anything? <br />SOCRATES: No, but 'tis usual to enter the school without your cloak. <br />STREPSIADES: But I am not come here to look for stolen goods. <br />SOCRATES: Off with it, fool! <br />STREPSIADES: Tell me, if I prove thoroughly attentive and learn with zeal, which of your disciples shall I resemble, do you think? <br />SOCRATES: You will be the image of <a href=/people/1002 target=_blank>Chaerephon</a>. <br />STREPSIADES: Ah! unhappy me! I shall then be but half alive? <br />SOCRATES: A truce to this chatter! follow me and no more of it. <br />STREPSIADES: First give me a honey-cake, for to descend down there sets me all a-tremble; meseems 'tis the <a about=https://topostext.org/place/384229STro class=place long=22.875 lat=38.4312>cave</a> of <a href=/people/786 target=_blank>Trophonius</a>. <br />SOCRATES: But get in with you! What reason have you for thus dallying at the door? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:478' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=510>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:510'><b>&sect; 510</b>&nbsp;&nbsp;CHORUS: Good luck! you have courage; may you succeed, you, who, though already so advanced in years, wish to instruct your mind with new studies and practise it in wisdom! <br />CHORUS (Parabasis). Spectators! By <a href=/people/5 target=_blank>Bacchus</a>, whose servant I am, I will frankly tell you the truth. May I secure both victory and renown as certainly as I hold you for adept critics and as I regard this comedy as my best. I wished to give you the first view of a work, which had cost me much trouble, but I withdrew, unjustly beaten by unskilful rivals. 'Tis you, oh, enlightened public, for whom I have prepared my piece, that I reproach with this. Nevertheless I shall never willingly cease to seek the approval of the discerning. I have not forgotten the day, when men, whom one is happy to have for an audience, received my 'Young Man' and my 'Debauchee' with so much favour in this very place. Then as yet virgin, my <a href=/people/54 target=_blank>Muse</a> had not attained the legal age for maternity; she had to expose her first-born for another to adopt, and it has since grown up under your generous patronage. Ever since you have as good as sworn me your faithful alliance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:510' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=534>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:534'><b>&sect; 534</b>&nbsp;&nbsp;Thus, like <a href=/people/388 target=_blank>Electra</a> of the poets, my comedy has come to seek you today, hoping again to encounter such enlightened spectators. As far away as she can discern her <a href=/people/120 target=_blank>brother</a>, she will be able to recognize him by his curly head. And note her modest demeanour! She has not sewn on a piece of hanging leather, thick and reddened at the end, to cause laughter among the children; she does not rail at the bald, neither does she dance the cordax; no old man is seen, who, while uttering his lines, batters his questioner with a stick to make his poor jests pass muster. She does not rush upon the scene carrying a torch and screaming, 'La, la! la, la!' No, she relies upon herself and her verses.... My value is so well known, that I take no further pride in it. I do not seek to deceive you, by reproducing the same subjects two or three times; I always invent fresh themes to present before you, themes that have no relation to each other and that are all clever. I attacked <a href=/people/285 target=_blank>Cleon</a> to his face and when he was all-powerful; but he has fallen, and now I have no desire to kick him when he is down. My rivals, on the contrary, once that this wretched <a href=/people/1429 target=_blank>Hyperbolus</a> has given them the cue, have never ceased setting upon both him and his mother. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:534' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=553>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:553'><b>&sect; 553</b>&nbsp;&nbsp;First <a href=/people/555 target=_blank>Eupolis</a> presented his 'Maricas'; this was simply my 'Knights,' whom this plagiarist had clumsily furbished up again by adding to the piece an old drunken woman, so that she might dance the cordax. 'Twas an old idea, taken from <a href=/people/456 target=_blank>Phrynichus</a>, who caused his old hag to be devoured by a monster of the deep. Then <a href=/people/446 target=_blank>Hermippus</a> fell foul of <a href=/people/1429 target=_blank>Hyperbolus</a> and now all the others fall upon him and repeat my comparison of the eels. May those who find amusement in their pieces not be pleased with mine, but as for you, who love and applaud my inventions, why, posterity will praise your good taste. Oh, ruler of <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympus</a>, all-powerful king of the gods, great <a href=/people/1 target=_blank>Zeus</a>, it is thou whom I first invoke; protect this chorus; and thou too, <a href=/people/25 target=_blank>Poseidon</a>, whose dread trident upheaves at the will of thy anger both the bowels of the earth and the salty waves of the ocean. I invoke my illustrious father, the divine <a href=/people/2576 target=_blank>Aether</a>, the universal sustainer of life, and <a href=/people/11033 target=_blank>Phoebus</a>, who, from the summit of his chariot, sets the world aflame with his dazzling rays, <a href=/people/11033 target=_blank>Phoebus</a>, a mighty deity amongst the gods and adored amongst mortals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:553' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=575>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:575'><b>&sect; 575</b>&nbsp;&nbsp;Most wise spectators, lend us all your attention. Give heed to our just reproaches. There exist no gods to whom this city owes more than it does to us, whom alone you forget. Not a sacrifice, not a libation is there for those who protect you! Have you decreed some mad expedition? Well! we thunder or we fall down in rain. When you chose that enemy of heaven, the <a about=https://topostext.org/place/410300RPap class=demonym long=30 lat=41>Paphlagonian</a> tanner, for a general, we knitted our brow, we caused our wrath to break out; the lightning shot forth, the thunder pealed, the moon deserted her course and the sun at once veiled his beam threatening no longer to give you light, if <a href=/people/285 target=_blank>Cleon</a> became general. Nevertheless you elected him; 'tis said, <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> never resolves upon some fatal step but the gods turn these errors into her greatest gain. Do you wish that this election should even now be a success for you? 'Tis a very simple thing to do; condemn this rapacious gull named <a href=/people/285 target=_blank>Cleon</a> for bribery and extortion, fit a wooden collar tight round his neck, and your error will be rectified and the commonweal will at once regain its old prosperity. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:575' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=595>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:595'><b>&sect; 595</b>&nbsp;&nbsp;Aid me also, <a href=/people/11033 target=_blank>Phoebus</a>, god of <a about=https://topostext.org/place/374253SSan class=person long=25.2666 lat=37.4004>Delos</a>, who reignest on the high-horned <a about=https://topostext.org/place/374253LKyn class=place long=25.272 lat=37.395>Cynthian rock</a> ; and thou, blessed of <a about=https://topostext.org/place/379273PEph class=person long=27.3397 lat=37.9419>Ephesos</a>, who has the <a about=https://topostext.org/place/379274SEph class=place long=27.364 lat=37.949>all-golden house</a>, in which the <a about=https://topostext.org/place/385280RLyd class=demonym long=28 lat=38.5>Lydian</a> damsels greatly reverence you; and thou, goddess of our country, <a href=/people/11 target=_blank>Athene</a>, armed with the aegis, the protectress of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>; and thou, who, surrounded by the Bacchanals of <a about=https://topostext.org/place/385225SDel class=person long=22.50108 lat=38.48264>Delphi</a>, roamest over the rocks of <a about=https://topostext.org/place/385226LPar class=place long=22.6219 lat=38.5354>Parnassus</a> shaking the flame of thy resinous torch, thou, <a href=/people/5 target=_blank>Dionysos</a>, the god of revel and joy. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:595' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=606>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:606'><b>&sect; 606</b>&nbsp;&nbsp;As we were preparing to come here, we were hailed by the <a href=/people/339 target=_blank>Moon</a> and were charged to wish joy and happiness both to the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> and to their allies; further, she said that she was enraged and that you treated her very shamefully, her, who does not pay you in words alone, but who renders you all real benefits. Firstly, thanks to her, you save at least a drachma each month for lights, for each, as he is leaving home at night, says, Slave, buy no torches, for the moonlight is beautiful, — not to name a thousand other benefits. Nevertheless you do not reckon the days correctly and your calendar is naught but confusion. Consequently the gods load her with threats each time they get home and are disappointed of their meal, because the festival has not been kept in the regular order of time. When you should be sacrificing, you are putting to the torture or administering justice. And often, we others, the gods, are fasting in token of mourning for the death of <a href=/people/1491 target=_blank>Memnon</a> or <a href=/people/1279 target=_blank>Sarpedon</a>, while you are devoting yourselves to joyous libations. 'Tis for this, that last year, when the lot would have invested <a href=/people/1429 target=_blank>Hyperbolus</a> with the duty of <a href=/people/1385 target=_blank>Amphictyon</a>, we took his crown from him, to teach him that time must be divided according to the phases of the moon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:606' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=627>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:627'><b>&sect; 627</b>&nbsp;&nbsp;SOCRATES: By Respiration! By <a href=/people/1434 target=_blank>Chaos</a>! By the Air! I have never seen a man so gross, so inept, so stupid, so forgetful. All the little quibbles, which I teach him, he forgets even before he has learnt them. Yet I will not give it up, I will make him come out here into the open air. Where are you, <a href=/people/3699 target=_blank>Strepsiades</a>? Come, bring your couch out here. <br />STREPSIADES: But the bugs will not allow me to bring it. <br />SOCRATES: Have done with such nonsense! place it there and pay attention. <br />STREPSIADES: Well, here I am. <br />SOCRATES: Good! Which science of all those you have never been taught, do you wish to learn first? The measures, the rhythms or the verses? <br />STREPSIADES: Why, the measures; the flour dealer cheated me out of two choenixes the other day. <br />SOCRATES: 'Tis not about that I ask you, but which, according to you, is the best measure, the trimeter or the tetrameter? <br />STREPSIADES: The one I prefer is the semisextarius. <br />SOCRATES: You talk nonsense, my good fellow. <br />STREPSIADES: I will wager your tetrameter is the semisextarius. <br />SOCRATES: Plague seize the dunce and the fool! Come, perchance you will learn the rhythms quicker. <br />STREPSIADES: Will the rhythms supply me with food? <br />SOCRATES: First they will help you to be pleasant in company, then to know what is meant by oenoplian rhythm and what by the dactylic. <br />STREPSIADES: Of the dactyl? I know that quite well. <br />SOCRATES: What is it then? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:627' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=653>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:653'><b>&sect; 653</b>&nbsp;&nbsp;STREPSIADES: Why, 'tis this finger; formerly, when a child, I used this one. <br />SOCRATES: You are as low-minded as you are stupid. <br />STREPSIADES: But, wretched man, I do not want to learn all this. <br />SOCRATES: Then what do you want to know? <br />STREPSIADES: Not that, not that, but the art of false reasoning. <br />SOCRATES: But you must first learn other things. Come, what are the male quadrupeds? <br />STREPSIADES: Oh! I know the males thoroughly. Do you take me for a fool then? The ram, the buck, the <a href=/people/10955 target=_blank>bull</a>, the <a href=/people/10953 target=_blank>dog</a>, the pigeon. <br />SOCRATES: Do you see what you are doing; is not the female pigeon called the same as the male? <br />STREPSIADES: How else? Come now? <br />SOCRATES: How else? With you then 'tis pigeon and pigeon! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:653' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=665>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:665'><b>&sect; 665</b>&nbsp;&nbsp;STREPSIADES: 'Tis true, by <a href=/people/25 target=_blank>Poseidon</a>! but what names do you want me to give them? <br />SOCRATES: Term the female pigeonnette and the male pigeon. <br />STREPSIADES: Pigeonnette! hah! by the Air! That's splendid! for that lesson bring out your kneading-trough and I will fill him with flour to the brim. <br />SOCRATES: There you are wrong again; you make trough masculine and it should be feminine. <br />STREPSIADES: What? if I say him, do I make the trough masculine? <br />SOCRATES: Assuredly! would you not say him for <a href=/people/599 target=_blank>Cleonymus</a>? <br />STREPSIADES: Well? <br />SOCRATES: Then trough is of the same gender as <a href=/people/599 target=_blank>Cleonymus</a>? <br />STREPSIADES: Oh! good sir! <a href=/people/599 target=_blank>Cleonymus</a> never had a kneading-trough; he used a round mortar for the purpose. But come, tell me what I should say? <br />SOCRATES: For trough you should say her as you would for Sostrate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:665' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=678>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:678'><b>&sect; 678</b>&nbsp;&nbsp;STREPSIADES: Her? <br />SOCRATES: In this manner you make it truly female. <br />STREPSIADES: That's it! Her for trough and her for <a href=/people/599 target=_blank>Cleonymus</a>. <br />SOCRATES: Now I must teach you to distinguish the masculine proper names from those that are feminine. <br />STREPSIADES: Ah! I know the female names well. <br />SOCRATES: Name some then. <br />STREPSIADES: <a href=/people/7904 target=_blank>Lysilla</a>, <a href=/people/2914 target=_blank>Philinna</a>, Clitagora, Demetria. <br />SOCRATES: And what are masculine names? <br />STREPSIADES: They are countless — <a href=/people/489 target=_blank>Philoxenus</a>, <a href=/people/3425 target=_blank>Melesias</a>, <a href=/people/3528 target=_blank>Amynias</a>. <br />SOCRATES: But, wretched man, the last two are not masculine. <br />STREPSIADES: You do not reckon them masculine? <br />SOCRATES: Not at all. If you met <a href=/people/3528 target=_blank>Amynias</a>, how would you hail him? <br />STREPSIADES: How? Why, I should shout, Hi! hither, Amynia! <br />SOCRATES: Do you see? 'tis a female name that you give him. <br />STREPSIADES: And is it not rightly done, since he refuses military service? But what use is there in learning what we all know? <br />SOCRATES: You know nothing about it. Come, lie down there. <br />STREPSIADES: What for? <br />SOCRATES: Ponder awhile over matters that interest you. <br />STREPSIADES: Oh! I pray you, not there! but, if I must lie down and ponder, let me lie on the ground. <br />SOCRATES: 'Tis out of the question. Come! on to the couch! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:678' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=280>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:280'><b>&sect; 280</b>&nbsp;&nbsp;STREPSIADES: What cruel fate! What a torture the bugs will this day put me to! <br />SOCRATES: Ponder and examine closely, gather your thoughts together, let your mind turn to every side of things; if you meet with a difficulty, spring quickly to some other idea; above all, keep your eyes away from all gentle sleep. <br />STREPSIADES: Oh, woe, woe! oh, woe, woe! <br />SOCRATES: What ails you? why do you cry so? <br />STREPSIADES: Oh! I am a dead man! Here are these cursed <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a> advancing upon me from all corners of the couch; they are biting me, they are gnawing at my sides, they are drinking all my blood, they are twitching off my testicles, they are exploring all up my back, they are killing me! <br />SOCRATES: Not so much wailing and clamour, if you please. <br />STREPSIADES: How can I obey? I have lost my money and my complexion, my blood and my slippers, and to cap my misery, I must keep awake on this couch, when scarce a breath of life is left in me. <br />SOCRATES: Well now! what are you doing? are you reflecting? <br />STREPSIADES: Yes, by <a href=/people/25 target=_blank>Poseidon</a>! <br />SOCRATES: What about? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:280' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=723>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:723'><b>&sect; 723</b>&nbsp;&nbsp;STREPSIADES: Whether the bugs will not entirely devour me. <br />SOCRATES: May death seize you, accursed man! <br />STREPSIADES: Ah! it has already. <br />SOCRATES: Come, no giving way! Cover up your head; the thing to do is to find an ingenious alternative. <br />STREPSIADES: An alternative! ah! I only wish one would come to me from within these coverlets! <br />SOCRATES: Hold! let us see what our fellow is doing. Ho! you! are you asleep? <br />STREPSIADES: No, by <a href=/people/2 target=_blank>Apollo</a>! <br />SOCRATES: Have you got hold of anything? <br />STREPSIADES: No, nothing whatever. <br />SOCRATES: Nothing at all! <br />STREPSIADES: No, nothing but my tool, which I've got in my hand. <br />SOCRATES: Are you not going to cover your head immediately and ponder? <br />STREPSIADES: Over what? Come, <a href=/people/16 target=_blank>Socrates</a>, tell me. <br />SOCRATES: Think first what you want, and then tell me. <br />STREPSIADES: But I have told you a thousand times what I want. 'Tis not to pay any of my creditors. <br />SOCRATES: Come, wrap yourself up; concentrate your mind, which wanders too lightly, study every detail, scheme and examine thoroughly. <br />STREPSIADES: Oh, woe! woe! oh dear! oh dear! <br />SOCRATES: Keep yourself quiet, and if any notion troubles you, put it quickly aside, then resume it and think over it again. <br />STREPSIADES: My dear little <a href=/people/16 target=_blank>Socrates</a>! <br />SOCRATES: What is it, old greybeard? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:723' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=746>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:746'><b>&sect; 746</b>&nbsp;&nbsp;STREPSIADES: I have a scheme for not paying my debts. <br />SOCRATES: Let us hear it. <br />STREPSIADES: Tell me, if I purchased a <a about=https://topostext.org/place/394223RThs class=demonym long=22.3 lat=39.4>Thessalian</a> witch, I could make the moon descend during the night and shut it, like a mirror, into a round box and there keep it carefully.... <br />SOCRATES: How would you gain by that? <br />STREPSIADES: How? Why, if the moon did not rise, I would have no interest to pay. <br />SOCRATES: Why so? <br />STREPSIADES: Because money is lent by the month. <br />SOCRATES: Good! but I am going to propose another trick to you. If you were condemned to pay five talents, how would you manage to quash that verdict? Tell me. <br />STREPSIADES: How? how? I don't know, I must think. <br />SOCRATES: Do you always shut your thoughts within yourself. Let your ideas fly in the air, like a may-bug, tied by the foot with a thread. <br />STREPSIADES: I have found a very clever way to annul that conviction; you will admit that much yourself. <br />SOCRATES: What is it? <br />STREPSIADES: Have you ever seen a beautiful, transparent stone at the druggists, with which you may kindle fire? <br />SOCRATES: You mean a crystal lens. <br />STREPSIADES: Yes. <br />SOCRATES: Well, what then? <br />STREPSIADES: If I placed myself with this stone in the sun and a long way off from the clerk, while he was writing out the conviction, I could make all the wax, upon which the words were written, melt. <br />SOCRATES: Well thought out, by the <a href=/people/5553 target=_blank>Graces</a>! <br />STREPSIADES: Ah! I am delighted to have annulled the decree that was to cost me five talents. <br />SOCRATES: Come, take up this next question quickly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:746' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=776>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:776'><b>&sect; 776</b>&nbsp;&nbsp;STREPSIADES: Which? <br />SOCRATES: If, when summoned to court, you were in danger of losing your case for want of witnesses, how would you make the conviction fall upon your opponent? <br />STREPSIADES: 'Tis very simple and most easy. <br />SOCRATES: Let me hear. <br />STREPSIADES: This way. If another case had to be pleaded before mine was called, I should run and hang myself. <br />SOCRATES: You talk rubbish! <br />STREPSIADES: Not so, by the gods! if I was dead, no action could lie against me. <br />SOCRATES: You are merely beating the air. Begone! I will give you no more lessons. <br />STREPSIADES: Why not? Oh! <a href=/people/16 target=_blank>Socrates</a>! in the name of the gods! <br />SOCRATES: But you forget as fast as you learn. Come, what was the thing I taught you first? Tell me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:776' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=788>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:788'><b>&sect; 788</b>&nbsp;&nbsp;STREPSIADES: Ah! let me see. What was the first thing? What was it then? Ah! that thing in which we knead the bread, oh! my god! what do you call it? <br />SOCRATES: Plague take the most forgetful and silliest of old addlepates! <br />STREPSIADES: Alas! what a calamity! what will become of me? I am undone if I do not learn how to ply my tongue. Oh! Clouds! give me good advice. <br />CHORUS: Old man, we counsel you, if you have brought up a son, to send him to learn in your stead. <br />STREPSIADES: Undoubtedly I have a son, as well endowed as the best, but he is unwilling to learn. What will become of me? <br />CHORUS: And you don't make him obey you? <br />STREPSIADES: You see, he is big and strong; moreover, through his mother he is a descendant of those fine birds, the race of <a href=/people/7528 target=_blank>Coesyra</a>. Nevertheless, I will go and find him, and if he refuses, I will turn him out of the house. Go in, <a href=/people/16 target=_blank>Socrates</a>, and wait for me awhile. <br />CHORUS (to <a href=/people/16 target=_blank>Socrates</a>). Do you understand, that, thanks to us, you will be loaded with benefits? Here is a man, ready to obey you in all things. You see how he is carried away with admiration and enthusiasm. Profit by it to clip him as short as possible; fine chances are all too quickly gone. <br />STREPSIADES: No, by the Clouds! you stay no longer here; go and devour the ruins of your uncle <a href=/people/789 target=_blank>Megacles</a>' fortune. <br />PHIDIPPIDES: Oh! my poor father! what has happened to you? By the <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a>! you are no longer in your senses! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:788' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=820>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:820'><b>&sect; 820</b>&nbsp;&nbsp;STREPSIADES: See! see! the <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a>. Oh! the fool! to believe in <a href=/people/1 target=_blank>Zeus</a> at your age! <br />PHIDIPPIDES: What is there in that to make you laugh? <br />STREPSIADES: You are then a tiny little child, if you credit such antiquated rubbish! But come here, that I may teach you; I will tell you something very necessary to know to be a man; but you will not repeat it to anybody. <br />PHIDIPPIDES: Come, what is it? <br />STREPSIADES: Just now you swore by <a href=/people/1 target=_blank>Zeus</a>. <br />PHIDIPPIDES: Aye, that I did. <br />STREPSIADES: Do you see how good it is to learn? <a href=/people/5178 target=_blank>Phidippides</a>, there is no <a href=/people/1 target=_blank>Zeus</a>. <br />PHIDIPPIDES: What is there then? <br />STREPSIADES: 'Tis the Whirlwind, that has driven out <a href=/people/1 target=_blank>Jupiter</a> and is King now. <br />PHIDIPPIDES: Go to! what drivel! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:820' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=829>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:829'><b>&sect; 829</b>&nbsp;&nbsp;STREPSIADES: Know it to be the truth. <br />PHIDIPPIDES: And who says so? <br />STREPSIADES: 'Tis <a href=/people/16 target=_blank>Socrates</a>, the <a about=https://topostext.org/place/367244PMel class=demonym long=24.4199 lat=36.7389>Melian</a>, and <a href=/people/1002 target=_blank>Chaerephon</a>, who knows how to measure the jump of a flea. <br />PHIDIPPIDES: Have you reached such a pitch of madness that you believe those bilious fellows? <br />STREPSIADES: Use better language, and do not insult men who are clever and full of wisdom, who, to economize, are never shaved, shun the gymnasia and never go to the baths, while you, you only await my death to eat up my wealth. But come, come as quickly as you can to learn in my stead. <br />PHIDIPPIDES: And what good can be learnt of them? <br />STREPSIADES: What good indeed? Why, all human knowledge. Firstly, you will know yourself grossly ignorant. But await me here awhile. <br />PHIDIPPIDES: Alas! what is to be done? My father has lost his wits. Must I have him certificated for lunacy, or must I order his coffin? <br />STREPSIADES: Come! what kind of bird is this? tell me. <br />PHIDIPPIDES: A pigeon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:829' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=847>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:847'><b>&sect; 847</b>&nbsp;&nbsp;STREPSIADES: Good! And this female? <br />PHIDIPPIDES: A pigeon. <br />STREPSIADES: The same for both? You make me laugh! For the future you will call this one a pigeonnette and the other a pigeon. <br />PHIDIPPIDES: A pigeonnette! These then are the fine things you have just learnt at the school of these sons of the <a href=/people/3304 target=_blank>Earth</a>! <br />STREPSIADES: And many others; but what I learnt I forgot at once, because I am too old. <br />PHIDIPPIDES: So this is why you have lost your cloak? <br />STREPSIADES: I have not lost it, I have consecrated it to Philosophy. <br />PHIDIPPIDES: And what have you done with your sandals, you poor fool? <br />STREPSIADES: If I have lost them, it is for what was necessary, just as <a href=/people/92 target=_blank>Pericles</a> did. But come, move yourself, let us go in; if necessary, do wrong to obey your father. When you were six years old and still lisped, 'twas I who obeyed you. I remember at the feasts of <a href=/people/1 target=_blank>Zeus</a> you had a consuming wish for a little chariot and I bought it for you with the first obolus which I received as a juryman in the Courts. <br />PHIDIPPIDES: You will soon repent of what you ask me to do. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:847' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=865>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:865'><b>&sect; 865</b>&nbsp;&nbsp;STREPSIADES: Oh! now I am happy! He obeys. Here, <a href=/people/16 target=_blank>Socrates</a>, here! Come out quick! Here I am bringing you my son; he refused, but I have persuaded him. <br />SOCRATES: Why, he is but a child yet. He is not used to these baskets, in which we suspend our minds. <br />PHIDIPPIDES: To make you better used to them, I would you were hung. <br />STREPSIADES: A curse upon you! you insult your master! <br />SOCRATES: I would you were hung! What a stupid speech! and so emphatically spoken! How can one ever get out of an accusation with such a tone, summon witnesses or touch or convince? And yet when we think, <a href=/people/1429 target=_blank>Hyperbolus</a> learnt all this for one talent! <br />STREPSIADES: Rest undisturbed and teach him. 'Tis a most intelligent nature. Even when quite little he amused himself at home with making houses, carving boats, constructing little chariots of leather, and understood wonderfully how to make <a href=/people/10983 target=_blank>frogs</a> out of pomegranate rinds. Teach him both methods of reasoning, the strong and also the weak, which by false arguments triumphs over the strong; if not the two, at least the false, and that in every possible way. <br />SOCRATES: 'Tis Just and Unjust Discourse themselves that shall instruct him. <br />STREPSIADES: I go, but forget it not, he must always, always be able to confound the true. <br />JUST DISCOURSE: Come here! Shameless as you may be, will you dare to show your face to the spectators? <br />UNJUST DISCOURSE: Take me where you list. I seek a throng, so that I may the better annihilate you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:865' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=892>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:892'><b>&sect; 892</b>&nbsp;&nbsp;JUST DISCOURSE: Annihilate me! Do you forget who you are? <br />UNJUST DISCOURSE: I am Reasoning. <br />JUST DISCOURSE: Yes, the weaker Reasoning. <br />UNJUST DISCOURSE: But I triumph over you, who claim to be the stronger. <br />JUST DISCOURSE: By what cunning shifts, pray? <br />UNJUST DISCOURSE: By the invention of new maxims. <br />JUST DISCOURSE: ... which are received with favour by these fools. <br />UNJUST DISCOURSE: Say rather, by these wiseacres. <br />JUST DISCOURSE: I am going to destroy you mercilessly. <br />UNJUST DISCOURSE: How pray? Let us see you do it. <br />JUST DISCOURSE: By saying what is true. <br />UNJUST DISCOURSE: I shall retort and shall very soon have the better of you. First, I maintain that justice has no existence. <br />JUST DISCOURSE: Has no existence? <br />UNJUST DISCOURSE: No existence! Why, where are they? <br />JUST DISCOURSE: With the gods. <br />UNJUST DISCOURSE: How then, if justice exists, was <a href=/people/1 target=_blank>Zeus</a> not put to death for having put his father in chains? <br />JUST DISCOURSE: Bah! this is enough to turn my stomach! A basin, quick! <br />UNJUST DISCOURSE: You are an old driveller and stupid withal. <br />JUST DISCOURSE: And you a debauchee and a shameless fellow. <br />UNJUST DISCOURSE: Hah! What sweet expressions! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:892' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=910>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:910'><b>&sect; 910</b>&nbsp;&nbsp;JUST DISCOURSE: An impious buffoon! <br />UNJUST DISCOURSE: You crown me with roses and with lilies. <br />JUST DISCOURSE: A parricide. <br />UNJUST DISCOURSE: Why, you shower gold upon me. <br />JUST DISCOURSE: Formerly, 'twas a hailstorm of blows. <br />UNJUST DISCOURSE: I deck myself with your abuse. <br />JUST DISCOURSE: What impudence! <br />UNJUST DISCOURSE: What tomfoolery! <br />JUST DISCOURSE: 'Tis because of you that the youth no longer attends the schools. The <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> will soon recognize what lessons you teach those who are fools enough to believe you. <br />UNJUST DISCOURSE: You are overwhelmed with wretchedness. <br />JUST DISCOURSE: And you, you prosper. Yet you were poor when you said, I am the <a about=https://topostext.org/place/375275RMys class=person long=28 lat=40>Mysian</a> <a href=/people/442 target=_blank>Telephus</a>, and used to stuff your wallet with maxims of Pandeletus to nibble at. <br />UNJUST DISCOURSE: Oh! the beautiful wisdom, of which you are now boasting! <br />JUST DISCOURSE: Madman! But yet madder the city that keeps you, you, the corrupter of its youth! <br />UNJUST DISCOURSE: 'Tis not you who will teach this young man; you are as old and out of date as <a href=/people/43 target=_blank>Saturn</a>. <br />JUST DISCOURSE: Nay, it will certainly be I, if he does not wish to be lost and to practise verbosity only. <br />UNJUST DISCOURSE (to <a href=/people/5178 target=_blank>Phidippides</a>). Come hither and leave him to beat the air. <br />JUST DISCOURSE (to Unjust Discourse). Evil be unto you, if you touch him. <br />CHORUS: A truce to your quarrellings and abuse! But expound, you, what you taught us formerly, and you, your new doctrine. Thus, after hearing each of you argue, he will be able to choose betwixt the two schools. <br />JUST DISCOURSE: I am quite agreeable. <br />UNJUST DISCOURSE: And I too. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:910' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=940>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:940'><b>&sect; 940</b>&nbsp;&nbsp;CHORUS: Who is to speak first? <br />UNJUST DISCOURSE: Let it be my opponent, he has my full consent; then I will follow upon the very ground he shall have chosen and shall shatter him with a hail of new ideas and subtle fancies; if after that he dares to breathe another word, I shall sting him in the face and in the eyes with our maxims, which are as keen as the sting of a <a href=/people/10963 target=_blank>wasp</a>, and he will die. <br />CHORUS: Here are two rivals confident in their powers of oratory and in the thoughts over which they have pondered so long. Let us see which will come triumphant out of the contest. This wisdom, for which my friends maintain such a persistent fight, is in great danger. Come then, you, who crowned men of other days with so many virtues, plead the cause dear to you, make yourself known to us. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:940' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=961>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:961'><b>&sect; 961</b>&nbsp;&nbsp;JUST DISCOURSE: Very well, I will tell you what was the old education, when I used to teach justice with so much success and when modesty was held in veneration. Firstly, it was required of a child, that it should not utter a word. In the street, when they went to the music-school, all the youths of the same district marched lightly clad and ranged in good order, even when the snow was falling in great flakes. At the master's house they had to stand, their legs apart, and they were taught to sing either, <a href=/people/429 target=_blank>Pallas</a>, the Terrible, who overturneth cities, or A noise resounded from afar in the solemn tones of the ancient harmony. If anyone indulged in buffoonery or lent his voice any of the soft inflexions, like those which today the disciples of <a href=/people/3453 target=_blank>Phrynis</a> take so much pains to form, he was treated as an enemy of the <a href=/people/54 target=_blank>Muses</a> and belaboured with blows. In the wrestling school they would sit with outstretched legs and without display of any indecency to the curious. When they rose, they would smooth over the sand, so as to leave no trace to excite obscene thoughts. Never was a child rubbed with oil below the belt; the rest of their bodies thus retained its fresh bloom and down, like a velvety peach. They were not to be seen approaching a lover and themselves rousing his passion by soft modulation of the voice and lustful gaze. At table, they would not have dared, before those older than themselves, to have taken a radish, an aniseed or a leaf of parsley, and much less eat fish or thrushes or cross their legs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:961' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=984>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:984'><b>&sect; 984</b>&nbsp;&nbsp;UNJUST DISCOURSE: What antiquated rubbish! Have we got back to the days of the festivals of <a href=/people/1 target=_blank>Zeus</a> <a href=/people/5914 target=_blank>Polieus</a> (Dipolia?), to the Buphonia, to the time of the poet Cecydes and the golden cicadas? <br />JUST DISCOURSE: 'Tis nevertheless by suchlike teaching I built up the men of <a about=https://topostext.org/place/381240DMar class=place long=23.9701 lat=38.1466>Marathon</a>. But you, you teach the children of today to bundle themselves quickly into their clothes, and I am enraged when I see them at the <a href=/people/11002 target=_blank>Panathenaea</a> forgetting <a href=/people/11 target=_blank>Athene</a> while they dance, and covering themselves with their bucklers. Hence, young man, dare to range yourself beside me, who follow justice and truth; you will then be able to shun the public place, to refrain from the baths, to blush at all that is shameful, to fire up if your virtue is mocked at, to give place to your elders, to honour your parents, in short, to avoid all that is evil. Be modesty itself, and do not run to applaud the dancing girls; if you delight in such scenes, some courtesan will cast you her apple and your reputation will be done for. Do not bandy words with your father, nor treat him as a dotard, nor reproach the old man, who has cherished you, with his age. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:984' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1000>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1000'><b>&sect; 1000</b>&nbsp;&nbsp;UNJUST DISCOURSE: If you listen to him, by <a href=/people/5 target=_blank>Dionysos</a>! you will be the image of the sons of <a href=/people/197 target=_blank>Hippocrates</a> and will be called mother's great ninny. <br />JUST DISCOURSE: No, but you will pass your days at the gymnasia, glowing with strength and health; you will not go to the Agora to cackle and wrangle as is done nowadays; you will not live in fear that you may be dragged before the courts for some trifle exaggerated by quibbling. But you will go down to the <a about=https://topostext.org/place/380237SAca class=place long=23.707 lat=37.992>Academy</a> to run beneath the sacred olives with some virtuous friend of your own age, your head encircled with the white reed, enjoying your ease and breathing the perfume of the yew and of the fresh sprouts of the poplar, rejoicing in the return of springtide and gladly listening to the gentle rustle of the plane-tree and the elm. If you devote yourself to practising my precepts, your chest will be stout, your colour glowing, your shoulders broad, your tongue short, your rear end muscular, but your penis small. But if you follow the fashions of the day, you will be pallid in hue, have narrow shoulders, a narrow chest, a long tongue, small butt, and a long ... decree; you will know how to spin forth long-winded arguments on law. You will be persuaded also to regard as splendid everything that is shameful and as shameful everything that is honourable; in a word, you will wallow in debauchery like <a href=/people/739 target=_blank>Antimachus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1000' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1024>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1024'><b>&sect; 1024</b>&nbsp;&nbsp;CHORUS: How beautiful, high-souled, brilliant is this wisdom that you practise! What a sweet odour of honesty is emitted by your discourse! Happy were those men of other days who lived when you were honoured! And you, seductive talker, come, find some fresh arguments, for your rival has done wonders. Bring out against him all the battery of your wit, if you desire to beat him and not to be laughed out of court. <br />UNJUST DISCOURSE: At last! I was choking with impatience, I was burning to upset all his arguments! If I am called the Weaker Reasoning in the schools, 'tis precisely because I was the first before all others to discover the means to confute the laws and the decrees of justice. To invoke solely the weaker arguments and yet triumph is a talent worth more than a hundred thousand drachmae. But see how I shall batter down the sort of education of which he is so proud. Firstly, he forbids you to bathe in hot water. What grounds have you for condemning hot baths? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1024' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1046>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1046'><b>&sect; 1046</b>&nbsp;&nbsp;JUST DISCOURSE: Because they are baneful and enervate men. <br />UNJUST DISCOURSE: Enough said! Oh! you poor wrestler! From the very outset I have seized you and hold you round the middle; you cannot escape me. Tell me, of all the sons of <a href=/people/1 target=_blank>Zeus</a>, who had the stoutest heart, who performed the most doughty deeds? <br />JUST DISCOURSE: None, in my opinion, surpassed <a href=/people/4 target=_blank>Heracles</a>. <br />UNJUST DISCOURSE: Where have you ever seen cold baths called 'Baths of <a href=/people/4 target=_blank>Heracles</a>'? And yet who was braver than he? <br />JUST DISCOURSE: 'Tis because of such quibbles, that the baths are seen crowded with young folk, who chatter there the livelong day while the gymnasia remain empty. <br />UNJUST DISCOURSE: Next you condemn the habit of frequenting the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a>, while I approve this. If it were wrong <a href=/people/9 target=_blank>Homer</a> would never have made <a href=/people/125 target=_blank>Nestor</a> speak in public as well as all his wise heroes. As for the art of speaking, he tells you, young men should not practise it; I hold the contrary. Furthermore he preaches chastity to them. Both precepts are equally harmful. Have you ever seen chastity of any use to anyone? Answer and try to confute me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1046' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1063>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1063'><b>&sect; 1063</b>&nbsp;&nbsp;JUST DISCOURSE: To many; for instance, <a href=/people/109 target=_blank>Peleus</a> won a sword thereby. <br />UNJUST DISCOURSE: A sword! Ah! what a fine present to make him! Poor wretch! <a href=/people/1429 target=_blank>Hyperbolus</a>, the lamp-seller, thanks to his villainy, has gained more than ... I do not know how many talents, but certainly no sword. <br />JUST DISCOURSE: <a href=/people/109 target=_blank>Peleus</a> owed it to his chastity that he became the husband of <a href=/people/202 target=_blank>Thetis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1063' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1068>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1068'><b>&sect; 1068</b>&nbsp;&nbsp;UNJUST DISCOURSE: ... who left him in the lurch, for he was not the most ardent; in those nocturnal sports between two sheets, which so please women, he possessed but little merit. Get you gone, you are but an old fool. But you, young man, just consider a little what this temperance means and the delights of which it deprives you — young fellows, women, play, dainty dishes, wine, boisterous laughter. And what is life worth without these? Then, if you happen to commit one of these faults inherent in human weakness, some seduction or adultery, and you are caught in the act, you are lost, if you cannot speak. But follow my teaching and you will be able to satisfy your passions, to dance, to laugh, to blush at nothing. Are you surprised in adultery? Then up and tell the husband you are not guilty, and recall to him the example of <a href=/people/1 target=_blank>Zeus</a>, who allowed himself to be conquered by love and by women. Being but a mortal, can you be stronger than a god? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1068' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1084>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1084'><b>&sect; 1084</b>&nbsp;&nbsp;JUST DISCOURSE: And if your pupil gets impaled, his hairs plucked out, and he is seared with a hot ember, how are you going to prove to him that he is not a filthy debauchee? <br />UNJUST DISCOURSE: And wherein lies the harm of being so? <br />JUST DISCOURSE: Is there anything worse than to have such a character? <br />UNJUST DISCOURSE: Now what will you say, if I beat you even on this point? <br />JUST DISCOURSE: I should certainly have to be silent then. <br />UNJUST DISCOURSE: Well then, reply! Our advocates, what are they? <br />JUST DISCOURSE: Low scum.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1084' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1090>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1090'><b>&sect; 1090</b>&nbsp;&nbsp;UNJUST DISCOURSE: Nothing is more true. And our tragic poets? <br />JUST DISCOURSE: Low scum. <br />UNJUST DISCOURSE: Well said again. And our demagogues? <br />JUST DISCOURSE: Low scum. <br />UNJUST DISCOURSE: You admit that you have spoken nonsense. And the spectators, what are they for the most part? Look at them. <br />JUST DISCOURSE: I am looking at them. <br />UNJUST DISCOURSE: Well! What do you see? <br />JUST DISCOURSE: By the gods, they are nearly all low scum. See, this one I know to be such and that one and that other with the long hair. <br />UNJUST DISCOURSE: What have you to say, then? <br />JUST DISCOURSE: I am beaten. Debauchees! in the name of the gods, receive my cloak; I pass over to your ranks. <br />SOCRATES: Well then! do you take away your son or do you wish me to teach him how to speak? <br />STREPSIADES: Teach him, chastise him and do not fail to sharpen his tongue well, on one side for petty law-suits and on the other for important cases. <br />SOCRATES: Make yourself easy, I shall return to you an accomplished sophist. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1090' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1111>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1111'><b>&sect; 1111</b>&nbsp;&nbsp;PHIDIPPIDES: Very pale then and thoroughly hang-dog-looking. <br />STREPSIADES: Take him with you. <br />PHIDIPPIDES: I do assure you, you will repent it. <br />CHORUS: Judges, we are all about to tell you what you will gain by awarding us the crown as equity requires of you. In spring, when you wish to give your fields the first dressing, we will rain upon you first; the others shall wait. Then we will watch over your corn and over your vine-stocks; they will have no excess to fear, neither of heat nor of wet. But if a mortal dares to insult the goddesses of the Clouds, let him think of the ills we shall pour upon him. For him neither wine nor any harvest at all! Our terrible slings will mow down his young olive plants and his vines. If he is making bricks, it will rain, and our round hailstones will break the tiles of his roof. If he himself marries or any of his relations or friends, we shall cause rain to fall the whole night long. Verily, he would prefer to live in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> than to have given this iniquitous verdict. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1111' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1131>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1131'><b>&sect; 1131</b>&nbsp;&nbsp;STREPSIADES: Another four, three, two days, then the eve, then the day, the fatal day of payment! I tremble, I quake, I shudder, for 'tis the day of the old moon and the new. Then all my creditors take the oath, pay their deposits, swear my downfall and my ruin. As for me, I beseech them to be reasonable, to be just, My friend, do not demand this sum, wait a little for this other and give me time for this third one. Then they will pretend that at this rate they will never be repaid, will accuse me of bad faith and will threaten me with the law. Well then, let them sue me! I care nothing for that, if only <a href=/people/5178 target=_blank>Phidippides</a> has learnt to speak fluently. I go to find out, let me knock at the door of the school.... Ho! slave, slave! <br />SOCRATES: Welcome! <a href=/people/3699 target=_blank>Strepsiades</a>! <br />STREPSIADES: Welcome! <a href=/people/16 target=_blank>Socrates</a>! But first take this sack (offers him a sack of flour); it is right to reward the master with some present. And my son, whom you took off lately, has he learnt this famous reasoning, tell me. <br />SOCRATES: He has learnt it. <br />STREPSIADES: What a good thing! Oh! thou divine Knavery! <br />SOCRATES: You will win just as many causes as you choose. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1131' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1150>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1150'><b>&sect; 1150</b>&nbsp;&nbsp;STREPSIADES: Even if I have borrowed before witnesses? <br />SOCRATES: So much the better, even if there are a thousand of 'em! <br />STREPSIADES: Then I am going to shout with all my might. Woe to the usurers, woe to their capital and their interest and their compound interest! You shall play me no more bad turns. My son is being taught there, his tongue is being sharpened into a double-edged weapon; he is my defender, the saviour of my house, the ruin of my foes! His poor father was crushed down with misfortune and he delivers him. Go and call him to me quickly. Oh! my child! my dear little one! run forward to your father's voice! <br />SOCRATES: Here he is. <br />STREPSIADES: Oh, my friend, my dearest friend! <br />SOCRATES: Take your son, and get you gone. <br />STREPSIADES: Oh, my son! oh! oh! what a pleasure to see your pallor! You are ready first to deny and then to contradict; 'tis as clear as noon. What a child of your country you are! How your lips quiver with the famous, What have you to say now? How well you know, I am certain, to put on the look of a victim, when it is you who are making both victims and dupes! and what a truly <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> glance! Come, 'tis for you to save me, seeing it is you who have ruined me. <br />PHIDIPPIDES: What is it you fear then? <br />STREPSIADES: The day of the old and the new. <br />PHIDIPPIDES: Is there then a day of the old and the new? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1150' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1179>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1179'><b>&sect; 1179</b>&nbsp;&nbsp;STREPSIADES: The day on which they threaten to pay deposit against me. <br />PHIDIPPIDES: Then so much the worse for those who have deposited! for 'tis not possible for one day to be two. <br />STREPSIADES: What? <br />PHIDIPPIDES: Why, undoubtedly, unless a woman can be both old and young at the same time. <br />STREPSIADES: But so runs the law. <br />PHIDIPPIDES: I think the meaning of the law is quite misunderstood. <br />STREPSIADES: What does it mean? <br />PHIDIPPIDES: Old <a href=/people/76 target=_blank>Solon</a> loved the people. <br />STREPSIADES: What has that to do with the old day and the new? <br />PHIDIPPIDES: He has fixed two days for the summons, the last day of the old moon and the first day of the new; but the deposits must only be paid on the first day of the new moon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1179' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1192>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1192'><b>&sect; 1192</b>&nbsp;&nbsp;STREPSIADES: And why did he also name the last day of the old? <br />PHIDIPPIDES: So, my dear sir, that the debtors, being there the day before, might free themselves by mutual agreement, or that else, if not, the creditor might begin his action on the morning of the new moon. <br />STREPSIADES: Why then do the magistrates have the deposits paid on the last of the month and not the next day? <br />PHIDIPPIDES: I think they do as the gluttons do, who are the first to pounce upon the dishes. Being eager to carry off these deposits, they have them paid in a day too soon. <br />STREPSIADES: Splendid! Ah! poor brutes, who serve for food to us clever folk! You are only down here to swell the number, true blockheads, <a href=/people/10954 target=_blank>sheep</a> for shearing, heap of empty pots! Hence I will sound the note of victory for my son and myself. Oh! happy, <a href=/people/3699 target=_blank>Strepsiades</a>! what cleverness is thine! and what a son thou hast here! Thus my friends and my neighbours will say, jealous at seeing me gain all my suits. But come in, I wish to regale you first. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1192' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1214>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1214'><b>&sect; 1214</b>&nbsp;&nbsp;PASIAS (to his witness). A man should never lend a single obolus. 'Twould be better to put on a brazen face at the outset than to get entangled in such matters. I want to see my money again and I bring you here today to attest the loan. I am going to make a foe of a neighbour; but, as long as I live, I do not wish my country to have to blush for me. Come, I am going to summon <a href=/people/3699 target=_blank>Strepsiades</a>. <br />STREPSIADES: Who is this? <br />PASIAS: ... for the old day and the new. <br />STREPSIADES: I call you to witness, that he has named two days. What do you want of me? <br />PASIAS: I claim of you the twelve minae, which you borrowed from me to buy the dapple-grey <a href=/people/10959 target=_blank>horse</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1214' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1225>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1225'><b>&sect; 1225</b>&nbsp;&nbsp;STREPSIADES: A <a href=/people/10959 target=_blank>horse</a>! do you hear him? I, who detest <a href=/people/10959 target=_blank>horses</a>, as is well known. <br />PASIAS: I call <a href=/people/1 target=_blank>Zeus</a> to witness, that you swore by the gods to return them to me. <br />STREPSIADES: Because at that time, by <a href=/people/1 target=_blank>Zeus</a>! <a href=/people/5178 target=_blank>Phidippides</a> did not yet know the irrefutable argument. <br />PASIAS: Would you deny the debt on that account? <br />STREPSIADES: If not, what use is his science to me? <br />PASIAS: Will you dare to swear by the gods that you owe me nothing? <br />STREPSIADES: By which gods? <br />PASIAS: By <a href=/people/1 target=_blank>Zeus</a>, <a href=/people/33 target=_blank>Hermes</a> and <a href=/people/25 target=_blank>Poseidon</a>! <br />STREPSIADES: Why, I would give three obols for the pleasure of swearing by them. <br />PASIAS: Woe upon you, impudent knave! <br />STREPSIADES: Oh! what a fine wine-skin you would make if flayed! <br />PASIAS: Heaven! he jeers at me! <br />STREPSIADES: It would hold six gallons easily. <br />PASIAS: By great <a href=/people/1 target=_blank>Zeus</a>! by all the gods! you shall not scoff at me with impunity. <br />STREPSIADES: Ah! how you amuse me with your gods! how ridiculous it seems to a sage to hear <a href=/people/1 target=_blank>Zeus</a> invoked. <br />PASIAS: Your blasphemies will one day meet their reward. But, come, will you repay me my money, yes or no? Answer me, that I may go. <br />STREPSIADES: Wait a moment, I am going to give you a distinct answer. (Goes indoors and returns immediately with a kneading-trough.) <br />PASIAS: What do you think he will do? <br />WITNESS: He will pay the debt. <br />STREPSIADES: Where is the man who demands money? Tell me, what is this? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1225' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1248>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1248'><b>&sect; 1248</b>&nbsp;&nbsp;PASIAS: Him? Why he is your kneading-trough. <br />STREPSIADES: And you dare to demand money of me, when you are so ignorant? I will not return an obolus to anyone who says him instead of her for a kneading-trough. <br />PASIAS: You will not repay? <br />STREPSIADES: Not if I know it. Come, an end to this, pack off as quick as you can. <br />PASIAS: I go, but, may I die, if it be not to pay my deposit for a summons. <br />STREPSIADES: Very well! 'Twill be so much more to the bad to add to the twelve minae. But truly it makes me sad, for I do pity a poor simpleton who says him for a kneading-trough. <br />AMYNIAS: Woe! ah woe is me! <br />STREPSIADES: Hold! who is this whining fellow? Can it be one of the gods of <a href=/people/1658 target=_blank>Carcinus</a>? <br />AMYNIAS: Do you want to know who I am? I am a man of misfortune! <br />STREPSIADES: Get on your way then. <br />AMYNIAS: Oh! cruel god! Oh <a href=/people/140 target=_blank>Fate</a>, who hath broken the wheels of my chariot! Oh, <a href=/people/429 target=_blank>Pallas</a>, thou hast undone me! <br />STREPSIADES: What ill has <a href=/people/760 target=_blank>Tlepolemus</a> done you? <br />AMYNIAS: Instead of jeering me, friend, make your son return me the money he has had of me; I am already unfortunate enough. <br />STREPSIADES: What money? <br />AMYNIAS: The money he borrowed of me. <br />STREPSIADES: You have indeed had misfortune, it seems to me. <br />AMYNIAS: Yes, by the gods! I have been thrown from a chariot. <br />STREPSIADES: Why then drivel as if you had fallen from an <a href=/people/10962 target=_blank>ass</a>? <br />AMYNIAS: Am I drivelling because I demand my money? <br />STREPSIADES: No, no, you cannot be in your right senses. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1248' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1275>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1275'><b>&sect; 1275</b>&nbsp;&nbsp;AMYNIAS: Why? <br />STREPSIADES: No doubt your poor wits have had a shake. <br />AMYNIAS: But by <a href=/people/33 target=_blank>Hermes</a>! I will sue you at law, if you do not pay me. <br />STREPSIADES: Just tell me; do you think it is always fresh water that <a href=/people/1 target=_blank>Zeus</a> lets fall every time it rains, or is it always the same water that the sun pumps over the earth? <br />AMYNIAS: I neither know, nor care. <br />STREPSIADES: And actually you would claim the right to demand your money, when you know not a syllable of these celestial phenomena? <br />AMYNIAS: If you are short, pay me the interest, at any rate. <br />STREPSIADES: What kind of animal is interest? <br />AMYNIAS: What? Does not the sum borrowed go on growing, growing every month, each day as the time slips by? <br />STREPSIADES: Well put. But do you believe there is more water in the sea now than there was formerly? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1275' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1289>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1289'><b>&sect; 1289</b>&nbsp;&nbsp;AMYNIAS: No, 'tis just the same quantity. It cannot increase. <br />STREPSIADES: Thus, poor fool, the sea, that receives the rivers, never grows, and yet you would have your money grow? Get you gone, away with you, quick! Ho! bring me the <a href=/people/10961 target=_blank>ox</a>-goad! <br />AMYNIAS: Hither! you witnesses there! <br />STREPSIADES: Come, what are you waiting for? Will you not budge, old nag! <br />AMYNIAS: What an insult! <br />STREPSIADES: Unless you get a-trotting, I shall catch you and prick up your behind, you sorry packhorse! Ah! you start, do you? I was about to drive you pretty fast, I tell you — you and your wheels and your chariot! <br />CHORUS: Whither does the passion of evil lead! here is a perverse old man, who wants to cheat his creditors; but some mishap, which will speedily punish this rogue for his shameful schemings, cannot fail to overtake him from today. For a long time he has been burning to have his son know how to fight against all justice and right and to gain even the most iniquitous causes against his adversaries every one. I think this wish is going to be fulfilled. But mayhap, mayhap, he will soon wish his son were dumb rather! <br />STREPSIADES: Oh! oh! neighbours, kinsmen, fellow-citizens, help! help! to the rescue, I am being beaten! Oh! my head! oh! my jaw! Scoundrel! do you beat your own father! <br />PHIDIPPIDES: Yes, father, I do. <br />STREPSIADES: See! he admits he is beating me. <br />PHIDIPPIDES: Undoubtedly I do. <br />STREPSIADES: You villain, you parricide, you gallows-bird! <br />PHIDIPPIDES: Go on, repeat your epithets, call me a thousand other names, an it please you. The more you curse, the greater my amusement! <br />STREPSIADES: Oh! you infamous cynic! <br />PHIDIPPIDES: How fragrant the perfume breathed forth in your words. <br />STREPSIADES: Do you beat your own father? <br />PHIDIPPIDES: Aye, by <a href=/people/1 target=_blank>Zeus</a>! and I am going to show you that I do right in beating you. <br />STREPSIADES: Oh, wretch! can it be right to beat a father? <br />PHIDIPPIDES: I will prove it to you, and you shall own yourself vanquished. <br />STREPSIADES: Own myself vanquished on a point like this? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1289' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1340>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1340'><b>&sect; 1340</b>&nbsp;&nbsp;PHIDIPPIDES: 'Tis the easiest thing in the world. Choose whichever of the two reasonings you like. <br />STREPSIADES: Of which reasonings? <br />PHIDIPPIDES: The Stronger and the Weaker. <br />STREPSIADES: Miserable fellow! Why, 'tis I who had you taught how to refute what is right, and now you would persuade me it is right a son should beat his father. <br />PHIDIPPIDES: I think I shall convince you so thoroughly that, when you have heard me, you will not have a word to say. <br />STREPSIADES: Well, I am curious to hear what you have to say. <br />CHORUS: Consider well, old man, how you can best triumph over him. His brazenness shows me that he thinks himself sure of his case; he has some argument which gives him nerve. Note the confidence in his look! But how did the fight begin? tell the Chorus; you cannot help doing that much. <br />STREPSIADES: I will tell you what was the start of the quarrel. At the end of the meal you wot of, I bade him take his lyre and sing me the air of <a href=/people/262 target=_blank>Simonides</a>, which tells of the fleece of the ram. He replied bluntly, that it was stupid, while drinking, to play the lyre and sing, like a woman when she is grinding barley. <br />PHIDIPPIDES: Why, by rights I ought to have beaten and kicked you the very moment you told me to sing! <br />STREPSIADES: That is just how he spoke to me in the house, furthermore he added, that <a href=/people/262 target=_blank>Simonides</a> was a detestable poet. However, I mastered myself and for a while said nothing. Then I said to him, 'At least, take a myrtle branch and recite a passage from <a href=/people/174 target=_blank>Aeschylus</a> to me.' — 'For my own part,' he at once replied, 'I look upon <a href=/people/174 target=_blank>Aeschylus</a> as the first of poets, for his verses roll superbly; 'tis nothing but incoherence, bombast and turgidness.' Yet still I smothered my wrath and said, 'Then recite one of the famous pieces from the modern poets.' Then he commenced a piece in which <a href=/people/75 target=_blank>Euripides</a> shows, oh! horror! a brother, who violates his own uterine sister. Then I could no longer restrain myself, and attacked him with the most injurious abuse; naturally he retorted; hard words were hurled on both sides, and finally he sprang at me, broke my bones, bore me to earth, strangled and started killing me! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1340' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1375>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1375'><b>&sect; 1375</b>&nbsp;&nbsp;PHIDIPPIDES: I was right. What! not praise <a href=/people/75 target=_blank>Euripides</a>, the greatest of our poets! <br />STREPSIADES: He the greatest of our poets! Ah! if I but dared to speak! but the blows would rain upon me harder than ever. <br />PHIDIPPIDES: Undoubtedly, and rightly too. <br />STREPSIADES: Rightly! oh! what impudence! to me, who brought you up! when you could hardly lisp, I guessed what you wanted. If you said broo, broo, well, I brought you your milk; if you asked for mam mam, I gave you bread; and you had no sooner said, caca, than I took you outside and held you out. And just now, when you were strangling me, I shouted, I bellowed that I would let all go; and you, you scoundrel, had not the heart to take me outside, so that here, though almost choking, I was compelled to ease myself. <br />CHORUS: Young men, your hearts must be panting with impatience. What is <a href=/people/5178 target=_blank>Phidippides</a> going to say? If, after such conduct, he proves he has done well, I would not give an obolus for the hide of old men. Come, you, who know how to brandish and hurl the keen shafts of the new science, find a way to convince us, give your language an appearance of truth. <br />PHIDIPPIDES: How pleasant it is to know these clever new inventions and to be able to defy the established laws! When I thought only about <a href=/people/10959 target=_blank>horses</a>, I was not able to string three words together without a mistake, but now that the master has altered and improved me and that I live in this world of subtle thought, of reasoning and of meditation, I count on being able to prove satisfactorily that I have done well to thrash my father. <br />STREPSIADES: Mount your <a href=/people/10959 target=_blank>horse</a>! By <a href=/people/1 target=_blank>Zeus</a>! I would rather defray the keep of a four-in-hand team than be battered with blows. <br />PHIDIPPIDES: I revert to what I was saying when you interrupted me. And first, answer me, did you beat me in my childhood? <br />STREPSIADES: Why, assuredly, for your good and in your own best interest. <br />PHIDIPPIDES: Tell me, is it not right, that in turn I should beat you for your good? since it is for a man's own best interest to be beaten. What! must your body be free of blows, and not mine? am I not free-born too? the children are to weep and the fathers go free? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1375' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1410>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1410'><b>&sect; 1410</b>&nbsp;&nbsp;STREPSIADES: But... <br />PHIDIPPIDES: You will tell me, that according to the law, 'tis the lot of children to be beaten. But I reply that the old men are children twice over and that it is far more fitting to chastise them than the young, for there is less excuse for their faults. <br />STREPSIADES: But the law nowhere admits that fathers should be treated thus. <br />PHIDIPPIDES: Was not the legislator who carried this law a man like you and me? In those days he got men to believe him; then why should not I too have the right to establish for the future a new law, allowing children to beat their fathers in turn? We make you a present of all the blows which were received before this law, and admit that you thrashed us with impunity. But look how the cocks and other animals fight with their fathers; and yet what difference is there betwixt them and ourselves, unless it be that they do not propose decrees? <br />STREPSIADES: But if you imitate the cocks in all things, why don't you scratch up the dunghill, why don't you sleep on a perch? <br />PHIDIPPIDES: That has no bearing on the case, good sir; <a href=/people/16 target=_blank>Socrates</a> would find no connection, I assure you. <br />STREPSIADES: Then do not beat at all, for otherwise you have only yourself to blame afterwards. <br />PHIDIPPIDES: What for? <br />STREPSIADES: I have the right to chastise you, and you to chastise your son, if you have one. <br />PHIDIPPIDES: And if I have not, I shall have cried in vain, and you will die laughing in my face. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1410' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1435>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1435'><b>&sect; 1435</b>&nbsp;&nbsp;STREPSIADES: What say you, all here present? It seems to me that he is right, and I am of opinion that they should be accorded their right. If we think wrongly, 'tis but just we should be beaten. <br />PHIDIPPIDES: Again, consider this other point. <br />STREPSIADES: 'Twill be the death of me. <br />PHIDIPPIDES: But you will certainly feel no more anger because of the blows I have given you. <br />STREPSIADES: Come, show me what profit I shall gain from it. <br />PHIDIPPIDES: I shall beat my mother just as I have you. <br />STREPSIADES: What do you say? what's that you say? Hah! this is far worse still. <br />PHIDIPPIDES: And what if I prove to you by our school reasoning, that one ought to beat one's mother? <br />STREPSIADES: Ah! if you do that, then you will only have to throw yourself along with <a href=/people/16 target=_blank>Socrates</a> and his reasoning, into the <a about=https://topostext.org/place/380237FDim class=place long=23.7171 lat=37.9739>Barathrum</a>. Oh! Clouds! all our troubles emanate from you, from you, to whom I entrusted myself, body and soul. <br />CHORUS: No, you alone are the cause, because you have pursued the path of evil. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1435' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1456>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1456'><b>&sect; 1456</b>&nbsp;&nbsp;STREPSIADES: Why did you not say so then, instead of egging on a poor ignorant old man? <br />CHORUS: We always act thus, when we see a man conceive a passion for what is evil; we strike him with some terrible disgrace, so that he may learn to fear the gods. <br />STREPSIADES: Alas! oh Clouds! 'tis hard indeed, but 'tis just! I ought not to have cheated my creditors.... But come, my dear son, come with me to take vengeance on this wretched <a href=/people/1002 target=_blank>Chaerephon</a> and on <a href=/people/16 target=_blank>Socrates</a>, who have deceived us both. <br />PHIDIPPIDES: I shall do nothing against our masters. <br />STREPSIADES: Oh! show some reverence for ancestral <a href=/people/1 target=_blank>Zeus</a>! <br />PHIDIPPIDES: Mark him and his ancestral <a href=/people/1 target=_blank>Zeus</a>! What a fool you are! Does any such being as <a href=/people/1 target=_blank>Zeus</a> exist? <br />STREPSIADES: Why, assuredly. <br />PHIDIPPIDES: No, a thousand times no! The ruler of the world is the Whirlwind, that has unseated <a href=/people/1 target=_blank>Zeus</a>. <br />STREPSIADES: He has not dethroned him. I believed it, because of this whirligig here. Unhappy wretch that I am! I have taken a piece of clay to be a god. <br />PHIDIPPIDES: Very well! Keep your stupid nonsense for your own consumption. (Exit.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1456' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1475>
+                            <p id='urn:cts:greekLit:tlg0019.tlg003:1475'><b>&sect; 1475</b>&nbsp;&nbsp;STREPSIADES: Oh! what madness! I had lost my reason when I threw over the gods through <a href=/people/16 target=_blank>Socrates</a>' seductive phrases. Oh! good <a href=/people/33 target=_blank>Hermes</a>, do not destroy me in your wrath. Forgive me; their babbling had driven me crazy. Be my councillor. Shall I pursue them at law or shall I...? Order and I obey. — You are right, no law-suit; but up! let us burn down the home of those praters. Here, <a href=/people/1760 target=_blank>Xanthias</a>, here! take a ladder, come forth and arm yourself with an axe; now mount upon the school, demolish the roof, if you love your master, and may the house fall in upon them, Ho! bring me a blazing torch! There is more than one of them, arch-impostors as they are, on whom I am determined to have vengeance. <br />A DISCIPLE: Oh! oh! <br />STREPSIADES: Come, torch, do your duty! Burst into full flame! <br />DISCIPLE: What are you up to? <br />STREPSIADES: What am I up to? Why, I am entering upon a subtle argument with the beams of the house. <br />SECOND DISCIPLE: Hullo! hullo! who is burning down our house? <br />STREPSIADES: The man whose cloak you have appropriated. <br />SECOND DISCIPLE: But we are dead men, dead men! <br />STREPSIADES: That is just exactly what I hope, unless my axe plays me false, or I fall and break my neck. <br />SOCRATES: Hi! you fellow on the roof, what are you doing up there? <br />STREPSIADES: I traverse the air and contemplate the sun. <br />SOCRATES: Ah! ah! woe is upon me! I am suffocating! <br />CHAEREPHON: Ah! you insulted the gods! Ah! you studied the face of the moon! Chase them, strike and beat them down! Forward! they have richly deserved their fate — above all, by reason of their blasphemies. <br />CHORUS: So let the Chorus file off the stage. Its part is played. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg003.perseus-grc1:1475' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -423                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=59', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas59";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=59';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

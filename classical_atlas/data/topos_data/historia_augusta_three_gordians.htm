@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Scriptores Historia Augusta, Three Gordians' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Scriptores Historia Augusta, The Life of the three Gordians, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='360' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 360' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/602' content='urn:cts:latinLit:phi2331.phi020' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/nr97032332' content='Scriptores Historia Augusta'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr97032340' content='David Magie (1877-1960)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Historia_Augusta/home.html' /><h2>Scriptores Historia Augusta, Three Gordians</h2>Scriptores Historia Augusta, The Life of the three Gordians, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 65 tagged references to 38 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi2331.phi020'>urn:cts:latinLit:phi2331.phi020</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87775492'>Q87775492</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:latinLit:phi2331.phi020.perseus-lat1' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi2331.phi020:1'><b>&sect; 1</b>&nbsp;&nbsp;The Three Gordians <br />It had been my plan, revered Augustus, following the example of many writers, to present each separate emperor to Your Clemency, each in a separate book. 2 For I have either seen for myself that many writers have done this, or I have so understood from my reading. 3 It did not seem proper, however, either to perplex Your <a href=/people/1591 target=_blank>Piety</a> with a multitude of books or to expend my labour on many volumes. 4 For this reason in this book I have bound the three Gordians together, having a care both for my own labour and for your reading, lest you be compelled to unroll many volumes and yet read scarcely one story. 5 But let not me, who have always fled long books and many words, seem to run into the very thing I pretend cleverly to avoid; and so to my subject! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:phi2331.phi020:2'><b>&sect; 2</b>&nbsp;&nbsp;There were not, as certain uninformed writers maintain, two Gordians, but three. These writers might have learned this from <a href=/people/3342 target=_blank>Arrianus</a>, the writer of Greek history, and likewise from <a href=/people/1445 target=_blank>Dexippus</a>, the Greek writer, both of whom have investigated the whole question, briefly perhaps, but still conscientiously. 2 Of the three, <a href=/people/11045 target=_blank>Gordian</a> the elder, that is the first, was the son of <a href=/people/9729 target=_blank>Maecius</a> <a href=/people/3883 target=_blank>Marullus</a> and Ulpia Gordiana. On his father's side he traced his descent from the house of the <a href=/people/1832 target=_blank>Gracchi</a>, on his mother's from the Emperor <a href=/people/207 target=_blank>Trajan</a>. His own father, his grandfather, and his great-grandfather, his wife's father and grandfather, and likewise another of his wife's grandfathers and two of her great-grandfathers, were consuls. 3 He himself as consul was most rich and powerful; at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he owned the House of <a href=/people/7 target=_blank>Pompey</a>, and in the provinces more land than any other subject. 4 After his consulship, which he served with <a href=/people/13 target=_blank>Alexander</a>, he was sent out as proconsul to Africa by decree of the senate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#2 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:phi2331.phi020:3'><b>&sect; 3</b>&nbsp;&nbsp;But before I tell of his rule, I shall speak a little of his character. 2 When the <a href=/people/11045 target=_blank>Gordian</a> of whom we are speaking was a young man, he wrote poetry, all of which has been preserved. As a matter of fact, all the subjects were those which <a href=/people/2300 target=_blank>Cicero</a> also treated, that is, <a href=/people/50 target=_blank>Marius</a>, <a href=/people/12272 target=_blank>Aratus</a>, Alcyonae, Uxorius and <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nilus</a>. And he wrote these in order that <a href=/people/2300 target=_blank>Cicero</a>'s poems might seem out of date. 3 Besides these, just as <a href=/people/118 target=_blank>Vergil</a> wrote an Aeneid, <a href=/people/594 target=_blank>Statius</a> an Achilleid, and many others Alexandriads, he wrote an Antoniniad — the lives, that is, of <a href=/people/12361 target=_blank>Antoninus Pius</a> and <a href=/people/809 target=_blank>Marcus Antoninus</a>, most learnedly versified in thirty books, wherein he recounted their wars and other doings both public and private. 4 And all this he did as a young boy. Later on, when he grew to manhood, he declaimed and disputed at the <a about=https://topostext.org/place/419125BAth class=place long=12.4833 lat=41.8958>Athenaeum</a>, at times in the presence of his emperors. <br />5 He served his quaestorship most splendidly. When he was aedile he gave the Roman people twelve exhibitions, that is one for each month, at his own expense; at times, indeed, he provided five hundred pairs of gladiators, and never less than a hundred and fifty. 6 He produced a hundred wild beasts of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> at once, and likewise at one time a thousand bears. There exists also today a remarkable wild-beast hunt of his, pictured in Gnaeus <a href=/people/7 target=_blank>Pompey</a>'s House of the Beaks; this palace belonged to him and to his father and grandfather before him until your privy-purse took it over in the time of <a href=/people/12098 target=_blank>Philip</a>. 7 In this picture at the present day are contained two hundred stags with antlers shaped like the palm of a hand, together with stags of <a about=https://topostext.org/place/530-15IBri class=place long=-1.5 lat=53>Britain</a>, thirty wild <a href=/people/10959 target=_blank>horses</a>, a hundred wild <a href=/people/10954 target=_blank>sheep</a>, ten elks, a hundred <a about=https://topostext.org/place/350330RCyp class=person long=33 lat=35>Cyprian</a> <a href=/people/10955 target=_blank>bulls</a>, three hundred red Moorish ostriches, thirty wild <a href=/people/10962 target=_blank>asses</a>, a hundred and fifty wild <a href=/people/10951 target=_blank>boars</a>, two hundred chamois, and two hundred fallow deer. 8 And all these he handed over to the people to be killed on the day of the sixth exhibition that he gave. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#3 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:phi2331.phi020:4'><b>&sect; 4</b>&nbsp;&nbsp;He served a famous praetorship. Then, after administering the law, he entered upon his first consulship with <a href=/people/508 target=_blank>Antoninus</a> <a href=/people/4913 target=_blank>Caracalla</a>, his second with <a href=/people/13 target=_blank>Alexander</a>. 2 He had two children, one the son who attained consular rank and was named Augustus with himself and perished in the war in Africa near <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>, the other a daughter, Maecia <a href=/people/3838 target=_blank>Faustina</a> by name who was married to <a href=/people/514 target=_blank>Junius</a> <a href=/people/334 target=_blank>Balbus</a>, a man of consular rank. 3 His consulships were more brilliant than that of any other man of his time; even <a href=/people/508 target=_blank>Antoninus</a> envied him, admiring now his togas, now his broad stripe, and now his games, which surpassed the imperial games themselves. 4 He was the first Roman subject to possess for his own a tunic embroidered with palms and a gold-embroidered toga; for previously even the emperors had gotten theirs either from the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> or the Palace. 5 With the emperors' permission he distributed a hundred <a about=https://topostext.org/place/376145RSic class=demonym long=14.5 lat=37.6>Sicilian</a> and a hundred <a about=https://topostext.org/place/388350RCap class=person long=35 lat=38.8>Cappadocian</a> <a href=/people/10959 target=_blank>horses</a> among the factions. And he endeared himself greatly to the people, who are always touched by acts of this nature. 6 <a href=/people/6382 target=_blank>Cordus</a> says that he gave stage-plays and Juvenalia in all the cities of <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a>, <a about=https://topostext.org/place/430105RTyr class=place long=10.5 lat=43>Etruria</a>, <a href=/people/9930 target=_blank>Umbria</a>, <a href=/people/3175 target=_blank>Flaminia</a>, and <a about=https://topostext.org/place/430135RPic class=place long=13.5 lat=43>Picenum</a>, for four days at his own expense. 7 He wrote prose eulogies also of all the Antonines who had preceded him. He admired the Antonines marvellously; many say that he himself assumed the name <a href=/people/508 target=_blank>Antoninus</a> or, as more declare, <a href=/people/347 target=_blank>Antonius</a>. 8 And certainly there is no doubt that he embellished his son with the name <a href=/people/508 target=_blank>Antoninus</a>, when, after the Roman custom, he acknowledged him before the prefect of the Treasury and entered his name in the public records. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#4 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:phi2331.phi020:5'><b>&sect; 5</b>&nbsp;&nbsp;After his consulship he was appointed proconsul of Africa through the efforts of all those who desired <a href=/people/13 target=_blank>Alexander</a>'s reign to seem and to be brilliant in Africa through the splendour of its proconsul. 2 Indeed there still exists a letter of <a href=/people/13 target=_blank>Alexander</a>'s in which he thanks the senate for electing <a href=/people/11045 target=_blank>Gordian</a> proconsul for Africa. 3 It runs in this style: You could have done nothing more pleasing or agreeable to me, Conscript Fathers, than to send <a href=/people/508 target=_blank>Antoninus</a> <a href=/people/11045 target=_blank>Gordian</a> as proconsul to Africa, for he is well-born, high-minded, eloquent, just, moderate, virtuous, and so on. 4 It is clear from this how great a man <a href=/people/11045 target=_blank>Gordian</a> was even at that time. 5 He was beloved by the Africans as no other proconsul had ever been before; some called him <a href=/people/22 target=_blank>Scipio</a>, others, <a href=/people/41 target=_blank>Cato</a>, and many, <a href=/people/1024 target=_blank>Mucius</a>, <a href=/people/1250 target=_blank>Rutilius</a>, and <a href=/people/318 target=_blank>Laelius</a>. 6 An acclamation of theirs which <a href=/people/514 target=_blank>Junius</a> noted down has been preserved. 7 For when on one occasion he was reading an imperial act and began with the mention of the proconsuls <a href=/people/22 target=_blank>Scipio</a>, the people shouted, The new <a href=/people/22 target=_blank>Scipio</a>, the true <a href=/people/22 target=_blank>Scipio</a>, the proconsul <a href=/people/11045 target=_blank>Gordian</a>. He was often greeted with these and similar acclamations. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#5 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:phi2331.phi020:6'><b>&sect; 6</b>&nbsp;&nbsp;In height he was characteristically Roman. He was becomingly gray, with an impressive face, more ruddy than fair. His face was fairly broad, his eyes, his countenance, and his brow such as to command respect. His body was somewhat stocky. 2 In character he was temperate and restrained; there is nothing you can say that he ever did passionately, immoderately, or excessively. 3 His affection for his kin was remarkable, for his daughter and granddaughter most devoted. 4 He was as deferential to his father-in-law <a href=/people/1125 target=_blank>Annius</a> <a href=/people/501 target=_blank>Severus</a> as though he considered that he had passed over into his family as a son; he never washed himself in his company, he never sat in his presence until he became praetor. 5 And when he was consul either he always remained at the old man's house, or, if he stayed at the House of <a href=/people/7 target=_blank>Pompey</a>, he went either at morning or evening to see him. 6 He was sparing in the use of wine, very sparing in the use of food. His dress was elegant. He was fond of bathing; indeed, during the summer, he would bathe four or five times a day, in the winter twice. 7 His love of sleep was enormous; he would doze off even at table, if he were dining with friends, and without any embarrassment. This he seemed to do at nature's bidding and not because of intoxication or wantonness. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#6 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:phi2331.phi020:7'><b>&sect; 7</b>&nbsp;&nbsp;But all his virtuous behaviour profited him nothing. For this old man, worthy of respect as such a life had made him, who passed his days with <a href=/people/12 target=_blank>Plato</a> and <a href=/people/46 target=_blank>Aristotle</a>, <a href=/people/2300 target=_blank>Cicero</a> and <a href=/people/118 target=_blank>Vergil</a>, finally suffered an end other than that he deserved. <br />2 For, in the time of <a href=/people/1138 target=_blank>Maximinus</a>, a grim and savage man, he was ruling Africa as proconsul, and his son was with him as his legate, having been so appointed by the senate from among the consuls. Now there was a certain agent of the privy-purse, who ran riot against a great number of Africans even more violently than <a href=/people/1138 target=_blank>Maximinus</a> himself allowed. He outlawed a great many, he put many to death, he assumed all powers in excess even of a tax-gatherer's; and when he was finally restrained by the proconsul and legate he threatened those noble consular men with death. The Africans at length were unable to suffer these unwonted injuries any longer, and so, with the aid of a number of soldiers, they first killed him. 3 Then, after he was killed and while the whole world was blazing with hatred of <a href=/people/1138 target=_blank>Maximinus</a>, his slayers began to take counsel how this conflict which had arisen between the agents of <a href=/people/1138 target=_blank>Maximinus</a> and the peasants, or rather the Africans, might go unpunished. 4 Then a certain fellow, Mauritius by name, a municipal councillor, who had great influence with the Africans, held a sort of assembly on his farm near <a about=https://topostext.org/place/353107UThy class=place long=10.7069 lat=35.2964>Thysdrus</a> and made a most notable oration to the people of the town and the country, saying: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#7 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:phi2331.phi020:8'><b>&sect; 8</b>&nbsp;&nbsp;Let us give thanks to the immortal gods, citizens, that they have given us a chance, and truly a needed one, of protecting ourselves against that madman <a href=/people/1138 target=_blank>Maximinus</a>. 2 We have slain a tax-gatherer of his, one patterned after himself in character and conduct, and unless we make an emperor of our own we are lost. 3 Wherefore, since not far off there is a man of noble blood, a proconsul, and with him his son, a consular legate, both of whom that pest has threatened with death, we shall hail them emperors, if it please you, taking the purple from the standards, and giving them their proper trappings make them secure by Roman law. 4 Whereupon they shouted, It is good, it is right. <a href=/people/11045 target=_blank>Gordian</a> Augustus, may the gods keep you safe! Rule happily, rule with your son. <br />5 Upon this, they came hastily to the town of <a about=https://topostext.org/place/353107UThy class=place long=10.7069 lat=35.2964>Thysdrus</a>, and there they found the venerable old man returned from the law-courts and lying on a couch. They girt him straightway with the purple, but he would have none of it and cast himself on the ground; and they lifted him up still refusing. 6 But when he saw that he could do nothing else, for the sake of escaping from a danger which threatened him for certain at the hands of his supporters and only doubtfully from the Maximinians, the old man suffered himself to be acclaimed emperor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#8 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi2331.phi020:9'><b>&sect; 9</b>&nbsp;&nbsp;He was then eighty years of age, and, as we have said, had ruled many provinces before; and he had so commended himself to the Roman people by his conduct in these that they thought him worthy of ruling the whole empire. 2 With regard to the killing of the agent, <a href=/people/11045 target=_blank>Gordian</a> had had no previous knowledge. But when he learned of the fact, being now near to death and fearing greatly for his son, he preferred to die honourably rather than be handed over to the chains and prison-cell of <a href=/people/1138 target=_blank>Maximinus</a>. <br />3 However, having now acclaimed <a href=/people/11045 target=_blank>Gordian</a> emperor, the young men who were the authors of the deed proceeded to cast down the statues of <a href=/people/1138 target=_blank>Maximinus</a>, break his busts, and publicly erase his name. They also gave <a href=/people/11045 target=_blank>Gordian</a> the name <a href=/people/224 target=_blank>Africanus</a>. 4 Some add that he was granted this honorary name, not because he became emperor in Africa, but because he was descended from the family of the <a href=/people/22 target=_blank>Scipios</a>. 5 In most books, moreover, I find that <a href=/people/11045 target=_blank>Gordian</a> and his son were declared emperors with equal rank and both given the name <a href=/people/508 target=_blank>Antoninus</a>: certain other books, however, say that they were given the name <a href=/people/347 target=_blank>Antonius</a>. <br />6 After this, with kingly pomp and laurelled fasces, they came to <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>, and there his son — who, after the example of the <a href=/people/22 target=_blank>Scipios</a>, as <a href=/people/1445 target=_blank>Dexippus</a> the writer of Greek history says, was his father's legate — was invested with equal power. 7 Upon this an embassy was despatched to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, bearing letters from the Gordians to announce all that had taken place in Africa, which was received by <a href=/people/12175 target=_blank>Valerian</a>, the chief of the senate (who was afterwards emperor), with rejoicing. Letters were sent also to their noble friends, in order that powerful men might support their action and from friends might become still greater friends. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#9 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:phi2331.phi020:10'><b>&sect; 10</b>&nbsp;&nbsp;But the senate received them so joyfully as emperors against <a href=/people/1138 target=_blank>Maximinus</a> that not only did it ratify all that had been already done but further elected twenty men — including <a href=/people/11092 target=_blank>Maximus</a>, known also as <a href=/people/11053 target=_blank>Pupienus</a>, and <a href=/people/261 target=_blank>Clodius</a> <a href=/people/5498 target=_blank>Balbinus</a>, both of whom were made emperors after the two Gordians were slain in Africa — 2 among whom the districts of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> were portioned out to be guarded for the Gordians against <a href=/people/1138 target=_blank>Maximinus</a>. 3 Embassies then came to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> from <a href=/people/1138 target=_blank>Maximinus</a> promising to redress the past. 4 For they promised all good things; they promised a huge bounty to the soldiers and fields and a largess to the people, and they were trusted. 5 In fact, so much more trust was placed in the Gordians than in the Maximini, that <a href=/people/10487 target=_blank>Vitalianus</a>, the prefect of the guard, was put to death at the senate's command, a quaestor and some soldiers performing the deed with great daring. This <a href=/people/10487 target=_blank>Vitalianus</a> had conducted himself with great cruelty before; and now they feared some greater piece of savagery pleasing and agreeable to one of <a href=/people/1138 target=_blank>Maximinus</a>' character. 6 The following story is related about his death. A forged letter, purporting to come from <a href=/people/1138 target=_blank>Maximinus</a> and sealed as if with his ring, was brought to <a href=/people/10487 target=_blank>Vitalianus</a> by soldiers in charge of a quaestor, who added that there was further information, not in the letter, to be imparted in secret. 7 They retired, therefore, to a distant portico, where he inquired what it was that was to be told him secretly. 8 But first they urged him to look at the <a href=/people/10989 target=_blank>seal</a> on the letter, which he did. And while he was regarding it, they cut him down, and then persuaded the soldiers that he had been slain by command of <a href=/people/1138 target=_blank>Maximinus</a>. And when this affair had been settled, the letters and images of the Gordians were displayed in the Camp. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#10 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:phi2331.phi020:11'><b>&sect; 11</b>&nbsp;&nbsp;I think it my duty to set down in writing the decree of the senate in which the Gordians were declared emperors and <a href=/people/1138 target=_blank>Maximinus</a> a public enemy. 2 On an extraordinary, not a regular, day for the meeting of the senate, the consul, having foregathered at his own home with the praetors, the aediles, and the tribunes of the people, came to the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Senate-house</a>. 3 The prefect of the city, who had somehow got wind of something and had not received the official notice, kept away from the meeting. But as it turned out, that was as well, for before the usual acclamations were made or anything was said favourable to <a href=/people/1138 target=_blank>Maximinus</a>, the consul cried: 4 Conscript Fathers, the two Gordians, father and son, both ex-consuls, the one your proconsul, the other now your legate, have been declared emperors by a great assembly in Africa. 5 Let us give thanks, then, to the young men of <a about=https://topostext.org/place/353107UThy class=place long=10.7069 lat=35.2964>Thysdrus</a>, and thanks also to the ever loyal people of <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>; they have freed us from that savage monster, from that wild beast. 6 Why do you hear me with quaking? Why do you look around? Why do you delay? This is what you have always hoped for. 7 <a href=/people/1138 target=_blank>Maximinus</a> is our enemy; the gods shall now bring it to pass that he may now cease to be, and that we with joyful hearts may enjoy the happy sagacity of the elder <a href=/people/11045 target=_blank>Gordian</a>, the intrepid virtue of the younger. 8 After this he read the letters which the Gordians had sent to the senate and to himself. And then the senate cried aloud: We thank you, O gods. We are freed from our enemies; so may we be wholly freed! 9 We adjudge <a href=/people/1138 target=_blank>Maximinus</a> an enemy. We consign <a href=/people/1138 target=_blank>Maximinus</a> and his son to the gods below. 10 We call the Gordians Augusti. We recognize the Gordians as princes. May the gods keep safe the senate's emperors, may we see our noble emperors victorious, may <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> see our emperors! Whoever shall kill the public enemies shall get a reward. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#11 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:phi2331.phi020:12'><b>&sect; 12</b>&nbsp;&nbsp;<a href=/people/514 target=_blank>Junius</a> <a href=/people/6382 target=_blank>Cordus</a> says that this was a secret decree of the senate. Just what this is, and why it is so called, I shall briefly explain. 2 Today the equivalent of a secret decree of the senate is, in general, nothing more than the action of those inner councils of elders by which Your Clemency settles those affairs which are not to be published abroad. You are accustomed to take oath when discussing these matters, moreover, that no one shall hear or know anything of them until the business is completed. 3 But among the ancients the custom was introduced in the interests of the state, that, if by any chance violence threatened at the hands of their enemies, which forced them either to adopt ignoble counsels or resolve on things which should not be disclosed until they were ready to be put into effect, or if they were unwilling for certain measures to be divulged to friends, the senate passed a secret decree. At these sessions not even the clerks or public servants or officers of the Census were present; the senators took over and the senators performed the duties of all the clerks and officers of the Census, lest anything by any chance should be betrayed. 4 To prevent news of it reaching <a href=/people/1138 target=_blank>Maximinus</a>, therefore, this decree of the senate was made secret. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#12 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:phi2331.phi020:13'><b>&sect; 13</b>&nbsp;&nbsp;But as is the way with the minds of men — of such of them, at least, as blush if any knowledge of theirs does not become known and consider it abject not to betray a trust — <a href=/people/1138 target=_blank>Maximinus</a> straightway learned everything. Indeed, he got a copy of the senate's secret decree — a thing that had never previously occurred. 2 There is a letter of his to the city-prefect which says: I have read the senate's secret decree about those emperors of ours; perhaps you, being city-prefect, did not know it had been passed, for you were not present on that occasion. I have sent you a copy, however, hoping that you may learn how to rule the commonwealth of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. 3 The fury that shook <a href=/people/1138 target=_blank>Maximinus</a> when he learned that Africa had revolted from him is impossible to describe. 4 For when he finally comprehended the decree of the senate, he dashed himself against the walls, he rent his garments, he snatched his sword as though he could slay them in a body, he seemed, indeed, to go wholly mad. <br />5 The prefect of the city now got even more violent letters and made an address to the people and the soldiers, wherein he said that <a href=/people/1138 target=_blank>Maximinus</a> had been slain. 6 Upon this great rejoicing arose and the statues and portraits of the public enemy were immediately cast down. 7 The senate, moreover, employed the powers which belonged to it for impending war. Informers, false accusers, personal agents, in fact all the filth of the Maximinian despotism, it ordered to be put to death. 8 But this, the senate's decision, was not enough; the people decided that after they were put to death they should be dragged about and cast into the sewer. 9 Then also <a href=/people/573 target=_blank>Sabinus</a>, the prefect of the city and a man of consular rank, was beaten with a club and slain; his corpse was left lying in the streets. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#13 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:phi2331.phi020:14'><b>&sect; 14</b>&nbsp;&nbsp;When <a href=/people/1138 target=_blank>Maximinus</a> learned of these last measures he at once assembled his troops and harangued them in the following manner: Consecrated fellow-soldiers, or rather partakers of my consecration, who have, most of you, fought with me wars that were wars indeed, when we defended the majesty of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> from <a href=/people/557 target=_blank>Germany</a>, when we redeemed <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> from the barbarians, the Africans have kept Punic faith. 2 They have acclaimed the two Gordians emperors; one of whom is so broken with old age that he cannot rise, the other so wasted with debauchery that exhaustion serves him for old age. 3 And lest this be not enough, that glorious senate of ours has approved what the Africans have done. They for whose children we bear arms have set up twenty men against us, and passed all such decrees against us as are passed against a foe. 4 Up! then, as men should; we must hasten to the city. For against us twenty men, all of consular rank, have been chosen; they must be withstood, we bravely leading, you happily fighting. 5 But that this harangue left his soldiers with indifferent feelings, and not with quickened spirits, even <a href=/people/1138 target=_blank>Maximinus</a> himself realized. 6 In fact, he at once wrote to his son, who was following at a distance behind, to hasten speedily, lest the soldiers devise some plot against him in his absence. 7 <a href=/people/514 target=_blank>Junius</a> <a href=/people/6382 target=_blank>Cordus</a> gives the purport of the letter thus: My attendant Tynchanius is coming to tell you my last advices on what has taken place in Africa and <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and also how the soldiers feel. 8 I beseech you, hasten as fast as you can, lest this mob of soldiers take further measures, as soldiers are wont to do. What I fear, you will learn from him whom I have sent you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#14 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:phi2331.phi020:15'><b>&sect; 15</b>&nbsp;&nbsp;But while all this was taking place, the Gordians were attacked in Africa by a certain Capelianus. He had always been hostile to <a href=/people/11045 target=_blank>Gordian</a> even in private life, and now the Emperor himself dismissed him when, as an old soldier, he was governing the Moors by <a href=/people/1138 target=_blank>Maximinus</a>' appointment. And so when <a href=/people/11045 target=_blank>Gordian</a> dismissed him, he gathered the Moors together and with an irregular force of them came up to <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>, the people of which, with typical Punic faith, came over to him. 2 None the less, <a href=/people/11045 target=_blank>Gordian</a> desired to hazard the chances of war, and sent against them his son, now well advanced in years (he was then forty-six years old), and at that time his father's legate; we shall give a resumé of his character in its proper place. 3 But in military affairs not only was Capelianus the bolder man, but the younger <a href=/people/11045 target=_blank>Gordian</a> was less well trained, placed at a disadvantage, as he was, by the luxurious life of the nobility. When they joined battle, accordingly, he was beaten, and in the same campaign slain. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#15 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:phi2331.phi020:16'><b>&sect; 16</b>&nbsp;&nbsp;Such a host of <a href=/people/11045 target=_blank>Gordian</a>'s party fell in this campaign, it is said, that the body of the younger <a href=/people/11045 target=_blank>Gordian</a>, although it was long searched for, could not be found. 2 There was a great storm, moreover, — a rare thing in Africa — which scattered <a href=/people/11045 target=_blank>Gordian</a>'s army before the battle and also made the soldiers less fit for the fight, and on this account Capelianus' victory was the easier. <br />3 And when the elder <a href=/people/11045 target=_blank>Gordian</a> learned of this, seeing there was no aid in Africa, and being distressed with a great fear of <a href=/people/1138 target=_blank>Maximinus</a> and by knowledge of Punic faith, also because Capelianus was assailing him very sharply, and because in the end the struggle had wearied him in mind and soul, he took a rope and hanged himself. <br />4 This was the end of two of the Gordians. Both of them were named Augusti by the senate and afterwards placed among the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#16 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi2331.phi020:17'><b>&sect; 17</b>&nbsp;&nbsp;GORDIAN THE SECOND <br />This was the son of the old <a href=/people/11045 target=_blank>Gordian</a>, the proconsul of Africa. He too was named Augustus by the Africans and the senate at the same time as his father, and he was illustrious in culture and character as well as in battle rank; the last, according to many writers, he derived from the Antonines, although most say from the <a href=/people/3137 target=_blank>Antonii</a>. 2 Others adduce the following facts as evidence to show the high quality of his family — that the elder <a href=/people/11045 target=_blank>Gordian</a> was called <a href=/people/224 target=_blank>Africanus</a>, the honorary surname of the <a href=/people/22 target=_blank>Scipios</a>; that he possessed the House of <a href=/people/7 target=_blank>Pompey</a> in the city; that he was always given the surname of the Antonines; and that he himself expressed a desire in the senate that his son should be known as <a href=/people/347 target=_blank>Antonius</a>. Each of these, they believe, represents a family connection. 3 I, however, follow <a href=/people/514 target=_blank>Junius</a> <a href=/people/6382 target=_blank>Cordus</a>, who says that the nobility of the Gordians was derived from all these families. 4 At any rate, he was the first offspring of his father, <a href=/people/11045 target=_blank>Gordian</a>, and Fabia <a href=/people/8067 target=_blank>Orestilla</a>, the great-granddaughter of <a href=/people/508 target=_blank>Antoninus</a>, through whom he seemed also to be lined with the family of the Caesars. 5 A few days after his birth he was given the name <a href=/people/508 target=_blank>Antoninus</a>; later, in the senate, he was publicly named <a href=/people/347 target=_blank>Antonius</a>; and the people finally began to call him <a href=/people/11045 target=_blank>Gordian</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#17 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:phi2331.phi020:18'><b>&sect; 18</b>&nbsp;&nbsp;He took his studies very seriously. In person he was remarkably good looking; his memory was extraordinary. He was very kind of heart; indeed, when any of the boys was flogged at school, he could not restrain his tears. 2 <a href=/people/2931 target=_blank>Serenus</a> Sammonicus, a great friend of his father's, was his tutor, and a very beloved and agreeable one he was; in fact, when he died, he left the young <a href=/people/11045 target=_blank>Gordian</a> all the books that had belonged to his father, <a href=/people/2931 target=_blank>Serenus</a> Sammonicus, and these were estimated at sixty-two thousand. 3 And this raised him to the seventh heaven, for being now possessed of a library of such magnitude and excellence, thanks to the power of letters he became famous among men. <br />4 He won his quaestorship upon the recommendation of <a href=/people/11040 target=_blank>Elagabalus</a>; for the wildness of the young man, which was nevertheless neither extravagant nor depraved, had found him favour with that extravagant emperor. 5 He held the city-praetorship on the recommendation of <a href=/people/13 target=_blank>Alexander</a>, and did so well in this office, chiefly in administering the law, that he was immediately given the consulship, which his father had won late in life. 6 And in the time either of <a href=/people/1138 target=_blank>Maximinus</a> or of this same <a href=/people/13 target=_blank>Alexander</a>, being sent to his father's proconsular command, he served as his legate, and then happened what has been related above. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#18 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:phi2331.phi020:19'><b>&sect; 19</b>&nbsp;&nbsp;He was somewhat fond of wine, but always, however, of wine in some way spiced, at one time with roses, again with mastic, again with wormwood and various other herbs — all of which are most pleasing to the palate. 2 He ate sparingly; indeed he finished his luncheon — if he lunched at all — or his dinner in an instant. 3 He was very fond of women; indeed, it is said that he had twenty-two concubines decreed him, from all of whom he left three or four children apiece. 4 He was nicknamed, in fact, the <a href=/people/64 target=_blank>Priam</a> of his age, but often the crowd jestingly called him not <a href=/people/64 target=_blank>Priam</a> but <a href=/people/806 target=_blank>Priapus</a>, as being nearer to his character. He lived in revelry — in gardens, in baths, and in most delightful groves. Nor did his father ever rebuke him, but on the contrary very often said that sometime soon he would die in the greatest eminence. 6 Yet in his manner of life he never was inferior to the good in bravery, and he was ever among the most distinguished of citizens and never failed the commonwealth with advice. 7 And the senate, finally, entitled him Augustus with the greatest joy and laid on him the hopes of the state. 8 He was very elegant in his dress, and beloved by his slaves and entire household. 9 <a href=/people/6382 target=_blank>Cordus</a> says that he was never willing to have a wife, but <a href=/people/1445 target=_blank>Dexippus</a> thinks that the third <a href=/people/11045 target=_blank>Gordian</a> was his son — the boy, that is, who was afterwards made emperor with <a href=/people/5498 target=_blank>Balbinus</a> and <a href=/people/11053 target=_blank>Pupienus</a> (or <a href=/people/11092 target=_blank>Maximus</a>). </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:phi2331.phi020:20'><b>&sect; 20</b>&nbsp;&nbsp;At one time the elder <a href=/people/11045 target=_blank>Gordian</a> consulted an astrologer about his son's nativity, and the astrologer, it is said, answered that the child would be both son and father of an emperor, and that he also would be emperor. 2 <a href=/people/11045 target=_blank>Gordian</a> laughed; but then, they say, the astrologer pointed out the constellationa and read from ancient books until he proved that he had spoken the truth. 3 This same astrologer, moreover, predicted truthfully the day and the manner of the deaths of both father and son, and the places where they would die, all with stubborn firmness. 4 In after days, it is said, the elder <a href=/people/11045 target=_blank>Gordian</a> recounted all of this in Africa, at a time when he was emperor and had nothing to fear — indeed, he spoke of his own death and his son's and of the manner in which they would die. 5 Often, too, the old man recited these verses when he saw his son: <br />Him the fates only displayed to the circle of lands, and no longer <br />Suffered to be. Too great, too great did <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>'s generations <br />Seem to you else, O Gods, had this figure really been granted. <br />6 There are still in existence various things written by the younger <a href=/people/11045 target=_blank>Gordian</a> in both prose and verse, which are often quoted by his kinsmen today. These are neither good nor yet very bad, but rather mediocre. They seem, in truth, the work of one who was really talented but gave himself over to pleasure and wasted his genius. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#20 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:phi2331.phi020:21'><b>&sect; 21</b>&nbsp;&nbsp;He was extremely fond of fruit and greens; in fact, though very abstemious in his use of other kinds of food, he was continually eating fresh fruit. 2 He had a craving for cold drinks, and passed the summer with great difficulty unless he drank cold drinks and a great many of them. He was of huge size, as a matter of fact, and this somewhat stimulated his longing for cold drinks. <br />3 This is what we have discovered about the younger <a href=/people/11045 target=_blank>Gordian</a> that is worthy of mention. For we do not think we need recount absurd and silly tales such as <a href=/people/514 target=_blank>Junius</a> <a href=/people/6382 target=_blank>Cordus</a> has written concerning his domestic pleasures and petty matters of that sort. 4 If any desire to know these things, let them read <a href=/people/6382 target=_blank>Cordus</a>; <a href=/people/6382 target=_blank>Cordus</a> tells what slaves each and every emperor had and what friends, how many mantles and how many cloaks. Knowledge of this sort of thing does no one any good. It is the duty of historians, rather, to set down in their histories such things as are to be avoided or sought after. <br />5 But truly I have decided that I must not omit this, which I read in <a href=/people/8495 target=_blank>Vulcatius</a> Terentianus, who wrote a history of his time, because it seems a marvellous thing. So I write it down. The elder <a href=/people/11045 target=_blank>Gordian</a> resembled the face of Augustus perfectly; he seemed, indeed, to have his very voice and mannerisms and stature; his son, in turn, seemed like to <a href=/people/7 target=_blank>Pompey</a>, although it is true that <a href=/people/7 target=_blank>Pompey</a> was not obese of person; his grandson, finally, whose portraits we can see today, bore the appearance of <a href=/people/22 target=_blank>Scipio</a> Asiaticus. This, because of its very strangeness, I have decided should not be passed over in silence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#21 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:phi2331.phi020:22'><b>&sect; 22</b>&nbsp;&nbsp;GORDIAN THE THIRD <br />On the death of the two Gordians, the senate, being now thoroughly agitated and in even more violent terror of <a href=/people/1138 target=_blank>Maximinus</a>, chose <a href=/people/11053 target=_blank>Pupienus</a> (or <a href=/people/11092 target=_blank>Maximus</a>) and <a href=/people/261 target=_blank>Clodius</a> <a href=/people/5498 target=_blank>Balbinus</a>, both ex-consuls, from the twenty men whom they had elected to protect the state, and declared them emperors. 2 But on this the populace and soldiers demanded that the child <a href=/people/11045 target=_blank>Gordian</a> should be made Caesar, he being then, so most authorities declare, eleven years old; some, however, say thirteen, and <a href=/people/514 target=_blank>Junius</a> <a href=/people/6382 target=_blank>Cordus</a> says sixteen (for <a href=/people/6382 target=_blank>Cordus</a> says that he was in his twenty-second year when he died). 3 At any rate, he was hurried to the senate and thence taken to an assembly, and there they clothed him in the imperial garments and hailed him as Caesar. <br />4 According to most authorities, he was the son of <a href=/people/11045 target=_blank>Gordian</a>'s daughter, but one or two (I have unable to discover more) say that he was the child of that son of <a href=/people/11045 target=_blank>Gordian</a> who was killed in Africa. 5 However this may be, after he was made Caesar he was reared at his mother's house. But when <a href=/people/11092 target=_blank>Maximus</a> and <a href=/people/5498 target=_blank>Balbinus</a> had ruled for two years after the death of the Maximini they were slain in a mutiny of the soldiers, and the young <a href=/people/11045 target=_blank>Gordian</a>, who had been Caesar until then, was declared Augustus — the soldiers, populace, senate, and all the peoples of the Empire uniting with great love, great eagerness, and great gratitude to do so. 6 For they loved him exceedingly because of his grandfather and uncle (or father), who had both taken up arms in behalf of the senate and Roman people against <a href=/people/1138 target=_blank>Maximinus</a> and had both perished, the one by a soldier's death, the other through a soldier's despair. <br />7 After this a body of veterans came to the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Senate-house</a> to learn what had taken place. 8 And two of them, having gone up to the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> — for the senate was meeting there, — were slain by Gallicanus, a former consul, and <a href=/people/1293 target=_blank>Maecenas</a>, a former general, before the very altar, 9 and a civil war sprang up, in which even the senators were armed; for the veterans were unaware that the young <a href=/people/11045 target=_blank>Gordian</a> was holding the imperial power alone. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#22 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:phi2331.phi020:23'><b>&sect; 23</b>&nbsp;&nbsp;(<a href=/people/1445 target=_blank>Dexippus</a> says that <a href=/people/11045 target=_blank>Gordian</a> the third was the child of <a href=/people/11045 target=_blank>Gordian</a>'s son). But shortly afterwards, when it was understood among the veterans that <a href=/people/11045 target=_blank>Gordian</a> was ruling alone, a peace was confirmed between the populace and the soldiers and veterans, and an end of the civil strife was made when the boy was given the consulship. 2 There was an omen, however, that <a href=/people/11045 target=_blank>Gordian</a> was not to rule for long, which was this: there occurred an eclipse of the sun, so black that men thought it was night and business could not be transacted without the aid of lanterns. 3 None the less, after it the populace devoted itself to spectacles and revelry, to dull the memory of the hard things that had been done before. <br />4 In the consulship of <a href=/people/7027 target=_blank>Venustus</a> and <a href=/people/573 target=_blank>Sabinus</a> a revolt broke out in Africa against <a href=/people/11045 target=_blank>Gordian</a> the third under the leadership of <a href=/people/3686 target=_blank>Sabinianus</a>. But the governor of <a about=https://topostext.org/place/350000RMau class=place long=-5 lat=35>Mauretania</a>, who was first beset by the conspirators, crushed it for <a href=/people/11045 target=_blank>Gordian</a> so severely that all of them came up to <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> to surrender <a href=/people/3686 target=_blank>Sabinianus</a> and confessed their wrong and sought pardon for it. 5 When, however, this trouble in Africa had been ended, a war broke out with the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> — this being in the first consulship of <a href=/people/11060 target=_blank>Pompeianus</a> and the second of <a href=/people/11045 target=_blank>Gordian</a>. 6 But before setting out for this war the young <a href=/people/11045 target=_blank>Gordian</a> took a wife, the daughter of Timestheus, a most erudite man, whom <a href=/people/11045 target=_blank>Gordian</a> considered worthy of being his relation because of his powers of eloquence and immediately made his prefect. 7 After this his rule seemed not in the least that of a child or contemptible, since he was aided by the advice of this excellent father-in-law, while he himself, on his own account, developed considerable sagacity and did not let his favours be sold by the eunuchs and attendants at court through his mother's ignorance or connivance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#23 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi2331.phi020:24'><b>&sect; 24</b>&nbsp;&nbsp;There is still in existence a letter from <a href=/people/11045 target=_blank>Gordian</a> to his father-in-law and also one from his father-in-law to him, in which we can see how faultlessly and zealously he and his father-in-law strove to perfect their age. This is a copy of the letters: <br />2 To my imperial son and Augustus, from Timestheus, his prefect and father-in-law. One serious scandal of our age we have escaped; the scandal, I mean, that eunuchs and those who pretend to be your friends (though really they are your worst enemies) arrange all things for money. This is all the more agreeable, and it should make this improvement more pleasing to you too, because if there have been any failings, it seems assured, my revered son, that they have not been yours. 3 For no one could bear it when commissions in the army were given out on the nomination of eunuchs, when labours were denied their due reward, when men who should not have been slain or set free through caprice or bribery, when the treasury was drained, when conspiracies were fomented by those who moved cunningly about you every day, that you, too, might be finally ensnared, while all evil men settled beforehand among themselves what to advise you about the righteous, drove away the good, introduced the abominable, and, in the end, sold all your secrets for a price. 4 Let the gods be thanked, then, that this evil has been done away with, as you, too, desired! 5 Truly it delights me to be the father-in-law of a worthy emperor; and of one, too, who inquires into everything and wishes to know everything, and has driven away the men who formerly sold him as though he were set up in open market. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#24 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:phi2331.phi020:25'><b>&sect; 25</b>&nbsp;&nbsp;Likewise <a href=/people/11045 target=_blank>Gordian</a>'s letter to <a href=/people/6023 target=_blank>Timesitheus</a>: <br />From the Emperor <a href=/people/11045 target=_blank>Gordian</a> Augustus to <a href=/people/6023 target=_blank>Timesitheus</a>, his father-in-law and prefect. Were it not that the mighty gods watch over the Roman Empire, even now we should be sold by bought eunuchs as though under the hammer. 2 Now at last I know that a Felicio should not have been put in command of the praetorian guard and that I should not have entrusted the Fourth Legion to a Serapammon; in fact, to give no further examples, that I should not have done much that I did do; but now, the gods be thanked, I have learned from suggestions by you, who are incorruptible, what I could not know by myself. 3 For what could I do? — since even our mother was betraying us, she who used to take counsel with Gaudianus, Reverendus, and <a href=/people/3430 target=_blank>Montanus</a> and then praise men or traduce them accordingly, and by their testimony as though by the evidence of witnesses she would prove what she had said. 4 My father, I should like you to hear a true thing: wretched is an emperor before whom men do not speak out the truth, for since he himself cannot walk out among the people he can only hear things, and then believe either what he has heard or what the majority have corroborated. <br />5 From these letters one can see how the young man had been improved and bettered by his father-in-law's counsel. 6 Some say that <a href=/people/6023 target=_blank>Timesitheus</a>' letter was written in Greek but in any case to the above effect. 7 So great was the power, moreover, of his strength of character and righteousness, that he rose from great obscurity to make the Emperor <a href=/people/11045 target=_blank>Gordian</a> illustrious not only for his noble birth but also for his deeds. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#25 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:phi2331.phi020:26'><b>&sect; 26</b>&nbsp;&nbsp;There was a severe earthquake in <a href=/people/11045 target=_blank>Gordian</a>'s reign — so severe that whole cities with all their inhabitants disappeared in the opening of the ground. Vast sacrifices were offered through the entire city and the entire world because of this. 2 And <a href=/people/6382 target=_blank>Cordus</a> says that the <a href=/people/12187 target=_blank>Sibylline Books</a> were consulted, and everything that seemed ordered therein done; whereupon this world-wide evil was stayed. <br />3 But after this earthquake was stayed, in the consulship of <a href=/people/4278 target=_blank>Praetextatus</a> and <a href=/people/405 target=_blank>Atticus</a>, <a href=/people/11045 target=_blank>Gordian</a> opened the twin gates of <a href=/people/983 target=_blank>Janus</a>, which was a sign that war had been declared, and set out against the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> with so huge an army and so much gold as easily to conquer the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> with either his regulars or his auxiliaries. 4 He marched into <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Moesia</a> and there, even while making ready, he destroyed, put to flight, expelled, and drove away whatever forces of the enemy were in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>. 5 From there he marched through <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> to <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a>, which was then in the possession of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>. There he fought and won repeated battles, and drove out <a href=/people/12038 target=_blank>Sapor</a>, the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>' king. 6 After this he recovered Artaxanses, <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a>, <a about=https://topostext.org/place/369390UCar class=place long=39.031 lat=36.864>Carrhae</a>, and <a about=https://topostext.org/place/371412UNis class=place long=41.2149 lat=37.067>Nisibis</a>, all of which had been included in the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> empire. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#26 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:latinLit:phi2331.phi020:27'><b>&sect; 27</b>&nbsp;&nbsp;Indeed the king of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> became so fearful of the Emperor <a href=/people/11045 target=_blank>Gordian</a> that, though he was provided with forces both from his own lands and from ours, he nevertheless evacuated the cities and restored them unharmed to their citizens; nor did he injure their possessions in any way. 2 All this, however, was accomplished by <a href=/people/6023 target=_blank>Timesitheus</a>, <a href=/people/11045 target=_blank>Gordian</a>'s father-in-law and prefect. 3 And in the end <a href=/people/11045 target=_blank>Gordian</a>'s campaign forced the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, who were then dreaded even in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, to return to their own kingdom, and the Roman power occupied the whole of the East. <br />4 There is still in existence an oration of <a href=/people/11045 target=_blank>Gordian</a>'s to the senate, wherein while writing of his deeds he gives boundless thanks to his prefect and father-in-law <a href=/people/6023 target=_blank>Timesitheus</a>. I have set down a part of it, that from this you may learn his actual words: 5 After those deeds, Conscript Fathers, which were done while on our march and done everywhere in a manner worthy of as many separate triumphs, we (to compress much into little) removed from the necks of the people of <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a>, which were bent under the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> yoke, the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, the kings of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, and the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>' law. 6 After this we restored <a about=https://topostext.org/place/369390UCar class=place long=39.031 lat=36.864>Carrhae</a> and other cities also to the Roman sway. We have penetrated as far as <a about=https://topostext.org/place/371412UNis class=place long=41.2149 lat=37.067>Nisibis</a>, and if it be pleasing to the gods, we shall even get to <a about=https://topostext.org/place/331446UKte class=place long=44.5807 lat=33.0937>Ctesiphon</a>. 7 Only may our prefect and father-in-law <a href=/people/6023 target=_blank>Timesitheus</a> prosper, for it was by his leadership and his arrangements that we accomplished these things and shall in the future continue to accomplish them. 8 It is now for you to decree thanksgivings, to commend us to the gods, and to give thanks to <a href=/people/6023 target=_blank>Timesitheus</a>. <br />9 After this was read to the senate, chariots drawn by four elephants were decreed for <a href=/people/11045 target=_blank>Gordian</a>, in order that he might have a <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> triumph inasmuch as he had conquered the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, and for <a href=/people/6023 target=_blank>Timesitheus</a> a six-<a href=/people/10959 target=_blank>horse</a> chariot and a triumphal car and the following inscription: 10 To His Excellency <a href=/people/6023 target=_blank>Timesitheus</a>, Father of Emperors, Prefect of the Guard and of the entire City, Guardian of the State, the senate and the Roman people make grateful acknowledgment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#27 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:latinLit:phi2331.phi020:28'><b>&sect; 28</b>&nbsp;&nbsp;But such felicity could not endure. For, as most say, through the plotting of <a href=/people/12098 target=_blank>Philip</a>, who was made prefect of the guard after him, or, as others say, because of a disease, <a href=/people/6023 target=_blank>Timesitheus</a> died, leaving the Roman state as his heir. Everything that had been his was added to the city's revenues. 2 So excellent was this man's management of public affairs that there was nowhere a border city of major size, such as could contain an army and emperor of the Roman people, that did not have supplies of cheap wine, grain, bacon, barley, and straw for a year; other smaller cities had supplies for thirty days, some for forty, and not a few for two months, while the very least had supplies for fifteen days. 3 When he was prefect, likewise, he constantly inspected his men's arms. He never let an old man serve and he never let a boy draw rations. He used to go over the camps and their entrenchments, and he even frequently visited the sentries during the night. 4 And because he so loved the emperor and the state, everyone loved him. The tribunes and generals both loved and feared him so much that they were unwilling to do wrong and, for that matter, in no way did wrong. 5 <a href=/people/12098 target=_blank>Philip</a>, they say, was mightily in fear of him for many reasons and on this account plotted with the doctors against his life. He did it in this way: <a href=/people/6023 target=_blank>Timesitheus</a>, as it happened, was suffering from diarrhoea and was told by the doctors to take a potion to check it. 6 And then, they say, they changed what had been prepared and gave him something which loosened him all the more; and thus he died. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 243 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#28 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:latinLit:phi2331.phi020:29'><b>&sect; 29</b>&nbsp;&nbsp;When he died, in the consulship of <a href=/people/3342 target=_blank>Arrianus</a> and <a href=/people/4649 target=_blank>Papus</a>, <a href=/people/12098 target=_blank>Philippus</a> the <a about=https://topostext.org/place/280400RAra class=person long=40 lat=28>Arab</a> was made prefect of the guard in his place. This <a href=/people/12098 target=_blank>Philip</a> was low-born but arrogant, and now could not contain himself in his sudden rise to office and immoderate good fortune, but immediately, through the soldiers, began to plot against <a href=/people/11045 target=_blank>Gordian</a>, who had begun to treat him as a father. He did it in the following manner. 2 As we have said, <a href=/people/6023 target=_blank>Timesitheus</a> had stored up such a quantity of supplies everywhere, that the Roman administration could not break down. But now <a href=/people/12098 target=_blank>Philip</a> intrigued first to have the grain-ships turned away, and then to have the troops moved to stations where they could not get provisions. 3 In this way he speedily got them exasperated against <a href=/people/11045 target=_blank>Gordian</a>, for they did not know that the youth had been betrayed through <a href=/people/12098 target=_blank>Philip</a>'s intriguing. 4 In addition to this, <a href=/people/12098 target=_blank>Philip</a> spread talk among the soldiers to the effect that <a href=/people/11045 target=_blank>Gordian</a> was young and could not manage the Empire, and that it were better for someone to rule who could command the army and understood public affairs. 5 Besides this, he won over the leaders, and finally brought it about that they openly called him to the throne. 6 <a href=/people/11045 target=_blank>Gordian</a>'s friends at first opposed him vigorously, but when the soldiers were at last overcome with hunger <a href=/people/12098 target=_blank>Philip</a> was entrusted with the sovereignty, and the soldiers commanded that he and <a href=/people/11045 target=_blank>Gordian</a> should rule together with equal rank while <a href=/people/12098 target=_blank>Philip</a> acted as a sort of guardian. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 243 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#29 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:latinLit:phi2331.phi020:30'><b>&sect; 30</b>&nbsp;&nbsp;Now that he had gained the imperial power <a href=/people/12098 target=_blank>Philip</a> began to bear himself very arrogantly towards <a href=/people/11045 target=_blank>Gordian</a>; and he knowing himself to be an emperor, an emperor's son, and a scion of a most noble family, could not endure this low-born fellow's insolence. And so, mounting the platform, with his kinsman <a href=/people/9729 target=_blank>Maecius</a> <a href=/people/9449 target=_blank>Gordianus</a> standing by him as his prefect, he complained bitterly to the officers and soldiers in the hope that <a href=/people/12098 target=_blank>Philip</a>'s office could be taken from him. 2 But by this complaint — in which he accused <a href=/people/12098 target=_blank>Philip</a> of being unmindful of past favours and too little grateful — he accomplished nothing. 3 Next he asked the soldiers to make their choice, after openly canvassing the officers, but as a result of <a href=/people/12098 target=_blank>Philip</a>'s intriguing he came off second in the general vote. 4 And finally, when he saw that everyone considered him worsted, he asked that their power might at least be equal, but he did not secure this either. 5 After this he asked to be given the position of Caesar, but he did not gain this. 6 He asked also to be <a href=/people/12098 target=_blank>Philip</a>'s prefect, and this, too, was denied him. 7 His last prayer was that <a href=/people/12098 target=_blank>Philip</a> should make him a general and let him live. And to this <a href=/people/12098 target=_blank>Philip</a> almost consented — not speaking himself, but acting through his friends, as he had done throughout, with nods and advice. 8 But when he reflected that the Roman people and senate, the whole of Africa and <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, and indeed the whole Roman world, felt for <a href=/people/11045 target=_blank>Gordian</a>, because he was nobly born and the son and grandson of emperors and had delivered the whole state from grievous wars, it was position, if the soldiers ever changed their minds, that the throne might be given back to <a href=/people/11045 target=_blank>Gordian</a> if he asked for it again, and when he reflected also that the violence of the soldiers' anger against <a href=/people/11045 target=_blank>Gordian</a> was due to hunger, he had him carried, shouting protests, out of their sight and then despoiled and slain. 9 At first his orders were delayed, but afterwards it was done as he had bidden. And in this unholy and illegal manner <a href=/people/12098 target=_blank>Philip</a> became emperor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#30 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:latinLit:phi2331.phi020:31'><b>&sect; 31</b>&nbsp;&nbsp;<a href=/people/11045 target=_blank>Gordian</a> reigned six years. And while the preceding events were taking place, Argunt, the king of the <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a>, was devastating the kingdoms of his neighbours, chiefly because he had learned that <a href=/people/6023 target=_blank>Timesitheus</a>, by whose counsels the state had been guided, was now dead. <br />2 And now, that he might not seem to have obtained the imperial office by bloody means, <a href=/people/12098 target=_blank>Philip</a> sent a letter to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> saying that <a href=/people/11045 target=_blank>Gordian</a> had died of a disease and that he, <a href=/people/12098 target=_blank>Philip</a>, had been chosen emperor by all the soldiers. The senate was naturally deceived in these matters of which it knew nothing, 3 and so it entitled <a href=/people/12098 target=_blank>Philip</a> emperor and gave him the name Augustus and then placed the young <a href=/people/11045 target=_blank>Gordian</a> among the gods. <br />4 He was a light-hearted lad, handsome, winning, agreeable to everyone, merry in his life, eminent in letters; in nothing, indeed, save in his age was he unqualified for empire. 5 Before <a href=/people/12098 target=_blank>Philip</a>'s conspiracy he was loved by the people, the senate, and the soldiers as no prince had ever been before. 6 <a href=/people/6382 target=_blank>Cordus</a> says that all the soldiers spoke of him as their son, that he was called son by the entire senate, and that all the people said <a href=/people/11045 target=_blank>Gordian</a> was their darling. 7 And indeed <a href=/people/12098 target=_blank>Philip</a>, after he had killed him, did not remove his portraits or throw down his statues or erase his name, but always called him divine, even among the soldiers with whom he had made his conspiracy, and worshipped him with a mixture of a serious spirit and the shrewdness of an alien. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#31 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:latinLit:phi2331.phi020:32'><b>&sect; 32</b>&nbsp;&nbsp;The house of the Gordians is still in existence. This was embellished by this <a href=/people/11045 target=_blank>Gordian</a> very beautifully. 2 There is also a villa of theirs on the <a about=https://topostext.org/place/418129UPra class=demonym long=12.8924 lat=41.8399>Praenestine</a> Way, with two hundred columns in the inner court, fifty of them of <a about=https://topostext.org/place/380244PKar class=demonym long=24.427 lat=38.027>Carystian</a> marble, fifty of Claudian, fifty of <a about=https://topostext.org/place/400310RPhr class=demonym long=31 lat=40>Phrygian</a>, and fifty of <a about=https://topostext.org/place/360030RNum class=demonym long=3 lat=36>Numidian</a> — all of equal size. 3 In this same house there were three basilicas one hundred feet long and other things suitable to such a building, and there were baths that could be equalled nowhere in the world save in the city as it was at that time. <br />4 The senate passed a decree for the family of <a href=/people/11045 target=_blank>Gordian</a> to the effect that his descendants need never serve as guardians or on embassies or in public duties unless they wished. <br />5 There are no public works of <a href=/people/11045 target=_blank>Gordian</a> now in existence in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> save a few fountains and baths. And these baths were built for commoners and were therefore correspondingly equipped. 6 He had projected, however, a portico on the <a about=https://topostext.org/place/419125SCMa class=place long=12.481 lat=41.905>Campus Martius</a>, just under the hill, a thousand feet long, intending to erect another of equal length opposite to it with a space of five hundred feet stretching evenly between. In this space there were to be pleasure-parks on both sides, filled with laurel, myrtle, and box-trees, and down the middle a mosaic walk a thousand feet long with short columns and statuettes placed on either side. This was to be a promenade, and at the end there was to be a basilica five hundred feet long. 7 Besides this, he had planned with <a href=/people/6023 target=_blank>Timesitheus</a> to erect summer-baths, named after himself, behind the basilica, and to put winter-baths at the entrance to the porticos, in order that the pleasure-parks and porticos might not be without some practical use. 8 But all this is now occupied by the estates and gardens and dwellings of private persons. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#32 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:latinLit:phi2331.phi020:33'><b>&sect; 33</b>&nbsp;&nbsp;There were thirty-two elephants at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> in the time of <a href=/people/11045 target=_blank>Gordian</a> (of which he himself had sent twelve and <a href=/people/13 target=_blank>Alexander</a> ten), ten elk, ten tigers, sixty tame <a href=/people/10960 target=_blank>lions</a>, thirty tame leopards, ten belbi or hyenas, a thousand pairs of imperial gladiators, six hippopotami, one rhinoceros, ten wild <a href=/people/10960 target=_blank>lions</a>, ten giraffes, twenty wild <a href=/people/10962 target=_blank>asses</a>, forty wild <a href=/people/10959 target=_blank>horses</a>, and various other animals of this nature without number. All of these <a href=/people/12098 target=_blank>Philip</a> presented or slew at the secular games. 2 All these animals, wild, tame, and savage, <a href=/people/11045 target=_blank>Gordian</a> intended for a <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> triumph; but his official vow proved of no avail, 3 for <a href=/people/12098 target=_blank>Philip</a> presented all of them at the secular games, consisting of both gladiatorial spectacles and races in the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>, that were celebrated on the thousandth anniversary of the founding of the City, when he and his son were consuls. <br />4 <a href=/people/6382 target=_blank>Cordus</a> writes that the same thing that is related of <a href=/people/11011 target=_blank>Gaius</a> Caesar happened to <a href=/people/11045 target=_blank>Gordian</a>. 5 For after the two Philips were slain, all who had fallen upon <a href=/people/11045 target=_blank>Gordian</a> with the sword (there were nine of them, it is said) are said to have slain themselves with their own hands and swords, and those the same swords with which they had stricken him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#33 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:latinLit:phi2331.phi020:34'><b>&sect; 34</b>&nbsp;&nbsp;This, then, was the life of the three Gordians, all of whom were named Augustus, two of whom perished in Africa, one within the confines of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>. 2 The soldiers built <a href=/people/11045 target=_blank>Gordian</a> a tomb near the camp at <a about=https://topostext.org/place/352404FCir class=place long=40.4301 lat=35.1566>Circesium</a>, which is in the territory of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>, and added an inscription to the following effect in Greek, Latin, <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a>, Hebrew, and <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> letters, so that all might read: 3 To the deified <a href=/people/11045 target=_blank>Gordian</a>, conqueror of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, conqueror of the <a href=/people/1095 target=_blank>Goths</a>, conqueror of the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a>, queller of mutinies at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, conqueror of the Germans, but no conqueror of Philippi. 4 This was added ostensibly because he had been beaten by the <a href=/people/2232 target=_blank>Alani</a> in a disorderly battle on the plains of <a about=https://topostext.org/place/410243PPhi class=place long=24.285 lat=41.012>Philippi</a> and forced to retreat; but at the same time it seemed to mean that he had been slain by the two Philips. 5 But <a href=/people/232 target=_blank>Licinius</a>, it is said, destroyed this inscription at the time when he seized the imperial power; for he desired to have it appear that he was descended from the two Philips. 6 All of this, great <a href=/people/136 target=_blank>Constantine</a>, I have investigated, in order that nothing might be lacking to your knowledge which seemed worth the knowing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Gordiani_tres*.html#34 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=602', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas602";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=602';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

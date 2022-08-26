@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Aristophanes, Plutus (Wealth)' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Plutus (Wealth), Aristophanes, Eleven Plays, translated and published by "The Athenian Society" in 1912, now in the public domain, text derived from Project Gutenberg' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-388' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -388' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/67' content='urn:cts:greekLit:tlg0019.tlg011' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79072756' content='Aristophanes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n85143190' content='The Athenian Society (1912)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.gutenberg.org' /><h2>Aristophanes, Plutus (Wealth)</h2>Plutus (Wealth), Aristophanes, Eleven Plays, translated and published by "The Athenian Society" in 1912, now in the public domain, text derived from Project Gutenberg This text has 23 tagged references to 17 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0019.tlg011'>urn:cts:greekLit:tlg0019.tlg011</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q1196456'>Q1196456</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1'><b>&sect; 1</b>&nbsp;&nbsp;CARIO: What an unhappy fate, O Zeus and gods, to be the slave of a crazy master! A servant may give the best of advice, but if his master does not follow it, the poor slave must inevitably have his share in the disaster; for fortune does not allow him to dispose of his own body, it belongs to his master who has bought it. Alas! 'tis the way of the world. But the god <a href=/people/2 target=_blank>Loxias</a>, who prophesies from a golden tripod, deserves my censure, for 'tis assured he is a physician and a cunning diviner; and yet my master is leaving him infected with mere madness and insists on following a blind man. Is this not opposed to all good sense? 'Tis for us, who see clearly, to guide those who don't; whereas he clings to the trail of a blind fellow and compels me to do the same without answering my questions with ever a word. (To <a href=/people/5557 target=_blank>Chremylus</a>.) Aye, master, unless you tell me why we are following this unknown fellow, I will not be silent, but I will worry and torment you, for you cannot beat me because of my sacred chaplet of laurel. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:22'><b>&sect; 22</b>&nbsp;&nbsp;CHREMYLUS: No, but if you worry me I will take off your chaplet, and then you will only get a sounder thrashing. <br />CARIO: That's an old song! I am going to leave you no peace till you have told me who this man is; and if I ask it, 'tis entirely because of my interest in you. <br />CHREMYLUS: Well, be it so. I will reveal it to you as being the most faithful and the most rascally of all my servants. I honoured the gods and did what was right, and yet I was none the less poor and unfortunate. <br />CARIO: I know it but too well. <br />CHREMYLUS: Other amassed wealth — the temple-robbers, the orators, the informers, indeed every sort of rascal. <br />CARIO: I believe you. <br />CHREMYLUS: Therefore I came to consult the oracle of the god, not on my own account, for my unfortunate life is nearing its end, but for my only son; I wanted to ask <a href=/people/2 target=_blank>Apollo</a>, if it was necessary for him to become a thorough knave and renounce his virtuous principles, since that seemed to me to be the only way to succeed in life. <br />CARIO: And what did Phoibos cry from his garlands? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:40'><b>&sect; 40</b>&nbsp;&nbsp;CHREMYLUS: You shall know. The god ordered me in plain terms to follow the first man I should meet upon leaving the temple and to persuade him to accompany me home. <br />CARIO: And who was the first one you met? <br />CHREMYLUS: This blind man. <br />CARIO: And you are stupid enough not to understand the meaning of such an answer? Why, the god was advising you thereby, and that in the clearest possible way, to bring up your son according to the fashion of your country. <br />CHREMYLUS: What makes you think that? <br />CARIO: Is it not evident to the blind, that nowadays to do nothing that is right is the best way to get on? <br />CHREMYLUS: No, that is not the meaning of the oracle; there must be another, that is nobler. If this blind man would tell us who he is and why and with what object he has led us here, we should no doubt understand what our oracle really does mean. <br />CARIO (to <a href=/people/641 target=_blank>Plutus</a>). Come, tell us at once who you are, or I give effect to my threat. (He menaces him.) And quick too, be quick, I say. <br />PLUTUS: I'll thrash you. <br />CARIO (to Chremylus). Ha! is it thus he tells us his name? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:59'><b>&sect; 59</b>&nbsp;&nbsp;CHREMYLUS: 'Tis to you and not to me that he replies thus; your mode of questioning him was ill-advised. (To <a href=/people/641 target=_blank>Plutus</a>.) Come, friend, if you care to oblige an honest man, answer me. <br />PLUTUS: I'll knock you down. <br />CARIO: Ah! what a pleasant fellow and what a delightful prophecy the god has given you! <br />CHREMYLUS: By <a href=/people/48 target=_blank>Demeter</a>, you'll have no reason to laugh presently. <br />CARIO: If you don't speak, you wretch, I will surely do you an ill turn. <br />PLUTUS: Friends, take yourselves off and leave me. <br />CHREMYLUS: That we very certainly shan't. <br />CARIO: This, master, is the best thing to do. I'll undertake to secure him the most frightful death; I will lead him to the verge of a precipice and then leave him there, so that he'll break his neck when he pitches over. <br />CHREMYLUS: Well then, I leave him to you, and do the thing quickly. <br />PLUTUS: Oh, no! Have mercy! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=71>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:71'><b>&sect; 71</b>&nbsp;&nbsp;CHREMYLUS: Will you speak then? <br />PLUTUS: But if you learn who I am, I know well that you will ill-use me and will not let me go again. <br />CHREMYLUS: I call the gods to witness that you have naught to fear if you will only speak. <br />PLUTUS: Well then, first unhand me. <br />CHREMYLUS: There! we set you free. <br />PLUTUS: Listen then, since I must reveal what I had intended to keep a secret. I am <a href=/people/641 target=_blank>Plutus</a>. <br />CHREMYLUS: Oh! you wretched rascal! You <a href=/people/641 target=_blank>Plutus</a> all the while, and you never said so! <br />CARIO: You, <a href=/people/641 target=_blank>Plutus</a>, and in this piteous guise! <br />CHREMYLUS: Oh, <a href=/people/11033 target=_blank>Phoebus</a> <a href=/people/2 target=_blank>Apollo</a>! oh, ye gods of heaven and hell! Oh, <a href=/people/1 target=_blank>Zeus</a>! is it really and truly as you say? <br />PLUTUS: Aye. <br />CHREMYLUS: <a href=/people/641 target=_blank>Plutus</a>' very own self? <br />PLUTUS: His own very self and none other. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:71' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=84>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:84'><b>&sect; 84</b>&nbsp;&nbsp;CHREMYLUS: But tell me, whence come you to be so squalid? <br />PLUTUS: I have just left <a href=/people/1025 target=_blank>Patrocles</a>' house, who has not had a bath since his birth. <br />CHREMYLUS: But your infirmity; how did that happen? Tell me. <br />PLUTUS: <a href=/people/1 target=_blank>Zeus</a> inflicted it on me, because of his jealousy of mankind. When I was young, I threatened him that I would only go to the just, the wise, the men of ordered life; to prevent my distinguishing these, he struck me with blindness! so much does he envy the good! <br />CHREMYLUS: And yet, 'tis only the upright and just who honour him. <br />PLUTUS: Quite true. <br />CHREMYLUS: Therefore, if ever you recovered your sight, you would shun the wicked? <br />PLUTUS: Undoubtedly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:84' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=96>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:96'><b>&sect; 96</b>&nbsp;&nbsp;CHREMYLUS: You would visit the good? <br />PLUTUS: Assuredly. It is a very long time since I saw them. <br />CHREMYLUS: That's not astonishing. I, who see clearly, don't see a single one. <br />PLUTUS: Now let me leave you, for I have told you everything. <br />CHREMYLUS: No, certainly not! we shall fasten ourselves on to you faster than ever. <br />PLUTUS: Did I not tell you, you were going to plague me? <br />CHREMYLUS: Oh! I adjure you, believe what I say and don't leave me; for you will seek in vain for a more honest man than myself. <br />CARIO: There is only one man more worthy; and that is I: <br />PLUTUS: All talk like this, but as soon as they secure my favours and grow rich, their wickedness knows no bounds. <br />CHREMYLUS: And yet all men are not wicked. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:96' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=110>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:110'><b>&sect; 110</b>&nbsp;&nbsp;PLUTUS: All. There's no exception. <br />CARIO: You shall pay for that opinion. <br />CHREMYLUS: Listen to what happiness there is in store for you, if you but stay with us. I have hope; aye, I have good hope with the god's help to deliver you from that blindness, in fact to restore your sight. <br />PLUTUS: Oh! do nothing of the kind, for I don't wish to recover it. <br />CHREMYLUS: What's that you say? <br />CARIO: This fellow hugs his own misery. <br />PLUTUS: If you were mad enough to cure me, and <a href=/people/1 target=_blank>Zeus</a> heard of it, he would overwhelm me with his anger. <br />CHREMYLUS: And is he not doing this now by leaving you to grope your wandering way? <br />PLUTUS: I don't know; but I'm horribly afraid of him. <br />CHREMYLUS: Indeed? Ah! you are the biggest poltroon of all the gods! Why, <a href=/people/1 target=_blank>Zeus</a> with his throne and his lightnings would not be worth an obolus if you recovered your sight, were it but for a few instants. <br />PLUTUS: Impious man, don't talk like that. <br />CHREMYLUS: Fear nothing! I will prove to you that you are far more powerful and mightier than he. <br />PLUTUS: I mightier than he? <br />CHREMYLUS: Aye, by heaven! For instance, what is the origin of the power that <a href=/people/1 target=_blank>Zeus</a> wields over the other gods? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:110' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=131>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:131'><b>&sect; 131</b>&nbsp;&nbsp;CARIO: 'Tis money; he has so much of it. <br />CHREMYLUS: And who gives it to him? <br />CARIO (pointing to Plutus). This fellow. <br />CHREMYLUS: If sacrifices are offered to him, is not <a href=/people/641 target=_blank>Plutus</a> their cause? <br />CARIO: Undoubtedly, for 'tis wealth that all demand and clamour most loudly for. <br />CHREMYLUS: Thus 'tis <a href=/people/641 target=_blank>Plutus</a> who is the fount of all the honours rendered to <a href=/people/1 target=_blank>Zeus</a>, whose worship he can wither up at the root, if it so please him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:131' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=142>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:142'><b>&sect; 142</b>&nbsp;&nbsp;PLUTUS: And how so? <br />CHREMYLUS: Not an <a href=/people/10961 target=_blank>ox</a>, nor a cake, nor indeed anything at all could be offered, if you did not wish it. <br />PLUTUS: Why? <br />CHREMYLUS: Why? but what means are there to buy anything if you are not there to give the money? Hence if <a href=/people/1 target=_blank>Zeus</a> should cause you any trouble, you will destroy his power without other help. <br />PLUTUS: So 'tis because of me that sacrifices are offered to him? <br />CHREMYLUS: Most assuredly. Whatever is dazzling, beautiful or charming in the eyes of mankind, comes from you. Does not everything depend on wealth? <br />CARIO: I myself was bought for a few coins; if I'm a slave, 'tis only because I was not rich. <br />CHREMYLUS: And what of the <a about=https://topostext.org/place/379229PKor class=demonym long=22.8802 lat=37.9054>Corinthian</a> courtesans? If a poor man offers them proposals, they do not listen; but if it be a rich one, instantly they offer their buttocks for his pleasure. <br />CARIO: 'Tis the same with the lads; they care not for love, to them money means everything. <br />CHREMYLUS: You speak of those who accept all comers; yet some of them are honest, and 'tis not money they ask of their patrons. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:142' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=157>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:157'><b>&sect; 157</b>&nbsp;&nbsp;CARIO: What then? <br />CHREMYLUS: A fine <a href=/people/10959 target=_blank>horse</a>, a pack of <a href=/people/10953 target=_blank>hounds</a>. <br />CARIO: Aye, they would blush to ask for money and cleverly disguise their shame. <br />CHREMYLUS: 'Tis in you that every art, all human inventions, have had their origin; 'tis through you that one man sits cutting leather in his shop. <br />CARIO: That another fashions iron or wood. <br />CHREMYLUS: That yet another chases the gold he has received from you. <br />CARIO: That one is a fuller. <br />CHREMYLUS: That t'other washes wool. <br />CARIO: That this one is a tanner. <br />CHREMYLUS: And that other sells onions. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:157' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=168>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:168'><b>&sect; 168</b>&nbsp;&nbsp;CARIO: And if the adulterer, caught red-handed, is depilated, 'tis on account of you. <br />PLUTUS: Oh! great gods! I knew naught of all this! <br />CARIO: Is it not he who lends the Great King all his pride? <br />CHREMYLUS: Is it not he who draws the citizens to the Assembly? <br />CARIO: And tell me, is it not you who equip the triremes? <br />CHREMYLUS: And who feed our mercenaries at <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Corinth</a>? <br />CARIO: Are not you the cause of <a href=/people/568 target=_blank>Pamphilus</a>' sufferings? <br />CHREMYLUS: And of the needle-seller's with <a href=/people/568 target=_blank>Pamphilus</a>? <br />CARIO: Is it not because of you that <a href=/people/2828 target=_blank>Agyrrhius</a> lets wind so loudly? <br />CHREMYLUS: And that Philepsius rolls off his fables? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:168' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=177>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:177'><b>&sect; 177</b>&nbsp;&nbsp;CARIO: That troops are sent to succour the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a>? <br />CHREMYLUS: And that <a href=/people/620 target=_blank>Lais</a> is kept by <a href=/people/1375 target=_blank>Philonides</a>? <br />CARIO: That the tower of <a href=/people/155 target=_blank>Timotheus</a> ... <br />CHREMYLUS: ... (To <a href=/people/4467 target=_blank>Cario</a>.) May it fall upon your head! (To <a href=/people/641 target=_blank>Plutus</a>.) In short, <a href=/people/641 target=_blank>Plutus</a>, 'tis through you that everything is done; be it known to you that you are the sole cause both of good and evil. <br />CARIO: In war, 'tis the flag under which you serve that victory favours. <br />PLUTUS: What! I can do so many things by myself and unaided? <br />CHREMYLUS: And many others besides; wherefore men are never tired of your gifts. They get weary of all else, — of love ... <br />CARIO: Of bread. <br />CHREMYLUS: Of music. <br />CARIO: Of sweetmeats. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:177' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=191>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:191'><b>&sect; 191</b>&nbsp;&nbsp;CHREMYLUS: Of honours. <br />CARIO: Of cakes. <br />CHREMYLUS: Of battles. <br />CARIO: Of figs. <br />CHREMYLUS: Of ambition. <br />CARIO: Of gruel. <br />CHREMYLUS: Of military advancement. <br />CARIO: Of lentils. <br />CHREMYLUS: But of you they never tire. Has a man got thirteen talents, he has all the greater ardour to possess sixteen; is that wish achieved, he will want forty or will complain that he knows not how to make the two ends meet. <br />PLUTUS: All this, methinks, is very true; there is but one point that makes me feel a bit uneasy. <br />CHREMYLUS: And that is? <br />PLUTUS: How could I use this power, which you say I have? <br />CHREMYLUS: Ah! they were quite right who said, there's nothing more timorous than <a href=/people/641 target=_blank>Plutus</a>. <br />PLUTUS: No, no; it was a thief who calumniated me. Having broken into a house, he found everything locked up and could take nothing, so he dubbed my prudence fear. <br />CHREMYLUS: Don't be disturbed; if you support me zealously, I'll make you more sharp-sighted than <a href=/people/6078 target=_blank>Lynceus</a>. <br />PLUTUS: And how should you be able to do that, you, who are but a mortal? <br />CHREMYLUS: I have great hope, after the answer <a href=/people/2 target=_blank>Apollo</a> gave me, shaking his sacred laurels the while. <br />PLUTUS: Is he in the plot then? <br />CHREMYLUS: Aye, truly. <br />PLUTUS: Take care what you say. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:191' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=215>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:215'><b>&sect; 215</b>&nbsp;&nbsp;CHREMYLUS: Never fear, friend; for, be well assured, that if it has to cost me my life, I will carry out what I have in my head. <br />CARIO: And I will help you, if you permit it. <br />CHREMYLUS: We shall have many other helpers as well — all the worthy folk who are wanting for bread. <br />PLUTUS: Ah! ha! they'll prove sorry helpers. <br />CHREMYLUS: No, not so, once they've grown rich. But you, <a href=/people/4467 target=_blank>Cario</a>, run quick ... <br />CARIO: Where? <br />CHREMYLUS: ... to call my comrades, the other husbandmen, that each of them may come here to take his share of the gifts of <a href=/people/641 target=_blank>Plutus</a>. <br />CARIO: I'm off. But let someone come from the house to take this morsel of meat. <br />CHREMYLUS: I'll see to that; you run your hardest. As for you, <a href=/people/641 target=_blank>Plutus</a>, the most excellent of all the gods, come in here with me; this is the house you must fill with riches today, by fair means or foul. <br />PLUTUS: I don't like at all going into other folks' houses in this manner; I have never got any good from it. If I got inside a miser's house, straightway he would bury me deep underground; if some honest fellow among his friends came to ask him for the smallest coin, he would deny ever having seen me. Then if I went to a fool's house, he would sacrifice me as a prey to gaming and to girls, and very soon I should be completely stripped and pitched out of doors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:215' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:245'><b>&sect; 245</b>&nbsp;&nbsp;CHREMYLUS: That's because you have never met a man who knew how to avoid the two extremes; moderation is the strong point in my character. I love saving as much as anybody, and I know how to spend, when 'tis needed. But let us go in; I want to make you known to my wife and to my only son, whom I love most of all after yourself. <br />PLUTUS: Aye, after myself, I'm very sure of that. <br />CHREMYLUS: Why should I hide the truth from you? <br />CARIO: Come, you active workers, who, like my master, eat nothing but garlic and the poorest food, you who are his friends and his neighbours, hasten your steps, hurry yourselves; there's not a moment to lose; this is the critical hour, when your presence and your support is needed by him. <br />CHORUS: Why, don't you see we are speeding as fast as men can, who are already enfeebled by age? But do you deem it fitting to make us run like this before ever telling us why your master has called us? <br />CARIO: I've grown hoarse with the telling, but you won't listen. My master is going to drag you all out of the stupid, sapless life you are leading and ensure you one full of all delights. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:245' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=264>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:264'><b>&sect; 264</b>&nbsp;&nbsp;CHORUS: And how is he going to manage that? <br />CARIO: My poor friends, he has brought with him a disgusting old fellow, all bent and wrinkled, with a most pitiful appearance, bald and toothless; upon my word, I even believe he is circumcised like some vile barbarian. <br />CHORUS: These are news worth their weight in gold! What are you saying? Repeat it to me; no doubt it means he is bringing back a heap of wealth. <br />CARIO: No, but a heap of all the infirmities attendant on old age. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:264' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=271>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:271'><b>&sect; 271</b>&nbsp;&nbsp;CHORUS: If you are tricking us, you shall pay us for it. Beware of our sticks! <br />CARIO: Do you deem me so brazen as all that, and my words mere lies? <br />CHORUS: What serious airs the rascal puts on! Look! his legs are already shrieking, oh! oh! they are asking for the shackles and wedges. <br />CARIO: 'Tis in the tomb that 'tis your lot to judge. Why don't you go there? <a href=/people/537 target=_blank>Charon</a> has given you your ticket. <br />CHORUS: Plague take you! you cursed rascal, who rail at us and have not even the heart to tell us why your master has made us come. We were pressed for time and tired out, yet we came with all haste, and in our hurry we have passed by lots of wild onions without even gathering them. <br />CARIO: I will no longer conceal the truth from you. Friends, 'tis <a href=/people/641 target=_blank>Plutus</a> whom my master brings, <a href=/people/641 target=_blank>Plutus</a>, who will give you riches. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:271' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=286>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:286'><b>&sect; 286</b>&nbsp;&nbsp;CHORUS: What! we shall really all become rich! <br />CARIO: Aye, certainly; you will then be Midases, provided you grow <a href=/people/10962 target=_blank>ass</a>'s ears. <br />CHORUS: What joy, what happiness! If what you tell me is true, I long to dance with delight. <br />CARIO: And I too, threttanello! I want to imitate <a href=/people/350 target=_blank>Cyclops</a> and lead your troop by stamping like this. Do you, my dear little ones, cry, aye, cry again and bleat forth the plaintive song of the <a href=/people/10954 target=_blank>sheep</a> and of the stinking <a href=/people/10956 target=_blank>goats</a>; follow me with erected organs like lascivious <a href=/people/10956 target=_blank>goats</a> ready for action. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:286' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=296>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:296'><b>&sect; 296</b>&nbsp;&nbsp;CHORUS: As for us, threttanello! we will seek you, dear <a href=/people/350 target=_blank>Cyclops</a>, bleating, and if we find you with your wallet full of fresh herbs, all disgusting in your filth, sodden with wine and sleeping in the midst of your <a href=/people/10954 target=_blank>sheep</a>, we will seize a great flaming stake and burn out your eye. <br />CARIO: I will copy that <a href=/people/245 target=_blank>Circe</a> of <a about=https://topostext.org/place/379229PKor class=person long=22.8802 lat=37.9054>Corinth</a>, whose potent philtres compelled the companions of <a href=/people/1375 target=_blank>Philonides</a> to swallow balls of dung, which she herself had kneaded with her hands, as if they were <a href=/people/10951 target=_blank>swine</a>; and do you too grunt with joy and follow your mother, my little <a href=/people/10951 target=_blank>pigs</a>. <br />CHORUS: Oh! <a href=/people/245 target=_blank>Circe</a> with the potent philtres, who besmear your companions so filthily, what pleasure I shall have in imitating the son of <a href=/people/520 target=_blank>Laertes</a>! I will hang you up by your testicles, I will rub your nose with dung like a <a href=/people/10956 target=_blank>goat</a>, and like <a href=/people/8880 target=_blank>Aristyllus</a> you shall say through your half-opened lips, Follow your mother, my little <a href=/people/10951 target=_blank>pigs</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:296' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=316>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:316'><b>&sect; 316</b>&nbsp;&nbsp;CARIO: Enough of tomfoolery, assume a grave demeanour; unknown to my master I am going to take bread and meat; and when I have fed well, I shall resume my work. <br />CHREMYLUS: To say, Hail! my dear neighbours! is an old form of greeting and well worn with use; so therefore I embrace you, because you have not crept like tortoises, but have come rushing here in all haste. Now help me to watch carefully and closely over the god. <br />CHORUS: Be at ease. You shall see with what martial zeal I will guard him. What! we jostle each other at the Assembly for three obols, and am I going to let <a href=/people/641 target=_blank>Plutus</a> in person be stolen from me? <br />CHREMYLUS: But I see Blepsidemus; by his bearing and his haste I can readily see he knows or suspects something. <br />BLEPSIDEMUS: What has happened then? Whence, how has <a href=/people/5557 target=_blank>Chremylus</a> suddenly grown rich? I don't believe a word of it. Nevertheless, nothing but his sudden fortune was being talked about in the barbers' booths. But I am above all surprised that his good fortune has not made him forget his friends; that is not the usual way! <br />CHREMYLUS: By the gods, Blepsidemus, I will hide nothing from you. Today things are better than yesterday; let us share, for are you not my friend? <br />BLEPSIDEMUS: Have you really grown rich as they say? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:316' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=349>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:349'><b>&sect; 349</b>&nbsp;&nbsp;CHREMYLUS I shall be soon, if the god agrees to it. But there is still some risk to run. <br />BLEPSIDEMUS: What risk? <br />CHREMYLUS: What risk? <br />BLEPSIDEMUS: What do you mean? Explain. <br />CHREMYLUS: If we succeed, we are happy for ever, but if we fail, it is all over with us. <br />BLEPSIDEMUS: 'Tis a bad business, and one that doesn't please me! To grow rich all at once and yet to be fearful! ah! I suspect something that's little good. <br />CHREMYLUS: What do you mean, that's little good? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:349' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=357>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:357'><b>&sect; 357</b>&nbsp;&nbsp;BLEPSIDEMUS: No doubt you have just stolen some gold and silver from some god and are repenting. <br />CHREMYLUS: By Apollo Apotropaios (Averter)! heaven preserve me from that! <br />BLEPSIDEMUS: A truce to idle phrases! the thing is only too apparent, my friend. <br />CHREMYLUS: Don't suspect such a thing of me. <br />BLEPSIDEMUS: Alas! then there is no honest man! not one, that can resist the attraction of gold! <br />CHREMYLUS: By <a href=/people/48 target=_blank>Demeter</a>, you have no common sense. <br />BLEPSIDEMUS: To have to persist like this in denial one's whole life long! <br />CHREMYLUS: But, good gods, you are mad, my dear fellow! <br />BLEPSIDEMUS: His very look is distraught; he has done some crime! <br />CHREMYLUS: Ah! I know the tune you are playing now; you think I have stolen, and want your share. <br />BLEPSIDEMUS: My share of what, pray? <br />CHREMYLUS: You are beside the mark; the thing is quite otherwise. <br />BLEPSIDEMUS: 'Tis perhaps not a theft, but some piece of knavery! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:357' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=371>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:371'><b>&sect; 371</b>&nbsp;&nbsp;CHREMYLUS: You are insane! <br />BLEPSIDEMUS: What? You have done no man an injury? <br />CHREMYLUS: No! assuredly not! <br />BLEPSIDEMUS: But, great gods, what am I to think? You won't tell me the truth. <br />CHREMYLUS: You accuse me without really knowing anything. <br />BLEPSIDEMUS: Listen, friend, no doubt the matter can yet be hushed up, before it gets noised abroad, at trifling expense; I will buy the orators' silence. <br />CHREMYLUS: Aye, you will lay out three minae and, as my friend, you will reckon twelve against me. <br />BLEPSIDEMUS: I know someone who will come and seat himself at the foot of the tribunal (bema), holding a supplicant's bough in his hand and surrounded by his wife and children, for all the world like the <a href=/people/324 target=_blank>Heraclidae</a> of <a href=/people/568 target=_blank>Pamphilus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:371' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=386>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:386'><b>&sect; 386</b>&nbsp;&nbsp;CHREMYLUS: Not at all, poor fool! But, thanks to me, worthy folk, intelligent and moderate men alone shall be rich henceforth. <br />BLEPSIDEMUS: What are you saying? Have you then stolen so much as all that? <br />CHREMYLUS: Oh! your insults will be the death of me. <br />BLEPSIDEMUS: 'Tis rather you yourself who are courting death. <br />CHREMYLUS: Not so, you wretch, since I have <a href=/people/641 target=_blank>Plutus</a>. <br />BLEPSIDEMUS: You have <a href=/people/641 target=_blank>Plutus</a>? Which one? <br />CHREMYLUS: The god himself. <br />BLEPSIDEMUS: And where is he? <br />CHREMYLUS: There. <br />BLEPSIDEMUS: Where? <br />CHREMYLUS: Indoors. <br />BLEPSIDEMUS: Indoors? <br />CHREMYLUS: Aye, certainly. <br />BLEPSIDEMUS: Get you gone! <a href=/people/641 target=_blank>Plutus</a> in your house? <br />CHREMYLUS: Yes, by the gods! <br />BLEPSIDEMUS: Are you telling me the truth? <br />CHREMYLUS: I am. <br />BLEPSIDEMUS: Swear it by <a href=/people/325 target=_blank>Hestia</a>. <br />CHREMYLUS: I swear it by <a href=/people/25 target=_blank>Poseidon</a>. <br />BLEPSIDEMUS: The god of the sea? <br />CHREMYLUS: Aye, and by all the other Poseidons, if such there be. <br />BLEPSIDEMUS: And you don't send him to us, to your friends? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:386' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=398>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:398'><b>&sect; 398</b>&nbsp;&nbsp;CHREMYLUS: We've not got to that point yet. <br />BLEPSIDEMUS: What do you say? Is there no chance of sharing? <br />CHREMYLUS: Why, no. We must first ... <br />BLEPSIDEMUS: Do what? <br />CHREMYLUS: ... restore him his sight. <br />BLEPSIDEMUS: Restore whom his sight? Speak! <br />CHREMYLUS: <a href=/people/641 target=_blank>Plutus</a>. It must be done, no matter how. <br />BLEPSIDEMUS: Is he then really blind? <br />CHREMYLUS: Yes, undoubtedly. <br />BLEPSIDEMUS: I am no longer surprised he never came to me. <br />CHREMYLUS: And it please the gods, he'll come there now. <br />BLEPSIDEMUS: Must we not go and seek a physician? <br />CHREMYLUS: Seek physicians at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>? Nay! there's no art where there's no fee. <br />BLEPSIDEMUS: Let's bethink ourselves well. <br />CHREMYLUS: There is not one. <br />BLEPSIDEMUS: 'Tis a positive fact, I don't know of one. <br />CHREMYLUS: But I have thought the matter well over, and the best thing is to make <a href=/people/641 target=_blank>Plutus</a> lie in the shrine of <a href=/people/114 target=_blank>Aesculapius</a>. <br />BLEPSIDEMUS: Aye, unquestionably 'tis the very best thing. Be quick and lead him there. <br />CHREMYLUS: I am going there. <br />BLEPSIDEMUS: Then hurry yourself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:398' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=415>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:415'><b>&sect; 415</b>&nbsp;&nbsp;CHREMYLUS: 'Tis just what I am doing. <br />POVERTY: Unwise, perverse, unholy men! What are you daring to do, you pitiful, wretched mortals? Whither are you flying? Stop! I command it! <br />BLEPSIDEMUS: Oh! great gods! <br />POVERTY: My arm shall destroy you, you infamous beings! Such an attempt is not to be borne; neither man nor god has ever dared the like. You shall die! <br />CHREMYLUS: And who are you? Oh! what a ghastly pallor! <br />BLEPSIDEMUS: 'Tis perchance some <a href=/people/1744 target=_blank>Erinys</a>, some Fury, from the <a about=https://topostext.org/place/380237BDio class=place long=23.7278 lat=37.9703>theatre</a>; there's a kind of wild tragedy look in her eyes. <br />CHREMYLUS: But she has no torch. <br />BLEPSIDEMUS: Let's knock her down! <br />POVERTY: Who do you think I am? <br />CHREMYLUS: Some wine-shop keeper or egg-woman. Otherwise you would not have shrieked so loud at us, who have done nothing to you. <br />POVERTY: Indeed? And have you not done me the most deadly injury by seeking to banish me from every country? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:415' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=431>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:431'><b>&sect; 431</b>&nbsp;&nbsp;CHREMYLUS: Why, have you not got the <a about=https://topostext.org/place/380237FDim class=place long=23.7171 lat=37.9739>Barathrum</a> left? But who are you? Answer me quickly! <br />POVERTY: I am one that will punish you this very day for having wanted to make me disappear from here. <br />BLEPSIDEMUS: Might it be the tavern-keeper in my neighbourhood, who is always cheating me in measure? <br />POVERTY: I am <a href=/people/1896 target=_blank>Poverty</a>, who have lived with you for so many years. <br />BLEPSIDEMUS: Oh! great <a href=/people/2 target=_blank>Apollo</a>! oh, ye gods! whither shall I fly? <br />CHREMYLUS: Now then! what are you doing? You poltroon! Will you kindly stop here? <br />BLEPSIDEMUS: Not I: <br />CHREMYLUS: Will you have the goodness to stop. Are two men to fly from a woman? <br />BLEPSIDEMUS: But, you wretch, 'tis <a href=/people/1896 target=_blank>Poverty</a>, the most fearful monster that ever drew breath. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:431' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=440>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:440'><b>&sect; 440</b>&nbsp;&nbsp;CHREMYLUS: Stay where you are, I beg of you. <br />BLEPSIDEMUS: No! no! a thousand times, no! <br />CHREMYLUS: Could we do anything worse than leave the god in the lurch and fly before this woman without so much as ever offering to fight? <br />BLEPSIDEMUS: But what weapons have we? Are we in a condition to show fight? Where is the breastplate, the buckler, that this wretch has not pledged? <br />CHREMYLUS: Be at ease. <a href=/people/641 target=_blank>Plutus</a> will readily triumph over her threats unaided. <br />POVERTY: Dare you reply, you scoundrels, you who are caught red-handed at the most horrible crime? <br />CHREMYLUS: As for you, you cursed jade, you pursue me with your abuse, though I have never done you the slightest harm. <br />POVERTY: Do you think it is doing me no harm to restore <a href=/people/641 target=_blank>Plutus</a> to the use of his eyes? <br />CHREMYLUS: Is this doing you harm, that we shower blessings on all men? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:440' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=462>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:462'><b>&sect; 462</b>&nbsp;&nbsp;POVERTY: And what do you think will ensure their happiness? <br />CHREMYLUS: Ah! first of all we shall drive you out of Hellas. <br />POVERTY: Drive me out? Could you do mankind a greater harm? <br />CHREMYLUS: Yes — if I gave up my intention to deliver them from you. <br />POVERTY: Well, let us discuss this point first. I propose to show that I am the sole cause of all your blessings, and that your safety depends on me alone. If I don't succeed, then do what you like to me. <br />CHREMYLUS: How dare you talk like this, you impudent hussy? <br />POVERTY: Agree to hear me and I think it will be very easy for me to prove that you are entirely on the wrong road, when you want to make the just men wealthy. <br />BLEPSIDEMUS: Oh! cudgel and rope's end, come to my help! <br />POVERTY: Why such wrath and these shouts, before you hear my arguments? <br />BLEPSIDEMUS: But who could listen to such words without exclaiming? <br />POVERTY: Any man of sense. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:462' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=480>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:480'><b>&sect; 480</b>&nbsp;&nbsp;CHREMYLUS: But if you lose your case, what punishment will you submit to? <br />POVERTY: Choose what you will. <br />CHREMYLUS: That's all right. <br />POVERTY: You shall suffer the same if you are beaten! <br />CHREMYLUS: Do you think twenty deaths a sufficiently large stake? <br />BLEPSIDEMUS: Good enough for her, but for us two would suffice. <br />POVERTY: You won't escape, for is there indeed a single valid argument to oppose me with? <br />CHORUS: To beat her in this debate, you must call upon all your wits. Make no allowances and show no weakness! <br />CHREMYLUS: It is right that the good should be happy, that the wicked and the impious, on the other hand, should be miserable; that is a truth, I believe, which no one will gainsay. To realize this condition of things is as great a proposal as it is noble and useful in every respect, and we have found a means of attaining the object of our wishes. If <a href=/people/641 target=_blank>Plutus</a> recovers his sight and ceases from wandering about unseeing and at random, he will go to seek the just men and never leave them again; he will shun the perverse and ungodly; so, thanks to him, all men will become honest, rich and pious. Can anything better be conceived for the public weal? <br />BLEPSIDEMUS: Of a certainty, no! I bear witness to that. It is not even necessary she should reply. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:480' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=500>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:500'><b>&sect; 500</b>&nbsp;&nbsp;CHREMYLUS: Does it not seem that everything is extravagance in the world, or rather madness, when you watch the way things go? A crowd of rogues enjoy blessings they have won by sheer injustice, while more honest folks are miserable, die of hunger, and spend their whole lives with you. <br />CHORUS: Yes, if <a href=/people/641 target=_blank>Plutus</a> became clear-sighted again and drove out <a href=/people/1896 target=_blank>Poverty</a>, 'twould be the greatest blessing possible for the human race. <br />POVERTY: Here are two old men, whose brains are easy to confuse, who assist each other to talk rubbish and drivel to their hearts' content. But if your wishes were realized, your profit would be great! Let <a href=/people/641 target=_blank>Plutus</a> recover his sight and divide his favours out equally to all, and none will ply either trade or art any longer; all toil would be done away with. Who would wish to hammer iron, build ships, sew, turn, cut up leather, bake bricks, bleach linen, tan hides, or break up the soil of the earth with the plough and garner the gifts of <a href=/people/48 target=_blank>Demeter</a>, if he could live in idleness and free from all this work? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:500' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=517>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:517'><b>&sect; 517</b>&nbsp;&nbsp;CHREMYLUS: What nonsense all this is! All these trades which you just mention will be plied by our slaves. <br />POVERTY: Your slaves! And by what means will these slaves be got? <br />CHREMYLUS: We will buy them. <br />POVERTY: But first say, who will sell them, if everyone is rich? <br />CHREMYLUS: Some greedy dealer from <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a> — the land which supplies so many. <br />POVERTY: But if your system is applied, there won't be a single slave-dealer left. What rich man would risk his life to devote himself to this traffic? You will have to toil, to dig and submit yourself to all kinds of hard labour; so that your life would be more wretched even than it is now. <br />CHREMYLUS: May this prediction fall upon yourself! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:517' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=526>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:526'><b>&sect; 526</b>&nbsp;&nbsp;POVERTY: You will not be able to sleep in a bed, for no more will ever be manufactured; nor on carpets, for who would weave them if he had gold? When you bring a young bride to your dwelling, you will have no essences wherewith to perfume her, nor rich embroidered cloaks dyed with dazzling colours in which to clothe her. And yet what is the use of being rich, if you are to be deprived of all these enjoyments? On the other hand, you have all that you need in abundance, thanks to me; to the artisan I am like a severe mistress, who forces him by need and poverty to seek the means of earning his livelihood. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:526' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=535>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:535'><b>&sect; 535</b>&nbsp;&nbsp;CHREMYLUS: And what good thing can you give us, unless it be burns in the bath, and swarms of brats and old women who cry with hunger, and clouds uncountable of lice, gnats and flies, which hover about the wretch's head, trouble him, awake him and say, You will be hungry, but get up! Besides, to possess a rag in place of a mantle, a pallet of rushes swarming with bugs, that do not let you close your eyes for a bed; a rotten piece of matting for a coverlet; a big stone for a pillow, on which to lay your head; to eat mallow roots instead of bread, and leaves of withered radish instead of cake; to have nothing but the cover of a broken jug for a stool, the stave of a cask, and broken at that, for a kneading-trough, that is the life you make for us! Are these the mighty benefits with which you pretend to load mankind? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:535' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=548>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:548'><b>&sect; 548</b>&nbsp;&nbsp;POVERTY: 'Tis not my life that you describe; you are attacking the existence beggars lead. <br />CHREMYLUS: Is beggary not <a href=/people/1896 target=_blank>Poverty</a>'s sister? <br />POVERTY: <a href=/people/253 target=_blank>Thrasybulus</a> and <a href=/people/23 target=_blank>Dionysius</a> are one and the same according to you. No, my life is not like that and never will be. The beggar, whom you have depicted to us, never possesses anything. The poor man lives thriftily and attentive to his work; he has not got too much, but he does not lack what he really needs. <br />CHREMYLUS: Oh! what a happy life, by <a href=/people/48 target=_blank>Demeter</a>! to live sparingly, to toil incessantly and not to leave enough to pay for a tomb! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:548' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=557>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:557'><b>&sect; 557</b>&nbsp;&nbsp;POVERTY: That's it! Jest, jeer, and never talk seriously! But what you don't know is this, that men with me are worth more, both in mind and body, than with <a href=/people/641 target=_blank>Plutus</a>. With him they are gouty, big-bellied, heavy of limb and scandalously stout; with me they are thin, wasp-waisted, and terrible to the foe. <br />CHREMYLUS: 'Tis no doubt by starving them that you give them that waspish waist. <br />POVERTY: As for behaviour, I will prove to you that modesty dwells with me and insolence with <a href=/people/641 target=_blank>Plutus</a>. <br />CHREMYLUS: Oh! the sweet modesty of stealing and breaking through walls. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:557' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=566>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:566'><b>&sect; 566</b>&nbsp;&nbsp;BLEPSIDEMUS: Aye, the thief is truly modest, for he hides himself. <br />POVERTY: Look at the orators in our republics; as long as they are poor, both State and people can only praise their uprightness; but once they are fattened on the public funds, they conceive a hatred for justice, plan intrigues against the people and attack the democracy. <br />CHREMYLUS: That is absolutely true, although your tongue is very vile. But it matters not, so don't put on those triumphant airs; you shall not be punished any the less for having tried to persuade me that poverty is worth more than wealth. <br />POVERTY: Not being able to refute my arguments, you chatter at random and exert yourself to no purpose. <br />CHREMYLUS: Then tell me this, why does all mankind flee from you? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:566' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=576>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:576'><b>&sect; 576</b>&nbsp;&nbsp;POVERTY: Because I make them better. Children do the very same; they flee from the wise counsels of their fathers. So difficult is it to see one's true interest. <br />CHREMYLUS: Will you say that <a href=/people/1 target=_blank>Zeus</a> cannot discern what is best? Well, he takes <a href=/people/641 target=_blank>Plutus</a> to himself ... <br />BLEPSIDEMUS: ... and banishes <a href=/people/1896 target=_blank>Poverty</a> to earth. <br />POVERTY: Ah me! how purblind you are, you old fellows of the days of <a href=/people/43 target=_blank>Saturn</a>! Why, <a href=/people/1 target=_blank>Zeus</a> is poor, and I will clearly prove it to you. In the <a about=https://topostext.org/place/376216SOly class=demonym long=21.63 lat=37.6378>Olympic</a> games, which he founded, and to which he convokes the whole of Greece every four years, why does he only crown the victorious athletes with wild olive? If he were rich he would give them gold. <br />CHREMYLUS: 'Tis in that way he shows that he clings to his wealth; he is sparing with it, won't part with any portion of it, only bestows baubles on the victors and keeps his money for himself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:576' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=590>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:590'><b>&sect; 590</b>&nbsp;&nbsp;POVERTY: But wealth coupled to such sordid greed is yet more shameful than poverty. <br />CHREMYLUS: May <a href=/people/1 target=_blank>Zeus</a> destroy you, both you and your chaplet of wild olive! <br />POVERTY: Thus you dare to maintain that poverty is not the fount of all blessings! <br />CHREMYLUS: Ask <a href=/people/409 target=_blank>Hecate</a> whether it is better to be rich or starving; she will tell you that the rich send her a meal every month and that the poor make it disappear before it is even served. But go and hang yourself and don't breathe another syllable. I will not be convinced against my will. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:590' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=601>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:601'><b>&sect; 601</b>&nbsp;&nbsp;POVERTY: Oh! citizens of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>! do you hear what he says? <br />CHREMYLUS: Invoke <a href=/people/3230 target=_blank>Pauson</a>, your boon companion, rather. <br />POVERTY: Alas! what is to become of me? <br />CHREMYLUS: Get you gone, be off quick and a pleasant journey to you. <br />POVERTY: But where shall I go? <br />CHREMYLUS: To gaol; but hurry up, let us put an end to this. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:601' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=608>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:608'><b>&sect; 608</b>&nbsp;&nbsp;POVERTY: One day you will recall me. <br />CHREMYLUS: Then you can return; but disappear for the present. I prefer to be rich; you are free to knock your head against the walls in your rage. <br />BLEPSIDEMUS: And I too welcome wealth. I want, when I leave the bath all perfumed with essences, to feast bravely with my wife and children and to break wind in the faces of toilers and <a href=/people/1896 target=_blank>Poverty</a>. <br />CHREMYLUS: So that hussy has gone at last! But let us make haste to put <a href=/people/641 target=_blank>Plutus</a> to bed in the <a about=https://topostext.org/place/380237SAsk class=place long=23.7268 lat=37.9708>Asklepieion</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:608' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=622>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:622'><b>&sect; 622</b>&nbsp;&nbsp;BLEPSIDEMUS: Let us make haste; else some bothering fellow may again come to interrupt us. <br />CHREMYLUS: <a href=/people/4467 target=_blank>Cario</a>, bring the coverlets and all that I have got ready from the house; let us conduct the god to the shrine, taking care to observe all the proper rites. <br />CHORUS: [Missing.] <br />CARIO: Oh! you old fellows, who used to dip out the broth served to the poor at the festival of <a href=/people/57 target=_blank>Theseus</a> with little pieces of bread hollowed like a spoon, how worthy of envy is your fate! How happy you are, both you and all just men! <br />CHORUS: My good fellow, what has happened to your friends? You seem the bearer of good tidings. <br />CARIO: What joy for my master and even more for <a href=/people/641 target=_blank>Plutus</a>! The god has regained his sight; his eyes sparkle with the greatest brilliancy, thanks to the benevolent care of <a href=/people/114 target=_blank>Asklepios</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:622' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=632>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:632'><b>&sect; 632</b>&nbsp;&nbsp;CHORUS: Oh! what transports of joy! oh! What shouts of gladness! <br />CARIO: Aye! one is compelled to rejoice, whether one will or not. <br />CHORUS: I will sing to the honour of <a href=/people/114 target=_blank>Asklepios</a>, the son of illustrious <a href=/people/1 target=_blank>Zeus</a>, with a resounding voice; he is the beneficent star which men adore. <br />CHREMYLUS' WIFE: What mean these shouts? Is there good news. With what impatience have I been waiting in the house, and for so long too! <br />CARIO: Quick! quick! some wine, mistress. And drink yourself, for 'tis much to your taste; I bring you all blessings in a lump. <br />WIFE: Where are they? <br />CARIO: In my words, as you are going to see. <br />WIFE: Have done with trifling! come, speak. <br />CARIO: Listen, I am going to tell you everything from the feet to the head. <br />WIFE: Ah! don't throw anything at my head. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:632' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=651>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:651'><b>&sect; 651</b>&nbsp;&nbsp;CARIO: Not even the happiness that has come to you? <br />WIFE: No, no, nothing ... to annoy me. <br />CARIO: Having arrived near to the <a about=https://topostext.org/place/380237SAsk class=place long=23.7268 lat=37.9708>temenos</a> with our patient, then so unfortunate, but now at the apex of happiness, of blessedness, we first led him down to the sea to purify him. <br />WIFE: Ah! what a singular pleasure for an old man to bathe in the cold sea-water! <br />CARIO: Then we repaired to the temenos of the god. Once the wafers and the various offerings had been consecrated upon the altar, and the cake of wheaten-meal had been handed over to the devouring <a href=/people/84 target=_blank>Hephaestus</a>, we made <a href=/people/641 target=_blank>Plutus</a> lie on a couch according to the rite, and each of us prepared himself a bed of leaves. <br />WIFE: Had any other folk come to beseech the deity? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:651' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=665>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:665'><b>&sect; 665</b>&nbsp;&nbsp;CARIO: Yes. Firstly, <a href=/people/4228 target=_blank>Neoclides</a>, who is blind, but steals much better than those who see clearly; then many others attacked by complaints of all kinds. The lights were put out and the priest enjoined us to sleep, especially recommending us to keep silent should we hear any noise. There we were all lying down quite quietly. I could not sleep; I was thinking of a certain stew-pan full of pap placed close to an old woman and just behind her head. I had a furious longing to slip towards that side. But just as I was lifting my head, I noticed the priest, who was sweeping off both the cakes and the figs on the sacred table; then he made the round of the altars and sanctified the cakes that remained, by stowing them away in a bag. I therefore resolved to follow such a pious example and made straight for the pap. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:665' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=684>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:684'><b>&sect; 684</b>&nbsp;&nbsp;WIFE: You wretch! and had you no fear of the god? <br />CARIO: Aye, indeed! I feared that the god with his crown on his head might have been near the stew-pan before me. I said to myself, Like priest, like god. On hearing the noise I made, the old woman put out her hand, but I hissed and bit it, just as a sacred <a href=/people/55 target=_blank>serpent</a> might have done. Quick she drew back her hand, slipped down into the bed with her head beneath the coverlets and never moved again; only she let go some wind in her fear which stunk worse than a weasel. As for myself, I swallowed a goodly portion of the pap and, having made a good feed, went back to bed. <br />WIFE: And did not the god come? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:684' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=696>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:696'><b>&sect; 696</b>&nbsp;&nbsp;CARIO: He did not tarry; and when he was near us, oh! dear! such a good joke happened. My belly was quite blown out, and I let wind with the loudest of noises. <br />WIFE: Doubtless the god pulled a wry face? <br />CARIO: No, but <a href=/people/8654 target=_blank>Iaso</a> blushed a little and <a href=/people/7082 target=_blank>Panacea</a> turned her head away, holding her nose; for my perfume is not that of roses. <br />WIFE: And what did the god do? <br />CARIO: He paid not the slightest heed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:696' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=705>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:705'><b>&sect; 705</b>&nbsp;&nbsp;WIFE: He must then be a pretty rustic kind of god? <br />CARIO: I don't say that, but he's used to tasting shit. <br />WIFE: Impudent knave, go on with you! <br />CARIO: Then I hid myself in my bed all a-tremble. <a href=/people/114 target=_blank>Asklepios</a> did the round of the patients and examined them all with great attention; then a slave placed beside him a stone mortar, a pestle and a little box. <br />WIFE: Of stone? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:705' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=712>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:712'><b>&sect; 712</b>&nbsp;&nbsp;CARIO: No, not of stone. <br />WIFE: But how could you see all this, you arch-rascal, when you say you were hiding all the time? <br />CARIO: Why, great gods, through my cloak, for 'tis not without holes! He first prepared an ointment for <a href=/people/4228 target=_blank>Neoclides</a>; he threw three heads of <a about=https://topostext.org/place/375252PTen class=demonym long=25.1617 lat=37.538>Tenian</a> garlic into the mortar, pounded them with an admixture of fig-tree sap and lentisk, moistened the whole with <a about=https://topostext.org/place/379238DSph class=demonym long=23.834 lat=37.905>Sphettian</a> vinegar, and, turning back the patient's eyelids, applied his salve to the interior of the eyes, so that the pain might be more excruciating. <a href=/people/4228 target=_blank>Neoclides</a> shrieked, howled, sprang towards the foot of his bed and wanted to bolt, but the god laughed and said to him, Keep where you are with your salve; by doing this you will not go and perjure yourself before the Assembly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:712' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=726>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:726'><b>&sect; 726</b>&nbsp;&nbsp;WIFE What a wise god and what a friend to our city! <br />CARIO: Thereupon he came and seated himself at the head of <a href=/people/641 target=_blank>Plutus</a>' bed, took a perfectly clean rag and wiped his eye-lids; <a href=/people/7082 target=_blank>Panacea</a> covered his head and face with a purple cloth, while the god whistled, and two enormous <a href=/people/55 target=_blank>snakes</a> came rushing from the sanctuary. <br />WIFE: Great gods! <br />CARIO: They slipped gently beneath the purple cloth and, as far as I could judge, licked the patient's eyelids; for, in less time than even you need, mistress, to drain down ten beakers of wine, <a href=/people/641 target=_blank>Plutus</a> rose up; he could see. I clapped my hands with joy and awoke my master, and the god immediately disappeared with the <a href=/people/55 target=_blank>serpents</a> into the sanctuary. As for those who were lying near <a href=/people/641 target=_blank>Plutus</a>, you can imagine that they embraced him tenderly. Dawn broke and not one of them had closed an eye. As for myself, I did not cease thanking the god who had so quickly restored to <a href=/people/641 target=_blank>Plutus</a> his sight and had made <a href=/people/4228 target=_blank>Neoclides</a> blinder than ever. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:726' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=748>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:748'><b>&sect; 748</b>&nbsp;&nbsp;WIFE: Oh! thou Lord and Master! How mighty is thy power! (To Cario) But tell me, where is <a href=/people/641 target=_blank>Plutus</a> now? <br />CARIO: He is approaching, escorted by an immense crowd. The rich, whose wealth is ill-gotten, are knitting their brows and shooting at him looks of fierce hate, while the just folk, who led a wretched existence, embrace him and grasp his hand in the transport of their joy; they follow in his wake, their heads wreathed with garlands, laughing and blessing their deliverer; the old men make the earth resound as they walk together keeping time. Come, all of you, all, down to the very least, dance, leap and form yourselves into a chorus; no longer do you risk being told, when you go home, There is no meal in the bag. <br />WIFE: And I, by <a href=/people/409 target=_blank>Hecate</a>! I will string you a garland of cakes for the good tidings you have brought me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:748' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=766>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:766'><b>&sect; 766</b>&nbsp;&nbsp;CARIO: Hurry, make haste then; our friends are close at hand. <br />WIFE: I will go indoors to fetch some gifts of welcome, to celebrate these eyes that have just been opened. <br />CARIO: Meantime I am going forth to meet them. <br />CHORUS: [Missing.] <br />PLUTUS: I adore thee, oh! thou divine sun, and thee I greet thou city, the beloved of <a href=/people/429 target=_blank>Pallas</a>; be welcome, thou land of <a href=/people/447 target=_blank>Cecrops</a>, which hast received me. Alas! what manner of men I associated with! I blush to think of it. While, on the other hand, I shunned those who deserved my friendship; I knew neither the vices of the ones nor the virtues of the others. A twofold mistake, and in both cases equally fatal! Ah! what a misfortune was mine! But I want to change everything; and in future I mean to prove to mankind that, if I gave to the wicked, 'twas against my will. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:766' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=782>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:782'><b>&sect; 782</b>&nbsp;&nbsp;CHREMYLUS (to the crowd who impede him). Get you gone! Oh! what a lot of friends spring into being when you are fortunate! They dig me with their elbows and bruise my shins to prove their affection. Each one wants to greet me. What a crowd of old fellows thronged round me on the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a>! <br />WIFE: Oh! thou, who art dearest of all to me, and thou too, be welcome! Allow me, <a href=/people/641 target=_blank>Plutus</a>, to shower these gifts of welcome over you in due accord with custom. <br />PLUTUS: No. This is the first house I enter after having regained my sight; I shall take nothing from it, for 'tis my place rather to give. <br />WIFE: Do you refuse these gifts? <br />PLUTUS: I will accept them at your fireside, as custom requires. Besides, we shall thus avoid a ridiculous scene; it is not meet that the poet [didaskalos] should throw dried figs and dainties to the spectators; 'tis a vulgar trick to make 'em laugh. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:782' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=800>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:800'><b>&sect; 800</b>&nbsp;&nbsp;WIFE: You are right. Look! yonder's Dexinicus, who was already getting to his feet to catch the figs as they flew past him. <br />CHORUS: [Missing.] <br />CARIO: How pleasant it is, friends, to live well, especially when it costs nothing! What a deluge of blessings flood our household, and that too without our having wronged ever a soul! Ah! what a delightful thing is wealth! The bin is full of white flour and the wine-jars run over with fragrant liquor; all the chests are crammed with gold and silver, 'tis a sight to see; the tank is full of oil, the phials with perfumes, and the garret with dried figs. Vinegar flasks, plates, stew-pots and all the platters are of brass; our rotten old wooden trenchers for the fish have today become dishes of silver; the very night-commode is of ivory. We others, the slaves, we play at odd and even with gold pieces, and carry luxury so far that we no longer wipe ourselves with stones, but use garlic stalks instead. My master, at this moment, is crowned with flowers and sacrificing a <a href=/people/10951 target=_blank>pig</a>, a <a href=/people/10956 target=_blank>goat</a> and a ram; 'tis the smoke that has driven me out, for I could no longer endure it, it hurt my eyes so. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:800' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=823>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:823'><b>&sect; 823</b>&nbsp;&nbsp;A JUST MAN: Come, my child, come with me. Let us go and find the god. <br />CHREMYLUS: Who comes here? <br />JUST MAN: A man who was once wretched, but now is happy. <br />CHREMYLUS: A just man then? <br />JUST MAN: You have it. <br />CHREMYLUS: Well! what do you want? <br />JUST MAN: I come to thank the god for all the blessings he has showered on me. My father had left me a fairly decent fortune, and I helped those of my friends who were in want; 'twas, to my thinking, the most useful thing I could do with my fortune. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:823' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=832>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:832'><b>&sect; 832</b>&nbsp;&nbsp;CHREMYLUS: And you were quickly ruined? <br />JUST MAN: Entirely. <br />CHREMYLUS: Since then you have been living in misery? <br />JUST MAN: In truth I have; I thought I could count, in case of need, upon the friends whose property I had helped, but they turned their backs upon me and pretended not to see me. <br />CHREMYLUS: They laughed at you, 'tis evident. <br />JUST MAN: Just so. With my empty coffers, I had no more friends. <br />CHREMYLUS: But your lot has changed. <br />JUST MAN: Yes, and so I come to the god to make him the acts of gratitude that are his due. <br />CHREMYLUS: But with what object now do you bring this old cloak, which your slave is carrying? Tell me. <br />JUST MAN: I wish to dedicate it to the god. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:832' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=845>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:845'><b>&sect; 845</b>&nbsp;&nbsp;CHREMYLUS: Were you initiated into the Great Mysteries in that cloak? <br />JUST MAN: No, but I shivered in it for thirteen years. <br />CHREMYLUS: And this footwear? <br />JUST MAN: These also are my winter companions. <br />CHREMYLUS: And you wish to dedicate them too? <br />JUST MAN: Unquestionably. <br />CHREMYLUS: Fine presents to offer to the god! <br />AN INFORMER: Alas! alas! I am a lost man. Ah! thrice, four, five, twelve times, or rather ten thousand times unhappy fate! Why, why must fortune deal me such rough blows? <br />CHREMYLUS: Oh, <a href=/people/2 target=_blank>Apollo</a>, my tutelary! oh! ye favourable gods! what has overtaken this man? <br />INFORMER: Ah! am I not deserving of pity? I have lost everything; this cursed god has stripped me bare. Ah! if there be justice in heaven, he shall be struck blind again. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:845' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=860>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:860'><b>&sect; 860</b>&nbsp;&nbsp;JUST MAN: Methinks I know what's the matter. If this man is unfortunate, 'tis because he's of little account and small honesty; and i' faith he looks it too. <br />CHREMYLUS: Then, by <a href=/people/1 target=_blank>Zeus</a>! his plight is but just. <br />INFORMER: He promised that if he recovered his sight, he would enrich us all unaided; whereas he has ruined more than one. <br />CHREMYLUS: But whom has he thus ill-used? <br />INFORMER: Me. <br />CHREMYLUS: You were doubtless a villainous thief then. <br />INFORMER (to <a href=/people/5557 target=_blank>Chremylus</a> and <a href=/people/4467 target=_blank>Cario</a>). 'Tis rather you yourselves who were such wretches; I am certain you have got my money. <br />CHREMYLUS: Ha! by <a href=/people/48 target=_blank>Demeter</a>! 'tis an informer. What impudence! <br />CARIO: He's ravenously hungry, that's certain. <br />INFORMER: You shall follow me this very instant to the marketplace, where the torture of the wheel shall force the confession of your misdeeds from you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:860' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=876>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:876'><b>&sect; 876</b>&nbsp;&nbsp;CARIO: Ha! look out for yourself! <br />JUST MAN: By <a href=/people/1 target=_blank>Zeus</a> <a href=/people/1517 target=_blank>Soter</a>, what gratitude all Greeks owe to <a href=/people/641 target=_blank>Plutus</a>, if he destroys these vile informers! <br />INFORMER: You are laughing at me. Ho! ho! I denounce you as their accomplice. Where did you steal that new cloak from? Yesterday I saw you with one utterly worn out. <br />JUST MAN: I fear you not, thanks to this ring, for which I paid <a href=/people/1475 target=_blank>Eudemus</a> a drachma. <br />CHREMYLUS: Ah! there's no ring to preserve you from the informer's bite. <br />INFORMER: The insolent wretches! But, my fine jokers, you have not told me what you are up to here. Nothing good, I'll be bound. <br />CHREMYLUS: Nothing of any good for you, be sure of that. <br />INFORMER: By <a href=/people/1 target=_blank>Zeus</a>! you're going to dine at my expense! <br />CHREMYLUS: You vile impostor, may you burst with an empty belly, both you and your witness. <br />INFORMER: You deny it? I reckon, you villains, that there is much salt fish and roast meat in this house. Hu! hu! hu! hu! hu! hu! (He sniffs.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:876' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=896>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:896'><b>&sect; 896</b>&nbsp;&nbsp;CHREMYLUS: Can you smell anything, rascal? <br />INFORMER: Can such outrages be borne, oh, <a href=/people/1 target=_blank>Zeus</a>! Ye gods! how cruel it is to see me treated thus, when I am such an honest fellow and such a good citizen! <br />CHREMYLUS: You an honest man! you a good citizen! <br />INFORMER: A better one than any. <br />CHREMYLUS: Ah! well then, answer my questions. <br />INFORMER: Concerning what? <br />CHREMYLUS: Are you a husbandman? <br />INFORMER: D'ye take me for a fool? <br />CHREMYLUS: A merchant? <br />INFORMER: I assume the title, when it serves me. <br />CHREMYLUS: Do you ply any trade? <br />INFORMER: No, most assuredly not! <br />CHREMYLUS: Then how do you live, if you do nothing? <br />INFORMER: I superintend public and private business. <br />CHREMYLUS: You! And by what right, pray? <br />INFORMER: Because it pleases me to do so. <br />CHREMYLUS: Like a thief you sneak yourself in where you have no business. You are hated by all and you claim to be an honest man? <br />INFORMER: What, you fool? I have not the right to dedicate myself entirely to my country's service? <br />CHREMYLUS: Is the country served by vile intrigue? <br />INFORMER: It is served by watching that the established law is observed — by allowing no one to violate it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:896' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=916>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:916'><b>&sect; 916</b>&nbsp;&nbsp;CHREMYLUS: That's the duty of the tribunals; they are established to that end. <br />INFORMER: And who is the prosecutor before the dicasts? <br />CHREMYLUS: Whoever wishes to be. <br />INFORMER: Well then, 'tis I who choose to be prosecutor; and thus all public affairs fall within my province. <br />CHREMYLUS: I pity <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> for being in such vile clutches. But would you not prefer to live quietly and free from all care and anxiety? <br />INFORMER: To do nothing is to live an animal's life. <br />CHREMYLUS: Thus you will not change your mode of life? <br />INFORMER: No, though they gave me <a href=/people/641 target=_blank>Plutus</a> himself and the silphium of <a href=/people/586 target=_blank>Battus</a>. <br />CHREMYLUS (to the Informer). Come, quick, off with your cloak. <br />CARIO: Hi! friend! 'tis you they are speaking to. <br />CHREMYLUS: Off with your shoes. <br />CARIO: All this is addressed to you. <br />INFORMER: Very well! let one of you come near me, if he dares. <br />CARIO: I dare. <br />INFORMER: Alas! I am robbed of my clothes in full daylight. <br />CARIO: That's what comes of meddling with other folk's business and living at their expense. <br />INFORMER (to his witness). You see what is happening; I call you to witness. <br />CHREMYLUS: Look how the witness whom you brought is taking to his heels. <br />INFORMER: Great gods! I am all alone and they assault me. <br />CARIO: Shout away! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:916' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=935>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:935'><b>&sect; 935</b>&nbsp;&nbsp;INFORMER: Oh! woe, woe is me! <br />CARIO: Give me that old ragged cloak, that I may dress out the informer. <br />JUST MAN: No, no; I have dedicated it to <a href=/people/641 target=_blank>Plutus</a>. <br />CARIO: And where would your offering be better bestowed than on the shoulders of a rascal and a thief? To <a href=/people/641 target=_blank>Plutus</a> fine, rich cloaks should be given. <br />JUST MAN: And what then shall be done with these shoes? Tell me. <br />CARIO: I will nail them to his brow as gifts are nailed to the trunks of the wild olive. <br />INFORMER: I'm off, for you are the strongest, I own. But if I find someone to join me, let him be as weak as he will, I will summon this god, who thinks himself so strong, before the Court this very day, and denounce him as manifestly guilty of overturning the democracy by his will alone and without the consent of the Senate or the popular Assembly. <br />JUST MAN: Now that you are rigged out from head to foot with my old clothes, hasten to the bath and stand there in the front row to warm yourself better; 'tis the place I formerly had. <br />CHREMYLUS: Ah! the bath-man would grip you by the testicles and fling you through the door; he would only need to see you to appraise you at your true value.... But let us go in, friend, that you may address your thanksgivings to the god. <br />CHORUS: [Missing.] </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:935' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=959>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:959'><b>&sect; 959</b>&nbsp;&nbsp;AN OLD WOMAN: Dear old men, am I near the house where the new god lives, or have I missed the road? <br />CHORUS: You are at his door, my pretty little maid, who question us so sweetly. <br />OLD WOMAN: Then I will summon someone in the house. <br />CHREMYLUS: 'Tis needless! I am here myself. But what matter brings you here? <br />OLD WOMAN: Ah! a cruel, unjust fate! My dear friend, this god has made life unbearable to me through ceasing to be blind. <br />CHREMYLUS: What does this mean? Can you be a female informer? <br />OLD WOMAN: Most certainly not. <br />CHREMYLUS: Have you not drunk up your money then? <br />OLD WOMAN: You are mocking me! Nay! I am being devoured with a consuming fire. <br />CHREMYLUS: Then tell me what is consuming you so fiercely. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:959' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=975>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:975'><b>&sect; 975</b>&nbsp;&nbsp;OLD WOMAN: Listen! I loved a young man, who was poor, but so handsome, so well-built, so honest! He readily gave way to all I desired and acquitted himself so well! I, for my part, refused him nothing. <br />CHREMYLUS: And what did he generally ask of you. <br />OLD WOMAN: Very little; he bore himself towards me with astonishing discretion! perchance twenty drachmae for a cloak or eight for footwear; sometimes he begged me to buy tunics for his sisters or a little mantle for his mother; at times he needed four bushels of corn. <br />CHREMYLUS: 'Twas very little, in truth; I admire his modesty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:975' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=989>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:989'><b>&sect; 989</b>&nbsp;&nbsp;OLD WOMAN: And 'twas not as a reward for his complacency that he ever asked me for anything, but as a matter of pure friendship; a cloak I had given would remind him from whom he had got it. <br />CHREMYLUS: 'Twas a fellow who loved you madly. <br />OLD WOMAN: But 'tis no longer so, for the faithless wretch has sadly altered! I had sent him this cake with the sweetmeats you see here on this dish and let him know that I would visit him in the evening.... <br />CHREMYLUS: Well? <br />OLD WOMAN: He sent me back my presents and added this tart to them, on condition that I never set foot in his house again. Besides, he sent me this message, Once upon a time the <a about=https://topostext.org/place/375273PMil class=ethnic long=27.2775 lat=37.5292>Milesians</a> were brave. <br />CHREMYLUS: An honest lad, indeed! But what would you? When poor, he would devour anything; now he is rich, he no longer cares for lentils. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:989' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1006>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1006'><b>&sect; 1006</b>&nbsp;&nbsp;OLD WOMAN: Formerly he came to me every day. <br />CHREMYLUS: To see if you were being buried? <br />OLD WOMAN: No! he longed to hear the sound of my voice. <br />CHREMYLUS: And to carry off some present. <br />OLD WOMAN: If I was downcast, he would call me his little duck or his little dove in a most tender manner.... <br />CHREMYLUS: And then would ask for the wherewithal to buy a pair of shoes. <br />OLD WOMAN: When I was at the <a about=https://topostext.org/place/380235SEle class=place long=23.538 lat=38.0411>Mysteries of Eleusis</a> in a carriage, someone looked at me; he was so jealous that he beat me the whole of that day. <br />CHREMYLUS: 'Twas because he liked to feed alone. <br />OLD WOMAN: He told me I had very beautiful hands. <br />CHREMYLUS: Aye, no doubt, when they handed him twenty drachmae. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1006' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1020>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1020'><b>&sect; 1020</b>&nbsp;&nbsp;OLD WOMAN: That my whole body breathed a sweet perfume. <br />CHREMYLUS: Yes, like enough, if you poured him out <a about=https://topostext.org/place/408247PTha class=demonym long=24.7138 lat=40.7799>Thasian</a> wine. <br />OLD WOMAN: That my glance was gentle and charming. <br />CHREMYLUS: 'Twas no fool. He knew how to drag drachmae from a hot-blooded old woman. <br />OLD WOMAN: Ah! the god has done very, very wrong, saying he would support the victims of injustice. <br />CHREMYLUS: Well, what must he do? Speak, and it shall be done. <br />OLD WOMAN: 'Tis right to compel him, whom I have loaded with benefits, to repay them in his turn; if not, he does not merit the least of the god's favours. <br />CHREMYLUS: And did he not do this every night? <br />OLD WOMAN: He swore he would never leave me, as long as I lived. <br />CHREMYLUS: Aye, rightly; but he thinks you are no longer alive. <br />OLD WOMAN: Ah! friend, I am pining away with grief. <br />CHREMYLUS: You are rotting away, it seems to me. <br />OLD WOMAN: I have grown so thin, I could slip through a ring. <br />CHREMYLUS: Yes, if 'twere as large as the hoop of a sieve. <br />OLD WOMAN: But here is the youth, the cause of my complaint; he looks as though he were going to a festival. <br />CHREMYLUS: Yes, if his chaplet and his torch are any guides. <br />YOUTH: Greeting to you. <br />OLD WOMAN: What does he say? <br />YOUTH: My ancient old dear, you have grown white very quickly, by heaven! <br />OLD WOMAN: Oh! what an insult! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1020' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1044>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1044'><b>&sect; 1044</b>&nbsp;&nbsp;CHREMYLUS: It is a long time, then, since he saw you? <br />OLD WOMAN: A long time? My god! he was with me yesterday. <br />CHREMYLUS: It must be, then, that, unlike other people, he sees more clearly when he's drunk. <br />OLD WOMAN: No, but I have always known him for an insolent fellow. <br />YOUTH: Oh! divine <a href=/people/25 target=_blank>Poseidon</a>! Oh, ye gods of old age! what wrinkles she has on her face! <br />OLD WOMAN: Oh! oh! keep your distance with that torch. <br />CHREMYLUS: Yes, 'twould be as well; if a single spark were to reach her, she would catch alight like an old olive branch. <br />YOUTH: I propose to have a game with you. <br />OLD WOMAN: Where, naughty boy? <br />YOUTH: Here. Take some nuts in your hand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1044' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1056>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1056'><b>&sect; 1056</b>&nbsp;&nbsp;OLD WOMAN: What game is this? <br />YOUTH: Let's play at guessing how many teeth you have. <br />CHREMYLUS: Ah! I'll tell you; she's got three, or perhaps four. <br />YOUTH: Pay up; you've lost! she has only one single grinder. <br />OLD WOMAN: You wretch! you're not in your right senses. Do you insult me thus before this crowd? <br />YOUTH: I am washing you thoroughly; 'tis doing you a service. <br />CHREMYLUS: No, no! as she is there, she can still deceive; but if this white-lead is washed off, her wrinkles would come out plainly. <br />OLD WOMAN: You are only an old fool! <br />YOUTH: Ah! he is playing the gallant, he is fondling your breasts, and thinks I do not see it. <br />OLD WOMAN: Oh! no, by <a href=/people/15 target=_blank>Aphrodite</a>, no, you naughty jealous fellow. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1056' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1070>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1070'><b>&sect; 1070</b>&nbsp;&nbsp;CHREMYLUS: Oh! most certainly not, by <a href=/people/409 target=_blank>Hecate</a>! Verily and indeed I would need to be mad! But, young man, I cannot forgive you, if you cast off this beautiful child. <br />YOUTH: Why, I adore her. <br />CHREMYLUS: But nevertheless she accuses you ... <br />YOUTH: Accuses me of what? <br />CHREMYLUS: ... of having told her insolently, Once upon a time the <a about=https://topostext.org/place/375273PMil class=ethnic long=27.2775 lat=37.5292>Milesians</a> were brave. <br />YOUTH: Oh! I shall not dispute with you about her. <br />CHREMYLUS: Why not? <br />YOUTH: Out of respect for your age; with anyone but you, I should not be so easy; come, take the girl and be happy. <br />CHREMYLUS: I see, I see; you don't want her any more. <br />OLD WOMAN: Nay! this is a thing that cannot be allowed. <br />YOUTH: I cannot argue with a woman, who has been making love these thirteen thousand years. <br />CHREMYLUS: Yet, since you liked the wine, you should now consume the lees. <br />YOUTH: But these lees are quite rancid and fusty. <br />CHREMYLUS: Pass them through a straining-cloth; they'll clarify. <br />YOUTH: But I want to go in with you to offer these chaplets to the god. <br />OLD WOMAN: And I too have something to tell him. <br />YOUTH: Then I don't enter. <br />CHREMYLUS: Come, have no fear; she won't harm you. <br />YOUTH: 'Tis true; I've been managing the old bark long enough. <br />OLD WOMAN: Go in; I'll follow after you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1070' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1095>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1095'><b>&sect; 1095</b>&nbsp;&nbsp;CHREMYLUS: Good gods! that old hag has fastened herself to her youth like a limpet to its rock. <br />CHORUS: [Missing.] <br />CARIO (opening the door). Who knocks at the door? Halloa! I see no one; 'twas then by chance it gave forth that plaintive tone. <br />HERMES (to Carlo, who is about to close the door). <a href=/people/4467 target=_blank>Cario</a>! stop! <br />CARIO: Eh! friend, was it you who knocked so loudly? Tell me. <br />HERMES: No, I was going to knock and you forestalled me by opening. Come, call your master quick, then his wife and his children, then his slave and his <a href=/people/10953 target=_blank>dog</a>, then thyself and his <a href=/people/10951 target=_blank>pig</a>. <br />CARIO: And what's it all about? <br />HERMES: It's about this, rascal! <a href=/people/1 target=_blank>Zeus</a> wants to serve you all with the same sauce and hurl the lot of you into the <a about=https://topostext.org/place/380237FDim class=place long=23.7171 lat=37.9739>Barathrum</a>. <br />CARIO: Have a care for your tongue, you bearer of ill tidings! But why does he want to treat us in that scurvy fashion? <br />HERMES: Because you have committed the most dreadful crime. Since <a href=/people/641 target=_blank>Plutus</a> has recovered his sight, there is nothing for us other gods, neither incense, nor laurels, nor cakes, nor victims, nor anything in the world. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1095' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1116>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1116'><b>&sect; 1116</b>&nbsp;&nbsp;CARIO: And you will never be offered anything more; you governed us too ill. <br />HERMES: I care nothing at all about the other gods, but 'tis myself. I tell you I am dying of hunger. <br />CARIO: That's reasoning like a wise fellow. <br />HERMES: Formerly, from earliest dawn, I was offered all sorts of good things in the wine-shops, — wine-cakes, honey, dried figs, in short, dishes worthy of <a href=/people/33 target=_blank>Hermes</a>. Now, I lie the livelong day on my back, with my legs in the air, famishing. <br />CARIO: And quite right too, for you often had them punished who treated you so well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1116' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1126>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1126'><b>&sect; 1126</b>&nbsp;&nbsp;HERMES: Ah! the lovely cake they used to knead for me on the fourth of the month! <br />CARIO: You recall it vainly; your regrets are useless! there'll be no more cake. <br />HERMES: Ah! the ham I was wont to devour! <br />CARIO: Well then! make use of your legs and hop on one leg upon the wine-skin, to while away the time. <br />HERMES: Oh! the grilled entrails I used to swallow down! <br />CARIO: Your own have got the colic, methinks. <br />HERMES: Oh! the delicious tipple, half wine, half water! <br />CARIO: Here, swallow that and be off. (He discharges a fart.) <br />HERMES: Would you do a friend a service? <br />CARIO: Willingly, if I can. <br />HERMES: Give me some well-baked bread and a big hunk of the victims they are sacrificing in your house. <br />CARIO: That would be stealing. <br />HERMES: Do you forget, then, how I used to take care he knew nothing about it when you were stealing something from your master? <br />CARIO: Because I used to share it with you, you rogue; some cake or other always came your way. <br />HERMES: Which afterwards you ate up all by yourself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1126' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1144>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1144'><b>&sect; 1144</b>&nbsp;&nbsp;CARIO: But then you did not share the blows when I was caught. <br />HERMES: Forget past injuries, now you have taken <a about=https://topostext.org/place/381236DPhy class=place long=23.637 lat=38.14>Phyle</a>. Ah! how I should like to live with you! Take pity and receive me. <br />CARIO: You would leave the gods to stop here? <br />HERMES: One is much better off among you. <br />CARIO: What! you would desert! Do you think that is honest? <br />HERMES: Where I live well, there is my country. <br />CARIO: But how could we employ you here? <br />HERMES: Place me near the door; I am the watchman god and would shift off the robbers. <br />CARIO: Shift off! Ah! but we have no love for shifts. <br />HERMES: Entrust me with business dealings. <br />CARIO: But we are rich; why should we keep a haggling <a href=/people/33 target=_blank>Hermes</a>? <br />HERMES: Let me intrigue for you. <br />CARIO: No, no, intrigues are forbidden; we believe in good faith. <br />HERMES: I will work for you as a guide. <br />CARIO: But the god sees clearly now, so we no longer want a guide. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1144' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1161>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1161'><b>&sect; 1161</b>&nbsp;&nbsp;HERMES: Well then, I will preside over the games. Ah! what can you object to in that? Nothing is fitter for <a href=/people/641 target=_blank>Plutus</a> than to give scenic and gymnastic games. <br />CARIO: How useful 'tis to have so many names! Here you have found the means of earning your bread. I don't wonder the jurymen so eagerly try to get entered for many tribunals. <br />HERMES: So then, you admit me on these terms. <br />CARIO: Go and wash the entrails of the victims at the well, so that you may show yourself serviceable at once. <br />A PRIEST OF ZEUS: Can anyone direct me where <a href=/people/5557 target=_blank>Chremylus</a> is? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1161' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1171>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1171'><b>&sect; 1171</b>&nbsp;&nbsp;CHREMYLUS: What would you with him, friend? <br />PRIEST: Much ill. Since <a href=/people/641 target=_blank>Plutus</a> has recovered his sight, I am perishing of starvation; I, the priest of <a href=/people/1 target=_blank>Zeus</a> <a href=/people/1517 target=_blank>Soter</a> (saviour), have nothing to eat! <br />CHREMYLUS: And what is the cause of that, pray? <br />PRIEST: No one dreams of offering sacrifices. <br />CHREMYLUS: Why not? <br />PRIEST: Because all men are rich. Ah! when they had nothing, the merchant who escaped from shipwreck, the accused who was acquitted, all immolated victims; another would sacrifice for the success of some wish and the priest joined in at the feast; but now there is not the smallest victim, no one comes in, except thousands who come there to take a dump. <br />CHREMYLUS: Don't you take your share of those offerings? <br />PRIEST: Hence I think I too am going to say good-bye to <a href=/people/1 target=_blank>Zeus</a> <a href=/people/1517 target=_blank>Soter</a>, and stop here myself. <br />CHREMYLUS: Be at ease, all will go well, if it so please the god. <a href=/people/1 target=_blank>Zeus</a> <a href=/people/1517 target=_blank>Soter</a> is here; he came of his own accord. <br />PRIEST: Ha! that's good news. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1171' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1190>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1190'><b>&sect; 1190</b>&nbsp;&nbsp;CHREMYLUS: Wait a little; we are going to install <a href=/people/641 target=_blank>Plutus</a> presently in the place he formerly occupied guarding the <a about=https://topostext.org/place/380237BOpi class=place long=23.72637 lat=37.97144>Opisthodomos</a> of the Goddess. But let lighted torches be brought; take these and walk in solemn procession in front of the god. <br />PRIEST: That's magnificent! <br />CHREMYLUS: Let <a href=/people/641 target=_blank>Plutus</a> be summoned. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1190' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1197>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1197'><b>&sect; 1197</b>&nbsp;&nbsp;OLD WOMAN: And I, what am I to do? <br />CHREMYLUS: Take the pots of vegetables which we are going to offer to the god in honour of his installation and carry them on your head; you just happen luckily to be wearing a beautiful embroidered robe. <br />OLD WOMAN: And what about the object of my coming? <br />CHREMYLUS: Everything shall be according to your wish. The young man will be with you this evening. <br />OLD WOMAN: Oh! if you promise me his visit, I will right willingly carry the pots. <br />CHREMYLUS: Those are strange pots indeed! Generally the scum rises to the top of the pots, but here the pots are raised to the top of the old woman. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1197' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1208>
+                            <p id='urn:cts:greekLit:tlg0019.tlg011:1208'><b>&sect; 1208</b>&nbsp;&nbsp;CHORUS: Let us withdraw without more tarrying, and follow the others, singing as we go. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -388 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0019.tlg011.perseus-grc1:1208' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2020                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=67', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas67";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=67';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

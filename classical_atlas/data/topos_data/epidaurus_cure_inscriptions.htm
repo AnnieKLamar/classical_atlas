@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Priests of Asclepius, Epidaurus Cure Inscriptions' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Cure inscriptions from the Asclepieion of Epidaurus, translated by Emma Jeannette Levy Edelstein (1904-1958) in Asclepius: collection and interpretation of the testimonies, Johns Hopkins University Press, 1945. IG IV²,1 121, 122. Two large inscriptions, now in Asklepieon site Museum, from the 4th c. BCE, and one Roman-period inscription. Greek texts at Stele 1 and Stele 2. Minor corrections by Brady Kiesling. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-350' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -350' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='copyright John Hopkins University' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/648' content='http://epigraphy.packhum.org/text/28551' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/' content='Priests of Asclepius'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n97102584' content='Emma Jeannette Levy Edelstein (1904-1958)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='scanned text of Edelstein' /><h2>Priests of Asclepius, Epidaurus Cure Inscriptions</h2>Cure inscriptions from the Asclepieion of Epidaurus, translated by Emma Jeannette Levy Edelstein (1904-1958) in Asclepius: collection and interpretation of the testimonies, Johns Hopkins University Press, 1945. IG IV²,1 121, 122. Two large inscriptions, now in Asklepieon site Museum, from the 4th c. BCE, and one Roman-period inscription. Greek texts at Stele 1 and Stele 2. Minor corrections by Brady Kiesling.  This text has 76 tagged references to 35 ancient places. <br />; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87778600'>Q87778600</a>;     <a href='http://epigraphy.packhum.org/text/28551' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='http://epigraphy.packhum.org/text/28551:1'><b>&sect; 1</b>&nbsp;&nbsp;Stele I<br />God and Good Fortune<br />Cures of <a href=/people/2 target=_blank>Apollo</a> and <a href=/people/114 target=_blank>Asclepius</a>. <br />Cleo was with child for five years. After she had been pregnant for five years she came as a suppliant to the god and slept in the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>. As soon as she left it and got outside the sanctuary she bore a son who, immediately after birth, washed himself at the fountain and walked about with his mother. In return for this favor she inscribed on her offering: Admirable is not the size of the tablet, but the Divine, in that Cleo carried the burden in her womb for five years, until she slept in the sanctuary and He made her sound.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='http://epigraphy.packhum.org/text/28551:2'><b>&sect; 2</b>&nbsp;&nbsp;A three-years' pregnancy. Ithmonice of <a about=https://topostext.org/place/372223PPel class=person long=22.3244 lat=37.2083>Pellene</a> came to the sanctuary for offspring. When she had fallen asleep she saw a vision. It seemed to her that she asked the god that she might get pregnant with a daughter and that <a href=/people/114 target=_blank>Asclepius</a> said that she would be pregnant and that if she asked for something else he would grant her that too, but that she answered she did not need anything else. When she had become pregnant she carried in her womb for three years, until she approached the god as a suppliant concerning the birth. When she had fallen asleep she saw a vision. It seemed to her that the god asked her if she had not obtained all she had asked for and was pregnant; about the birth she had added nothing, and that, although he had asked if she needed anything else, she should say so and he would grant her this too. But since now she had come for this as a suppliant to him, he said he would accord even it to her. After that, she hastened to leave the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>, and when she was outside the sacred precincts she gave birth to a girl. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='http://epigraphy.packhum.org/text/28551:3'><b>&sect; 3</b>&nbsp;&nbsp;A man whose fingers, with the exception of one, were paralyzed, came as a suppliant to the god. While looking at the tablets in the sanctuary he expressed incredulity regarding the cures and scoffed at the inscriptions. But in his sleep he saw a vision. It seemed to him that, as he was playing at dice below the temple and was about to cast the dice, the god appeared, sprang upon his hand, and stretched out his [the patient’s] fingers. When the god had stepped aside it seemed to him [the patient] that he [the patient] bent his hand and stretched out all his fingers one by one. When he had straightened them all, the god asked him if he would still be incredulous of the inscriptions on the tablets in the sanctuary. He answered that he would not. Since, then, formerly you were incredulous of the cures, though they were not incredible, for the future, he said, your name shall be Incredulous. When day dawned he walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='http://epigraphy.packhum.org/text/28551:4'><b>&sect; 4</b>&nbsp;&nbsp;Ambrosia of <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athens</a>, blind of one eye. She came as a suppliant to the god. As she walked about in the sanctuary she laughed at some of the cures as incredible and impossible, that the lame and the blind should be healed by merely seeing a dream. In her sleep she had a vision. It seemed to her that the god stood by her and said that he would cure her, but that in payment he would ask her to dedicate to the sanctuary a silver pig as a memorial of her ignorance. After saying this, he cut the diseased eyeball and poured in some drug. When day came she walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='http://epigraphy.packhum.org/text/28551:5'><b>&sect; 5</b>&nbsp;&nbsp;A voiceless boy. He came as a suppliant to the sanctuary for his voice. When he had performed the preliminary sacrifices and fulfilled the usual rites, thereupon the temple servant who brings in the fire for the god, looking at the boy’s father, demanded he should promise to bring within a year the thank-offering for the cure if he obtained that for which he had come. But the boy suddenly said, I promise. His father was startled at this and asked him to repeat it. The boy repeated the words and after that became well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='http://epigraphy.packhum.org/text/28551:6'><b>&sect; 6</b>&nbsp;&nbsp;Pandarus, a <a about=https://topostext.org/place/394223RThs class=demonym long=22.3 lat=39.4>Thessalian</a>, who had marks on his forehead. He saw a vision as he slept. It seemed to him that the god bound the marks round with a headband and enjoined him to remove the band when he left the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> and dedicate it as an offering to the temple. When day came he got up and took off the band and saw his face free of the marks; and he dedicated in the temple the band with the letters that had been on his forehead. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='http://epigraphy.packhum.org/text/28551:7'><b>&sect; 7</b>&nbsp;&nbsp;Echedorus received the marks of Pandarus in addition to those which he already had. He had received money from Pandarus to offer to the god at <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Epidaurus</a> in his name, but he failed to deliver it. In his sleep he saw a vision. It seemed to him that the god stood by him and asked if he had received any money from Pandarus to set up as an offering in the sanctuary. He answered that he had received no such thing from him, but if he [the god] would make him well he would have an image painted and offer it to him [the god]. Thereupon the god seemed to fasten the headband of Pandarus round his marks, and ordered him upon leaving the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> to take off the band and to wash his face at the fountain and to look at himself in the water. When day came he left the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>, took off the headband, on which the letters were no longer visible. But when he looked into the water he saw his face with his own marks and the letters of Pandarus in addition. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='http://epigraphy.packhum.org/text/28551:8'><b>&sect; 8</b>&nbsp;&nbsp;Euphanes, a boy of <a about=https://topostext.org/place/376232PEpi class=person long=23.1602 lat=37.6335>Epidaurus</a>. Suffering from stone he slept in the sanctuary. It seemed to him that the god stood by him and asked: What will you give me if I cure you? Ten dice, he answered. The god laughed and said to him that he would cure him. When day came he walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='http://epigraphy.packhum.org/text/28551:9'><b>&sect; 9</b>&nbsp;&nbsp;A man came as a suppliant to the god. He was so blind that of one of his eyes he had only the eyelids left — within them was nothing, but they were entirely empty. Some of those in the sanctuary laughed at his silliness to think that he could recover his sight when one of his eyes had not even a trace of the ball, but only the socket. As he slept a vision appeared to him. It seemed to him that the god prepared some drug, then, opening his eyelids, poured it into them. When day came he departed with the sight of both eyes restored. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='http://epigraphy.packhum.org/text/28551:10'><b>&sect; 10</b>&nbsp;&nbsp;The goblet. A porter, upon going up to the sanctuary, fell when he was near the ten-stadia stone. When he had gotten up he opened his bag and looked at the broken vessels. When he saw that the goblet from which his master was accustomed to drink was also broken, he was in great distress and sat down to try to fit the pieces together again. But a passer-by saw him and said: Foolish fellow, why do you put the goblet together in vain? For this one not even <a href=/people/114 target=_blank>Asclepius</a> of <a about=https://topostext.org/place/376231SAsk class=person long=23.075 lat=37.597>Epidaurus</a> could put to rights again. The boy, hearing this, put the pieces back in the bag and went on to the sanctuary. When he got there he opened the bag and brought the goblet out of it, and it was entirely whole; and he related to his master what had happened and had been said; when he [the master] heard that, he dedicated the goblet to the god. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='http://epigraphy.packhum.org/text/28551:11'><b>&sect; 11</b>&nbsp;&nbsp;Aeschines, when the suppliants were already asleep, climbed up a tree and tried to see over into the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>. But he fell from the tree on to some fencing and his eyes were injured. In a pitiable state of blindness, he came as a suppliant to the god and slept in the sanctuary and was healed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='http://epigraphy.packhum.org/text/28551:12'><b>&sect; 12</b>&nbsp;&nbsp;Euhippus had had for six years the point of a spear in his jaw. As he was sleeping in the sanctuary the god extracted the spearhead and gave it to him into his hands. When day came Euhippus departed cured, and he held the spearhead in his hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='http://epigraphy.packhum.org/text/28551:13'><b>&sect; 13</b>&nbsp;&nbsp;A man of <a about=https://topostext.org/place/400239PTor class=person long=23.9013 lat=39.9764>Torone</a> with leeches. In his sleep he saw a dream. It seemed to him that the god cut open his chest with a knife and took out the leeches, which he gave him into his hands, and then he stitched up his chest again. At daybreak he departed with the leeches in his hands and he had become well. He had swallowed them, having been tricked by his stepmother who had thrown them into a potion which he drank. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='http://epigraphy.packhum.org/text/28551:14'><b>&sect; 14</b>&nbsp;&nbsp;A man with a stone in his membrum. He saw a dream. It seemed to him that he was lying with a fair boy and when he had a seminal discharge he ejected the stone and picked it up and walked out holding it in his hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='http://epigraphy.packhum.org/text/28551:15'><b>&sect; 15</b>&nbsp;&nbsp;Hermodicus of <a about=https://topostext.org/place/403267UPit class=person long=26.6992 lat=40.3467>Lampsacus</a> was paralyzed in body. This one, when he slept in the sanctuary, the god healed and he ordered him upon coming out to bring to the sanctuary as large a stone as he could. The man brought the stone which now lies before the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='http://epigraphy.packhum.org/text/28551:16'><b>&sect; 16</b>&nbsp;&nbsp;Nicanor, a lame man. While he was sitting wide-awake, a boy snatched his crutch from him and ran away. But Nicanor got up, pursued him, and so became well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='http://epigraphy.packhum.org/text/28551:17'><b>&sect; 17</b>&nbsp;&nbsp;A man had his toe healed by a serpent. He, suffering dreadfully from a malignant sore in his toe, during the daytime was taken outside by the servants of the sanctuary and set upon a seat. When sleep came upon him, then a snake issued from the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> and healed the toe with its tongue, and thereafter went back again to the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a>. When the patient woke up and was healed he said that he had seen a vision: it seemed to him that a youth with a beautiful appearance had put a drug upon his toe. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='http://epigraphy.packhum.org/text/28551:18'><b>&sect; 18</b>&nbsp;&nbsp;Alcetas of <a about=https://topostext.org/place/373231PHal class=person long=23.1491 lat=37.3132>Halieis</a>. This blind man saw a dream. It seemed to him that the god came up to him and with his fingers opened his eyes, and that he first saw the trees in the sanctuary. At daybreak he walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='http://epigraphy.packhum.org/text/28551:19'><b>&sect; 19</b>&nbsp;&nbsp;Heraieus of <a about=https://topostext.org/place/391265PMyt class=person long=26.5621 lat=39.1114>Mytilene</a>. He had no hair on his head, but an abundant growth on his chin. He was ashamed because he was laughed at by others. He slept in the sanctuary. The god, by anointing his head with some drug, made his hair grow thereon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='http://epigraphy.packhum.org/text/28551:20'><b>&sect; 20</b>&nbsp;&nbsp;Lyson of <a about=https://topostext.org/place/374232UHer class=person long=23.2535 lat=37.3834>Hermione</a>, a blind boy. While wide-awake he had his eyes cured by one of the dogs in the sanctuary and went away healed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28551 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='http://epigraphy.packhum.org/text/28551:21'><b>&sect; 21</b>&nbsp;&nbsp;[Stele II] Arata, a woman of <a about=https://topostext.org/place/371224PSpa class=person long=22.4237 lat=37.0821>Lacedaemon</a>, dropsical. For her, while she remained in <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedaemon</a>, her mother slept in the sanctuary and sees a dream. It seemed to her that the god cut off her daughter’s head and hung up her body in such a way that her throat was turned downwards. Out of it came a huge quantity of fluid matter. Then he took down the body and fitted the head back on to the neck. After she had seen this dream she went back to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedaemon</a>, where she found her daughter in good health; she had seen the same dream. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='http://epigraphy.packhum.org/text/28551:22'><b>&sect; 22</b>&nbsp;&nbsp;Hermon of <a about=https://topostext.org/place/408247PTha class=person long=24.7138 lat=40.7799>Thasos</a>. His blindness was cured by <a href=/people/114 target=_blank>Asclepius</a>. But, since afterwards he did not bring the thank-offerings, the god made him blind again. When he came back and slept again in the sanctuary, he made him well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='http://epigraphy.packhum.org/text/28551:23'><b>&sect; 23</b>&nbsp;&nbsp;Aristagora of <a about=https://topostext.org/place/375234PTro class=person long=23.3484 lat=37.5033>Troezen</a>. She had a tapeworm in her belly, and she slept in the sanctuary of <a href=/people/114 target=_blank>Asclepius</a> at <a about=https://topostext.org/place/375234PTro class=place long=23.3484 lat=37.5033>Troezen</a> and saw a dream. It seemed to her that the sons of the god, while he was not present but away in <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Epidaurus</a>, cut off her head, but, being unable to put it back again, they sent a messenger to <a href=/people/114 target=_blank>Asclepius</a> asking him to come. Meanwhile day breaks and the priest clearly sees her head cut off from the body. When night approached, Aristagora saw a vision. It seemed to her the god had come from <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Epidaurus</a> and fastened her head on to her neck. Then he cut open her belly, took the tapeworm out, and stitched her up again. And after that she became well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='http://epigraphy.packhum.org/text/28551:24'><b>&sect; 24</b>&nbsp;&nbsp;Aristocritus, a boy of <a about=https://topostext.org/place/373231PHal class=person long=23.1491 lat=37.3132>Halieis</a>, under a rock. He, after having dived and swum away into the sea, came then to a dry hiding place which was surrounded by rocks, and he could not find any way out. Thereafter his father, since he did not find him anywhere on his search, came to <a href=/people/114 target=_blank>Asclepius</a> and slept in the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> on behalf of his son and saw a dream. It seemed to him that the god led him to a certain place and showed him that there was his son. When he came out of the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> and quarried through the cliffs he found his son after seven days. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='http://epigraphy.packhum.org/text/28551:25'><b>&sect; 25</b>&nbsp;&nbsp;Sostrata, a woman of <a about=https://topostext.org/place/394228PPhe class=person long=22.7539 lat=39.379>Pherae</a>, was pregnant with worms. Being in a very bad way, she was carried into the sanctuary and slept there. But when she saw no distinct dream she let herself be carried back home. Then, however, near a place called Kornoi, a man of fine appearance seemed to come upon her and her companions. When he had learned from them about their bad luck, he asked them to set down on the ground the litter in which they were carrying Sostrata. Then he cut open her abdomen and took out a great quantity of worms—-two washbasins full. After having stitched her belly up again and made the woman well, <a href=/people/114 target=_blank>Asclepius</a> revealed to her his presence and enjoined her to send thank-offerings for her treatment to <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Epidaurus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='http://epigraphy.packhum.org/text/28551:26'><b>&sect; 26</b>&nbsp;&nbsp;A dog cured a boy from <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aegina</a>. He had a growth on the neck. When he had come to the god, one of the sacred dogs healed him—while he was awake—with its tongue and made him well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='http://epigraphy.packhum.org/text/28551:27'><b>&sect; 27</b>&nbsp;&nbsp;A man with an abscess within his abdomen. When asleep in the sanctuary he saw a dream. It seemed to him that the god ordered the servants who accompanied him to grip him and hold him tightly so that he could cut open his abdomen. The man tried to get away, but they gripped him and bound him to a door knocker. Thereupon <a href=/people/114 target=_blank>Asclepius</a> cut his belly open, removed the abscess, and, after having stitched him up again, released him from his bonds. Whereupon he walked out sound, but the floor of the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> was covered with blood. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='http://epigraphy.packhum.org/text/28551:28'><b>&sect; 28</b>&nbsp;&nbsp;Cleinatas of <a about=https://topostext.org/place/383233PThe class=person long=23.3178 lat=38.3191>Thebes</a> with lice. He came with a great number of lice on his body, slept in the sanctuary, and sees a vision. It seems to him that the god stripped him and made him stand upright, naked, and with a broom brushed the lice off his body. When day came he left the sanctuary well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='http://epigraphy.packhum.org/text/28551:29'><b>&sect; 29</b>&nbsp;&nbsp;Hagestratus with headaches. He suffered from insomnia on account of headaches. When he came to the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> he fell asleep and saw a dream. It seemed to him that the god cured him of his headaches and, making him stand up naked, taught him the lunge used in the pancratium. When day came he departed well, and not long afterwards he won in the pancratium at the <a about=https://topostext.org/place/378227SNem class=demonym long=22.7108 lat=37.8085>Nemean</a> games.4</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='http://epigraphy.packhum.org/text/28551:30'><b>&sect; 30</b>&nbsp;&nbsp;Gorgias of <a about=https://topostext.org/place/388224PHer class=place long=22.4313 lat=38.794>Heracleia</a> with pus. In a battle he had been wounded by an arrow in the lung and for a year and a half had suppurated so badly that he filled sixty-seven basins with pus. While sleeping in the sanctuary he saw a vision. It seemed to him the god extracted the arrow point from his lung. When day came he walked out well, holding the point of the arrow in his hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='http://epigraphy.packhum.org/text/28551:31'><b>&sect; 31</b>&nbsp;&nbsp;Andromache of <a about=https://topostext.org/place/395205REpe class=person long=20.5 lat=39.5>Epeirus</a>, for offspring. She slept in the sanctuary and saw a dream. It seemed to her that a handsome boy uncovered her, after that the god touched her with his hand, whereupon a son was born to Andromache from Arybbas. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='http://epigraphy.packhum.org/text/28551:32'><b>&sect; 32</b>&nbsp;&nbsp;Anticrates of <a about=https://topostext.org/place/367274PKni class=person long=27.374 lat=36.6862>Cnidos</a>, eyes. In a battle he had been hit by a spear in both eyes and had become blind; and the spear point he carried with him, sticking in his face. While sleeping he saw a vision. It seemed to him that the god pulled out the missile and then fitted into his eyelids again the so-called pupils. When day came he walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='http://epigraphy.packhum.org/text/28551:33'><b>&sect; 33</b>&nbsp;&nbsp;Thersandrus of <a about=https://topostext.org/place/373231PHal class=person long=23.1491 lat=37.3132>Halieis</a> with consumption. He, when in his sanctuary sleep he saw no vision, was carried back to <a about=https://topostext.org/place/373231PHal class=place long=23.1491 lat=37.3132>Halieis</a> on a wagon; one of the sacred serpents, however, was sitting on the wagon and remained for the greater part of the journey coiled around the axle. When they came to <a about=https://topostext.org/place/373231PHal class=place long=23.1491 lat=37.3132>Halieis</a> and Thersandrus was resting on his bed at home, the serpent descended from the wagon and cured Thersandrus. When the city of <a about=https://topostext.org/place/373231PHal class=person long=23.1491 lat=37.3132>Halieis</a> made an inquiry as to what had happened and was at a loss regarding the serpent, whether to return it to <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Epidaurus</a> or to leave it in their territory, the city resolved to send to <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> for an oracle as to what they should do. The god decided they should leave the serpent there and put up a sanctuary of <a href=/people/114 target=_blank>Asclepius</a>, make an image of him, and set it up in the sanctuary. When the oracle was announced the city of <a about=https://topostext.org/place/373231PHal class=place long=23.1491 lat=37.3132>Halieis</a> erected the sanctuary of <a href=/people/114 target=_blank>Asclepius</a> and followed the rest of the god’s commands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='http://epigraphy.packhum.org/text/28551:34'><b>&sect; 34</b>&nbsp;&nbsp;... of <a about=https://topostext.org/place/375234PTro class=person long=23.3484 lat=37.5033>Troezen</a> for offspring. She slept in the sanctuary and saw a dream. The god seemed to say to her she would have offspring and to ask whether she wanted a male or a female, and that she answered she wanted a male. Whereupon within a year a son was born to her. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='http://epigraphy.packhum.org/text/28551:35'><b>&sect; 35</b>&nbsp;&nbsp;... of <a about=https://topostext.org/place/376232PEpi class=person long=23.1602 lat=37.6335>Epidaurus</a>, lame. He came as a suppliant to the sanctuary on a stretcher. In his sleep he saw a vision. It seemed to him that the god broke his crutch and ordered him to go and get a ladder and to climb as high as possible up to the top of the temple. The man tried it at first, then, however, lost his courage and rested up on the cornice; finally he gave up and climbed down the ladder little by little. <a href=/people/114 target=_blank>Asclepius</a> at first was angry about the deed, then he laughed at him because he was such a coward. He dared to carry it out after it had become daytime and walked out unhurt. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='http://epigraphy.packhum.org/text/28551:36'><b>&sect; 36</b>&nbsp;&nbsp;Cephisias . . . with the foot. He laughed at the cures of <a href=/people/114 target=_blank>Asclepius</a> and said: If the god says he has healed lame people he is lying; for, if he had the power to do so, why has he not healed <a href=/people/84 target=_blank>Hephaestus</a>? But the god did not conceal that he was inflicting penalty for the insolence. For Cephisias, when riding, was stricken by his bullheaded horse which had been tickled in the seat, so that instantly his foot was crippled and on a stretcher he was carried into the sanctuary. Later on, after he had entreated him earnestly, the god made him well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='http://epigraphy.packhum.org/text/28551:37'><b>&sect; 37</b>&nbsp;&nbsp;Cleimenes of <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argos</a>, paralyzed in body. He came to the <a about=https://topostext.org/place/376231SAAb class=place long=23.074024 lat=37.598698>Abaton</a> and slept there and saw a vision. It seemed to him that the god wound a red woolen fillet around his body and led him for a bath a short distance away from the sanctuary to a lake of which the water was exceedingly cold. When he behaved in a cowardly way <a href=/people/114 target=_blank>Asclepius</a> said he would not heal those people who were too cowardly for that, but those who came to him into his sanctuary, full of hope that he would do no harm to such a man, but would send him away well. When he woke up he took a bath and walked out unhurt. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='http://epigraphy.packhum.org/text/28551:38'><b>&sect; 38</b>&nbsp;&nbsp;Diaetus of <a about=https://topostext.org/place/384225PKir class=person long=22.4455 lat=38.4296>Cirrha</a>. He happened to be paralyzed in his knees. While sleeping in the sanctuary he saw a dream. It seemed to him that the god ordered his servants to lift him up and to carry him outside the Adyton and to lay him down in front of the temple. After they had carried him outside, the god yoked his horses to a chariot and drove three times around him in a circle and trampled on him with his horses and he got control over his knees instantly. When day came he walked out sound. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='http://epigraphy.packhum.org/text/28551:39'><b>&sect; 39</b>&nbsp;&nbsp;Agameda of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a>. She slept in the sanctuary for offspring and saw a dream. It seemed to her in her sleep that a serpent lay on her belly. And thereupon five children were born to her. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='http://epigraphy.packhum.org/text/28551:40'><b>&sect; 40</b>&nbsp;&nbsp;Timon . . . wounded by a spear under his eye. While sleeping in the sanctuary he saw a dream. It seemed to him that the god rubbed down an herb and poured it into his eye. And he became well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='http://epigraphy.packhum.org/text/28551:41'><b>&sect; 41</b>&nbsp;&nbsp;Erasippe of <a about=https://topostext.org/place/378223UKap class=person long=22.2579 lat=37.7644>Caphyiae</a> with worms. She had her stomach swollen and was burning all over [ ?] and could not keep anything inside. While sleeping in the sanctuary she saw a dream. It seemed to her that the god massaged her stomach and kissed her and then gave her a vessel which contained a drug and ordered her to drink it and then ordered her to vomit; when she had vomited, her dress was full with it. When day came she saw that her whole dress was full with the evil matter which she had vomited, and thereupon she became well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='http://epigraphy.packhum.org/text/28551:42'><b>&sect; 42</b>&nbsp;&nbsp;Nicasibula of <a about=https://topostext.org/place/372219PMes class=person long=21.9195 lat=37.1779>Messene</a> for offspring slept in the sanctuary and saw a dream. It seemed to her that the god approached her with a snake which was creeping behind him; and with that snake she had intercourse. Within a year she had two sons. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='http://epigraphy.packhum.org/text/28551:43'><b>&sect; 43</b>&nbsp;&nbsp;... of <a about=https://topostext.org/place/404292UPru class=person long=29.1564 lat=40.4325>Cios</a> with gout. While awake he was walking towards a goose who bit his feet and by making him bleed made him well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href=http://epigraphy.packhum.org/text/28552 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='http://epigraphy.packhum.org/text/28551:44'><b>&sect; 44</b>&nbsp;&nbsp;(IG IV²,1 126) In the priesthood of Poplius Aelius Antiochus, I, Marcus Julius Apellas, an <a about=https://topostext.org/place/373281UChr class=person long=28.0967 lat=37.3424>Idrian</a> from <a about=https://topostext.org/place/373278PMyl class=place long=27.781 lat=37.315>Mylasa</a>, was sent for by the god, for I was often falling into sickness and was suffering from dyspepsia. In the course of my journey, in <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aegina</a>, the god told me not to be so irritable. When I arrived at the sanctuary, he told me for two days to keep my head covered, and for these two days it rained; to eat cheese and bread, celery with lettuce, to wash myself without help, to practise running, to take lemonpeels, to soak them in water, near the (spot of the) akoai in the bath to press against the wall, to take a walk in the upper portico, to take some passive exercise, to sprinkle myself with sand, to walk around barefoot, in the bathroom, before plunging into the hot water, to pour wine over myself, to bathe without help and to give an <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> drachma to the bath attendant, to sacrifice in common to <a href=/people/114 target=_blank>Asclepius</a>, Epione and the <a about=https://topostext.org/place/380235SEle class=demonym long=23.538 lat=38.0411>Eleusinian</a> goddesses, to take milk with honey. When one day I had drunk milk alone he said, Put honey in the milk so that it can get through. When I asked of the god to relieve me more quickly I thought I walked out of the abaton near the (spot of the) akoai being anointed all over with mustard and salt, while a small boy was leading me holding a smoking censer, and the priest said: You are cured but you must pay up the thank-offerings. And I did what I had seen, and when I anointed myself with the salts and the moistened mustard I felt pains, but when I bathed I had no pain. That happened within nine days after I had come. He touched my right hand and also my breast. The following day as I was offering sacrifice the flame leapt up and scorched my hand, so that blisters appeared. Yet after a little the hand got well. As I stayed on he said I should use dill along with olive oil against my headaches. I usually did not suffer from headaches. But it happened that after I had studied, my head was congested. After I used the olive oil I got rid of the headache. To gargle with a cold gargle for the uvula — since about that too I had consulted the god — and the same also for the tonsils. He bade me also inscribe this. Full of gratitude I departed well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 120 <a href=http://epigraphy.packhum.org/text/28557 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.1>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.1'><b>&sect; 128.1</b>&nbsp;&nbsp;ISYLLUS: PAEAN TO ASCLEPIUS (IG IV2,1 128) <br />Isyllus the <a about=https://topostext.org/place/376232PEpi class=person long=23.1602 lat=37.6335>Epidaurian</a>, the son of Socrates, dedicated this to Apollo Maleatas and to <a href=/people/114 target=_blank>Asclepius</a>. <br />If the city properly educates men for aristocracy, it becomes itself mightier, for it is raised up by manly virtue. But if one who is properly educated sets his course back, falling again into baseness, then the city will be safer in chastising him. This opinion I held before and I pronounced it and I pronounce it now. I vowed to inscribe it in stone if our law which I introduced would confirm that opinion. This came about not without the help of the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.10>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.10'><b>&sect; 128.10</b>&nbsp;&nbsp;This law, sacred by divine Fate, Isyllus composed, an imperishable, everlasting gift to the immortal gods; and all the people, lifting their hands to the wide heaven, to the blessed gods, set it up as a binding rule of our fatherland: to select and to summon by tribes whichever men may be best in this city of <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a>, those who have in their hearts virtue and reverence that safeguard the city; to summon them and to have them lead a procession to lord Phoebus and to his son <a href=/people/114 target=_blank>Asclepius</a>, the physician, dressed in white raiment and with flowing hair; to lead a solemn <a about=https://topostext.org/place/376231SApo class=place long=23.086 lat=37.599>procession</a> to Apollo bearing garlands of laurel 20 and then to the <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>Asklepeion</a> bearing branches of tender olive shoots; to pray them to grant forever to all citizens and to their children fair health and to grant that the noble character of the men of <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a> always prevail, together with good order and peace and blameless wealth from season to season so long as they reverence this law. So may Zeus the far-seeing spare us. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.27>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.27'><b>&sect; 128.27</b>&nbsp;&nbsp;<a href=/people/5761 target=_blank>Malus</a> first built the altar of Apollo Maleatas and made the <a about=https://topostext.org/place/376231SApo class=place long=23.086 lat=37.599>precinct</a> splendid with sacrifices. Not even in Thessalian <a about=https://topostext.org/place/396218PTri class=place long=21.7647 lat=39.5564>Tricca</a> would you attempt [30] to go down into the adyton of <a href=/people/114 target=_blank>Asclepius</a> unless you first sacrifice on the holy altar of Apollo Maleatas. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.32>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.32'><b>&sect; 128.32</b>&nbsp;&nbsp;Isyllus bade Astylaïdas consult the oracle in <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> for him concerning the paean which he composed in honour of Apollo and <a href=/people/114 target=_blank>Asclepius</a>, whether it would be better for him to inscribe the paean on stone. The oracle replied: It would be better for him to inscribe it on stone both for the present time and for days to come. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.37>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.37'><b>&sect; 128.37</b>&nbsp;&nbsp;O people, praise the god to whom Hail, Paean is sung, you who dwell in this sacred <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a>. For thus the message came to the ears of our forefathers, O Phoebus Apollo. 40 Zeus the Father is said to have given the Muse <a href=/people/1527 target=_blank>Erato</a> to <a href=/people/5761 target=_blank>Malus</a> as his bride in holy wedlock. Then Phlegyas, who dealt in <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a>, his fatherland, married the daughter of Malus whom <a href=/people/1527 target=_blank>Erato</a>, her mother, bore, and her name was Cleophema. By Phlegyas then a child was begotten, and she was named Aegle; this was her name, but because of her beauty she was also called <a href=/people/1380 target=_blank>Coronis</a>. Then Phoebus of the golden bow, beholding her in the house of <a href=/people/5761 target=_blank>Malus</a>, ended her maidenhood. You went into her lovely bed, O golden-haired son of Leto. I revere you. Then in the perfumed <a about=https://topostext.org/place/376231SAsk class=place long=23.075 lat=37.597>temenos</a> Aegle bore a child, and the son of Zeus, 50 together with the Fates and Lachesis, the noble midwife, eased her birth pains. Apollo named him <a href=/people/114 target=_blank>Asclepius</a> from his mother’s name, Aegle the reliever of illness, the granter of health, great boon to mankind. Hail Paean, hail Paean. Asclepius, increase your maternal city of <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a>, send bright health to our hearts and bodies, hail Paean, hail Paean </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.57>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.57'><b>&sect; 128.57</b>&nbsp;&nbsp;And of your aretē, <a href=/people/114 target=_blank>Asclepius</a>, you gave this example in the days when Philip, wishing to destroy the royal authority, led his army against <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. 60 To them from <a about=https://topostext.org/place/376232PEpi class=place long=23.1602 lat=37.6335>Epidaurus</a> Asclepius came as a helper, honouring the race of Heracles, which consequently Zeus spared. He came at the time when the sick boy came from Bosporus. Shining in your golden armour, Asclepius, you met him as he approached; and when the boy beheld you, he drew near to you, stretching forth his hand and entreated you in suppliant words: I have no share in your gifts, Asclepius Paean; have pity on me. Then you addressed these words to me clearly : Take heart, for I shall come to you in due time - just wait here - after I have rescued the Lacedaemonians from grievous doom 70 because they justly guard the precepts of Apollo which Lycurgus ordained for the city, after he had consulted the oracle. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=128.72>
+                            <p id='http://epigraphy.packhum.org/text/28551:128.72'><b>&sect; 128.72</b>&nbsp;&nbsp;And so he went to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>. But my thoughts stirred me to announce the divinity's advent to the Lacedaemonians, everything in exact order. They listened to me as I spoke the message of safety, <a href=/people/114 target=_blank>Asclepius</a>, and you saved them. And they called upon all to welcome you with honours due a guest, proclaiming you the Saviour of spacious Lacedaemon. These words, O far the best of all the gods, Isyllus set up for you, honouring your aretē, O Lord, as is just. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -280 <a href=http://epigraphy.packhum.org/text/28559 target=_blank>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=648', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas648";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=648';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

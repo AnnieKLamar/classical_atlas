@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Plutarch, Life of Gaius Gracchus' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Life of Gaius Gracchus, Plutarch's Lives, translated by Bernadotte Perrin (1847-1920), from the Loeb Classical Library edition of 1914, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='110' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 110' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/196' content='urn:cts:greekLit:tlg0007.tlg052b' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79026763' content='Plutarch'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n86857201' content='Bernadotte Perrin (1847-1920)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/home.html' /><h2>Plutarch, Life of Gaius Gracchus</h2>Life of Gaius Gracchus, Plutarch's Lives, translated by Bernadotte Perrin (1847-1920), from the Loeb Classical Library edition of 1914, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 62 tagged references to 23 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0007.tlg052b'>urn:cts:greekLit:tlg0007.tlg052b</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87211094'>Q87211094</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=CGr.1.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.1'><b>&sect; CGr.1.1</b>&nbsp;&nbsp;The Life of Caius <a href=/people/177 target=_blank>Gracchus</a><br />Caius <a href=/people/177 target=_blank>Gracchus</a>, at first, either because he feared his enemies, or because he wished to bring odium upon them, withdrew from the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> and lived quietly by himself, like one who was humbled for the present and for the future intended to live the same inactive life, so that some were actually led to denounce him for disliking and repudiating his brother's political measures. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.1.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.2'><b>&sect; CGr.1.2</b>&nbsp;&nbsp;And he was also quite a stripling, for he was nine years younger than his brother, and <a href=/people/70 target=_blank>Tiberius</a> was not yet thirty when he died. But as time went on he gradually showed a disposition that was averse to idleness, effeminacy, wine-bibbing, and money-making; and by preparing his oratory to waft him as on swift pinions to public life, he made it clear that he was not going to remain quiet; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.1.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.3'><b>&sect; CGr.1.3</b>&nbsp;&nbsp;and in defending <a href=/people/1359 target=_blank>Vettius</a>, a friend of his who was under prosecution, he had the people about him inspired and frantic with sympathetic delight, and made the other orators appear to be no better than children. Once more, therefore, the nobles began to be alarmed, and there was much talk among them about not permitting Caius to be made tribune. <br /></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.1.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.4'><b>&sect; CGr.1.4</b>&nbsp;&nbsp;By accident, however, it happened that the lot fell on him to go to <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> as quaestor for <a href=/people/9945 target=_blank>Orestes</a> the consul. This gave pleasure to his enemies, and did not annoy Caius. For he was fond of war, and quite as well trained for military service as for pleading in the courts. Moreover, he still shrank from public life and the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a>, but was unable to resist the calls to this career which came from the people and his friends. He was therefore altogether satisfied with this opportunity of leaving the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.1.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.5'><b>&sect; CGr.1.5</b>&nbsp;&nbsp;And yet a strong opinion prevails that he was a demagogue pure and simple, and far more eager than <a href=/people/70 target=_blank>Tiberius</a> to win the favour of the multitude. But this is not the truth; nay, it would appear that he was led by a certain necessity rather than by his own choice to engage in public matters. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.1.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.1.6'><b>&sect; CGr.1.6</b>&nbsp;&nbsp;And <a href=/people/2300 target=_blank>Cicero</a> the orator also relates that Caius declined all office and had chosen to live a quiet life, but that his brother appeared to him in a dream and addressed him, saying: Why, pray, dost thou hesitate, Caius? There is no escape; one life is fated for us both, and one death as champions of the people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.1.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.2.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.2.1'><b>&sect; CGr.2.1</b>&nbsp;&nbsp;After reaching <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a>, then, Caius gave proof of every excellence, and far surpassed all the other young men in conflicts with the enemy, in just dealing with the subject peoples, and in the good will and respect which he showed towards his commander, while in self-restraint, frugality, and industry, he excelled even his elders. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.2.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.2.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.2.2'><b>&sect; CGr.2.2</b>&nbsp;&nbsp;The winter in <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> proved to be rigorous and unhealthy, and the Roman commander made a requisition upon the cities of clothing for his soldiers, whereupon the cities sent to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and begged to be relieved from the exaction. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.2.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.2.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.2.3'><b>&sect; CGr.2.3</b>&nbsp;&nbsp;The senate granted their petition and ordered the commander to get clothing for his soldiers in some other way. The commander was at a loss what to do, and the soldiers were suffering; so Caius made a circuit of the cities and induced them of their own free will to send clothing and other assistance owing to the Romans. This was reported to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, where it was thought to be a prelude to a struggle for popular favour, and gave fresh concern to the senate. So, to begin with, when ambassadors of King <a href=/people/3893 target=_blank>Micipsa</a> came from Africa, and announced that out of regard for Caius <a href=/people/177 target=_blank>Gracchus</a> the king had sent grain to the Roman commander in <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a>, the senators were displeased and turned them away. In the second place, they passed a decree that fresh troops should be sent to relieve the soldiers in <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a>, but that <a href=/people/9945 target=_blank>Orestes</a> should remain, with the idea that Caius also would remain with him by virtue of his office. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.2.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.2.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.2.4'><b>&sect; CGr.2.4</b>&nbsp;&nbsp;But Caius, when this came to his ears, straightaway sailed off in a passion, and his unexpected appearance in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> not only was censured by his enemies, but also made the people think it strange that he, quaestor as he was, had left his post before his commander. However, when he was denounced before the censors, he begged leave to speak, and wrought such a change in the opinions of his hearers that he left the court with the reputation of having been most grossly wronged. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.2.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.2.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.2.5'><b>&sect; CGr.2.5</b>&nbsp;&nbsp;For he said that he had served in the army twelve years, although other men were required to serve there only ten, and that he had continued to serve as quaestor under his commander for more than two years, although the law permitted him to come back after a year. He was the only man in the army, he said, who had entered the campaign with a full purse and left it with an empty one; the rest had drunk up the wine which they took into <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a>, and had come back to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> with their wine-jars full of gold and silver. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.2.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.3.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.3.1'><b>&sect; CGr.3.1</b>&nbsp;&nbsp;After this, other fresh charges and indictments were brought against him, on the ground that he had caused the allies to revolt and had been privy to the conspiracy at <a about=https://topostext.org/place/415135UFre class=place long=13.5394 lat=41.5369>Fregellae</a>, information of which was brought to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. But he cleared himself of all suspicion, and having established his entire innocence, immediately began a canvass for the tribuneship. All the men of note, without exception, were opposed to him, but so great a throng poured into the city from the country and took part in the elections that many could not be housed, and since the <a about=https://topostext.org/place/419125SCMa class=place long=12.481 lat=41.905>Campus Martius</a> could not accommodate the multitude, they gave in their voices from the house-tops and tilings. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.3.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.3.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.3.2'><b>&sect; CGr.3.2</b>&nbsp;&nbsp;So far, however, did the nobility prevail against the people and disappoint the hopes of Caius that he was not returned first, as he expected, but fourth. But after entering upon his office he was at once first of all the tribunes, since he had an incomparable power in oratory, and his affliction gave him great boldness of speech in bewailing the fate of his brother. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.3.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.3.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.3.3'><b>&sect; CGr.3.3</b>&nbsp;&nbsp;For to this subject he would bring the people round on every pretext, reminding them of what had happened in the case of <a href=/people/70 target=_blank>Tiberius</a>, and contrasting the conduct of their ancestors, who went to war with the people of <a about=https://topostext.org/place/423124UFal class=place long=12.4146 lat=42.2911>Falerii</a> on behalf of <a href=/people/3605 target=_blank>Genucius</a>, a tribune whom they had insulted, and condemned Caius <a href=/people/1519 target=_blank>Veturius</a> to death because he was the only man who would not make way for a tribune passing through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>. But before your eyes, he said, these men beat <a href=/people/70 target=_blank>Tiberius</a> to death with clubs, and his dead body was dragged from the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> through the midst of the city to be thrown into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.3.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.3.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.3.4'><b>&sect; CGr.3.4</b>&nbsp;&nbsp;moreover, those of his friends who were caught were put to death without trial. And yet it is ancient usage among us that if anyone who is arraigned on a capital charge does not answer to his summons, a trumpeter shall go to the door of this man's house in the morning and summon him forth by sound of trumpet, and until this has been done the judges shall not vote on his case. So careful and guarded were the men of old in capital cases. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.3.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.4.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.4.1'><b>&sect; CGr.4.1</b>&nbsp;&nbsp;Having first stirred up the people with such words as these (and he had a very loud voice, and was most vigorous in his speaking), he introduced two laws, one providing that if the people had deprived any magistrate of his office, such magistrate should not be allowed to hold office a second time; and another providing that if any magistrate had banished a citizen without trial, such magistrate should be liable to public prosecution. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.4.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.4.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.4.2'><b>&sect; CGr.4.2</b>&nbsp;&nbsp;Of these laws, one had the direct effect of branding with infamy Marcus <a href=/people/8 target=_blank>Octavius</a>, who had been deposed from the tribunate by <a href=/people/70 target=_blank>Tiberius</a>; and by the other <a href=/people/2921 target=_blank>Popillius</a> was affected, for as praetor he had banished the friends of <a href=/people/70 target=_blank>Tiberius</a>. <a href=/people/2921 target=_blank>Popillius</a>, indeed, without standing his trial, fled out of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>; but the other law was withdrawn by Caius himself, who said that he spared <a href=/people/8 target=_blank>Octavius</a> at the request of his mother <a href=/people/858 target=_blank>Cornelia</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.4.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.4.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.4.3'><b>&sect; CGr.4.3</b>&nbsp;&nbsp;The people were pleased at this and gave their consent, honouring <a href=/people/858 target=_blank>Cornelia</a> no less on account of her sons than because of her father; indeed, in after times they erected a bronze statue of her, bearing the inscription: <a href=/people/858 target=_blank>Cornelia</a>, Mother of the <a href=/people/1832 target=_blank>Gracchi</a>. There are on record also many things which Caius said about her in the coarse style of forensic speech, when he was attacking one of his enemies: What, said he, dost thou abuse <a href=/people/858 target=_blank>Cornelia</a>, who gave birth to <a href=/people/70 target=_blank>Tiberius</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.4.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.4.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.4.4'><b>&sect; CGr.4.4</b>&nbsp;&nbsp;And since the one who had uttered the abuse was charged with effeminate practices, With what effrontery, said Caius, canst thou compare thyself with <a href=/people/858 target=_blank>Cornelia</a>? Hast thou borne such children as she did? And verily all <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> knows that she refrained from commerce with men longer than thou hast, though thou art a man. Such was the bitterness of his language, and many similar examples can be taken from his writings. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.4.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.5.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.5.1'><b>&sect; CGr.5.1</b>&nbsp;&nbsp;Of the laws which he proposed by way of gratifying the people and overthrowing the senate, one was agrarian, and divided the public land among the poor citizens; another was military, and ordained that clothing should be furnished to the soldiers at the public cost, that nothing should be deducted from their pay to meet this charge, and that no one under seventeen should be enrolled as a soldier; another concerned the allies, and gave the <a about=https://topostext.org/place/406163RIta class=ethnic long=16.3 lat=40.6>Italians</a> equal suffrage rights with Roman citizens; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.5.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.5.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.5.2'><b>&sect; CGr.5.2</b>&nbsp;&nbsp;another related to the supplies of grain, and lowered the market price to the poor; and another dealt with the appointment of judges. This last law most of all curtailed the power of the senators; for they alone could serve as judges in criminal cases, and this privilege made them formidable both to the common people and to the equestrian order. The law of <a href=/people/177 target=_blank>Gracchus</a>, however, added to the membership of the senate, which was three hundred, three hundred men from the equestrian order, and made service as judges a prerogative of the whole six hundred. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.5.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.5.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.5.3'><b>&sect; CGr.5.3</b>&nbsp;&nbsp;In his efforts to carry this law Caius is said to have shown remarkable earnestness in many ways, and especially in this, that whereas all popular orators before him had turned their faces towards the senate and that part of the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> called the comitium, he now set a new example by turning towards the other part of the forum as he harangued the people, and continued to do this from that time on, thus by a slight deviation and change of attitude stirring up a great question, and to a certain extent changing the constitution from an aristocratic to a democratic form; for his implication was that speakers ought to address themselves to the people, and not to the senate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.5.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.6.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.6.1'><b>&sect; CGr.6.1</b>&nbsp;&nbsp;The people not only adopted this law, but also entrusted to its author the selection of the judges who were to come from the equestrian order, so that he found himself invested with something like monarchical power, and even the senate consented to follow his counsel. But when he counselled them, it was always in support of measures befitting their body; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.6.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.6.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.6.2'><b>&sect; CGr.6.2</b>&nbsp;&nbsp;as, for instance, the very equitable and honourable decree concerning the grain which <a href=/people/101 target=_blank>Fabius</a> the pro-praetor sent to the city from Spain. Caius induced the Senate to sell the grain and send the money back to the cities of Spain, and further, to censure <a href=/people/101 target=_blank>Fabius</a> for making his government of the province intolerably burdensome to its inhabitants. This decree brought Caius great reputation as well as popularity in the provinces. <br /></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.6.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.6.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.6.3'><b>&sect; CGr.6.3</b>&nbsp;&nbsp;He also introduced bills for sending out colonies, for constructing roads, and for establishing public granaries, making himself director and manager of all these undertakings, and showing no weariness in the execution of all these different and great enterprises; nay, he actually carried out each one of them with an astonishing speed and power of application, as if it were his sole business, so that even those who greatly hated and feared him were struck with amazement at the powers of achievement and accomplishment which marked all that he did. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.6.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.6.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.6.4'><b>&sect; CGr.6.4</b>&nbsp;&nbsp;And as for the multitude, they were astonished at the very sight, when they beheld him closely attended by a throng of contractors, artificers, ambassadors, magistrates, soldiers, and literary men, with all of whom he was on easy terms, preserving his dignity while showing kindliness, and rendering properly to every man the courtesy which was due from him, whereby he set in the light of malignant slanderers those who stigmatised him as threatening or utterly arrogant or violent. Thus he was a more skilful popular leader in his private intercourse with men and in his business transactions than in his speeches from the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.6.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.7.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.7.1'><b>&sect; CGr.7.1</b>&nbsp;&nbsp;But he busied himself most earnestly with the construction of roads, laying stress upon utility, as well as upon that which conduced to grace and beauty. For his roads were carried straight through the country without deviation, and had pavements of quarried stone, and substructures of tight-rammed masses of sand. Depressions were filled up, all intersecting torrents or ravines were bridged over, and both sides of the roads were of equal and corresponding height, so that the work had everywhere an even and beautiful appearance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.7.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.7.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.7.2'><b>&sect; CGr.7.2</b>&nbsp;&nbsp;In addition to all this, he measured off every road by miles (the Roman mile falls a little short of eight furlongs) and planted stone pillars in the ground to mark the distances. Other stones, too, he placed at smaller intervals from one another on both sides of the road, in order that equestrians might be able to mount their <a href=/people/10959 target=_blank>horses</a> from them and have no need of assistance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.7.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.8.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.8.1'><b>&sect; CGr.8.1</b>&nbsp;&nbsp;Since the people extolled him for all these services and were ready to show him any token whatsoever of their good will, he said to them once in a public harangue that he was going to ask a favour of them, which, if granted, he should value supremely, but if it were refused, he should find no fault with them. This utterance was thought to be a request for a consulship, and led everybody to expect that he would sue for a consulship and a tribuneship at the same time. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.8.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.8.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.8.2'><b>&sect; CGr.8.2</b>&nbsp;&nbsp;But when the consular elections were at hand and everybody was on the tip-toe of expectation, he was seen leading Caius <a href=/people/1133 target=_blank>Fannius</a> down into the <a about=https://topostext.org/place/419125SCMa class=place long=12.481 lat=41.905>Campus Martius</a> and joining in the canvass for him along with his friends. This turned the tide strongly in favour of <a href=/people/1133 target=_blank>Fannius</a>. So <a href=/people/1133 target=_blank>Fannius</a> was elected consul, and Caius tribune for the second time, though he was not a candidate and did not canvass for the office; but the people were eager to have it so. <br />However, he soon saw that the senate was hostile to him out and out, and that the good will of <a href=/people/1133 target=_blank>Fannius</a> towards him had lost his edge, and therefore again began to attach the multitude to himself by other laws, proposing to send colonies to <a about=https://topostext.org/place/405172PTar class=place long=17.228 lat=40.476>Tarentum</a> and <a about=https://topostext.org/place/411143PCap class=place long=14.25 lat=41.086>Capua</a>, and inviting the <a about=https://topostext.org/place/417129RLat class=ethnic long=12.9 lat=41.7>Latins</a> to a participation in the Roman franchise. But the senate, fearing that <a href=/people/177 target=_blank>Gracchus</a> would become altogether invincible, made a new and unusual attempt to divert the people from him; they vied with him, that is, in courting the favour of the people, and granted their wishes contrary to the best wishes of the state. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.8.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.8.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.8.4'><b>&sect; CGr.8.4</b>&nbsp;&nbsp;For one of the colleagues of Caius was <a href=/people/330 target=_blank>Livius</a> <a href=/people/267 target=_blank>Drusus</a>, a man who was not inferior to any Roman either in birth or rearing, while in character, eloquence, and wealth he could vie with those who were most honoured and influential in consequence of these advantages. To this man, accordingly, the nobles had recourse, and invited him to attack Caius and league himself with them against him, not resorting to violence or coming into collision with the people, but administering his office to please them and making them concessions where it would have been honourable to incur their hatred. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.8.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.9.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.9.1'><b>&sect; CGr.9.1</b>&nbsp;&nbsp;<a href=/people/330 target=_blank>Livius</a>, accordingly, put his influence as tribune at the service of the senate to this end, and drew up laws which aimed at what was neither honourable nor advantageous; nay, he had the emulous eagerness of the rival demagogues of comedy to achieve one thing, namely, to surpass Caius in pleasing and gratifying the people. In this way the senate showed most plainly that it was not displeased with the public measures of Caius, but rather was desirous by all means to humble or destroy the man himself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.9.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.9.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.9.2'><b>&sect; CGr.9.2</b>&nbsp;&nbsp;For when Caius proposed to found two colonies, and these composed of the most respectable citizens, they accused him of truckling to the people; but when <a href=/people/330 target=_blank>Livius</a> proposed to found twelve, and to send out to each of them three thousand of the needy citizens, they supported him. With Caius, because he distributed public land among the poor for which every man of them was required to pay a rental into the public treasury, they were angry, alleging that he was seeking thereby to win favour with the multitude; but <a href=/people/330 target=_blank>Livius</a> met with their approval when he proposed to relieve the tenants even from this rental. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.9.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.9.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.9.3'><b>&sect; CGr.9.3</b>&nbsp;&nbsp;And further, when Caius proposed to bestow upon the <a about=https://topostext.org/place/417129RLat class=ethnic long=12.9 lat=41.7>Latins</a> equal rights of suffrage, he gave offence; but when <a href=/people/330 target=_blank>Livius</a> brought in a bill forbidding that any <a about=https://topostext.org/place/417129RLat class=demonym long=12.9 lat=41.7>Latin</a> should be chastised with rods even during military service, he had the senate's support. And indeed <a href=/people/330 target=_blank>Livius</a> himself, in his public harangues, always said that he introduced these measures on the authority of the senate, which desired to help the common people; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.9.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.9.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.9.4'><b>&sect; CGr.9.4</b>&nbsp;&nbsp;and this in fact was the only advantage which resulted from his political measures. For the people became more amicably disposed towards the senate; and whereas before this they had suspected and hated the nobles, <a href=/people/330 target=_blank>Livius</a> softened and dissipated their remembrance of past grievances and their bitter feelings by alleging that it was the sanction of the nobles which had induced him to enter upon his course of conciliating the people and gratifying the wishes of the many. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.9.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.10.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.10.1'><b>&sect; CGr.10.1</b>&nbsp;&nbsp;But the strongest proof that <a href=/people/330 target=_blank>Livius</a> was well disposed towards the people and honest, lay in the fact that he never appeared to propose anything for himself or in his own interests. For he moved to send out other men as managers of his colonies, and would have no hand in the expenditure of moneys, whereas Caius had assigned to himself most of such functions and the most important of them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.10.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.10.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.10.2'><b>&sect; CGr.10.2</b>&nbsp;&nbsp;And now <a href=/people/1903 target=_blank>Rubrius</a>, one of his colleagues in the tribuneship, brought in a bill for the founding of a colony on the site of <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>, which had been destroyed by <a href=/people/22 target=_blank>Scipio</a>, and Caius, upon whom the lot fell, sailed off to Africa as superintendent of the foundation. In his absence, therefore, <a href=/people/330 target=_blank>Livius</a> made all the more headway against him, stealing into the good <a href=/people/5553 target=_blank>Graces</a> of the people and attaching them to himself, particularly by his calumniations of <a href=/people/152 target=_blank>Fulvius</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.10.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.10.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.10.3'><b>&sect; CGr.10.3</b>&nbsp;&nbsp;This <a href=/people/152 target=_blank>Fulvius</a> was a friend of Caius, and had been chosen a commissioner with him for the distribution of the public land; but he was a turbulent fellow, and was hated outright by the senators. Other men also suspected him of stirring up trouble with the allies and of secretly inciting the <a about=https://topostext.org/place/406163RIta class=ethnic long=16.3 lat=40.6>Italians</a> to revolt. These things were said against him without proof or investigation, but <a href=/people/152 target=_blank>Fulvius</a> himself brought them into greater credence by a policy which was unsound and revolutionary. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.10.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.10.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.10.4'><b>&sect; CGr.10.4</b>&nbsp;&nbsp;This more than anything else was the undoing of Caius, who came in for a share of the hatred against <a href=/people/152 target=_blank>Fulvius</a>. And when <a href=/people/22 target=_blank>Scipio Africanus</a> died without apparent cause, and certain marks of violence and blows were to be in evidence all over his dead body, as I have written in his Life, most of the consequent calumny fell upon <a href=/people/152 target=_blank>Fulvius</a>, who was <a href=/people/22 target=_blank>Scipio</a>'s enemy, and had abused him that day from the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a>, but suspicion also attached itself to Caius. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.10.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.10.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.10.5'><b>&sect; CGr.10.5</b>&nbsp;&nbsp;And a deed so monstrous, and perpetrated upon a man who was the foremost and greatest Roman, went unpunished, nay, was not even so much as probed; for the multitude were opposed to any judicial enquiry and thwarted it, because they feared that Caius might be implicated in the charge if the murder were investigated. However, this had happened at an earlier time. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.10.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.11.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.11.1'><b>&sect; CGr.11.1</b>&nbsp;&nbsp;In Africa, moreover, in connection with the planting of a colony on the site of <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>, to which colony Caius gave the name <a href=/people/6575 target=_blank>Junonia</a> (that is to say, in Greek, <a about=https://topostext.org/place/376219PHer class=place long=21.8585 lat=37.6118>Heraea</a>), there are said to have been many prohibitory signs from the gods. For the leading standard was caught by a gust of wind, and though the bearer clung to it with all his might, it was broken into pieces; the sacrificial victims lying on the altars were scattered by a hurricane and dispersed beyond the boundary-marks in the plan of the city, and the boundary-marks themselves were set upon by <a href=/people/10952 target=_blank>wolves</a>, who tore them up and carried them a long way off. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.11.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.11.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.11.2'><b>&sect; CGr.11.2</b>&nbsp;&nbsp;Notwithstanding this, Caius settled and arranged everything in seventy days all told, and then returned to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, because he learned that <a href=/people/152 target=_blank>Fulvius</a> was being hard pressed by <a href=/people/267 target=_blank>Drusus</a>, and because matters there required his presence. For Lucius <a href=/people/1513 target=_blank>Opimius</a>, a man of oligarchical principles and influential in the senate, who had previously failed in a candidacy for the consulship (when Caius had brought forward <a href=/people/1133 target=_blank>Fannius</a> and supported his canvass for the office), </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.11.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.11.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.11.3'><b>&sect; CGr.11.3</b>&nbsp;&nbsp;now had the aid and assistance of many, and it was expected that he would be consul, and that as consul he would try to pursue down Caius, whose influence was already somewhat on the wane, and with whose peculiar measures the people had become sated, because the leaders who courted their favour were many and the senate readily yielded to them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.11.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.12.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.12.1'><b>&sect; CGr.12.1</b>&nbsp;&nbsp;On returning to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, in the first place Caius changed his residence from the <a about=https://topostext.org/place/419125LPal class=place long=12.4884 lat=41.8896>Palatine</a> hill to the region adjoining the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, which he thought more democratic, since most of the poor and lowly had come to live there; in the next place, he promulgated the rest of his laws, intending to get the people's vote upon them. But when a throng came together from all parts of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> for his support, the senate prevailed upon the consul <a href=/people/1133 target=_blank>Fannius</a> to drive out of the city all who were not Romans. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.12.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.12.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.12.2'><b>&sect; CGr.12.2</b>&nbsp;&nbsp;Accordingly, a strange and unusual proclamation was made, to the effect that none of the allies and friends of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> should appear in the city during those day; whereupon Caius published a counter edict in which he denounced the consul, and promised the allies his support, in case they should remain there. He did not, however, give them his support, but when he saw one of his comrades and guest-friends dragged off by the lictors of <a href=/people/1133 target=_blank>Fannius</a>, he passed by without giving him any help, either because he feared to give a proof that his power was already on the decline, or because he was unwilling, as he said, by his own acts to afford his enemies the occasions which they sought for a conflict at close quarters. <br /></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.12.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.12.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.12.3'><b>&sect; CGr.12.3</b>&nbsp;&nbsp;Moreover, it chanced that he had incurred the anger of his colleagues in office, and for the following reason. The people were going to enjoy an exhibition of gladiators in the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, and most of the magistrates had constructed seats for the show round about, and were offering them for hire. Caius ordered them to take down these seats, in order that the poor might be able to enjoy the spectacle from those places without paying hire. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.12.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.12.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.12.4'><b>&sect; CGr.12.4</b>&nbsp;&nbsp;But since no one paid any attention to his command, he waited till the night before the spectacle, and then, taking all the workmen whom he had under his orders in public contracts, he pulled down the seats, and when day came he had the place all clear for the people. For this proceeding the populace thought him a man, but his colleagues were annoyed and thought him reckless and violent. It was believed also that this conduct cost him his election to the tribunate for the third time, since, although he got a majority of the votes, his colleagues were unjust and fraudulent in their proclamation and returns. This, however, was disputed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.12.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.12.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.12.5'><b>&sect; CGr.12.5</b>&nbsp;&nbsp;But he took his failure overmuch to heart, and what is more, it is said, with more boldness than was fitting, that they were laughing with sardonic laughter, and were not aware of the great darkness that enveloped them in consequence of his public measures. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.12.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.13.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.13.1'><b>&sect; CGr.13.1</b>&nbsp;&nbsp;The enemies of Caius also effected the election of <a href=/people/1513 target=_blank>Opimius</a> as consul, and then proceeded to revoke many of the laws which Caius had secured and to meddle with the organization of the colony at <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>. This was by way of irritating Caius, that he might furnish ground for resentment, and so be got rid of. At first he endured all this patiently, but at last, under the instigations of his friends, and especially of <a href=/people/152 target=_blank>Fulvius</a>, he set out to gather a fresh body of partisans for opposition to the consul. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.13.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.13.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.13.2'><b>&sect; CGr.13.2</b>&nbsp;&nbsp;Here, we are told, his mother also took active part in his seditious measures, by secretly hiring from foreign parts and sending to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> men who were ostensibly reapers; for to this matter there are said to have been obscure allusions in her letters to her son. Others, however, say that <a href=/people/858 target=_blank>Cornelia</a> was very much displeased with these activities of her son. <br /></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.13.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.13.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.13.3'><b>&sect; CGr.13.3</b>&nbsp;&nbsp;Be that as it may, on the day when <a href=/people/1513 target=_blank>Opimius</a> and his supporters were going to annul the laws, the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> had been occupied by both factions since earliest morning, and after the consul had offered sacrifice, one of his servants, Quintus <a href=/people/6220 target=_blank>Antyllius</a>, as he was carrying from one place to another the entrails of the victims, said to the partisans of <a href=/people/152 target=_blank>Fulvius</a>: Make way for honest citizens, ye rascals! Some say, too, that along with this speech <a href=/people/6220 target=_blank>Antyllius</a> bared his arm and waved it with an insulting gesture. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.13.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.13.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.13.4'><b>&sect; CGr.13.4</b>&nbsp;&nbsp;At any rate he was killed at once and on the spot, stabbed with large writing styles said to have been made for just such a purpose. The multitude were completely confused by the murder, but it produced an opposite state of mind in the leaders of the two factions. Caius was distressed, and upbraided his followers for having given their enemies ground for accusing them which had long been desired; but <a href=/people/1513 target=_blank>Opimius</a>, as though he had got something for which he was waiting, was elated, and urged the people on to vengeance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.13.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.1'><b>&sect; CGr.14.1</b>&nbsp;&nbsp;A shower of rain fell just then, and the assembly was dissolved; but early next morning the consul called the senate together indoors and proceeded to transact business, while others placed the body of <a href=/people/6220 target=_blank>Antyllius</a> without covering upon a bier, and carried it, as they had agreed to do, through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> and past the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>senate-house</a>, with wailings and lamentations. <a href=/people/1513 target=_blank>Opimius</a> knew what was going on, but pretended to be surprised, so that even the senators went out into the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.2'><b>&sect; CGr.14.2</b>&nbsp;&nbsp;After the bier had been set down in the midst of the throng, the senators began to inveigh against what they called a heinous and monstrous crime, but the people were moved to hatred and abuse of the oligarchs, who, they said, after murdering <a href=/people/70 target=_blank>Tiberius</a> <a href=/people/177 target=_blank>Gracchus</a> on the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> with their own hands, tribune that he was, had actually flung away his dead body besides; whereas <a href=/people/6220 target=_blank>Antyllius</a>, a mere servant, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.3'><b>&sect; CGr.14.3</b>&nbsp;&nbsp;who perhaps had suffered more than he deserved, but was himself chiefly to blame for it, had been laid out in the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, and was surrounded by the Roman senate, which shed tears and shared in the obsequies of a hireling fellow, to the end that sole remaining champion of the people might be done away with. Then the senators went back into the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>senate-house</a>, where they formally enjoined upon the consul <a href=/people/1513 target=_blank>Opimius</a> to save the city as best he could, and to put down the tyrants. <br /></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.4'><b>&sect; CGr.14.4</b>&nbsp;&nbsp;The consul therefore ordered the senators to take up arms, and every member of the equestrian order was notified to bring next morning two servants fully armed; <a href=/people/152 target=_blank>Fulvius</a>, on the other hand, made counter preparations and got together a rabble, but Caius, as he left the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, stopped in front of his father's statue, gazed at it for a long time without uttering a word, then burst into tears, and with a groan departed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.5'><b>&sect; CGr.14.5</b>&nbsp;&nbsp;Many of those who saw this were moved to pity Caius; they reproached themselves for abandoning and betraying him, and went to his house, and spent the night at his door, though not in the same manner as those who were guarding <a href=/people/152 target=_blank>Fulvius</a>. For these passed the whole time in noise and shouting, drinking, and boasting of what they would do, <a href=/people/152 target=_blank>Fulvius</a> himself being the first to get drunk, and saying and doing much that was unseemly for a man of his years; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.14.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.14.6'><b>&sect; CGr.14.6</b>&nbsp;&nbsp;but the followers of Caius, feeling that they faced a public calamity, kept quiet and were full of concern for the future, and passed the night sleeping and keeping watch by turns. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.14.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.15.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.15.1'><b>&sect; CGr.15.1</b>&nbsp;&nbsp;When day came, <a href=/people/152 target=_blank>Fulvius</a> was with difficulty roused from his drunken sleep by his partisans, who armed themselves with the spoils of war about his house, which he had taken after a victory over the Gauls during his consulship, and with much threatening and shouting went to seize the <a about=https://topostext.org/place/419125LAve class=place long=12.4792 lat=41.8835>Aventine</a> hill. Caius, on the other hand, was unwilling to arm himself, but went forth in his toga, as though on his way to the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, with only a short dagger on his person. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.15.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.15.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.15.2'><b>&sect; CGr.15.2</b>&nbsp;&nbsp;As he was going out at the door, his wife threw herself in his way, and with one arm round her husband and the other round their little son, said: Not to the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a>, O Caius, do I now send thee forth, as formerly, to served as tribune and law-giver, nor yet to a glorious war, where, shouldst thou die (and all men must die), thou wouldst at all events leave me an honoured sorrow; but thou art exposing thyself to the murderers of <a href=/people/70 target=_blank>Tiberius</a>, and thou doest well to go unarmed, that thou mayest suffer rather than inflict wrong; but thy death will do the state no good. The worst has at last prevailed; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.15.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.15.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.15.3'><b>&sect; CGr.15.3</b>&nbsp;&nbsp;by violence and the sword men's controversies are now decided. If thy brother had only fallen at <a about=https://topostext.org/place/418000UNum class=place long=-2.4442 lat=41.8095>Numantia</a>, his dead body would have been given back to us by terms of truce; but as it is, perhaps I too shall have to supplicate some river or sea to reveal to me at last thy body in its keeping. Why, pray, should men longer put faith in laws or gods, after the murder of <a href=/people/70 target=_blank>Tiberius</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.15.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.15.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.15.4'><b>&sect; CGr.15.4</b>&nbsp;&nbsp;While <a href=/people/3035 target=_blank>Licinia</a> was thus lamenting, Caius gently freed himself from her embrace and went away without a word, accompanied by his friends. <a href=/people/3035 target=_blank>Licinia</a> eagerly sought to clutch his robe, but sank to the ground and lay there a long time speechless, until her servants lifted her up unconscious and carried her away to the house of her brother <a href=/people/95 target=_blank>Crassus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.15.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.16.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.16.1'><b>&sect; CGr.16.1</b>&nbsp;&nbsp;When all were assembled together, <a href=/people/152 target=_blank>Fulvius</a>, yielding to the advice of Caius, sent the younger of his sons with a herald's wand into the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>. The young man was very fair to look upon; and now, in a decorous attitude, modestly, and with tears in his eyes, he addressed conciliatory words to the consul and the senate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.16.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.16.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.16.2'><b>&sect; CGr.16.2</b>&nbsp;&nbsp;Most of his audience, then, were not disinclined to accept his terms of peace; but <a href=/people/1513 target=_blank>Opimius</a> declared that the petitioners ought not to try to persuade the senate by word of messenger; they should rather come down and surrender themselves for trial, like citizens amenable to the laws, and then beg for mercy; he also told the young man plainly to come back again on these terms or not come back at all. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.16.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.16.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.16.3'><b>&sect; CGr.16.3</b>&nbsp;&nbsp;Caius, accordingly, as we are told, was willing to come and try to persuade the senate; but no one else agreed with him, and so <a href=/people/152 target=_blank>Fulvius</a> sent his son again to plead in their behalf a before. But <a href=/people/1513 target=_blank>Opimius</a>, who was eager to join battle, at once seized the youth and put him under guard, and then advanced on the party of <a href=/people/152 target=_blank>Fulvius</a> with numerous men-at-arms and <a about=https://topostext.org/place/352252IKre class=demonym long=25.1836 lat=35.2052>Cretan</a> archers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.16.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.16.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.16.4'><b>&sect; CGr.16.4</b>&nbsp;&nbsp;And it was the archers who, by discharging their arrows and wounding their opponents, were most instrumental in throwing them into confusion. After the route had taken place, <a href=/people/152 target=_blank>Fulvius</a> fled refuge into an unused bath, where he was shortly discovered and slain, together with his elder son. Caius, however, was not seen to take any part in the battle, but in great displeasure at what was happening he withdrew into the sanctuary of <a href=/people/28 target=_blank>Diana</a>. There he was minded to make away with himself, but was prevented by his most trusty companions, <a href=/people/639 target=_blank>Pomponius</a> and <a href=/people/232 target=_blank>Licinius</a>; for they were at hand, and took away his sword, and urged him to flight again. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.16.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.16.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.16.5'><b>&sect; CGr.16.5</b>&nbsp;&nbsp;Then, indeed, as we are told, he sank upon his knees, and with hands outstretched towards the goddess prayed that the Roman people, in requital for their great ingratitude and treachery, might never cease to be in servitude; for most of them were manifestly changing sides, now that proclamation of immunity had been made. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -150 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.16.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.1'><b>&sect; CGr.17.1</b>&nbsp;&nbsp;So then, as Caius fled, his foes pressed hard upon him and were overtaking him at the wooden bridge over the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>, but his two friends bade him go on, while they themselves withstood his pursuers, and, fighting there at the head of the bridge, would suffer no man to pass, until they were killed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.2'><b>&sect; CGr.17.2</b>&nbsp;&nbsp;Caius had with him in his flight a single servant, by name <a href=/people/377 target=_blank>Philocrates</a>; and though all the spectators, as at a race, urged Caius on to greater speed, not a man came to his aid, or even consented to furnish him with a <a href=/people/10959 target=_blank>horse</a> when he asked for one, for his pursuers were pressing close upon him. He barely succeeded in escaping into a sacred grove of the <a href=/people/1744 target=_blank>Furies</a>, and there fell by the hand of <a href=/people/377 target=_blank>Philocrates</a>, who then slew himself upon his master. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.3'><b>&sect; CGr.17.3</b>&nbsp;&nbsp;According to some writers, however, both were taken alive by the enemy, and because the servant had thrown his arms about his master, no one was able to strike the master until the slave had first been dispatched by the blows of many. Someone cut off the head of Caius, we are told, and was carrying it along, but was robbed of it by a certain friend of <a href=/people/1513 target=_blank>Opimius</a>, <a href=/people/8302 target=_blank>Septimuleius</a>; for proclamation had been made at the beginning of the battle that an equal weight of gold would be paid the men who brought the head of Caius or <a href=/people/152 target=_blank>Fulvius</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.4'><b>&sect; CGr.17.4</b>&nbsp;&nbsp;So <a href=/people/8302 target=_blank>Septimuleius</a> stuck the head of Caius on a spear and brought it to <a href=/people/1513 target=_blank>Opimius</a>, and when it was placed in a balance it weighed seventeen pounds and two thirds, since <a href=/people/8302 target=_blank>Septimuleius</a>, besides showing himself to be a scoundrel, had also perpetrated a fraud; for he had taken out the brain and poured melted lead in its place. But those who brought the head of <a href=/people/152 target=_blank>Fulvius</a> were of the obscurer sort, and therefore got nothing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.5'><b>&sect; CGr.17.5</b>&nbsp;&nbsp;The bodies of Caius and <a href=/people/152 target=_blank>Fulvius</a> and of the other slain were thrown into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>, and they numbered three thousand; their property was sold and the proceeds paid into the public treasury. Moreover, their wives were forbidden to go into mourning, and <a href=/people/3035 target=_blank>Licinia</a>, the wife of Caius, was also deprived of her marriage portion. Most cruel of all, however, was the treatment of the younger son of <a href=/people/152 target=_blank>Fulvius</a>, who had neither lifted a hand against the nobles nor been present at the fighting, but had come to effect a truce before the battle and had been arrested; after the battle he was slain. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.17.6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.17.6'><b>&sect; CGr.17.6</b>&nbsp;&nbsp;However, what vexed the people more than this or anything else was the erection of a <a about=https://topostext.org/place/419125SCon class=place long=12.48428 lat=41.89294>temple of Concord</a> by <a href=/people/1513 target=_blank>Opimius</a>; for it was felt that he was priding himself and exulting and in a manner celebrating a triumph in view of all this slaughter of citizens. Therefore at night, beneath the inscription on the temple, somebody carved this verse:- A work of mad discord produces a <a about=https://topostext.org/place/419125SCon class=place long=12.48428 lat=41.89294>temple of Concord</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.17.6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.18.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.18.1'><b>&sect; CGr.18.1</b>&nbsp;&nbsp;And yet this <a href=/people/1513 target=_blank>Opimius</a>, who was the first consul to exercise the power of a dictator, and put to death without trial, besides three thousand other citizens, Caius <a href=/people/177 target=_blank>Gracchus</a> and <a href=/people/11076 target=_blank>Fulvius Flaccus</a>, of whom one had been consul and had celebrated a triumph, while the other was the foremost man of his generation in virtue and reputation — this <a href=/people/1513 target=_blank>Opimius</a> could not keep his hands from fraud, but when he was sent as ambassador to <a href=/people/1161 target=_blank>Jugurtha</a> the <a about=https://topostext.org/place/360030RNum class=person long=3 lat=36>Numidian</a> was bribed by him, and after being convicted most shamefully of corruption, he spent his old age in infamy, hated and abused by the people, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.18.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.18.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.18.2'><b>&sect; CGr.18.2</b>&nbsp;&nbsp;a people which was humble and cowed at the time when the <a href=/people/1832 target=_blank>Gracchi</a> fell, but soon afterwards showed how much it missed them and longed for them. For it had statues of the brothers made and set up in a conspicuous place, consecrated the places where they were slain, and brought thither offerings of all the first-fruits of the season, nay, more, many sacrificed and fell down before their statues every day, as though they were visiting the shrines of gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.18.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.19.1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.19.1'><b>&sect; CGr.19.1</b>&nbsp;&nbsp;And further, <a href=/people/858 target=_blank>Cornelia</a> is reported to have borne all her misfortunes in a noble and magnanimous spirit, and to have said of the sacred places where her sons had been slain that they were tombs worthy of the dead which occupied them. She resided on the promontory called <a about=https://topostext.org/place/408141HMis class=place long=14.0847 lat=40.7874>Misenum</a>, and made no change in her customary way of living. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.19.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.19.2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.19.2'><b>&sect; CGr.19.2</b>&nbsp;&nbsp;She had many friends, and kept a good table that she might show hospitality, for she always had Greeks and other literary men about her, and all the reigning kings interchanged gifts with her. She was indeed very agreeable to her visitors and associates when she discoursed to them about the life and habits of her father <a href=/people/224 target=_blank>Africanus</a>, but most admirable when she spoke of her sons without grief or tears, and narrated their achievements and their fate to all enquirers as if she were speaking of men of the early days of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.19.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=CGr.19.3>
+                            <p id='urn:cts:greekLit:tlg0007.tlg052b:CGr.19.3'><b>&sect; CGr.19.3</b>&nbsp;&nbsp;Some were therefore led to think that old age or the greatness of her sorrows had impaired her mind and made her insensible to her misfortunes, whereas, really, such persons themselves were insensible how much help in the banishment of grief mankind derives from a noble nature and from honourable birth and rearing, as well as of the fact that while fortune often prevails over virtue when it endeavours to ward off evils, she cannot rob virtue of the power to endure those evils with calm assurance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg052b.perseus-grc1:CGr.19.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -121                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=196', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas196";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=196';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

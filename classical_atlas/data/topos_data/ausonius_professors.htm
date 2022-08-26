@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Ausonius, Professors of Burdigala' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Decimus Maximus Ausonius, POEMS COMMEMORATING THE PROFESSORS OF BORDEAUX, translated by Hugh Gerard Evelyn White (1874-1924) for the Loeb Classical Library, 1919, a work in the public domain placed online by the Internet Archive.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='490' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 490' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/724' content='urn:cts:latinLit:stoa0045.stoa004' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n80128611' content='Ausonius'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88014906' content='Hugh Gerard Evelyn-White (1874-1924)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://archive.org/stream/deciausonius01ausouoft#page/96/mode/2up' /><h2>Ausonius, Professors of Burdigala</h2>Decimus Maximus Ausonius, POEMS COMMEMORATING THE PROFESSORS OF BORDEAUX, translated by Hugh Gerard Evelyn White (1874-1924) for the Loeb Classical Library, 1919, a work in the public domain placed online by the Internet Archive. This text has 44 tagged references to 27 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:stoa0045.stoa004'>urn:cts:latinLit:stoa0045.stoa004</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q42194647'>Q42194647</a>;     <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=p>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:p'><b>&sect; p</b>&nbsp;&nbsp;PREFACE <br />Your memories, too, I will recall as famous men now dead, whom no kinship linked with me, but renown, and the love of our dear country, and zeal of learning, and the industrious toil of teaching. Perchance one day another in the same way may make my shade his theme, and after my example will seek to do a pious deed.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:1'><b>&sect; 1</b>&nbsp;&nbsp;I. TIBERIUS VICTOR MINERVIUS, THE ORATOR <br />You shall be named first, Minervius, chief ornament of <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>, a second Quintilian to adorn the rhetorician's gown. Your teaching in its day made glorious <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinople</a>, <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and lastly our native town; which, though it cannot vie with that pair in dignity, yet for its name alone is more acceptable, because it is our native place: let <a about=https://topostext.org/place/423000UCa2 class=place long=-1.9611 lat=42.3015>Calagurris</a> make every claim to <a href=/people/101 target=_blank>Fabius</a> as her son, if the chair of <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> receive no less degree. A thousand pupils has Minervius given to the courts, and twice a thousand to the Senate's ranks and to the purple robes. I, too, was of that number; but since my consulship is so great a theme, I will refrain, and praise you for yourself and not through my distinctions. Should panegyric be the field of rivalry, then must you be classed with the orator of the Panathenaicus; or if the test be to develop the mock law-suits of our schools, Quintilian must look to his laurels. Your speech was like a torrent in full spate, yet one which whirled down pure gold without muddy sediment. As for that art in <a href=/people/20 target=_blank>Demosthenes</a> which that great man thrice over called the orator's chief virtue, it was so strong in you that the master himself gives place to you. Shall I speak also of your natural gifts and that divine blessing, your memory, which was so prodigious that you retained what you had heard or read over once as though it were engraven on your mind, and that your ear was as retentive as a book? Once, after a long contested game, I have seen you tell over all the throws made by either side when the dice were tipped out with a sharp spin over the fillets cut out in the hollowed boxwood of the dicebox; and recount move by move, without mistake, which pieces had been lost, which won back, through long stretches of the game. No malice ever blackened your heart: your tongue, though free and full of wit, indulged only in kindly jests that held no sting. Your table showed that refinement with which a censor's code could find no fault: <a href=/people/209 target=_blank>Piso</a> the Frugal would not blush to call it his. Sometimes, as on birthdays or some other feast, it was furnished with greater luxury, but never so lavishly as to diminish your slender means. And when you died after six decades, although you left no heir, you were mourned by me as a father and a youth. 39 And now, if anything survives after <a href=/people/140 target=_blank>Fate</a> has struck her final blow, you are living yet and not unmindful of your days gone by; or, if nothing at all remains, and death's long repose knows no feeling, you have lived your own life: we take pleasure in your fame.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:2'><b>&sect; 2</b>&nbsp;&nbsp;II. LATINOS ALCIMUS ALETHIUS, THE RHETORICIAN <br />Nor shall Posterity arraign me on the charge ot unduteous silence touching you, <a href=/people/1438 target=_blank>Alcimus</a>, and say I was too unworthy and unheedful to be entrusted with the memory of one whom our later age matches alone with the men of olden time. In legal eloquence you were supreme, you were the <a href=/people/54 target=_blank>Muses</a>' pride, and our one model in those letters which learned Greece fostered at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, or which <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> fosters throughout the Latin world. Shall I speak of your character and of the rule of life maintained to your life's end? Or of the brilliance of your renow r n, and the devotion to learning which made you wholly shun ambition? No man was more dignified than you, yet none was more agreeable or more generous to the needy in undertaking the defence if legal aid was needed, or in zealously teaching some pupil in the schools. Those upon whom you bestowed glorious renown will live in the memory of all succeeding ages, and your works will bestow upon <a href=/people/12209 target=_blank>Julian</a> greater renown than will the sceptre which he held so short a time. Your histories will throw more lustre on <a href=/people/926 target=_blank>Sallust</a>'s name than he ever gained through his consulship. So in your virtues, <a href=/people/5553 target=_blank>Graces</a>, and eloquence you have set a pattern to your sons. 27 If my pen, seeking to please, only offends, yet pardon me: 'tis the love I bear you is guilty, if, though I cannot voice aught worthy, I seek to pay my homage, harmfully zealous. Calm be your rest, and with renown outweigh the frail body's loss.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:3'><b>&sect; 3</b>&nbsp;&nbsp;III. LUCIOLUS, THE RHETORICIAN <br />OF Luciolus the rhetorician, my fellow-pupil, my tutor, and afterwards my colleague, tell now, sad Dirge a man eloquent and skilful, whether he poured forth utterances shaped to the laws of verse, or to the rhythms of prose. Him <a href=/people/1920 target=_blank>Lachesis</a> brought to an untimely end and reft from his father, leaving two children, one of either sex: yet can your heir by no means live up to the standard of your worth, for all the aid your high repute still lends his obscurity to-day. <br />Ah, gentle friend, kind brother, husband most faithful, loving son and father, what a grief that you are gone! Courteous to your guests, you were never one to browbeat your dependents or to speak harshly to your servants. So gentle was your nature: may your shade enjoy the same repose! Take as a tribute from Ausonius, friend, my farewell.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:4'><b>&sect; 4</b>&nbsp;&nbsp;IV. ATTIUS PATERA, THE ELDER, THE RHETORICIAN <br />PATERA, renowned speaker, although in years you outpassed the men named earlier, yet, seeing that your prime was in the age next before my own, and that in my youth I saw you in your old age, you shall not lack the tribute of my sad dirge, teacher of mighty rhetoricians. If report does not lie, you were sprung from the stock of the <a href=/people/12197 target=_blank>Druids</a> of <a about=https://topostext.org/place/493-07UAug class=place long=-0.7038 lat=49.2756>Boiocassis</a>, and traced your hallowed line from the temple of Belenus; and hence the names borne by your family: you are called Patera; so the mystic votaries call the servants of <a href=/people/2 target=_blank>Apollo</a>. Your father and your brother were named after <a href=/people/11033 target=_blank>Phoebus</a>, and your own son after <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>. In that age there was none who had such knowledge as you, such swift and rolling eloquence. Sound in memory as in learning, you had the gift of clear expression cast in sonorous and well-chosen phrase; your wit was chastened and without a spice of bitterness: sparing of food and wine, cheerful, modest, comely in person, even in age you were as an <a href=/people/10980 target=_blank>eagle</a> or a steed grown old.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:5'><b>&sect; 5</b>&nbsp;&nbsp;V. ATTIUS TIRO DELPHIDIUS, A RHETORICIAN <br />ELOQUENT, learned, quick in word and wit, genial in humour, Delphidius, even as you rose to rival your father in renown, so must your praises follow hard upon the tearful lament that I have made for him. Almost in the cradle itself, you began to be the poet of a famous god; a boy, wearing on your brow the garland of the <a about=https://topostext.org/place/376216SOly class=demonym long=21.63 lat=37.6378>Olympian</a> crown, you sang <a href=/people/1 target=_blank>Jove</a>'s praises: next, pressing onward like a raging flood, you strung together an epic all in verse more rapidly than any man free from the handicap of prosody could shape as much in prose. In divers fields your eloquence achieved renown, until its fame stood as high abroad as here at home; now when you appeared before the prefect of the pretorian cohort, and now in the presence of the provincial judges when you were briefed to defend the threatened honour or the life of the accused. How happy had you been had you pursued the <a href=/people/54 target=_blank>Muses</a>' tasks amid the peaceful toil of letters; had not the impulse of revenge armed the hatred which great lawsuits l breed; or had you never sought to climb up to the unrestful Palace in the days of tyranny! While you ever conjured up far-distant hope, disdaining that which lay in your way, and preferred success to be your work rather than <a href=/people/140 target=_blank>Fate</a>'s, you lost full much, wandering through all the empty titles of distinction and deserving greater prizes than you won. Hence arose the crushing charges which ensued, though your father's sorrow won your pardon. Thereafter you became a rhetorician; but lack of diligence in teaching disappointed the hopes of your pupil's fathers. It was by the grace of God you suffered no worse ill, but were carried off in middle age and spared the pain of your daughter's perversity and the execution of your wife.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:6'><b>&sect; 6</b>&nbsp;&nbsp;VI. ALETHIUS MINERVIUS, SON OF THE ABOVE, A RHETORICIAN <br />O FLOWER of our youths and your father's fair hope, though not your country's abiding possession, Alethius the Rhetorician! In earliest years you were a teacher: at an age when it would have been no disgrace for you, a stripling, to have been learning still, ere you were come to manhood's estate, you were already held even a master equal to your father, and, afterwards, to Patera. He, with the brilliance of his renown and gifts, enriched the walls of haughty <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>: you, greater than either, were content to lead on the bright banners of a company in your native town, <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>. You had every blessing <a href=/people/140 target=_blank>Fate</a> can give, but withal felt the tooth of her cruel jealousy. For <a href=/people/2811 target=_blank>Fortune</a>, too early ripe, gave you every gift and then snatched them away your rhetoric, denied the fruit of mature age; your brilliant marriage marred by your father's restlessness; the wealth of your line and your wife's left without heir. Even as the grass of midsummer, you were but displayed and snatched away at once, frustrating your friends' hopes, and were enriched with goods that would not endure. With what prophetic utterance is that verse of <a href=/people/3856 target=_blank>Horace</a> fraught: Nothing there is that is wholly blessed.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:7'><b>&sect; 7</b>&nbsp;&nbsp;VII. LEONTIUS THE GRAMMARIAN, SURNAMED LASCIVUS <br />You who love a glad and cheerful soul, you who observe festal days with their jests, their prayers, their shows, forget not to recall year by year the name of <a href=/people/972 target=_blank>Leontius</a> with a dirge. Enduring to be called Lascivus (Wanton), though the name was a libel on his upright life, he never forbade its use, because he knew it amused his friends' ears. In letters he had attained a high enough degree to qualify him for his humble chair, and to give him some claim to be enrolled as a grammarian. 13 You were the constant companion of my youth, although you bare a heavier load of years, and still to-day you have a warm place in my heart, kindly <a href=/people/972 target=_blank>Leontius</a>. I take sad pleasure in the task of honouring your memory with the mournful strain of this complaint: it is a task unpleasing, but one that my verse owes to you.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:8'><b>&sect; 8</b>&nbsp;&nbsp;VIII. To THE GREEK GRAMMARIANS OF BORDEAUX <br /> AFTER these shall I recall <a href=/people/167 target=_blank>Romulus</a> first, or Corinthius, or Spercheus and likewise <a href=/people/865 target=_blank>Menestheus</a> his son, those grammarians of the <a about=https://topostext.org/place/379239RAtt class=person long=23.9 lat=37.9>Attic</a> <a href=/people/54 target=_blank>Muses</a>? All these were patient, earnest teachers, although small their profit and scant their praise; yet, since they were teachers in my time, I owe a tribute to their memory. The third of these was not my tutor; the others taught me in my earliest years not to be unpolished in my speech and quite without refinement in my tongue. For a dullness of my brain, as I suppose, hindered my progress, and some mischievous perversity of boyhood estranged me from learning Greek. 17 May the turf lie light upon you, may the roof of the tomb that holds you keep your ashes safe, and may the epitaph I now pronounce pay you the last tribute.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:9'><b>&sect; 9</b>&nbsp;&nbsp;IX. To JUCUNDUS, THE GRAMMARIAN OF BORDEAUX, THE BROTHER OF LEONTIUS <br />ALTHOUGH men say you had rashly assumed your chair, and think you did not deserve to be called a grammarian, yet my voice shall hail you, Jucundus, so simple and so kind, my friend and my companion, whom I love the better for this aim of yours: since you loved so honourable a title, although unequal to it, I must commemorate you here among men of worth.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:10'><b>&sect; 10</b>&nbsp;&nbsp;X. To THE LATIN GRAMMARIANS, SCHOLARS OF BORDEAUX, MACRINUS, SUCURO, CONCORDIUS, PHOEBICIUS, AMMONIUS, AND ANASTASIUS, GRAMMARIAN OF POICTIERS <br />Now, as the pious homage of my mournful task shall present each one, I will tell of those who, though of humble birth and rank and merit, instilled into the uncultured minds of the people of <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> the love of letters. 11 Let <a href=/people/3419 target=_blank>Macrinus</a> be named amongst these: to him I was entrusted first when a boy; and Sucuro, the freedman's son, temperate and well-suited to form youthful minds. You too, Concordius, were another such, you who, fleeing your country, took in exchange a chair of little profit in a foreign town. Nor must I leave unmentioned the old man Phoebicius, who, though the keeper of Belenus' temple, got no profit thereby. Yet he, sprung, as rumour goes, from the stock of the <a href=/people/12197 target=_blank>Druids</a> of Armorica, obtained a chair at <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a> by his son's help: long may his line endure! I will sing of <a href=/people/753 target=_blank>Ammonius</a> also for, indeed, it is a solemn duty to commemorate a grammarian of my own native place who used to teach raw lads their alphabet: he had scant learning and was of an ungentle nature, and therefore as was his due was held in slight repute. 42 For <a href=/people/1691 target=_blank>Anastasius</a> also shape a mournful lay, my <a href=/people/54 target=_blank>Muse</a>; and you, my dirge, recall that poor grammarian. He was born at <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>, but ambition transferred him to <a about=https://topostext.org/place/466003ULim class=place long=0.3493 lat=46.5803>Pictavica</a>. There he lived a poor man, stinted alike in food and dress, and in his old age lost the faint glimmer of renown which his country and his chair had shed on him. Howbeit, I have here paid a tribute to his name, that the tomb should not swallow up his name with his bones.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:11'><b>&sect; 11</b>&nbsp;&nbsp;XI. TO HERCULANUS, MY NEPHEW, GRAMMARIAN OF BORDEAUX <br /><a href=/people/9494 target=_blank>Herculanus</a>, though you came from my bosom and my class, you have repaid your uncle with promise rather than with fruit. You shared in the work of my class, and might have succeeded to my chair, had not the swerving steps of slippery youth caused you to fall headlong, through not keeping to the right path traced out by <a href=/people/58 target=_blank>Pythagoras</a>. May you have rest, and may your spirit dwell in peace in its last home you whose name I recalled a while ago amongst my relatives.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:12'><b>&sect; 12</b>&nbsp;&nbsp;XII. To THALASSUS, LATIN GRAMMARIAN OF BORDEAUX <br />OF your rank and name, Thalassus, youthful teacher, I heard as a little boy, scarce even do I recall them. Of your person or attainments, of the family whence you were sprung, a later age proclaims nought concerning you. Only report used to tell that you became a grammarian in your youth, but even this was then so slight that it no longer lingers now. Yet, be you who you were, because you lived and taught in my lifetime, take this my offering, farewell!</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:13'><b>&sect; 13</b>&nbsp;&nbsp;XIII. To ClTARIUS, THE SICILIAN OF SYRACUSE, GREEK GRAMMARIAN AT BORDEAUX <br />You also shall be recalled by me, beloved Citarius, for you deserve to be praised amongst good grammarians. If the custom of past ages still obtained, you would have the renown of <a href=/people/340 target=_blank>Aristarchus</a> and <a href=/people/2360 target=_blank>Zenodotus</a> among the Greeks. Even the <a href=/people/54 target=_blank>Muse</a> of <a href=/people/262 target=_blank>Simonides</a> of <a about=https://topostext.org/place/376243IKeo class=person long=24.3333 lat=37.6167>Ceos</a> yields place to the odes which you composed in your early years. Born in a <a about=https://topostext.org/place/376145RSic class=demonym long=14.5 lat=37.6>Sicilian</a> town, you came a stranger to our city, but quickly made it the home of culture with your learning. Here you soon found a wife well-born and rich; but <a href=/people/140 target=_blank>Fate</a> grudged you the gift of children ere your death. But, now that you are gone, we honour you with the tribute of our remembrance, even as we cheered you, while you lived, with the gift of our friendship.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:14'><b>&sect; 14</b>&nbsp;&nbsp;XIV. To CENSORIUS ATTICUS AGRICIUS, THE RHETORICIAN <br />FOR mastery in eloquence worthy to be ranked equal with the foremost, here, Agricius, you have been set in a lower place: since you were born and died in later years, I had delayed to mention you, yet had not also forgotten you. But be your place where it may, my sad lament shall recall your memory: early or late, homage paid to the dead is all one. The nobility of your birth was not less lofty than the renown of your eloquence renown, no stranger to your chair here in this second <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>: bestowed on Nazarius and famous Patera in former days, it trained to highest perfection many a youth. Now you have left a wife, children, and a son-in-law here on this earth and cheer the shades of your ancestors in their tombs.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:15'><b>&sect; 15</b>&nbsp;&nbsp;XV. To NEPOTIANUS, GRAMMARIAN AND RHETORICIAN <br />WITTY and cheerful, an old man with a heart of youth, whose soul, steeped in honey with no drop of gall, never throughout all your life instilled aught of bitterness, balm of my heart, Nepotianus, taking your share in grave and gay alike: your lips once closed, you could surpass <a about=https://topostext.org/place/370224UAmy class=place long=22.4502 lat=37.0363>Amyclae</a> in silence; when once you began to discourse, even <a href=/people/18 target=_blank>Ulysses</a> could not leave you he who left the tuneful <a href=/people/605 target=_blank>Sirens</a> at their song. Honourable and pure, sparing, frugal, temperate, eloquent, you were second to no orator in style, while in argument you were the equal of <a href=/people/561 target=_blank>Cleanthes</a> the <a href=/people/11086 target=_blank>Stoic</a>. <a href=/people/725 target=_blank>Scaurus</a> and <a href=/people/879 target=_blank>Probus</a> you knew off by heart, and in memory were a match for <a href=/people/1311 target=_blank>Cineas</a> of <a about=https://topostext.org/place/395205REpe class=person long=20.5 lat=39.5>Epirus</a>. You were my comrade, companion, and my guest continually: and not my guest alone, but the awakener of my mind. None gave advice out of a heart more sincere, or concealed it, when given, with deeper secrecy. When you had been distinguished by your appointment as governor, and had lived through the changes of ninety years, you met your end leaving two children, to your kinsfolk's great sorrow as to mine.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:16'><b>&sect; 16</b>&nbsp;&nbsp;XVI. AEMILIUS MAGNUS ARBORIUS, THE RHETORICIAN OF TOULOUSE <br />THOUGH mourned already among my departed relatives, you must be mentioned here, my uncle, among rhetoricians. Let love of kindred claim that work; but be this a tribute to the names of famous men, inspired by devotion to my native land. As doubly earned, let me pay this double meed of praise to my father Arborius, son of Arborius, and grandson of Argicius. Your father was of <a about=https://topostext.org/place/469043UAug class=demonym long=4.299 lat=46.945>Aeduan</a> stock, while your mother, Maura, sprang from <a about=https://topostext.org/place/437-11UAqu class=place long=-1.053 lat=43.7085>Aquae Tarbellae</a> (Dax): both were of high descent. A wife, noble-born and well-portioned, a home, a professorial chair, with the friendship of the great which you gained all these you attained while still young, while wealthy <a about=https://topostext.org/place/436014UTol class=place long=1.443 lat=43.6044>Tolosa</a> held the brothers of <a href=/people/136 target=_blank>Constantine</a> secluded there in nominal exile. From there your renown forced its way to the stronghold of <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a>, and to that city of the Thracian <a about=https://topostext.org/place/408280WPro class=place long=28 lat=40.75>Propontis</a>, <a about=https://topostext.org/place/410290PKon class=place long=28.978 lat=41.01>Constantinople</a>. In that place, full of wealth and famed as the tutor of a Caesar there, you died, <a href=/people/359 target=_blank>Magnus</a>, while your parents were yet alive. Howbeit, with loving care our prince <a href=/people/8 target=_blank>Augustus</a> restored your body to your native place and to the tomb of your family. So year by year this day brings round a cause for tears and this mournful task of joyless devotion.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:17'><b>&sect; 17</b>&nbsp;&nbsp;XVII. EXUPERIUS OF TOULOUSE, THE RHETORICIAN <br />Now must I renew your memory, Exuperius, an orator without help of rules, solemn of gait, majestic in speech, handsome in features and, in a word, admirable in gesture and deportment. Your eloquence was matchless in its fluency, and if judged only by the ear, would please through mere force of sound, but if closely examined would be found to contain no solid thought. At first the councillors of <a about=https://topostext.org/place/436014UTol class=place long=1.443 lat=43.6044>Tolosa</a>, that home of <a href=/people/10899 target=_blank>Pallas</a>, received you with adoration, but soon drove you as lightly away. Then <a about=https://topostext.org/place/432030UNar class=place long=3.004 lat=43.181>Narbo</a> harboured you: there, taking a high fee for your teaching, you trained in rhetoric the sons of Dalmatius, royal but tragic names from boyhood up to the beginning of manhood. When in due time they assumed the title of Caesar, they bestowed upon you the dignity of a governorship and a tribunal in Spain. Passing away, exceeding rich, you brought your unruffled nature and your peaceful years to a close in your abode at <a about=https://topostext.org/place/444014UDCa class=place long=1.44 lat=44.445>Cadurca</a> (Cahors). But your country's claims and the birthplace of your family summon you to bequeath your title of rhetorician to <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:18'><b>&sect; 18</b>&nbsp;&nbsp;XVIII. To MARCELLUS, SON OF MARCELLUS, THE GRAMMARIAN OF NARBONNE <br />I WILL not pass you by without a word, <a href=/people/71 target=_blank>Marcellus</a>, son of <a href=/people/71 target=_blank>Marcellus</a>. The harshness of your mother drove you from your home and your city, but all-powerful <a href=/people/2811 target=_blank>Fortune</a> soon restored all you had lost and added more. For firstly, in <a about=https://topostext.org/place/432030UNar class=place long=3.004 lat=43.181>Narbo</a> you found the country you had lost; and here Clarentius, a stranger of high birth, was led by your noble nature to give you his daughter to wife. And in due time your classes and lectures, thronged with crowds of boys, brought you the title of grammarian and wealth. But <a href=/people/2811 target=_blank>Fortune</a> never favours a career of unvarying success, especially when she finds a man of a crooked nature. Howbeit, 'tis not for me to make heavier your destiny: my task is to recall it. It is enough to say that you lost all at one stroke; yet not your title also, whereof I do not rob you, but give you a place amongst grammarians of very scant deserving.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:19'><b>&sect; 19</b>&nbsp;&nbsp;XIX. SEDATUS, THE RHETORICIAN OF TOULOUSE <br />IT were a thing unholy to leave you unmentioned, Sedatus, although it was abroad that you obtained your post as teacher. We had one native place, you and I; but the hazards of all-powerful Destiny gave you a chair at <a about=https://topostext.org/place/436014UTol class=place long=1.443 lat=43.6044>Tolosa</a>. There you found a wife, and children, and riches for your old age, with such renown as is the due of a great rhetorician. Yet from that land, however far, your native place now brings you home, and after death claims you again as its citizen. You may have strayed away and spent your pains on a distant city, but the country of your birth resumes its right to you. And now your sons are following their father's example, and adding to the renown of <a about=https://topostext.org/place/432030UNar class=place long=3.004 lat=43.181>Narbo</a> and of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> with their learning. But why do we complain? After long years, will they or nill they, Fame will bring them also back to <a about=https://topostext.org/place/448000UBur class=place long=-0.5792 lat=44.8378>Burdigala</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:20'><b>&sect; 20</b>&nbsp;&nbsp;XX. STAPHYLIUS, THE RHETORICIAN, A NATIVE OF <a about=https://topostext.org/place/436006UAuc class=place long=0.5871 lat=43.6463>Ausci</a><br />So far I have kept to the rule of commemorating my fellow-countrymen, whether they taught in our city or abroad. Yet it is no sin to couple with my countrymen a single stranger such as you, Staphylius, a son of Novem <a href=/people/8198 target=_blank>Populi</a>. You were to me a father and an uncle, both in one, like a second Ausonius, like a second Arborius. As a grammarian you rivalled <a href=/people/725 target=_blank>Scaurus</a> and <a href=/people/879 target=_blank>Probus</a>; as a rhetorician, most ready; in history you knew all <a href=/people/1839 target=_blank>Livy</a> and <a href=/people/133 target=_blank>Herodotus</a>. You knew every branch of learning and all the lore which <a href=/people/10949 target=_blank>Varro</a> stored in his innumerable tomes. Your heart was golden, your tongue persuasive and your speech unflurried; no hesitating was there and yet no hurrying. In old age you were comely and distinguished in appearance; anger and grief were strangers to you, and your peaceful life had a befitting close.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:21'><b>&sect; 21</b>&nbsp;&nbsp;XXI. CRISPUS AND URBICUS, GREEK AND LATIN GRAMMARIANS <br />YOUR name also, <a href=/people/1533 target=_blank>Crispus</a>, shall be kept in memory by this sad lament which I offer you, and go down to future ages you who used to teach the youngest boys, unskilled in speech, the simple signs of their new task, the alphabet: at times it was thought that you used to prime yourself with wine in order to produce verse rivalling passages of <a href=/people/118 target=_blank>Vergil</a> and of <a href=/people/236 target=_blank>Flaccus</a>. 10 For you also, Urbicus, held of less account for Latin themes, though famous for your Greek, thus will I raise a chant of grief. For in the company of your friend <a href=/people/1533 target=_blank>Crispus</a> you would pour out a flood of words in prose and verse with equal ease and with such eloquence as to remind us of those heroes sung by old <a href=/people/9 target=_blank>Homer</a> that son of <a href=/people/3114 target=_blank>Pleisthenes</a>, so sweet but terse, and the impetuous lord of <a about=https://topostext.org/place/383213IDol class=place long=20.72 lat=38.36>Dulichium</a> whose words were as flakes of snow, and <a href=/people/125 target=_blank>Nestor</a> the king, whose melodious speech was sweet of utterance with the nectar of his honeyed lips. 25 Both ready speakers, both learned in all the lore of poesy, and skilled alike in mythic fictions and in history, you were both freedmen by birth, but in your natures such as might well have deserved to be called the sons of free-born fathers.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:22'><b>&sect; 22</b>&nbsp;&nbsp;XXII. To VICTORIUS, ASSISTANT-TEACHER OR USHER <br />SCHOLARLY Victorius, gifted with memory and a quick brain, how patiently you used to pore over books which no one read, and study only abstruse lore! You liked better to unroll worm-eaten and outlandish scrolls than to give yourself to more familiar pursuits. What was the code of the pontifices, what the treaties, what the pedigree of the sacrificial priest at <a about=https://topostext.org/place/422127UCur class=place long=12.6806 lat=42.1845>Cures</a> long before <a href=/people/523 target=_blank>Numa</a>'s days, what <a href=/people/9086 target=_blank>Castor</a> had to say on all the shadowy kings, what Rhodope published out of her husband's books, what the code of the priests, what the resolutions of the old Quirites, what the decrees of the Senate, what measures <a href=/people/1130 target=_blank>Draco</a> or what <a href=/people/76 target=_blank>Solon</a> passed, and what laws <a href=/people/1602 target=_blank>Zaleucus</a> gave the <a about=https://topostext.org/place/382162PLoc class=ethnic long=16.229 lat=38.216>Locrians</a>, what <a href=/people/119 target=_blank>Minos</a> under the reign of <a href=/people/1 target=_blank>Jove</a>, what <a href=/people/554 target=_blank>Themis</a> even before <a href=/people/1 target=_blank>Jove</a>'s time all these were better known to you than our <a href=/people/2300 target=_blank>Tully</a> or <a href=/people/118 target=_blank>Maro</a>, and all the stores of Roman history. Maybe continued reading would have brought them also within your ken, had not <a href=/people/1920 target=_blank>Lachesis</a> hurried on the date of your last journey. Your post here in our city had brought you only a faint tincture of renown, and given you but a slight foretaste of the title of grammarian, when you died on the coast of far-off <a about=https://topostext.org/place/408141PCum class=place long=14.058 lat=40.848>Cumae</a> whither you had crossed over from <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>. But now that I have numbered you in a company of famous men, rejoice if this my pious tribute reaches your shade.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:23'><b>&sect; 23</b>&nbsp;&nbsp;XXIII. To DYNAMIUS OF BORDEAUX, WHO TAUGHT AND DIED IN SPAIN <br />FROM you also, <a href=/people/5622 target=_blank>Dynamius</a>, I will not withhold my sad complaint from you, my fellow-citizen and a pleader here; who fled the country with a good name tarnished by a charge of adultery, to whom tiny Lerida gave a snug hiding-place, whom a Spanish wife enriched while you lay hid; for there, under a changed name, you were a rhetorician a rhetorician disguised under the name of Flavinus for fear the story of your slip should betray you as the runaway. And though of your own accord you came back later to your native place, your home in Lerida soon drew you back to live at ease. Whatever may have been the nature of your flight, and whatever your repute, old friendship links you and me together; and therefore, if the shades can feel at all, accept this friendly service, <a href=/people/5622 target=_blank>Dynamius</a>, albeit offered this long while after your death. Though you have ceased to be and lie buried in a distant land, my reverent care dedicates this sad plaint to your memory.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:24'><b>&sect; 24</b>&nbsp;&nbsp;XXIV. To ACILIUS GLABRIO THE YOUNGER, OF BORDEAUX, A GRAMMARIAN <br />FALLEN with short span alike of learning and of years, you will I commemorate in mournful verse, <a href=/people/1243 target=_blank>Glabrio</a> a name drawn from a line of famous ancestors <a href=/people/1243 target=_blank>Glabrio</a>, son of Acilinus, offspring of <a about=https://topostext.org/place/401264UDar class=place long=26.3725 lat=40.086>Dardanus</a>. In old days we were boys together; then you became my pupil, and next, when I was made rhetorician, you became grammarian. In the courts you were the bulwark of the accused; in the country you farmed your estate, and deserved long to enjoy the fruits you earned. Obliging, cheerful, kindly temperate, you were always as ready to give advice as silent when you had given it. At once all the pride of your kin as presently their sorrow, you leave all desolate, my <a href=/people/1243 target=_blank>Glabrio</a>, reft from us by untimely death: wife, children, father, mother, left alas, under how many names were you lost to them! Long mourned by me, though never mourned enough, your name is here recorded for all time; and so, friend <a href=/people/1243 target=_blank>Glabrio</a>, receive my sorrowful farewell!</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:25'><b>&sect; 25</b>&nbsp;&nbsp;XXV. CONCLUSION <br />KNOW that these men, of whom you read in order after the exordium of my book, were once teachers in my native place, some of grammar, some of rhetoric, and some of both. They are dead, and it is enough that I have recalled their memories. For the living praise is a lure: to but cry their names will satisfy those within the tomb. Wherefore, do you, who in my pages read these mournful trifles, not look for pomp of words but for the affection wherewith my reverent care makes offering to famous and learned men, while it recalls the glories of my splendid native land.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:stoa0045.stoa004:26'><b>&sect; 26</b>&nbsp;&nbsp;XXVI. THE POET <br />FARE ye well, shades of famous rhetoricians: fare ye well, worthy teachers, whether it were history, or poetry, or eloquence in the courts that made you famous; or whether medicine or <a href=/people/12 target=_blank>Plato</a>'s system won you undying renown. And if any care of the living please the dead, and if the tribute of their survivors please them, then take the sad homage of my verse, a fabric of tears and sighs. Undisturbed may your ashes keep their place within the tomb, may the memory of your names live on until that other age return in which, by grace of God our judge, we all shall share!</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 490 <a href='http://www.forumromanum.org/literature/ausonius_commemoratio.html' target='_blank'>LA</a>                        </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=724', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas724";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=724';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

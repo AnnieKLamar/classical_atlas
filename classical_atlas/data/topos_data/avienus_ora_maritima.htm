@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Avienus, Ora Maritima' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Avienus, Ora Maritima, verse translation for ToposText by Ralph B. Morley (1992- ) shared under a (CC BY-NC-SA 4.0) licence.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='300' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 300' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/751' content='urn:cts:latinLit:stoa0047.stoa003' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n82144559' content='Avienus'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/' content='Ralph B. Morley' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='Ralph Morley personal communication' /><h2>Avienus, Ora Maritima</h2>Avienus, Ora Maritima, verse translation for ToposText by Ralph B. Morley (1992- ) shared under a (CC BY-NC-SA 4.0) licence. This text has 100 tagged references to 55 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:stoa0047.stoa003'>urn:cts:latinLit:stoa0047.stoa003</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q3006491'>Q3006491</a>;     <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:1'><b>&sect; 1</b>&nbsp;&nbsp;<a href=/people/879 target=_blank>Probus</a>, since I thought that you have often pondered <br />With your mind and your understanding <br />How the situation of the Taurian sea <br />Might be understood with reasonable confidence by those <br />Whom the furthest expanses of the earth separate, <br />I gladly entered upon this task <br />So that what you have longed for should become clear for you in song. <br />I did not think it right that at a great age <br />The outline of that region should not lie <br />Within the compass of your understanding – <br />A region which I have learned about through more private study <br />From very old texts, and through every day of my life, <br />To begrudge another what you possess without any expense <br />I think is the mark of an uneducated and coarse man. <br />To those things I add this, that you stand in place of a child <br />To me in my affections and in the bond of blood. <br />Nor would that be enough, if I did not know that you <br />Had always drunk in with jaws wide open literature <br />And secret things, that you are of an open mind, <br />That you are capable in your understanding, <br />That your thirst for such things is yoked to your heart,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:20'><b>&sect; 20</b>&nbsp;&nbsp;And that you are mindful of what has been made known to you beyond others: <br />Why would I pour out secrets to someone who could not remember them? <br />Who would prattle about deep mysteries to someone who could not comprehend? <br />Thus, many things – many! – have driven me, <a href=/people/879 target=_blank>Probus</a>, <br />To finish for you what you have demanded of me. <br />Indeed, I believed that this would also be a parent’s task, <br />If my <a href=/people/54 target=_blank>Muse</a> were to make known to you more richly and more abundantly <br />What you long for. <br />To give what has been asked for is the mark of a man who is not mean; <br />But to increase further the sum of the gift with new things <br />Is the mark of a kindly and sufficiently generous mind. <br />You asked, if you remember, what the region of the <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotic</a> sea is. <br />I know that <a href=/people/926 target=_blank>Sallust</a> has reported this, and I could not deny that his words <br />Are accepted by everyone to be of settled authority. <br />So, to his famous description, where that writer, adept with his pen and truthful, <br />Has set out with graceful speech <br />The pattern and appearance of those places <br />Almost as though they were before our sight, I have added many things</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:40'><b>&sect; 40</b>&nbsp;&nbsp;Taken from the commentaries of very many authors. <br />Obviously, <a href=/people/745 target=_blank>Hecataeus</a> the <a about=https://topostext.org/place/375273PMil class=person long=27.2775 lat=37.5292>Milesian</a> will be found there, <br /><a href=/people/637 target=_blank>Hellanicus</a> of <a about=https://topostext.org/place/392261ILes class=person long=26.2 lat=39.2075>Lesbos</a>, <a href=/people/4261 target=_blank>Phileas</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, too, <br /><a href=/people/2930 target=_blank>Scylax</a> of <a about=https://topostext.org/place/371274PKar class=person long=27.378 lat=37.1263>Caryanda</a>, <br />So too <a href=/people/4654 target=_blank>Pausimachus</a>, whom ancient <a about=https://topostext.org/place/377269PSam class=place long=26.935 lat=37.695>Samos</a> bore <br />And of course, <a href=/people/2612 target=_blank>Damastes</a>, born in noble <a about=https://topostext.org/place/400262USig class=place long=26.1802 lat=39.9901>Sige</a>, <br />Bacorus, sprung from <a about=https://topostext.org/place/364282IRho class=place long=28.2244 lat=36.4408>Rhodes</a>, <a href=/people/1046 target=_blank>Euctemon</a>, too, <br />Of the democratic city in <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, <a href=/people/285 target=_blank>Cleon</a> the <a about=https://topostext.org/place/376145RSic class=person long=14.5 lat=37.6>Sicilian</a>, <br /><a href=/people/133 target=_blank>Herodotus</a> of <a about=https://topostext.org/place/397164PTho class=person long=16.49 lat=39.716>Thurii</a> himself, and then he who is <br />The great glory of speaking, the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a> <a href=/people/193 target=_blank>Thucydides</a>. <br />Here, <a href=/people/879 target=_blank>Probus</a>, part of my heart, you shall have further <br />whatever islands are conspicuous in the sea – <br />I mean through that sea which, after the openings <br />of the world gaping wide from the <a about=https://topostext.org/place/373000PTar class=demonym long=-6.947 lat=37.258>Tartessian</a> strait <br />and the waves of the <a href=/people/770 target=_blank>Atlantic</a>, <br />pushes on our sea <br />right up to the land situated far away. <br />[And you shall have] the curved bays and the outcrops – <br />how the shore stretches itself out with its curving shape, <br />how the ridges extend themselves far into the waves,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:60'><b>&sect; 60</b>&nbsp;&nbsp;and how the lofty cities are washed by the sea, <br />which sources pour out the greatest rivers, <br />how the streams headlong enter the current of the sea, <br />how they then often surround islands <br />and how the ports wind through sheltered reaches, <br />how the creeks spread out, how the lakes lie, <br />how the high mountains lift up their rugged crest <br />and how the white wave of the current laps the pastures. <br />But this will be the end of our work: <br />That the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> sea and the salty <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a>, <br />And any islands which crop up on that deep <br />Should be set forth in full. We have written further <br />About the remainder more fully in that volume <br />Which we wrote about the shores and regions of world. <br />So that you should indeed have an open declaration <br />Of my sweat and my labour, <br />Let us begin the narrative of this work a little more profoundly. <br />You must store up in your innermost heart <br />What I have set forth, for this trust supports <br />What has been sought far and wide and drawn from authors.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=80>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:80'><b>&sect; 80</b>&nbsp;&nbsp;The circle of the broad earth is widely spread, <br />And, on the other hand, waves surround the earth. <br />But where, from the Ocean itself, the deep sea penetrates amid the rock, <br />Such that here the current of our sea <br />Extends far, there is the <a href=/people/770 target=_blank>Atlantic</a> gulf. <br />Here is the city of <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Gadir</a>, previously called <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a>; <br />Here are the pillars of unyielding <a href=/people/4 target=_blank>Hercules</a>, <br />Abila and <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Calpe</a>. <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Calpe</a> is on the left of the land I have spoken of; <br />Abila is next to Africa. They make a harsh noise, <br />And here rises the crest of the overshadowing ridge. <br />A more ancient age called it Oestrymnis, <br />And the lofty bulk of the rocky outcrops <br />All turns towards the warm south wind. <br />But beneath the top of this peak, <br />The Oestrymnian gulf gapes open for its inhabitants, <br />In which the Oestrymnian islands spring up, <br />Lying over a wide area and rich in deposits <br />Of tin and lead. Great is the energy of the people here, <br />Proud their character, pragmatic their skill. <br />All things are connected to affairs of business. <br />They cleave the tempestuous sea, <br />And the current of the Ocean abounding in monsters, with woven boats.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=100>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:100'><b>&sect; 100</b>&nbsp;&nbsp;Indeed, these people do not know how to fashion keels with pine and maple. <br />They do not, as is usual, shape their boats from fir, <br />But, in a miraculous thing, they always fit out <br />Vessels from hides stitched together, <br />And often travel through the immense sea in a skin. <br />Then from here it is two days’ journey by boat to the Holy island – <br />So the ancients called it. <br />This island lies as an expanse of ground amid the waves, <br />And the people of the Hierni cultivate it all over. <br />The island of the Albiones also lies nearby. <br />It was the habit of the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a><br /> To do business among the furthest parts of the Oestrymnides. <br />The colonists from <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> and the ordinary people, bearing on through <br />The <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>pillars of Hercules</a>, used to come down to these seas, <br />Which <a href=/people/1159 target=_blank>Himilco</a> of <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> declared – <br />As he reports he himself proved by sailing all the way – <br />Could scarcely be crossed in four months. <br />This is so because no breezes drive the ship,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=120>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:120'><b>&sect; 120</b>&nbsp;&nbsp;And the sluggish water of the inert sea stands still. <br />He adds this comment too: among the currents, <br />There is a lot of seaweed, and often, in the manner of a bush, <br />It checks a ship. He says that nonetheless here <br />The surface of the sea does not extend to a great depth, <br />And the seabed is scarcely covered with a little water. <br />Here and there sea creatures meet, and sea monsters <br />Swim amid the slow ships sluggishly crawling along. <br />If anyone were to dare to launch a cutter into the waves <br />From the Oestrymnian islands, where the air is frozen <br />In the northern sky, he would come upon the land of the <a about=https://topostext.org/place/443083RLig class=ethnic long=8.3 lat=44.3>Ligurians</a>, <br />Devoid of inhabitants. For the fields have been empty <br />For a long time because of a band of <a about=https://topostext.org/place/490070RKel class=ethnic long=7 lat=49>Celts</a> and frequent battles, <br />And the <a about=https://topostext.org/place/443083RLig class=ethnic long=8.3 lat=44.3>Ligures</a> were driven out, as fortune often drives out others, <br />And came to those places, which they possess amid plenty of bristling bushes. <br />In these places, there is roundabout abundant rough stone, <br />Rugged cliffs and mountains threatening the sky. And this tribe, which <br />In fact avoided contact, for some time now led its life amid the narrow confines of the rocks <br />Far from the waves. For they were afraid of the sea, <br />On account of the danger they had experienced in ancient times.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=140>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:140'><b>&sect; 140</b>&nbsp;&nbsp;Later, since freedom from care fortified their boldness, peace and an untroubled life <br />Coaxed them to be led down from their high dwelling-places <br />And to come down to the areas now by the sea. <br />Then, after those places which we have set out above, <br />The great bay of the open sea extends up to <a href=/people/6731 target=_blank>Ophiussa</a>. <br />Then, from the shore of this place to the inshore sea, <br />where the sea wends itself amid the land <br />(as I have said before), and which they call the sea of the Sardi, <br />Is a journey of seven days for a traveller on foot. <br /><a href=/people/6731 target=_blank>Ophiussa</a> extends its side to a distance <br />As much as you hear the <a about=https://topostext.org/place/375222RPel class=place long=22.15 lat=37.54>island of Pelops</a> lies <br />In the land of the Greeks. <a href=/people/6731 target=_blank>Ophiussa</a> was first called Oestrymnis, <br />Since the Oestrymni inhabited the places and the fields. <br />Some time later a <a href=/people/55 target=_blank>serpent</a> forced the inhabitants to flee <br />And imposed on the empty land its name. <br />From there the ridge of <a href=/people/15 target=_blank>Venus</a> extends into the swells, <br />And the sea barks round two islands, <br />Which are inhospitable on account of the meanness of the land. <br />Then the promontory of Aryium rises up in the harsh north. <br />The journey from here by ship</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=160>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:160'><b>&sect; 160</b>&nbsp;&nbsp;To the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a> of powerful <a href=/people/4 target=_blank>Hercules</a> is five days. <br />After that there is a sea isle <br />Abounding in grass and sacred to <a href=/people/43 target=_blank>Saturn</a>. <br />But there is such great natural force in the island <br />That if anyone approaches it by sailing, <br />Soon the sea in the region of the island is stirred up, <br />The island itself is shaken and all the sea <br />Leaps up, beginning to quake deeply. <br />But the rest of the sea is still like a pond. <br />From here the promontory of <a href=/people/6731 target=_blank>Ophiussa</a> rises up to the air. <br />From the ridge of Aryium to this place is a journey of two days. <br />But the bay which opens up over some distance from here <br />Does not pass by easily navigable with one wind: <br />You can reach the middle with the west wind <br />Carrying you, but the remainder of the bay requires the south wind. <br />Then from there, if anyone makes for the shore <br />Of the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a> on foot, he would come <br />To the end of the journey on just about the fourth day. <br />If anyone directed his path to our sea and the port of <a about=https://topostext.org/place/367000UMal class=place long=-4.4169 lat=36.7211>Malaca</a>, <br />It is a journey of five days.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=180>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:180'><b>&sect; 180</b>&nbsp;&nbsp;Then the Cempsican ridge looms large. Beneath it in turn lies the <br />Island of Achale, named by its inhabitants. <br />There is scarcely any credibility in the tale, because it is a miracle, <br />But repeated assertion sufficiently supports it: <br />They say in the bounds of this island, <br />There is nothing equal in appearance to the rest of the swell. <br />It is certain that everywhere there is brightness in the waves <br />Like the sheen of glass, and through the depth of the sea <br />There is a bluish appearance. <br />But the ancients relate that there the sea <br />Is always thick with foul mud and dirt, <br />Like streams abounding in sediment. <br />The Cempsi and the Sefes inhabit the steep hills <br />In the country of <a href=/people/6731 target=_blank>Ophiussa</a>. Nearby to these <br />Striving <a href=/people/5088 target=_blank>Ligus</a> and the offspring of the Draganes <br />Located their home beneath the very snowy north wind. <br />Then, Poetanion is an island on the border of the Sefes, <br />And an accessible port. After that, the peoples of the Cynetes <br />Lie next to the Cempsi. Then the ridge of the Cynetes, <br />Looming on high where the starlight sets, the furthest ridge</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=200>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:200'><b>&sect; 200</b>&nbsp;&nbsp;Of fertile Europe, faces towards the sea filled with ocean monsters. <br />There the river <a about=https://topostext.org/place/372-74WAna class=place long=-7.4182 lat=37.2359>Ana</a> runs through the Cynetes, <br />And cleaves the land. The bay opens up <br />And hollow land stretches out to the south. <br />From the river I have told you about, twin streams <br />Suddenly separate themselves and push on <br />Their slow courses through the dense water of the bay mentioned above. <br />This is of course because all the sea here is thick with mud. <br />Here the crest of two islands rises up high. <br />The smaller lacks a name. <br />Enduring tradition calls the other Agonis. <br />The rough rock bristles with cliffs <br />And is <a href=/people/43 target=_blank>Saturn</a>’s sacred isle. The sea is struck against it and foams up. <br />The rocky shore stretches out over a wide area. <br />Here, shaggy she-<a href=/people/10956 target=_blank>goats</a> and many a billy-<a href=/people/10956 target=_blank>goat</a> belonging to the natives <br />Wander constantly among the turf’s thickets. <br />They also grow long and thick hairs, <br />Suited to military use and to sailors’ clothing. <br />From here to the river I spoke about is a journey of one day.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=220>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:220'><b>&sect; 220</b>&nbsp;&nbsp;Here too the tribe of the Cynetes have their border. <br />The <a about=https://topostext.org/place/373000PTar class=demonym long=-6.947 lat=37.258>Tartessian</a> region borders this, <br />And the river <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a> flows through the country. <br />From there extends the ridge dedicated to the west wind. <br />In fact, the summit of the peak is called <a about=https://topostext.org/place/366354UZep class=place long=35.448 lat=36.605>Zephyris</a>. <br />The tops of the peak rise high from the ridge. <br />Its great elevation reaches to the air, and something like <br />A mist sitting on top of it always covers its overcast crest. <br />From that point, all the country greatly abounds in grassy soil. <br />These inhabitants have slopes that are always cloudy. <br />The upper air is denser, and the day more humid; <br />There is lots of dew, as though it were night. <br />No breezes blow through, as is usual; no breath of wind <br />Shakes the air upwards. An inert mist sits on the land <br />And the earth is wet over a wide area. <br />If anyone were to set out from the peak of <a about=https://topostext.org/place/366354UZep class=place long=35.448 lat=36.605>Zephyris</a> by ship <br />And be carried towards the current of our sea,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=240>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:240'><b>&sect; 240</b>&nbsp;&nbsp;He would immediately be borne along by the breezes of the west wind. <br />Then there is a ridge, sacred to the goddess of the lower world, <br />And a sumptuous sanctuary in a concealed hollow <br />And a dark adyton. There is a great marsh roundabout, <br />Called Erebea. In fact, the city of Herbi <br />Is said to have stood in these parts in an ancient era, <br />This city, annihilated by the storms of battle, <br />Left its reputation and its name to the salty ground. <br />But from there the <a about=https://topostext.org/place/407006WEbr class=place long=0.5741 lat=40.7277>Hiberus</a> river flows, and it makes <br />The region fertile with its water. Many people say <br />That the <a about=https://topostext.org/place/420435RIbe class=ethnic long=43.5 lat=42>Hiberi</a> are named for this, <br />And not from that river which <br />Glides past the restless Vascones. <br />For whatever part of this people lies <br />West of this river, they call the people Hiberian. <br />The eastern part in turn contains the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a><br />And Cilbiceni. After that is the island Cartare: <br />The Cempsi held it for a long time: <br />There is sufficient faith concurring to support this. <br />Afterwards, since they were driven out because of <br />War with their neighbours, they set out in search <br />Of different places. From there, mount <a href=/people/61 target=_blank>Cassius</a> rises:</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=260>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:260'><b>&sect; 260</b>&nbsp;&nbsp;The Greek tongue formerly called tin “cassiterum” because of it. <br />Then there is the peak of a shrine which also retains its very old Greek name: <br />It is the high citadel of Geron. We have received the tradition <br />That <a href=/people/894 target=_blank>Geryon</a> was once named because of it. <br />Here are the wide-extending shores of the bay of <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a>. <br />And from the river I have mentioned to this part of the area is <br />A journey of a day. <br />Here is the town of Gadir, for the <a about=https://topostext.org/place/369103PCar class=demonym long=10.32 lat=36.85>Carthaginian</a> tongue <br />Used to call a place that had been enclosed “Gadir”. <br />It was previously named <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a>. It was a great and wealthy city <br />In ancient times. Now it is poor, now it is small, <br />Now it is forsaken. Now it is a heap of ruins. <br />We saw nothing wonderful here, <br />Except the festival of <a href=/people/4 target=_blank>Hercules</a>. <br />But there was such power in those rites, or such glory, <br />In a former age (if we believe the thing) <br />That an arrogant kind, powerful beyond all those <br />Whom the Mauritanian people chanced to have in that era, <br />Most welcome to the emperor Octavian</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=280>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:280'><b>&sect; 280</b>&nbsp;&nbsp;And always applying himself to the study of literature – <a href=/people/358 target=_blank>Juba</a> – <br />Although separated by the sea flowing between the places, <br />Believed he was more illustrious because he held the duumvirate of that city. <br />The river <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a> flows through its openings <br />From the Ligustine lake and binds fast the island on all sides with its swash. <br />Nor does that river flow on by a single course, <br />Or in one body cut through the ground that lies nearby. <br />In fact, it carries three mouths into the country <br />In the eastern region, and it washes <br />The southern parts of the city with a fourfold mouth. <br />Mount Argentarius overhangs the marsh, <br />So named by the ancients from its appearance. <br />It shines in its flanks with abundant tin, <br />And reflects more light into the air at a distance <br />When the sun beats down on the ridges with its glow from on high. <br />Moreover, the same river, heavy with its waves of tin, <br />Rolls along the small pieces and carries the rich metal <br />Down to the city walls. <br />From here onwards, a great expanse of territory <br />Recedes from the sea’s salty current through the middle of the land.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=300>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:300'><b>&sect; 300</b>&nbsp;&nbsp;The tribe of the Etamanes dwells here. <br />Then, after that, the Ileates stretch out themselves up to the field of the Cempsi <br />Over the fruitful country. <br />The Cilbiceni, in fact, possess the coastal regions. <br />The sea in the middle separates <br />The peak of Geron and the promontory of the shrine, as I have said above. <br />The bay curves inwards between the high points of the rocks. <br />By the next ridge a great river unfolds: <br />From here the mountain of the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a> rises on high, <br />Shaded with woods. Then there is the island of <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Erythea</a><br />Spreading out its soil, once under the sway of <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a>. <br />Certainly, colonists of ancient <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> first held it. <br />The peak of <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Erythea</a> is cut off from the mainland <br />At a distance of five stades by the sea flowing between as a boundary. <br />In the west, there is an island consecrated to <a href=/people/15 target=_blank>Venus</a> of the Sea: <br />There is a temple of <a href=/people/15 target=_blank>Venus</a> on it, a deep hollow and an oracle. <br />From that mountain (which I had told you bristled with woods) to <br />The promontory of <a href=/people/15 target=_blank>Venus</a> lies a shore which bends back and is soft with sands, <br />Into which the Besilus and Cilbus rivers drive on their currents. <br />After that, to the west, the sacred ridge raises up its domineering rocks. <br />This place Greece once called Herma.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=320>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:320'><b>&sect; 320</b>&nbsp;&nbsp;Herma is a fortification of earth <br />Which on both sides fortifies the lake that flows between. <br />Others on the contrary call it the Way of <a href=/people/4 target=_blank>Hercules</a>: <br /><a href=/people/4 target=_blank>Hercules</a>, of course, is said to have smoothed over the seas, <br />So that an easy route would lie open for the flock he had captured. <br />Then that Herma was for a long time under the control of the African land: <br />Several writers relate this. <br />Nor should we reject <a href=/people/23 target=_blank>Dionysius</a> as a source, <br />Who explains that Tartessium is the border of Africa. <br />In the European territory, which I have indicated is called <br />Sacred by the inhabitants, a peak rises up. <br />A narrow strait flows between both places. <br /><a href=/people/1046 target=_blank>Euctemon</a>, an inhabitant of the city of <a about=https://topostext.org/place/408238PAmp class=place long=23.847 lat=40.822>Amphipolis</a>, says that <br />That place which is called Herma and the Way of <a href=/people/4 target=_blank>Hercules</a><br />Extends for no greater length than a distance of 108 miles,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=340>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:340'><b>&sect; 340</b>&nbsp;&nbsp;And both are separated by a distance of three miles. <br />Here stand the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a> of <a href=/people/4 target=_blank>Hercules</a> which we read <br />Are reckoned to be the boundary of each continent. <br />There are, too, equally projecting rocks, <a href=/people/7148 target=_blank>Abyla</a> and <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Calpe</a>. <br />Calpe is in <a about=https://topostext.org/place/390000RIbe class=place long=-4 lat=39>Hispania</a>, <br /><a href=/people/7148 target=_blank>Abyla</a> is in the land of the <a about=https://topostext.org/place/350000RMau class=ethnic long=-5 lat=35>Maurusians</a>. <br />For the <a about=https://topostext.org/place/369103PCar class=demonym long=10.32 lat=36.85>Carthaginian</a> race calls “<a href=/people/7148 target=_blank>Abyla</a>” in its barbarian tongue <br />What is a “high mountain” in the <a about=https://topostext.org/place/417129RLat class=demonym long=12.9 lat=41.7>Latin</a> tongue. <a href=/people/408 target=_blank>Plautus</a> is authority for this. <br />And “Calpe” in Greece is the name of a type of water pitcher, <br />Hollow and smoothed from use. <br /><a href=/people/1046 target=_blank>Euctemon</a> the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a> also says that there are no rocks or peaks rising on each side: <br />He relates that two islands lie between Africa’s soil and Europe’s shore. <br />He says that these are named the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a> of <a href=/people/4 target=_blank>Hercules</a>, and reports that thirty stades <br />Separate these two; they bristle with woods everywhere, <br />And are always inhospitable for sailors. <br />Indeed, he says that these islands have on them temples and altars of <a href=/people/4 target=_blank>Hercules</a>, <br />And that strangers who are carried to the islands by ship <br />Make offerings to the gods and depart with hastening sail:</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=360>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:360'><b>&sect; 360</b>&nbsp;&nbsp;It is thought impermissible to linger on the islands. <br />He relates that the shallow sea spreads over a wide area <br />Round and next to most of the region. Laden ships are not able to approach the place <br />Because of the meagre depth of water, and the thick mud of the shore. <br />But if his will happens to impel anyone to approach the temple, <br />He hastens to direct his ship to the island of the Moon, <br />To remove the loads from his vessel, <br />And thus to be carried across the sea in a light craft. <br />But as to the heaving sea that flows between the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a>, <br /><a href=/people/2612 target=_blank>Damastes</a> says that it is scarcely seven stades. <br /><a href=/people/2930 target=_blank>Scylax</a> of <a about=https://topostext.org/place/371274PKar class=person long=27.378 lat=37.1263>Caryanda</a> maintains that the water flowing between the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a><br />Extends as far as swell of the <a about=https://topostext.org/place/411291WBos class=place long=29.0753 lat=41.1194>Bosphorus</a>. <br />Beyond these <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a>, by the European side, <br />Inhabitants from <a about=https://topostext.org/place/369103PCar class=place long=10.32 lat=36.85>Carthage</a> once possessed the villages and cities: <br />It was their custom to build ships with flatter keels <br />By means of which a boat wider in the beam <br />Could glide along the shallower bed of the sea.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=380>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:380'><b>&sect; 380</b>&nbsp;&nbsp;Beyond, towards the area to the west, <br /><a href=/people/1159 target=_blank>Himilco</a> relates that from the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a> there is a sea without end: <br />The ocean lies open across a wide area, and the sea stretches out. <br />No man has entered upon these seas; no man has ever set ships on that ocean, <br />Because the sea lacks winds that would drive the ship along, <br />And no breeze from the sky favours a ship. <br />Then, because a mist clothes the air with a kind of cloak, fog always conceals the sea <br />And lasts through the day, which is rather thick with clouds. <br />That is the Ocean, which roars far off around the vast earth. <br />That is the great sea. This sea encircles the shores. <br />This is the source of the water of the inner sea; this is the parent of our sea. <br />Indeed, on the outside it curves into shape very many gulfs <br />And the power of the deep sea penetrates our world. <br />But let us speak of the four greatest gulfs. <br />Accordingly, the first narrow entry point of this Ocean in between the dry land <br />Is the Western tide and the saltwater of the <a href=/people/770 target=_blank>Atlantic</a>; <br />Then there are the waters of <a about=https://topostext.org/place/370546RHyr class=place long=54.6 lat=37>Hyrcania</a>, the <a about=https://topostext.org/place/400516WHyr class=demonym long=51.6 lat=40>Caspian</a> Sea; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=400>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:400'><b>&sect; 400</b>&nbsp;&nbsp;The salt sea of the <a about=https://topostext.org/place/300740RInd class=ethnic long=74 lat=30>Indians</a>, the surface of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> swell; <br />And the <a about=https://topostext.org/place/280400RAra class=demonym long=40 lat=28>Arabian</a> gulf beneath the <a href=/people/1011 target=_blank>South Wind</a>, already warm. <br />An old habit once called the <a about=https://topostext.org/place/280400RAra class=demonym long=40 lat=28>Arabian</a> gulf the Ocean; <br />And another custom so called the <a href=/people/770 target=_blank>Atlantic</a> sea. <br />The Ocean’s current extends encircling far and wide, <br />And it is stretched out over a broad area along dispersed coasts. <br />For the most part, in fact, the sea is spread shallow, <br />With the result that it scarcely covers the sands which lie beneath it. <br />Moreover, thick seaweed rises above the gulf, <br />And the swell here is checked by the marshy seabed. <br />Abundant sea creatures swim amongst all the sea, <br />And great terror, because of these creatures, abides in the deep. <br /><a href=/people/1159 target=_blank>Himilco</a> the <a about=https://topostext.org/place/369103PCar class=demonym long=10.32 lat=36.85>Carthaginian</a> reported that he had once seen these <br />Creatures in the Ocean and proved their existence. <br />These we have related to you, revealed a long time ago <br />Deep in the annals of the <a about=https://topostext.org/place/369103PCar class=ethnic long=10.32 lat=36.85>Carthaginians</a>. <br />Now let us return to the prior subject matter of our pen. <br />And so opposite the African Pillar, as I have said, rises up another <br />In European soil. <br />Here the river Chrysus enters the deep sea; on this side and that</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=420>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:420'><b>&sect; 420</b>&nbsp;&nbsp;Four tribes dwell. <br />For there are the fierce Libyphoenicians in this place; <br />There are the Massieni; and the Cilbicenan domains <br />In a wild country, and the rich <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a>, <br />Who extend to the Calactican Bay. <br />Hard by these lies the ridge of the Barbetes, <br />And the river of <a about=https://topostext.org/place/367000UMal class=place long=-4.4169 lat=36.7211>Malacha</a>, with the city of the same name, <br />Which in an earlier age was called <a about=https://topostext.org/place/367-41UMai class=place long=-4.1143 lat=36.7352>Menace</a>. <br />There an island under the sway of the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a><br />Lies opposite the city, consecrated by the inhabitants <br />To Noctiluca a long time ago. On the island is a pool <br />And a safe port: the town of <a about=https://topostext.org/place/367-41UMai class=place long=-4.1143 lat=36.7352>Menace</a> lies above it. <br />Where the region which I have mentioned draws itself away from the waves, <br />Sisurus swells up with its lofty peak. <br />There a great rock rises up and extends into the deep sea. <br />Once numerous pines gave this rock to be named for them in the Greek tongue. <br />And the shore slopes back right as far as the <a about=https://topostext.org/place/425031SAph class=place long=3.1067 lat=42.5242>shrine of Venus</a> and the ridge of <a href=/people/15 target=_blank>Venus</a>. <br />In fact, on that shore there stood numerous cities in times past,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=440>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:440'><b>&sect; 440</b>&nbsp;&nbsp;And many <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> held these places a long time ago. <br />Now the empty land presents inhospitable sand. Bereft of farmers, <br />The ground lies neglected. <br />From the aforementioned ridge of <a href=/people/15 target=_blank>Venus</a>, African Herma is seen at a distance, <br />As I have said before. Here again the shore is exposed, <br />Now devoid of inhabitants, and of degraded soil. <br />Here, too, in fact, in days of old stood very many cities, <br />And many peoples abounded. <br />For there a port spreads wide, near the town of the Massieni, <br />Carving itself out from the deep sea, <br />And in the farthest part of the bay rises the city of the Massieni <br />with its high walls. After this, the ridge of Traete rises up, <br />and the small island of Strongyle stands nearby. <br />Next, on the edge of this island, a marshy level extends its great flanks. <br />There the <a href=/people/240 target=_blank>Theodorus</a> river (do not let it be bewildering to you <br />That in this fierce place, barbarian enough, you should hear tell <br />Of the name of this river in the Greek tongue) oozes out. <br />The <a about=https://topostext.org/place/335354RPho class=ethnic long=35.4 lat=33.5>Phoenicians</a> formerly used to inhabit those places.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=460>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:460'><b>&sect; 460</b>&nbsp;&nbsp;From here again the sands of the shore spread themselves out, <br />And three islands surround this shore on all sides: <br />Here once stood the boundary of the <a about=https://topostext.org/place/373000PTar class=ethnic long=-6.947 lat=37.258>Tartessians</a>. <br />Here once was the city of Herna. <br />The tribe of the Gymnetes had settled those places. <br />Now forsaken, and for a long time lacking inhabitants, <br />The river Alebus flows, burbling to itself. <br />Next, through these swells is the island of Gymnesia, <br />Which gave its old name to the population of inhabitants, <br />Right up to the channel of the <a about=https://topostext.org/place/392-03USuc class=place long=-0.3868 lat=39.1994>Sicanus</a> which flows by. <br />There too the islands of <a about=https://topostext.org/place/389014IPit class=place long=1.436 lat=38.907>Pityussae</a> appear, <br />And the broad backs of the <a about=https://topostext.org/place/397032IGym class=place long=3.25 lat=39.65>Baleares</a> islands. <br />On the far side, the Iberi extend their sway right up <br />To the ridge of <a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a>, settled over a wide area <br />Near the inner sea. Idera rises, the first of their cities: <br />From here, the shore stretches out barren sands: <br />Here, too, a long time ago the city of <a about=https://topostext.org/place/388001UDia class=place long=0.1071 lat=38.8428>Hemeroscopium</a><br />Was inhabited. But nowadays the ground, devoid <br />Of inhabitants, is a languorous swamp. <br />Next, the city of <a about=https://topostext.org/place/392-03USuc class=place long=-0.3868 lat=39.1994>Sicana</a> rears itself,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=480>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:480'><b>&sect; 480</b>&nbsp;&nbsp;So named by the <a about=https://topostext.org/place/390000RIbe class=ethnic long=-4 lat=39>Iberians</a> from the neighbouring river. <br />Not far from the fork in this river, <br />The Tyrius river touches the town of Tyris. <br />But where the land draws far back from the sea, <br />The country extends inland full of thickets. <br />There the <a href=/people/8978 target=_blank>Bebryces</a>, a rural and fierce tribe, <br />Used to wander amid their herds abounding in <a href=/people/10978 target=_blank>cattle</a>. <br />These people, feeding themselves very hardily with milk and fatty cheese, <br />Used to live their lives in the manner of wild beasts. <br />Beyond that the ridge of <a about=https://topostext.org/place/430098ICap class=place long=9.8425 lat=43.0477>Caprasia</a> comes into view on high, <br />And the shores lie bare right up to the boundary of <a href=/people/6731 target=_blank>Ophiussa</a>, the empty Chersonese. <br />The marsh of the Naccarares spreads out along those shores. <br />Custom, in fact, gave this name to that marsh. <br />In the middle of the swamp also rises a small island abounding in olives: <br />For this reason, it stands sacred to <a href=/people/11 target=_blank>Minerva</a>. <br />There were many cities nearby. <br />It was in fact here that Hylactes, Hystra, Sarna and noble Tyrichae stood. <br />The town had an old name, and the inhabitants’ treasure <br />Was greatly renowned through all the lands of the earth</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=500>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:500'><b>&sect; 500</b>&nbsp;&nbsp;Since, beyond the richness of the soil, as a result of which the <br />Ground sustained <a href=/people/10978 target=_blank>cattle</a>, sustained vines, and sustained <br />The gifts of flaxen <a href=/people/48 target=_blank>Ceres</a>, foreign goods are carried up the <br /><a about=https://topostext.org/place/407006WEbr class=place long=0.5741 lat=40.7277>Iberus</a> river. <br />Very near by, the Sacred mountain raises its proud head <br />And the Oleum river flows between the twin crests of the ridges, <br />Dividing up the neighbouring country. <br />Not much beyond this, in fact, Sellus (this is the old name for the mountain) <br />Is carried up as far as the heights of the clouds. <br />The city of Lebedontia stood nearby the mountain <br />In an earlier age; now the country, devoid of dwellings, <br />Gives a home to the haunts and dens of wild beasts. <br />After these places, sands lie through much of the region: <br />Over these sands the town of <a about=https://topostext.org/place/411011USal class=place long=1.1288 lat=41.078>Salauris</a> once stood; <br />In them once lay ancient <a href=/people/3716 target=_blank>Callipolis</a>. <br />That is <a href=/people/3716 target=_blank>Callipolis</a> which by the great height of its walls <br />And its lofty gables once drew near to the winds. <br /><a href=/people/3716 target=_blank>Callipolis</a> used to touch on both sides, <br />With the edge of its great expanse of dwellings <br />A pool which always abounded in fish. <br />Then there is the town of <a about=https://topostext.org/place/411013UTar class=place long=1.259 lat=41.1147>Tarraco</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=520>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:520'><b>&sect; 520</b>&nbsp;&nbsp;And the charming seat of the <a about=https://topostext.org/place/414022UCol class=ethnic long=2.1754 lat=41.3841>Barcinones</a>. <br />There a port spreads out its safe reaches, <br />And the land is always wet with pleasant water. <br />After that, the harsh Indigetes show themselves: <br />That tribe is hardy, a fierce tribe in hunting <br />And one which sticks to its haunts. <br />Then the Celebantic ridge extends its spine <br />Right up to the salt sea. <br />It is now only hearsay that here stood <br />The city of Cypsela: <br />For the rugged land preserves no traces <br />Of the earlier city. <br />There a port opens wide in a great bay, <br />And the salt sea laps the soil in a curve over a wide expanse. <br />After that, the shore of the Indigetes slopes back <br />As far as the peak of the promontory of <a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a>. <br />After that shore, which we said lay in sloping territory, <br />Mount Malodes rears itself <br />Amid the waves where two crags swell up, <br />And the twin peaks seek the lofty clouds. <br />Between these lies spread out a port <br />And the sea is exposed to no breezes. <br />That is so because, since the rocky outcrops lie in front of it, <br />The summits of the crags surround it on all sides</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=540>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:540'><b>&sect; 540</b>&nbsp;&nbsp;And the body of water, unmoving, lies hidden between the rocks. <br />The sea lies still: shut in, the ocean is struck dumb. <br />Then lake Tonon lies at the foot of the mountains, <br />And the ridge of the Tononian cliff rises: <br />Through that region the roaring Anystus river <br />Whirls along its foaming water <br />And it cuts through the salt sea with its current. <br />These waters, because of the waves, are salty. <br />All the countryside that draws back from the deep gulf <br />The Ceretes and the hardy Acroceretes previously held. <br />Now, under one name, the tribe is the Iberi. <br />Then from there the Sordan people used to live among <br />Out-of-the-way places. <br />And they used to live their lives <br />Amid the haunts of beasts <br />Extending right up to the inner sea <br />Where <a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a> stands with its pine-bearing crest <br />And touches the fields on all sides and the gulf of the sea. <br />On the border of the Sordan land <br /><a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a>, a wealthy city, <br />Is said once to have stood.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=560>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:560'><b>&sect; 560</b>&nbsp;&nbsp;And here the inhabitants of <a about=https://topostext.org/place/433054PMas class=place long=5.36 lat=43.3>Massilia</a><br />Often used to engage in affairs of business. <br />But from the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars</a> of <a href=/people/4 target=_blank>Hercules</a>, <br />The <a href=/people/770 target=_blank>Atlantic</a> swell and the border <br />Of the western shore to <a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a><br />Is a journey of seven days for a swift ship. <br />After the ridge of <a about=https://topostext.org/place/426007LPyr class=place long=0.658 lat=42.632>Pyrene</a><br />Lie the sands of the Cynetic shore <br />And the river <a about=https://topostext.org/place/427029URus class=place long=2.9452 lat=42.7087>Roschinus</a> furrows them over a wide area. <br />Here is the muddy earth of the Sordi, as I have said; <br />Here, in fact, a lake and a swamp lie extended wide. <br />And the inhabitants call it Sordice. <br />And beyond the rattling currents of the great body of water <br />(For on account of the broad circumference of its open border, <br />It swells up with stormy winds) <br />From this lake itself the river Sordus flows out <br />… [text corrupt] <br />It is bent by the sea, and through its own winding round <br />The earth is carved out; the waves creep more slowly, <br />And the great bulk of the deep is stretched out. <br />Three very large islands stand in it</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=580>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:580'><b>&sect; 580</b>&nbsp;&nbsp;And the sea flows amid the harsh rocks. <br />Not far from that place another bay curves open <br />Where the land is broken apart, and it surrounds four islands <br />(Though an old tradition said that there were three in all) <br />With the deep sea. <br />Once, the tribe of the Elesyces inhabited these parts, <br />And the city of <a about=https://topostext.org/place/432030UNar class=place long=3.004 lat=43.181>Narbo</a> was the great capital of a warlike kingdom. <br />Here the river Attagus rushes into the salt sea <br />And adjacent here is the marsh of Helice. <br />An old tale relates that <a about=https://topostext.org/place/433032UBae class=place long=3.2131 lat=43.3412>Besara</a> stood next. <br />But now in fact the Ledus and Orobis rivers <br />Wander through the empty fields and the mounds of ruins, <br />Witnesses to its ancient loveliness. <br />Not far from those the Thyrius is borne into the deep sea <br />… [text corrupt] <br />[such that] the eddies of the currents are never roused up, <br />And the halcyon calm always levels the whirlpool. <br />But the peak of this crag extends itself from the region <br />To that promontory which I have said is called Candidum. <br />Nearby is the island of Blasco,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=600>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:600'><b>&sect; 600</b>&nbsp;&nbsp;And the land is eroded by the salt sea to a smooth shape. <br />On the mainland, in between the tops of the ridges that rise up, <br />A plain of sandy soil unfolds: <br />These shores stretch out bereft of inhabitants. <br />Then high, pine-bearing mount Setius puffs up its peak. <br />The ridge of Setius stretches up to Taphrus, <br />Since its foot spreads over a wide area: <br />By way of explanation, the Rhodani tribes call the marsh next <br />To the river “Taphros”. <br />The <a about=https://topostext.org/place/390000RIbe class=demonym long=-4 lat=39>Iberian</a> land and the rugged <a about=https://topostext.org/place/443083RLig class=ethnic long=8.3 lat=44.3>Ligyes</a> are separated <br />By the channel of this river. <br />Here, a rather simple town and slight in its population, <br />Is the city of Polygium. <br />Then there are the village of Mansa and the town of Naustalo <br />And the city… [text corrupt] <br />…and the river Classius flows into its sea. <br /> But the country of Cimenice slopes down far <br />From the salty current. The ground extends over a long distance, <br />And the region is shaded with woods. <br />The source of the name is the mountain with its lofty summits: <br />The <a about=https://topostext.org/place/437046WRho class=place long=4.5989 lat=43.6544>Rhodanus</a> touches the lowest foothills of this,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=620>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:620'><b>&sect; 620</b>&nbsp;&nbsp;And flows with its stream amid the rugged bulk of the peak. <br />The <a about=https://topostext.org/place/443083RLig class=ethnic long=8.3 lat=44.3>Ligures</a> spread themselves out over a great distance <br />Up to the water of the inner sea <br />From the peak of Setis and the crags of the rocky ridge. <br />But the subject almost demands that I should more fully <br />Explain to you the current of the <a about=https://topostext.org/place/437046WRho class=place long=4.5989 lat=43.6544>Rhodanus</a>. <br /><a href=/people/879 target=_blank>Probus</a>, bear with this discussion by my lingering pen. <br />In fact, I shall speak of the source of the river, the cascade <br />Of the great eddy, <br />The tribes which it laps with the waves of the river, <br />How great the gain for the inhabitants it waters <br />And the forks of its mouths. <br />The <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> raise their snowy ridge to the sky <br />In the east. The fields of the countryside of Gaul <br />Are divided up with rocky outcrops, <br />And the storms always having puffing winds. <br />That river emanates from, and thrusts itself out from <br />A cave which gapes open, <br />Furrowing the earth with savage force. <br />It is navigable at the source of its waters and at the very beginning. <br />But that side of the rock which raises itself on high, <br />Which brings forth the river, <br />The tribes name the Column of the <a href=/people/180 target=_blank>Sun</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=640>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:640'><b>&sect; 640</b>&nbsp;&nbsp;That is because from so great an outcrop <br />It is borne right up to the lofty clouds, <br />Such that the midday sun cannot be seen <br />From the opposite ridge <br />When it is about to bring back the day and <br />Approaches the borders of the north. <br />For you know that the opinion of the <br /><a href=/people/10981 target=_blank>Epicureans</a> was of this sort: that the <a href=/people/180 target=_blank>Sun</a><br />Was not brought down at sunset – <br />That it entered no whirlpools, <br />That it is never hidden, <br />But it traverses the world; it runs through the corners of the sky, <br />It gives life to the lands, and nurtures all the hollows <br />With the fodder of its light <br />And in turn the white torch of <a href=/people/11033 target=_blank>Phoebus</a><br />Is denied to the regions in a sure pattern. <br />[For the ridge stands in its way with its high peak <br />Which, since it extends from the west to the farthest north, <br />Divides the two sides of the earth <br />And the courses of the sun with its turning-post.] <br />When it has cut a southern track <br />And turned its light towards the <a href=/people/770 target=_blank>Atlantic</a> clime <br />In order that it might bring its fire to the peoples of the farthest north <br />And carry itself from its rising in <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>, <br />It is bent towards the other parts of the sky <br />By its curving circuit, and crosses the turning post. <br />And when the <a href=/people/180 target=_blank>Sun</a> denies its splendour to our sight, <br />Horrid night rushes down on the sky, <br />And blind darkness immediately covers our lands.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=660>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:660'><b>&sect; 660</b>&nbsp;&nbsp;But then the bright day makes them bright <br />Who grow stiff beneath a northern sky. <br />Then, when the shadow of night holds the northern regions <br />All our race enjoy bright day. <br />Then the river passes from its source through the Tylangi, <br />The Daliterna and the fields of the Chabilcori, <br />And the Cemenican fields (the names are harsh enough <br />And all are wounding when first heard: <br />But you must not fail to say them, on account of your enthusiasm <br />And my effort). <br />From there it extends through ten bends <br />In the meandering of its eddies; <br />And many authors relate that there is a dense swamp: <br />From there, it bears itself on into great marshes, <br />Which an old Greek custom called Accion, <br />And it drives its headlong waters through the <br />Calm of the swamp. Then, flowing out <br />And bending itself in the shape of rivers, <br />From there it is borne into the whirlpools <br />Of the <a href=/people/770 target=_blank>Atlantic</a>, and into our sea, <br />Facing the west. <br />It cuts through the wide sands with its five mouths. <br />There rises the city of <a about=https://topostext.org/place/437046UAre class=place long=4.6309 lat=43.6777>Arelatus</a>,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=680>
+                            <p id='urn:cts:latinLit:stoa0047.stoa003:680'><b>&sect; 680</b>&nbsp;&nbsp;Called Theline in an earlier age, when the Greeks inhabited it. <br />Matters have compelled me to say many things above <br />About the long <a about=https://topostext.org/place/437046WRho class=place long=4.5989 lat=43.6544>Rhodanus</a> with our pen. <br />But my mind is never turned towards that proposition <br />That I should claim that Europe and Africa are divided by that river. <br />Phileus may say this, and it may be an old proposition, <br />That the inhabitants thought so: let such barbarian ignorance <br />Be an object of scorn and derision. <br />And let it be marked out by an appropriate name. <br />It is a journey of two days and two nights for a ship: <br />From here lie the tribe of the Veragri, the city of Bergine, <br />The fierce <a href=/people/3465 target=_blank>Salyes</a>, the ancient town of the Mastramelan lake, <br />The peak with its lofty back which the inhabitants call <a about=https://topostext.org/place/432056HKit class=place long=5.6067 lat=43.1758>Citharistium</a>. <br />And there is <a about=https://topostext.org/place/433054PMas class=place long=5.36 lat=43.3>Massilia</a> itself, the city whose location is here. <br />The shore lies in front of the stream; a slender causeway <br />Lies open amid the waves. <br />The gulf bathes the sides; the marsh surrounds the city <br />And waves extending on all sides lap the town and its dwellings. <br />The city is almost an island, since all the sea pours its force <br />Over the ground. <br />But the careful hard work a long time ago of the founders <br />Overcame the shape of the place and the natural terrain <br />By skill. <br />If at all it pleases you to carry over these old names into new ones… <br /><br />Though it is an old proposition. [rest lost...]</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.thelatinlibrary.com/avienus.ora.html' target='_blank'>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2018                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=751', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas751";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=751';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Scriptores Historia Augusta, Thirty Pretenders' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Scriptores Historia Augusta, The Life of Thirty Tyrants, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='360' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 360' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/606' content='urn:cts:latinLit:phi2331.phi024' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/nr97032332' content='Scriptores Historia Augusta'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr97032340' content='David Magie (1877-1960)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Historia_Augusta/home.html' /><h2>Scriptores Historia Augusta, Thirty Pretenders</h2>Scriptores Historia Augusta, The Life of Thirty Tyrants, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 94 tagged references to 54 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi2331.phi024'>urn:cts:latinLit:phi2331.phi024</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87775508'>Q87775508</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:latinLit:phi2331.phi024.perseus-lat1' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi2331.phi024:1'><b>&sect; 1</b>&nbsp;&nbsp;The Lives of the Thirty Pretenders <br />After having written many books in the style of neither an historian nor a scholar but only that of a layman, we have now reached the series of years in which the thirty pretenders arose — the years when the Empire was ruled by <a href=/people/2746 target=_blank>Gallienus</a> and <a href=/people/12175 target=_blank>Valerian</a>, when <a href=/people/12175 target=_blank>Valerian</a> was busied with the great demands of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> War and <a href=/people/2746 target=_blank>Gallienus</a>, as will be shown in the proper place, was held in contempt not only by men but by women as well. 2 But since so obscure were these men, who flocked in from divers parts of the world to seize the imperial power, that not much concerning them can be either related by scholars or demanded of them, and since all those historians who have written in Greek or in Latin have passed over some of them without dwelling even on their names, and, finally, since certain details related about them by many have varied so widely, I have therefore gathered them all into a single book, and that a short one, especially as it is evident that much concerning them has already been told in the Lives of <a href=/people/12175 target=_blank>Valerian</a> and <a href=/people/2746 target=_blank>Gallienus</a> and need not be repeated here. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:phi2331.phi024:2'><b>&sect; 2</b>&nbsp;&nbsp;Cyriades <br />This man, rich and well born, fled from his father Cyriades when, by his excesses and profligate ways, he had become a burden to the righteous old man, and after robbing him of a great part of his gold and an enormous amount of silver he departed to the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>. 2 Thereupon he joined King <a href=/people/12038 target=_blank>Sapor</a> and became his ally, and after urging him to make war on the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a>, he brought first Odomastes and then <a href=/people/12038 target=_blank>Sapor</a> himself into the Roman dominions; and also by capturing <a about=https://topostext.org/place/362362PAnt class=place long=36.165 lat=36.2>Antioch</a> and <a about=https://topostext.org/place/325349UCae class=place long=34.8914 lat=32.5026>Caesarea</a> he won for himself the name of Caesar. 3 Then, when he had been hailed Augustus, after he had caused all the Orient to tremble in terror at his strength or his daring, and when, moreover, he had slain his father (which some historians deny), he himself, at the time that <a href=/people/12175 target=_blank>Valerian</a> was on his way to the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> War, was put to death by the treachery of his followers. 4 Nor has anything more that seems worthy of mention been committed to history about this man, who has obtained a place in letters solely by reason of his famous flight, his act of parricide, his cruel tyranny, and his boundless excesses. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#2 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:phi2331.phi024:3'><b>&sect; 3</b>&nbsp;&nbsp;<a href=/people/2121 target=_blank>Postumus</a><br />This man, most valiant in war and most steadfast in peace, was so highly respected for his whole manner of life that he was even entrusted by <a href=/people/2746 target=_blank>Gallienus</a> with the care of his son Saloninus (whom he had placed in command of Gaul) as the guardian of his life and conduct and his instructor in the duties of a ruler. 2 Nevertheless, as some writers assert — though it does not accord with his character — he afterwards broke faith and after slaying Saloninus seized the imperial power. 3 As others, however, have related with greater truth, the Gauls themselves, hating <a href=/people/2746 target=_blank>Gallienus</a> most bitterly and being unwilling to endure a boy as their emperor, hailed as their ruler the man who was holding the rule in trust for another, and despatching soldiers they slew the boy. 4 When he was slain, <a href=/people/2121 target=_blank>Postumus</a> was gladly accepted by the entire army and by all the Gauls, and for seven years he performed such exploits that he completely restored the provinces of Gaul, while <a href=/people/2746 target=_blank>Gallienus</a> spent his time in debauchery and taverns and grew weak in loving a barbarian woman. 5 <a href=/people/2746 target=_blank>Gallienus</a>, however, was warring against him at that time when he himself was wounded by an arrow. 6 Great, indeed, was the love felt for <a href=/people/2121 target=_blank>Postumus</a> in the hearts of all the people of Gaul because he had thrust back all the German tribes and had restored the Roman Empire to its former security. 7 But when he began to conduct himself with the greatest sternness, the Gauls, following their custom of always desiring a change of government, at the instigation of <a href=/people/3622 target=_blank>Lollianus</a> put him to death. <br />8 If anyone, indeed, desires to know the merits of <a href=/people/2121 target=_blank>Postumus</a>, he may learn <a href=/people/12175 target=_blank>Valerian</a>'s opinion concerning him from the following letter which he wrote to the Gauls: 9 As general in charge of the <a about=https://topostext.org/place/507071WRhi class=place long=7.1111 lat=50.736>Rhine</a> frontier and governor of Gaul we have named <a href=/people/2121 target=_blank>Postumus</a>, a man most worthy of the stern discipline of the Gauls. He by his presence will safeguard the soldiers in the camp, civil rights in the forum, law-suits at the bar of judgement, and the dignity of the council-chamber, and he will preserve for each one his own personal possessions; he is a man at whom I marvel above all others and well deserving of the office of prince, and for him, I hope, you will render me thanks. 10 If, however, I have erred in my judgement concerning him, you may rest assure days that nowhere in the world will a man be found who can win complete approval. 11 Upon his son, <a href=/people/2121 target=_blank>Postumus</a> by name, a young man who will show himself worthy of his father's character, I have bestowed the tribuneship of the <a href=/people/12040 target=_blank>Vocontii</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#3 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:phi2331.phi024:4'><b>&sect; 4</b>&nbsp;&nbsp;<a href=/people/2121 target=_blank>Postumus</a> the Younger <br />Concerning this man there is naught to relate save that after receiving the name of Caesar from his father and later, as a mark of honour to him, that of Augustus, he was killed, it is said, together with his father at the time when <a href=/people/3622 target=_blank>Lollianus</a>, who was put in <a href=/people/2121 target=_blank>Postumus</a>' place, took the imperial power offered to him by the Gauls. 2 He was, moreover — and only this is worthy of mention — so skilled in rhetorical exercises that his Controversies are said to have been inserted among those of Quintilian, who, as the reading of even a single chapter will show at the first glance, was the sharpest rhetorician of the Roman race. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#4 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:phi2331.phi024:5'><b>&sect; 5</b>&nbsp;&nbsp;<a href=/people/3622 target=_blank>Lollianus</a><br />In consequence of this man's rebellion in Gaul, <a href=/people/2121 target=_blank>Postumus</a>, the bravest of all men, was put to death after he had brought back the power of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> into its ancient condition at the time when Gaul was on the brink of ruin because of <a href=/people/2746 target=_blank>Gallienus</a>' excesses. 2 <a href=/people/3622 target=_blank>Lollianus</a> was, indeed, a very brave man, but in the face of rebellion his strength was insufficient to give him authority over the Gauls. 3 He was killed, moreover, by <a href=/people/3713 target=_blank>Victorinus</a>, son of Vitruvia, or rather Victoria, who was later entitled Mother of the Camp and honoured by the name of <a href=/people/964 target=_blank>Augusta</a>, though she herself, doing her utmost to escape the weight of so great a burden, had bestowed the imperial power first on <a href=/people/50 target=_blank>Marius</a> and then on <a href=/people/11062 target=_blank>Tetricus</a> together with his son. 4 <a href=/people/3622 target=_blank>Lollianus</a>, in fact, did to some extent benefit the commonwealth; for many of the communes of Gaul and also some of the camps, built on barbarian soil by <a href=/people/2121 target=_blank>Postumus</a> during his seven years, but after his murder plundered and burned during an incursion of Germans, were restored by him to their ancient condition. Then he was slain by his soldiers because he exacted too much labour. <br />5 And so, while <a href=/people/2746 target=_blank>Gallienus</a> was bringing ruin on the commonwealth, there arose in Gaul first <a href=/people/2121 target=_blank>Postumus</a>, then <a href=/people/3622 target=_blank>Lollianus</a>, next <a href=/people/3713 target=_blank>Victorinus</a>, and finally <a href=/people/11062 target=_blank>Tetricus</a> (for of <a href=/people/50 target=_blank>Marius</a> we will make no mention), all of them defenders of the renown of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. 6 All of these, I believe, were given by gift of the gods, in order that, while that pestiferous fellow was caught in the toils of unheard-of excesses, no opportunity might be afforded the Germans for seizing Roman soil. 7 For if they had broken forth then in the same manner as did the <a href=/people/1095 target=_blank>Goths</a> and the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, these foreign nations, acting together in Roman territory, would have put an end to this venerable empire of the Roman nation. 8 As for <a href=/people/3622 target=_blank>Lollianus</a>, his life is obscure in many details, as is also that of <a href=/people/2121 target=_blank>Postumus</a>, too — but only their private lives; for while they lived they were famed for their valour, not for their importance in rank. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#5 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:phi2331.phi024:6'><b>&sect; 6</b>&nbsp;&nbsp;<a href=/people/3713 target=_blank>Victorinus</a><br />When the elder <a href=/people/2121 target=_blank>Postumus</a> saw that <a href=/people/2746 target=_blank>Gallienus</a> was marching against him with great forces, and that he needed the aid not only of soldiers but also of a second prince, he called <a href=/people/3713 target=_blank>Victorinus</a>, a man of soldierly energy, to share in the imperial power, and in company with him he fought against <a href=/people/2746 target=_blank>Gallienus</a>. 2 Having summoned to their aid huge forces of Germans, they protracted the war for a long time, but at last they were conquered. 3 Then, when <a href=/people/3622 target=_blank>Lollianus</a>, too, had been slain, <a href=/people/3713 target=_blank>Victorinus</a> alone remained in command. He also, because he devoted his time to seducing the wives of his soldiers and officers, was slain at <a about=https://topostext.org/place/509070UCol class=place long=6.9582 lat=50.9413>Agrippina</a> through a conspiracy formed by a certain clerk, whose wife he had debauched; his mother Vitruvia, or rather Victoria, who was later called Mother of the Camp, had given his son <a href=/people/3713 target=_blank>Victorinus</a> the title of Caesar, but the boy, too, was immediately killed after his father was slain at <a about=https://topostext.org/place/509070UCol class=place long=6.9582 lat=50.9413>Agrippina</a>. <br />4 Concerning <a href=/people/3713 target=_blank>Victorinus</a>, because he was most valiant and, save for his lustfulness, an excellent emperor, many details have been related by many writers. 5 We, however, deem it sufficient to insert a portion of the book of a certain <a href=/people/423 target=_blank>Julius</a> Atherianus, in which he writes of <a href=/people/3713 target=_blank>Victorinus</a> as follows: 6 With regard to <a href=/people/3713 target=_blank>Victorinus</a>, who ruled the provinces of Gaul after <a href=/people/423 target=_blank>Julius</a> <a href=/people/2121 target=_blank>Postumus</a>, I consider that no one should be given a higher place, not <a href=/people/207 target=_blank>Trajan</a> for his courage, or <a href=/people/508 target=_blank>Antoninus</a> for his kindness, or <a href=/people/1075 target=_blank>Nerva</a> for his noble dignity, or <a href=/people/492 target=_blank>Vespasian</a> for his care of the treasury, or yet <a href=/people/11046 target=_blank>Pertinax</a> or <a href=/people/501 target=_blank>Severus</a> for the strictness of their whole lives or the severity of their military discipline. 7 All these qualities, however, were offset to such an extent by his lustfulness and his desire for the pleasures gotten from women that no one would dare to set forth in writing the virtues of one who, all are agreed, deserved to be punished. 8 And so, since this is the judgement that writers have given concerning <a href=/people/3713 target=_blank>Victorinus</a>, I consider that I have said enough regarding his character. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#6 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:phi2331.phi024:7'><b>&sect; 7</b>&nbsp;&nbsp;<a href=/people/3713 target=_blank>Victorinus</a> the Younger <br />Concerning him nothing has been put into writing save that he was the grandson of Victoria and the son of <a href=/people/3713 target=_blank>Victorinus</a> and that he was entitled Caesar by his father or grandmother on the eve of his father's murder and was at once slain in anger by the soldiers. 2 Their tombs, indeed, are still to be seen near <a about=https://topostext.org/place/509070UCol class=place long=6.9582 lat=50.9413>Agrippina</a>, humble monuments covered with common marble, and on them is carved the inscription,a Here lie the two Victorini, pretenders. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#7 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:phi2331.phi024:8'><b>&sect; 8</b>&nbsp;&nbsp;<a href=/people/50 target=_blank>Marius</a><br />After <a href=/people/3713 target=_blank>Victorinus</a>, <a href=/people/3622 target=_blank>Lollianus</a> and <a href=/people/2121 target=_blank>Postumus</a> were slain, <a href=/people/50 target=_blank>Marius</a>, formerly a worker in iron, so it is said, held the imperial power, but only for three days. 2 What more can be asked concerning him I know not, save that he was made more famous by the shortness of his rule. For, just as that consul who held the office as a substitute for six hours at midday was ridiculed by <a href=/people/2300 target=_blank>Cicero</a> in the jest, We have had a consul so stern and severe that during his term of office no one has breakfasted, no one has dined, and no one has slept, so the same, it would seem, can be said of <a href=/people/50 target=_blank>Marius</a>, who on the first day was made emperor, on the second seemed to rule, and on the third was slain. <br />3 He was, indeed, an active man and rose through the various grades of military service to the imperial power itself — this one whom many called <a href=/people/6638 target=_blank>Mamurius</a> and some <a href=/people/1519 target=_blank>Veturius</a>, because, forsooth, he was a worker in iron. 4 But we have already said too much about this man, concerning whom it will be sufficient to add that there was no one whose hands were stronger, for either striking or thrusting, since he seemed to have not veins in his fingers, but sinews. 5 For he is said to have thrust back on-coming waggons by means of his forefinger and with a single finger to have struck the strongest men so hard that they felt as much pain as though hit by a blow from wood or blunted iron; and he crushed many objects by the mere pressure of two of his fingers. 6 He was slain by a soldier whom, because he had once been a worker in his smithy, he had treated with scorn either when he commanded troops or after he had taken the imperial power. 7 His slayer is said to have added the words, This is a sword which you yourself have forged. <br />8 His first public harangue, it is said, was as follows: I know well, fellow-soldiers, that I can be taunted with my former trade, of which all of you are my witnesses. 9 However, let anyone say what he wishes. As for me, may I always labour with steel rather than ruin myself with wine and garlands and harlots and gluttony, as does <a href=/people/2746 target=_blank>Gallienus</a>, unworthy of his father and the noble rank of his house. 10 Let men taunt me with working with steel as long as foreign nations shall know from their losses that I have handled the steel. 11 In short, I will strive to the utmost that all Alamannia and <a href=/people/557 target=_blank>Germany</a> and the nations round about shall deem the Roman people a steel-clad folk and that it shall be most of all the steel that they fear in us. 12 But as for you, I wish you to rest assured that you have chosen as emperor one who will never know how to deal with aught but the steel. 13 And this I say because I know that no charge can be brought against me by that pestiferous profligate save this, that I have been a forger of swords and armour. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#8 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi2331.phi024:9'><b>&sect; 9</b>&nbsp;&nbsp;Ingenuus <br />In the consulship of <a href=/people/2949 target=_blank>Tuscus</a> and <a href=/people/837 target=_blank>Bassus</a>, while <a href=/people/2746 target=_blank>Gallienus</a> was spending his time in wine and gluttony and giving himself up to pimps and actors and harlots, and by continued debauchery was destroying the gifts of nature, Ingenuus, then ruler of the <a about=https://topostext.org/place/450190RPan class=demonym long=19 lat=45>Pannonian</a> provinces, was acclaimed emperor by the legions of <a about=https://topostext.org/place/440205RMys class=place long=20.5 lat=44>Moesia</a>, and those in <a about=https://topostext.org/place/450190RPan class=place long=19 lat=45>Pannonia</a> assented thereto. And, in fact, it appeared that in no other case had the soldiers taken better counsel for the commonwealth than when, in the face of an inroad of the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a>, they chose as their emperor one who by his valour could bring a remedy to the exhausted state. 2 His reason, moreover, for seizing the power at that time was his fear of becoming an object of suspicion to the emperors, because he was both very brave and necessary to the commonwealth, and also — a cause which rouses rulers most of all — well beloved by the soldiers. 3 <a href=/people/2746 target=_blank>Gallienus</a>, however, worthless and degraded though he was, could still, when necessity demanded, show himself quick in action, courageous, vigorous and cruel, and finally, meeting Ingenuus in battle, he defeated him and, after slaying him, vented his anger most fiercely on all the <a about=https://topostext.org/place/440205RMys class=ethnic long=20.5 lat=44>Moesians</a>, soldiers and civilians alike. For he left none exempt from his cruelty, and so brutal and savage was he, that in many communities he left not a single male alive. 4 It is said of Ingenuus, indeed, that when the city was captured, he threw himself into the water, and so put an end to his life, that he might not fall into the power of the brutal tyrant. <br />5 There is, indeed, still in existence a letter of <a href=/people/2746 target=_blank>Gallienus</a>, written to <a href=/people/1743 target=_blank>Celer</a> Verianus, which shows his excessive brutality. This I have inserted, in order that all may learn that a profligate, if necessity demand, can be the most brutal of men: <br />6 From <a href=/people/2746 target=_blank>Gallienus</a> to Verianus. You will not satisfy me if you kill only armed combatants, for these even chance could have killed in the war. 7 You must slay every male, that is, if old men and immature boys can be put to death without bringing odium upon us. 8 You must slay all who have wished me ill, slay all who have spoken ill of me, the son of <a href=/people/12175 target=_blank>Valerian</a>, the father and brother of so many princes. 9 Ingenuus has been created emperor! Therefore mutilate, kill, slaughter, see that you understand my purpose and show your anger with that spirit which I am showing, I who have written these words with my own hand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#9 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:phi2331.phi024:10'><b>&sect; 10</b>&nbsp;&nbsp;Regalianus <br />It was the public destiny that in the time of <a href=/people/2746 target=_blank>Gallienus</a> whosoever could, sprang up to seize the imperial power. And so Regalianus, who held the command in <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a>, was declared emperor, the prime movers being the <a about=https://topostext.org/place/440205RMys class=ethnic long=20.5 lat=44>Moesians</a>, who had previously been defeated with Ingenuus and on whose kinsmen <a href=/people/2746 target=_blank>Gallienus</a> had vented his anger severely. 2 He, indeed, performed many brave deeds against the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a>, but nevertheless, at the instigation of the <a href=/people/3954 target=_blank>Roxolani</a> and with the consent of the soldiers and the provincials, who feared that <a href=/people/2746 target=_blank>Gallienus</a> might, on a second occasion, act even more cruelly, he was put to death. <br />3 It may perhaps seem a matter for wonder if I relate the origin of his rule, for it was all because of a notable jest that he gained the royal power. 4 For when some soldiers were dining with him and a certain acting-tribune arose and said, Whence shall we suppose that Regalianus gets his name? another replied at once, I suppose from his regal power. 5 Then a schoolmaster who was present among them began, as it seemed, to decline grammatically, saying, Rex, regis, regi, Regalianus, 6 whereupon among the soldiers — a class of men who are quick to express what they have in mind — one cried out, So, then, can he be regal? another, So, then, can he hold regal sway over us? and again another, God has given you a regent's name. 7 Why should I then say more? The next day after these words were spoken, on going forth in the morning he was greeted as emperor by the front-line troops. Thus what was offered to others through daring or reasoned choice was offered to him through a clever jest. <br />8 It cannot, indeed, be denied that he had always won approbation in warfare and had long been suspected by <a href=/people/2746 target=_blank>Gallienus</a> because he seemed worthy to rule; he was, moreover, a <a about=https://topostext.org/place/445250RDac class=person long=25 lat=44.5>Dacian</a> by birth and a kinsman, so it was said, of <a href=/people/11091 target=_blank>Decebalus</a> himself. 9 There is still in existence a letter written by the Deified <a href=/people/82 target=_blank>Claudius</a>, then still a commoner, in which he expresses his thanks to Regalianus, as general in command of <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a>, for recovering this district, at a time when <a href=/people/2746 target=_blank>Gallienus</a>' slothfulness was bringing all things to ruin. This letter, which I have found in the original form, I think should be inserted here, for it was written officially: <br />10 From <a href=/people/82 target=_blank>Claudius</a> to Regalianus many greetings. Fortunate is the commonwealth, which has deserved to have such a man as yourself in its military camps, and fortunate is <a href=/people/2746 target=_blank>Gallienus</a>, though no one tells him the truth about either good men or bad. 11 Word has been brought to me by Bonitus and <a href=/people/3007 target=_blank>Celsus</a>, the attendants of our emperor, how you conducted yourself in fighting at Scupi and how many battles you fought in a single day and with what great speed. You were worthy of a triumph, did but the olden times still remain. 12 But why say more? I could wish that you might be mindful of a certain person and therefore be more cautious in gaining victories. I should like you to send me some <a about=https://topostext.org/place/490315RSar class=demonym long=31.5 lat=49>Sarmatian</a> bows and two military cloaks, but provided with clasps, for I am sending you some of my own. <br />13 This letter shows what opinion of Regalianus was held by <a href=/people/82 target=_blank>Claudius</a>, whose judgement was without doubt most weighty in his own time. <br />14 It was not, indeed, from <a href=/people/2746 target=_blank>Gallienus</a> that Regalianus received his promotion, but from his father, <a href=/people/12175 target=_blank>Valerian</a>, as did also <a href=/people/82 target=_blank>Claudius</a>, <a href=/people/3204 target=_blank>Macrianus</a>, Ingenuus, <a href=/people/2121 target=_blank>Postumus</a> and <a href=/people/11049 target=_blank>Aureolus</a>, who all were slain while they held the imperial power, although they deserved to hold it. 15 It was, moreover, a matter for marvel in <a href=/people/12175 target=_blank>Valerian</a> as emperor, that all who were appointed commanders by him, afterwards, by the voice of the soldiers, obtained the imperial rule, so that it is clear that the aged emperor, in choosing the generals of the commonwealth, was, in fact, such an one as the felicity of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> — could it only have permitted by fate to continue under a worthy prince — ever required. 16 Oh that it might have been possible either for those who seized the imperial power to rule for a longer time, or for this man's son to rule less long, that somehow our commonwealth might have kept itself in its proper position! 17 But <a href=/people/2811 target=_blank>Fortune</a> claimed for herself too much indulgence, when with <a href=/people/12175 target=_blank>Valerian</a> she took away our righteous princes, and preserved <a href=/people/2746 target=_blank>Gallienus</a> for the commonwealth longer than was meet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#10 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:phi2331.phi024:11'><b>&sect; 11</b>&nbsp;&nbsp;<a href=/people/11049 target=_blank>Aureolus</a><br />This man also, while commanding the <a about=https://topostext.org/place/405195RIll class=demonym long=19.8 lat=40.8>Illyrian</a> armies, was urged on by the soldiers in their contempt for <a href=/people/2746 target=_blank>Gallienus</a> (as were all others at that time) and so seized the imperial power. 2 And when <a href=/people/3204 target=_blank>Macrianus</a> and his son <a href=/people/3204 target=_blank>Macrianus</a> marched against <a href=/people/2746 target=_blank>Gallienus</a> with very large forces, he took their troops, and some he won over to his cause by bribery. 3 When <a href=/people/11049 target=_blank>Aureolus</a> had thus become a mighty emperor, <a href=/people/2746 target=_blank>Gallienus</a>, after trying in vain to conquer so brave a man and being now on the point of beginning a war against <a href=/people/2121 target=_blank>Postumus</a>, made peace with him — of which events many have already been related and many are still to be told. <br />4 This same <a href=/people/11049 target=_blank>Aureolus</a>, after <a href=/people/2746 target=_blank>Gallienus</a> was slain, <a href=/people/82 target=_blank>Claudius</a> met in battle and killed at the bridge which now bears the name of <a href=/people/11049 target=_blank>Aureolus</a>' Bridge, and there he bestowed upon him a tomb, but a lowly one as became a pretender. 5 There is even now in existence an epigram in Greek of the following purport: <br />Sepulture's gift, after many a battle against the pretender, <br /><a href=/people/82 target=_blank>Claudius</a>, flushed with success, gives to <a href=/people/11049 target=_blank>Aureolus</a> now, <br />Doing him honour in death, himself the rightful survivor. <br />Fain had he kept him alive, only his glorious troops <br />Suffered it not in their love; for they put out of life very rightly <br />All who deserved not to live — why not <a href=/people/11049 target=_blank>Aureolus</a> more? <br />Merciful, though, was that prince, who preserved what was left of his body, <br />And in <a href=/people/11049 target=_blank>Aureolus</a>' name built both a bridge and a tomb. <br />6 These verses, translated by a certain teacher of grammar, I have given in such a way that their accuracy is retained, although they could be translated more elegantly; but I do it with the purpose of preserving historical truth, which I have thought should be guarded above all else, and caring nought for considerations of literary style. 7 For, indeed, it is fact that I have determined to put before you and not mere words, especially when we have such an abundance of facts as in the lives of the thirty pretenders taken together. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#11 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:phi2331.phi024:12'><b>&sect; 12</b>&nbsp;&nbsp;<a href=/people/3204 target=_blank>Macrianus</a><br />After the capture of <a href=/people/12175 target=_blank>Valerian</a>, long a most noble prince in the state, then a most valiant emperor, but at the last the most unfortunate of all men (either because in his old age he pined away among the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> or because he left behind him unworthy descendants), Ballista, <a href=/people/12175 target=_blank>Valerian</a>'s prefect, and <a href=/people/3204 target=_blank>Macrianus</a>, the foremost of his generals, since they knew that <a href=/people/2746 target=_blank>Gallienus</a> was worthy only of contempt and since the soldiers, too, were seeking an emperor, withdrew together to a certain place, to consider what should be done. 2 They then agreed that, since <a href=/people/2746 target=_blank>Gallienus</a> was far away and <a href=/people/11049 target=_blank>Aureolus</a> was usurping the imperial power, some emperor ought to be chosen, and, indeed, the best man, lest there should arise some pretender. 3 Therefore Ballista (or so Maeonius <a href=/people/1868 target=_blank>Astyanax</a>, who took part in their council, relates) spoke as follows: 4 As for myself, my age and my calling and my desires are all far removed from the imperial office, and so, as I cannot deny, I am searching for a worthy prince. 5 But who, pray, is there who can fill the place of <a href=/people/12175 target=_blank>Valerian</a> except such a man as yourself, brave, steadfast, honourable, well proved in public affairs, and — what is of the highest importance for holding the imperial office — possessed of great wealth? Therefore, take this post which your merits deserve. My services as prefect shall be yours as long as you wish. Do you only serve the commonwealth well, so that the Roman world may rejoice that you have been made its prince. 7 To this <a href=/people/3204 target=_blank>Macrianus</a> replied: I admit, Ballista, that to the wise man the imperial office is no light thing. For I wish, indeed, to come to the aid of the commonwealth and to remove that pestiferous fellow from administering the laws, but I am not of an age for this; I am now an old man, I cannot ride as an example to others, I must bathe too often and eat too carefully, and my very riches have long since kept me away from practicing war. 8 We must seek out some young men, and not one alone, but two or three of the bravest, who in different parts of the world of mankind can restore the commonwealth, which <a href=/people/12175 target=_blank>Valerian</a> and <a href=/people/2746 target=_blank>Gallienus</a> have brought to ruin, the one by his fate, the other by his mode of life. 9 Whereupon Ballista, perceiving that <a href=/people/3204 target=_blank>Macrianus</a>, in so speaking, seemed to have in mind his own two sons, answered him as follows: To your wisdom, then, we entrust the commonwealth. 10 And so give us your sons <a href=/people/3204 target=_blank>Macrianus</a> and Quietus, most valiant young men, long since made tribunes by <a href=/people/12175 target=_blank>Valerian</a>, for, under the rule of <a href=/people/2746 target=_blank>Gallienus</a>, for the very reason that they are good men, they cannot remain unharmed. 11 Then <a href=/people/3204 target=_blank>Macrianus</a>, finding out that his thoughts had been understood, replied: I will yield, and from my own funds I will present to the soldiers a double bounty. Do you but give me your zealous service as prefect and furnish rations in the needful places. I will now do my best that <a href=/people/2746 target=_blank>Gallienus</a>, more contemptible than any woman, may come to know his father's generals. 12 And so, with the consent of all the soldiers, <a href=/people/3204 target=_blank>Macrianus</a> was made emperor, together with his two sons <a href=/people/3204 target=_blank>Macrianus</a> and Quietus, and he immediately proceeded to march against <a href=/people/2746 target=_blank>Gallienus</a>, leaving affairs in the East in whatever state he could. 13 But while he was on the march, having with him a force of forty-five thousand soldiers, he met <a href=/people/11049 target=_blank>Aureolus</a> in <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> or on the borders of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, and there he was defeated and together with his son was slain. 14 Then thirty thousand of his men yielded to <a href=/people/11049 target=_blank>Aureolus</a>' power. It was <a href=/people/516 target=_blank>Domitianus</a>, indeed, who won this victory, the bravest and most active of <a href=/people/11049 target=_blank>Aureolus</a>' leaders, who claimed to be the descendant of the Emperor <a href=/people/516 target=_blank>Domitian</a> and Domitilla. <br />15 In writing of <a href=/people/3204 target=_blank>Macrianus</a>, moreover, it would seem to me wrong to leave out the opinion of <a href=/people/12175 target=_blank>Valerian</a>, which he expressed in the message he sent to the senate from the frontier of <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>. A portion of the message of the Deified <a href=/people/12175 target=_blank>Valerian</a>: 16 Being now engaged in the war with the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, Conscript Fathers, I have entrusted all public affairs, and even those which concern the war, to <a href=/people/3204 target=_blank>Macrianus</a>. He is faithful to you, loyal to me, and both beloved and feared by the soldiers. He with his army will act as the case shall demand. 17 And in this, Conscript Fathers, there is nothing new or unexpected by us. For while a boy in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, while a youth in Gaul, while a mature man in Africa, and, finally, while well advanced in years in <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> and <a about=https://topostext.org/place/435167RDal class=place long=16.7 lat=43.5>Dalmatia</a>, his valour has been well proved, for in divers battles he has done brave deeds which may serve as a pattern to others. 18 I will add, besides, that he has young sons, worthy of being our associates in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and worthy, too, of our friendship, and so forth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#12 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:phi2331.phi024:13'><b>&sect; 13</b>&nbsp;&nbsp;<a href=/people/3204 target=_blank>Macrianus</a> the Younger <br />I have already given a foretaste, in the account of his father's rule, of many details about this man, who would never have been chosen emperor, had it not seemed well to trust to his father's wisdom. 2 Many marvellous stories, it is true, are related concerning him, all of which have to do with the bravery of youthful years. But what, after all, does one single man's bravery avail against fate or how much does it profit in war? 3 For, though active himself and accompanied by the wisest of fathers (through whose merits he had begun to rule), he was defeated by <a href=/people/516 target=_blank>Domitianus</a>, and despoiled, as I have previously said, of an army of thirty thousand soldiers, being himself of noble birth through his mother, for his father was merely brave and ready for war, and had risen from the lowest rank in the army with exalted distinction to the highest command. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#13 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:phi2331.phi024:14'><b>&sect; 14</b>&nbsp;&nbsp;Quietus <br />This man, as we have said, was the son of <a href=/people/3204 target=_blank>Macrianus</a> and was made emperor, along with his father and brother, in accordance with the judgement of Ballista. But when <a href=/people/11043 target=_blank>Odaenathus</a>, who had now for some time held the East, learned that the two Macriani, the father and brother of Quietus, had been defeated by <a href=/people/11049 target=_blank>Aureolus</a>, and that their soldiers had yielded to his power in the belief that he was upholding the cause of <a href=/people/2746 target=_blank>Gallienus</a>, he put the young man to death and with him Ballista, for a long time prefect. 2 This young man, too, was worthy to hold the power at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, so that he seemed to be truly the son of <a href=/people/3204 target=_blank>Macrianus</a> and also the brother of <a href=/people/3204 target=_blank>Macrianus</a>, who together were well able to govern the commonwealth in its stricken state. <br />3 It does not seem to me, in telling of the family of the Macriani (which is still flourishing to-day), that I should fail to speak of a peculiar custom which they have always observed. 4 For an embossed head of <a href=/people/13 target=_blank>Alexander</a> the Great of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedonia</a> was always used by the men on their rings and their silver plate, and by the women on their head-dresses, their bracelets, their rings and ornaments of every kind, so that even to-day there are still in that family tunics and fillets and women's cloaks which show the likeness of <a href=/people/13 target=_blank>Alexander</a> in threads of divers colours. 5 We, ourselves, recently saw <a href=/people/89 target=_blank>Cornelius</a> Macer, a man of that same family, while giving a dinner in the <a about=https://topostext.org/place/419125SHrc class=place long=12.48077 lat=41.88872>temple</a> of <a href=/people/4 target=_blank>Hercules</a>, drink the health of a pontiff from a bowl made of electrum, which had in the centre the face of <a href=/people/6 target=_blank>Alexander</a> and contained on the circumference his whole history in small and minute figures, and this he caused to be passed around to all the most ardent admirers of that great hero. 6 All this I have included because it is said that those who wear the likeness of <a href=/people/6 target=_blank>Alexander</a> carved in either gold or silver are aided in all that they do. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#14 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:phi2331.phi024:15'><b>&sect; 15</b>&nbsp;&nbsp;<a href=/people/11043 target=_blank>Odaenathus</a><br />Had not <a href=/people/11043 target=_blank>Odaenathus</a>, prince of the <a about=https://topostext.org/place/346383UPal class=ethnic long=38.2688 lat=34.5507>Palmyrenes</a>, seized the imperial power after the capture of <a href=/people/12175 target=_blank>Valerian</a>, with the strength of the Roman state was exhausted, all would have been lost in the East. 2 He assumed, therefore, as the first of his line, the title of King, and after gathering together an army he set out against the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, having with him his wife <a href=/people/5320 target=_blank>Zenobia</a>, his elder son, whose name was <a href=/people/1266 target=_blank>Herodes</a>, and his younger sons, <a href=/people/11066 target=_blank>Herennianus</a> and <a href=/people/1642 target=_blank>Timolaus</a>. 3 First of all, he brought under his power <a about=https://topostext.org/place/371412UNis class=place long=41.2149 lat=37.067>Nisibis</a> and most of the East together with the whole of <a href=/people/290 target=_blank>Mesopotamia</a>, next, he defeated the king himself and compelled him to flee. 4 Finally, he pursued <a href=/people/12038 target=_blank>Sapor</a> and his children even as far as <a about=https://topostext.org/place/331446UKte class=place long=44.5807 lat=33.0937>Ctesiphon</a>, and captured his concubines and also a great amount of booty; then he turned to the oriental provinces, hoping to be able to crush <a href=/people/3204 target=_blank>Macrianus</a>, who had begun to rule in opposition to <a href=/people/2746 target=_blank>Gallienus</a>, but he had already set out against <a href=/people/11049 target=_blank>Aureolus</a> and <a href=/people/2746 target=_blank>Gallienus</a>. After <a href=/people/3204 target=_blank>Macrianus</a> was slain, <a href=/people/11043 target=_blank>Odaenathus</a> killed his son Quietus also, while Ballista, many assert, usurped the imperial power in order that he, too, might not be slain. 5 Then, after he had for the most part put in order the affairs of the East, he was killed by his cousin Maeonius (who had also seized the imperial power), together with his son <a href=/people/1266 target=_blank>Herodes</a>, who, also, after returning from <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a> along with his father, had received the title of emperor. 6 Some god, I believe, was angry with the commonwealth, who, after <a href=/people/12175 target=_blank>Valerian</a>'s death, was unwilling to preserve <a href=/people/11043 target=_blank>Odaenathus</a> alive. 7 For of a surety he, with his wife <a href=/people/5320 target=_blank>Zenobia</a>, would have restored not only the East, which he had already brought back to its ancient condition, but also all parts of the whole world everywhere, since he was fierce in warfare and, as most writers relate, ever famous for his memorable hunts; for from his earliest years he expended his sweat, as is the duty of a man, in taking <a href=/people/10960 target=_blank>lions</a> and panthers and bears and other beasts of the forest, and always lived in the woods and the mountains, enduring heat and rain and all other hardships which pleasures of hunting entail. 8 Hardened by these he was able to bear the sun and the dust in the wars with the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>; and his wife, too, was inured to hardship and in the opinion of many was held to be more brave than her husband, being, indeed, the noblest of all the women of the East, and, as <a href=/people/89 target=_blank>Cornelius</a> Capitolinus declares, the most beautiful. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#15 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:phi2331.phi024:16'><b>&sect; 16</b>&nbsp;&nbsp;<a href=/people/1266 target=_blank>Herodes</a><br /><a href=/people/1266 target=_blank>Herodes</a>, who was the son, not of <a href=/people/5320 target=_blank>Zenobia</a>, but of a former wife of <a href=/people/11043 target=_blank>Odaenathus</a>, received the imperial power along with his father, though he was the most effeminate of men, wholly oriental and given over to Grecian luxury, for he had embroidered tents and pavilions made out of cloth of gold and everything in the manner of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>. 2 In fact, <a href=/people/11043 target=_blank>Odaenathus</a>, complying with his ways and moved by the promptings of a father's indulgence, gave him all the king's concubines and the riches and jewels that he captured. 3 <a href=/people/5320 target=_blank>Zenobia</a>, indeed, treated him in a step-mother's way, and this made him all the more dear to his father. Nothing more remains to be said concerning <a href=/people/1266 target=_blank>Herodes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#16 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi2331.phi024:17'><b>&sect; 17</b>&nbsp;&nbsp;Maeonius <br />This man, the cousin of <a href=/people/11043 target=_blank>Odaenathus</a>, murdered that excellent emperor, being moved thereto by nothing else than contemptible envy, for he could bring no charge against him save that <a href=/people/1266 target=_blank>Herodes</a> was his son. 2 It is said, however, that previously he had entered into a conspiracy with <a href=/people/5320 target=_blank>Zenobia</a>, who could not bear that her stepson <a href=/people/1266 target=_blank>Herodes</a> should be called a prince in a higher rank than her own two sons, <a href=/people/11066 target=_blank>Herennianus</a> and <a href=/people/1642 target=_blank>Timolaus</a>. But Maeonius, too, was a filthy fellow, 3 and so, after being saluted as emperor through some blunder, he was shortly thereafter killed by the soldiers, as his excesses deserved. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#17 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:phi2331.phi024:18'><b>&sect; 18</b>&nbsp;&nbsp;Ballista <br />As to whether this man held the imperial power or not historians do not agree. For many assert that when Quietus was killed by <a href=/people/11043 target=_blank>Odaenathus</a>, Ballista was pardoned, but nevertheless took the imperial power, putting no trust in either <a href=/people/2746 target=_blank>Gallienus</a> or <a href=/people/11049 target=_blank>Aureolus</a> or <a href=/people/11043 target=_blank>Odaenathus</a>. 2 Others, again, declare that while still a commoner he was killed on the lands which he had bought for himself near <a about=https://topostext.org/place/361361UDap class=place long=36.1442 lat=36.13>Daphne</a>. 3 Many, indeed, have said that he assumed the purple in order to rule in the Roman fashion, and that he took command of the army and made many promises on his own account, but was killed by those despatched by <a href=/people/11049 target=_blank>Aureolus</a> for the purpose of seizing Quietus, <a href=/people/3204 target=_blank>Macrianus</a>' son, who, <a href=/people/11049 target=_blank>Aureolus</a> averred, was his own due prey. 4 He was a notable man, skilled in administering the commonwealth, vehement in counsel, winning fame in campaigns, without an equal in providing for rations, and so highly esteemed by <a href=/people/12175 target=_blank>Valerian</a> that in a certain letter he honoured him with the following testimony: <br />5 From <a href=/people/12175 target=_blank>Valerian</a> to Ragonius <a href=/people/12125 target=_blank>Clarus</a>, prefect of <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> and the provinces of Gaul. If you are a man of good judgement, my kinsman <a href=/people/12125 target=_blank>Clarus</a>, as I know that you are, you will carry out the arrangements of Ballista. Model your government on them. 6 Do you see how he refrains from burdening the provincials, how he keeps the <a href=/people/10959 target=_blank>horses</a> in places where there is fodder and exacts the rations for his soldiers in places where there is grain, how he never compels the provincials or the land-holders to furnish grain where they have no supply, or <a href=/people/10959 target=_blank>horses</a> where they have no pasture? 7 There is no arrangement better than to exact in each place what is there produced, so that the commonwealth may not be burdened by transport or other expenses. 8 <a about=https://topostext.org/place/401330RGal class=place long=33 lat=40.1>Galatia</a> is rich in grain, <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> is well stocked, and <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a> is filled with it; so let the foot-soldiers be quartered in these regions, although in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> cavalry, too, can winter without damage to the provincials, since plenty of hay can be had from the fields. 9 As for wine and bacon and other forms of food, let them be handed out in those places in which they abound in plenty. 10 All this is the policy of Ballista, who gave orders that any province should furnish only one form of food, namely that in which it abounded, and that from it the soldiers should be kept away. This, in fact, has been officially decreed. <br />11 There is also another letter, in which he gives thanks to Ballista, showing that he himself had received from him instruction in governing the state, and expressing his pleasure that he had on his staff no supernumerary tribune (that is, one unassigned to some duty), no one in attendance who did not truly perform some office, and no soldier who was not truly a fighter. <br />12 This man, then, while resting in his tent was slain, it is said, by a certain common soldier, in order to gain the favour of <a href=/people/11043 target=_blank>Odaenathus</a> and <a href=/people/2746 target=_blank>Gallienus</a>. 13 I, however, have not been able to find out sufficiently the truth concerning him, because the writers of his time have related much about his prefecture but little about his rule. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#18 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:phi2331.phi024:19'><b>&sect; 19</b>&nbsp;&nbsp;<a href=/people/466 target=_blank>Valens</a><br />This man, a warrior and at the same time excelling in glory for his qualities as a citizen, was holding the proconsulship of <a about=https://topostext.org/place/382219RAch class=place long=21.9 lat=38.2>Achaea</a>, an honour conferred on him by <a href=/people/2746 target=_blank>Gallienus</a>. 2 <a href=/people/3204 target=_blank>Macrianus</a> feared him greatly, both because he had learned that he was distinguished for his whole manner of life and because he knew him to be his enemy out of hatred for his virtues. He therefore despatched <a href=/people/209 target=_blank>Piso</a>, a member of a family then most noble and, in fact, of consular rank, with orders to put him to death. 3 <a href=/people/466 target=_blank>Valens</a>, however, who kept a most careful watch, foreseeing the future and believing that there was no other means of protecting himself, seized the imperial power and soon was slain by the soldiers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:phi2331.phi024:20'><b>&sect; 20</b>&nbsp;&nbsp;<a href=/people/466 target=_blank>Valens</a> the Elder <br />It has fortunately occurred to us that, in speaking of this <a href=/people/466 target=_blank>Valens</a>, we should make some mention also of the <a href=/people/466 target=_blank>Valens</a> who was killed in the time of the earlier emperors. 2 For he, it is said, was the great-uncle of the <a href=/people/466 target=_blank>Valens</a> who seized the power under <a href=/people/2746 target=_blank>Gallienus</a>. Others, however, assert that he was only his uncle. 3 But the fate of them both was alike, for he, too, was killed after he had ruled for a few days in <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#20 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:phi2331.phi024:21'><b>&sect; 21</b>&nbsp;&nbsp;<a href=/people/209 target=_blank>Piso</a><br />This man was despatched by <a href=/people/3204 target=_blank>Macrianus</a> to kill <a href=/people/466 target=_blank>Valens</a>, but on learning that he, foreseeing the future, had declared himself emperor, he withdrew into <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>; there by consent of a few he assumed the imperial power, taking the surname Thessalicus, but was then slain by violence. He was a man of the utmost righteousness and during his life-time he was given the name Frugi, and he was said to derive his descent from that family of Pisos with which <a href=/people/2300 target=_blank>Cicero</a> had formed an alliance for the purpose of entering the nobility. 2 He was highly esteemed by all the emperors; in fact, <a href=/people/466 target=_blank>Valens</a> himself, who is said to have sent the assassins against him, declared, it is told, that never could he render account to the gods of the lower world for having given an order to put <a href=/people/209 target=_blank>Piso</a> to death, albeit his enemy, for his like the Roman commonwealth did not contain. <br />3 I have gladly inserted the senate's decree which was passed concerning <a href=/people/209 target=_blank>Piso</a>, in order that his honours may be made known: On the seventh day before the Kalends of July, when word had been brought that <a href=/people/209 target=_blank>Piso</a> was slain by <a href=/people/466 target=_blank>Valens</a> and <a href=/people/466 target=_blank>Valens</a> himself by his own soldiers, Arellius <a href=/people/3602 target=_blank>Fuscus</a>, the consular whose right it was to give his opinion first, said: Consul, consult us. 4 And on being asked his opinion, he said, I propose divine honours for <a href=/people/209 target=_blank>Piso</a>, Conscript Fathers, and I firmly believe that this will be approved by our emperors, <a href=/people/2746 target=_blank>Gallienus</a>, <a href=/people/12175 target=_blank>Valerian</a>, and Saloninus; for never was there a better man or a braver. 5 After him the others also on being consulted voted <a href=/people/209 target=_blank>Piso</a> a statue among the triumphant generals and also a four-<a href=/people/10959 target=_blank>horse</a> chariot. 6 His statue is still to be seen, but the chariot which they decreed was erected only to be moved elsewhere, and it has not yet been brought back. 7 For it was set up in the place where the Bath of <a href=/people/1446 target=_blank>Diocletian</a> was afterwards built, destined to have a name as undying as it is revered. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#21 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:phi2331.phi024:22'><b>&sect; 22</b>&nbsp;&nbsp;<a href=/people/1261 target=_blank>Aemilianus</a><br />It is the wont of the people of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> that like madmen and fools they are led by the most trivial matters to become highly dangerous to the commonwealth; 2 for merely because a greeting was omitted, or a place in the baths refused, or meat and vegetables withheld, or on account of the boots of slaves or some other such things, they have broken out into riots, even to the point of becoming highly dangerous to the state, so that troops have been armed to quell them. 3 With their wonted madness, accordingly, on a certain occasion, when the slave of the chief magistrate then governing <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a> had been killed by a soldier for asserting that his sandals were better than the soldier's, a mob gathered together, and, coming to the house of the general <a href=/people/1261 target=_blank>Aemilianus</a>, it assailed him with all the implements and the frenzy usual in riots; he was pelted with stones and attacked with swords, and no kind of weapon used in a riot was lacking. 4 And so <a href=/people/1261 target=_blank>Aemilianus</a> was constrained to assume the imperial power, knowing well that he would have to die in any event. 5 To this step the army in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> agreed, chiefly out of hatred for <a href=/people/2746 target=_blank>Gallienus</a>. 6 He did not, indeed, lack energy for administering public affairs. For he marched through the district of <a about=https://topostext.org/place/257326PThe class=place long=32.641 lat=25.684>Thebes</a> and, in fact, the whole of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, and to the best of his powers drove back the barbarians with courage and firmness. 7 Finally, he won by his merits the name of <a href=/people/13 target=_blank>Alexander</a>, or else Alexandrinus — for this is considered uncertain. 8 But when he was making ready for a campaign against the people of <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a>, the general <a href=/people/679 target=_blank>Theodotus</a> was sent against him by order of <a href=/people/2746 target=_blank>Gallienus</a>, and so he suffered punishment, for it is related that, like the captives of old, he was strangled in prison. <br />9 Now, since I am speaking of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, I think I must not fail to relate what the history of former times has suggested and, in connection therewith, a deed of <a href=/people/2746 target=_blank>Gallienus</a>. 10 For when he wished to confer proconsular power on <a href=/people/679 target=_blank>Theodotus</a>, the priests forbade it, saying that it was not lawful for the consular fasces to be brought into <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a>. 11 This, we know well enough, was mentioned by <a href=/people/2300 target=_blank>Cicero</a> in his speech against <a href=/people/510 target=_blank>Gabinius</a>, and, in fact, it is still remembered that this practice was maintained. 12 Therefore, your kinsman <a href=/people/1701 target=_blank>Herennius</a> <a href=/people/3007 target=_blank>Celsus</a>, in seeking the consulship, ought to know that what he desires is not lawful. 13 For at <a about=https://topostext.org/place/298313PMem class=place long=31.255 lat=29.849>Memphis</a>, they say, it was written on a golden column in <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> letters that <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> would at last regain its freedom when the Roman fasces and the Roman bordered toga had been brought into the land. 14 This may be found in <a href=/people/2438 target=_blank>Proculus</a> the grammarian, the most learned man of his time, in the place where he tells of foreign countries. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#22 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:phi2331.phi024:23'><b>&sect; 23</b>&nbsp;&nbsp;<a href=/people/758 target=_blank>Saturninus</a><br />The best of the generals of the time of <a href=/people/2746 target=_blank>Gallienus</a>, though, in fact, he was chosen by <a href=/people/12175 target=_blank>Valerian</a>, was <a href=/people/758 target=_blank>Saturninus</a>. 2 He also, being unable to endure the loose ways of <a href=/people/2746 target=_blank>Gallienus</a>, who revelled all night in public places, and preferring to command the soldiers in his own way rather than in that of his emperor, accepted the imperial power from the army. He was a man unequalled in wisdom, outstanding in dignity, lovable in his ways, and because of his victories well known everywhere, even among the barbarians. 3 On the day on which the soldiers clothed him with the imperial robe he called together an assembly, it is related, and said: Fellow-soldiers, you have lost a good general and made a bad emperor. 4 Finally, after doing many vigorous deeds during his rule, merely because he was too severe and too harsh to the soldiers he was killed by those very men who had made him emperor. 5 He is famous for having commanded the soldiers, when reclining at table, to wear military cloaks in order that their lower limbs might not be bared, heavy ones in winter and very light ones in summer. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#23 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi2331.phi024:24'><b>&sect; 24</b>&nbsp;&nbsp;<a href=/people/11062 target=_blank>Tetricus</a> the Elder <br />After <a href=/people/3713 target=_blank>Victorinus</a> and his son were slain, his mother Victoria (or Vitruvia) urged <a href=/people/11062 target=_blank>Tetricus</a>, a Roman senator then holding the governorship of Gaul, to take the imperial power, for the reason, many relate, that he was her kinsman; she then caused him to be entitled Augustus and bestowed on his son the name of Caesar. 2 But after <a href=/people/11062 target=_blank>Tetricus</a> had done many deeds with success and had ruled for a long time he was defeated by <a href=/people/11044 target=_blank>Aurelian</a>, and, being unable to bear the impudence and shamelessness of his soldiers, he surrendered of his own free will to this prince most harsh and severe. 3 In fact, a quotation of his is cited, which he secretly sent in writing to <a href=/people/11044 target=_blank>Aurelian</a>:— <br />Save me, O hero unconquered, from these my misfortunes. <br />4 And so <a href=/people/11044 target=_blank>Aurelian</a>, who did not readily plan aught that was guileless or merciful or peaceful, led this man, though he was a senator of the Roman people and a consular and had ruled the provinces of Gaul with a governor's powers, in his triumphal procession at the same time as <a href=/people/5320 target=_blank>Zenobia</a>, the wife of <a href=/people/11043 target=_blank>Odaenathus</a>, and the younger sons of <a href=/people/11043 target=_blank>Odaenathus</a>, <a href=/people/11066 target=_blank>Herennianus</a> and <a href=/people/1642 target=_blank>Timolaus</a>. 5 <a href=/people/11044 target=_blank>Aurelian</a>, nevertheless, exceedingly stern though he was, overcome by a sense of shame, made <a href=/people/11062 target=_blank>Tetricus</a>, whom he had led in triumph, supervisor over the whole of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, that is, over <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a>, <a about=https://topostext.org/place/413148RSam class=place long=14.8 lat=41.3>Samnium</a>, <a about=https://topostext.org/place/404160RLeu class=place long=16 lat=40.4>Lucania</a>, <a about=https://topostext.org/place/392165RBre class=place long=16.5 lat=39.2>Bruttium</a>, <a about=https://topostext.org/place/410163RApu class=place long=16.3 lat=41>Apulia</a>, <a about=https://topostext.org/place/406176RCal class=place long=17.6 lat=40.6>Calabria</a>, <a about=https://topostext.org/place/430105RTyr class=place long=10.5 lat=43>Etruria</a> and <a href=/people/9930 target=_blank>Umbria</a>, <a about=https://topostext.org/place/430135RPic class=place long=13.5 lat=43>Picenum</a> and the Flaminian district, and the entire grain-bearing region, and suffered him not only to retain his life but also to remain in the highest position, calling him frequently colleague, sometimes fellow-soldier, and sometimes even emperor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#24 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:phi2331.phi024:25'><b>&sect; 25</b>&nbsp;&nbsp;<a href=/people/11062 target=_blank>Tetricus</a> the Younger <br />He, when a little lad, received the name of Caesar from Victoria when she herself had been entitled by the army Mother of the Camp. 2 He was, furthermore, led in triumph along with his father, but later he enjoyed all the honours of a senator; nor was his inheritance diminished, and, indeed, he passed it on to his descendants, and was ever, as Arellius <a href=/people/3602 target=_blank>Fuscus</a> reports, a man of distinction. 3 My grandfather used to declare that he was a friend of his own, and that never was any one given preference over him either by <a href=/people/11044 target=_blank>Aurelian</a> or by any of the later emperors. 4 The house of the Tetrici is still standing to-day, situated on the <a about=https://topostext.org/place/419125LCae class=place long=12.4957 lat=41.8836>Caelian</a> Hill between the two groves and facing the <a about=https://topostext.org/place/419125SIsS class=place long=12.4792 lat=41.8973>Temple</a> of <a href=/people/157 target=_blank>Isis</a> built by <a href=/people/98 target=_blank>Metellus</a>; and a most beautiful one it is, and in it <a href=/people/11044 target=_blank>Aurelian</a> is depicted bestowing on both the Tetrici the bordered toga and the rank of senator and receiving from them a sceptre, a chaplet, and an embroidered robe. This picture is in mosaic, and it is said that the two Tetrici, when they dedicated it, invited <a href=/people/11044 target=_blank>Aurelian</a> himself to a banquet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#25 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:phi2331.phi024:26'><b>&sect; 26</b>&nbsp;&nbsp;Trebellianus <br />I am by this time ashamed to tell how many tyrants there were in the reign of <a href=/people/2746 target=_blank>Gallienus</a>, all on account of the vices of that pestiferous man, for such, indeed, were his excesses that he deserved to have many rebels rise up against him, and such his cruelty that he was rightly regarded with fear. 2 This cruelty he showed also toward Trebellianus, who was made ruler in <a about=https://topostext.org/place/372324UIsa class=place long=32.3526 lat=37.1895>Isauria</a> — for the <a about=https://topostext.org/place/372324UIsa class=ethnic long=32.3526 lat=37.1895>Isaurians</a> desired a leader for themselves. He, though others dubbed him archpirate, gave himself the title of emperor. He even gave orders to strike coins and he set up an imperial palace in a certain <a about=https://topostext.org/place/372324UIsa class=demonym long=32.3526 lat=37.1895>Isaurian</a> stronghold. 3 Then, when he had betaken himself into the inmost and safest parts of <a about=https://topostext.org/place/372324UIsa class=place long=32.3526 lat=37.1895>Isauria</a>, where he was protected by the natural difficulty of the ground and by the mountains, he ruled for some time among the <a about=https://topostext.org/place/370340RCil class=ethnic long=34.01 lat=37.01>Cilicians</a>. 4 Camsisoleus, however, <a href=/people/2746 target=_blank>Gallienus</a>' general and an <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> by race, the brother of that <a href=/people/679 target=_blank>Theodotus</a> who had captured <a href=/people/1261 target=_blank>Aemilianus</a>, brought him down to the plains and then defeated and slew him. 5 Never afterwards, however, was it possible to persuade the <a about=https://topostext.org/place/372324UIsa class=ethnic long=32.3526 lat=37.1895>Isaurians</a>, fearing that <a href=/people/2746 target=_blank>Gallienus</a> might vent his anger upon them, to come down to the level ground, not even by any offer of kindness on the part of the emperors. 6 In fact, since the time of Trebellianus they have been considered barbarians; for indeed their district, though in the midst of lands belonging to the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a>, is guarded by a novel kind of defence, comparable to a frontier-wall, for it is protected not by men but by the nature of the country. 7 For the <a about=https://topostext.org/place/372324UIsa class=ethnic long=32.3526 lat=37.1895>Isaurians</a> are not of noble stature or distinguished courage, not well provided with arms or wise in counsel, but they are kept safe by this alone that, dwelling, as they do, on the heights, no one can approach them. The Deified <a href=/people/82 target=_blank>Claudius</a> did, it is true, almost persuade them to leave their native lands and settle in <a about=https://topostext.org/place/370340RCil class=place long=34.01 lat=37.01>Cilicia</a>, planning to give the entire possessions of the <a about=https://topostext.org/place/372324UIsa class=ethnic long=32.3526 lat=37.1895>Isaurians</a> to one of his most loyal friends in order that never again might a rebellion arise therein. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#26 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:latinLit:phi2331.phi024:27'><b>&sect; 27</b>&nbsp;&nbsp;<a href=/people/11066 target=_blank>Herennianus</a><br /><a href=/people/11043 target=_blank>Odaenathus</a>, when he died, left two little sons, <a href=/people/11066 target=_blank>Herennianus</a> and his brother <a href=/people/1642 target=_blank>Timolaus</a>, in whose name <a href=/people/5320 target=_blank>Zenobia</a> seized the imperial power, holding the government longer than was meet for a woman. These boys she displayed clad in the purple robe of a Roman emperor and she brought them to public gatherings which she attended in the fashion of a man, holding up, among other examples, <a href=/people/433 target=_blank>Dido</a> and <a href=/people/332 target=_blank>Semiramis</a>, and <a href=/people/100 target=_blank>Cleopatra</a>, the founder of her family. 2 The manner of their death, however, is uncertain; for many maintain that they were killed by <a href=/people/11044 target=_blank>Aurelian</a>, and many that they died a natural death, since <a href=/people/5320 target=_blank>Zenobia</a>'s descendants still remain among the nobles of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#27 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:latinLit:phi2331.phi024:28'><b>&sect; 28</b>&nbsp;&nbsp;<a href=/people/1642 target=_blank>Timolaus</a><br />With regard to him we consider only those things to be worth knowing which have been told concerning his brother. 2 One thing there is, however, which distinguishes him from his brother, that is, that such was his eagerness for Roman studies that in a short time, it is said, he made good the statement of his teacher of letters, who had said that he was in truth able to make him the greatest of Latin rhetoricians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#28 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:latinLit:phi2331.phi024:29'><b>&sect; 29</b>&nbsp;&nbsp;<a href=/people/3007 target=_blank>Celsus</a><br />When the various parts of the empire were seized, namely Gaul, the Orient, and even <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>, <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> and <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyricum</a>, and while <a href=/people/2746 target=_blank>Gallienus</a> was spending his time in public-houses and giving up his life to bathing and pimps, the Africans also, at the instance of <a href=/people/1725 target=_blank>Vibius</a> Passienus, the proconsul of Africa, and <a href=/people/101 target=_blank>Fabius</a> <a href=/people/5201 target=_blank>Pomponianus</a>, the general in command of the <a about=https://topostext.org/place/300070RLib class=demonym long=10.01 lat=32.01>Libyan</a> frontier, created an emperor, namely <a href=/people/3007 target=_blank>Celsus</a>, decking him with the robe of the goddess Caelestis. 2 This man, a commoner and formerly a tribune stationed in Africa, was then living on his own estates, but such was his reputation for justice and such the size of his body that he seemed worthy of the imperial power. 3 Therefore he was made emperor, but on the seventh day of his rule he was killed by a woman named Galliena, a cousin of <a href=/people/2746 target=_blank>Gallienus</a>, and so he has scarcely found a place even among the least known of the emperors. 4 His body was devoured by <a href=/people/10953 target=_blank>dogs</a>, for such was the command of the people of <a about=https://topostext.org/place/362087USic class=place long=8.718 lat=36.1826>Sicca</a>, who had remained faithful to <a href=/people/2746 target=_blank>Gallienus</a>, and then with a new kind of insult his image was set up on a cross, while the mob pranced about, as though they were looking at <a href=/people/3007 target=_blank>Celsus</a> himself affixed to a gibbet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#29 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:latinLit:phi2331.phi024:30'><b>&sect; 30</b>&nbsp;&nbsp;<a href=/people/5320 target=_blank>Zenobia</a><br />Now all shame is exhausted, for in the weakened state of the commonwealth things came to such a pass that, while <a href=/people/2746 target=_blank>Gallienus</a> conducted himself in the most evil fashion, even women ruled most excellently. 2 For, in fact, even a foreigner, <a href=/people/5320 target=_blank>Zenobia</a> by name, about whom much has already been said, boasting herself to be of the family of the Cleopatras and the <a href=/people/1790 target=_blank>Ptolemies</a>, proceeded upon the death of her husband <a href=/people/11043 target=_blank>Odaenathus</a> to cast about her shoulders the imperial mantle; and arrayed in the robes of <a href=/people/433 target=_blank>Dido</a> and even assuming the diadem, she held the imperial power in the name of her sons <a href=/people/11066 target=_blank>Herennianus</a> and <a href=/people/1642 target=_blank>Timolaus</a>, ruling longer than could be endured from one of the female sex. 3 For this proud woman performed the functions of a monarch both while <a href=/people/2746 target=_blank>Gallienus</a> was ruling and afterwards when <a href=/people/82 target=_blank>Claudius</a> was busied with the war against the <a href=/people/1095 target=_blank>Goths</a>, and in the end could scarcely by conquered by <a href=/people/11044 target=_blank>Aurelian</a> himself, under whom she was led in triumph and submitted to the sway of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. <br />4 There is still in existence a letter of <a href=/people/11044 target=_blank>Aurelian</a>'s which bears testimony concerning this woman, then in captivity. For when some found fault with him, because he, the bravest of men, had led a woman in triumph, as though she were a general, he sent a letter to the senate and the Roman people, defending himself by the following justification: 5 I have heard, Conscript Fathers, that men are reproaching me for having performed an unmanly deed in leading <a href=/people/5320 target=_blank>Zenobia</a> in triumph. But in truth those very persons who find fault with me now would accord me praise in abundance, did they but know what manner of woman she is, how wise in counsels, how steadfast in plans, how firm toward the soldiers, how generous when necessity calls, and how stern when discipline demands. 6 I might even say that it was her doing that <a href=/people/11043 target=_blank>Odaenathus</a> defeated the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> and, after putting <a href=/people/12038 target=_blank>Sapor</a> to flight, advanced all the way to <a about=https://topostext.org/place/331446UKte class=place long=44.5807 lat=33.0937>Ctesiphon</a>. 7 I might add thereto that such was the fear that this woman inspired in the peoples of the East and also the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a> that neither <a about=https://topostext.org/place/280400RAra class=ethnic long=40 lat=28>Arabs</a> nor <a href=/people/11026 target=_blank>Saracens</a> nor <a about=https://topostext.org/place/397443RArm class=ethnic long=44.298 lat=39.702>Armenians</a> ever moved against her. 8 Nor would I have spared her life, had I not known that she did a great service to the Roman state when she preserved the imperial power in the East for herself, or for her children. 9 Therefore let those whom nothing pleases keep the venom of their own tongues to themselves. 10 For if it is not meet to vanquish a woman and lead her in triumph, what are they saying of <a href=/people/2746 target=_blank>Gallienus</a>, in contempt of whom she ruled the empire well? 11 What of the Deified <a href=/people/82 target=_blank>Claudius</a>, that revered and honoured leader? For he, because he was busied with his campaigns against the <a href=/people/1095 target=_blank>Goths</a>, suffered her, or so it is said, to hold the imperial power, doing it of purpose and wisely, in order that he himself, while she kept guard over the eastern frontier of the empire, might the more safely complete what he had taken in hand. 12 This speech shows what opinion <a href=/people/11044 target=_blank>Aurelian</a> held concerning <a href=/people/5320 target=_blank>Zenobia</a>. <br />Such was her continence, it is said, that she would not know even her own husband save for the purpose of conception. For when once she had lain with him, she would refrain until the time of menstruation to see if she were pregnant; if not, she would again grant him an opportunity of begetting children. 13 She lived in regal pomp. It was rather in the manner of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> that she received worship and in the manner of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> kings that she banqueted; 14 but it was in the manner of a Roman emperor that she came forth to public assemblies, wearing a helmet and girt with a purple fillet, which had gems hanging from the lower edge, while its centre was fastened with the jewel called cochlis, used instead of the brooch worn by women, and her arms were frequently bare. 15 Her face was dark and of a swarthy hue, her eyes were black and powerful beyond the usual wont, her spirit divinely great, and her beauty incredible. So white were her teeth that many thought that she had pearls in place of teeth. 16 Her voice was clear and like that of a man. Her sternness, when necessity demanded, was that of a tyrant, her clemency, when her sense of right called for it, that of a good emperor. Generous with prudence, she conserved her treasures beyond the wont of women. 17 She made use of a carriage, and rarely of a woman's coach, but more often she rode a <a href=/people/10959 target=_blank>horse</a>; it is said, moreover, that frequently she walked with her foot-soldiers for three or four miles. 18 She hunted with the eagerness of a <a about=https://topostext.org/place/390000RIbe class=person long=-4 lat=39>Spaniard</a>. She often drank with her generals, though at other times she refrained, and she drank, too, with the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> and the <a about=https://topostext.org/place/397443RArm class=ethnic long=44.298 lat=39.702>Armenians</a>, but only for the purpose of getting the better of them. 19 At her banquets she used vessels of gold and jewels, and she even used those that had been <a href=/people/100 target=_blank>Cleopatra</a>'s. As servants she had eunuchs of advanced age and but very few maidens. 20 She ordered her sons to talk Latin, so that, in fact, they spoke Greek but rarely and with difficulty. 21 She herself was not wholly conversant with the Latin tongue, but nevertheless, mastering her timidity she would speak it; <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a>, on the other hand, she spoke very well. 22 In the history of <a about=https://topostext.org/place/312299PAle class=place long=29.897 lat=31.182>Alexandria</a> and the Orient she was so well versed that she even composed an epitome, so it is said; Roman history, however, she read in Greek. <br />23 When <a href=/people/11044 target=_blank>Aurelian</a> had taken her prisoner, he caused her to be led into his presence and then addressed her thus: Why is it, <a href=/people/5320 target=_blank>Zenobia</a>, that you dared to show insolence to the emperors of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>? To this she replied, it is said: You, I know, are an emperor indeed, for you win victories, but <a href=/people/2746 target=_blank>Gallienus</a> and <a href=/people/11049 target=_blank>Aureolus</a> and the others I never regarded as emperors. Believing Victoria to be a woman like me, I desired to become a partner in the royal power, should the supply of lands permit. 24 And so she was led in triumph with such magnificence that the Roman people had never seen a more splendid parade. For, in the first place, she was adorned with gems so huge that she laboured under the weight of her ornaments; 25 for it is said that this woman, courageous though she was, halted very frequently, saying that she could not endure the load of her gems. 26 Furthermore, her feet were bound with shackles of gold and her hands with golden fetters, and even on her neck she wore a chain of gold, the weight of which was borne by a <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> buffoon. 27 Her life was granted her by <a href=/people/11044 target=_blank>Aurelian</a>, and they say that thereafter she lived with her children in the manner of a Roman matron on an estate that had been presented to her at <a about=https://topostext.org/place/420128UTib class=place long=12.7975 lat=41.9644>Tibur</a>, which even to this day is still called <a href=/people/5320 target=_blank>Zenobia</a>, not far from the <a about=https://topostext.org/place/419128BVHa class=place long=12.7756 lat=41.9419>palace</a> of <a href=/people/1020 target=_blank>Hadrian</a> or from that place which bears the name of Concha. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#30 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:latinLit:phi2331.phi024:31'><b>&sect; 31</b>&nbsp;&nbsp;Victoria <br />It would, indeed, be an unworthy thing that Vitruvia also, or rather Victoria, should be given a place in letters, had not the ways of <a href=/people/2746 target=_blank>Gallienus</a> brought it about that women, too, should be deemed worthy of mention. 2 For Victoria, after seeing her son and grandson slain by the soldiers, and also <a href=/people/2121 target=_blank>Postumus</a>, then <a href=/people/3622 target=_blank>Lollianus</a>, and <a href=/people/50 target=_blank>Marius</a> too (whom the soldiers had named emperor) all put to death, urged <a href=/people/11062 target=_blank>Tetricus</a>, of whom I have spoken above, to seize the power, solely that she might always be daring the deeds of a man. She was distinguished, furthermore, by her title, for she called herself Mother of the Camp. 3 Coins, too, were struck in her name, of bronze and gold and silver, and even to-day the type is still in existence among the <a about=https://topostext.org/place/498066UCol class=ethnic long=6.644 lat=49.7597>Treviri</a>. 4 She did not, indeed, live long; for during <a href=/people/11062 target=_blank>Tetricus</a>' rule she was slain, some say, while others assert that she succumbed to the destiny of fate. <br />5 This is all that I have deemed worthy of being related concerning the thirty pretenders, all of whom I have gathered into one book, lest the telling of each single detail about each one singly might bring about an aversion that is undeserved and not to be borne by my readers. 6 Now I will return to the Emperor <a href=/people/82 target=_blank>Claudius</a>. Concerning him I think I should publish a special book, short though it be, for his manner of life deserves it, and I must say something, besides, about that peerless man, his brother, in order that at least a few facts may be told of so righteous and noble a family. <br />7 It was with deliberate purpose that I included the women, namely that I might make a mock of <a href=/people/2746 target=_blank>Gallienus</a>, a greater monster than whom the Roman state has never endured; now I will add two pretenders besides, supernumeraries, so to speak, for they lived each at a different period, since one was of the time of <a href=/people/1138 target=_blank>Maximinus</a>, the other of the time of <a href=/people/82 target=_blank>Claudius</a>, my purpose being to include in this book the lives of thirty pretenders. 8 I ask you, accordingly, you who have received this book now completed, to look on my plan with favour and to consent to add to your volume these two, whom I had purposed to include after <a href=/people/82 target=_blank>Claudius</a> and <a href=/people/11044 target=_blank>Aurelian</a> among those who lived between <a href=/people/3256 target=_blank>Tacitus</a> and <a href=/people/1446 target=_blank>Diocletian</a>, just as I included the elder <a href=/people/466 target=_blank>Valens</a> in this present book. 9 This error on my part, however, your accurate learning, mindful of history, prevented. 10 And so I am grateful that the kindliness of your wisdom has filled out my title. Now no one in the <a about=https://topostext.org/place/419125SPax class=place long=12.4875 lat=41.8929>Temple of Peace</a> will say that among the pretenders I included women, female pretenders, forsooth, or, rather, pretendresses — for this they are wont to bandy about concerning me with merriment and jests. 11 They have now the number complete, gathered into my writings from the secret stores of history. For 12 I will add to my work <a href=/people/3477 target=_blank>Titus</a> and <a href=/people/2605 target=_blank>Censorinus</a>, the former of whom, as I have said, lived under <a href=/people/1138 target=_blank>Maximinus</a> and the latter under <a href=/people/82 target=_blank>Claudius</a>, but both were slain by the very soldiers who clothed them with the purple. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#31 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:latinLit:phi2331.phi024:32'><b>&sect; 32</b>&nbsp;&nbsp;<a href=/people/3477 target=_blank>Titus</a><br />It is related by <a href=/people/1445 target=_blank>Dexippus</a> and not left unmentioned by <a href=/people/3610 target=_blank>Herodian</a> or any of those who have recorded such things for posterity to read, that <a href=/people/3477 target=_blank>Titus</a>, once a tribune of the Moors but reduced by <a href=/people/1138 target=_blank>Maximinus</a> to the position of a civilian, fearing a violent death, as they narrate, but reluctantly, so most assert, and compelled by the soldiers, seized the imperial power. But within a few days, after the revolt was put down which <a href=/people/359 target=_blank>Magnus</a>, a man of consular rank, led against <a href=/people/1138 target=_blank>Maximinus</a>, he was slain by his own troops. He reigned, however, for the space of six months. 2 He was one who especially deserved the praise of the commonwealth both at home and abroad, but in his ruling he had ill-fortune. 3 Some say, on the other hand, that he was made emperor by the <a about=https://topostext.org/place/397443RArm class=demonym long=44.298 lat=39.702>Armenian</a> bowmen, whom <a href=/people/1138 target=_blank>Maximinus</a> hated as devoted to <a href=/people/13 target=_blank>Alexander</a> and to whom he had given offence. 4 You will not, indeed, wonder that there is such diversity of statement about this man, for even his name is scarcely known. 5 His wife was <a href=/people/2393 target=_blank>Calpurnia</a>, a revered and venerated woman of the stock of the Caesonini (that is, of the Pisos), to whom our fathers did reverence as a priestess married but once and among the most holy of women, and whose statue we have seen still standing in the <a about=https://topostext.org/place/419125SVeG class=place long=12.4848 lat=41.8941>Temple</a> of <a href=/people/15 target=_blank>Venus</a>, its head, hands and feet made of marble but the rest of it gilded. 6 She is said to have owned the pearls that once belonged to <a href=/people/100 target=_blank>Cleopatra</a> and a silver platter weighing a hundred pounds, of which many poets have made mention and on which was shown wrought in relief the history of her forefathers. <br />7 I seem to have gone on further than the matter demanded. But what am I to do? For knowledge is ever wordy through a natural inclination. 8 Wherefore I shall now return to <a href=/people/2605 target=_blank>Censorinus</a>, a man of noble birth, but said to have ruled for seven days not so much to the welfare as to the hurt of the state. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#32 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:latinLit:phi2331.phi024:33'><b>&sect; 33</b>&nbsp;&nbsp;<a href=/people/2605 target=_blank>Censorinus</a><br />He was a soldier, indeed, and a man of old-time dignity in the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>senate-house</a>, having been twice consul, twice prefect of the guard, three times prefect of the city, four times proconsul, three times legate of consular rank, twice of praetorian, four times of aedilician, three times of quaestorian, and having held the post of envoy extraordinary to the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> and also to the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sarmatians</a>. <br />2 Nevertheless, after all these offices, while living on his own estates, now an old man and lame in one foot from a wound received in the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> War under <a href=/people/12175 target=_blank>Valerian</a>, he was created emperor and by a jester's witticism given the name of <a href=/people/82 target=_blank>Claudius</a>. 3 But when he proceeded to act with the greatest severity and became intolerable to the soldiers because of his rigid discipline, he was put to death by the very men who had made him emperor. 4 His tomb is still in existence near <a about=https://topostext.org/place/445113UBon class=place long=11.3418 lat=44.4946>Bononia</a>, and on it are inscribed in large letters all the honours he had held, but in the last line there is added: Happy in all things, as emperor most hapless. 5 His family is still in existence, well known by the name of Censorini, some of whom, in their hatred of all things Roman, have departed to <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, and some to <a about=https://topostext.org/place/405295RBit class=place long=29.5 lat=40.5>Bithynia</a>. 6 His house, too, is still in existence, and a most beautiful one it is, adjacent to the Flavian House, which is said to have once belonged to the Emperor <a href=/people/3477 target=_blank>Titus</a>. <br />7 You have now the complete number of the thirty tyrants, you who used to dispute with those ill disposed to me, though always in a kindly spirit. 8 Now bestow on any one you wish this little book, written not with elegance but with fidelity to truth. Nor, in fact, do I seem to myself to have made any promise of literary style, but only of facts, for these little works which I have composed on the lives of the emperors I do not write down but only dictate, and I dictate them, indeed, with that speed, which, whether I promise aught of my own accord or you request it, you urge with such insistence that I have not even the opportunity of drawing breath. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Tyranni_XXX*.html#33 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=606', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas606";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=606';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

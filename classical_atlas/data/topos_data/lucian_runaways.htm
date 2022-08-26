@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Lucian, Runaways (Fugitivi)' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='The Runaways (Fugitivi), Lucian, The Works of Lucian of Samosata, translated by Henry Watson Fowler (1858-1933) and Francis George Fowler (1871–1918), Oxford edition of 1905, a work in the public domain nobly placed on line by lucianofsamosata.info' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='180' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 180' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/342' content='urn:cts:greekLit:tlg0062.tlg043' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79073533' content='Lucian of Samosata'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n50027721' content='Henry Watson Fowler (1858-1933)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://lucianofsamosata.info/texts.html' /><h2>Lucian, Runaways (Fugitivi)</h2>The Runaways (Fugitivi), Lucian, The Works of Lucian of Samosata, translated by Henry Watson Fowler (1858-1933) and Francis George Fowler (1871–1918), Oxford edition of 1905, a work in the public domain nobly placed on line by lucianofsamosata.info This text has 25 tagged references to 22 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0062.tlg043'>urn:cts:greekLit:tlg0062.tlg043</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q51871125'>Q51871125</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:1'><b>&sect; 1</b>&nbsp;&nbsp;<a href=/people/2 target=_blank>Apollo</a>, <a href=/people/1 target=_blank>Zeus</a>, Philosophy, <a href=/people/4 target=_blank>Heracles</a>, <a href=/people/33 target=_blank>Hermes</a>, Three Masters. An Innkeeper. <a href=/people/143 target=_blank>Orpheus</a>. Innkeeper's Wife. Three Runaway Slaves <br />APOL: Father, is this true, about a man's publicly throwing himself upon a pyre, at the <a about=https://topostext.org/place/376216SOly class=demonym long=21.63 lat=37.6378>Olympian</a> Games? He was quite an old man, it seems, and rather a good hand at anything in the sensational line. <a href=/people/339 target=_blank>Selene</a> told us about it: she says she actually saw him burning. <br />ZEUS: Quite true, my boy; only too true!<br /> APOL: Oh? the old gentleman deserved a better fate? <br />ZEUS: Why, as to that, I dare say he did. But I was alluding to the smell, which incommoded me extremely; the odour of roast man, I need hardly tell you, is far from pleasant. I made the best of my way to <a about=https://topostext.org/place/280400RAra class=place long=40 lat=28>Arabia</a> at once, or, upon my word, those awful fumes would have been the death of me. Even in that fragrant land of frankincense and spices I could scarcely get the villanous stench out of my nostrils; the mere recollection of it makes me feel queer. <br />APOL: But what was his object, father? Was there anything </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:2'><b>&sect; 2</b>&nbsp;&nbsp;to be got by jumping on to a pyre, and being converted to cinders? <br />ZEUS: Ah, if you come to that, you must call <a href=/people/227 target=_blank>Empedocles</a> to account first: he jumped into a crater, in <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>. <br />APOL: Poor fellow! he must have been in a sad way. But what was the inducement in the present case? <br />ZEUS: I'll quote you his own words. He made a speech, explaining his motives to the public. As far as I remember, he said — </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:3'><b>&sect; 3</b>&nbsp;&nbsp;but who comes here in such haste? There must be something wrong: she is crying; some one has been ill-treating her. Why, it is Philosophy, in a sad way, calling out to me. Why are you crying, child? and what brings you here, away from the world? More misdeeds of the ignorant herd? a repetition of the <a href=/people/16 target=_blank>Socrates</a> and <a href=/people/835 target=_blank>Anytus</a> affair? is that it? <br />PHIL: No, father, nothing of that kind. The common people have been most polite and respectful; they are my most devout admirers, — worshippers, I might almost say; not that they understand much of what I tell them. No; it was those — I don't know what to call them — but the people who pretend to be on such friendly terms with me, and are always using my name; — the wretches! <br />ZEUS: Oh, it's the philosophers who have been misbehaving themselves? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:4'><b>&sect; 4</b>&nbsp;&nbsp;PHIL: No, no, father; they have been just as badly treated as I have. <br />ZEUS: Then if it is neither the philosophers nor the common people, who is it that you complain of? <br />PHIL: There are some people who are between the two: they are not philosophers, and yet they are not like the rest of mankind. They are got up to look like philosophers; they have the dress, the walk, the expression; they call me mistress, write philosopher after their names, and declare themselves my disciples and followers: but they are evil men, made up of folly and impudence and wickedness; a disgrace to my name. It was their misconduct that drove me away. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:5'><b>&sect; 5</b>&nbsp;&nbsp;ZEUS: Poor child! it is too bad of them. And what have they been doing to you exactly? <br />PHIL: Judge for yourself whether the provocation was a slight one. When formerly you looked down upon the world, and saw that it was filled with iniquity and transgression, and was become the troubled abode of sin and folly, you had compassion on the frailty of ignorant mankind, and sent me down to them: you bade me see to it, that wickedness and violence and brutality should cease from among them; I was to lift their eyes upwards to the truth, and cause them to live together in unity. Remember your words on that occasion: 'Behold, my daughter, the misdeeds of mankind; behold how ignorance has wrought upon them. I feel compassion for them, and have chosen you from among all the Gods to heal their ills; for who else should heal them? ' </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:6'><b>&sect; 6</b>&nbsp;&nbsp;ZEUS: I said that, and more. Yes? and how did they receive you at your first descent? and what is the trouble now? <br />PHIL: My first flight was not directed towards Greece. I thought it best to begin with the hardest part of my task, which I took to be the instruction of the barbarians. With the Greeks I anticipated no difficulty; I had supposed that they would accept my yoke without hesitation. First, then, I went to the <a about=https://topostext.org/place/300740RInd class=ethnic long=74 lat=30>Indians</a>, the mightiest nation upon earth. I had little trouble in persuading them to descend from their elephants and follow me. The <a href=/people/6301 target=_blank>Brahmins</a>, who dwell between <a href=/people/3919 target=_blank>Oxydracae</a> and the country of the Nechrei, are mine to a man: they live according to my laws, and are respected by all their neighbours; and the manner of their death is truly wonderful. <br />ZEUS: Ah, to be sure: the <a href=/people/12221 target=_blank>Gymnosophists</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:7'><b>&sect; 7</b>&nbsp;&nbsp;I have heard a great deal of them. Among other things, they ascend gigantic pyres, and sit quietly burning to death without moving a muscle. However, that is no such great matter: I saw it done at <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a> only the other day. You would be there, no doubt, — when that old man burnt himself? <br />PHIL: No, father: I was afraid to go near <a about=https://topostext.org/place/376216SOly class=place long=21.63 lat=37.6378>Olympia</a>, on account of those hateful men I was telling you of; I saw that numbers of them were going there, to make their barking clamour heard in the temple, and to abuse all comers. Accordingly I know nothing of this cremation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:8'><b>&sect; 8</b>&nbsp;&nbsp;But to continue: after I had left the <a href=/people/6301 target=_blank>Brahmins</a>, I went straight to <a about=https://topostext.org/place/130350REth class=place long=35.01 lat=13.01>Ethiopia</a>, and thence to <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, where I associated with the priests and prophets, and taught them of the Gods. Then to <a about=https://topostext.org/place/325444UBab class=place long=44.421 lat=32.542>Babylon</a>, to instruct the <a href=/people/1042 target=_blank>Chaldaeans</a> and Mages. Next came <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a>, and after <a about=https://topostext.org/place/475310RSky class=place long=31.01 lat=47.5>Scythia</a>, <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>; here <a href=/people/793 target=_blank>Eumolpus</a> and <a href=/people/143 target=_blank>Orpheus</a> were my companions. I sent them on into Greece before me; <a href=/people/793 target=_blank>Eumolpus</a>, whom I had thoroughly instructed in theology, was to institute the sacred mysteries, <a href=/people/143 target=_blank>Orpheus</a> to win men by the power of music. I </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:9'><b>&sect; 9</b>&nbsp;&nbsp;followed close behind them. On my first arrival, the Greeks received me without enthusiasm: they did not, however, wholly reject my advances; by slow degrees I gained over seven men to be my companions and disciples, and <a about=https://topostext.org/place/377269PSam class=place long=26.935 lat=37.695>Samos</a>, <a about=https://topostext.org/place/379273PEph class=place long=27.3397 lat=37.9419>Ephesus</a>, and <a about=https://topostext.org/place/410250PAbd class=place long=24.9833 lat=40.95>Abdera</a>, each added one to the little company. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:10'><b>&sect; 10</b>&nbsp;&nbsp;And then there sprang up — I scarce know how — the tribe of sophists: men who had but little of my spirit, yet were not wholly alien to me; a motley <a href=/people/553 target=_blank>Centaur</a> breed, in whom vanity and wisdom meeting were moulded into one incongruous whole. They clung not entirely to ignorance, but theirs was not the steady eye that could meet the gaze of Philosophy; and if at moments my semblance flashed phantom-like across their dulled vision, they held that in that dim shadow they had seen all that was to be seen. It was this pride that nourished the vain, unprofitable science that they mistook for invincible wisdom; the science of quaint conceits, ingenious paradoxes, and labyrinthine dilemmas. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:11'><b>&sect; 11</b>&nbsp;&nbsp;My followers would have restrained them, and exposed their errors: but they grew angry, and conspired against them, and in the end brought them under the power of the law, which condemned them to drink of hemlock. Doubtless I should have done well to renounce humanity there and then, and take my flight: but <a href=/people/436 target=_blank>Antisthenes</a> and <a href=/people/99 target=_blank>Diogenes</a>, and after them <a href=/people/249 target=_blank>Crates</a>, and our friend <a href=/people/621 target=_blank>Menippus</a>, prevailed upon me to tarry yet a little longer. Would that I had never yielded! I should have been spared much pain in the sequel. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:12'><b>&sect; 12</b>&nbsp;&nbsp;ZEUS: But, my dear, you are merely giving way to your feelings, instead of telling me what your wrongs were. <br />PHIL: Then hear them, father. There is a vile race upon the earth, composed for the most part of serfs and menials, creatures whose occupations have never suffered them to become acquainted with philosophy; whose earliest years have been spent in the drudgery of the fields, in learning those base arts for which they are most fitted — the fuller's trade, the joiner's, the cobbler's — or in carding wool, that housewives may have ease in their spinning, and the thread be fit for warp and woof. Thus employed, they knew not in their youth so much as the name of Philosophy. But they had no sooner reached manhood, than they perceived the respect paid to my followers; how men submitted to their blunt speech, valued their advice, deferred to their judgement, and cowered beneath their censure; all this they saw, and held that here was a life for a king. The learning, indeed, that befits a philosopher would have taken them long to acquire, if it was not utterly out of their reach. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:13'><b>&sect; 13</b>&nbsp;&nbsp;On the other hand, their own miserly handicrafts barely rewarded their toil with a sufficiency. To some, too, servitude was in itself an oppression: they knew it, in fact, for the intolerable thing it is. But they bethought them that there was still one chance left; their sheet-anchor, as sailors say. They took refuge with my lady Folly, called in the assistance of Boldness, Ignorance, and Impudence, ever their untiring coadjutors, and provided themselves with a stock of bran-new invectives; these they have ever ready on their tongues; 'tis their sole equipment; noble provision, is it not, for a philosopher? Nothing could be more plausible than the philosophic disguise they now assume, reminding one of the fabled <a href=/people/10962 target=_blank>ass</a> of <a about=https://topostext.org/place/388269UCym class=place long=26.9363 lat=38.7595>Cyme</a>, in <a href=/people/80 target=_blank>Aesop</a>, who clothed himself in a <a href=/people/10960 target=_blank>lion</a>'s skin, and, stoutly braying, sought to play the <a href=/people/10960 target=_blank>lion</a>'s part; the beast, I doubt not, had his adherents. The externals of philosophy, as you know, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:14'><b>&sect; 14</b>&nbsp;&nbsp;are easily aped: it is a simple matter to assume the cloak and wallet, walk with a stick, and bawl, and bark, and bray, against all corners. They know that they are safe; their cloth protects them. Liberty is thus within their grasp: no need to ask their master's leave; should he attempt to reclaim them, their sticks are at his service. No more short commons for them now, no more of crusts whose dryness is mitigated only by herbs or salt fish: they have choice of meats, drink the best of wines, and take money where they will, shearing the <a href=/people/10954 target=_blank>sheep</a>, as they call it when they levy contributions, in the certainty that many will give, from respect to their garb or fear of their tongues. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:15'><b>&sect; 15</b>&nbsp;&nbsp;They foresee, of course, that they will be on the same footing as genuine philosophers; so long as their exterior is conformable, no one is likely to make critical distinctions. They take care not to risk exposure: at the first hint of a rational argument, they shout their opponent down, withdraw into the stronghold of personal abuse, and flourish their ever-ready cudgels. Question their practice, and you will hear much of their principles: offer to examine those principles, and you are referred to their conduct. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:16'><b>&sect; 16</b>&nbsp;&nbsp;The city swarms with these vermin, particularly with those who profess the tenets of <a href=/people/99 target=_blank>Diogenes</a>, <a href=/people/436 target=_blank>Antisthenes</a>, and <a href=/people/249 target=_blank>Crates</a>. Followers of the <a href=/people/10953 target=_blank>Dog</a>, they care little to excel in the canine virtues; they are neither trusty guardians nor affectionate, faithful servants: but for noise and greed and thievery and wantonness, for cringing, fawning cupboard-love, — there, indeed, they are perfect. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:17'><b>&sect; 17</b>&nbsp;&nbsp;Before long you will see every trade at a standstill, the workmen all at large: for every man of them knows that, whilst he is bent over his work from morning to night, toiling and drudging for a starvation wage, idle impostors are living in the midst of plenty, commanding charity where they will, with no word of thanks to the giver, and a curse on him that withholds the gift. Surely (he will say to himself) the golden age is returned, and the heavens shall rain honey into my mouth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:18'><b>&sect; 18</b>&nbsp;&nbsp;And would that that were all! But they have other ways of bringing discredit upon us, besides the baseness of their origin. When beauty comes within the reach of these grave and reverend gentlemen, they are guilty of excesses that I will not pollute my lips with mentioning. They have been known, like <a about=https://topostext.org/place/400262UIli class=person long=26.2389 lat=39.9575>Trojan</a> <a href=/people/112 target=_blank>Paris</a>, to seduce the wives of their own hosts, and to quote the authority of <a href=/people/12 target=_blank>Plato</a> for leaving these fair converts at the disposal of all their acquaintance; they little knew the true meaning of </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:19'><b>&sect; 19</b>&nbsp;&nbsp;that inspired philosopher's community of women. I will not tire you with a description of their drunken orgies; observe, however, that these are the men who preach against drunkenness and adultery and avarice and lewdness. Could any contrast be greater than that presented by their words and their deeds? They speak their detestation of flattery: a Gnathonides and a Struthias are less fulsome than they. They bid men tell the truth: yet their own tongues cannot move but to utter lies. To hear them, you would say they were at war with pleasure, and <a href=/people/106 target=_blank>Epicurus</a> their bitterest foe: yet nothing do they do but for pleasure's sake. Querulous, irritable, passionate as cradled babes, they are a derision to the beholder; the veriest trifle serves to move their ire, to bring the purple to their cheeks, ungoverned fury to their eyes, foam — call it rather venom — to their lips. Preserve me from their turbid rantings! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:20'><b>&sect; 20</b>&nbsp;&nbsp;Gold I ask not, nor silver; be one penny all my wealth, to purchase beans withal. And for my drink, a river, a spring, shall furnish me. But presently it turns out that what they want is not pence, nor shillings, but whole fortunes. He must be a thriving merchant, whose cargoes will bring him in such profits as these men suck out of philosophy. They are sufficiently provided at last, and then off goes the hated uniform: lands and houses are bought, and soft raiment, and comely pages. Inquire of them now for <a href=/people/249 target=_blank>Crates</a>'s wallet, <a href=/people/436 target=_blank>Antisthenes</a>'s cloak, <a href=/people/99 target=_blank>Diogenes</a>'s tub: they know nothing of the matter. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:21'><b>&sect; 21</b>&nbsp;&nbsp;When men see these things, they spit in the face of philosophy; they think that all philosophers are the same, and blame me their teacher. It is long since I have won over any to my side. I toil like <a href=/people/264 target=_blank>Penelope</a> at the loom, and one moment undoes all that I have done. Ignorance and <a href=/people/12002 target=_blank>Wickedness</a> watch my unavailing labours, and smile. <br />ZEUS: Really, Philosophy has been shamefully treated. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:22'><b>&sect; 22</b>&nbsp;&nbsp;We must take some measures with these rascals. Let us think what is to be done. The single stroke of the thunderbolt is too quick a death. <br />APOL: Father, I have a suggestion to make. By their neglect of the <a href=/people/54 target=_blank>Muses</a>, these vile quacks have incurred my own resentment as well as Philosophy's. They are not worthy to die by your hand. Instead, I would advise your sending <a href=/people/33 target=_blank>Hermes</a> to them, with full authority to punish them at his discretion. With his forensic experience, he will be at no loss to distinguish between the true philosopher and the false. The former will receive merited praise: on the latter he will inflict such chastisement as the circumstances demand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:23'><b>&sect; 23</b>&nbsp;&nbsp;ZEUS: A sensible proposal. <a href=/people/4 target=_blank>Heracles</a>, you can go too; take Philosophy with you, and lose no time. Think: this will make your thirteenth Labour, and a creditable one too, the extermination of these reptiles. <br />HERAC: Rather than meddle with them, I would give the <a href=/people/1015 target=_blank>Augean</a> stables a second clean-out. However, let us be starting, Philosophy. <br />PHIL: If I must, I must. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:24'><b>&sect; 24</b>&nbsp;&nbsp;HERM: Yes, come along, and we will polish off a few today. — Which way, Philosophy? You know where they are to be found. Somewhere in Greece, of course? <br />PHIL: Oh no; the few that there are in Greece are genuine philosophers. <a about=https://topostext.org/place/379239RAtt class=demonym long=23.9 lat=37.9>Attic</a> poverty is not at all to the liking of the impostors; we must look for them in places where gold and silver mines abound. <br />HERM: Straight to <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, then? <br />HERAC: Yes, <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, and I will show you the way. I know every inch of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>; I have been there so often. Look here, this is our route. <br />HERM: Yes? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:25'><b>&sect; 25</b>&nbsp;&nbsp;HERAC: You see those two magnificent mountains (the big one is <a about=https://topostext.org/place/428247LHae class=place long=24.659 lat=42.773>Haemus</a>, and the other <a about=https://topostext.org/place/412253LRho class=place long=25.28 lat=41.23>Rhodope</a>), and the fertile plain that spreads between them, running to the very foot of either? These three grand, rugged crests that stand out so proudly yonder form as it were a triple citadel to the <a about=https://topostext.org/place/421247PPhi class=place long=24.751 lat=42.1468>city</a> that lies beneath; you can see it now, look. <br />HERM: Superb! A queen among cities; her splendours reach us even here. And what is the great river that flows so close beneath the walls? <br />HERAC: The <a about=https://topostext.org/place/407260WHeb class=place long=26.1825 lat=40.78557>Hebrus</a>, and the city was built by <a href=/people/26 target=_blank>Philip</a>. Well, we have left the clouds behind us now; let us try our fortune on terra firma. <br />HERM: Very good; and what comes next? How do we hunt our vermin down? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:26'><b>&sect; 26</b>&nbsp;&nbsp;HERAC: Ah, that is where you come in, Mr. Crier: oblige us by crying them without loss of time. <br />HERM: There is only one objection to that: I do not know what they are called. What names am I to say, Philosophy? and how shall I describe them? <br />PHIL: I am not sure of their names, as I have never come into contact with them. To judge from their grasping propensities, however, you can hardly go wrong with Cteso, <a href=/people/737 target=_blank>Ctesippus</a>, <a href=/people/2512 target=_blank>Ctesicles</a>, <a href=/people/1046 target=_blank>Euctemon</a>, Polyctetus. <br />HERM: To be sure. But who are these men? They seem to </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:27'><b>&sect; 27</b>&nbsp;&nbsp;be looking for something too. Why, they are coming up to speak to us. <br />INNKEEPER AND MASTERS: <a href=/people/6099 target=_blank>Excuse</a> us, madam, and gentlemen, but have you come across a company of three rascals conducting a woman — a very masculine-looking female, with hair cut short in the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> fashion? <br />PHIL: Ha! the very people we are looking for! <br />MASTERS: Indeed, madam? But these are three runaway slaves. The woman was kidnapped by them, and we want to get her back. <br />HERM: Our business with them I will tell you afterwards. For the present, let us make a joint proclamation. Disappeared. A <a about=https://topostext.org/place/410300RPap class=demonym long=30 lat=41>Paphlagonian</a> slave, formerly of <a about=https://topostext.org/place/420351PSin class=place long=35.143 lat=42.025>Sinope</a>. Any person giving information as to his whereabouts will be rewarded; the amount of the reward to be fixed by the informant. Description. Name: begins with Cte. Complexion: sallow. Hair: close-cropped, with long beard. Dress: a coarse cloak with wallet. Temper: bad. Education: none. Voice: harsh. Manner: offensive. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:28'><b>&sect; 28</b>&nbsp;&nbsp;FIRST MASTER: Why, what is all this about? His name used to be Cantharus when he was with. me. He had long hair, and no beard, and was apprenticed to my trade; I am a fuller, and he was in my shop, dressing cloth. <br />PHIL: Yes, it is the same; but he has dressed to some purpose this time, and has become a philosopher. <br />FIRST MASTER: Cantharus a philosopher! I like that. And where do I come in? <br />SECOND AND THIRD MASTERS: Oh well, we shall get them all now. This lady knows all about them, it seems. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:29'><b>&sect; 29</b>&nbsp;&nbsp;PHI: <a href=/people/4 target=_blank>Heracles</a>, who is this comely person with a lyre? <br />HERAC: It is <a href=/people/143 target=_blank>Orpheus</a>. I was on the <a href=/people/352 target=_blank>Argo</a> with him. He was the best of boatswains; it was quite a pleasure to row to his singing. Welcome, my musical friend: you have not forgotten <a href=/people/4 target=_blank>Heracles</a>, I hope? <br />ORPH: And welcome to all of you, Philosophy, <a href=/people/4 target=_blank>Heracles</a>, <a href=/people/33 target=_blank>Hermes</a>. I should like my reward, please: I can lay my finger on your man. <br />HERM: Then show us the way. It is useless, of course, to offer gold to the gifted son of <a href=/people/736 target=_blank>Calliope</a>? <br />ORPH: Oh, quite. — I will show you the house, but not the man. His tongue might avenge him; scurrility is his strong point. <br />HERM: Lead on. <br />ORPH: It is this house close by. And now I shall leave you; I have no wish to set eyes on him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:30'><b>&sect; 30</b>&nbsp;&nbsp;HERM: Hush! Was that a woman's voice, reciting <a href=/people/9 target=_blank>Homer</a>? <br />PHIL: It was. Let us listen. <br />INNKEEPER'S WIFE: More than the gates of Hell I hate that man Who, loving gold, cloaketh his love with lies. <br />HERM: At that rate, madam, you will have to quarrel with Cantharus: He with his kindly host hath dealt amiss. <br />INNKEEPER: That's me. I took him in, and he ran away with my wife. <br />INNK'S WIFE: Wine-witted knave, deer-hearted and dog-eyed, <a href=/people/1306 target=_blank>Thersites</a>, babbler loose, that nought availest In council, nought in arms; most valiant daw, That with thine aimless chatter chidest kings, — <br />FIRST MASTER: My rascal to a T. <br />INNK'S WIFE: The <a href=/people/10953 target=_blank>dog</a> in thee — for thou art <a href=/people/10953 target=_blank>dog</a> and <a href=/people/10956 target=_blank>goat</a> And <a href=/people/10960 target=_blank>lion</a> — doth a blasting fury breathe. <br />INNKEEPER: Wife, wife! the <a href=/people/10953 target=_blank>dogs</a> have been too many for you; ay, and for your virtue, so men say. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:31'><b>&sect; 31</b>&nbsp;&nbsp;HERM: Hope for the best; some little <a href=/people/752 target=_blank>Cerberus</a> or <a href=/people/894 target=_blank>Geryon</a> shall call you father, and <a href=/people/4 target=_blank>Heracles</a> have employment again. — Ah, no need to knock: here they come. <br />FIRST MASTER: Ha, Cantharus, have I got you? What, nothing to say for yourself? Let us see what you have in that wallet; beans, no doubt, or a crust of bread. <br />HERM: Bread, indeed! Gold, a purseful of it! HERAC: That need not surprise you. In Greece, you see, he was a <a href=/people/11089 target=_blank>Cynic</a>, but here he is all for golden <a href=/people/186 target=_blank>Chrysippus</a>. Next you will see him dangling, <a href=/people/561 target=_blank>Cleanthes</a>-like, by his beard, and serve the dirty fellow right. <br />SECOND MASTER. Ha, you rascal there, am I mistaken, or are you my lost <a href=/people/6605 target=_blank>Lecythio</a>? <a href=/people/6605 target=_blank>Lecythio</a> it is. What a figure! <a href=/people/6605 target=_blank>Lecythio</a> a philosopher! I'll believe anything after this. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:32'><b>&sect; 32</b>&nbsp;&nbsp;HERM: Does none of you know anything about this other? <br />THIRD MASTER. Oh yes, he is mine; but he may go hang for me. <br />HERM: And why is that? <br />THIRD MASTER. Ah, he 's a sadly leaky vessel, is Rosolio, as we used to call him. <br />HERM: Gracious <a href=/people/4 target=_blank>Heracles</a>! did you hear that? Rosolio with wallet and stick! — Friend, here is your wife again. <br />INNKEEPER: Thank you for nothing. I'll have no woman brought to bed of an old book in my house. <br />HERM: How am I to understand that? <br />INNKEEPER: Why, the Three-headed <a href=/people/10953 target=_blank>Dog</a> is a book, master? <br />HERM: Ay, and so was the Man with the Three Hats, for that matter. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0062.tlg043:33'><b>&sect; 33</b>&nbsp;&nbsp;MASTERS: We leave the rest to you, sir. <br />HERM: This is my judgement. Let the woman return beneath her husband's roof, or many-headed monsters will come of it. These two truant sparks I hand over to their owners: let them follow their trades as heretofore; <a href=/people/6605 target=_blank>Lecythio</a> wash clothes, and Rosolio patch them; — not, however, before his back has felt the mallow-stalk. And for Cantharus, first let the men of pitch take him, and plaster him without mercy; and be their pitch the vilest procurable. Then let him be led forth to stand upon the snowy slopes of <a about=https://topostext.org/place/428247LHae class=place long=24.659 lat=42.773>Haemus</a>, naked and fettered. <br />CAN: Mercy! have mercy on me! Ah me! I am undone! <br />FIRST MASTER. So tragic? Come, follow me to the plasterers; and off with that <a href=/people/10960 target=_blank>lion</a>'s-skin, lest you be taken for other than an <a href=/people/10962 target=_blank>ass</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0062.tlg043.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=342', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas342";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=342';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

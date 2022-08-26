@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Antigonus, Compilation of Marvellous Accounts (1-77)' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Antigonus of Carystus(?), Compilation of Marvellous Accounts (paragraphs 1-77 only), translated by Rachel Hardiman, placed on line by her as Paradoxography, copyright Rachel Hardiman, under a Creative Commons 'Free Culture' Attribution-ShareAlike license.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-240' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -240' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='under copyright, CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/667' content='urn:cts:greekLit:tlg0568.tlg001' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/nr89010431' content='Antigonus of Carystus'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/' content='Rachel Hardiman' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://sites.google.com/site/paradoxography/texts/antigonus' /><h2>Antigonus, Compilation of Marvellous Accounts (1-77)</h2>Antigonus of Carystus(?), Compilation of Marvellous Accounts (paragraphs 1-77 only), translated by Rachel Hardiman, placed on line by her as Paradoxography, copyright Rachel Hardiman, under a Creative Commons 'Free Culture' Attribution-ShareAlike license. This text has 65 tagged references to 48 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0568.tlg001'>urn:cts:greekLit:tlg0568.tlg001</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87743430'>Q87743430</a>;     <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:1'><b>&sect; 1</b>&nbsp;&nbsp;<a href=/people/169 target=_blank>Timaeus</a>, who wrote the history of <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, says that where the river called <a about=https://topostext.org/place/379158WHal class=place long=15.7916 lat=37.9207>Alex</a> forms a boundary between the <a about=https://topostext.org/place/382162PLoc class=ethnic long=16.229 lat=38.216>Locrians</a> and the people of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a>, the cicadas [tettix] among the <a about=https://topostext.org/place/382162PLoc class=ethnic long=16.229 lat=38.216>Locrians</a> sing while those among the people of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a> are voiceless. And he narrates something yet more fabulous than this: for when the citharodes <a href=/people/313 target=_blank>Ariston</a> from <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a> and <a href=/people/1182 target=_blank>Eunomus</a> from <a about=https://topostext.org/place/382162PLoc class=person long=16.229 lat=38.216>Locri</a> arrived at <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a>, they disagreed between themselves about the lot - the former thought that he ought not to draw the inferior position since all of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a> was colonized from <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Delphi</a> and had been set up by the god, while the latter inveighed against him that it was entirely unsuitable for those to play the cithara among whom the cicadas did not sing. So although the man of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a> was the favourite to win the contest, <a href=/people/1182 target=_blank>Eunomus</a> the <a about=https://topostext.org/place/382162PLoc class=person long=16.229 lat=38.216>Locrian</a> was victorious for this reason: while he was singing, a cicada which had flown onto his lyre began to sing, and the assembled multitude acclaimed the occurrence and demanded his victory.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:2'><b>&sect; 2</b>&nbsp;&nbsp;Another such fabulous thing is recorded at <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a>, that <a href=/people/4 target=_blank>Heracles</a>, having fallen asleep at some spot in the region and having been mobbed by cicadas, prayed that they would become voiceless.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:3'><b>&sect; 3</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/382206IKep class=place long=20.59 lat=38.2>Cephallenia</a>, too, a river partitions the land, and while on the near side there are cicadas, there are none on the far side.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:4'><b>&sect; 4</b>&nbsp;&nbsp;Nor do the <a href=/people/10983 target=_blank>frogs</a> give voice in <a about=https://topostext.org/place/372245PSer class=place long=24.506 lat=37.154>Seriphus</a>: and myths prevail among the <a about=https://topostext.org/place/372245PSer class=ethnic long=24.506 lat=37.154>Seriphians</a>, too, except that some are about <a href=/people/4 target=_blank>Heracles</a>, some about <a href=/people/7088 target=_blank>Perseus</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:5'><b>&sect; 5</b>&nbsp;&nbsp;<a href=/people/3431 target=_blank>Myrsilus</a>, who wrote a Lesbiaca, says of <a about=https://topostext.org/place/393260PAnt class=place long=26.0189 lat=39.2908>Antissa</a>—where the tomb of the head of <a href=/people/143 target=_blank>Orpheus</a> is pointed out and its story told by the inhabitants—that its nightingales are more sweet-voiced than others.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:6'><b>&sect; 6</b>&nbsp;&nbsp;Our genre of compilation might naturally touch upon the partridges [perdix] spoken of in <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> and <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a>, of whom some are agreed to be melodious, others completely weak-voiced.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:7'><b>&sect; 7</b>&nbsp;&nbsp;There is a singular thing, too, about the guts of <a href=/people/10954 target=_blank>sheep</a> [probata]: those of the ram are soundless, those of the ewe, melodious. From this, one might understand the poet [<a href=/people/9 target=_blank>Homer</a>] to have said (although he is altogether over-curious and excessive), that he strung seven strings of female <a href=/people/10954 target=_blank>sheep</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:8'><b>&sect; 8</b>&nbsp;&nbsp;Something no less marvelous than this, but more familiar, is the fact concerning the thorn in <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> called cardoon [kaktos]: whenever a deer treads on it and is injured, its bones are soundless and useless as flutes. Which <a href=/people/1163 target=_blank>Philetas</a>, too, has interpreted, when he said, The fawn will sing on its departure from life if it has guarded itself from the prick of the sharp cardoon.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:9'><b>&sect; 9</b>&nbsp;&nbsp;In the islands of the <a about=https://topostext.org/place/399253ILem class=ethnic long=25.21 lat=39.93>Lemnians</a> called Neae partridges are not to be found, but if anyone tries to introduce them, they die. Some say that there are things even more prodigious than this, that they die if they even see the land.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:10'><b>&sect; 10</b>&nbsp;&nbsp;Although <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> has a great many mole-<a href=/people/10967 target=_blank>rats</a> [aspalax], in <a about=https://topostext.org/place/384230PKor class=place long=22.9571 lat=38.3912>Coroneia</a> alone this animal is not found, but dies if it is introduced. The same is true of [<a href=/people/10952 target=_blank>wolves</a> and] little <a href=/people/10997 target=_blank>owls</a> [glaux] in <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, where they say that the region bears no deadly animals.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:11'><b>&sect; 11</b>&nbsp;&nbsp;There are no <a href=/people/55 target=_blank>snakes</a> in <a about=https://topostext.org/place/365264PAst class=place long=26.355 lat=36.544>Astypalaea</a>, nor are there hares in <a about=https://topostext.org/place/383207IIth class=place long=20.71 lat=38.34>Ithaca</a>, nor the wild <a href=/people/10951 target=_blank>pig</a> [hys] nor deer in <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>, nor the weasel [gale] in <a about=https://topostext.org/place/374252PRhe class=place long=25.2124 lat=37.4159>Rheneia</a> which is near <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a>; and the guinea-fowl [meleagris] is not to be seen at all in any place [other than in <a about=https://topostext.org/place/372269PLer class=place long=26.8547 lat=37.158>Leros</a>].</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:12'><b>&sect; 12</b>&nbsp;&nbsp;Amelesagoras the <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, who wrote the <a href=/people/12511 target=_blank>Atthis</a>, says that the <a href=/people/10957 target=_blank>crow</a> [korone] does not fly towards the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a>, and there is nobody who can say that they have seen one do so. He gives the reason in fabulous form. For he says that when <a href=/people/11 target=_blank>Athena</a> was given to <a href=/people/84 target=_blank>Hephaestus</a>, as she lay down with him she vanished and <a href=/people/84 target=_blank>Hephaestus</a> fell to the ground and emitted his sperm. The earth, he says, afterwards bore to him <a href=/people/913 target=_blank>Erichthonius</a>, whom <a href=/people/11 target=_blank>Athena</a> nurtured and then shut up in a basket and handed over to the daughters of <a href=/people/447 target=_blank>Cecrops</a> (<a href=/people/4373 target=_blank>Agraulos</a>, <a href=/people/2469 target=_blank>Pandrosos</a> and <a href=/people/3308 target=_blank>Herse</a>). <a href=/people/11 target=_blank>Athena</a> instructed them not to open the chest until she herself came. When she went to <a about=https://topostext.org/place/380238DPal class=place long=23.8475 lat=38.0155>Pallene</a> [or Pellene] to fetch a mountain so that she might make a defence in front of the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a>, two of the daughters of <a href=/people/447 target=_blank>Cecrops</a>, <a href=/people/4373 target=_blank>Agraulos</a> and <a href=/people/2469 target=_blank>Pandrosos</a>, opened the chest and saw two <a href=/people/55 target=_blank>serpents</a> [drakon] around <a href=/people/913 target=_blank>Erichthonius</a>. Amelesagoras says that a <a href=/people/10957 target=_blank>crow</a> met <a href=/people/11 target=_blank>Athena</a> as she carried the mountain, which is now called <a about=https://topostext.org/place/380237LLyk class=place long=23.744 lat=37.982>Lycabettus</a>, and said that <a href=/people/913 target=_blank>Erichthonius</a> was out in the open. She, on hearing this, flung the mountain to its present position and said to the <a href=/people/10957 target=_blank>crow</a> that because of the bad news it had brought, it was not to be lawful for it to approach the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:13'><b>&sect; 13</b>&nbsp;&nbsp;In the <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a> region, and likewise in that of <a about=https://topostext.org/place/378215REle class=place long=21.5 lat=37.8>Elis</a>, there are no mules.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:14'><b>&sect; 14</b>&nbsp;&nbsp;<a href=/people/121 target=_blank>Theopompus</a> says that there is in the neighbourhood of the <a about=https://topostext.org/place/405233RCha class=ethnic long=23.3 lat=40.5>Chalcidians</a> in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> a place of the following nature, that whenever any other sort of animal enters it, it comes back unharmed, but that no dung-beetle escapes: it turns round and round in a circle and then it dies: indeed, the place is called Cantharolethrus (‘Beetle-death’) because of this.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:15a'><b>&sect; 15a</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/395223UKra class=place long=22.3057 lat=39.4996>Crannon</a> in <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a> they say that there are only two ravens: and because of this, on the city <a href=/people/10989 target=_blank>seal</a> attached to decrees of proxeny—just as is customary among all men to attach—are depicted two ravens on a bronze cart, because more than this have never been seen. The cart is depicted for the following reason (and this, too, might seem outlandish): they have a bronze cart as a dedication which, whenever there is a drought, they shake while beseeching the god for water, and they say that their prayers are fulfilled. <a href=/people/121 target=_blank>Theopompus</a> tells something more singular than this: for he says that while the ravens stay in <a about=https://topostext.org/place/395223UKra class=place long=22.3057 lat=39.4996>Crannon</a> until such time as they hatch their young, once they have done this, they leave the young and return [inland].</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:15b'><b>&sect; 15b</b>&nbsp;&nbsp;(16) <a href=/people/485 target=_blank>Ctesias</a> narrates something similar in respect of the people of <a about=https://topostext.org/place/348485UEcb class=place long=48.5166 lat=34.8054>Ecbatana</a> and <a about=https://topostext.org/place/295540RPer class=place long=54 lat=29.5>Persia</a>. But I disregarded the excerpt because of his many lies: in fact, it seemed freakish.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15c>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:15c'><b>&sect; 15c</b>&nbsp;&nbsp;(17) <a href=/people/3431 target=_blank>Myrsilus</a> of <a about=https://topostext.org/place/392261ILes class=person long=26.2 lat=39.2075>Lesbos</a> says that there is a sanctuary of <a href=/people/2 target=_blank>Apollo</a> and a heroön of Lepetymnus in Mt. <a about=https://topostext.org/place/393263LLep class=place long=26.2686 lat=39.3456>Lepetymnus</a>, on which, just as in <a about=https://topostext.org/place/395223UKra class=place long=22.3057 lat=39.4996>Crannon</a>, there are only two ravens, although there are not a few in the nearby areas.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:16a'><b>&sect; 16a</b>&nbsp;&nbsp;(18) In <a about=https://topostext.org/place/375276LLat class=place long=27.5833 lat=37.5>Latmos</a> in <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a>, <a href=/people/46 target=_blank>Aristotle</a> says that the scorpions cause only moderate pain if some stranger disturbs them, but torment almost to the point of death if it is a local.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:16b'><b>&sect; 16b</b>&nbsp;&nbsp;(19) Of the <a about=https://topostext.org/place/300070RLib class=ethnic long=10.01 lat=32.01>Libyans</a>, there are some called <a href=/people/6861 target=_blank>Psylli</a>, with whom something happens in the opposite fashion to this: for they suffer nothing when struck by cobras, but of the other <a about=https://topostext.org/place/300070RLib class=ethnic long=10.01 lat=32.01>Libyans</a>, not one can escape once bitten.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:17'><b>&sect; 17</b>&nbsp;&nbsp;(20) In <a about=https://topostext.org/place/365295RLyc class=place long=29.5 lat=36.5>Lycia</a> there grows a plant called <a href=/people/10956 target=_blank>goat</a>'s bane [aigolethros], which none of the local <a href=/people/10956 target=_blank>goats</a> will taste, but whenever a foreign <a href=/people/10956 target=_blank>goat</a> comes upon it and eats the plant through ignorance, it dies through the destruction of that compartment of its stomach called the 'echinus'.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:18a'><b>&sect; 18a</b>&nbsp;&nbsp;(21) There is an island near the regions of <a about=https://topostext.org/place/380244PKar class=place long=24.427 lat=38.027>Carystia</a> and <a about=https://topostext.org/place/378248PAnd class=place long=24.8279 lat=37.8186>Andria</a> which is called <a about=https://topostext.org/place/376247IGya class=place long=24.732 lat=37.602>Gyaros</a>; there, the <a href=/people/10966 target=_blank>mice</a> eat through iron. In the island of <a about=https://topostext.org/place/376243IKeo class=place long=24.3333 lat=37.6167>Ceos</a>, the wild pear [acherdos] is lethal, and if you were to graft it onto another tree, it would cause it to wither.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:18b'><b>&sect; 18b</b>&nbsp;&nbsp;(22) The sting of the marine stingray [trygon] does the same thing: if you apply it to the teeth, it rots them.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:19'><b>&sect; 19</b>&nbsp;&nbsp;(23) There are singular things, too, concerning the comparisons and differences of animals, as well as their births, such as that in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> if an <a href=/people/10961 target=_blank>ox</a> is buried in a certain place so that the horns themselves rise above the earth and are afterwards sawn off, they say that <a href=/people/10964 target=_blank>bees</a> fly out of them: for by rotting they are converted into this insect. And <a href=/people/1163 target=_blank>Philetas</a>, who is pretty inquisitive, seems to turn his attention to this; so he addresses them as “<a href=/people/10961 target=_blank>ox</a>-born” in saying Proceed afar, calling the <a href=/people/10964 target=_blank>bees</a> '<a href=/people/10961 target=_blank>ox</a>-born'. (a)They say, too, that the crocodile generates scorpions, (b) and that <a href=/people/10963 target=_blank>wasps</a> are generated from <a href=/people/10959 target=_blank>horses</a>. And a certain <a href=/people/113 target=_blank>Archelaus</a>, an <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egyptian</a> who interpreted paradoxa for <a href=/people/21 target=_blank>Ptolemy</a> in epigrams, spoke thus concerning scorpions: (a) Into you, scorpions, does nature who gives life to all things dissolve the crocodile when it has died and about <a href=/people/10963 target=_blank>wasps</a> (b) From the body of a <a href=/people/10959 target=_blank>horse</a> you author this offspring, <a href=/people/10963 target=_blank>wasps</a>: see what nature makes from what! <a href=/people/46 target=_blank>Aristotle</a> says that scorpions are generated from rotting bergamot-mint [sisymbrios].</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:20'><b>&sect; 20</b>&nbsp;&nbsp;(24) No less amazing than these examples is the usefulness of perishable materials—such as the gecko [galeotes], which whenever it sheds its skin, having turned it around, swallows it: for it is, they say, as <a href=/people/46 target=_blank>Aristotle</a> writes, a cure for epilepsy. Likewise, the <a href=/people/10989 target=_blank>seal</a> [phoke] is said to vomit out its whey—this indeed is useful for the same disease. Mares eat off the excrescence on their embryos called 'hippomanes': this occurs on the forehead and is sought for many purposes. The doe buries her right horn in the earth: this, too, is useful in many ways. Thus these things, whether they are so by choice or by chance, demand a great deal of attention.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:21'><b>&sect; 21</b>&nbsp;&nbsp;(25) The octopus eats its own tentacles in winter. This is On the wintry day, when the boneless one gnaws its foot. The embryos of <a href=/people/10953 target=_blank>dog</a>-fish, on being born, are dispensed from the stomach but crawl back into the mouth. The lioness does not conceive twice: for, as <a href=/people/133 target=_blank>Herodotus</a> says, she ejects the womb with the new-born. Nor does the viper [echidna], for the embryos eat its stomach.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:22'><b>&sect; 22</b>&nbsp;&nbsp;(26) The bat alone of birds has teeth and breasts and milk. <a href=/people/46 target=_blank>Aristotle</a> says that the <a href=/people/10989 target=_blank>seal</a>, too, and the whale [phalaina] have milk. He writes down something no less monstrous than these, for he says that in <a about=https://topostext.org/place/399253ILem class=place long=25.21 lat=39.93>Lemnos</a> milk was extracted from a he-<a href=/people/10956 target=_blank>goat</a> in sufficient quantities to make cheese.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:23'><b>&sect; 23</b>&nbsp;&nbsp;(27) The male of the halcyon are called “keryloi”: when they become weak through old age and are no longer able to fly, the female carry them by taking them upon their wings. The saying of <a href=/people/769 target=_blank>Alcman</a> is connected with this, for he says that he is weak from old age and unable to go around with the choruses or with the dances of the maidens: No longer, sweet-spoken maidens, divine-voiced, are my limbs able to carry me: would, oh would that I were a kerylos, which over the foam of the wave flies with the halcyons with resolute heart - the sacred, purple bird.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:24'><b>&sect; 24</b>&nbsp;&nbsp;(28) The Poet, too, is said by everyone to be pretty painstaking and full of curiosity, for <a href=/people/18 target=_blank>Odysseus</a>, when the <a href=/people/10953 target=_blank>dogs</a> had attacked him on the way up to the swineherd, crouched in cunning, and cast the staff from his hand. For they say that whenever anyone who is being chased crouches down, the <a href=/people/10953 target=_blank>dogs</a> do him no harm.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:25a'><b>&sect; 25a</b>&nbsp;&nbsp;(29) Also amazing are those animals which, like the octopus, make themselves similar to their surrounding: for it becomes indistinguishable from the colour of the sea-bed and from that of anything which it might entwine, so that it is difficult to hunt. From this, the poet clearly wrote something that is in common currency: Having the spirit of the octopus in your breast, child, adapt yourself to [whatever is in accordance with popular sentiment].</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:25b'><b>&sect; 25b</b>&nbsp;&nbsp;(30) The same thing happens with the chamaeleon, for it changes its skin in the same way to that of tree-trunks and leaves and earth and any place at all.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25c>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:25c'><b>&sect; 25c</b>&nbsp;&nbsp;(31) <a href=/people/46 target=_blank>Aristotle</a> says that the animal called the elk undergoes this as well: it is a quadruped and almost equal to the <a href=/people/10962 target=_blank>ass</a>, thick-skinned and hairy, and [he says] that it is remarkable how its hair changes so quickly.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:26'><b>&sect; 26</b>&nbsp;&nbsp;(32)There is a certain plant, called sea-starwort [tripolion]: it grows on the seashore on rocks and puts forth a flower which changes its colour three times a day—it is sometimes white, sometimes purple and sometimes apple-yellow. Certainly, one would most accurately learn the other instincts of living creatures—such as pertain to conflicts, to healing of wounds, to the preparation of the necessities of life, to memory—from the collection of <a href=/people/46 target=_blank>Aristotle</a>, from which I will at first make my excerpt.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:27'><b>&sect; 27</b>&nbsp;&nbsp;(33) He says that around Conopeium in the <a about=https://topostext.org/place/460370WMai class=demonym long=37 lat=46>Maeotian</a> lake the <a href=/people/10952 target=_blank>wolves</a> procure their sustenance from the fishermen and guard their prey, and that if they suspect that they have been cheated in any way, they ruin their nets and their fish.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:28'><b>&sect; 28</b>&nbsp;&nbsp;(34) In <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, in the city once called Cedripolis, men and hawks jointly hunt small birds: the former drive them away with sticks while the hawks pursue closely and [the little birds] in their flight fall into [the clutches of] the men. Because of this, they share their prey with the hawks.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:29'><b>&sect; 29</b>&nbsp;&nbsp;(35) He says that does give birth by the roadside, to avoid predatory animals, for <a href=/people/10952 target=_blank>wolves</a> are least likely to attack them there; they lead even their offspring to their lair, so as to accustom them to that which they must flee—this is a precipitous rock with only one exit. A female deer had previously been captured which had ivy on its horns when they were moist. Deer are captured by whistling and singing so that they lie down, overcome with pleasure.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:30'><b>&sect; 30</b>&nbsp;&nbsp;(36) The wild <a href=/people/10956 target=_blank>goats</a> in <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, whenever they are shot, seek dittany, for it seems to be effective in casting out the arrows.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:31'><b>&sect; 31</b>&nbsp;&nbsp;(37) Some say that the leopard has been observed—since living things delight in its smell—to hide itself and thus prey on animals which come close to it.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:32'><b>&sect; 32</b>&nbsp;&nbsp;(38) The <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> mongoose [ichneumon], whenever it sees an asp [aspis], does not attack it before calling upon others to help, and they plaster themselves in mud [as a protection] against its bites and blows: for, having moistened their skin, they roll about in the dust.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:33'><b>&sect; 33</b>&nbsp;&nbsp;(39) He says that the <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> plover [trochilos] cleans out the teeth of crocodiles and gains its nourishment from them. [The crocodiles] perceive it as useful and whenever the trochilos wants to get out, they move their neck so that it is not bitten by the closing teeth.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:34'><b>&sect; 34</b>&nbsp;&nbsp;(40) The tortoise [chelone], whenever it eats a <a href=/people/55 target=_blank>snake</a>, eats oregano afterwards; and once, when someone had observed closely and stripped off the leaves, it died since it did not have oregano to eat.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:35'><b>&sect; 35</b>&nbsp;&nbsp;(41) The weasel, whenever it fights with a <a href=/people/55 target=_blank>snake</a>, eats mountain rue [peganon] beforehand, for its smell is repugnant to the <a href=/people/55 target=_blank>snake</a>. In addition, rue helps against <a href=/people/55 target=_blank>snake</a>-bite when it is placed in unmixed wine and drunk. And a <a href=/people/10951 target=_blank>pig</a>, when it is bitten by a <a href=/people/55 target=_blank>snake</a>, takes itself at once to rivers and seeks the crab: this, too, is included in prescriptions and is extremely efficacious for <a href=/people/55 target=_blank>snake</a>-bite.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:36'><b>&sect; 36</b>&nbsp;&nbsp;(42) The ring-dove [phatta], whenever it is bitten, packs oregano into the wound and becomes healthy in this way.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:37'><b>&sect; 37</b>&nbsp;&nbsp;(43) <a href=/people/46 target=_blank>Aristotle</a> says that the swallow, when building its nest, plaits earth together with twigs and, if earth is lacking, it gets itself wet and rolls about and picks it up with its wings and makes itself a bed of straw using the same techniques as a human being, putting the stiff bits underneath. It gives its young their food in proportion, watching carefully lest it give twice to the same ones. When they are small, it throws the excrement out itself, but when they have grown, it teaches the young to turn around and discharge it outside.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:38'><b>&sect; 38</b>&nbsp;&nbsp;(44) Pigeons do not like to mate with many nor to leave their pairing unless they are widowed. For their young, they chew up salty earth and spit the food which they have prepared into their mouths.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:39'><b>&sect; 39</b>&nbsp;&nbsp;(45) Partridges, whenever anyone hunts their young, roll about in front of the hunter as though they are disabled and draw [them] on, until the young escape. Because of their passion for sex, they destroy their eggs so that the female does not incubate them, but she plots against this and lays them while running away. The 'widowers' [i.e., those males successfully eluded by their brooding mate] fight among themselves and the one which is worsted follows [the victor] and is mounted by him alone.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:40'><b>&sect; 40</b>&nbsp;&nbsp;(46) The cranes fly to a great height so that they can look down on a wide area; and if they see clouds and storm, they rest. They have a leader, too: while the others sleep with their heads placed beneath their wings, the leader keeps his bare so as to watch ahead, and if he perceives anything, he signals the others by crying out.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:41'><b>&sect; 41</b>&nbsp;&nbsp;(47) [<a href=/people/46 target=_blank>Aristotle</a>] relates that pelicans swallow down smooth mussels [konche]; and afterwards, having held them down for a while in the section above their stomachs, vomit them up when they have gaped open and then eat the meat having separated it in this way.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:42'><b>&sect; 42</b>&nbsp;&nbsp;(48) It is said by some that no-one has seen either the young of the vulture or its nest. And because of this, <a href=/people/2235 target=_blank>Herodorus</a>, the father of <a href=/people/3353 target=_blank>Bryson</a> the sophist, says that they are from some other high land, for they lay their eggs on inaccessible rocks.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:43'><b>&sect; 43</b>&nbsp;&nbsp;(49) Some say, too, that 'cinnamon' refers to a bird and that it carries the spice and makes its nest from this. It nests in high and unclimbable trees, and the locals tip their arrows with lead to shoot at and break up the nests.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:44'><b>&sect; 44</b>&nbsp;&nbsp;(50) It seems that the cuckoo makes its young supposititious because of its cowardice and inability to defend them, for they are picked on by the least [of birds]. Those birds that take in the young throw out their own because of the beauty of the cuckoo’s.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:45'><b>&sect; 45</b>&nbsp;&nbsp;(51) The aigithos flies to the female <a href=/people/10956 target=_blank>goat</a> and suckles her: it has taken its name from this fact. The breast [dries out] whenever it suckles [and the <a href=/people/10956 target=_blank>goat</a>] goes blind. The bird is lame, from which <a href=/people/219 target=_blank>Callimachus</a> of <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egypt</a>, too, wishing to be very lucid, said (having spoken previously of some other bird) “αἴγιθος ἀμφιγυήεις.” His account is not confirmed, for it is not lame in both feet. “ἀμφιγυήεις” means not lameness of this sort but that which is spoken of in connexion with <a href=/people/84 target=_blank>Hephaestus</a>, whenever one has been lamed in both limbs. I have been led to speak of <a href=/people/219 target=_blank>Callimachus</a> because of his implausibility.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:46'><b>&sect; 46</b>&nbsp;&nbsp;(52) <a href=/people/46 target=_blank>Aristotle</a> says that when the <a href=/people/10980 target=_blank>eagle</a> grows old, its beak grows and curves and it finally dies of starvation. The vulture [phene] takes those young cast out by the <a href=/people/10980 target=_blank>eagle</a> and brings them up. The sea-<a href=/people/10980 target=_blank>eagle</a> [haliaietos] compels its young while still unfeathered to look towards the sun, and whichever one of them gets watery eyes and is unwilling to withstand [the sun], it kills.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:47'><b>&sect; 47</b>&nbsp;&nbsp;(52) The fish called the ‘fishing <a href=/people/10983 target=_blank>frog</a>’ [batrachos halieus] hunts little fish with the appendages from its eyes, whose length is like that of hair, but with an attachment at the tip like round bait: so it hides itself and sticks this out.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:48'><b>&sect; 48</b>&nbsp;&nbsp;(53) The electric ray [narke] hides itself in the sand and seizes the fish that, whenever it is nearby, are rendered incapable of swimming because of the torpor it induces.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:49'><b>&sect; 49</b>&nbsp;&nbsp;(54) The so-called ‘<a href=/people/10958 target=_blank>foxes</a>’ [alopex], whenever they sense that they have swallowed a fish-hook, run back and bite off the line from above.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:50'><b>&sect; 50</b>&nbsp;&nbsp;(55) The octopus puts food into chambers and whenever the useful bits are used up, expels the unusable and preys on those little fish [ichthydion] which come to [feed on] the cast-offs by changing its colour close to that of the stones it happens to be nearby. It does the same thing whenever it is frightened.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:51'><b>&sect; 51</b>&nbsp;&nbsp;(56) Now the nautilus octopus [nautilos polypous] is also unusual in what it does, for it has a shell which it turns downward on ascending so that it might more easily be propelled with it empty, but when it descends from above, it reverses it. It has webbing like a membrane between its tentacles up to a certain point and this, whenever there is a breeze, it uses as a sail, and instead of steering-oars lets down [two] of its tentacles alongside.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:52a'><b>&sect; 52a</b>&nbsp;&nbsp;(57) When <a href=/people/10964 target=_blank>bees</a> have been fumigated and are badly affected by the smoke, it is then most of all that they eat [honey], but for the rest of the time they use it sparingly as if storing it by as food. They smear the hive with drops from the trees as a protection against other animals. When the worker <a href=/people/10964 target=_blank>bees</a> kill [other <a href=/people/10964 target=_blank>bees</a>], they try to do it outside: if they kill within the hive, they carry out the body. The so-called ‘robber’ <a href=/people/10964 target=_blank>bees</a> do damage if they come in unnoticed. But they seldom enter—for they are watched out for and guards are placed everywhere. [5] There are <a href=/people/10964 target=_blank>bees</a> appointed to each of the tasks: some gather flowers, others level the combs. [6] They are disgusted both by the bad smell of food and by perfume, and go away [from the hive] to discharge their excrement. [7] And the elders work inside [ . . . . . ]</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:52b'><b>&sect; 52b</b>&nbsp;&nbsp;(57) If one takes a <a href=/people/10963 target=_blank>wasp</a> by the legs and lets its wings buzz, he [i.e. <a href=/people/46 target=_blank>Aristotle</a>] says that the stingless ones fly towards it but none of those with stings do so.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:53'><b>&sect; 53</b>&nbsp;&nbsp;(58) They say that the bison [monapos] is found in <a about=https://topostext.org/place/415220RPai class=place long=22.01 lat=41.5>Paeonia</a> on the mountain of Marsanos [Messapium] and that it has no upper teeth, like the <a href=/people/10961 target=_blank>ox</a> or any other two-horned beast, and in other respects is similar to the <a href=/people/10955 target=_blank>bull</a>. When it is pursued, it projects its excrement quite a distance; whenever it does this in fright, its dung burns in such a way that the <a href=/people/10953 target=_blank>hounds</a>’ hair falls out, but if it does it free from fear, nothing suffers or is injured.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:54a'><b>&sect; 54a</b>&nbsp;&nbsp;(58[3]) [ . . . . . ] if [a <a href=/people/10955 target=_blank>bull</a> elephant] mates with [a female] and makes it pregnant, it does not touch that one again.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:54b'><b>&sect; 54b</b>&nbsp;&nbsp;(59) They say that the King of <a about=https://topostext.org/place/475310RSky class=person long=31.01 lat=47.5>Scythia</a> had a noble mare: he led a foal born from herself to her so that it might mate, but [the foal] was unwilling. When they led in the mare having first covered her over, he mounted her, but when she had been unveiled and he saw her face, he fled and threw himself off the cliffs.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:55'><b>&sect; 55</b>&nbsp;&nbsp;(60) Of marine creatures, the <a href=/people/10965 target=_blank>dolphin</a> is the most gentle—indeed, they comport themselves passionately towards boys, as [happens] around <a about=https://topostext.org/place/405172PTar class=place long=17.228 lat=40.476>Tarentum</a>, <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a> and many other places. In <a about=https://topostext.org/place/370287RKar class=place long=28.7 lat=37.01>Caria</a>, when a <a href=/people/10965 target=_blank>dolphin</a> had been captured and had received many wounds, many of them came into the harbour to its aid until the fisherman let it go.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:56'><b>&sect; 56</b>&nbsp;&nbsp;(61) Concerning the parturition of <a href=/people/10952 target=_blank>wolves</a>, [<a href=/people/46 target=_blank>Aristotle</a>] makes a precise relation of something fabulous (though he does so as one who is conscious of this): for he says that they all give birth in a single twelve-day period of the year. The reason for this, as the story goes, is that they brought <a href=/people/127 target=_blank>Leto</a> from the <a href=/people/801 target=_blank>Hyperboreans</a> to <a about=https://topostext.org/place/374253SSan class=place long=25.2666 lat=37.4004>Delos</a> in twelve days, during which time she was in the form of a <a href=/people/10952 target=_blank>wolf</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:57'><b>&sect; 57</b>&nbsp;&nbsp;(62) The <a href=/people/10997 target=_blank>owl</a> and the <a href=/people/10957 target=_blank>crow</a> are enemies: while the <a href=/people/10957 target=_blank>crow</a> [steals away the eggs] of the <a href=/people/10997 target=_blank>owl</a> by day because the <a href=/people/10997 target=_blank>owl</a> cannot see, the <a href=/people/10997 target=_blank>owl</a> does the same to the <a href=/people/10957 target=_blank>crow</a> by night because the <a href=/people/10957 target=_blank>crow</a> cannot see. So while one rules by night, the other does by day.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:58'><b>&sect; 58</b>&nbsp;&nbsp;(63) The <a href=/people/10962 target=_blank>ass</a> and the aigithos, too, are at war with one another: for [the <a href=/people/10962 target=_blank>ass</a>] comes by and scratches itself on the thorns and because of this, and whenever it brays, it throws out the eggs of the aigithos and the nestlings fall out in fright. Because of this injury, the aigithos flies at it and pecks its sores.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:59'><b>&sect; 59</b>&nbsp;&nbsp;(64) And the merlin [aisalon] is enemy to the <a href=/people/10958 target=_blank>fox</a>, but the raven and the <a href=/people/10958 target=_blank>fox</a> are friends—the raven, too, makes war on the merlin, which is why it comes to the aid of the <a href=/people/10958 target=_blank>fox</a> when the latter is struck.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60a>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:60a'><b>&sect; 60a</b>&nbsp;&nbsp;(65) [<a href=/people/46 target=_blank>Aristotle</a>] says that the goatherds say that when the sun turns most quickly, the <a href=/people/10956 target=_blank>goats</a> lie down facing each other.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60b>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:60b'><b>&sect; 60b</b>&nbsp;&nbsp;(66) <a href=/people/2529 target=_blank>Lycus</a> narrates something similar to this. He says that in <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> the flocks—of which some, for the rest of the time, sleep facing one another while others sleep in whatever way they chance to lie down—on the night on which the <a href=/people/10953 target=_blank>dog</a>-star rises, are turned towards that same star. The inhabitants use this as evidence of its rising. <a href=/people/46 target=_blank>Aristotle</a> also goes through other such matters, apart from the instincts of animals concerning their way of life, using a great deal of care in the majority of his works and not using anything inconsequential in his explanation. In total, he has written nearly seventy books on these matters, and has tried to dwell more on explanation than on narrative in each. As regards my excerpt, it is sufficient for it to summarize the strange and paradoxical content of both the aforementioned and his other writings.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:61'><b>&sect; 61</b>&nbsp;&nbsp;(67) He says that all the land animals which have lungs breathe but that <a href=/people/10963 target=_blank>wasps</a> and <a href=/people/10964 target=_blank>bees</a> do not breathe.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:62'><b>&sect; 62</b>&nbsp;&nbsp;(68) Of those that have bladders, all have intestines as well, but of those that have intestines, not all have bladders.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:63'><b>&sect; 63</b>&nbsp;&nbsp;(69) While many animals are bloodless, on the whole they are those which have more than four feet.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=64>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:64'><b>&sect; 64</b>&nbsp;&nbsp;(70) Of those that have hair, all give birth to living offspring, but the reverse is not the case.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=65>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:65'><b>&sect; 65</b>&nbsp;&nbsp;(71) All creatures can move their lower jaw except the crocodile, which can only move its upper jaw.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=66>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:66'><b>&sect; 66</b>&nbsp;&nbsp;(72) Among the <a about=https://topostext.org/place/405195RIll class=ethnic long=19.8 lat=40.8>Illyrians</a> and in <a about=https://topostext.org/place/415220RPai class=place long=22.01 lat=41.5>Paeonia</a> there is a [<a href=/people/10951 target=_blank>pig</a>] with uncloven feet; of the two-horned animals, no specimen with uncloven hoof is to be found, and [few] one-horned beasts with uncloven hoof, like the <a about=https://topostext.org/place/300740RInd class=person long=74 lat=30>Indian</a> <a href=/people/10962 target=_blank>ass</a> [Indikos onos] (this animal alone of the uncloven-footed has a knucklebone, too).</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=67>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:67'><b>&sect; 67</b>&nbsp;&nbsp;(73) The genitals of the weasel are bony.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=68>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:68'><b>&sect; 68</b>&nbsp;&nbsp;(74) The male has more teeth than the female in both man and the other animals.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=69>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:69'><b>&sect; 69</b>&nbsp;&nbsp;(75) The heart of the <a href=/people/10959 target=_blank>horse</a> is bony, as is that of some <a href=/people/10978 target=_blank>cattle</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=70>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:70'><b>&sect; 70</b>&nbsp;&nbsp;(76) Of deer, the so-called achaïnai seem to have gall in the tail.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=71>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:71'><b>&sect; 71</b>&nbsp;&nbsp;(77) Fish do not have a windpipe: because of this, the stomach of larger fish falls forward into their mouths when they chase smaller ones.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=72>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:72'><b>&sect; 72</b>&nbsp;&nbsp;(78) Snakes have thirty ribs. And if one pricks their eyes out, they grow back again, just like those of the swallow.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=73>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:73'><b>&sect; 73</b>&nbsp;&nbsp;(79) Of the fish, the parrot-wrasse [skaros] is the only one which ruminates.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=74>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:74'><b>&sect; 74</b>&nbsp;&nbsp;(80) The bones of the <a href=/people/10960 target=_blank>lion</a> are so hard that when they are struck frequently they light fire.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=75>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:75'><b>&sect; 75</b>&nbsp;&nbsp;(81) In <a about=https://topostext.org/place/400310RPhr class=place long=31 lat=40>Phrygia</a> there are <a href=/people/10978 target=_blank>cattle</a> which can move their horns.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=76>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:76'><b>&sect; 76</b>&nbsp;&nbsp;(82) Those creatures that have feet and are viviparous have hair, those that have feet and are oviparous, scales.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=77>
+                            <p id='urn:cts:greekLit:tlg0568.tlg001:77'><b>&sect; 77</b>&nbsp;&nbsp;(83) In some cases, when they are sick they become grey, but when healthy grow black again.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -300 <a href='https://play.google.com/store/books/details?id=eiFRAAAAcAAJ&rdid=book-eiFRAAAAcAAJ&rdot=1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=667', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas667";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=667';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='pseudo-Plato, Menexenus' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Plato, Menexenus, translated by Walter Rangeley Maitland Lamb  (1882-1961), Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd.) edition of 1914 (1925), digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-369' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -369' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/92' content='urn:cts:greekLit:tlg0059.tlg028' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79139459' content='pseudo-Plato'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88635997' content='Walter Rangeley Maitland Lamb  (1882-1961)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>pseudo-Plato, Menexenus</h2>Plato, Menexenus, translated by Walter Rangeley Maitland Lamb  (1882-1961), Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd.) edition of 1914 (1925), digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License. This text has 71 tagged references to 37 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0059.tlg028'>urn:cts:greekLit:tlg0059.tlg028</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q1474843'>Q1474843</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=234a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:234a'><b>&sect; 234a</b>&nbsp;&nbsp;SOCRATES: From the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a>, <a href=/people/1634 target=_blank>Menexenus</a>, or where from? <br />MENEXENUS: From the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a>, <a href=/people/16 target=_blank>Socrates</a>, and the Council Chamber. <br />SOCRATES: And what was it took you specially to the Council Chamber? But of course it was because you deem yourself to be at the end of your education and philosophic studies, and being sufficiently versed, as you think, in these, you are minded to turn to graver matters; and you at your age, my marvellous youth, are attempting to govern us older men, lest your house </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:234a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=234b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:234b'><b>&sect; 234b</b>&nbsp;&nbsp;should ever fail in providing us with a succession of managers. <br />MENEXENUS: Certainly if you, <a href=/people/16 target=_blank>Socrates</a>, allow and counsel me to govern, I shall do so gladly; but otherwise not. This time, however, I went to the Council Chamber because I had learnt that the Council was going to select someone to make an oration over the dead; for you know that they propose to arrange for funeral rites. <br />SOCRATES: Yes, I do. And whom did they select? <br />MENEXENUS: Nobody: they postponed it till tomorrow. I fancy, however, that <a href=/people/2149 target=_blank>Archinus</a> will be selected, or <a href=/people/104 target=_blank>Dion</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:234b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=234c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:234c'><b>&sect; 234c</b>&nbsp;&nbsp;SOCRATES: In truth, <a href=/people/1634 target=_blank>Menexenus</a>, to fall in battle seems to be a splendid thing in many ways. For a man obtains a splendid and magnificent funeral even though at his death he be but a poor man; and though he be but a worthless fellow, he wins praise, and that by the mouth of accomplished men who do not praise at random, but in speeches prepared long beforehand. And they praise in such splendid fashion, that, what with their ascribing to each one both what he has and what he has not, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:234c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=235a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:235a'><b>&sect; 235a</b>&nbsp;&nbsp;and the variety and splendor of their diction, they bewitch our souls; and they eulogize the State in every possible fashion, and they praise those who died in the war and all our ancestors of former times and ourselves who are living still; so that I myself, <a href=/people/1634 target=_blank>Menexenus</a>, when thus praised by them feel mightily ennobled, and every time I listen fascinated I am exalted and imagine myself to have become all at once taller and nobler </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:235a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=235b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:235b'><b>&sect; 235b</b>&nbsp;&nbsp;and more handsome. And as I am generally accompanied by some strangers, who listen along with me, I become in their eyes also all at once more majestic; for they also manifestly share in my feelings with regard both to me and to the rest of our City, believing it to be more marvellous than before, owing to the persuasive eloquence of the speaker. And this majestic feeling remains with me for over three days: so persistently does the speech and voice </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:235b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=235c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:235c'><b>&sect; 235c</b>&nbsp;&nbsp;of the orator ring in my ears that it is scarcely on the fourth or fifth day that I recover myself and remember that I really am here on earth, whereas till then I almost imagined myself to be living in the <a about=https://topostext.org/place/000000GEly class=place long=23.73603 lat=37.96393>Islands of the Blessed</a>,-so expert are our orators. <br />MENEXENUS: You are always deriding the orators, <a href=/people/16 target=_blank>Socrates</a>. And truly I think that this time the selected speaker will not be too well prepared; for the selection is being made without warning, so that the speaker will probably be driven to improvise his speech. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:235c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=235d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:235d'><b>&sect; 235d</b>&nbsp;&nbsp;SOCRATES: Why so, my good sir? Each one of these men has speeches ready made; and what is more, it is in no wise difficult to improvise such things. For if it were a question of eulogizing <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> before an audience of <a about=https://topostext.org/place/375222RPel class=ethnic long=22.15 lat=37.54>Peloponnesians</a>, or <a about=https://topostext.org/place/375222RPel class=ethnic long=22.15 lat=37.54>Peloponnesians</a> before <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, there would indeed be need of a good orator to win credence and credit; but when a man makes his effort in the presence of the very men whom he is praising, it is no difficult matter to win credit as a fine speaker. <br />MENEXENUS: You think not, <a href=/people/16 target=_blank>Socrates</a>? <br />SOCRATES: Yes, by <a href=/people/1 target=_blank>Zeus</a>, I certainly do. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:235d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=235e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:235e'><b>&sect; 235e</b>&nbsp;&nbsp;MENEXENUS: And do you think that you yourself would be able to make the speech, if required and if the Council were to select you? <br />SOCRATES: That I should be able to make the speech would be nothing wonderful, <a href=/people/1634 target=_blank>Menexenus</a>; for she who is my instructor is by no means weak in the art of rhetoric; on the contrary, she has turned out many fine orators, and amongst them one who surpassed all other Greeks, <a href=/people/92 target=_blank>Pericles</a>, the son of <a href=/people/727 target=_blank>Xanthippus</a>. <br />MENEXENUS: Who is she? But you mean <a href=/people/808 target=_blank>Aspasia</a>, no doubt. <br />SOCRATES: I do and; also <a href=/people/3809 target=_blank>Connus</a> the son of <a href=/people/5118 target=_blank>Metrobius</a>; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:235e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=236a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:236a'><b>&sect; 236a</b>&nbsp;&nbsp;for these are my two instructors, the one in music, the other in rhetoric. So it is not surprising that a man who is trained like me should be clever at speaking. But even a man less well taught than I, who had learnt his music from <a href=/people/3033 target=_blank>Lamprus</a> and his rhetoric from <a href=/people/292 target=_blank>Antiphon</a> the <a about=https://topostext.org/place/382240DRha class=person long=24.027 lat=38.222>Rhamnusian</a>,-even such a one, I say, could none the less win credit by praising <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> before an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> audience. <br />MENEXENUS: What, then, would you have to say, if you were required to speak? <br />SOCRATES: Nothing, perhaps, myself of my own invention; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:236a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=236b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:236b'><b>&sect; 236b</b>&nbsp;&nbsp;but I was listening only yesterday to <a href=/people/808 target=_blank>Aspasia</a> going through a funeral speech for these very people. For she had heard the report you mention, that the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> are going to select the speaker; and thereupon she rehearsed to me the speech in the form it should take, extemporizing in part, while other parts of it she had previously prepared, as I imagine, at the time when she was composing the funeral oration which <a href=/people/92 target=_blank>Pericles</a> delivered; and from this she patched together sundry fragments. <br />MENEXENUS: Could you repeat from memory that speech of <a href=/people/808 target=_blank>Aspasia</a>? <br />SOCRATES: Yes, if I am not mistaken; for I learnt it, to be sure, from her as she went along, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:236b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=236c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:236c'><b>&sect; 236c</b>&nbsp;&nbsp;and I nearly got a flogging whenever I forgot. <br />MENEXENUS: Why don't you repeat it then? <br />SOCRATES: But possibly my teacher will be vexed with me if I publish abroad her speech. <br />MENEXENUS: Never fear, <a href=/people/16 target=_blank>Socrates</a>; only tell it and you will gratify me exceedingly, whether it is <a href=/people/808 target=_blank>Aspasia</a>'s that you wish to deliver or anyone else's; only say on. <br />SOCRATES: But you will probably laugh me to scorn if I, at my age, seem to you to be playing like a child. <br />MENEXENUS: Not at all, <a href=/people/16 target=_blank>Socrates</a>; but by all means say on. <br />SOCRATES: Nay, then, I must surely gratify; you for indeed I would almost gratify you </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:236c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=236d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:236d'><b>&sect; 236d</b>&nbsp;&nbsp;if you were to bid me strip and dance, now that we two are alone. Listen then. In her speech, I believe, she began by making mention of the dead men themselves in this wise: In respect of deeds, these men have received at our hands what is due unto them, endowed wherewith they travel their predestined road; for they have been escorted forth in solemn procession publicly by the City and privately by their kinsfolk. But in respect of words, the honor that remains still due to these heroes the law enjoins us, and it is right, to pay in full. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:236d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=236e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:236e'><b>&sect; 236e</b>&nbsp;&nbsp;For it is by means of speech finely spoken that deeds nobly done gain for their doers from the hearers the meed of memory and renown. And the speech required is one which will adequately eulogize the dead and give kindly exhortation to the living, appealing to their children and their brethren to copy the virtues of these heroes, and to their fathers and mothers and any still surviving ancestors offering consolation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:236e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=237a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:237a'><b>&sect; 237a</b>&nbsp;&nbsp;Where then could we discover a speech like that? Or how could we rightly commence our laudation of these valiant men, who in their lifetime delighted their friends by their virtue, and purchased the safety of the living by their deaths? We ought, in my judgement, to adopt the natural order in our praise, even as the men themselves were natural in their virtue. And virtuous they were because they were sprung from men of virtue. Firstly, then, let us eulogize their nobility of birth, and secondly their nurture and training: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:237a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=237b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:237b'><b>&sect; 237b</b>&nbsp;&nbsp;thereafter we shall exhibit the character of their exploits, how nobly and worthily they wrought them. Now as regards nobility of birth, their first claim thereto is this-that the forefathers of these men were not of immigrant stock, nor were these their sons declared by their origin to be strangers in the land sprung from immigrants, but natives sprung from the soil living and dwelling in their own true fatherland; and nurtured also by no stepmother, like other folk, but by that mother-country </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:237b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=237c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:237c'><b>&sect; 237c</b>&nbsp;&nbsp;wherein they dwelt, which bare them and reared them and now at their death receives them again to rest in their own abodes. Most meet it is that first we should celebrate that Mother herself; for by so doing we shall also celebrate therewith the noble birth of these heroes. Our country is deserving of praise, not only from us but from all men, on many grounds, but first and foremost because she is god-beloved. The strife of the gods who contended over her and their judgement testify to the truth of our statement. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:237c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=237d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:237d'><b>&sect; 237d</b>&nbsp;&nbsp;And how should not she whom the gods praised deserve to be praised by all mankind? And a second just ground of praise would be this,-that during that period in which the whole earth was putting forth and producing animals of every kind, wild and tame, our country showed herself barren and void of wild animals, but chose for herself and gave birth to man, who surpasses all other animals in intelligence and alone of animals regards justice and the gods. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:237d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=237e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:237e'><b>&sect; 237e</b>&nbsp;&nbsp;And we have a signal proof of this statement in that this land of ours has given birth to the forefathers both of these men and of ourselves. For every creature that brings forth possesses a suitable supply of nourishment for its offspring; and by this test it is manifest also whether a woman be truly a mother or no, if she possesses no founts of nourishment for her child. Now our land, which is also our mother, furnishes to the full this proof of her having brought forth men; for, of all the lands that then existed, she was the first and the only one to produce human nourishment, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:237e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=238a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:238a'><b>&sect; 238a</b>&nbsp;&nbsp;namely the grain of wheat and barley, whereby the race of mankind is most richly and well nourished, inasmuch as she herself was the true mother of this creature. And proofs such as this one ought to accept more readily on behalf of a country than on behalf of a woman; for it is not the country that imitates the woman in the matter of conception and birth, but the woman the country. But this her produce of grain she did not begrudge to the rest of men, but dispensed it to them also. And after it she brought to birth for her children the olive, sore labor's balm. And when she had nurtured and reared them up to man's estate, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:238a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=238b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:238b'><b>&sect; 238b</b>&nbsp;&nbsp;she introduced gods to be their governors and tutors; the names of whom it behoves us to pass over in this discourse, since we know them; and they set in order our mode of life, not only in respect of daily business, by instructing us before all others in the arts, but also in respect of the guardianship of our country, by teaching us how to acquire and handle arms. Such being the manner of their birth and of their education, the ancestors of these men framed for themselves and lived under a civic polity </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:238b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=238c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:238c'><b>&sect; 238c</b>&nbsp;&nbsp;which it is right for us briefly to describe. For a polity is a thing which nurtures men, good men when it is noble, bad men when it is base. It is necessary, then, to demonstrate that the polity wherein our forefathers were nurtured was a noble one, such as caused goodness not only in them but also in their descendants of the present age, amongst whom we number these men who are fallen. For it is the same polity which existed then and exists now, under which polity we are living now and have been living ever since that age with hardly a break. One man calls it democracy, another man, according to his fancy, gives it some other name; but it is, in very truth, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:238c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=238d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:238d'><b>&sect; 238d</b>&nbsp;&nbsp;an aristocracy backed by popular approbation. Kings we always have; but these are at one time hereditary, at another selected by vote. And while the most part of civic affairs are in the control of the populace, they hand over the posts of government and the power to those who from time to time are deemed to be the best men; and no man is debarred by his weakness or poverty or by the obscurity of his parentage, or promoted because of the opposite qualities, as is the case in other States. On the contrary, the one principle of selection is this: the man that is deemed to be wise or good rules and governs. And the cause of this </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:238d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=238e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:238e'><b>&sect; 238e</b>&nbsp;&nbsp;our polity lies in our equality of birth. For whereas all other States are composed of a heterogeneous collection of all sorts of people, so that their polities also are heterogeneous, tyrannies as well as oligarchies, some of them regarding one another as slaves, others as masters; we and our people, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:238e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=239a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:239a'><b>&sect; 239a</b>&nbsp;&nbsp;on the contrary, being all born of one mother, claim to be neither the slaves of one another nor the masters; rather does our natural birth-equality drive us to seek lawfully legal equality, and to yield to one another in no respect save in reputation for virtue and understanding. Wherefore the forefathers of these men and of us, and these men themselves, having been reared up thus in complete freedom, and being nobly born, achieved before all men many noble deeds both individual and national, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:239a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=239b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:239b'><b>&sect; 239b</b>&nbsp;&nbsp;deeming it their duty to fight in the cause of freedom alike with Greeks on behalf of Greeks and with barbarians on behalf of the whole of Greece. The story of how they repulsed <a href=/people/793 target=_blank>Eumolpus</a> and the <a href=/people/154 target=_blank>Amazons</a>, and still earlier invaders, when they marched upon our country, and how they defended the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> against the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Cadmeians</a> and the <a href=/people/324 target=_blank>Heracleidae</a> against the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, is a story which our time is too short to relate as it deserves, and already their valor has been adequately celebrated in song by poets who have made it known throughout the world; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:239b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=239c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:239c'><b>&sect; 239c</b>&nbsp;&nbsp;consequently, if we should attempt to magnify the same achievements in plain prose, we should probably find ourselves outmatched. These exploits, therefore, for these reasons I judge that we should pass over, seeing also that they have their due meed of praise; but those exploits for which as yet no poet has received worthy renown for worthy cause, and which lie still buried in oblivion, I ought, as I think, to celebrate, not only praising them myself but providing material also for others to build up into odes and other forms of poetry in a manner worthy of the doers of those deeds. And of the deeds whereof I speak the first were these: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:239c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=239d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:239d'><b>&sect; 239d</b>&nbsp;&nbsp;The <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> were in command of Asia, and were enslaving Europe, when they came in contact with the children of this land, our own parents, of whom it is right and proper that we should make mention first and celebrate their valor. But if we are to celebrate it fitly, in order to visualize it we must place ourselves, in thought, at that epoch when the whole of Asia was already in bondage to the third of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> kings. <a href=/people/27 target=_blank>Cyrus</a>, the first of these kings, had by his own spirited action set free his fellow-countrymen, the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a>, and not only enslaved the <a about=https://topostext.org/place/355480RMed class=ethnic long=48 lat=35.5>Medes</a>, their masters, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:239d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=239e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:239e'><b>&sect; 239e</b>&nbsp;&nbsp;but also gained command of the rest of Asia, as far as to <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>. His son ruled over <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> and as much of <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> as he could traverse; while the third king, <a href=/people/29 target=_blank>Darius</a>, extended his empire by land as far as to the <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a>, and by his navy controlled the sea and the islands, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:239e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:240a'><b>&sect; 240a</b>&nbsp;&nbsp;so that none so much as thought of disputing his sway. Thus the minds of all men were enslaved; so many were the mighty and warlike nations which had fallen under the yoke of the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> Empire. Then <a href=/people/29 target=_blank>Darius</a>, accusing us and the <a about=https://topostext.org/place/384238PEre class=ethnic long=23.7905 lat=38.3982>Eretrians</a> of having plotted against <a about=https://topostext.org/place/385280PSar class=place long=28.0403 lat=38.4883>Sardis</a>, dispatched fifty myriads of men in transports and warships, together with three hundred ships of war, and <a href=/people/1263 target=_blank>Datis</a> as their commander; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:240a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:240b'><b>&sect; 240b</b>&nbsp;&nbsp;and him the king ordered to bring back the <a about=https://topostext.org/place/384238PEre class=ethnic long=23.7905 lat=38.3982>Eretrians</a> and <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> in captivity, if he wished to keep his own head. He then sailed to <a about=https://topostext.org/place/384238PEre class=place long=23.7905 lat=38.3982>Eretria</a> against men who were amongst the most famous warriors in Greece at that time, and by no means few in number; them he overpowered within three days, and lest any should escape he made a thorough search of the whole of their country and his method was this. His soldiers marched to the limits of <a about=https://topostext.org/place/384238PEre class=place long=23.7905 lat=38.3982>Eretria</a> and posted themselves at intervals from sea to sea; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:240b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:240c'><b>&sect; 240c</b>&nbsp;&nbsp;then they joined hands and passed through the whole of the country, in order that they might be able to report to the king that not a man had escaped out of their hands. With the same design they sailed off from <a about=https://topostext.org/place/384238PEre class=place long=23.7905 lat=38.3982>Eretria</a> to <a about=https://topostext.org/place/381241LMaB class=place long=24.0002 lat=38.144>Marathon</a>, supposing that they would have an easy task in leading the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> captive under the same yoke of bondage as the <a about=https://topostext.org/place/384238PEre class=ethnic long=23.7905 lat=38.3982>Eretrians</a>. And while these actions were being accomplished in part, and in part attempted, not one of the Greeks lent aid to the <a about=https://topostext.org/place/384238PEre class=ethnic long=23.7905 lat=38.3982>Eretrians</a> nor yet to the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, save only the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> (and they arrived on the day after the battle); all the rest were terrorstricken, and, hugging their present security, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:240c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:240d'><b>&sect; 240d</b>&nbsp;&nbsp;made no move. It is by realizing this position of affairs that we can appreciate what manner of men those were, in point of valor, who awaited the onset of the barbarians' power, chastised all Asia's insolent pride, and were the first to rear trophies of victory over the barbarians; whereby they pointed the way to the others and taught them to know that the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> power was not invincible, since there is no multitude of men or money but courage conquers it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:240d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=240e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:240e'><b>&sect; 240e</b>&nbsp;&nbsp;I, therefore, affirm that those men were the begetters not merely of our bodies but of our freedom also, and the freedom of all the dwellers in this continent; for it was the example of that exploit of theirs which fired the Greeks with courage to risk the later battles in the cause of salvation, learning their lesson from the men of <a about=https://topostext.org/place/381241LMaB class=place long=24.0002 lat=38.144>Marathon</a>. To them, therefore, we award in this our speech the first prize for valor, and the second to those who fought and won the sea-fights off <a about=https://topostext.org/place/380236ASSB class=place long=23.573 lat=37.952>Salamis</a></p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:240e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=241a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:241a'><b>&sect; 241a</b>&nbsp;&nbsp;and at <a about=https://topostext.org/place/390232SArt class=place long=23.217 lat=39.0097>Artemisium</a>. And truly concerning these men also one might have much to relate, regarding the manner of onsets they endured both by land and sea, and how they repelled them; but the achievement I shall mention is that which was, in my judgement, the noblest that they performed, in that it followed up the achievement of the men of <a about=https://topostext.org/place/381241LMaB class=place long=24.0002 lat=38.144>Marathon</a>. For whereas the men of <a about=https://topostext.org/place/381241LMaB class=place long=24.0002 lat=38.144>Marathon</a> had only proved to the Greeks thus much,-that it was possible to repel </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:241a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=241b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:241b'><b>&sect; 241b</b>&nbsp;&nbsp;the barbarians by land though few against many, yet the prospect in a sea-fight remained still doubtful, and the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> still retained the reputation of being invincible by sea, in virtue of their numbers and their wealth, their naval skill and strength. For this, then, the men who fought those sea-fights merit our praise, that they delivered the Greeks from the second of their fears, and put an end to the terrors inspired by multitudes of ships and men. So it came about, by the action of both-the soldiers who fought at <a about=https://topostext.org/place/381241LMaB class=place long=24.0002 lat=38.144>Marathon</a> and the sailors who fought at <a about=https://topostext.org/place/380236ASSB class=place long=23.573 lat=37.952>Salamis</a>-, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:241b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=241c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:241c'><b>&sect; 241c</b>&nbsp;&nbsp;that the rest of the Greeks were trained and accustomed to have no fear of the barbarians, neither by land, as our soldiers taught them, nor yet, as our sailors taught them, by sea. The exploit at <a about=https://topostext.org/place/382233LPlB class=place long=23.3012 lat=38.2446>Plataea</a> I put third both in order and in merit of those which secured the salvation of Greece; and in this exploit, at last, the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> cooperated with the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>. By the action of all these men the greatest and most formidable danger was warded off, and because of this their valor </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:241c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=241d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:241d'><b>&sect; 241d</b>&nbsp;&nbsp;we pronounce their eulogy now, as our successors will in the time to come. But, in the period that followed, many cities of the Greeks were still in league with the barbarian, and of the king himself it was reported that he was purposing to renew his attempt against the Greeks. Wherefore it is right that we should make mention also of those men who put the finishing touch to the work of salvation executed by their predecessors by sweeping away the whole of the barbarian power and driving it clean off the seas. These were the men who fought </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:241d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=241e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:241e'><b>&sect; 241e</b>&nbsp;&nbsp;the sea-fight at the <a about=https://topostext.org/place/369312WEur class=place long=31.159 lat=36.911>Eurymedon</a>, the men who served in the expedition against <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, the men who voyaged to <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> and to many another quarter,-men whom we ought to hold in memory and render them thanks, seeing that they put the king in fear and caused him to give his whole mind to his own safety in place of plotting the destruction of Greece. Now this war was endured to the end by all our citizens who warred against the barbarians </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:241e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=242a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:242a'><b>&sect; 242a</b>&nbsp;&nbsp;in defence of all the other Greek-speaking peoples as well as themselves. But when peace was secured and our city was held in honor, there followed the usual consequence which the successful suffer at the hands of men; for it was assailed by jealousy first, and after jealousy by envy; and thereby our city was plunged against its will into war with the Greeks. Thereupon, when war had broken out, they encountered the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> at <a about=https://topostext.org/place/383236PTan class=place long=23.5841 lat=38.3074>Tanagra</a> while fighting in defence of </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:242a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=242b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:242b'><b>&sect; 242b</b>&nbsp;&nbsp;the liberties of the <a about=https://topostext.org/place/384233RBoi class=ethnic long=23.25 lat=38.35>Boeotians</a>; and though the battle itself was indecisive, it was decided by the subsequent result. For whereas the enemy retired and made off, deserting those whom they had come to assist, our men won a victory after a two days' battle at <a about=https://topostext.org/place/383236UOin class=place long=23.6309 lat=38.3048>Oenophyta</a>, and rightfully restored those who were wrongfully exiled. These were the first of our men who, after the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> war and now helping Greeks against Greeks in the cause of freedom, proved themselves men of valor and delivered those whom they were aiding; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:242b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=242c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:242c'><b>&sect; 242c</b>&nbsp;&nbsp;and they were the first to be honored by the State and laid to rest in this <a about=https://topostext.org/place/380237GDem class=place long=23.7168 lat=37.9816>tomb</a>. Later on, when there was widespread war, and all the Greeks had marched against us and ravaged our country, most evilly requiting our city, and our men had defeated them by sea and had captured their <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Lacedaemonian</a> leaders in <a about=https://topostext.org/place/369217ISph class=place long=21.6657 lat=36.9301>Sphagia</a>, although they had it in their power to destroy them, yet they spared their lives and gave them back </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:242c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=242d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:242d'><b>&sect; 242d</b>&nbsp;&nbsp;and made peace, since they deemed that against their fellow Greeks it was right to wage war only up to the point of victory, and not to wreck the whole Greek community for the sake of a city's private grudge, but to wage war to the death against the barbarians. It is meet, indeed, that we should praise these men who were warriors in this war and now lie here, inasmuch as they demonstrated that if any contended that in the former war, against the barbarians, others were superior to the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, their contention was false. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:242d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=242e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:242e'><b>&sect; 242e</b>&nbsp;&nbsp;This they now proved by their triumph in the war when the Greeks were at feud, and by their conquest of those who were the leaders of the rest of Greece, when, alone by themselves, they defeated that city by whose allied aid they had formerly defeated the barbarians. This peace was followed by a third war, as formidable as it was unexpected, wherein many brave men lost their lives and now lie here. Many of these reared up numerous trophies of victory in <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>, fighting for the freedom </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:242e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=243a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:243a'><b>&sect; 243a</b>&nbsp;&nbsp;of <a about=https://topostext.org/place/373150PLeo class=place long=14.9981 lat=37.2855>Leontini</a>, to succour which city, and to honor their pledges, they sailed to those regions; but inasmuch as our city was in a helpless, situation and unable to reinforce them owing to the length of the voyage, fortune was against them and they renounced their design; yet for their prudence and their valor they have received more praise from their foes of the opposite army than the rest of men am their friends. Many others of them fought in the sea-fights in the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a>, where in one single day they captured all the enemy's ships, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:243a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=243b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:243b'><b>&sect; 243b</b>&nbsp;&nbsp;besides winning many other engagements. But what I have termed the formidable and unexpected character of the war lay in this, that the rest of the Greeks had arrived at such a pitch of jealousy towards this city that they even brought themselves to solicit privately the aid of their deadliest foe, the very king whom they had publicly expelled with our assistance, inviting a barbarian as their ally against Greeks; and dared to range against our city the united forces of all the Greeks </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:243b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=243c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:243c'><b>&sect; 243c</b>&nbsp;&nbsp;and barbarians. And then it was that the strength and valor of our State shone out conspicuously. For when men fancied that she was already reduced by war, with her ships cut off at <a about=https://topostext.org/place/391265PMyt class=place long=26.5621 lat=39.1114>Mytilene</a>, her citizens sent sixty ships to the rescue, manning the ships themselves and proving themselves disputably to be men of valor by conquering their foes and setting free their friends; albeit they met with undeserved misfortune, and were not recovered from the sea to find their burial here. And for these reasons it behoves us to have them in remembrance </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:243c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=243d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:243d'><b>&sect; 243d</b>&nbsp;&nbsp;and to praise them always; for it was owing to their valor that we were conquerors not only in the sea-fight on that day but in all the rest of the war; and it was due to them that men formed the conviction regarding our city (and it was a true conviction) that she could never be warred down, not even by all the world. And in truth it was by our own dissensions that we were brought down and not by the hands of other men; for by them we are still to this day undefeated, and it is we ourselves who have both defeated and been defeated by ourselves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:243d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=243e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:243e'><b>&sect; 243e</b>&nbsp;&nbsp;After these happenings, when we were at peace and amity with other States, our civil war at home was waged in such a way that-if men are fated to engage in civil strife-there is no man but would pray for his own State that its sickness might resemble ours. So kindly and so friendly was the way in which the citizens from the <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Peiraeus</a> and from the city consorted with one another, and also-beyond men's hopes-with the other Greeks; and such moderation did they show in their settlement </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:243e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:244a'><b>&sect; 244a</b>&nbsp;&nbsp;of the war against the men at <a about=https://topostext.org/place/380235PEle class=place long=23.5415 lat=38.0441>Eleusis</a>. And the cause of all these actions was nothing else than that genuine kinship which produces, not in word only but in deed, a firm friendship founded on community of race. And of those who fell in this war also it is meet to make mention and to reconcile them by such means as we can under present conditions,-by prayer, that is, and by sacrifice,-praying for them to those that have them in their keeping, seeing that we ourselves also have been reconciled. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:244a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:244b'><b>&sect; 244b</b>&nbsp;&nbsp;For it was not through wickedness that they set upon one another, nor yet through hatred, but through misfortune. And to this we ourselves, who now live, can testify; for we who are of the same stock as they grant forgiveness to one another both for what we have done and what we have suffered. After this, when peace was completely re-established, the city remained quiet, granting forgiveness to the barbarians for the vigorous defence they had offered when she had done them injury, but feeling aggrieved with the Greeks at the thought of the return they had made for the benefits she had done them, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:244b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:244c'><b>&sect; 244c</b>&nbsp;&nbsp;in that they joined themselves to the barbarians, and stripped her of those ships which had once been the means of their own salvation, and demolished her walls as a recompense for our saving their walls from ruin. Our city, therefore, resolved that never again would she succour Greeks when in danger of enslavement either by one another or at the hands of barbarians; and in this mind she abode. Such then being our policy, the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> supposed that we, the champions of liberty, were laid low, and that it was now open to them to enslave the rest, and this </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:244c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:244d'><b>&sect; 244d</b>&nbsp;&nbsp;they proceeded to do. But why should I prolong the story? For what followed next is no tale of ancient history about men of long ago. Nay, we ourselves know how the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, the <a about=https://topostext.org/place/384233RBoi class=ethnic long=23.25 lat=38.35>Boeotians</a> and the <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a>-the leading States of Greece-came to need our city, being stricken with terror, and how even the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> king himself-most marvellous fact of all-was reduced to such a state of distress that eventually he could hope for salvation from no other quarter save this city of ours </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:244d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=244e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:244e'><b>&sect; 244e</b>&nbsp;&nbsp;which he had been so eager to destroy. And in truth, if one desired to frame a just accusation against the city, the only true accusation one could bring would be this,-that she has always been compassionate to excess and the handmaid of the weak. And in fact, on that occasion, she proved unable to harden her heart and adhere firmly to her resolved policy of refusing to assist any in danger of enslavement against those who wronged them; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:244e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:245a'><b>&sect; 245a</b>&nbsp;&nbsp;on the contrary she gave way and lent assistance. The Greeks she aided herself and rescued them from slavery, so that they remained free until such time as they enslaved each other once more; but to the King she could not bring herself to lend official aid for fear of disgracing the trophies of <a about=https://topostext.org/place/381241SNik class=place long=24.0002 lat=38.1409>Marathon</a>, <a about=https://topostext.org/place/379236LKyn class=place long=23.566 lat=37.945>Salamis</a> and <a about=https://topostext.org/place/382233LPlB class=place long=23.3012 lat=38.2446>Plataea</a>, but she permitted exiles only and volunteers to assist him, and thereby, beyond a doubt, she saved him. Having, then, restored her walls </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:245a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:245b'><b>&sect; 245b</b>&nbsp;&nbsp;and rebuilt her navy, she entered upon the war, since war was forced upon her, and in defence of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> warred against the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a>. But the King, becoming afraid of our city when he saw that the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> were desisting from the naval struggle, wished to desert us; so he demanded the surrender of the Greeks in the Continent, whom the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> had formerly given over to him, as the price of his continuing his alliance with us and the other allies, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:245b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:245c'><b>&sect; 245c</b>&nbsp;&nbsp;thinking that we would refuse and thus furnish him with a pretext for his desertion. Now in the case of the rest of his allies he was mistaken; for they all- including the <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a>, <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a>, <a about=https://topostext.org/place/384233RBoi class=ethnic long=23.25 lat=38.35>Boeotians</a>, and the rest-consented to hand them over to him, making a sworn agreement that if he would supply them with money they would hand over the Greeks in the Continent; but we, and we alone, could not bring ourselves either to hand them over or to join in the agreement. So firmly-rooted and so sound is the noble and liberal character of our city, and endowed also </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:245c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:245d'><b>&sect; 245d</b>&nbsp;&nbsp;with such a hatred of the barbarian, because we are pure-blooded Greeks, unadulterated by barbarian stock. For there cohabit with us none of the type of <a href=/people/170 target=_blank>Pelops</a>, or <a href=/people/83 target=_blank>Cadmus</a>, or <a href=/people/1582 target=_blank>Aegyptus</a> or <a href=/people/303 target=_blank>Danaus</a>, and numerous others of the kind, who are naturally barbarians though nominally Greeks; but our people are pure Greeks and not a barbarian blend; whence it comes that our city is imbued with a whole-hearted hatred of alien races. None the less, we were isolated once again because of our refusal to perform the dishonorable and unholy act of surrendering Greeks to barbarians. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:245d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=245e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:245e'><b>&sect; 245e</b>&nbsp;&nbsp;And thus we found ourselves in the same position which had previously led to our military overthrow; but, by the help of God, we brought the war to a more favorable conclusion than on that occasion. For we still retained our ships, our walls, and our own colonies, when we ceased from the war,-so welcome to our enemies also was its cessation. Yet truly in this war also we suffered the loss of valiant men,-the men who had difficult ground to cope with at <a about=https://topostext.org/place/379229PKor class=place long=22.8802 lat=37.9054>Corinth</a> and treachery at <a about=https://topostext.org/place/379229HLec class=place long=22.8788 lat=37.931>Lechaeum</a>; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:245e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:246a'><b>&sect; 246a</b>&nbsp;&nbsp;valiant, too, were the men who rescued the King and drove the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> off the seas. These men I recall to your memory, and you it becomes to join in praising and celebrating men such as these. And now we have related many of the noble deeds done by the men who are lying here, and by all the others who have died in defence of their city; yet far more numerous and more noble are those that remain unmentioned; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:246a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:246b'><b>&sect; 246b</b>&nbsp;&nbsp;for many days and nights would not suffice were one to relate them all in full. Wherefore it is right that every man, bearing these men in mind, should exhort these men's children, just as in time of war, not to fall out of rank with their fathers nor to give way to cowardice and beat a retreat. And I myself for my own part, o ye children of valiant men, am now exhorting you and in the future, wheresoever I shall encounter any of you, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:246b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:246c'><b>&sect; 246c</b>&nbsp;&nbsp;I shall continue to remind you and admonish you to be zealous to show yourselves supremely valiant. But on this occasion it is my duty to record the message which your fathers, at the time when they were about to risk their lives, enjoined us, in case any ill befell them, to give to those who survived them. I will repeat to you both the words which I heard from their lips and those which they would now desire to say to you, if they had the power, judging from what they actually said on that occasion. You must, however, imagine that you are hearing from their own lips the message which I shall deliver. This, then, is what they said: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:246c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:246d'><b>&sect; 246d</b>&nbsp;&nbsp;'O children, that ye are born of valiant sires is clearly shown by the facts now before you: we, who might have ignobly lived choose rather to die nobly, before we bring you and those after you to disgrace, and before we bring shame upon our own fathers and all our earlier forebears, since we deem that life is unworthy to be lived for the man who brings shame upon his own, and that such an one has no friend amongst gods or man, either here on earth, or under the earth when he is dead. Wherefore ye must bear in mind our words, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:246d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:246e'><b>&sect; 246e</b>&nbsp;&nbsp;and whatsoever else ye practice ye must practice it in union with valor, being well assured that when divorced from this all possessions and pursuits are base and ignoble. For neither does wealth bring honor to its possessor if combined with cowardice-for such an one is rich for another rather than for himself,-nor do beauty and strength appear comely, but rather uncomely, when they are attached to one that is cowardly and base, since they make their possessor more conspicuous and show up his cowardice; and every form of knowledge </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:246e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=247a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:247a'><b>&sect; 247a</b>&nbsp;&nbsp;when sundered from justice and the rest of virtue is seen to be plain roguery rather than wisdom. For these reasons do ye make it your endeavor, first and last and always, in every way to show all zeal that ye may exceed, if possible, both us and those who went before us in renown; but if not, be ye well assured that if we vanquish you in virtue our victory brings us shame, whereas, if we are defeated, our defeat brings happiness. And most of all would we be the vanquished, you the victors, if ye are careful in your conduct not to trade upon the glory of your ancestors </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:247a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=247b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:247b'><b>&sect; 247b</b>&nbsp;&nbsp;nor yet to squander it, believing that for a man who holds himself of some account there is nothing more shameful than to find himself held in honor not for his own sake but because of the glory of his ancestors. In the honors which belong to their parents, the children truly possess a noble and splendid treasure; but to use up one's treasure, whether of wealth or of honor, and bequeath none to one's children, is the base and unmanly act of one who lacks all wealth and distinctions of his own. And if ye practise these precepts </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:247b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=247c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:247c'><b>&sect; 247c</b>&nbsp;&nbsp;ye will come unto us as friends unto friends whensoever the appointed doom shall convey you hither; but if ye neglect them and play the coward, ye will be welcomed graciously by none. Let such, then, be the words we address to our children. Those of us who have fathers or mothers must counsel them always to bear their calamity-if so be that such has befallen them-as cheerfully as possible, and not join in their lamentations; for in sooth they will need no further cause of grief; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:247c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=247d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:247d'><b>&sect; 247d</b>&nbsp;&nbsp;the present misfortune will provide grief in plenty. Rather should we mollify and assuage their sorrow by reminding them that in the greatest matters the gods have already hearkened unto their prayers. For they prayed not that their sons should become immortal, but valiant and renowned; and these, which are the greatest of boons, they obtained. But that all things should turn out thus according to his mind, in respect of his own life, is for a mortal man no easy matter. Moreover, by bearing their calamities thus bravely they will clearly show that they are in truth the fathers of brave sons </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:247d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=247e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:247e'><b>&sect; 247e</b>&nbsp;&nbsp;and of a like bravery themselves; whereas if they give way they will afford grounds for suspecting either that they are no fathers of ours or that we have been falsely belauded. But neither of these should they allow; rather should they belaud us most by their actions, showing themselves plainly to be in very truth the manly fathers of us men. That ancient saying, 'Nothing overmuch' is judged to be a noble saying; and in truth it is well said. For that man is best prepared for life who makes all that concerns his welfare depend upon himself, or nearly so, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:247e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:248a'><b>&sect; 248a</b>&nbsp;&nbsp;instead of hanging his hopes on other men, whereby with their rise or fall his own fortunes also inevitably sway up or down: he it is that is temperate, he it is that is courageous and wise he it is that, when gaining or losing riches or children, will best exemplify the proverb; for, because he puts his trust in himself, he will neither be seen rejoicing nor yet grieving overmuch. Of such a character we request our friends to be, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:248a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:248b'><b>&sect; 248b</b>&nbsp;&nbsp;and desire them to appear, even as we now display ourselves as such, being neither aggrieved nor alarmed overmuch if so be that at this present crisis we must die. We beseech both fathers and mothers to pass the rest of their lives holding to this same conviction, and to be well assured that it is not by mourning and lamenting us that they will gratify us most; nay, if the dead </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:248b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:248c'><b>&sect; 248c</b>&nbsp;&nbsp;have any perception of the living, it is thus that they would gratify us least, by debasing themselves and bearing their sorrows with a heavy heart; whereas by a light-hearted and temperate demeanor they would gratify us most. As for our own fortunes, they have already reached that climax which is the noblest of all for mortal men; wherefore it is more fitting to magnify than to mourn them. But to our wives and children let them give care and nurture and devote their mind to them; for thus they will best forget their ill fortune and live a life that is nobler and truer and </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:248c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:248d'><b>&sect; 248d</b>&nbsp;&nbsp;more pleasing in our eyes. Let this, then, suffice as our message to our kinsfolk. To the City we would add an exhortation that on our behalf they care for our parents and our sons, bestowing on the latter an orderly training, and on the former the fitting nurture of old age; and, as it is, we are well assured that even without our exhortation the city will bestow upon them ample care. Such is the message, o ye children and parents of the fallen, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:248d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:248e'><b>&sect; 248e</b>&nbsp;&nbsp;which they enjoined upon us to deliver, and which I, with all the earnestness in my power, have now delivered; and I myself, on their behalf, entreat the children to imitate their fathers, and the parents to have no fear for themselves, seeing that we, both privately and publicly, will give nurture to your age and bestow care upon you, wheresoever one of us meets with one of you. And as regards the care bestowed by the City, of your own selves ye know well that she has made laws regarding both the children and the begetters of those who have fallen in the war, to ensure their care; and that the highest authority in the State is instructed to watch over them </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:248e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249a>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:249a'><b>&sect; 249a</b>&nbsp;&nbsp;beyond all other citizens, that the fathers and mothers of these men may suffer no wrong. And the City herself helps in the bringing up of their children, endeavoring to render them as little conscious as possible of their orphaned condition; while they are yet children she stands towards them as a father, and when they arrive at man's estate she presents them with full military equipment and sends them back to their own place, thereby exhibiting and putting them in mind of their fathers' profession by bestowing on each of them the instruments </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:249a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249b>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:249b'><b>&sect; 249b</b>&nbsp;&nbsp;of his father prowess, while at the same time desiring that he should be auspiciously equipped with arms on commencing his journey to his ancestral hearth, there to rule with power. Nor does the City ever omit to pay honor to the dead heroes themselves, seeing that she herself year by year performs publicly, on behalf of all, those customary rites which are privately performed for each; and moreover, she institutes contests in athletics and horse-racing and music of every kind. And thus, in simple fact, she stands towards the fallen in the position of son and heir, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:249b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249c>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:249c'><b>&sect; 249c</b>&nbsp;&nbsp;towards the sons in that of father, and towards the parents of the dead in that of guardian, thus exercising towards all all manner of care throughout all time. Laying which to heart it behoves you to bear your sorrow with the greater calm; for thus will ye best content both the dead and the living, and tend and be tended with the greatest ease. And now that you and all the rest have already made public lamentation for the dead as the law ordains, go you your ways. There, <a href=/people/1634 target=_blank>Menexenus</a>, you have the oration of <a href=/people/808 target=_blank>Aspasia</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:249c' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249d>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:249d'><b>&sect; 249d</b>&nbsp;&nbsp;the <a about=https://topostext.org/place/375273PMil class=demonym long=27.2775 lat=37.5292>Milesian</a>. <br />MENEXENUS: And by <a href=/people/1 target=_blank>Zeus</a>, <a href=/people/16 target=_blank>Socrates</a>, <a href=/people/808 target=_blank>Aspasia</a>, by your account, deserves to be congratulated if she is really capable of composing a speech like that, woman though she is. <br />SOCRATES: Nay, then, if you are incredulous, come along with me and listen to a speech from her own lips. <br />MENEXENUS: I have met with <a href=/people/808 target=_blank>Aspasia</a> many a time, <a href=/people/16 target=_blank>Socrates</a>, and I know well what she is like. <br />SOCRATES: Well, then, don't you admire her, and are you not grateful to her now for her oration? <br />MENEXENUS: Yes, I am exceedingly grateful, <a href=/people/16 target=_blank>Socrates</a>, for the oration </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:249d' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=249e>
+                            <p id='urn:cts:greekLit:tlg0059.tlg028:249e'><b>&sect; 249e</b>&nbsp;&nbsp;to her or to him-whoever it was that repeated it to you; and what is more, I owe many other debts of gratitude to him that repeated it. <br />SOCRATES: That will be fine! Only be careful not to give me away, so that I may report to you later on many other fine political speeches of hers. <br />MENEXENUS: Have no fear: I won't give you away; only do you report them. <br />SOCRATES: Well, it shall be done. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0059.tlg028.perseus-grc1:249e' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -430                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=92', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas92";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=92';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

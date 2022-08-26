@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Demosthenes 8, On the Chersonese' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='On the Chersonese, Demosthenes, The Public Orations of Demosthenes (speeches 1-19), translated by Arthur Wallace Pickard-Cambridge (London 1912), digitized by Project Gutenberg and also available on the Internet Archive.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-341' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -341' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/408' content='urn:cts:greekLit:tlg0014.tlg008' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063465' content='Demosthenes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n50019718' content='Arthur Wallace Pickard-Cambridge (1873-1952)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.gutenberg.org' /><h2>Demosthenes 8, On the Chersonese</h2>On the Chersonese, Demosthenes, The Public Orations of Demosthenes (speeches 1-19), translated by Arthur Wallace Pickard-Cambridge (London 1912), digitized by Project Gutenberg and also available on the Internet Archive. This text has 88 tagged references to 28 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg008'>urn:cts:greekLit:tlg0014.tlg008</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q7091317'>Q7091317</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:1'><b>&sect; 1</b>&nbsp;&nbsp;It was the duty, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, of every speaker not to allow either malice or favour to influence any speech which he might make, but simply to declare the policy which he considered to be the best, particularly when your deliberations were concerned with public affairs of great importance. But since there are some who are led on to address you, partly out of contentiousness, partly from causes which I need not discuss, it is for you, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a> — you, the People — to dismiss all other considerations, and both in the votes that you give and in the measures that you take to attend solely to what you believe to be for the good of the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:2'><b>&sect; 2</b>&nbsp;&nbsp;Now our present anxiety arises out of affairs in the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a>, and the campaign, now in its eleventh month, which <a href=/people/30 target=_blank>Philip</a> is conducting in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>. But most of the speeches which we have heard have been about the acts and intentions of <a href=/people/1626 target=_blank>Diopeithes</a>. For my part, I conceive that all charges made against any one who is amenable to the laws and can be punished by you when you will are matters which you are free to investigate, either immediately or after an interval, as you think fit; and there is no occasion for me or any one else to use strong language about them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:3'><b>&sect; 3</b>&nbsp;&nbsp;But all those advantages which an actual enemy of the city, with a large force in the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a>, is trying to snatch from you, and which, if we once fall behind-hand, we shall no longer be able to recover — these, surely, are matters upon which our interest demands that our plans be formed and our preparations made with the utmost dispatch; and that no clamour, no accusations about other matters, be allowed to drive us from this point. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:4'><b>&sect; 4</b>&nbsp;&nbsp;Often as I am surprised at the assertions which are habitually made in your presence, nothing, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, has surprised me more than the remark which I heard only lately in the Council — that one who advises you ought, forsooth, to advise you plainly either to go to war or to keep the peace. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:5'><b>&sect; 5</b>&nbsp;&nbsp;Very good. If <a href=/people/30 target=_blank>Philip</a> is remaining inactive, if he is keeping nothing that is ours, in violation of the <a href=/people/280 target=_blank>Peace</a>, if he is not organizing all mankind against us, there is nothing more to be said — we have simply to observe the <a href=/people/280 target=_blank>Peace</a>; and I see that, for your part, you are quite ready to do so. But what if the oath that we swore, and the terms upon which we made the <a href=/people/280 target=_blank>Peace</a>, stand inscribed for our eyes to see? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:6'><b>&sect; 6</b>&nbsp;&nbsp;What if it is proved that from the outset, before <a href=/people/1626 target=_blank>Diopeithes</a> sailed from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> with the settlers who are now accused of having brought about the war, <a href=/people/30 target=_blank>Philip</a> wrongfully seized many of our possessions — and here, unrepealed, are your resolutions charging him with this — and that all along he has been uninterruptedly seizing the possessions of the other Hellenic and foreign peoples, and uniting their resources against us? What is then the meaning of the statement that we ought either to go to war or to keep the <a href=/people/280 target=_blank>Peace</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:7'><b>&sect; 7</b>&nbsp;&nbsp;For we have no choice in the matter: nothing remains open to us but the most righteous and most necessary of all acts — the act that they deliberately refuse to consider — I mean the act of retaliation against the aggressor: unless indeed, they intend to argue that, so long as <a href=/people/30 target=_blank>Philip</a> keeps away from <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> and the <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Peiraeus</a>, he does the city no wrong and is not committing acts of war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:8'><b>&sect; 8</b>&nbsp;&nbsp;But if this is their criterion of right and wrong, if this is their definition of peace, then, although what they say is iniquitous, intolerable, and inconsistent with your security, as all must see, at the same time these very statements are actually contradictory of the charges which they are making against <a href=/people/1626 target=_blank>Diopeithes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:9'><b>&sect; 9</b>&nbsp;&nbsp;Why, I beg to ask, are we to give <a href=/people/30 target=_blank>Philip</a> full leave to act in whatever way he chooses, so long as he does not touch <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, when <a href=/people/1626 target=_blank>Diopeithes</a> is not to be allowed even to assist the <a about=https://topostext.org/place/410265RThr class=ethnic long=26.5 lat=41>Thracians</a>, without being accused of initiating war? But even if this inconsistency is brought home to them, still, we are told, the conduct of the mercenaries in ravaging the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespontine</a> country is outrageous, and <a href=/people/1626 target=_blank>Diopeithes</a> has no right to drive the vessels to shore, and ought to be stopped. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:10'><b>&sect; 10</b>&nbsp;&nbsp;I grant it: let it be done: I have nothing to say against it. Yet nevertheless, if their advice is genuinely based on considerations of right, and right alone, I consider that they are bound to prove that, as surely as they are seeking to break up the force on which <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> at present relies, by slandering its commander to you when he tries to provide funds to support it, so surely <a href=/people/30 target=_blank>Philip</a>'s force will be disbanded if you accept their advice. If they fail to prove this, you must consider that they are simply setting the city once more upon the same course which has already resulted in the utter ruin of her fortunes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:11'><b>&sect; 11</b>&nbsp;&nbsp;For surely you know that nothing in the world has contributed so much to <a href=/people/30 target=_blank>Philip</a>'s successes, as his being always first on the scene of action. With a standing force always about him, and knowing beforehand what he intends to do, he suddenly falls upon whomsoever he pleases: while we wait until we learn that something is happening, and only then, in a turmoil, make our preparations. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:12'><b>&sect; 12</b>&nbsp;&nbsp;It follows, of course, that every position which he has attacked, he holds in undisturbed possession; while we are all behindhand; all our expenditure proves to have been so much useless waste; we have displayed our hostility and our desire to check him; but we are too late for action, and so we add disgrace to failure. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:13'><b>&sect; 13</b>&nbsp;&nbsp;You must therefore not fail to recognize, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that now, as before, all else that you hear consists of mere words and pretexts; and that the real aim of all that is being done is to secure that you may remain at home, that <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> may have no force outside the city, and that thus <a href=/people/30 target=_blank>Philip</a> may give effect to all his desires without let or hindrance. Consider, in the first place, what is actually occurring at the present moment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:14'><b>&sect; 14</b>&nbsp;&nbsp;He is at present passing the time in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, with a great army under him; and, as we are told by those who are on the spot, he is sending for a large addition to it from <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a> and <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>. Now if he waits for the <a href=/people/12230 target=_blank>Etesian</a> winds, and then goes to <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a> and besieges it, tell me first whether you think that the <a about=https://topostext.org/place/410290UByz class=ethnic long=28.9836 lat=41.0119>Byzantines</a> will persist in their present infatuation, and will not call upon you and entreat you to go to their aid? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:15'><b>&sect; 15</b>&nbsp;&nbsp;I do not think so. Why, I believe that they would open their gates to men whom they distrust even more than they distrust you (if such exist), rather than surrender the city to <a href=/people/30 target=_blank>Philip</a> — supposing, that is, that he does not capture them first. And then, if we are unable to set sail from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and if there are no forces there on the spot to help them, nothing can prevent their destruction. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:16'><b>&sect; 16</b>&nbsp;&nbsp;'Of course,' you say, 'for the men are possessed, and their infatuation passes all bounds.' Very true; and yet they must be preserved; for the interests of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> require it. And besides, we cannot by any means be certain that he will not invade the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a>. Indeed, if we are to judge by the letter which he has sent to you, he there says that he will punish the settlers in the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:17'><b>&sect; 17</b>&nbsp;&nbsp;If then the army that is now formed there is in existence, it will be able to help the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a>, and to injure some part of <a href=/people/30 target=_blank>Philip</a>'s country. But when once it is dissolved, what shall we do if he marches against the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a>? 'We shall of course put <a href=/people/1626 target=_blank>Diopeithes</a> on his trial.' And how will that improve our position? 'Well, we should go to the rescue from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> ourselves.' What if the winds make it impossible? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:18'><b>&sect; 18</b>&nbsp;&nbsp;'But, of course, he will not really get there.' And who can guarantee that? Do you realize, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, or take into account, what the coming season of the year is, the season against which some think you ought to evacuate the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a> and hand it over to <a href=/people/30 target=_blank>Philip</a>? What if, when he leaves <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, he does not go near the <a about=https://topostext.org/place/403265LChe class=place long=26.5 lat=40.3333>Chersonese</a> or <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a> at all — for this, too, is a possibility which you must consider — but comes to <a about=https://topostext.org/place/385236PCha class=place long=23.6153 lat=38.4597>Chalcis</a> or <a about=https://topostext.org/place/380233PMeg class=place long=23.34285 lat=37.997>Megara</a>, just as he lately came to <a about=https://topostext.org/place/389231UOre class=place long=23.096 lat=38.9513>Oreus</a>? Is it better to resist him here, and to allow the war to come into <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, or to provide something to keep him busy there? The latter course is surely the better. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:19'><b>&sect; 19</b>&nbsp;&nbsp;Realizing these things, therefore, as you all must, and taking due account of them, you must not, Heaven knows, look askance at the force which <a href=/people/1626 target=_blank>Diopeithes</a> is trying to provide for <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, or attempt to disband it. You must yourselves prepare another force to support it: you must help him freely with money, and give him in all other respects your loyal co-operation. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:20'><b>&sect; 20</b>&nbsp;&nbsp;If <a href=/people/30 target=_blank>Philip</a> were asked to say whether he would wish these soldiers who are now with <a href=/people/1626 target=_blank>Diopeithes</a> — describe them as you will, for I in no way dispute your description — to be prosperous and in high favour with the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, and to be augmented in numbers by the co-operation of the city; or whether he would rather see them broken up and destroyed in consequence of calumnious charges against them; he would prefer, I imagine, the latter alternative. Can it then be, that there are men among us here who are trying to bring about the very thing that <a href=/people/30 target=_blank>Philip</a> would pray Heaven for? And if so, do you need to seek any further for the cause of the total ruin of the city's fortunes? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:21'><b>&sect; 21</b>&nbsp;&nbsp;I wish, therefore, to examine without reserve the present crisis of our affairs, to inquire what we ourselves are now doing, and how we are dealing with it. We do not wish to contribute funds, nor to serve with the forces in person; we cannot keep our hands from the public revenues; we do not give the contributions of the allies to <a href=/people/1626 target=_blank>Diopeithes</a>, nor do we approve of such supplies as he raises for himself; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:22'><b>&sect; 22</b>&nbsp;&nbsp;but we look malignantly at him, we ask whence he gets them, what he intends to do, and every possible question of that kind: and yet we are still not willing to confine ourselves to our own affairs, in consequence of the attitude which we have adopted; we still praise with our lips those who uphold the dignity of the city, though in our acts we are fighting on the side of their opponents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:23'><b>&sect; 23</b>&nbsp;&nbsp;Now whenever any one rises to speak, you always put to him the question 'What are we to do?' I wish to put to you the question, 'What are we to say?' For if you will neither contribute, nor serve in person, nor leave the public funds alone, nor grant him the contributions, nor let him get what he can for himself, nor yet confine yourselves to your own affairs, I do not know what I can say. For when you give such licence to those who desire to make charges and accusations, that you listen to them even when they denounce him by anticipation for his alleged intentions — well, what can one say? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:24'><b>&sect; 24</b>&nbsp;&nbsp;The possible effect of this is a matter which some of you require to understand, and I will speak without reserve; for indeed I could not speak otherwise. All the commanders who have ever yet sailed from <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> — if I am wrong, I consent to any penalty that you please — take money from the <a about=https://topostext.org/place/384261PChi class=ethnic long=26.1342 lat=38.3764>Chians</a>, from the <a about=https://topostext.org/place/384265PEry class=ethnic long=26.4808 lat=38.3828>Erythraeans</a>, from any people from whom they can severally get it — I mean, any of the Asiatic settlers who are now in question. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:25'><b>&sect; 25</b>&nbsp;&nbsp;Those who have one or two ships take less, those who have a larger force take more. And those who give to them do not give either little or much for nothing; they are not so insane: in fact, with these sums they buy immunity from injury for the merchants who sail from their ports, freedom from <a href=/people/10975 target=_blank>piracy</a>, the convoying of their vessels, and so on. They call the gifts 'benevolences', and that is the name given to the sums thus obtained. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:26'><b>&sect; 26</b>&nbsp;&nbsp;And in the present case, when <a href=/people/1626 target=_blank>Diopeithes</a> is there with his army, it is obvious that all these peoples will give him money. From what other source do you imagine that a general can maintain his troops, when he has received nothing from you, and has no resources from which he can pay his men? Will money drop from the sky? Of course not. He subsists upon what he can collect or beg or borrow. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:27'><b>&sect; 27</b>&nbsp;&nbsp;The real effect, therefore, of the accusations made against him here, is simply to warn every one that they should refuse to give him anything, since he is to pay the penalty for his very intentions, not to speak of any action that he may have taken or any success that he may have achieved. That is the only meaning of the cry that 'he is preparing a blockade', or 'he is surrendering the Hellenes'. Do any of his critics care about the Hellenes who live in Asia? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:28'><b>&sect; 28</b>&nbsp;&nbsp;Were it so, they would be more thoughtful for the rest of mankind than for their own country. And the proposal to send another general to the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a> amounts to no more than this. For if <a href=/people/1626 target=_blank>Diopeithes</a> is acting outrageously and is driving the vessels to shore, then, gentlemen, one little wax-tablet is enough to put an end to it all: and what the laws command is that for these offences we should impeach the wrong-doers — not that we should keep a watch upon our own forces at such expense and with so many ships. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:29'><b>&sect; 29</b>&nbsp;&nbsp;Such insanity really passes all bounds. No! Against the enemy whom we cannot arrest and render amenable to the laws, it is both right and necessary to maintain a force, to send war-ships, and to contribute war-funds: but against one of ourselves, a decree, an impeachment, a dispatch-boat will answer our purpose. These are the means which sensible men would use: the policy of the other side is the policy of men whose spitefulness is ruining your fortunes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:30'><b>&sect; 30</b>&nbsp;&nbsp;And that there should be some such men, bad though it is, is not the worst. No! for you who sit there are already in such a frame of mind, that if any one comes forward and says that <a href=/people/1626 target=_blank>Diopeithes</a> is the cause of all the mischief, or <a href=/people/462 target=_blank>Chares</a>, or <a href=/people/979 target=_blank>Aristophon</a>, or any <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> citizen that he happens to name, you at once agree, and clamorously declare that he is right; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:31'><b>&sect; 31</b>&nbsp;&nbsp;but if any one comes forward and tells you the truth, and says, 'Men of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, this is nonsense. It is <a href=/people/30 target=_blank>Philip</a> that is the cause of all this mischief and trouble; for if he were quiet, the city would have nothing to disturb her,' you cannot, indeed, deny the truth of his words, but you seem, I think, to be annoyed, as though you were losing something. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:32'><b>&sect; 32</b>&nbsp;&nbsp;And the cause of these things is this — and I beseech you, in Heaven's name, to let me speak unreservedly, when I am speaking for your true good — that some of your politicians have contrived that you should be terrifying and severe in your assemblies, but easy- going and contemptible in your preparations for war. And accordingly, if any one names as the culprit some one whom you know you can arrest in your own midst, you agree and you wish to act; but if one is named whom you must first master by force of arms, if you are to punish him at all, you are at a loss, I fancy, what to do, and you are vexed when this is brought home to you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:33'><b>&sect; 33</b>&nbsp;&nbsp;For your politicians, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, should have treated you in exactly the opposite way to this; they should train you to be kind and sympathetic in your assemblies; for there it is with the members of your own body and your own allies that your case is argued: but your terrors and your severity should be displayed in your preparations for war, where the struggle is with your enemies and your rivals. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:34'><b>&sect; 34</b>&nbsp;&nbsp;As it is, by their popular speeches, and by courting your favour to excess, they have brought you into such a condition that, while in your assemblies you give yourselves airs and enjoy their flattery, listening to nothing but what is meant to please you, in the world of facts and events you are in the last extremity of peril. Imagine, in God's name, what would happen, if the Hellenes were to call you to account for the opportunities which, in your indolence, you have now let pass, and were to put to you the question, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:35'><b>&sect; 35</b>&nbsp;&nbsp;'Is it true, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that you send envoys to us on every possible occasion, to tell us of <a href=/people/30 target=_blank>Philip</a>'s designs against ourselves and all the Hellenes, and of the duty of keeping guard against the man, and to warn us in every way?' We should have to confess that it was true. We do act thus. 'Then,' they would proceed, 'is it true, you most contemptible of all men, that though the man has been away for ten months, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:36'><b>&sect; 36</b>&nbsp;&nbsp;and has been cut off from every possibility of returning home, by illness and by winter and by wars, you have neither liberated <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a> nor recovered any of your own possessions? Is it true that you have remained at home, unoccupied and healthy — if such a word can be used of men who behave thus — and have seen him set up two tyrants in <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a>, one to serve as a fortress directly menacing <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a>, the other to watch <a about=https://topostext.org/place/392235PSki class=place long=23.4885 lat=39.164>Sciathus</a>; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:37'><b>&sect; 37</b>&nbsp;&nbsp;and that you have not even rid yourselves of these dangers — granted that you did not want to do anything more — but have let them be? Obviously you have retired in his favour, and have made it evident that if he dies ten times over, you will not make any move the more. Why trouble us then with your embassies and your accusations?' If they speak thus to us, what will be our answer? What shall we say, Athenians? I do not see what we can say. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:38'><b>&sect; 38</b>&nbsp;&nbsp;Now there are some who imagine that they confute a speaker, as soon as they have asked him the question, 'What then are we to do?' I will first give them this answer — the most just and true of all — 'Do not do what you are doing now.' </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:39'><b>&sect; 39</b>&nbsp;&nbsp;But at the same time I will give them a minute and detailed reply; and then let them show that their willingness to act upon it is not less than their eagerness to interrogate. First, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, you must thoroughly make up your minds to the fact that <a href=/people/30 target=_blank>Philip</a> is at war with <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and has broken the <a href=/people/280 target=_blank>Peace</a> — you must cease to lay the blame at one another's doors — and that he is evilly-disposed and hostile to the whole city, down to the very ground on which it is built; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:40'><b>&sect; 40</b>&nbsp;&nbsp;nay, I will go further — hostile to every single man in the city, even to those who are most sure that they are winning his favour. (If you think otherwise, consider the case of <a href=/people/2312 target=_blank>Euthycrates</a> and <a href=/people/2421 target=_blank>Lasthenes</a> of <a about=https://topostext.org/place/403234POly class=person long=23.354 lat=40.2963>Olynthus</a>, who fancied that they were on the most friendly terms with him, but, after they had betrayed their city, suffered the most utter ruin of all.) But his hostilities and intrigues are aimed at nothing so much as at our constitution, whose overthrow is the very first object in the world to him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:41'><b>&sect; 41</b>&nbsp;&nbsp;And in a sense it is natural that he should aim at this. For he knows very well that even if he becomes master of all the rest of the world, he can retain nothing securely, so long as you are a democracy; and that if he chances to stumble anywhere, as may often happen to a man, all the elements which are now forced into union with him will come and take refuge with you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:42'><b>&sect; 42</b>&nbsp;&nbsp;For though you are not yourselves naturally adapted for aggrandizement or the usurpation of empire, you have the art of preventing any other from seizing power and of taking it from him when he has it; and in every respect you are ready to give trouble to those who are ambitious of dominion, and to lead all men forth into liberty. And so he would not have Freedom, from her home in <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, watching for every opportunity he may offer — far from it — and there is nothing unsound or careless in his reasoning. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:43'><b>&sect; 43</b>&nbsp;&nbsp;The first essential point, therefore, is this — that you conceive him to be the irreconcilable foe of your constitution and of democracy: for unless you are inwardly convinced of this, you will not be willing to take an active interest in the situation. Secondly, you must realize clearly that all the plans which he is now so busily contriving are in the nature of preparations against this country; and wherever any one resists him, he there resists him on our behalf. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:44'><b>&sect; 44</b>&nbsp;&nbsp;For surely no one is so simple as to imagine that when <a href=/people/30 target=_blank>Philip</a> is covetous of the wretched hamlets of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> — one can give no other name to Drongilum, <a about=https://topostext.org/place/425265PKab class=place long=26.4841 lat=42.5481>Cabyle</a>, <a href=/people/4200 target=_blank>Masteira</a>, and the places which he is now seizing — and when to get these places he is enduring heavy labours, hard winters, and the extremity of danger; — </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:45'><b>&sect; 45</b>&nbsp;&nbsp;no one can imagine, I say, that the harbours and the dockyards, and the ships of the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, the produce of your silver-mines, and your huge revenue, have no attraction for him, or that he will leave you in possession of these, while he winters in the very pit of destruction for the sake of the millet and the spelt in the silos of <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>. No, indeed! It is to get these into his power that he pursues both his operations in <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a> and all his other designs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:46'><b>&sect; 46</b>&nbsp;&nbsp;What then, as sensible men, must you do? Knowing and realizing your position, as you do, you must lay aside this excessive, this irremediable indolence: you must contribute funds, and require them from your allies; you must so provide and act, that this force which is now assembled may be held together; in order that, as <a href=/people/30 target=_blank>Philip</a> has the force in readiness that is to injure and enslave all the Hellenes, you may have in readiness that which shall preserve and succour them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:47'><b>&sect; 47</b>&nbsp;&nbsp;You cannot effect by isolated expeditions any of the things which must be effected. You must organize a force, and provide maintenance for it, and paymasters, and a staff of servants; and when you have taken such steps as will ensure the strictest possible watch being kept over the funds, you must hold these officials accountable for the money, and the general for the actual operations. If you act thus, and honestly make up your minds to take this course, you will either compel <a href=/people/30 target=_blank>Philip</a> to observe a righteous peace and remain in his own land — and no greater blessing could you obtain than that — or you will fight him on equal terms. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:48'><b>&sect; 48</b>&nbsp;&nbsp;It may be thought that this policy demands heavy expenditure, and great exertions and trouble. That is true indeed; but let the objector take into account what the consequences to the city must be, if he is unwilling to assent to this policy, and he will find that the ready performance of duty brings its reward. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:49'><b>&sect; 49</b>&nbsp;&nbsp;If indeed some god is offering us his guarantee — for no human guarantee would be sufficient in so great a matter — that if you remain at peace and let everything slide, <a href=/people/30 target=_blank>Philip</a> will not in the end come and attack yourselves; then, although, before God and every Heavenly Power, it would be unworthy of you and of the position that the city holds, and of the deeds of our forefathers, to abandon all the rest of the Hellenes to slavery for the sake of our own ease — although, for my part, I would rather have died than have suggested such a thing — yet, if another proposes it and convinces you, let it be so: do not defend yourselves: let everything go. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:49' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:50'><b>&sect; 50</b>&nbsp;&nbsp;But if no one entertains such a belief, if we all know that the very opposite is true, and that the wider the mastery we allow him to gain, the more difficult and powerful a foe we shall have to deal with, what further subterfuge is open to us? Why do we delay? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:51'><b>&sect; 51</b>&nbsp;&nbsp;When shall we ever be willing, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, to do our duty? 'When we are compelled,' you say. But the hour of compulsion, as the word is applied to free men, is not only here already, but has long passed; and we must surely pray that the compulsion which is put upon slaves may not come upon us. And what is the difference? It is this — that for a free man the greatest compelling force is his shame at the course which events are taking — I do not know what greater we can imagine; but the slave is compelled by blows and bodily tortures, which I pray may never fall to our lot; it is not fit to speak of them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:51' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:52'><b>&sect; 52</b>&nbsp;&nbsp;I would gladly tell you the whole story, and show how certain persons are working for your ruin by their policy. I pass over, however, every point but this. Whenever any question of our relations with <a href=/people/30 target=_blank>Philip</a> arises, at once some one stands up and talks of the blessings of peace, of the difficulty of maintaining a large force, and of designs on the part of certain persons to plunder our funds; with other tales of the same kind, which enable them to delay your action, and give <a href=/people/30 target=_blank>Philip</a> time to do what he wishes unopposed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:52' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:53'><b>&sect; 53</b>&nbsp;&nbsp;What is the result? For you the result is your leisure, and a respite from immediate action — advantages which I fear you will some day feel to have cost you dear; and for them it is the favour they win, and the wages for these services. But I am sure that there is no need to persuade you to keep the <a href=/people/280 target=_blank>Peace</a> — you sit here fully persuaded. It is the man who is committing acts of war that we need to persuade; for if he is persuaded, you are ready enough. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:54'><b>&sect; 54</b>&nbsp;&nbsp;Nor is it the expenditure which is to ensure our preservation that ought to distress us, but the fate which is in prospect for us, if we are not willing to take this action: while the threatened 'plunder of our funds' is to be prevented by the proposal of some safeguard which will render them secure, not by the abandonment of our interests. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:55'><b>&sect; 55</b>&nbsp;&nbsp;And even so, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, I feel indignant at the very fact that some of you are so much pained at the prospect of the plunder of our funds, when you have it in your power both to protect them and to punish the culprits, and yet feel no pain when <a href=/people/30 target=_blank>Philip</a> is seizing all Hellas piecemeal for his plunder, and seizing it to strengthen himself against you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:55' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:56'><b>&sect; 56</b>&nbsp;&nbsp;What then is the reason, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that though <a href=/people/30 target=_blank>Philip</a>'s campaigns, his aggressions, his seizure of cities, are so unconcealed, none of my opponents has ever said that he was bringing about war? Why is it those who advise you not to allow it, not to make these sacrifices, that they accuse, and say that they will be the cause of the war? I will inform you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:56' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:57'><b>&sect; 57</b>&nbsp;&nbsp;It is because they wish to divert the anger which you are likely to show, if you suffer at all from the war, on to the heads of those who are giving you the best advice in your own interests. They want you to sit and try such persons, instead of resisting <a href=/people/30 target=_blank>Philip</a>; and they themselves are to be the prosecutors, instead of paying the penalty for their present actions. That is the meaning of their assertion that there are some here, forsooth, who want to bring about war. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:57' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:58'><b>&sect; 58</b>&nbsp;&nbsp;That is the real point of these allegations of responsibility. But this I know beyond all doubt — that without waiting for any one in <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> to propose the declaration of war, <a href=/people/30 target=_blank>Philip</a> has not only taken many other possessions of ours, but has just now sent an expedition to <a about=https://topostext.org/place/405268UKar class=place long=26.7508 lat=40.5482>Cardia</a>. If, in spite of this, we wish to pretend that he is not making war on us, he would be the most senseless man living, were he to attempt to convince us of our error. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:58' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:59'><b>&sect; 59</b>&nbsp;&nbsp;But what shall we say, when his attack is made directly upon ourselves? He of course will say that he is not at war with us — just as he was not at war with <a about=https://topostext.org/place/389231UOre class=place long=23.096 lat=38.9513>Oreus</a>, when his soldiers were in the land; nor with the <a about=https://topostext.org/place/394228PPhe class=ethnic long=22.7539 lat=39.379>Pheraeans</a>, before that, when he was assaulting their walls; nor with the <a about=https://topostext.org/place/403234POly class=ethnic long=23.354 lat=40.2963>Olynthians</a>, first of all, until he and his army were actually within their territory. Or shall we still say that those who urge resistance are bringing about war? If so, all that is left to us is slavery. If we may neither offer resistance, nor yet be suffered to remain at peace, no other compromise is possible. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:60'><b>&sect; 60</b>&nbsp;&nbsp;And further, the issues at stake are not for you merely what they are for other states. What <a href=/people/30 target=_blank>Philip</a> desires is not your subjection, but your utter annihilation. For he knows full well that you will never consent to be his slaves, and that even if you were willing, you would not know the way, accustomed as you are to govern; and he knows that you will be able to give him more trouble, if you get the opportunity, than all the rest of the world. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:61'><b>&sect; 61</b>&nbsp;&nbsp;The struggle, then, is a struggle for existence; and as such you ought to think of it: and you should show your abhorrence of those who have sold themselves to <a href=/people/30 target=_blank>Philip</a> by beating them to death. For it is impossible, utterly impossible, to master your enemies outside the city, before you punish your enemies in the city itself. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:61' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:62'><b>&sect; 62</b>&nbsp;&nbsp;Whence comes it, think you, that he is insulting us now (for his conduct seems to me to be nothing less than this), and that while he at least deceives all other peoples by doing them favours, he is using threats against you without more ado? For instance, he enticed the <a about=https://topostext.org/place/394223RThs class=ethnic long=22.3 lat=39.4>Thessalians</a> by large gifts into their present servitude; and words cannot describe how greatly he deceived the <a about=https://topostext.org/place/403234POly class=ethnic long=23.354 lat=40.2963>Olynthians</a> at first by the gift of <a about=https://topostext.org/place/402233UPot class=place long=23.3278 lat=40.1937>Potidaea</a> and much beside. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:62' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:63'><b>&sect; 63</b>&nbsp;&nbsp;At this moment he is alluring the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a>, by delivering up <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> to them, and ridding them of a long and arduous campaign. Each of these peoples has first reaped some advantage, before falling into those calamities which some of them have already suffered, as all the world knows, and some are destined to suffer whenever their time comes. But as for yourselves, to pass over all that you have been robbed of at an earlier period, what deception, what robbery have been practised upon you in the very act of making the <a href=/people/280 target=_blank>Peace</a>! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:63' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=64>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:64'><b>&sect; 64</b>&nbsp;&nbsp;Have not the <a about=https://topostext.org/place/386227RPho class=ethnic long=22.7 lat=38.6>Phocians</a>, and <a about=https://topostext.org/place/388225FThe class=place long=22.536 lat=38.795>Thermopylae</a>, and the Thracian seaboard — <a about=https://topostext.org/place/409262UDor class=place long=26.164 lat=40.8736>Doriscus</a>, <a about=https://topostext.org/place/408258LSer class=place long=25.603 lat=40.927>Serrhium</a>, <a href=/people/704 target=_blank>Cersobleptes</a> himself — been taken from you? Does not <a href=/people/30 target=_blank>Philip</a> at this moment occupy the city of the <a about=https://topostext.org/place/405268UKar class=ethnic long=26.7508 lat=40.5482>Cardians</a>, and avow it openly? Why is it then, that he behaves as he does to all others, and so differently to you? Because yours is the one city in the world where men are permitted to speak on behalf of the enemy without fear; because here a man may take bribes, and still address you with impunity, even when you have been robbed of your own. In <a about=https://topostext.org/place/403234POly class=place long=23.354 lat=40.2963>Olynthus</a> it was only safe to take <a href=/people/30 target=_blank>Philip</a>'s side when the people of <a about=https://topostext.org/place/403234POly class=place long=23.354 lat=40.2963>Olynthus</a> as a whole had shared <a href=/people/30 target=_blank>Philip</a>'s favours, and was enjoying the possession of <a about=https://topostext.org/place/402233UPot class=place long=23.3278 lat=40.1937>Potidaea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:64' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=65>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:65'><b>&sect; 65</b>&nbsp;&nbsp;In <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a> it was only safe to take <a href=/people/30 target=_blank>Philip</a>'s side when the <a about=https://topostext.org/place/394223RThs class=demonym long=22.3 lat=39.4>Thessalian</a> commons had shared <a href=/people/30 target=_blank>Philip</a>'s favours; for he had expelled the tyrants for them, and restored to them their <a href=/people/371 target=_blank>Amphictyonic</a> position. In <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a> it was not safe, until he had restored <a about=https://topostext.org/place/384233RBoi class=place long=23.25 lat=38.35>Boeotia</a> to <a about=https://topostext.org/place/383233PThe class=place long=23.3178 lat=38.3191>Thebes</a> and annihilated the <a about=https://topostext.org/place/386227RPho class=ethnic long=22.7 lat=38.6>Phocians</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:65' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=66>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:66'><b>&sect; 66</b>&nbsp;&nbsp;But at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> — though <a href=/people/30 target=_blank>Philip</a> has not only robbed you of <a about=https://topostext.org/place/408238PAmp class=place long=23.847 lat=40.822>Amphipolis</a> and the territory of the <a about=https://topostext.org/place/405268UKar class=ethnic long=26.7508 lat=40.5482>Cardians</a>, but has turned <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a> into a fortress overlooking your country, and is now on his way to attack <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a> — at <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> it is safe to speak in <a href=/people/30 target=_blank>Philip</a>'s interest. Aye, and you know that, of such speakers, some who were poor are rapidly growing rich; and some who were without name or fame are becoming famous and distinguished, while you, on the other hand, are becoming inglorious instead of famous, bankrupt instead of wealthy. For a city's wealth consists, I imagine, in allies, confidence, loyalty — and of all these you are bankrupt. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:66' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=67>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:67'><b>&sect; 67</b>&nbsp;&nbsp;And because you are indifferent to these advantages, and let them drift away from you, he has become prosperous and powerful, and formidable to all, Hellenes and foreigners alike; while you are deserted and humbled, with a splendid profusion of commodities in your market, and a contemptible lack of all those things with which you should have been provided. But I observe that certain speakers do not follow the same principles in the advice which they give you, as they follow for themselves. You, they tell you, ought to remain quiet, even when you are wronged; but they cannot remain quiet in your presence, even when no one is wronging them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:67' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=68>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:68'><b>&sect; 68</b>&nbsp;&nbsp;But now some one or other comes forward and says, 'Ah, but you will not move a motion or take any risk. You are a poor-spirited coward.' Bold, offensive, shameless, I am not, and I trust I may never be; and yet I think I have more courage than very many of your dashing statesmen. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:68' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=69>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:69'><b>&sect; 69</b>&nbsp;&nbsp;For one, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, who overlooks all that the city's interest demands — who prosecutes, confiscates, gives, accuses — does so not from any bravery, but because in the popular character of his speeches and public actions he has a guarantee of his personal safety, and therefore is bold without risk. But one who in acting for the best sets himself in many ways against your wishes — who never speaks to please, but always to advise what is best; one who chooses a policy in which more issues must be decided by chance than by calculation, and yet makes himself responsible to you for both — that is the courageous man, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:69' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=70>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:70'><b>&sect; 70</b>&nbsp;&nbsp;and such is the citizen who is of value to his country, rather than those who, to gain an ephemeral popularity, have ruined the supreme interests of the city. So far am I from envying these men, or thinking them worthy citizens of their country, that if any one were to ask me to say, what good I had really done to the city, although, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, I could tell how often I had been trierarch and choregus, how I had contributed funds, ransomed prisoners, and done other like acts of generosity, I would mention none of these things; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:70' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=71>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:71'><b>&sect; 71</b>&nbsp;&nbsp;I would say only that my policy is not one of measures like theirs — that although, like others, I could make accusations and shower favours and confiscate property and do all that my opponents do, I have never to this day set myself to do any of these things; I have been influenced neither by gain nor by ambition; but I continue to give the advice which sets me below many others in your estimation, but which must make you greater, if you will listen to it; for so much, perhaps, I may say without offence. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:71' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=72>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:72'><b>&sect; 72</b>&nbsp;&nbsp;Nor, I think, should I be acting fairly as a citizen, if I devised such political measures as would at once make me the first man in <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, and you the last of all peoples. As the measures of a loyal politician develop, the greatness of his country should develop with them; and it is the thing which is best, not the thing which is easiest, that every speaker should advocate. Nature will find the way to the easiest course unaided. To the best, the words and the guidance of the loyal citizen must show the way. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:72' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=73>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:73'><b>&sect; 73</b>&nbsp;&nbsp;I have heard it remarked before now, that though what I say is always what is best, still I never contribute anything but words; whereas the city needs work of some practical kind. I will tell you without any concealment my own sentiments on this matter. There is no work that can be demanded of any of your public advisers, except that he should advise what is best; and I think I can easily show you that this is so. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:73' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=74>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:74'><b>&sect; 74</b>&nbsp;&nbsp;No doubt you know how the great <a href=/people/155 target=_blank>Timotheus</a> delivered a speech to the effect that you ought to go to the rescue and save the <a about=https://topostext.org/place/385239IEub class=ethnic long=23.87 lat=38.53>Euboeans</a>, when the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a> were trying to reduce them to servitude; and how, in the course of his speech, he spoke somewhat in this strain: — 'What?' said he, 'when you actually have the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a> in the island, do you debate what you are to do with them, and how you are to act? Will you not cover the sea with warships, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>? Will you not rise from your seats and go instantly to the <a about=https://topostext.org/place/379236HPei class=place long=23.6448 lat=37.9394>Peiraeus</a> and launch your vessels?' </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:74' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=75>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:75'><b>&sect; 75</b>&nbsp;&nbsp;So <a href=/people/155 target=_blank>Timotheus</a> spoke, and you acted as he bade you; and through his speech and your action the work was done. But if he had given you the best possible advice (as in fact he did), and you had lapsed into indolence and paid no attention to it, would the city have achieved any of the results which followed on that occasion? Impossible! And so it is with all that I say today, and with all that this or that speaker may say. For the actions you must look to yourselves; from the speaker you must require that he give you the best counsel that he can. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:75' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=76>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:76'><b>&sect; 76</b>&nbsp;&nbsp;I desire now to sum up my advice and to leave the platform. I say that we must contribute funds, and must keep together the force now in existence, correcting anything that may seem amiss in it, but not disbanding the whole force because of the possible criticisms against it. We must send envoys everywhere to instruct, to warn, and to act. Above all, we must punish those who take bribes in connexion with public affairs, and must everywhere display our abhorrence of them; in order that reasonable men, who offer their honest services, may find their policy justified in their own eyes and in those of others. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:76' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=77>
+                            <p id='urn:cts:greekLit:tlg0014.tlg008:77'><b>&sect; 77</b>&nbsp;&nbsp;If you treat the situation thus, and cease to ignore it altogether, there is a chance — a chance I say, even now — that it may improve. If, however, you sit idle, with an interest that stops short at applause and acclamation, and retires into the background when any action is required, I can imagine no oratory, which, without action on your part, will be able to save your country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg008.perseus-grc1:77' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -341                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=408', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas408";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=408';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

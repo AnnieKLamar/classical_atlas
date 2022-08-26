@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Aristotle, Economics' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Aristotle, Economics, translated by George Cyril Armstrong (1875-19??). Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1935, placed online under a Creative Commons license by the Perseus Project' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-310' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -310' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/731' content='urn:cts:greekLit:tlg0086.tlg029' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79004182' content='Aristotle (pseudo)'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/no95030529' content='George Cyril Armstrong (1875-19??)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://data.perseus.org/texts/urn:cts:greekLit:tlg0086.tlg029.perseus-eng1' /><h2>Aristotle, Economics</h2>Aristotle, Economics, translated by George Cyril Armstrong (1875-19??). Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1935, placed online under a Creative Commons license by the Perseus Project This text has 78 tagged references to 50 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg029'>urn:cts:greekLit:tlg0086.tlg029</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q3132462'>Q3132462</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1.1343a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:1.1343a'><b>&sect; 1.1343a</b>&nbsp;&nbsp;Between Housecraft (οἰκονομικὴ, the art of governing a Household or Home) and Statecraft (πολιτικὴ, the art of governing a Nation) there are differences corresponding to those between the two kinds of community over which they severally preside. There is, however, this further difference: that whereas the government of a nation is in many hands, a household has but a single ruler. <br />Now some arts are divided into two separate branches, one concerned with the making of an object — for example a lyre or a flute — and the other with its use when made. Statecraft on the other hand shows us how to build up a nation from its beginning, as well as how to order rightly a nation that already exists; from which we infer that Housecraft also tells us first how to acquire a household and then how to conduct its affairs. <br />By a Nation we mean an assemblage of houses, lands, and property sufficient to enable the inhabitants to lead a civilized life. This is proved by the fact that when such a life is no longer possible for them, the tie itself which unites them is dissolved. Moreover, it is with such a life in view that the association is originally formed; and the object for which a thing exists and has come into being is in fact the very essence of that particular thing. <br />From this definition of a Nation, it is evident that the art of Housecraft is older than that of Statecraft, since the Household, which it creates, is older; being a component part of the Nation created by Statecraft. <br />Accordingly we must consider the nature of Housecraft, and what the Household, which it creates, actually is. <br />The component parts of a household are (l) human beings, and (2) goods and chattels. And as households are no exception to the rule that the nature of a thing is first studied in its barest and simplest form, we will follow <a href=/people/86 target=_blank>Hesiod</a> and begin by postulating Homestead first, and a woman; a plough-<a href=/people/10961 target=_blank>ox</a> hardy to furrow. For the steading takes precedence among our physical necessities, and the woman among our free associates. It is, therefore, one of the tasks of Homecraft to set in order the relation between man and woman; in other words, to see that it is what it ought to be. <br />Of occupations attendant on our goods and chattels, those come first which are natural. Among these precedence is given to the one which cultivates the land; those like mining, which extract wealth from it, take the second place. <a href=/people/4826 target=_blank>Agriculture</a> is the most honest of all such occupations; seeing that the wealth it brings is not derived from other men. Herein it is distinguished from trade and the wage-earning employments, which acquire wealth from others by their consent; and from war, which wrings it from them perforce. It is also a natural occupation; since by Nature's appointment all creatures receive sustenance from their mother,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:1.1343a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.1343b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:1.1343b'><b>&sect; 1.1343b</b>&nbsp;&nbsp;and mankind like the rest from their common mother the earth. <br />And besides all this, agriculture contributes notably to the making of a manly character; because, unlike the mechanical arts, it does not cripple and weaken the bodies of those engaged in it, but inures them to exposure and toil and invigorates them to face the perils of war. For the farmer's possessions, unlike those of other men, lie outside the city's defences. <br />When we turn our attention to the human part of the household, it is the woman who makes the first claim upon it; [for the natural comes first, as we have said,] and nothing is more natural than the tie between female and male. For we have elsewhere laid down the premiss that Nature is intent on multiplying severally her types; and this is true of every animal in particular. Neither the female, however, can effect this without the male, nor the male without the female; whence the union of the sexes has of necessity arisen. <br />Now among the lower animals, this union is irrational in character; it exists merely for the purpose of procreation, and lasts only so long as the parents are occupied in producing their brood. In tame animals, on the other hand, and those which possess a greater share of intelligence, it has assumed a more complex form; for in their case we see more examples of mutual help, goodwill, and co-operation. It is, however, in the human species that this complexity is most marked; since the co-operation between woman and man aims not merely at existence, but at a happy existence. Nor do mankind beget children merely to pay the service they owe to Nature, but also that they may themselves receive a benefit; for the toil they undergo while they are strong and their offspring is still weak is repaid by that offspring when it in turn is grown strong and the parents by reason of age are weak. <br />At the same time Nature, by this cycle of changes, fulfills her purpose of perpetuating existence; preserving the type when she is unable to preserve the individual. And so with this purpose in view <a href=/people/1595 target=_blank>Divine Providence</a> has fashioned the nature of man and of woman for their partnership. For they are distinguished from each other by the possession of faculties not adapted in every case to the same tasks, but in some cases for opposite ones, though contributing to the same end. For Providence made man stronger and woman weaker,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:1.1343b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.1344a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:1.1344a'><b>&sect; 1.1344a</b>&nbsp;&nbsp;so that he in virtue of his manly prowess may be more ready to defend the home, and she, by reason of her timid nature, more ready to keep watch over it; and while he brings in fresh supplies from without, she may keep safe what lies within. In handicrafts again, woman was given a sedentary patience, though denied stamina for endurance of exposure; while man, though inferior to her in quiet employments, is endowed with vigor for every active occupation. In the production of children both share alike; but each makes a different contribution to their upbringing. It is the mother who nurtures, and the father who educates. <br />We begin then with the rules that should govern a man's treatment of his wife. And the first of these forbids him to do her wrong; for if he observes this, he is not likely himself to suffer wrong at her hands. As the <a href=/people/135 target=_blank>Pythagoreans</a> declare, even the common rule or custom of mankind thus ordains, forbidding all wrong to a wife as stringently as though she were a suppliant whom one has raised from the hearthstone. And a man does wrong to his wife when he associates with other women. <br />As regards the intercourse of marriage, wives should neither importune their husbands, nor be restless in their absence; but a man should accustom his wife to be content whether he is at home or away. Good also is the advice of <a href=/people/86 target=_blank>Hesiod</a>: <br />Take thee a maiden to wife, and teach her ways of discretion. [WD 699] <br />For differences of ways and habits are little conducive to affection. <br />As regards adornment: it is not well that souls should approach one another in borrowed plumes, nor is it well in the case of bodies. Intercourse which depends [for its charm] upon outward adornment differs in no respect from that of figures on the stage in their conventional attire. <br />Of property, the first and most indispensable kind is that which is also best and most amenable to Housecraft; and this is the human chattel. Our first step therefore must be to procure good slaves. Of slaves there are two kinds; those in positions of trust, and the laborers. And since it is matter of experience that the character of the young can be moulded by training, when we require to charge slaves with tasks befitting the free, we have not only to procure the slaves, but to bring them up [for the trust]. <br />In our intercourse with slaves we must neither suffer them to be insolent nor treat them with cruelty. A share of honor should be given to those who are doing more of a freeman's work, and abundance of food to those who are laboring with their hands. And whereas the use of wine renders even free men insolent, so that in many countries they too refrain from it — as, for instance, the <a about=https://topostext.org/place/369103PCar class=ethnic long=10.32 lat=36.85>Carthaginians</a> do when they are on campaign — it follows that we must either deny wine to slaves altogether, or reserve it for rare occasions. <br />We may apportion to our slaves (1) work, (2) chastisement, and (3) food. If men are given food, but no chastisement nor any work, they become insolent.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:1.1344a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.1344b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:1.1344b'><b>&sect; 1.1344b</b>&nbsp;&nbsp;If they are made to work, and are chastised, but stinted of their food, such treatment is oppressive, and saps their strength. The remaining alternative, therefore, is to give them work, and a sufficiency of food. Unless we pay men, we cannot control them; and food is a slave's pay. <br />Slaves, again, are no exception to the rule that men become worse when better conduct is not followed by better treatment, but virtue and vice remain alike unrewarded. Accordingly we must keep watch over our workers, suiting our dispensations and indulgences to their desert; whether it be food or clothing, leisure or chastisement that we are apportioning. Both in theory and in practice we must take for our model a physician's freedom in prescribing his medicines; observing at the same time that food differs from medicine in that it requires to be constantly administered. <br />The best laborers will be furnished by those races of mankind which are neither wholly spiritless nor yet overbold. Each extreme has its vice; the spiritless cannot endure hard labor, and the high-spirited will not readily brook control. <br />Every slave should have before his eyes a definite goal or term of his labor. To set the prize of freedom before him is both just and expedient; since having a prize to work for, and a time defined for its attainment, he will put his heart into his labors. We should, moreover, take hostages [for our slaves' fidelity] by allowing them to beget children; and avoid the practice of purchasing many slaves of the same nationality, as men avoid doing in towns. We should also keep festivals and give treats, more on the slaves account than on that of the freemen; since the free have a fuller share in those enjoyments for the sake of which these institutions exist. <br />There are four qualities which the head of a household must possess in dealing with his property. Firstly, he must have the faculty of acquiring, and secondly that of preserving what he has acquired; otherwise there is no more benefit in acquiring than in baling with a colander, or in the proverbial wine-jar with a hole in the bottom. Thirdly and fourthly, he must know how to improve his property, and how to make use of it; since these are the ends for which the powers of acquisition and of preservation are sought. <br />Everything we possess should be duly classified; and the amount of our productive property exceed that of the unproductive. Produce should be so employed that we do not risk all our possessions at once. For the safe keeping of our property, we shall do well to adopt the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> and <a about=https://topostext.org/place/370225RLak class=demonym long=22.5 lat=37.001>Laconian</a> systems. <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> housecraft has, however, some advantages. The <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> buys immediately with the produce of his sales, and the smaller households keep no idle deposits in store. <br />Under the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> system, the master himself undertook the entire disposition and supervision of the household, following the practice which <a href=/people/104 target=_blank>Dion</a> used to remark in <a href=/people/23 target=_blank>Dionysius</a>. No one, indeed, takes the same care of another's property as of his own; so that, as far as is possible,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:1.1344b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1.1345a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:1.1345a'><b>&sect; 1.1345a</b>&nbsp;&nbsp;each man ought to attend to his affairs in person. We may commend also a pair of sayings, one attributed to a <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> and the other to a <a about=https://topostext.org/place/300070RLib class=demonym long=10.01 lat=32.01>Libyan</a>. The former on being asked what best conditions a <a href=/people/10959 target=_blank>horse</a>, replied His master's eye. The <a about=https://topostext.org/place/300070RLib class=demonym long=10.01 lat=32.01>Libyan</a>, when asked what kind of manure is best, answered The master's footprints. <br />The master and mistress should, therefore, give personal supervision, each to his or her special department of the household work. In small households, an occasional inspection will suffice; in estates managed through stewards, inspections must be frequent. For in stewardship as in other matters there can be no good copy without a good example; and if the master and mistress do not attend diligently to their estate, their deputies will certainly not do so. <br />Moreover, as such habits are both commendable for moral reasons and also conducive to good management, the master and mistress will do well to rise earlier than their servants and to retire later; to treat their home as a city, and never leave it unguarded; nor ever, by night or by day, to postpone a task which ought to be done. Rising before daylight is also to be commended; it is a healthy habit, and gives more time for the management of the household as well as for liberal studies. <br />We have remarked that on small holdings the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> method of disposing of the produce is advantageous. On large estates, after the amount for the year's or the month's outlay has been set apart, it should be handed to the overseers; and so also with implements, whether for daily or for occasional use. In addition, an inspection of implements and stores should be made periodically, so that remainders and deficiencies may alike be noted. <br />In constructing a homestead, we have to provide for the stock which it is to shelter, and for its health and well-being. Providing for the stock involves questions such as these: What type of building is best for the storage of crops and of clothing? How are we to store the dry crops, and how the moist ones? Of the other stock, how is the living to be housed, and how the dead? and what accommodation are we to make for slaves and free, for women and men, for foreigners and fellow-citizens? For well-being and health, again, the homestead should be airy in summer, and sunny in winter. <br />A homestead possessing these qualities would be longer than it is deep; and its main front would face the south. On large estates, moreover, it seems worth while to instal as porter a man incapable of other work, to keep his eye on what passes in and out. <br />1345b That implements may be ready for use, the <a about=https://topostext.org/place/370225RLak class=demonym long=22.5 lat=37.001>Laconian</a> practice should be followed. Each should be kept in its own place; thus it will always be to hand, and not require seeking.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:1.1345a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1345b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1345b'><b>&sect; 2.1345b</b>&nbsp;&nbsp;BOOK II <br />Right administration of a household demands in the first place familiarity with the sphere of one's action; in the second place, good natural endowments; and in the third, an uprights and industrious way of life. For the lack of any one of these qualifications will involve many a failure in the task one takes in hand. <br />Of such administrations there are four main types, under which all others may be classified. We have the administration of a king; of the governors under him; of a free state; and of a private citizen. <br />Of these, that of a king is the most extensive, yet at the same time the simplest. A governor's office is also very extensive, but divided into a great variety of departments. The administration of a free state is again very varied, but it is the easiest to conduct; while that, of a private individual presents the like variety, but within limits which are narrowest of all. For the most part, all four will of necessity cover the same ground; we will, however, take them in turn, and see what is especially characteristic of each. <br />Taking first the royal administration, we see that while theoretically its power is unlimited, it is in practice concerned with four departments, namely currency, exports, imports, and expenditure. <br />Taking these severally, I assign to that of currency the seasonable regulation of prices; to imports and exports, the profitable disposition, at any given time, of the dues received from provincial governors; and to expenditure, the reduction of outgoings as occasion may serve, and the question of meeting expenses by currency or by commodities. <br />The second kind of administration, that of the governor, is concerned with six different classes of revenue; those, namely, arising from agriculture, from the special products of the country, from markets, from taxes, from <a href=/people/10978 target=_blank>cattle</a>, and from other sources. <br />Taking these in turn, the first and most important of them is revenue from agriculture, which some call tithe and some produce-tax. The second is that from special products; in one place gold, in another silver, in another copper, and so on. Third in importance is revenue from markets,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1345b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1346a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1346a'><b>&sect; 2.1346a</b>&nbsp;&nbsp;and fourth that which arises from taxes on land and on sales. In the fifth place we have revenue from <a href=/people/10978 target=_blank>cattle</a>, called tithe or first-fruits; and in the sixth, revenue from other sources, which we term poll-tax, or tax on industry. <br />Of our third kind of administration, that of a free state, the most important revenue is that arising from the special products of the country. Next follows revenue from markets and occupations; and finally that from every-day transactions. <br />Fourthly and lastly, we must consider the administration of a private citizen. It is difficult to reduce this to rules owing to the necessary variety of its aims; yet it is the most limited of the four, because both revenues and expenses are [comparatively] small. Taking its revenues in turn, the chief are those from agriculture; next in importance, those from other every-day occupations; while third comes interest on money. Apart from all these, there is a matter common to all kinds of administration which is best considered at this particular point, and deserves more than cursory attention. This is the importance of keeping expenditure within the limits of revenue. <br />Having thus enumerated the divisions of our subject, we must next consider whether the province or the free state with which we are concerned is able to produce all the forms of revenue we have just detailed or at least the chief of them; [and this being known] must make the best use of what we have. Next we must inquire what kinds of revenue, at present wholly lacking, are yet potentially existent; what kinds, though now small, may with care be increased, and how far certain items of present expenditure may without prejudice to the commonwealth be diminished. <br />Having spoken thus of administrations and their various departments, we have further proceeded to collect such instances as we deemed noteworthy of the means adopted by certain statesmen in times past for the replenishment of the treasury, and also of their skill in administration. These anecdotes [which follow], seemed to us by no means lacking in utility; being capable from time to time of application by others to the business they themselves have in hand. <br /><a href=/people/744 target=_blank>Cypselus</a> of <a about=https://topostext.org/place/379229PKor class=person long=22.8802 lat=37.9054>Corinth</a> had made a vow that if he became master of the city, he would offer to <a href=/people/1 target=_blank>Zeus</a> the entire property of the <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a>. Accordingly he commanded them to make a return of their possessions; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1346a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1346b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1346b'><b>&sect; 2.1346b</b>&nbsp;&nbsp;which done, he took from each a tenth part, and told them to employ the remainder in trading. A year later, he repeated the process. And so in ten years' time it came to pass that <a href=/people/744 target=_blank>Cypselus</a> received the entire amount which he had dedicated; while the <a about=https://topostext.org/place/379229PKor class=ethnic long=22.8802 lat=37.9054>Corinthians</a> on their part had replaced all that they had paid him. <br /><a href=/people/2004 target=_blank>Lygdamis</a> of <a about=https://topostext.org/place/371255INax class=person long=25.377 lat=37.1059>Naxos</a>, after driving into exile a party of the inhabitants, found that no one would give him a fair price for their property. He therefore sold it to the exiled owners. The exiles had left behind them a number of works of art destined for temple offerings, which lay in certain workshops in an unfinished condition. These <a href=/people/2004 target=_blank>Lygdamis</a> proceeded to sell to the exiles and whoso else would buy them; allowing each purchaser to have his name engraved on the offering. <br />The people of <a about=https://topostext.org/place/410290UByz class=place long=28.9836 lat=41.0119>Byzantium</a>, being in need of funds, sold such dedicated lands as belonged to the State; those under crops, for a term of years, and those uncultivated, in perpetuity. In like manner they sold lands appropriated to religious celebrations or ancestral cults, not excepting those that were on private estates; for the owners of the surrounding land were ready to give a high price for them. To the dispossessed celebrants [they assigned] such other public lands surrounding the gymnasium, the agora, or the harbor, as belonged to the State. Moreover they claimed as public property all open spaces where anything was sold, together with the sea-fisheries, the traffic in salt, and the trade of professional conjurors, soothsayers, charm-sellers, and the like; exacting from all these one-third of their gains. The right of changing money they sold to a single bank, whose proprietor was given a monopoly of the sale and purchase of coin, protected under penalty of confiscation. <br />And whereas previously the rights of citizenship were by law confined to those whose parents were both citizens, lack of funds, induced them to offer citizenship to him who had one citizen parent on payment of the sum of thirty minae. <br />On another occasion, when food and funds were both scarce, they called home all vessels that were trading in the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>. On the merchants protesting, they were at length allowed to trade on payment of a tithe of their profits. This tax of 10 per cent was also extended to purchases of every kind.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1346b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1347a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1347a'><b>&sect; 2.1347a</b>&nbsp;&nbsp;It happened that certain aliens residing in the city had lent money on the security of citizens' property. As these aliens did not possess the right of holding such property, the people offered to recognize the title of anyone who chose to pay into the treasury one third of the amount secured. <br /><a href=/people/229 target=_blank>Hippias</a> of <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athens</a> offered for sale upper stories that projected over the public streets, together with flights of steps, railings, and doors that opened outwards. The owners of the buildings bought them, and in this way a large sum of money was collected. <br />He also called in the existing currency, promising to pay the holders at a fixed rate. But when they came to receive the new mintage, he reissued the old coins. <br />Those who were expecting to equip a war-vessel or preside over a tribe or train a chorus or undertake the expense of some other public service of the kind, he allowed, if they chose, to commute the service for a moderate sum, and to be enrolled on the list of those who had performed it. <br />Moreover, whenever a citizen died, the priestess of the temple of <a href=/people/11 target=_blank>Athena</a> on the <a about=https://topostext.org/place/380237SAkr class=place long=23.7257 lat=37.9717>Acropolis</a> was to receive one quart measure of barley, one of wheat, and a silver obolus. And when a child was born, the father paid the same dues. <br />The <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> colonists at <a about=https://topostext.org/place/402233UPot class=place long=23.3278 lat=40.1937>Potidaea</a>, being in need of funds for the war, agreed that all should make a return of their property for assessment of tax. But instead of each returning the entire amount to his own parish, properties were to be assessed separately, each in its own locality, so that the poor might propose a reduced assessment; while those without any [landed] property were assessed at two minae a head. On these assessments each man paid the State the full amount of the war-tax. <br />The city of <a about=https://topostext.org/place/393260PAnt class=place long=26.0189 lat=39.2908>Antissa</a> had been accustomed to celebrate the festival of <a href=/people/5 target=_blank>Dionysus</a> with great magnificence. Year by year great provision was made for the occasion, and costly sacrifices were prepared. Now one year the city found itself in need of funds; and shortly before the festival, on the proposal of a citizen named <a href=/people/4300 target=_blank>Sosipolis</a>, the people after vowing that they would next year offer to <a href=/people/5 target=_blank>Dionysus</a> a double amount, collected all that had been provided and sold it. In this way they realized a large sum of money to meet their necessity. <br />On one occasion the people of <a about=https://topostext.org/place/403267UPit class=place long=26.6992 lat=40.3467>Lampsacus</a> were expecting to be attacked by a large fleet of triremes. The price of barley meal being then four drachmae for a bushel and a half, they instructed the retailers to sell it at six drachmae. Oil, which was at three drachmae for six pints, was to be sold at four drachmae and a half, and wine and other commodities at a proportionate increase. In this way the retailer got the original price,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1347a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1347b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1347b'><b>&sect; 2.1347b</b>&nbsp;&nbsp;while the State took the addition and filled its treasury. <br />The people of <a about=https://topostext.org/place/413314PHer class=place long=31.426 lat=41.287>Heraclea</a>, being about to dispatch a fleet of forty ships against the lords of <a about=https://topostext.org/place/454365PPan class=place long=36.469 lat=45.351>Bosporus</a>, were at a loss for the necessary funds. They therefore bought up all the merchants' stock of corn and oil and wine and other marketable commodities, agreeing to pay at a future date. The merchants were well satisfied that they had disposed of their cargoes without breaking bulk; and the people, advancing two months' pay to their armament, sent along with it a fleet of merchant-vessels laden with the commodities, every ship being in charge of a public official. When the expedition reached its goal, the men purchased from these officials all they needed. In this way, the money was collected before the leaders again paid their men; so that the same payment sufficed until the expedition returned home. <br />When the <a about=https://topostext.org/place/377269PSam class=ethnic long=26.935 lat=37.695>Samians</a> entreated the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> for money to enable them to return to their country, the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedaemonians</a> passed a resolution that they and their servants and their beasts of burden should go without food for one day; and that the expense each one thus saved should be given to the <a about=https://topostext.org/place/377269PSam class=ethnic long=26.935 lat=37.695>Samians</a>. <br />The people of <a about=https://topostext.org/place/410290PCha class=place long=29.0258 lat=40.9834>Chalcedon</a> had a large number of mercenary troops in their city, to whom they could not pay the wages they owed. Accordingly they made proclamation that anyone, either citizen or alien, who had right of reprisal against any city or individual, and wished to exercise it, should have his name entered on a list. A large number of names was enrolled, and the people thus obtained a specious pretext for exercising reprisal upon ships that were passing on their way to the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Pontus</a>. They accordingly arrested the ships and fixed a period within which they would consider any claims that might be made in respect of them. Having now a large fund in hand, they paid off the mercenaries, and set up a tribunal to decide the claims; and those whose goods had been unjustly seized were compensated out of the revenues of the state. <br />At <a about=https://topostext.org/place/404279UCyz class=place long=27.8878 lat=40.3895>Cyzicus</a>, civil strife broke out between the democratic and oligarchic parties. The former proved victorious, and the rich citizens were placed under arrest. But as the city owed money to its troops, a resolution was passed that the lives of those under arrest should be spared, and that they should be allowed to depart into exile on paying a sum of money to the state. <br />At <a about=https://topostext.org/place/384261PChi class=place long=26.1342 lat=38.3764>Chios</a> there was a law that all debts should be entered on a public register. Being in need of funds,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1347b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1348a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1348a'><b>&sect; 2.1348a</b>&nbsp;&nbsp;the people resolved that debtors should pay their debts into the treasury, and that the state should meet the creditors' interest out of its revenues until its former prosperity returned. <br /><a href=/people/1137 target=_blank>Mausolus</a> lord of <a about=https://topostext.org/place/370287RKar class=person long=28.7 lat=37.01>Caria</a> received from the King of <a about=https://topostext.org/place/295540RPer class=person long=54 lat=29.5>Persia</a> a demand for tribute. Therefore he summoned the wealthiest men in his dominion, and told them that the King was asking for the tribute, and he had not the means of paying it. Men whom he had previously suborned at once came forward and declared what each was ready to contribute. With this example before them, they who were wealthier than these, partly in shame and partly in alarm, promised and paid much larger sums than the others. <br />Being again in lack of funds, <a href=/people/1137 target=_blank>Mausolus</a> summoned a public meeting of the people of <a about=https://topostext.org/place/373278PMyl class=place long=27.781 lat=37.315>Mylassa</a> and told them that the King of <a about=https://topostext.org/place/295540RPer class=person long=54 lat=29.5>Persia</a> was preparing to attack him; and that <a about=https://topostext.org/place/373278PMyl class=place long=27.781 lat=37.315>Mylassa</a> his capital city was unfortified. He therefore bade the citizens contribute each as liberally as he could, saying that what they now paid in would afford security to the rest of their possessions. By these means he obtained large contributions. But though he kept the money, he declared that heaven, for the present, forbade the building of the walls. <br />Condalus, who was a lieutenant-governor under <a href=/people/1137 target=_blank>Mausolus</a>, whenever on his progress through the country he was presented with a <a href=/people/10954 target=_blank>sheep</a>, a <a href=/people/10951 target=_blank>pig</a>, or a calf, had a record made of the donor's name and of the date. He then bade the man take the beast home and keep it until he should again pass that way. After what he considered a sufficient interval, he would demand the beast together with such profits as he reckoned it had produced. All trees, too, which projected over the king's highway, or fell thereon, he sold as profits accruing to the State. <br />When one of his soldiers died, he charged a drachma for the right of passing the body through the gates. This was not only a source of revenue, but a check on the commanders, who were thus prevented from falsifying the date of the man's death. <br />Noticing that the <a about=https://topostext.org/place/365295RLyc class=ethnic long=29.5 lat=36.5>Lycians</a> were fond of wearing their hair long, Condalus proclaimed that a dispatch had arrived from the King ordering him to send hair to make forelocks for his <a href=/people/10959 target=_blank>horses</a>; and that <a href=/people/1137 target=_blank>Mausolus</a> had therefore instructed him to shave their heads. However, if they would pay him a fixed sum per head, he would send to Greece for hair. They were glad to comply with his demand, and a large sum was collected, the number of those taxed being great. <br /><a href=/people/2209 target=_blank>Aristoteles</a> of <a about=https://topostext.org/place/364282IRho class=person long=28.2244 lat=36.4408>Rhodes</a>, when governor of <a about=https://topostext.org/place/387268UPho class=person long=26.7532 lat=38.6704>Phocaea</a>, found himself in need of funds. Noticing that there were at <a about=https://topostext.org/place/387268UPho class=place long=26.7532 lat=38.6704>Phocaea</a> two opposing parties, he held a secret conference with one of them,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1348a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1348b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1348b'><b>&sect; 2.1348b</b>&nbsp;&nbsp;at which he declared that the other party was offering him money if he would favor their pretensions; that he, however, preferred to receive from those now before him, and to entrust to them the administration of the city. On hearing this, they immediately contributed the money he asked, and gave it him. Thereupon he told the other party what he had received from them; and they in turn promised him at least an equal amount. Having thus taken the money of both factions, he effected a reconciliation between them. <br />He also observed that there were many law-suits pending between the citizens, and that they had grave and long-standing plaints against one another which had arisen in course of war. He therefore appointed a tribunal, and made proclamation that all who failed to appear before it within a stated period should lose the right to a legal decision of their outstanding claims. Then, by taking into his own hands the court-fees for a number of suits, and also those appeal-cases which involved penalties, and receiving [through others] money from both sides, he obtained altogether a very considerable sum. <br />The people of <a about=https://topostext.org/place/384268PKla class=place long=26.7703 lat=38.3614>Clazomenae</a>, suffering from dearth of grain and scarcity of funds, passed a resolution that any private citizens who had stores of oil should lend it to the State at interest; this being a produce which their land bears in abundance. The loan arranged, they hired vessels and sent them to the depots whence they obtained their grain, [and bought a consignment] on security of the value of the oil. <br />The same people, owing their mercenaries twenty talents of pay and being unable to find it, were giving the leaders of the troop four talents of interest each year. But failing to reduce the capital debt, and committed to this fruitless drain on their revenue, they struck an iron coinage of twenty talents, bearing the face-value of the silver. This they distributed proportionately among the wealthiest citizens, and received from them silver to the same amount. Through this expedient, the private citizens possessed a currency which was good for their daily needs, and the state was relieved of its debt. Next, they proceeded to pay interest out of revenue to those who had advanced the silver; and little by little distributed repayment among them, recalling at the same time the currency of iron. <br />The people of <a about=https://topostext.org/place/411282USel class=place long=28.2477 lat=41.0785>Selybria</a> had a law, passed in time of famine, which forbade the export of grain. On one occasion, however, they were in need of funds; and as they possessed large stores of grain, they passed a resolution that citizens should deliver up their corn to the state at the regular fixed price,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1348b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1349a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1349a'><b>&sect; 2.1349a</b>&nbsp;&nbsp;each retaining for himself a year's supply. They then granted right of export to any who desired it, fixing what they deemed a suitable price. <br />At <a about=https://topostext.org/place/402264PAby class=place long=26.4091 lat=40.1951>Abydos</a> civil strife had caused the land to remain uncultivated; while the resident aliens, to whom the city was already indebted, refused to make any further advances. A resolution was accordingly passed that anyone who would might lend money to enable the farmers to cultivate their land, on the understanding that the lender had the first claim on its produce; others taking from what was then left. <br />The people of <a about=https://topostext.org/place/379273PEph class=place long=27.3397 lat=37.9419>Ephesus</a>, being in need of funds, passed a law forbidding their women to wear gold, and ordering them to lend the State what gold they had in their possession. <br />They also offered to any citizen who was willing to pay a fixed sum the right of having his name inscribed on a certain pillar of their temple as the donor thereof. <br /><a href=/people/23 target=_blank>Dionysius</a> of <a about=https://topostext.org/place/371153PSyr class=person long=15.293 lat=37.0639>Syracuse</a>, being desirous of collecting funds, called a public assembly, and declared that <a href=/people/48 target=_blank>Demeter</a> had appeared to him, and bade him convey all the women's ornaments into her temple. That he himself had done so with the ornaments of his own household; and the others must now follow his example, and thereby avoid any visitation of the goddess's anger. Anyone who failed to comply would, he declared, be guilty of sacrilege. Through fear of the goddess as well as of the despot, all the citizens brought in whatever they had. Then <a href=/people/23 target=_blank>Dionysius</a>, after sacrificing to the goddess, removed the ornaments to his own treasury as a loan which he had borrowed from her. As time went on, the women again appeared with precious ornaments. <a href=/people/23 target=_blank>Dionysius</a> thereupon issued a decree that any woman who desired to wear gold should make an offering of a fixed amount in the temple. <br />Intending to build a fleet of triremes, <a href=/people/23 target=_blank>Dionysius</a> knew that he should require funds for the purpose. He therefore called an assembly and declared that a certain city was offered to him by traitors, and he needed money to pay them. The citizens therefore must contribute two staters apiece. The money was paid; but after two or three days, <a href=/people/23 target=_blank>Dionysius</a>, pretending that the plot had failed, thanked the citizens and returned to each his contribution. In this way he won the confidence of the citizens; so that when he again asked for money, they contributed in the expectation that they would receive it back. But this time he kept it for building the fleet. <br />On another occasion being in straits for silver he minted a coinage of tin, and summoning a public assembly, spoke at length in its favor. The citizens perforce voted that everyone should regard as silver, and not as tin, whatever he received.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1349a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1349b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1349b'><b>&sect; 2.1349b</b>&nbsp;&nbsp;Again being in need of funds, he requested the citizens to contribute. On their declaring that they had not the wherewithal, he brought out the furnishings of his palace and offered them for sale, pretending to be compelled through lack of money. At the sale, he had a list made of the articles and their purchasers; and when they had all paid, he commanded every one to bring back the article he had bought. <br />Finding that because of his imposts the citizens were ceasing to rear <a href=/people/10954 target=_blank>sheep</a> and <a href=/people/10978 target=_blank>cattle</a>, he made proclamation that he needed no more money until a certain [date]; so that those who now became possessed of any stock would not be liable to taxation. A large number of citizens lost no time in acquiring a quantity of <a href=/people/10954 target=_blank>sheep</a> and <a href=/people/10978 target=_blank>cattle</a>, on the understanding that they would be free of impost. But <a href=/people/23 target=_blank>Dionysius</a>, when he thought the fitting time was come, had them all valued and imposed a tax. The citizens were angry at being thus deceived, and proceeded to kill and sell their beasts. On <a href=/people/23 target=_blank>Dionysius</a>'s making a decree that only such beasts should be slain as were needed each day, the owners retorted by offering their animals as sacrifices; whereupon the despot forbade the sacrifice of female beasts. <br />Once more funds were lacking, and <a href=/people/23 target=_blank>Dionysius</a> ordered a list to be made for him of all houses whose heirs were orphan. Having obtained a complete list, he made use of the orphans' property until each should come of age. <br />After the capture of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a>, he summoned a meeting of the citizens, and told them why he had a good right to sell them as slaves. If, however, they would pay him the expenses of the war and three minae a head besides, he would release them. The people of <a about=https://topostext.org/place/381156PRhe class=place long=15.644 lat=38.109>Rhegium</a> brought forth all their hoards; the poor borrowed from the wealthier and from the foreigners resident in the city; and so the amount demanded was paid. But though he received this money from them, none the less he sold them all for slaves, having succeeded [by his trick] in bringing to light the hoarded goods which they had previously concealed. <br />On another occasion he had borrowed money from the citizens, promising to repay it. On their demanding its return, he bade each bring him, under pain of death, whatever silver he possessed. This silver when brought he coined into drachmae each bearing the face value of two: with these he repaid the [previous] debt and also what had just been brought in. <br />He also made a raid on <a about=https://topostext.org/place/430105RTyr class=place long=10.5 lat=43>Tyrrhenia</a> with a hundred ships, and rifled the <a about=https://topostext.org/place/410120UPyr class=place long=11.9636 lat=42.0152>temple</a> of <a href=/people/1073 target=_blank>Leucothea</a> of a large amount of gold and silver, besides a quantity of works of art. But being aware that his sailors too had taken much plunder,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -384 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1349b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1350a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1350a'><b>&sect; 2.1350a</b>&nbsp;&nbsp;he made proclamation that each should bring him, under pain of death, one-half of what he had; the remainder of their takings they might keep. On the understanding that if they brought in half their plunder they would retain the rest in security, they obeyed. But when <a href=/people/23 target=_blank>Dionysius</a> had got the treasure into his hands, he commanded them to bring him the other half as well. <br />The people of <a about=https://topostext.org/place/400234PMen class=place long=23.419 lat=39.964>Mende</a> used to meet the expenses of administration from harbor and other duties, but refrained from collecting the imposts on land and on houses. They kept, however, a register of the owners, and when the state was in need of funds, they collected the arrears. Meanwhile the owners had the advantage of trafficking with their whole property undiminished by any payment of percentages. <br />The same city being at war with <a about=https://topostext.org/place/403234POly class=place long=23.354 lat=40.2963>Olynthus</a> and needing funds, passed a resolution that all the slaves they possessed, with the exception of one male and one female apiece, should be sold on behalf of the State, which was thus enabled to raise a loan from private citizens. <br /><a href=/people/659 target=_blank>Callistratus</a>, when in <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>, caused the harbor-dues, which were usually sold for twenty talents, to produce twice as much. For noticing that only the wealthier men were accustomed to buy them because the sureties for the twenty talents were obliged to show talent for talent, he issued a proclamation that anyone might buy the dues on furnishing securities for one-third of the amount, or as much more as could be procured in each case. <br /><a href=/people/155 target=_blank>Timotheus</a> of <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athens</a> during his campaign against <a about=https://topostext.org/place/403234POly class=place long=23.354 lat=40.2963>Olynthus</a> was short of silver, and issued to his men a copper coinage instead. On their complaining, he told them that all the merchants and retailers would accept it in lieu of silver. But the merchants he instructed to buy in turn with the copper they received such produce of the land as was for sale, as well as any booty brought to them; such copper as remained on their hands he would exchange for silver. <br />During the campaign of <a about=https://topostext.org/place/396199PKer class=place long=19.9156 lat=39.6063>Corcyra</a> this same <a href=/people/155 target=_blank>Timotheus</a> was reduced to sore straits. His men demanded their pay; refused to obey his orders; and declared they would desert to the enemy. Accordingly he summoned a meeting and told them that the stormy weather was delaying the arrival of the silver he expected; meanwhile, as he had on hand such abundance of provisions, he would charge them nothing for the three months' ration of grain already advanced.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1350a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1350b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1350b'><b>&sect; 2.1350b</b>&nbsp;&nbsp;The men, unable to believe that <a href=/people/155 target=_blank>Timotheus</a> would have sacrificed so large a sum to them unless he was in truth expecting the money, made no further claim for pay until he had completed his dispositions. <br />At the siege of <a about=https://topostext.org/place/377269PSam class=place long=26.935 lat=37.695>Samos</a>, <a href=/people/155 target=_blank>Timotheus</a> sold the crops and other country property to the besieged <a about=https://topostext.org/place/377269PSam class=ethnic long=26.935 lat=37.695>Samians</a> themselves, and thus obtained plenty of money to pay his men. But finding the camp was short of provisions owing to the arrival of reinforcements, he forbade the sale of milled corn, or of any measure less than 1 1/2 bushels of corn or 8 1/2 gallons of wine or oil. Accordingly the officers bought supplies wholesale and issued them to their men; the reinforcements thenceforth brought their own provisions, and sold any surplus on their departure. In this way the needs of the soldiers were satisfactorily met. <br />Didales the <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> was able to provide for the daily needs of his mercenaries from the enemy's country; but had no coined money to give them. When their pay became due, and they demanded it, he had recourse to the following trick. He called a meeting, and told the men that he had plenty of money, but that it was stored in a certain fortress, which he named. He then broke up his encampment and marched in that direction. On reaching the neighborhood of the fortress, he himself went on ahead, and entering the place seized all the silver vessels in the temples. He then loaded his mules in such a way that this plate was exposed, thus suggesting that silver formed the entire load; and so continued his march. The soldiers, beholding the plate and supposing that they convoyed a full load of silver, were cheered by the expectation of their pay. They were informed however by Didales that they would have to take it to <a about=https://topostext.org/place/413363PAmi class=place long=36.315 lat=41.312>Amisus</a> to be coined — a journey of many days, and in the winter season. And during all this time, he continued to employ the army without giving it more than its necessary rations. <br />Moreover, all the craftsmen in the army, and the hucksters who traded with the soldiers by barter, were under his personal control, and enjoyed a complete monopoly. <br />When Taos, king of <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egypt</a>, needed funds for an expedition he was making, <a href=/people/406 target=_blank>Chabrias</a> of <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athens</a> advised him to inform the priests that to save expense it was necessary to suppress some of the temples together with the majority of the attendant priests.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -365 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1350b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1351a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1351a'><b>&sect; 2.1351a</b>&nbsp;&nbsp;On hearing this, each priesthood, being anxious to retain their own temple, offered him money from their private possessions [as well as from the temple funds]. When the king had thus received money from them all, <a href=/people/406 target=_blank>Chabrias</a> bade him tell the priests to spend on the temple-service and on their own maintenance one-tenth of what they formerly spent, and lend him the remainder until he had made peace with the King [of <a about=https://topostext.org/place/295540RPer class=person long=54 lat=29.5>Persia</a>]. <br />Moreover, each inhabitant was to contribute a stated proportion of his household and personal possessions; and when grain was sold, buyer and seller were each to contribute, apart from the price, one obol per artabe; while a tax of one tenth was to be imposed on profits arising from ships and workshops and other sources of gain. <br />Again, when Taos was on the point of setting out from <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, <a href=/people/406 target=_blank>Chabrias</a> advised him to make requisition of all uncoined gold and silver in the possession of the inhabitants; and when most of them complied, he bade the king make use of the bullion, and refer the lenders to the governors of his provinces for compensation out of the taxes. <br /><a href=/people/210 target=_blank>Iphicrates</a> of <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athens</a> provided <a href=/people/530 target=_blank>Cotys</a> with money for a force which he had collected in the following manner. He bade him order [each] of his subjects to sow for him a piece of land bearing 4 1/2 bushels. A large quantity of grain was thus gathered, from the price of which, when brought to the depots on the coast, the king obtained as much money as he wanted. <br /><a href=/people/530 target=_blank>Cotys</a> of <a about=https://topostext.org/place/410265RThr class=person long=26.5 lat=41>Thrace</a> asked the people of <a about=https://topostext.org/place/410280UPer class=place long=27.953 lat=40.971>Perinthus</a> for a loan to enable him to raise an army. On their refusing, he begged them at any rate to let him have some of their citizens to garrison certain fortresses, and release for active service the men who were there on duty. They readily complied, thinking thus to obtain control of the fortresses. But <a href=/people/530 target=_blank>Cotys</a> placed in custody the men they sent, and told the citizens that they might have them back when they had sent him the amount of the loan he desired. <br /><a href=/people/1294 target=_blank>Mentor</a> of <a about=https://topostext.org/place/364282IRho class=person long=28.2244 lat=36.4408>Rhodes</a>, after taking <a href=/people/580 target=_blank>Hermias</a> prisoner and seizing his fortresses, left in their various districts the officials appointed by him. By this means he restored their confidence, so that they all took again to themselves the property they had hidden or had sent secretly out of the country. Then <a href=/people/1294 target=_blank>Mentor</a> arrested them and stripped them of all they had.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1351a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1351b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1351b'><b>&sect; 2.1351b</b>&nbsp;&nbsp;<a href=/people/1753 target=_blank>Memnon</a> of <a about=https://topostext.org/place/364282IRho class=person long=28.2244 lat=36.4408>Rhodes</a>, on making himself master of <a about=https://topostext.org/place/403267UPit class=place long=26.6992 lat=40.3467>Lampsacus</a>, found he was in need of funds. He therefore assessed upon the wealthiest inhabitants a quantity of silver, telling them that they should recover it from the other citizens. But when the other citizens made their contributions, <a href=/people/1753 target=_blank>Memnon</a> said they must lend him this money also, fixing a certain date for its repayment. <br />Again being in need of funds, he asked for a contribution, to be recovered, as he said, from the city revenues. The citizens complied, thinking that they would speedily reimburse themselves. But when the revenue payments came in, he declared that he must have these also, and would repay the lenders subsequently with interest. <br />His mercenary troops he requested to forgo six days' pay and rations each year, on the plea that on those days they were neither on garrison duty nor on the march nor did they incur any expense. (He referred to the days omitted from alternate months.) <br />Moreover, being accustomed previously to issue his men's rations of corn on the second day of the month, in the first month he postponed the distribution for three days, and in the second month for five; proceeding in this fashion until at length it took place on the last day of the month. <br /><a href=/people/472 target=_blank>Charidemus</a> of <a about=https://topostext.org/place/389231UOre class=person long=23.096 lat=38.9513>Oreus</a>, being in occupation of certain fortress-towns in <a about=https://topostext.org/place/390271RAio class=place long=27.1 lat=39>Aeolis</a>, and threatened with an attack by <a href=/people/667 target=_blank>Artabazus</a>, was in need of money to pay his troops. After their first contributions, the inhabitants declared they had no more to give. <a href=/people/472 target=_blank>Charidemus</a> then issued a proclamation to the town he deemed wealthiest, bidding the inhabitants send away to another fortress all the coin and valuables they possessed, under convoy which he would provide. He himself openly set the example with his own goods, and prevailed on them to comply. But when he had conducted them a little way out of the town, he made an inventory of their goods, took all he wanted, and led them home again. <br />He had also issued a proclamation in the cities he governed forbidding anyone to keep arms in his house, under pain of a stated fine. At first, however, he took no care to enforce it, nor did he make any inquisition; so that the people treated his proclamation as nugatory, and made no attempt to get rid of what arms each possessed. Then <a href=/people/472 target=_blank>Charidemus</a> unexpectedly ordered a search to be made from house to house, and exacted the penalty from those who were found in possession of arms. <br />A <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a> named <a href=/people/489 target=_blank>Philoxenus</a>, who was governor of <a about=https://topostext.org/place/370287RKar class=person long=28.7 lat=37.01>Caria</a>, being in need of funds proclaimed that he intended to celebrate the festival of <a href=/people/5 target=_blank>Dionysus</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1351b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1352a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1352a'><b>&sect; 2.1352a</b>&nbsp;&nbsp;The wealthiest inhabitants were selected to provide the choruses, and were informed what they were expected to furnish. Noticing their disinclination, <a href=/people/489 target=_blank>Philoxenus</a> sent to them privately and asked what they would give to be relieved of the duty. They told him they were prepared to pay a much larger sum than they expected to spend [on the choruses] in order to avoid the trouble and the interruption of their business. <a href=/people/489 target=_blank>Philoxenus</a> accepted their offers, and proceeded to enrol a second levy. These also paid; and at last he received what he desired from each company. <br />Euaises the Syrian, when governor of <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egypt</a>, received information that the local governors were meditating rebellion. He therefore summoned them to the palace and proceeded to hang them all, sending word to their relations that they were in prison. These accordingly made offers, each on behalf of his own kinsman, seeking by payment to secure their release. Euaises agreed to accept a certain sum for each, and when it had been paid returned to the relations the dead body. <br />While <a href=/people/81 target=_blank>Cleomenes</a> of <a about=https://topostext.org/place/312299PAle class=person long=29.897 lat=31.182>Alexandria</a> was governor of <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egypt</a>, at a time when there was some scarcity in the land, but elsewhere a grievous famine, he forbade the export of grain. On the local governors representing that if there were no export of grain they would be unable to pay in their taxes, he allowed the export, but laid a heavy duty on the corn. By this means he obtained a large amount of duty from a small amount of export, and at the same time deprived the officials of their excuse. <br />When <a href=/people/81 target=_blank>Cleomenes</a> was making a progress by water through the province where the crocodile is worshipped, one of his servants was carried off. Accordingly, summoning the priests, he told them that he intended to retaliate on the crocodiles for this unprovoked aggression; and gave orders for a battue. The priests, to save the credit of their god, collected all the gold they could, and succeeded in putting an end to the pursuit. <br />King <a href=/people/6 target=_blank>Alexander</a> had given <a href=/people/81 target=_blank>Cleomenes</a> command to establish a town near the island of <a about=https://topostext.org/place/312299IPha class=person long=29.8856 lat=31.213>Pharus</a>, and to transfer thither the market hitherto held at <a about=https://topostext.org/place/313300UCan class=place long=30.0772 lat=31.3107>Canopus</a>. Sailing therefore to <a about=https://topostext.org/place/313300UCan class=place long=30.0772 lat=31.3107>Canopus</a> he informed the priests and the men of property there that he was come to remove them. The priests and residents thereupon contributed money to induce him to leave their market where it was. He took what they offered, and departed; but afterwards returned, when all was ready to build the town,</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1352a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1352b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1352b'><b>&sect; 2.1352b</b>&nbsp;&nbsp;and proceeded to demand an excessive sum; which represented, he said, the difference the change of site would make to him. They however declared themselves unable to pay it, and were accordingly removed. <br />On another occasion he sent an agent to make a certain purchase for him. Learning that the agent had made a good bargain, but intended to charge him a high price, he proceeded to inform the man's associates that he had been told he had purchased the goods at an excessive price, and that therefore he did not intend to recognize the transaction; denouncing at the same time with feigned anger the fellow's stupidity. They on hearing this asked him not to believe what was said against the agent until he himself arrived and rendered his account. On the man's arrival, his associates told him what <a href=/people/81 target=_blank>Cleomenes</a> had said. He, desirous of winning their approval as well as that of <a href=/people/81 target=_blank>Cleomenes</a>, debited the latter with the actual price he had given. <br />At a time when the price of grain in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> was ten drachmae [a measure], <a href=/people/81 target=_blank>Cleomenes</a> sent for the growers and asked them at what price they would contract to supply him with their produce. On their quoting a price lower than what they were charging the merchants, he offered them the full price they were accustomed to receive from others; and taking over the entire supply, sold it at a fixed rate of thirty-two drachmae [for the same measure]. <br />He also sent for the priests, and told them that the expenditure on the temples was very unevenly distributed in the country; and that some of these, together with the majority of the attendant priests, must accordingly be suppressed. The priests, supposing him to be in earnest, and wishing each to secure the continuance of his own temple and office, gave him money individually from their private possessions as well as collectively from the temple funds. <br /><a href=/people/8608 target=_blank>Antimenes</a> of <a about=https://topostext.org/place/364282IRho class=person long=28.2244 lat=36.4408>Rhodes</a>, who was appointed by <a href=/people/6 target=_blank>Alexander</a> superintendent of highways in the province of <a about=https://topostext.org/place/325444UBab class=place long=44.421 lat=32.542>Babylon</a>, adopted the following means of raising funds. An ancient law of the country imposed a tax of one-tenth on all imports; but this had fallen into total abeyance. <a href=/people/8608 target=_blank>Antimenes</a> kept a watch for all governors and soldiers whose arrival was expected, and upon the many ambassadors and craftsmen who were invited to the city, but brought with them others who dwelt there unofficially; and also upon the multitude of presents that were brought [to these persons], on which he exacted the legal tax of a tenth. <br />Another expedient was this. He invited the owners of any slaves in the camp to register them at whatever value they desired, undertaking at the same time to pay him eight drachmae a year. If the slave ran away, the owner was to recover the registered value.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1352b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1353a>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1353a'><b>&sect; 2.1353a</b>&nbsp;&nbsp;Many slaves were thus registered, and a large sum of money was paid [in premiums]. And when a slave ran away, <a href=/people/8608 target=_blank>Antimenes</a> instructed the governor of the [province] where the camp lay either to recover the man or to pay his master his value. <br /><a href=/people/2009 target=_blank>Ophellas</a> of <a about=https://topostext.org/place/403234POly class=person long=23.354 lat=40.2963>Olynthus</a> appointed an officer to superintend the revenues of the Province of <a about=https://topostext.org/place/304311UAth class=place long=31.188 lat=30.4704>Athribis</a>. The local governors came to him, and told him they were willing to pay a much larger amount in taxes; but asked him to remove the present superintendent. <a href=/people/2009 target=_blank>Ophellas</a> inquired if they were really able to pay what they promised; and on their assuring him that they were, left the superintendent in office and instructed him to demand from them the amount of tax which they themselves had assessed. And so, without being chargeable either with discountenancing the officer he had appointed, or with taxing the governors beyond their own estimate, he obtained from the latter many times his previous revenue. <br /><a href=/people/1715 target=_blank>Pythocles</a> the <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> recommended his fellow-countrymen that the State should take over from private citizens the lead obtained from the mines of <a about=https://topostext.org/place/377241RLau class=place long=24.05 lat=37.71>Laurium</a> at the price of two drachmae [per talent] which they were asking, and should itself sell it at the fixed price of six drachmae. <br /><a href=/people/406 target=_blank>Chabrias</a> had levied crews for a hundred and twenty ships to serve King Taos. Finding that Taos needed only sixty ships, he gave the crews of the superfluous sixty their choice between providing those who were to serve with two months' rations, and themselves taking their place. Desiring to remain at their business, they gave what he demanded. <br /><a href=/people/8608 target=_blank>Antimenes</a> bade the governors of the provinces replenish, in accordance with the law of the country, the magazines along the royal highways. Whenever an army passed through the country or any other body of men unaccompanied by the king, he sent an officer to sell them the contents of the magazines.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1353a' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2.1353b>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:2.1353b'><b>&sect; 2.1353b</b>&nbsp;&nbsp;<a href=/people/81 target=_blank>Cleomenes</a>, as the beginning of the month approached when his soldiers' allowance became due, deliberately sailed away down the river; and not till the month was advanced did he return and distribute the allowance. For the coming month, he omitted the distribution altogether until the following month began. Thus the men were quieted by the recent distribution, and <a href=/people/81 target=_blank>Cleomenes</a>, passing over a month each year, docked his troops of a month's pay. <br />Stabelbius, king of the <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>, lacking pay to give his troops, summoned a meeting of the officers, and declared that he no longer needed the private soldiers, but only the officers. When he required troops, he would entrust a sum of money to each officer and send him to collect mercenaries; but that meanwhile he preferred to give the officers the pay he would otherwise have to give the men. Accordingly he bade each dismiss the men who were on his own muster-roll. The officers, scenting a source of gain for themselves, dismissed their men, as they were bidden. Shortly afterwards, Stabelbius called them together and informed them that a conductor without his chorus and an officer without his men were alike useless; wherefore let them depart from his country. <br />When <a href=/people/23 target=_blank>Dionysius</a> was making a tour of the temples, wherever he saw a gold or silver table set, he bade them fill a cup in honor of the good spirit, and then had the table carried away. Wherever, again, he saw a precious bowl set before one of the images, he would order its removal, with the words I accept it. He also stripped the images of their golden raiment and garlands, and declaring he would give them lighter and more fragrant wear, arrayed them in robes of white [linen] and garlands of white socks.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:2.1353b' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.1>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:3.1'><b>&sect; 3.1</b>&nbsp;&nbsp;BOOK III <br />A good wife should be the mistress of her home, having under her care all that is within it, according to the rules we have laid down. She should allow none to enter without her husband's knowledge, dreading above all things the gossip of gadding women, which tends to poison the soul. She alone should have knowledge of what happens within, whilst if any harm is wrought by those from without, her husband will bear the blame. She must exercise control of the money spent on such festivities as her husband has approved, keeping, moreover, within the limit set by law upon expenditure, dress, and ornament; and remembering that beauty depends not on costliness of raiment, nor does abundance of gold so conduce to the praise of a woman as self-control in all that she does, and her inclination towards an honorable and well-ordered life. For such adornment of the soul as this is in truth ever a thing to be envied, and a far surer warrant for the payment, to the woman herself in her old age and to her children after her, of the due meed of praise. <br />This, then, is the province over which a woman should be minded to bear an orderly rule; for it seems not fitting that a man should know all that passes within the house. But in all other matters, let it be her aim to obey her husband; giving no heed to public affairs, nor desiring any part in arranging the marriages of her children. Rather, when the time shall come to give or receive in marriage sons or daughters, let her even then hearken to her husband in all respects, and agreeing with him obey his behest; considering that it is less unseemly for him to deal with a matter within the house than it is for her to pry into those outside its walls. Nay, it is fitting that a woman of well-ordered life should consider that her husband's uses are as laws appointed for her own life by divine will, along with the marriage state and the fortune she shares. If she endures them with patience and gentleness, she will rule her home with ease; otherwise, not so easily. Wherefore not only when her husband is in prosperity and good report does it beseem her to be in modest agreement with him, and to render him the service he wills, but also in times of adversity. If, through sickness or fault of judgement, his good fortune fails, then must she show her quality, encouraging him ever with words of cheer and yielding him obedience in all fitting ways; only let her do nothing base or unworthy of herself, or remember any wrong her husband may have done her through distress of mind. Let her refrain from all complaint, nor charge him with the wrong, but rather attribute everything of this kind to sickness or ignorance or accidental errors. For the more sedulous her service herein, the fuller will be his gratitude when he is restored, and freed from his trouble; and if she has failed to obey him when he commanded aught that is amiss, the deeper will be his recognition [of her loyalty] when health returns. Wherefore, whilst careful to avoid such [misplaced obedience], in other respects she will serve him more assiduously than if she had been a bondwoman bought and taken home. For he has indeed bought her with a great price — with partnership in his life and in the procreation of children; than which things nought could be greater or more divine. And besides all this, the wife who had only lived in company with a fortunate husband would not have had the like opportunity to show her true quality. For though there be no small merit in a right and noble use of prosperity, still the right endurance of adversity justly receives an honor greater by far. For only a great soul can live in the midst of trouble and wrong without itself committing any base act. And so, while praying that her husband may be spared adversity, if trouble should come it beseems the wife to consider that here a good woman wins her highest praise. Let her bethink herself how <a href=/people/1166 target=_blank>Alcestis</a> would never have attained such renown nor <a href=/people/264 target=_blank>Penelope</a> have deserved all the high praises bestowed on her had not their husbands known adversity; whereas the troubles of <a href=/people/1035 target=_blank>Admetus</a> and <a href=/people/18 target=_blank>Ulysses</a> have obtained for their wives a reputation that shall never die. For because in time of distress they proved themselves faithful and dutiful to their husbands, the gods have bestowed on them the honor they deserved. To find partners in prosperity is easy enough; but only the best women are ready to share in adversity. For all these reasons it is fitting that a woman should [in time of adversity] pay her husband an honor greater by far, nor feel shame on his account even when, as <a href=/people/143 target=_blank>Orpheus</a> says,“Holy health of soul, and wealth, the child of a brave spirit, companion him no more.”</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:3.1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.2>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:3.2'><b>&sect; 3.2</b>&nbsp;&nbsp;Such then is the pattern of the rules and ways of living which a good wife will observe. And the rules which a good husband will follow in treatment of his wife will be similar; seeing that she has entered his home like a suppliant from without, and is pledged to be the partner of his life and parenthood; and that the offspring she leaves behind her will bear the names of their parents, her name as well as his. And what could be more divine than this, or more desired by a man of sound mind, than to beget by a noble and honored wife children who shall be the most loyal supporters and discreet guardians of their parents in old age, and the preservers of the whole house? Rightly reared by father and mother, children will grow up virtuous, as those who have treated them piously and righteously deserve that they should; but [parents] who observe not these precepts will be losers thereby. For unless parents have given their children an example how to live, the children in their turn will be able to offer a fair and specious excuse [for undutifulness]. Such parents will risk being rejected by their offspring for their evil lives, and thus bringing destruction upon their own heads. <br />Wherefore his wife's training should be the object of a man's unstinting care; that so far as is possible their children may spring from the noblest of stock. For the tiller of the soil spares no pains to sow his seed in the most fertile and best cultivated land, looking thus to obtain the fairest fruits; and to save it from devastation is ready, if such be his lot, to fall in conflict with his foes; a death which men crown with the highest of praise. Seeing, then, that such care is lavished on the body's food, surely every care should be taken on behalf of our own children's mother and nurse, in whom is implanted the seed from which there springs a living soul. For it is only by this means that each mortal, successively produced, participates in immortality; and that petitions and prayers continue to be offered to ancestral gods. So that he who thinks lightly of this would seem also to be slighting the gods. For their sake then, in whose presence he offered sacrifice and led his wife home, promising to honor her far above all others saving his parents, [a man must have care for wife and children]. <br />Now a virtuous wife is best honored when she sees that her husband is faithful to her, and has no preference for another woman; but before all others loves and trusts her and holds her as his own. And so much the more will the woman seek to be what he accounts her. If she perceives that her husband's affection for her is faithful and righteous, she too will be faithful and righteous towards him. Wherefore a man of sound mind ought not to forget what honors are proper to his parents or what fittingly belong to his wife and children; so that rendering to each and all their own, he may obey the law of men and of gods. For the deprivation we feel most of all is that of the special honor which is our due; nor will abundant gifts of what belongs to others be welcome to him who is dispossessed of his own. Now to a wife nothing is of more value, nothing more rightfully her own, than honored and faithful partnership with her husband. Wherefore it befits not a man of sound mind to bestow his person promiscuously, or have random intercourse with women; for otherwise the base-born will share in the rights of his lawful children, and his wife will be robbed of her honor due, and shame be attached to his sons.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:3.2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.3>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:3.3'><b>&sect; 3.3</b>&nbsp;&nbsp;To all these matters, therefore, a man should give heed. And it is fitting that he should approach his wife in honorable wise, full of self-restraint and awe; and in his conversation with her, should use only the words of a right-minded man, suggesting only such acts as are themselves lawful and honorable; treating her with much self-restraint and trust, and passing over any trivial or unintentional errors she has committed. And if through ignorance she has done wrong, he should advise her of it without threatening, in a courteous and modest manner. Indifference [to her faults] and harsh reproof [of them], he must alike avoid. Between a courtesan and her lover, such tempers are allowed their course; between a free woman and her lawful spouse there should be a reverent and modest mingling of love and fear. For of fear there are two kinds. The fear which virtuous and honorable sons feel towards their fathers, and loyal citizens towards right-minded rulers, has for its companions reverence and modesty; but the other kind, felt by slaves for masters and by subjects for despots who treat them with injustice and wrong, is associated with hostility and hatred. <br />By choosing the better of all these alternatives a husband should secure the agreement, loyalty, and devotion of his wife, so that whether he himself is present or not, there may be no difference in her attitude towards him, since she realizes that they are alike guardians of the common interests; and so when he is away she may feel that to her no man is kinder or more virtuous or more truly hers than her own husband.And [a good wife] will make this manifest from the beginning by her unfailing regard for the common welfare, novice though she be in such matters. And if the husband learns first to master himself, he will thereby become his wife's best guide in all the affairs of life, and will teach her to follow his example. For <a href=/people/9 target=_blank>Homer</a> pays no honor either to affection or to fear apart from the shame or modesty that shrinks from evil. Everywhere he bids affection be coupled with self-control and shame; whilst the fear he commends is such as <a href=/people/69 target=_blank>Helen</a> owns when she thus addresses <a href=/people/64 target=_blank>Priam</a>: Beloved sire of my lord, it is fitting that I fear thee and dread thee and revere; meaning that her love for him is mingled with fear and modest shame. And again, <a href=/people/18 target=_blank>Ulysses</a> speaks to <a href=/people/1410 target=_blank>Nausicaa</a> in this manner: Thou, lady, dost fill me with wonder and with fear. For <a href=/people/9 target=_blank>Homer</a> believes that this is the feeling of a [good] husband and wife for one another, and that if they so feel, it will be well with them both. For none ever loves or admires or fears in this shamefaced way one of baser character; but such are the feelings towards one another of nobler souls and those by nature good; or of the inferior toward those they know to be their betters. Feeling thus toward <a href=/people/264 target=_blank>Penelope</a>, <a href=/people/18 target=_blank>Ulysses</a> remained faithful to her in his wanderings; whereas <a href=/people/47 target=_blank>Agamemnon</a> did wrong to his wife for the sake of <a href=/people/12237 target=_blank>Chryseis</a>declaring in open assembly that a base captive woman, and of alien race besides, was in no wise inferior to <a href=/people/595 target=_blank>Clytemnestra</a> in womanly excellence. This was ill spoken of the mother of his children; nor was his connection with the other a righteous one. How could it be, when he had but recently compelled her to be his concubine, and before he had any experience of her behavior to him? <a href=/people/18 target=_blank>Ulysses</a> on the other hand, when the daughter of <a href=/people/190 target=_blank>Atlas</a> besought him to share her bed and board, and promised him immortality and everlasting happiness, could not bring himself even for the sake of immortality to betray the kindness and love and loyalty of his wife, deeming immortality purchased by unrighteousness to be the worst of all punishments. For it was only to save his comrades that he yielded his person to <a href=/people/245 target=_blank>Circe</a>; and in answer to her he even declared that in his eyes nothing could be more lovely than his native isle, rugged though it were; and prayed that he might die, if only he might look upon his mortal wife and son. So firmly did he keep troth with his wife; and received in return from her the like loyalty.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:3.3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.4>
+                            <p id='urn:cts:greekLit:tlg0086.tlg029:3.4'><b>&sect; 3.4</b>&nbsp;&nbsp;Once again, in the words addressed by <a href=/people/18 target=_blank>Ulysses</a> to <a href=/people/1410 target=_blank>Nausicaa</a> the poet makes clear the great honor in which he holds the virtuous companionship of man and wife in marriage. There he prays the gods to grant her a husband and a home; and between herself and her husband, precious unity of mind; provided that such unity be for righteous ends. For, says he, there is no greater blessing on earth than when husband and wife rule their home in harmony of mind and will. Moreover it is evident from this that the unity which the poet commends is no mutual subservience in each other's vices, but one that is rightfully allied with wisdom and understanding; for this is the meaning of the words rule the house in [harmony of] mind. And he goes on to say that wherever such a love is found between man and wife, it is a cause of sore distress to those who hate them and of delight to those that love them; while the truth of his words is most of all acknowledged by the happy pair. For when wife and husband are agreed about the best things in life, of necessity the friends of each will also be mutually agreed; and the strength which the pair gain from their unity will make them formidable to their enemies and helpful to their own. But when discord reigns between them, their friends too will disagree and become in consequence enfeebled, while the pair themselves will suffer most of all. <br />In all these precepts it is clear that the poet is teaching husband and wife to dissuade one another from whatever is evil and dishonorable, while unselfishly furthering to the best of their power one another's honorable and righteous aims. In the first place they will strive to perform all duty towards their parents, the husband towards those of his wife no less than towards his own, and she in her turn towards his. Their next duties are towards their children, their friends, their estate, and their entire household which they will treat as a common possession; each vying with the other in the effort to contribute most to the common welfare, and to excel in virtue and righteousness; laying aside arrogance, and ruling with justice in a kindly and unassuming spirit. And so at length, when they reach old age, and are freed from the duty of providing for others and from preoccupation with the pleasures and desires of youth, they will be able to give answer also to their children, if question arise whether child or parent has contributed more good things to the common household store; and will be well assured that whatsoever of evil has befallen them is due to fortune, and whatsoever of good, to their own virtue. One who comes victorious through such question wins from heaven, as <a href=/people/166 target=_blank>Pindar</a> says, his chiefest reward; for hope, and a soul filled with fair thoughts are supreme in the manifold mind of mortals; and next, from his children the good fortune of being sustained by them in his old age. And therefore it behoves us to preserve throughout our lives a righteous attitude towards all gods and mortal men, to each individually, and to all in common; and not least towards our own wives and children and parents.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0086.tlg029.perseus-grc1:3.4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=731', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas731";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=731';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

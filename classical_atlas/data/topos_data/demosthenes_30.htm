@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Demosthenes 30, Against Onetor 1' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Against Onetor 1, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-350' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -350' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/430' content='urn:cts:greekLit:tlg0014.tlg030' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063465' content='Demosthenes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88615458' content='Augustus Taber Murray (1866-1940)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>Demosthenes 30, Against Onetor 1</h2>Against Onetor 1, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License. This text mentions one ancient place.<br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg030'>urn:cts:greekLit:tlg0014.tlg030</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q30916234'>Q30916234</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:1'><b>&sect; 1</b>&nbsp;&nbsp;I should have been most glad, men of the jury, had the difference which I have had with <a href=/people/500 target=_blank>Aphobus</a>, and also that in which I am now involved with this man <a href=/people/12177 target=_blank>Onetor</a>, his brother-in-law, not come about. Accordingly, I made to them both many fair offers, but I have been unable to secure any reasonable action from either of them. On the contrary, I have found this man far harder to deal with, and more worthy of punishment than the other. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:2'><b>&sect; 2</b>&nbsp;&nbsp;In the case of <a href=/people/500 target=_blank>Aphobus</a>, I held that his controversy with me should be settled among our friends, and not come to trial before you, but I could not persuade him. But this man, when I bade him act as judge in his own case, that he might not risk a trial before you, treated me with such contempt, that not only did he not think fit to give me a hearing, but I was even in the most outrageous manner driven off the land, which belonged to <a href=/people/500 target=_blank>Aphobus</a>, when he lost his suit to me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:3'><b>&sect; 3</b>&nbsp;&nbsp;Since, therefore, he joins with his brother-in-law in seeking to deprive me of what is mine, and has come before you, trusting in the measures he has concocted, there is no other course open to me than to try in your court to get justice from him. I know well, men of the jury, that I have to contend against arguments craftily prepared, and against witnesses who are going to give false testimony; nevertheless I think that I shall have such an advantage over him because of the justice of my cause, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:4'><b>&sect; 4</b>&nbsp;&nbsp;that, even if any one of you heretofore thought him an honest man, he will learn from the defendant's acts toward me that even in time past he has been, without your knowing it, the basest and most unrighteous of men. I shall show, namely, that he has not only never paid the marriage-portion, to secure which he alleges that the land has been mortgaged, but from the very start has schemed to defraud me of my rights; that, further, the lady, on whose behalf he drove me from the land in question, has not been divorced at all; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:5'><b>&sect; 5</b>&nbsp;&nbsp;and that he is now screening <a href=/people/500 target=_blank>Aphobus</a>, and standing this trial with the purpose of depriving me of what is mine. This I shall show by such strong and manifest proofs, that you will see how just and proper it is that I have instituted this action against him. I shall commence with matters which will best enable you to grasp the facts of the case. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:6'><b>&sect; 6</b>&nbsp;&nbsp;In common with many others of the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, men of the jury, this man was well aware that my guardians were proving false to their trust. Indeed, it became clear very early that I was being wronged, so many were the discussions and arguments regarding my affairs held before the archon and before other officials. For the value of the property left me was well known, and it was pretty clear that the administrators were leaving it unlet in order that they might have the use of the money themselves. There was not a single one, therefore, among those who realized what was going on, who did not expect that I should obtain a judgement for damages from these men, as soon as I should attain my majority. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:7'><b>&sect; 7</b>&nbsp;&nbsp;Among those who from first to last held this opinion were <a href=/people/250 target=_blank>Timocrates</a> and <a href=/people/12177 target=_blank>Onetor</a>. Of this I can give you the strongest of proofs. For the defendant wished to give his sister in marriage to <a href=/people/500 target=_blank>Aphobus</a>, seeing that he had got into his hands his own patrimony and mine (which was not inconsiderable) as well; but he had not confidence enough in him to abandon her marriage-portion. It was as if he felt, forsooth, that the property of guardians was a security for their wards. He did, however, give him his sister, but the portion, <a href=/people/250 target=_blank>Timocrates</a>, who had been her former husband, agreed to keep as a loan with interest at the rate of five obols. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:8'><b>&sect; 8</b>&nbsp;&nbsp;When I had won my suit against <a href=/people/500 target=_blank>Aphobus</a> in the matter of the guardianship and he still refused to make any just settlement, <a href=/people/12177 target=_blank>Onetor</a> did not even try to settle our dispute, but, alleging that his sister had been divorced, and that he was unable to get back her marriage-portion, which he had paid (although he had not paid it, and it was even then in his possession), declared that he had taken a mortgage on the land, and had the effrontery to expel me from it; such was his contempt for me, and for you, and for the laws which were in force. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:9'><b>&sect; 9</b>&nbsp;&nbsp;These, men of the jury, are the facts because of which he is defendant in the present suit, and regarding which you are to cast your vote. I shall bring forward witnesses, and in the first instance <a href=/people/250 target=_blank>Timocrates</a> himself, who will testify that he agreed to hold the dowry as a loan, and that he continued to pay interest on it to <a href=/people/500 target=_blank>Aphobus</a> according to the agreement; also that <a href=/people/500 target=_blank>Aphobus</a> himself acknowledged that he received the interest from <a href=/people/250 target=_blank>Timocrates</a>. Take the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:10'><b>&sect; 10</b>&nbsp;&nbsp;From the very first, you see, it is admitted that the dowry was not paid to <a href=/people/500 target=_blank>Aphobus</a>, and that he did not get it under his control. And it seems very probable that on account of the facts which I have mentioned, they chose to continue as debtors for the dowry, rather than to have it involved in the estate of <a href=/people/500 target=_blank>Aphobus</a> which was sure to be so seriously endangered. For it is impossible for them to claim that poverty prevented their paying it over at once, since <a href=/people/250 target=_blank>Timocrates</a> has an estate of more than ten talents, and <a href=/people/12177 target=_blank>Onetor</a> one of more than thirty; so this cannot have been the reason why they have not made an immediate payment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:11'><b>&sect; 11</b>&nbsp;&nbsp;Nor can they claim that they had property indeed, but no ready money, or that the lady was a widow, and that they therefore hastened to conclude matters without at once paying her portion. For these men are in the habit of lending considerable sums to others, and moreover, the lady was not a widow, but when they gave her in marriage, it was from the house of <a href=/people/250 target=_blank>Timocrates</a>, where she was living with him as his wife; so that there is no reasonable ground why one should accept this excuse either. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:12'><b>&sect; 12</b>&nbsp;&nbsp;Further, men of the jury, I think you would all agree to this, that, in arranging a matter of this sort, anyone would choose to borrow money of another, rather than fail to pay the dowry to his sister's husband. For if a man does not settle this matter he becomes a debtor, regarding whom it is uncertain whether he will meet his just obligations or not; but if together with the lady he gives also what is hers, he becomes a kinsman and a brother-in-law, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:13'><b>&sect; 13</b>&nbsp;&nbsp;for he is not under any suspicion, since he has done all that justice demanded. Seeing that the matter stands thus, and that they were not forced by a single one of the causes which I have mentioned to let this debt stand, and could not have desired to do so, it is not possible to suggest any other excuse for non-payment. It must be for the reason which I have mentioned — that they did not trust <a href=/people/500 target=_blank>Aphobus</a> enough to pay him the dowry. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:14'><b>&sect; 14</b>&nbsp;&nbsp;I have established this point, then, in this way beyond all controversy; and I think I shall easily demonstrate from the facts themselves that they did not pay the portion subsequently either; so that it will be clear to you that even if they withheld the money, not for the reasons I have mentioned, but with the intention of speedy payment, they would never actually have paid it, or let it slip out of their hands; with such urgency did the case press upon them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:15'><b>&sect; 15</b>&nbsp;&nbsp;There was an interval of two years between the marriage of the woman and their declaration that the divorce had taken place. She was married in the archonship of <a href=/people/2012 target=_blank>Polyzelus</a>, in the month of <a href=/people/5962 target=_blank>Scirophorion</a>, and the divorce was registered in the month of <a href=/people/25 target=_blank>Poseidon</a>, in the archonship of <a href=/people/250 target=_blank>Timocrates</a>. I, on my part, was admitted to citizenship immediately after the marriage, laid my charges, and demanded an accounting; and, finding that I was being robbed of all my property, instituted my suit under the last-mentioned archon. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:16'><b>&sect; 16</b>&nbsp;&nbsp;The shortness of the time makes the continuance of the debt in accordance with the agreement not unlikely, but it is incredible that it should have been paid. For do you suppose that the defendant here, a man who at the first chose to owe the money and to pay interest on it, in order that his sister's dowry might not be jeopardized along with the rest of her husband's property, would have paid it when suit had already been instituted against that husband? Why, even if he had at the first trusted him with the money, he would then at once have sought to recover it. No, men of the jury; the supposition is, I presume, impossible. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:17'><b>&sect; 17</b>&nbsp;&nbsp;To prove that the woman married at the time I mention; that in the interim <a href=/people/500 target=_blank>Aphobus</a> and I had already gone to law; and that those men did not register the divorce with the archon until after I had instituted my suit, take, please, these depositions regarding each point. Depositions After this archon came <a href=/people/619 target=_blank>Cephisodorus</a> and then <a href=/people/3797 target=_blank>Chion</a>. During their term of office, having been admitted to citizenship, I continued to press my charges, and in the archonship of <a href=/people/250 target=_blank>Timocrates</a> I began my suit. Take this deposition, please. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:18'><b>&sect; 18</b>&nbsp;&nbsp;Read also this deposition. Deposition It is clear, then, from the evidence adduced that it is not because they have paid the dowry, but because they wish to save his property for <a href=/people/500 target=_blank>Aphobus</a>, that they have had the audacity to act as they have done. For when in so short a time they allege that they owed the money; that they paid it; that the woman was divorced and could not recover the dowry; and that they took a mortgage on the land; how can it be other than clear that they are acting in collusion in their attempt to defraud me of the damages awarded me by you? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:19'><b>&sect; 19</b>&nbsp;&nbsp;I shall now endeavor to prove to you from the answers given by the defendant himself, and by <a href=/people/250 target=_blank>Timocrates</a>, and <a href=/people/500 target=_blank>Aphobus</a>, that it is impossible that the dowry should have been paid. For, men of the jury, I questioned each of these men in the presence of many witnesses. I asked <a href=/people/12177 target=_blank>Onetor</a> and <a href=/people/250 target=_blank>Timocrates</a> whether any witnesses were present when they paid the dowry, and <a href=/people/500 target=_blank>Aphobus</a> himself whether any were present when he received it; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:20'><b>&sect; 20</b>&nbsp;&nbsp;and they all answered severally that no witness was present, but that <a href=/people/500 target=_blank>Aphobus</a> got it from them by instalments, in such sums as he needed from time to time. And yet can any one of you believe this, that, when the dowry was a talent, <a href=/people/12177 target=_blank>Onetor</a> and <a href=/people/250 target=_blank>Timocrates</a> put so large a sum into the hands of <a href=/people/500 target=_blank>Aphobus</a> without witnesses? Why, in paying him money, I will not say in this manner, but even in the presence of many witnesses, one would have taken every possible precaution in order, if a dispute should arise, to be able readily to recover in your court what was due. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:21'><b>&sect; 21</b>&nbsp;&nbsp;No man, in concluding a transaction of such importance, I will not say with such a man as <a href=/people/500 target=_blank>Aphobus</a>, but with anybody whatever, would have acted without a witness. This is the reason why we celebrate marriage-feasts and call together our closest friends and relations, because we are dealing with no light affair, but are entrusting to the care of others the lives of our sisters and daughters, for whom we seek the greatest possible security. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:22'><b>&sect; 22</b>&nbsp;&nbsp;The presumption is, then, that the defendant made the settlement in the presence of the same witnesses before whom he had admitted the indebtedness and promised to pay the interest, if he really did pay the dowry to <a href=/people/500 target=_blank>Aphobus</a>. For, if he had acted in this way, he would have cleared himself of the whole matter; but by paying him when they were alone, he would have left those in whose presence he had made the agreement as witnesses that he was still a debtor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:23'><b>&sect; 23</b>&nbsp;&nbsp;As it was, they could not induce their friends, who were more honest men than themselves, to bear witness to the payment of the money, and they thought that, if they produced other witnesses, not related to them, you would not believe them. Again, if they said the payment had been made all at once, they knew that we should demand for examination by torture the slaves who had brought the money. These, if the payment had not been made, they would have refused to give up, and so they would have been convicted of fraud. But if they maintained that they had paid the money without witnesses in the manner alleged, they thought to escape detection. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:24'><b>&sect; 24</b>&nbsp;&nbsp;For this reason they were driven through stress of necessity to make up this false story. By such tricks and pieces of villainy, while hoping themselves to pass for simple folk, they think they will easily deceive you; whereas in the slightest matter affecting their interest they acted, not with simplicity, but with every possible precaution. Take now the depositions of the persons in whose presence they gave their answers, and read them to the jury. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:25'><b>&sect; 25</b>&nbsp;&nbsp;Now, men of the jury, I shall prove to you that the woman made a merely nominal divorce, but was in reality living with <a href=/people/500 target=_blank>Aphobus</a> as his wife. I think that, if you are thoroughly convinced of this, you will be more inclined to distrust these men, and to give me the aid that is my due. Of some of the facts I shall produce witnesses: others I shall establish by strong presumptions and by adequate proofs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:26'><b>&sect; 26</b>&nbsp;&nbsp;When I saw, men of the jury, that after the woman's divorce had been registered with the archon, and after the defendant's declaration that he had taken a mortgage on the farm to secure her marriage-portion, <a href=/people/500 target=_blank>Aphobus</a> continued to hold and till the land just as before, and to dwell with his wife, I knew well that all this was fiction and a pretence to cover up the facts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:27'><b>&sect; 27</b>&nbsp;&nbsp;And wishing to make this clear to you all, I deemed it right to convict him in the presence of witnesses, in case he should deny that matters are as I have stated; and I offered to him for torture a slave who knew well all the facts — one whom I had taken from among those of <a href=/people/500 target=_blank>Aphobus</a>, since he had not paid the damages within the time fixed by law. When I made this demand, <a href=/people/12177 target=_blank>Onetor</a> declined to put the slave to torture as to the question of his sister's living with <a href=/people/500 target=_blank>Aphobus</a>; and, as to <a href=/people/500 target=_blank>Aphobus</a>'s tilling the land, the fact was too plain to be denied, so he confessed it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:28'><b>&sect; 28</b>&nbsp;&nbsp;Nor are these the only proofs which make it easy to see that <a href=/people/500 target=_blank>Aphobus</a> continued to live with his wife and to possess the land up to the time when the suit was begun; it is plain also from the way in which he dealt with the land after judgement was given against him. For, as though the property had not been mortgaged, but was to belong to me according to the court's decision, he made off with everything that could be carried away — the produce, and all the farm implements, except the storage-tanks. What he could not take away he necessarily left behind, so that <a href=/people/12177 target=_blank>Onetor</a> was now at liberty to lay claim merely to the bare land. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:29'><b>&sect; 29</b>&nbsp;&nbsp;It is an outrage, though, that one of them should say that the land was mortgaged to him, while the mortgagor is to be seen cultivating it; that he should claim that his sister has left her husband, when he is shown to have refused to accept the test by torture regarding this very point; and that the one who is not living with his wife (as <a href=/people/12177 target=_blank>Onetor</a> claims) should carry off all the produce and implements from the farm, while the man acting as guardian for the divorced woman, to secure whose portion he claims to have taken a mortgage on the land, plainly shows no anger at a single one of these acts, but takes everything quietly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:30'><b>&sect; 30</b>&nbsp;&nbsp;Is the whole thing not absolutely clear? Is it not confessedly a scheme to protect <a href=/people/500 target=_blank>Aphobus</a>? One certainly would so declare, if he duly considered each one of the facts. Now, to prove that the defendant acknowledged that <a href=/people/500 target=_blank>Aphobus</a> farmed the land up to the time of the commencement of my action against him; that he refused the inquiry by torture as to his sister's continuing to live with <a href=/people/500 target=_blank>Aphobus</a>; and that the farm was stripped after the court's decision of everything save what was attached to the soil; take these depositions, and read them. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:31'><b>&sect; 31</b>&nbsp;&nbsp;Although I have so many proofs ready to hand it is <a href=/people/12177 target=_blank>Onetor</a> himself who most convincingly showed that the divorce was not a genuine one. He, who should have felt outraged, when, after paying the dowry, as he claims, he got back, not the money, but a farm whose title was under dispute, — this very man, as though he had had no quarrel, and were in no way being wronged, but as though he were on the most intimate terms possible with <a href=/people/500 target=_blank>Aphobus</a>, pleaded for the latter in the suit which I brought against him! As for myself, though I had done him no conceivable injury, he leagued with <a href=/people/500 target=_blank>Aphobus</a>, and sought by every means in his power to join in robbing me of my patrimony, while for <a href=/people/500 target=_blank>Aphobus</a>, whom he should have regarded as a stranger, if there is any truth in their present story, he sought to acquire possession of my property in addition to what he already had. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:32'><b>&sect; 32</b>&nbsp;&nbsp;Nor was it only at the trial that he acted thus, but after judgement had been rendered against <a href=/people/500 target=_blank>Aphobus</a>, he got up before the court and begged the jurymen, beseeching and imploring them on behalf of <a href=/people/500 target=_blank>Aphobus</a> with tears in his eyes, to fix the damages at a talent, and offered himself as surety for this amount. These facts are admitted on all hands. Those who were then serving on the jury in the courtroom and many of the bystanders know them well. Nevertheless I will produce witnesses. Take, and read this deposition. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:33'><b>&sect; 33</b>&nbsp;&nbsp;Besides all this, men of the jury, there is strong evidence from which it is easy to see that the woman in reality continued to live with <a href=/people/500 target=_blank>Aphobus</a> and even up to the present day has not separated from him. In fact, this woman, before she came to <a href=/people/500 target=_blank>Aphobus</a>, was not unwedded for one single day, but left her living husband, <a href=/people/250 target=_blank>Timocrates</a>, to come and live with <a href=/people/500 target=_blank>Aphobus</a>; and now during the space of three years she has manifestly married no one else. Can anyone believe that she then went directly from husband to husband, in order to avoid living as a widow, but that now, supposing she has really left her husband, she would have endured to remain a widow for so long when she might have married someone else, seeing that her brother possessed so large a fortune, and she herself was so young? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:34'><b>&sect; 34</b>&nbsp;&nbsp;There is no truth in it, men of the jury; you cannot believe it. It is a pure fiction. No; the woman is living openly with <a href=/people/500 target=_blank>Aphobus</a>, and makes no secret of the matter. I shall bring before you the evidence of <a href=/people/5166 target=_blank>Pasiphon</a>, who cared for her when she was ill, and who saw <a href=/people/500 target=_blank>Aphobus</a> sitting by her side in this very year, when my suit against the defendant had already been instituted. Take <a href=/people/5166 target=_blank>Pasiphon</a>'s deposition. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:35'><b>&sect; 35</b>&nbsp;&nbsp;I knew, men of the jury, that the defendant, immediately on the conclusion of the suit, had received the goods from the house of <a href=/people/500 target=_blank>Aphobus</a>, and had come into control of his property and all my estate as well, and I knew, further, that beyond all doubt the woman was living with <a href=/people/500 target=_blank>Aphobus</a>. I therefore demanded of <a href=/people/12177 target=_blank>Onetor</a> three female slaves, who knew that the woman was living with <a href=/people/500 target=_blank>Aphobus</a> and that the effects were in the hands of these men, in order that we might not have mere statements but that the matters might be established by proof from the torture. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:36'><b>&sect; 36</b>&nbsp;&nbsp;But <a href=/people/12177 target=_blank>Onetor</a>, when I made this challenge to him, and all those present declared that my proposal was just, refused to have recourse to this certain test, but, as though there were other and surer proofs regarding such matters than torture and testimony, he produced no witnesses to prove that he had paid the dowry, nor would he give up for torture the female slaves who knew the fact, to prove that his sister was not living with <a href=/people/500 target=_blank>Aphobus</a>; and, because I made this demand of him, he in an outrageous and insulting manner refused to let me talk to him. Could there be a man more impossible to deal with than he, or more ready to pretend ignorance of what is right? Take the challenge itself and read it. Challenge </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:37'><b>&sect; 37</b>&nbsp;&nbsp;You on your part hold that in both private and public matters the torture is the most certain of all methods of proof, and when slaves and freemen are both available, and the truth of a matter is to be sought out, you make no use of the testimony of the freemen, but seek to ascertain the truth by torturing the slaves; and very properly, men of the jury. For of witnesses who have given testimony there have been some ere now who have been thought not to tell the truth; but of slaves put to the torture no one has ever been convicted of giving false testimony. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:38'><b>&sect; 38</b>&nbsp;&nbsp;Yet <a href=/people/12177 target=_blank>Onetor</a>, after refusing a test so fair, and rejecting proofs so clear and so convincing, will produce <a href=/people/500 target=_blank>Aphobus</a> and <a href=/people/250 target=_blank>Timocrates</a> as witnesses, the one that he has paid the dowry, and the other that he has received it, and will demand that you believe him, when he pretends that his transactions with them were without witnesses. For such simpletons does he take you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0014.tlg030:39'><b>&sect; 39</b>&nbsp;&nbsp;But that their words are neither true nor like the truth I think I have — by the fact that at the first they confessed that they had not paid the dowry, that again they pretended to have paid it without witnesses, that the dates do not admit of their having paid the money, seeing that the property was already in litigation, and finally by all the other evidences adduced I have, as I think, conclusively proved. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg030.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=430', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas430";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=430';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

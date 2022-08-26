@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Scriptores Historia Augusta, Antoninus Heliogobalus' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Scriptores Historia Augusta, The Life of Antoninus Heliogobalus, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Latin literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='360' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 360' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/599' content='urn:cts:latinLit:phi2331.phi017' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/nr97032332' content='Scriptores Historia Augusta'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/nr97032340' content='David Magie (1877-1960)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Historia_Augusta/home.html' /><h2>Scriptores Historia Augusta, Antoninus Heliogobalus</h2>Scriptores Historia Augusta, The Life of Antoninus Heliogobalus, translated by David Magie (1877-1960), Loeb edition of 1921, a text in the public domain, nobly digitized by E. Thayer at LacusCurtius. This text has 46 tagged references to 25 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:latinLit:phi2331.phi017'>urn:cts:latinLit:phi2331.phi017</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87775487'>Q87775487</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:latinLit:phi2331.phi017.perseus-lat1' target='_blank'>[Open Latin text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:latinLit:phi2331.phi017:1'><b>&sect; 1</b>&nbsp;&nbsp;The Life of <a href=/people/11040 target=_blank>Elagabalus</a><br />The life of <a href=/people/11040 target=_blank>Elagabalus</a> <a href=/people/508 target=_blank>Antoninus</a>, also called <a href=/people/2267 target=_blank>Varius</a>, I should never have put in writing — hoping that it might not be known that he was emperor of the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> — , were it not that before him this same imperial office had had a <a href=/people/1618 target=_blank>Caligula</a>, a <a href=/people/66 target=_blank>Nero</a>, and a <a href=/people/690 target=_blank>Vitellius</a>. 2 But, just as the selfsame earth bears not only poisons but also grain and other helpful things, not only <a href=/people/55 target=_blank>serpents</a> but flocks as well, so the thoughtful reader may find himself some consolation for these monstrous tyrants by reading of Augustus, <a href=/people/207 target=_blank>Trajan</a>, <a href=/people/492 target=_blank>Vespasian</a>, <a href=/people/1020 target=_blank>Hadrian</a>, <a href=/people/1456 target=_blank>Pius</a>, <a href=/people/3477 target=_blank>Titus</a>, and Marcus. 3 At the same time he will learn of the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a>' discernment, in that these last ruled long and died by natural deaths, whereas the former were murdered, dragged through the streets, officially called tyrants, and no man wishes to mention even their names. <br />4 Now when <a href=/people/3419 target=_blank>Macrinus</a> had been slain and also his son <a href=/people/11050 target=_blank>Diadumenianus</a>, who had been given an equal share of the power and also the name <a href=/people/508 target=_blank>Antoninus</a>, the imperial office was bestowed upon <a href=/people/2267 target=_blank>Varius</a> <a href=/people/11040 target=_blank>Elagabalus</a>, solely because he was reputed to be the son of <a href=/people/11048 target=_blank>Bassianus</a>. 5 As a matter of fact, he was the priest of <a href=/people/11040 target=_blank>Elagabalus</a> (sometimes called <a href=/people/1 target=_blank>Jupiter</a>, or the <a href=/people/180 target=_blank>Sun</a>), and had merely assumed the name <a href=/people/508 target=_blank>Antoninus</a> in order to prove his descent or else because he had learned that this name was so dear to mankind that for its sake even the parricide <a href=/people/11048 target=_blank>Bassianus</a> had been greatly beloved. 6 Originally, he had the name <a href=/people/2267 target=_blank>Varius</a>, but later he was called <a href=/people/11040 target=_blank>Elagabalus</a> because he was priest of this god — whom he afterwards brought with him from <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, founding a temple for him on the site of an earlier shrine of <a href=/people/1891 target=_blank>Orcus</a>. 7 Finally, when he received the imperial power, he took the name <a href=/people/508 target=_blank>Antoninus</a> and was the last of the Antonines to rule the Roman Empire. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#1 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:latinLit:phi2331.phi017:2'><b>&sect; 2</b>&nbsp;&nbsp;He was wholly under the control of his mother Symiamira, so much so, in fact, that he did no public business without her consent, although she lived like a harlot and practised all manner of lewdness in the palace. For that matter, her amour with <a href=/people/508 target=_blank>Antoninus</a> <a href=/people/4913 target=_blank>Caracalla</a> was so notorious that <a href=/people/2267 target=_blank>Varius</a>, or rather <a href=/people/11040 target=_blank>Elagabalus</a>, was commonly supposed to be his son. The name <a href=/people/2267 target=_blank>Varius</a>, some say, was given him by his school-fellows because he seemed to be sprung from the seed of various men, as would be the case with the son of a harlot. 3 And then, when his reputed father <a href=/people/508 target=_blank>Antoninus</a> was slain by <a href=/people/3419 target=_blank>Macrinus</a>' treachery, he sought refuge in the temple of <a href=/people/11040 target=_blank>Elagabalus</a> the god, as in a sanctuary, for fear that <a href=/people/3419 target=_blank>Macrinus</a> would kill him; for <a href=/people/3419 target=_blank>Macrinus</a> and his wasteful and brutal son were wielding the imperial power with the greatest cruelty. 4 But enough concerning his name — though he defiled this venerated name of the Antonines, which you, Most Sacred <a href=/people/136 target=_blank>Constantine</a>, so revere that you have had portrayed in gold both Marcus and <a href=/people/1456 target=_blank>Pius</a> together with the Constantii and the <a href=/people/4932 target=_blank>Claudii</a>, as though they too were your ancestors, just as you have adopted the virtues of the ancients which are naturally suited to your own character, and pleasing and dear to you as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#2 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:latinLit:phi2331.phi017:3'><b>&sect; 3</b>&nbsp;&nbsp;But now let us return to <a href=/people/2267 target=_blank>Varius</a> <a href=/people/508 target=_blank>Antoninus</a>. After obtaining the imperial power he despatched couriers to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and there all classes were filled with enthusiasm, and a great desire for him was aroused in the whole people merely at the mention of the name <a href=/people/508 target=_blank>Antoninus</a>, now restored, as it seemed, not in an empty title (as it had been in the case of <a href=/people/11050 target=_blank>Diadumenianus</a>), but actually in one of the blood — for he had signed himself son of <a href=/people/508 target=_blank>Antoninus</a> <a href=/people/11048 target=_blank>Bassianus</a>. 2 He had the prestige, furthermore, which usually comes to a new ruler who has succeeded a tyrant; this is permanent only when the highest virtues are present and has been lost by many a mediocre emperor. <br />3 In short, when <a href=/people/11040 target=_blank>Elagabalus</a>' message was read in the senate, at once good wishes were uttered for <a href=/people/508 target=_blank>Antoninus</a> and curses on <a href=/people/3419 target=_blank>Macrinus</a> and his son, and, in accordance with the general wish and the eager belief of all in his paternity, <a href=/people/508 target=_blank>Antoninus</a> was hailed as emperor. Such are the pious hopes of men, who are quick to believe when they wish the thing to come true which their hearts desire. <br />4 As soon as he entered the city, however, neglecting all the affairs of the provinces, he established <a href=/people/11040 target=_blank>Elagabalus</a> as a god on the <a about=https://topostext.org/place/419125LPal class=place long=12.4884 lat=41.8896>Palatine</a> Hill close to the imperial palace; and he built him a temple, to which he desired to transfer the emblem of the <a href=/people/2057 target=_blank>Great Mother</a>, the fire of <a href=/people/325 target=_blank>Vesta</a>, the <a about=https://topostext.org/place/380237BPal class=place long=23.69 lat=37.94>Palladium</a>, the shields of the Salii, and all that the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> held sacred, purposing that no god might be worshipped at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> save only <a href=/people/11040 target=_blank>Elagabalus</a>. 5 He declared, furthermore, that the religions of the <a href=/people/7828 target=_blank>Jews</a> and the <a about=https://topostext.org/place/322351USeb class=ethnic long=35.1904 lat=32.2765>Samaritans</a> and the rites of the <a href=/people/455 target=_blank>Christians</a> must also be transferred to this place, in order that the priesthood of <a href=/people/11040 target=_blank>Elagabalus</a> might include the mysteries of every form of worship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#3 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:latinLit:phi2331.phi017:4'><b>&sect; 4</b>&nbsp;&nbsp;Then, when he held his first audience with the senate, he gave orders that his mother should be asked to come into the senate-chamber. 2 On her arrival she was invited to a place on the consuls' bench and there she took part in the drafting — that is to say, she witnessed the drawing up of the senate's decree. And <a href=/people/11040 target=_blank>Elagabalus</a> was the only one of all the emperors under whom a woman attended the senate like a man, just as though she belonged to the senatorial order. <br />3 He also established a senaculum, or women's senate, on the <a about=https://topostext.org/place/419125LQui class=place long=12.4871 lat=41.9011>Quirinal</a> Hill. Before his time, in fact, a congress of matrons had met here, but only on certain festivals, or whenever a matron was presented with the insignia of a consular marriage — bestowed by the early emperors on their kinswomen, particularly on those whose husbands were not nobles, in order that they might not lose their noble rank. 4 But now under the influence of Symiamira absurd decrees were enacted concerning rules to be applied to matrons, namely, what kind of clothing each might wear in public, who was to yield precedence and to whom, who was to advance to kiss another, who might ride in a chariot, on a <a href=/people/10959 target=_blank>horse</a>, on a pack-animal, or on an <a href=/people/10962 target=_blank>ass</a>, who might drive in a carriage drawn by mules or in one drawn by <a href=/people/10961 target=_blank>oxen</a>, who might be carried in a litter, and whether the litter might be made of leather, or of bone, or covered with ivory or with silver, and lastly, who might wear gold or jewels on her shoes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#4 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:latinLit:phi2331.phi017:5'><b>&sect; 5</b>&nbsp;&nbsp;After he had spent the winter in <a about=https://topostext.org/place/408299PNik class=place long=29.923 lat=40.762>Nicomedia</a>, living in a depraved manner and indulging in unnatural vice with men,a the soldiers soon began to regret that they had conspired against <a href=/people/3419 target=_blank>Macrinus</a> to make this man emperor, and they turned their thoughts toward his cousin <a href=/people/13 target=_blank>Alexander</a>, who on the murder of <a href=/people/3419 target=_blank>Macrinus</a> had been hailed by the senate as Caesar. 2 For who could tolerate an emperor who indulged in unnatural lusts of every kind, when not even a beast of this sort would be tolerated? 3 And even at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he did nothing but send out agents to search for those who had particularly large organs and bring them to the palace in order that he might enjoy their vigour. 4 Moreover, he used to have the story of <a href=/people/112 target=_blank>Paris</a> played in his house, and he himself would take the rôle of <a href=/people/15 target=_blank>Venus</a>, and suddenly drop his clothing to the ground and fall naked on his knees, one hand on his breast, the other before his private parts, his buttocks projecting meanwhile and thrust back in front of his partner in depravity. 5 He would likewise model the expression of his face on that with which <a href=/people/15 target=_blank>Venus</a> is usually painted, and he had his whole body depilated,b deeming it the chief enjoyment of his life to appear fit and worthy to arouse the lusts of the greatest number. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#5 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:latinLit:phi2331.phi017:6'><b>&sect; 6</b>&nbsp;&nbsp;He took money for honours and distinctions and positions of power, selling them in person or through his slaves and those who served his lusts. 2 He made appointments to the senate without regard to age, property, or rank, and solely at the price of money, and he sold the positions of captain and tribune, legate and general, likewise procuratorships and posts in Palace. 3 The charioteers <a href=/people/1057 target=_blank>Protogenes</a> and <a href=/people/7539 target=_blank>Cordius</a>, originally his comrades in the chariot-race, he later made his associates in his daily life and actions. 4 Many whose personal appearance pleased him he took from the stage, the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>, and the arena and brought to the palace. 5 And such was his passion for <a href=/people/1945 target=_blank>Hierocles</a> that he kissed him in a place which it is indecent even to mention,c declaring that he was celebrating the festival of <a href=/people/12068 target=_blank>Flora</a>. <br />6 He violated the chastity of a <a href=/people/12228 target=_blank>Vestal Virgin</a>, and by removing the holy shrines he profaned the sacred rites of the Roman nation. 7 He also desired to extinguish the everlasting fire. In fact, it was his desire to abolish not only the religious ceremonies of the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> but also those of the whole world, his one wish being that the god <a href=/people/11040 target=_blank>Elagabalus</a> should be worshipped everywhere. He even broke into the sanctuary of <a href=/people/325 target=_blank>Vesta</a>, into which only <a href=/people/12228 target=_blank>Vestal Virgins</a> and the priests may enter, though himself defiled by every moral stain and in the company of those who had defiled themselves. 8 He also attempted to carry away the sacred shrine, but instead of the true one he seized only an earthenware one, which the Senior <a href=/people/12228 target=_blank>Vestal</a> had shown him in an attempt to deceive him, and when he found nothing in it, he threw it down and broke it. The cult, however, did not suffer at his hands, for several shrines had been made, it is said, exactly like the true one, in order that none might ever be able to take this one away. 9 Though this be so, he nevertheless carried away the image which he believed to be the <a href=/people/12046 target=_blank>Palladium</a>, and after washing it over with gold he placed it in the temple of his god. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#6 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:latinLit:phi2331.phi017:7'><b>&sect; 7</b>&nbsp;&nbsp;He also adopted the worship of the <a href=/people/2057 target=_blank>Great Mother</a> and celebrated the rite of the taurobolium; and he carried off her image and the sacred objects which are kept hidden in a secret place. 2 He would toss his head to and fro among the castrated devotees of the goddess, and he infibulated himself, and did all that the eunuch-priests are wont to do; and the image of the goddess which he carried off he placed in the sanctuary of his god. 3 He also celebrated the rite of Salambo with all the wailing and the frenzy of the Syrian cult — thereby foreshadowing his own impending doom. 4 In fact, he asserted that all gods were merely the servants of his god, calling some its chamberlains, others its slaves, and others its attendants for divers purposes. 5 And he planned to carry off from their respective temples the stones which are said to be divine, among them the emblem of <a href=/people/28 target=_blank>Diana</a>, from its holy place at <a about=https://topostext.org/place/378291PLao class=place long=29.109 lat=37.836>Laodicea</a>, where it had been dedicated by <a href=/people/120 target=_blank>Orestes</a>. <br />6 Now <a href=/people/120 target=_blank>Orestes</a>, they say, dedicated not merely one image of <a href=/people/28 target=_blank>Diana</a> in one place, but many and in many places. 7 And after he purified himself at the Three Rivers in the <a about=https://topostext.org/place/407260WHeb class=place long=26.1825 lat=40.78557>Hebrus</a> region in obedience to a divine response, he founded the city of Oresta — a city destined to be often stained with human blood. 8 As for this city of <a about=https://topostext.org/place/417266PHad class=place long=26.559 lat=41.678>Oresta</a>, <a href=/people/1020 target=_blank>Hadrian</a>, after he had begun to suffer from madness, ordered that it should be called after his own name — also acting in obedience to a divine response, for he had been told to steal into the house or into the name of some madman. 9 Thereupon, they say, he recovered from his madness, which had caused him to order the execution of many senators, all of whom, however, were saved by <a href=/people/508 target=_blank>Antoninus</a>; 10 for he won the surname of <a href=/people/1456 target=_blank>Pius</a> by leading them into the senate after all supposed that they had been put to death by the Emperor's order. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#7 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:latinLit:phi2331.phi017:8'><b>&sect; 8</b>&nbsp;&nbsp;<a href=/people/11040 target=_blank>Elagabalus</a> also sacrificed human victims, and for this purpose he collected from the whole of <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a> children of noble birth and beautiful appearance, whose fathers and mothers were alive, intending, I suppose, that the sorrow, if suffered by two parents, should be all the greater. 2 Finally, he kept about him every kind of magician and had them perform daily sacrifices, himself urging them on and giving thanks to the gods because he found them to be well-disposed to these men; and all the while he would examine the children's vitals and torture the victims after the manner of his own native rites. <br />3 When he entered upon his consulship he threw presents to the populace to be scrambled for, no mere pieces of silver and gold, indeed, or confectionery or little animals, but fatted <a href=/people/10978 target=_blank>cattle</a> and <a href=/people/10950 target=_blank>camels</a> and <a href=/people/10962 target=_blank>asses</a> and slaves, declaring that this was an imperial custom. <br />4 He made a savage attack on the memory of <a href=/people/3419 target=_blank>Macrinus</a> and a still more savage one on that of <a href=/people/11050 target=_blank>Diadumenianus</a> because he had received the name <a href=/people/508 target=_blank>Antoninus</a> — he called him a Pseudo-<a href=/people/508 target=_blank>Antoninus</a> — and because it was asserted that from a veritable profligate he had become very brave and honourable and dignified and austere. 5 And he even forced certain writers to recount concerning his profligacy some details which were unspeakable, or, more properly, intolerable to relate, considering that this was in a biography of him. <br />6 He made a public bath in the imperial palace and at the same time threw open the bath of Plautinus to the populace, that by this means he might get a supply of men with unusually large organs. 7 He also took care to have the whole city and the wharves searched for onobeli, as those were called who seemed particularly lusty. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#8 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:latinLit:phi2331.phi017:9'><b>&sect; 9</b>&nbsp;&nbsp;When he was making plans to take up the war against the <a href=/people/11059 target=_blank>Marcomanni</a>, which <a href=/people/809 target=_blank>Marcus Antoninus</a> had fought with great glory, he was told by certain persons that it was by the help of astrologers and magicians that Marcus had made the <a href=/people/11059 target=_blank>Marcomanni</a> forever the liegemen and friends of the Roman people, and that it had been done by means of magic rites and a dedication. But when he inquired what this was or where it could be obtained, he could get no response. 2 For it was generally reported that he inquired about this dedication solely for the purpose of destroying it, hoping thereby to bring on the war; for he had been told that there was a prophesy that the <a href=/people/11059 target=_blank>Marcomannic</a> war should be ended by an <a href=/people/508 target=_blank>Antoninus</a> — whereas he was called <a href=/people/2267 target=_blank>Varius</a> and <a href=/people/11040 target=_blank>Elagabalus</a> and a public laughing-stock, and he was, moreover, a disgrace to the name <a href=/people/508 target=_blank>Antoninus</a>, on which he had laid violent hands. 3 This report, moreover, was spread by those most of all who were aggrieved that men well equipped for gratifying his lusts and of larger resources were opposed to themselves. And for this reason they even began to plot his death. So much for domestic affairs. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#9 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:latinLit:phi2331.phi017:10'><b>&sect; 10</b>&nbsp;&nbsp;As for the soldiers, they could not endure to have such a pest clothed with the name of emperor, and they all expressed their views, first one to another, then in groups, turning their thoughts to <a href=/people/13 target=_blank>Alexander</a>, who previously, at the time when <a href=/people/3419 target=_blank>Macrinus</a> was murdered, had been hailed by the senate as Caesar — he was the cousin of this <a href=/people/508 target=_blank>Antoninus</a>, for both were grandsons of Varia, from whom <a href=/people/11040 target=_blank>Elagabalus</a> had the name <a href=/people/2267 target=_blank>Varius</a>. <br />2 During his reign <a href=/people/12196 target=_blank>Zoticus</a> had such influence that all the chiefs of the palace-departments treated him as their master's consort. 3 This same <a href=/people/12196 target=_blank>Zoticus</a>, furthermore, was the kind to abuse such a degree of intimacy, for under false pretences he sold all <a href=/people/11040 target=_blank>Elagabalus</a>' promises and favours, and so, as far as he could, he amassed enormous wealth. To some men he held out threats, and to others promises, lying to them all, and as he came out from the emperors's presence, he would go up to each and say, In regard to you I said this, in regard to you I was told that, and in regard to you this action will be taken. 4 That is the way of men of this kind, for, once admitted to too close an intimacy with a ruler, they sell information concerning his intentions, whether he be good or bad, and so, through the stupidity or the innocence of an emperor who does not detect their intrigues, batten on the shameless hawking of rumours. 5 With this man <a href=/people/11040 target=_blank>Elagabalus</a> went through a nuptial ceremony and consummated a marriage, even having a bridal-matron and exclaiming, Go to work, Cook — and this at a time when <a href=/people/12196 target=_blank>Zoticus</a> was ill. 6 After that he would ask philosophers and even men of the greatest dignity whether they, in they youth, had ever experienced what he was experiencing, — all without the slightest shame. 7 For indeed he never refrained from filthy conversation and would make indecent signs with his fingers and would show no regard for decency even in public gatherings or in the hearing of the people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#10 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:latinLit:phi2331.phi017:11'><b>&sect; 11</b>&nbsp;&nbsp;He made his freedmen governors and legates, consuls and generals, and he brought disgrace on all offices of distinction by the appointment of base-born profligates. 2 On one occasion he invited the nobles of the court to a vintage-festival, and when he had seated himself by the baskets of grapes, he began to ask the most dignified of them one by one whether he were responsive to <a href=/people/15 target=_blank>Venus</a>, and when the old men would blush he would cry out, He is blushing, it's all right, regarding their silence and blushes as a confession. 3 He then narrated his own doings without any cloak of shame. 4 But when he saw that the elders blushed and kept silent, because neither their age nor their dignity was in keeping with such topics, he turned to the young men and began to when them about all their experiences. 5 And when they told him what one would expect of their age, he began to be merry, declaring that a vintage celebrated in such a manner was truly bacchanalian. 6 Many relate, furthermore, that he was the first to devise the custom of having slaves make jibes at their masters' expense during a vintage-festival, even in the hearing of their masters, which jibes he had composed himself, most of them in Greek; several of these, indeed, are quoted by <a href=/people/50 target=_blank>Marius</a> <a href=/people/11092 target=_blank>Maximus</a> in his Life of <a href=/people/11040 target=_blank>Elagabalus</a>. 7 His courtiers, moreover, were men of depraved life, some of them old men looking like philosophers, who would do up their hair in nets, declare that they were living a life of depravity, and boast that they had husbands. Some say, however, that they only made a pretence of this in order that by counterfeiting the Emperor's vices they might stand higher in his favour. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#11 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:latinLit:phi2331.phi017:12'><b>&sect; 12</b>&nbsp;&nbsp;As prefect of the guard he appointed a dancer who had been on the stage at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, as prefect of the watch a chariot-driver named <a href=/people/7539 target=_blank>Cordius</a>, and as prefect of the grain-supply a barber named <a href=/people/82 target=_blank>Claudius</a>, 2 and to the other posts of distinction he advanced men whose sole recommendation was the enormous size of their privates. As collector of the five-percent tax on inheritances he appointed a mule-driver, a courier, a cook, and a locksmith. 3 When he went to the Camp or the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>Senate-house</a> he took with him his grandmother, Varia by name, whom I have previously mentioned, in order that through her prestige he might get greater respect — for by himself he got none. And never before his time, as I have already said, did a woman come into the Senate-chamber or receive an invitation to take part in the drafting of a decree and express her opinion in the debate. 4 At his banquets he preferred to have perverts placed next to him and took special delight in touching or fondling them, and whenever he drank one of them was usually selected to hand him the cup. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#12 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:latinLit:phi2331.phi017:13'><b>&sect; 13</b>&nbsp;&nbsp;Among the base actions of his life of depravity he gave orders that <a href=/people/13 target=_blank>Alexander</a>, whom he had formally adopted, he removed from his presence, saying that he regretted the adoption. 2 Then he commanded the senate to take away from <a href=/people/13 target=_blank>Alexander</a> the name of Caesar. But when this was announced to the senate, there was a profound silence. For <a href=/people/13 target=_blank>Alexander</a> was an excellent youth, as was afterwards shown by the character of his rule, even though, because he was chaste, he was displeasing to his adoptive father — 3 he was also, as some declare, his cousin. Besides, he was loved by the soldiers and acceptable to the senate and the equestrian order. 4 Yet the Emperor's madness went the length of an attempt to carry out the basest design; for he despatched assassins to kill <a href=/people/13 target=_blank>Alexander</a>, and that in the following way: 5 Leaving his mother, grandmother, and cousin in the Palace, he himself withdrew to the Gardens of <a href=/people/1068 target=_blank>Spes</a> <a href=/people/3484 target=_blank>Vetus</a> on the ground that he was forming designs against some new youth, and there he issued an order to slay <a href=/people/13 target=_blank>Alexander</a>, a most excellent young man and one of whom the state had need. 6 He also sent a written order to the soldiers bidding them take away from <a href=/people/13 target=_blank>Alexander</a> the name of Caesar, 7 and he despatched men to smear mud on the inscriptions on his statues in the Camp, as is usually done to a tyrant. 8 He sent, furthermore, to <a href=/people/13 target=_blank>Alexander</a>'s guardians, ordering them, if they hoped for rewards and distinctions, to kill him in any way they wished, either in his bath, or by poison, or with the sword. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#13 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:latinLit:phi2331.phi017:14'><b>&sect; 14</b>&nbsp;&nbsp;But evil men can accomplish nothing against the upright. For no power could induce any to commit so great a crime, and the weapons which he was making ready for others were turned against himself, and it was by the same violent means that he was directing at others that he himself was put to death. <br />2 But immediately after the inscriptions on <a href=/people/13 target=_blank>Alexander</a>'s statues were smeared with mud, all the soldiers were fired with anger, and they set out, some for the Palace and some for the gardens where <a href=/people/2267 target=_blank>Varius</a> was, with the purpose of protecting <a href=/people/13 target=_blank>Alexander</a> and finally ridding the state of this filthy creature full of murderous intent. 3 And when they had come to the Palace they set a guard about <a href=/people/13 target=_blank>Alexander</a> and his mother and grandmother and then escorted them with the greatest care to the Camp; 4 Symiamira, <a href=/people/11040 target=_blank>Elagabalus</a>' mother, followed them on foot, filled with anxiety about her son. 5 Then the soldiers went to the gardens, where they found <a href=/people/2267 target=_blank>Varius</a> making preparations for a chariot-race and at the same time eagerly awaiting the news of his cousin's murder. 6 Alarmed by the sudden clatter of the soldiers, he crouched down in a corner and covered himself with the curtain which was at the door of the bed-chamber, 7 sending one of the prefects to the Camp to quiet the soldiers there and the other to placate those who had just entered the gardens. 8 Then Antiochianus, one of the prefects, reminded the soldiers who had come to the gardens of their oath of allegiance and finally persuaded them not to kill the Emperor — for, in fact, only a few had come and the majority had remained with the standard, which the tribune <a href=/people/658 target=_blank>Aristomachus</a> had kept back. So much for what happened in the gardens. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#14 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:latinLit:phi2331.phi017:15'><b>&sect; 15</b>&nbsp;&nbsp;In the Camp, on the other hand, the soldiers replied to the entreaties of the prefect that they would spare <a href=/people/11040 target=_blank>Elagabalus</a>' life on the condition that he would send away all his filthy creatures, his chariot-drivers, and his actors, and return to a decent mode of living, dismissing particularly those who, to the general sorrow, possessed the greatest influence over him and sold all his decisions, actual or pretended. 2 He did, finally, dismiss <a href=/people/1945 target=_blank>Hierocles</a>, <a href=/people/7539 target=_blank>Cordius</a>, and Mirissimus and two other base favourites who were making him even more of a fool than he was naturally. 3 The soldiers, furthermore, charged the prefects not to permit him to continue longer his present mode of living, and also to keep watch over <a href=/people/13 target=_blank>Alexander</a> that no violence might be done him, and at the same time to prevent the Caesar from seeing any of the friends of the Augustus, lest he imitate their baseness. 4 But <a href=/people/11040 target=_blank>Elagabalus</a> with earnest entreaties kept demanding back <a href=/people/1945 target=_blank>Hierocles</a>, that most shameless of men, and daily increased his plotting against <a href=/people/13 target=_blank>Alexander</a>. 5 Finally, on the Kalends of January, he refused to appear in public with his cousin — for they had been designated joint consuls. 6 At last, however, when he was told by his grandmother and mother that the soldiers were threatening that they would kill him unless they saw that harmony was established between himself and his cousin, he put on the bordered toga and at the sixth hour of the day entered the senate, inviting his grandmother to the session and escorting her to a seat. 7 But then he refused to proceed to the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitolium</a> to assume the vows for the state and conduct the usual ceremonies, and accordingly everything was done by the city-praetor, just as if there were no consuls there. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#15 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:latinLit:phi2331.phi017:16'><b>&sect; 16</b>&nbsp;&nbsp;Nevertheless he did not give up the murder of his cousin, but first, for fear that if he killed him the senate would only turn to some one else, he gave orders that the senate should at once leave the city. Even all those senators who had no carriages or slaves were ordered to set out at once, some of them being carried by porters, others using animals that chance threw in their way or that they hired for money. 2 And because <a href=/people/573 target=_blank>Sabinus</a>, a man of consular rank, to whom <a href=/people/498 target=_blank>Ulpian</a> dedicated some of his books, remained in the city, the Emperor called a centurion and ordered him to kill him, speaking in a low tone. 3 But the centurion, who was rather deaf, thought that he was being ordered to eject <a href=/people/573 target=_blank>Sabinus</a> from the city and acted accordingly; and so a centurion's infirmity saved <a href=/people/573 target=_blank>Sabinus</a>' life. 4 He dismissed both <a href=/people/498 target=_blank>Ulpian</a> the jurist because he was a righteous man and Silvinus the rhetorician, whom he had appointed tutor to <a href=/people/13 target=_blank>Alexander</a>. Silvinus, in fact, was put to death, but <a href=/people/498 target=_blank>Ulpian</a> was spared. <br />5 The soldiers, however, and particularly the members of the guard, either because they knew what evils were in store for <a href=/people/11040 target=_blank>Elagabalus</a>, or because they foresaw his hatred for themselves, formed a conspiracy to set the state free. First they attacked the accomplices in his plan of murdering <a href=/people/13 target=_blank>Alexander</a>, killing some by tearing out the vital organs and others by piercing the anus, so that their deaths were as evil as their lives. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#16 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:latinLit:phi2331.phi017:17'><b>&sect; 17</b>&nbsp;&nbsp;Next they fell upon <a href=/people/11040 target=_blank>Elagabalus</a> himself and slew him in a latrine in which he had taken refuge. Then his body was dragged through the streets, and the soldiers further insulted it by thrusting it into a sewer. 2 But since the sewer chanced to be too small to admit the corpse, they attached a weight to it to keep it from floating, and hurled it from the <a about=https://topostext.org/place/419125BBAe class=place long=12.4795 lat=41.8894>Aemilian Bridge</a> into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>, in order that it might never be buried. 3 The body was also dragged around the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a> before it was thrown into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>. <br />4 His name, that is to say the name <a href=/people/508 target=_blank>Antoninus</a>, was erased from the public records by order of the senate — though the name <a href=/people/2267 target=_blank>Varius</a> <a href=/people/11040 target=_blank>Elagabalus</a> was left — , for he had used the name <a href=/people/508 target=_blank>Antoninus</a> without valid claim, wishing to be thought the son of <a href=/people/508 target=_blank>Antoninus</a>. 5 After his death he was dubbed the Tiberine, the Dragged, the Filthy, and many other such names, all of which were to signify what seemed to have been done during his rule. 6 And he was the only one of all the emperors whose body was dragged through the streets, thrust into a sewer, and hurled into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>. 7 This befell him as a result of the general hatred of all, against which particularly emperors must be on their guard, since those who do not win the love of the senate, the people, and the soldiers do not win the right of burial. <br />8 No public works of his are in existence, save the temple of the god <a href=/people/11040 target=_blank>Elagabalus</a> (called by some the <a href=/people/180 target=_blank>Sun</a>, by others <a href=/people/1 target=_blank>Jupiter</a>), the Amphitheatre as restored after its destruction by fire, and the public bath in the Vicus <a href=/people/228 target=_blank>Sulpicius</a>, begun by <a href=/people/508 target=_blank>Antoninus</a>, the son of <a href=/people/11085 target=_blank>Severus</a>. 9 This bath, in fact, had been dedicated by <a href=/people/4913 target=_blank>Antoninus Caracalla</a>, who bathed in it himself and opened it to the public, but the portico was left unbuilt, and this was added after his death by this spurious <a href=/people/508 target=_blank>Antoninus</a>, though actually completed by <a href=/people/13 target=_blank>Alexander</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#17 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:latinLit:phi2331.phi017:18'><b>&sect; 18</b>&nbsp;&nbsp;He was the last of the Antonines (though many think that later the Gordians had the cognomen <a href=/people/508 target=_blank>Antoninus</a>, whereas they were really called <a href=/people/347 target=_blank>Antonius</a> and not <a href=/people/508 target=_blank>Antoninus</a>), a man so detestable for his life, his character, and his utter depravity that the senate expunged from the records even his name. 2 I myself should not have referred to him as <a href=/people/508 target=_blank>Antoninus</a> save for the sake of identification, which frequently makes it necessary to use even those names which officially have been abolished. <br />With him was also slain his mother Symiamira, a most depraved woman and one worthy of such a son. 3 And the first measure enacted after the death of <a href=/people/508 target=_blank>Antoninus</a> <a href=/people/11040 target=_blank>Elagabalus</a> provided that no woman should ever enter the senate, and that whoever should cause a woman to enter, his life should be declared doomed and forfeited to the kingdom of the dead. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#18 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:latinLit:phi2331.phi017:19'><b>&sect; 19</b>&nbsp;&nbsp;Concerning his life many filthy anecdotes have been put into writing, but since they are not worthy of being recorded, I have thought I ought to relate only such deeds as illustrate his extravagance. Some of these, it is said, were done before he ascended the throne, others after he was made emperor; for he himself declared that his models were <a href=/people/2714 target=_blank>Apicius</a> among commoners and, among emperors, <a href=/people/824 target=_blank>Otho</a> and <a href=/people/690 target=_blank>Vitellius</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/1*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=19a>
+                            <p id='urn:cts:latinLit:phi2331.phi017:19a'><b>&sect; 19a</b>&nbsp;&nbsp;For example, he was the first commoner to cover his couches with golden coverlets — for this was lawful then by authorization of <a href=/people/809 target=_blank>Marcus Antoninus</a>, who had sold at public auction all the imperial trappings. 2 Also, he gave summer-banquets in various colours, one day a green banquet, another day an iridescent one, and next in order a blue one, varying them continually every day of the summer. 3 Moreover, he was the first to use silver urns and casseroles, and vessels of chased silver, one hundred pounds in weight, some of them spoiled by the lewdest designs. 4 He was also the first to concoct wine seasoned with mastich and with pennyroyal and all such mixtures, which our present luxury retains.a 5 And rose-wine, of which he had learned from others, he used to make more fragrant by adding pulverized pine-cone. In fact, all these kinds of cups are not met with in books before the time of <a href=/people/11040 target=_blank>Elagabalus</a>. 6 Indeed, for him life was nothing except a search after pleasures. He was the first to make force-meat of fish, or of oysters of various kinds or similar shell-fish, or of lobsters, crayfish and squills. 7 He used to strew roses and all manner of flowers, such as lilies, violets, hyacinths, and narcissus, over his banqueting-rooms, his couches and his porticoes, and then stroll about in them. 8 He would refuse to swim in a pool that was not perfumed with saffron or some other well-known essence. 9 And he could not rest easily on cushions that were not stuffed with rabbit-fur or feathers from under the wings of partridges, and he used, moreover, to change the pillows frequently. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#19 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:latinLit:phi2331.phi017:20'><b>&sect; 20</b>&nbsp;&nbsp;He often showed contempt for the senate, calling them slaves in togas, while he treated the Roman people as the tiller of a single farm and the equestrian order as nothing at all. 2 He frequently invited the city-prefect to a drinking-bout after a banquet and also summoned the prefects of the guard, sending a master of ceremonies, in case they declined, to compel them to come. 3 And he wished to create a city-prefect for each region of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, thus making fourteen for the city; and he would have done it, too, had he lived, for he was always ready to promote men of the basest character and the lowest calling.b <br />4 He had couches made of solid silver for use in his banqueting-rooms and his bed-chambers. 5 In imitation of <a href=/people/2714 target=_blank>Apicius</a> he frequently ate <a href=/people/10950 target=_blank>camels</a>-heels and also cocks-combs taken from the living birds, and the tongues of <a href=/people/12195 target=_blank>peacocks</a> and nightingales, because he was told that one who ate them was immune from the plague. 6 He served to the palace-attendants, moreover, huge platters heaped up with the viscera of mullets, and flamingo-brains, partridge-eggs, thrush-brains, and the heads of parrots, pheasants, and <a href=/people/12195 target=_blank>peacocks</a>. 7 And the beards of the mullets that he ordered to be served were so large that they were brought on, in place of cress or parsley or pickled beans or fenugreek, in well filled bowls and disk-shaped platters — a particularly amazing performance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#20 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:latinLit:phi2331.phi017:21'><b>&sect; 21</b>&nbsp;&nbsp;He fed his <a href=/people/10953 target=_blank>dogs</a> on goose-livers. Among his pets he had <a href=/people/10960 target=_blank>lions</a> and leopards, which had been rendered harmless and trained by tamers, and these he would suddenly order during the dessert and the after-dessert to get up on the couches, thereby causing an amusing panic, for none knew that the beasts were harmless. 2 He sent grapes from <a about=https://topostext.org/place/354364PApa class=place long=36.4017 lat=35.4195>Apamea</a> to his stables for his <a href=/people/10959 target=_blank>horses</a>, and he fed parrots and pheasants to his <a href=/people/10960 target=_blank>lions</a> and other wild animals. 3 For ten successive days, moreover, he served wild <a href=/people/10951 target=_blank>sows</a>' udders with the matrices, at the rate of thirty a day, serving, besides, peas with gold-pieces, lentils with onyx, beans with amber, and rice with pearls; 4 and he also sprinkled pearls on fish and truffles in lieu of pepper. 5 In a banqueting-room with a reversible ceiling he once overwhelmed his parasites with violets and other flowers, so that some were actually smothered to death, being unable to crawl out to the top.d 6 He flavoured his swimming-pools and bath-tubs with essence of spices or of roses or wormwood. And once he invited the common mob to a drinking-bout, and himself drank with the populace, taking so much that on seeing what he alone consumed, people supposed he had been drinking from one of his swimming-pools. 7 As banquet-favours, he gave eunuchs, or four-<a href=/people/10959 target=_blank>horse</a> chariots, or <a href=/people/10959 target=_blank>horses</a> with saddles, or mules, or litters, or carriages, or a thousand aurei or a hundred pounds of silver. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#21 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:latinLit:phi2331.phi017:22'><b>&sect; 22</b>&nbsp;&nbsp;At his banquets he would also distribute chances inscribed on spoons, the chance of one person reading ten <a href=/people/10950 target=_blank>camels</a>, of another ten flies, of another ten pounds of gold, of another ten pounds of lead, of another ten ostriches, of another ten hens-eggs, so that they were chances indeed and men tried their luck. 2 These he also gave at his games, distributing chances for ten bears or ten dormice, ten lettuces or ten pounds of gold. Indeed he was the first to introduce this practice of giving chances, which we still maintain.e 3 And the performers too he invited to what really were chances, giving as prizes a dead <a href=/people/10953 target=_blank>dog</a> or a pound of beef, or else a hundred aurei, or a hundred pieces of silver, or a hundred coppers, and so on. 4 All this so pleased the populace that after each occasion they rejoiced that he was emperor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#22 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:latinLit:phi2331.phi017:23'><b>&sect; 23</b>&nbsp;&nbsp;He gave a naval spectacle, it is said, on the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>-canals, which had been filled with wine, and he sprinkled the people's cloaks with perfume made from the wild grape; also he drove a chariot drawn by four elephants on the Vatican Hill, destroying the tombs which obstructed the way, and he harnessed four <a href=/people/10950 target=_blank>camels</a> to a chariot at a private spectacle in the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>. 2 It is also said that he collected <a href=/people/55 target=_blank>serpents</a> with the aid of priests of the <a href=/people/1401 target=_blank>Marsic</a> nation and suddenly let them loose before dawn, when the populace usually assembled for the more frequented games, and many people were injured by their fangs as well as in the general panic. 3 He would wear a tunic made wholly of cloth of gold, or one made of purple, or a <a about=https://topostext.org/place/295540RPer class=demonym long=54 lat=29.5>Persian</a> one studded with jewels, and at such times he would say that he felt oppressed by the weight of his pleasures. 4 He even wore jewels on his shoes, sometimes engraved ones — a practice which aroused the derision of all, as if, forsooth, the engraving of famous artists could be seen on jewels attached to his feet. 5 He wished to wear also a jewelled diadem in order that his beauty might be increased and his face look more like a woman's; and in his own house he did wear one. 6 He promised a phoenix to some guests, it is said, or in lieu of the bird a thousand pounds of gold, and this sum he handed out in the imperial residence. 7 He constructed swimming-pools filled with sea-water in places especially far from the coast, and would hand them over to individual friends who swam in them, or at another time he would fill one with fish. 8 One summer he made a mountain of snow in the pleasure-garden attached to his house, having snow carried there for the purpose. When on the sea-coast he never ate fish, but in places most remote from the sea he regularly served all manner of sea-food, and the country-folk in the interior he fed with the milt of lampreys and pikes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#23 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:latinLit:phi2331.phi017:24'><b>&sect; 24</b>&nbsp;&nbsp;The fish that he ate were cooked in a bluish sauce that preserved their natural colour, as though they were still in the sea-water. He supplied swimming-pools that he used for the moment with essence of roses and with the flowers themselves, and when he bathed with all his courtiers he would furnish oil of nard for the hot-rooms; he also furnished balsam-oil for the lamps. 2 He never had intercourse with the same woman twice except with his wife, and he opened brothels in his house for his friends, his clients, and his slaves. 3 He never spent less on a banquet than one hundred thousand sesterces, that is, thirty pounds of silver; and sometimes he even spent as much as three million when all the cost was computed. In fact, he even outdid the banquets of <a href=/people/690 target=_blank>Vitellius</a> and <a href=/people/2714 target=_blank>Apicius</a>. 4 He would take fish from his ponds by the <a href=/people/10961 target=_blank>ox</a>-load, and then, as he passed through the market, bewail the public poverty. 5 He used to bind his parasites to a water-wheel and, by a turn of the wheel, plunge them into the water and then bring them back to the surface again, calling them meanwhile river-Ixions. 6 He used <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Lacedaemonian</a> stone and porphyry to pave the open spaces in the Palace, which he called Antonine; this pavement lasted down to within our own memory but was lately torn up and destroyed. 7 And he planned to erect a single column of enormous size, which could be ascended inside, and to place on its summit the god <a href=/people/11040 target=_blank>Elagabalus</a>, but he could not find enough stone, even though he planned to bring it from the district of <a about=https://topostext.org/place/257326PThe class=place long=32.641 lat=25.684>Thebes</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#24 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:latinLit:phi2331.phi017:25'><b>&sect; 25</b>&nbsp;&nbsp;When his friends became drunk he would often shut them up, and suddenly during the night let in his <a href=/people/10960 target=_blank>lions</a> and leopards and bears — all of them harmless — so that his friends on awakening at dawn, or worse, during the night, would find <a href=/people/10960 target=_blank>lions</a> and leopards and bears in the room with themselves; and some even died from this cause. 2 Some of his humbler friends he would seat on air-pillows instead of on cushions and let out the air while they were dining, so that often the diners were suddenly found under the table. 3 Finally, he was the first to think of placing a semi-circular group on the ground instead of on couches, with the purpose of having the air-pillows loosened by slaves who stood at the feet of the guests and the air thus let out. <br />4 When adultery was represented on the stage, he would order what was usually done in pretence to be carried out in fact. 5 He often purchased harlots from all the procurers and then set them free. 6 Once during a private conversation the question arose as to how many ruptured people there were in the city of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and he thereupon issued an order that all should be noted and brought to his baths, and then he bathed with them, some of them being men of distinction. 7 Before a banquet he would frequently watch gladiatorial fights and boxing matches, and he had a couch spread for himself in an upper gallery and during luncheon exhibited criminals in a wild-beast hunt. 9 His parasites would often be served during dessert with food made of wax or wood or ivory, sometimes of earthenware, or at times even of marble or stone; so that all that he ate himself would be served to them too, but different in substance and only to be looked at, and all the while they would merely drink with each course and wash their hands, just as if they had really eaten. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#25 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:latinLit:phi2331.phi017:26'><b>&sect; 26</b>&nbsp;&nbsp;He was the first of the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a>, it is said, who wore clothing wholly of silk, although garments partly of silk were in use before his time. Linen that had been washed he would never touch, saying that washed linen was worn only by beggars. 2 He would often appear in public after dinner dressed in a Dalmatian tunic, and then he would call himself <a href=/people/101 target=_blank>Fabius</a> Gurges or <a href=/people/22 target=_blank>Scipio</a>, because he was wearing the same kind of clothing which <a href=/people/101 target=_blank>Fabius</a> and <a href=/people/89 target=_blank>Cornelius</a> wore when in their youth they were brought out in public by their parents in order to improve their manners. <br />3 He gathered together in a public building all the harlots from the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>, the theatre, the <a about=https://topostext.org/place/419125BStD class=place long=12.4731 lat=41.8987>Stadium</a> and all other places of amusement, and from the public baths, and then delivered a speech to them, as one might to soldiers, calling them comrades and discoursing upon various kinds of postures and debaucheries. 4 Afterward he invited to a similar gathering procurers, catamites collected together from all sides, and lascivious boys and young men. 5 And whereas he had appeared before the harlots in a woman's costume and with protruding bosom, he met the catamites in the garb of a boy who is exposed for prostitution. After his speech he announced a largess of three aurei each, just as if they were soldiers, and asked them to pray the gods that they might find others to recommend to him. <br />6 He used, too, to play jokes on his slaves, even ordering them to bring him a thousand pounds of <a href=/people/10968 target=_blank>spiders</a>-webs and offering them a prize; and he collected, it is said, ten thousand pounds, and then remarked that one could realize from that how great a city was <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>.f 7 He also used to send to his parasites jars of <a href=/people/10983 target=_blank>frogs</a>, scorpions, <a href=/people/55 target=_blank>snakes</a>, and any other such reptiles, as their yearly allowance of provisions, 8 and he would shut up a vast number of flies in jars of this sort and call them tamed <a href=/people/10964 target=_blank>bees</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#26 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:latinLit:phi2331.phi017:27'><b>&sect; 27</b>&nbsp;&nbsp;He often brought four-<a href=/people/10959 target=_blank>horse</a> chariots from the circus into his banqueting-rooms or porticoes while he lunched or dined, compelling his guests to drive, even though they were old men and some of them had held public office. 2 Even when emperor, he would give an order to bring in to him ten thousand <a href=/people/10966 target=_blank>mice</a>, a thousand weasels, or a thousand shrew-<a href=/people/10966 target=_blank>mice</a>. 3 So skilful were his confectioners and dairymen, that all the various kinds of food that were served by his cooks, either meat-cooks or fruit-cooks, they would also serve up, making them now out of confectionery or again out of milk products. 4 His parasites he would serve with dinners made of glass, and at times he would send to their table only embroidered napkins with pictures of the viands that were set before himself, as many in number as the courses which he was to have, so that they were served only with representations made by the needle or the loom. 5 Sometimes, however, paintings too were displayed to them, so that they were served with the whole dinner, as it were, but were all the while tormented by hunger. 6 He would also mix jewels with apples and flowers, and he would throw out of the window quite as much food as he served to his friends. 7 He gave an order, too, that an amount of public grain equal to one year's tribute should be given to all the harlots, procurers, and catamites who were within the walls, and promised an equal amount to those without, for, thanks to the foresight of <a href=/people/501 target=_blank>Severus</a> and <a href=/people/207 target=_blank>Trajan</a>, there was in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> at that time a store of grain equal to seven years' tribute. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#27 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:latinLit:phi2331.phi017:28'><b>&sect; 28</b>&nbsp;&nbsp;He would harness four huge <a href=/people/10953 target=_blank>dogs</a> to a chariot and drive about within the royal residence, and he did the same thing, before he was made emperor, on his country-estates. 2 He even appeared in public driving four stags of vast size. Once he harnessed <a href=/people/10960 target=_blank>lions</a> to his chariot and called himself the <a href=/people/2057 target=_blank>Great Mother</a>, and on another occasion, tigers, and called himself <a href=/people/5 target=_blank>Dionysus</a>; and he always appeared in the particular garb in which the deity that he was representing was usually depicted. 3 He kept at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> tiny <a about=https://topostext.org/place/271307REgy class=person long=30.7 lat=27.1>Egyptian</a> <a href=/people/55 target=_blank>snakes</a>, called by the natives good genii, besides hippopotami, a crocodile, and a rhinoceros, and, in fact, everything <a about=https://topostext.org/place/271307REgy class=demonym long=30.7 lat=27.1>Egyptian</a> which was of such a kind that it could be supplied. 4 And sometimes at his banquets he served ostriches, saying that the <a href=/people/7828 target=_blank>Jews</a> had been commanded to eat them.g <br />5 It seems indeed a surprising thing that he is said to have done when he invited men of the highest rank to a luncheon and covered a semi-circular couch with saffron-flowers, and then said that he was providing them with the kind of hay that their rank demanded. 6 The occupations of the day he performed at night, and those of the night in the daytime, and he considered it a mark of luxury to wait until a late hour before rising from sleep and beginning to hold his levee, and also to remain awake until morning. He received his courtiers every day, and he seldom let any go without a gift, save those whom he found to be thrifty, for he regarded these as worthless. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#28 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:latinLit:phi2331.phi017:29'><b>&sect; 29</b>&nbsp;&nbsp;His chariots were made of jewels and gold, for he scorned those that were merely of silver or ivory or bronze. 2 He would harness women of the greatest beauty to a wheel-barrow in fours, in twos, or in threes or even more, and would drive them about, usually naked himself, as were also the women who were pulling him. <br />3 He had the custom, moreover, of asking to dinner eight bald men, or else eight one-eyed men, or eight men who suffered from gout, or eight deaf men, or eight men of dark complexion, or eight tall men, or, again, eight fat men, his purpose being, in the case of these last, since they could not be accommodated on one couch, to call forth general laughter. 4 He would present to his guests all the silver-plate that he had in the banqueting-room and all the supply of goblets, and he did it very often too. 5 He was the first Roman emperor to serve at a public banquet fish-pickle mixed with water, for previously this had been only a soldier's dish — a usage which later was promptly restored by <a href=/people/13 target=_blank>Alexander</a>. 6 He would propose to his guests, furthermore, by way of a feat, that they should invent new sauces for giving flavour to the food, and he would offer a very large prize for the man whose invention should please him, even presenting him with a silk garment — then regarded as a rarity and a mark of honour. 7 On the other hand, if the sauce did not please him, the inventor was ordered to continue eating it until he invented a better one. 8 Of course he always sat among flowers or perfumes of great value, 9 and he loved to hear the prices of the food served at his table exaggerated, asserting it was an appetizer for the banquet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#29 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:latinLit:phi2331.phi017:30'><b>&sect; 30</b>&nbsp;&nbsp;He got himself up as a confectioner, a perfumer, a cook, a shop-keeper, or a procurer, and he even practised all these occupations in his own house continually. 2 At one dinner where there were many tables he brought in the heads of six hundred ostriches in order that the brains might be eaten. 3 Occasionally he gave a banquet in which he would serve twenty-two courses of extraordinary viands, and between each course he and his guests would bathe and dally with women, all taking an oath that they were deriving enjoyment. 4 And once he gave a banquet in which one course was served in the house of each guest, and although one lived on the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a> Hill, one on the <a about=https://topostext.org/place/419125LPal class=place long=12.4884 lat=41.8896>Palatine</a>, one beyond the Rampart, one on the <a about=https://topostext.org/place/419125LCae class=place long=12.4957 lat=41.8836>Caelian</a> Hill, and one across the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>, nevertheless each course was served in order in one of the houses, and they went about to the homes of all. 5 It was difficult, therefore, to finish the banquet within a whole day, especially as between the courses they bathed and dallied with women. He always served a course of Sybariticum, consisting of oil and fish-pickle, which the men of <a about=https://topostext.org/place/397165PSyb class=place long=16.491 lat=39.714>Sybaris</a> invented in the year in which they all perished. 7 It is further related of him that he constructed baths in many places, bathed in them once, and immediately demolished them, merely in order that he might not derive any advantage from them. And he is said to have done the same with houses, imperial headquarters, and summer-dwellings. 8 However, these and some other things which surpass credence, I believe to have been fabricated by those who wished to vilify <a href=/people/11040 target=_blank>Elagabalus</a> in order to curry favour with <a href=/people/13 target=_blank>Alexander</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#30 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:latinLit:phi2331.phi017:31'><b>&sect; 31</b>&nbsp;&nbsp;He purchased, it is said, a very famous and very beautiful harlot for one hundred thousand sesterces, and then kept her untouched, as though she were a virgin. 2 When some one asked him before he was made emperor, Are you not afraid of becoming poor? he replied, so they say, What could be better than that I should be my own heir and my wife's too? 3 He had abundant means besides, bequeathed to him by many out of regard for his father. Furthermore, he said that he did not wish to have sons, lest one of them should chance to be thrifty. 4 He would have perfumes from <a about=https://topostext.org/place/300740RInd class=place long=74 lat=30>India</a> burned without any coals in order that the fumes might fill his apartments. Even while a commoner he never made a journey with fewer than sixty wagons, though his grandmother Varia used to protest that he would squander all his substance; 5 but after he became emperor he would take with him, it is said, as many as six hundred, asserting that the king of the <a about=https://topostext.org/place/295540RPer class=ethnic long=54 lat=29.5>Persians</a> travelled with ten thousand <a href=/people/10950 target=_blank>camels</a> and <a href=/people/66 target=_blank>Nero</a> with five hundred carriages. 6 The reason for all these vehicles was the vast number of his procurers and bawds, harlots, catamites and lusty partners in depravity. 7 In the public baths he always bathed with the women, and he even treated them himself with a depilatory ointment, which he applied also to his own beard, and shameful though it be to say it, in the same place where the women were treated and at the same hour. He shaved his minions' groins, using the razor with his own hand; — with which he would then shave his beard. 8 He would strew gold and silver dust about a portico and then lament that he could not strew the dust of amber also; and he did this often when he proceeded on foot to his <a href=/people/10959 target=_blank>horse</a> or his carriage, as they do today with golden sand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#31 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:latinLit:phi2331.phi017:32'><b>&sect; 32</b>&nbsp;&nbsp;He never put on the same shoes twice and never, it is said, wore the same ring a second time. He often tore up costly garments. Once he took a whale and weighed it and then sent his friends its weight in fish. 2 He sank some heavily laden ships in the harbour and then said that this was a sign of greatness of soul. He used vessels of gold for relieving himself and his urinals were made of murra or onyx. 3 And he is said to have remarked: If I ever have an heir, I shall appoint a guardian for him, to make him do what I have myself done and intend to do. 4 He was accustomed, furthermore, to have dinners served to him of the following kind: one day he would eat nothing at all but pheasant, serving only pheasant-meat at every course; another day he would serve only chicken, another some kind of fish and again a different kind, again pork, or ostrich, or greens, or fruit, or sweets, or dairy-products. 5 He would often shut up his friends in halting-places for the night with old hags from Ethiopia and compel them to stay there until morning, saying that the most beautiful women were kept in these places. 6 He did this same thing with boys too — for then, before the time of <a href=/people/12098 target=_blank>Philip</a> that is, such a thing was lawful. 7 Sometimes he laughed so loud in the theatre that no one else could be heard by the audience. 8 He could sing and dance, play the pipes, the horn and the pandura, and have also performed on the organ. 9 On one single day, it is said, he visited every prostitute from the <a about=https://topostext.org/place/419125BCiM class=place long=12.4871 lat=41.8852>Circus</a>, the theatre, the Amphitheatre, and all the public places of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, covering his head with a muleteer's cap in order to escape recognition; he did not, however, gratify his passions, but merely gave an aureus to each prostitute, saying as he did so: Let no one know it, but this is a present from <a href=/people/508 target=_blank>Antoninus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#32 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:latinLit:phi2331.phi017:33'><b>&sect; 33</b>&nbsp;&nbsp;He invented certain new kinds of vice, even going beyond the perverts used by the debauchees of old, and he was well acquainted with all the arrangements of <a href=/people/370 target=_blank>Tiberius</a>, <a href=/people/1618 target=_blank>Caligula</a>, and <a href=/people/66 target=_blank>Nero</a>. <br />2 The prophecy had been made to him by some Syrian priests that he would die a violent death. 3 And so he had prepared cords entwined with purple and scarlet silk, in order that, if need arose, he could put an end to his life by the noose. 4 He had gold swords, too, in readiness, with which to stab himself, should any violence impend. 5 He also had poisons ready, in ceraunites and sapphires and emeralds, with which to kill himself if destruction threatened. 6 And he also built a very high tower from which to throw himself down, constructed of boards gilded and jewelled in his own presence, for even his death, he declared, should be costly and marked by luxury, in order that it might be said that no one had ever died in this fashion. 7 But all these preparations availed him nothing, for, as we have said, he was slain by common soldiers, dragged through the streets, contemptuously thrust into sewers, and finally cast into the <a about=https://topostext.org/place/419125WTib class=place long=12.4755 lat=41.8835>Tiber</a>. <br />8 He was the last of those in public life to bear the name <a href=/people/508 target=_blank>Antoninus</a>, and all knew that in the case of this <a href=/people/508 target=_blank>Antoninus</a> his life was as false as his name. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#33 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:latinLit:phi2331.phi017:34'><b>&sect; 34</b>&nbsp;&nbsp;It may perhaps seem strange to some, revered <a href=/people/136 target=_blank>Constantine</a>, that such a scourge as I have described should ever have sat on the throne of the emperors, and, moreover, for nearly three years. Such was the lack at that time in the state of any who could remove him from the government of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>'s majesty, whereas a deliverer from the tyrant had not been wanting in the case of <a href=/people/66 target=_blank>Nero</a>, <a href=/people/690 target=_blank>Vitellius</a>, <a href=/people/1618 target=_blank>Caligula</a>, and other such emperors. 2 But first of all I ask for pardon for having set down in writing what I have found in various authors, even though I have passed over in silence many vile details and those things which may not even be spoken of without the greatest shame. 3 But whatever I have told, I have covered up as best I could by the use of veiled terms. 4 Then too I have always believed that we must remember what Your Clemency is wont to say: It is <a href=/people/2811 target=_blank>Fortune</a> that makes a man emperor. There have indeed been unrighteous rulers and even very base ones. 5 But, as Your <a href=/people/1591 target=_blank>Piety</a> is wont to declare, men must look to it that those be worthy of the imperial office whom the power of <a href=/people/140 target=_blank>Fate</a> has called to the destiny of being emperor. 6 Furthermore, since this man was the last of the Antonines and never again did one of this name appear in public life as emperor, the following fact must also be mentioned, in order that no confusion may arise when I shall begin to tell of the two Gordians, father and son, who desired to be called after the family of the Antonines: in the first place, they had not the surname but only the praenomen of the Antonines; 7 in the second, as I find in my books, their name was <a href=/people/347 target=_blank>Antonius</a>, and not <a href=/people/508 target=_blank>Antoninus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#34 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:latinLit:phi2331.phi017:35'><b>&sect; 35</b>&nbsp;&nbsp;So much concerning <a href=/people/11040 target=_blank>Elagabalus</a>, the details of whose life you have wished me, though unwilling and reluctant, to gather together from Greek and Latin books and to set down in writing and present to you, inasmuch as I have already presented the lives of earlier emperors. 2 Now I shall begin to write of emperors who followed after. Of these the most righteous and the most worthy of careful narration was <a href=/people/13 target=_blank>Alexander</a> (who was emperor for thirteen years, whereas the others ruled but for six months or at most for one or two years), the most distinguished was <a href=/people/11044 target=_blank>Aurelian</a>, but the glory of them all was <a href=/people/82 target=_blank>Claudius</a>, the founder of your family. 3 About this man I fear to tell the truth in writing to Your Clemency, lest I may seem to the malicious to be a flatterer; but yet I shall be delivered from the envy of evil men, inasmuch as I have seen that in the eyes of others also he was the most illustrious. 4 To these rulers must be joined <a href=/people/1446 target=_blank>Diocletian</a>, father of the golden age, and <a href=/people/3044 target=_blank>Maximian</a>, father of the iron, as they commonly say, and all the others down to the time of Your <a href=/people/1591 target=_blank>Piety</a>. But as for you, 5 O revered Augustus, you shall receive honour in the many and more eloquent pages of those to whom a more kindly nature has granted this boon. 6 To these emperors we must add <a href=/people/232 target=_blank>Licinius</a> and <a href=/people/2896 target=_blank>Maxentius</a>, all whose power has been made subject to your sway, writing of them, however, in such a way that full justice shall be done to their prowess. 7 For I will not, as is the wont of many writers, detract from the greatness of those who have been vanquished, since I perceive that if, in writing of them, I shall tell the whole truth concerning the noble qualities which they possessed, it will but enhance your glory. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 200 <a href=http://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Elagabalus/2*.html#35 target=_blank>LA</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=599', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas599";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=599';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

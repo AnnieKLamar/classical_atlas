@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Nicolaus of Damascus, Life of Augustus' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Nicolaus of Damascus, Life of Augustus, translated by Clayton Morris Hall (1896-1986), published 1923, a work in the public domain digitized by John Paul Adams at CSUN.edu. The work survives in fragments only, from Jacoby's Fragmente der Griechischen Historiker (FGrH_90)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='14' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 14' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/669' content='urn:cts:greekLit:tlg0577.tlg003' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n85344961' content='Nicolaus of Damascus'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2008019745' content='Clayton Morris Hall (1896-1986)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://www.csun.edu/~hcfll004/nicolaus.html' /><h2>Nicolaus of Damascus, Life of Augustus</h2>Nicolaus of Damascus, Life of Augustus, translated by Clayton Morris Hall (1896-1986), published 1923, a work in the public domain digitized by John Paul Adams at CSUN.edu. The work survives in fragments only, from Jacoby's Fragmente der Griechischen Historiker (FGrH_90) This text has 91 tagged references to 37 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0577.tlg003'>urn:cts:greekLit:tlg0577.tlg003</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q12902597'>Q12902597</a>;     <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:1'><b>&sect; 1</b>&nbsp;&nbsp;(F125) Men gave him this name in view of his claim to honor; and, scattered over islands and continents, through city and tribe, they revere him by building temples and by sacrificing to him, thus requiting him for his great virtue and acts of kindness toward themselves. For this man, having attained preeminent power and discretion, ruled over the greatest number of people within the memory of man, established the farthest boundaries for the Roman Empire, and settled securely not only the tribes of Greeks and barbarians, but also their dispositions; at first with arms but afterward even without arms, by attracting them of their own free will. By making himself known through kindness he persuaded them to obey him. The names of some of them he had never heard before, nor had they been subject within the memory of anyone, but he subdued them: all those that live as far as the <a about=https://topostext.org/place/507071WRhi class=place long=7.1111 lat=50.736>Rhine</a> and beyond the <a about=https://topostext.org/place/408187WIon class=demonym long=18.7 lat=39.2>Ionian</a> Sea and the <a about=https://topostext.org/place/405195RIll class=demonym long=19.8 lat=40.8>Illyrian</a> peoples. These are called <a about=https://topostext.org/place/450190RPan class=ethnic long=19 lat=45>Pannonians</a> and <a about=https://topostext.org/place/445250RDac class=ethnic long=25 lat=44.5>Dacians</a> (See the work: 'Concerning Brave Honest Deeds').</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:2'><b>&sect; 2</b>&nbsp;&nbsp;(F126) To set forth the full power of this man's intelligence and virtue, both in the administration which he exercised at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and in the conduct of great wars both domestic and foreign, is a subject for competition in speech and essay, that men may win renown by treating it well. I myself shall relate his achievements, so that all can know the truth. First I shall speak of his birth and breeding, his parents his nurture and education from infancy, by means of which he came to such an estate. <br />His father was Gaius <a href=/people/321 target=_blank>Octavius</a>, a man of senatorial rank. His forbears, renowned for both wealth and justice, left their estates to him, an orphan, at their death. His guardians spent his money, but he remitting his just claims was satisfied with the remainder.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:3'><b>&sect; 3</b>&nbsp;&nbsp;(F127) <a href=/people/8 target=_blank>Octavius</a>, at the age of about nine [twelve?] years, was an object of no little admiration to the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a>, exhibiting as he did great excellence of nature, young though he was; for he gave an oration before a large crowd and received much applause from grown men. After his grandmother's death he was brought up by his mother <a href=/people/4444 target=_blank>Atia</a> and her husband Lucius <a href=/people/26 target=_blank>Philippus</a>, who was a descendant of the conquerors <a href=/people/30 target=_blank>Philip</a> of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedon</a>. At <a href=/people/26 target=_blank>Philippus</a>' house, as if at his father's, <a href=/people/321 target=_blank>Octavius</a> was reared and showed great promise, already seeming to be treated with respect by his comrades, the children of highest birth. Many of them associated with him, and even not a few of the youths who had hopes to undertake affairs of state. Daily many lads, men, and boys of his own age attended him whether he rode on horseback outside of the town or went to the house of his relations or any other person; for he exercised his mind with the finest practices and his body with both genteel and warlike pursuits; and more quickly than his teachers he himself applied his lesson to the facts in hand, so that for this reason also much praise redounded to him in the city. Both his mother and her husband <a href=/people/26 target=_blank>Philippus</a> took care of him, inquiring each day from the instructors and curators whom they had placed in charge of the boy what he had accomplished, how far he had advanced, or how he had spent the day and with whom he associated.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:4'><b>&sect; 4</b>&nbsp;&nbsp;At the time when the Civil War had laid hold on the city, his mother <a href=/people/4444 target=_blank>Atia</a> and <a href=/people/26 target=_blank>Philippus</a> quietly sent <a href=/people/8 target=_blank>Octavius</a> off to one of his father's country places.<br />He entered the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, aged about fourteen, to put off the toga praetextata and assume the toga virilis, this being a token of his becoming registered as a man. Then while all the citizens looked upon him, because of his comeliness and very evidently noble descent, he sacrificed to the gods and was registered in the sacred college in place of Lucius <a href=/people/162 target=_blank>Domitius</a>, who had died. The people indeed had very eagerly elected him to this position. Accordingly, he performed the sacrifice, adorned with the toga virilis and at the same time the honors of a very high priestly office.<br />Nevertheless, though he was registered as of age according to law, his mother would not let him leave the house other than as he did before, when he was a child, and she made him keep to the same mode of life and sleep in the same apartment as before. FOr he was of age only by law, and in other respects was taken care of as a child. He did not change the fashion of his clothes, but continued to use the Roman garb.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:5'><b>&sect; 5</b>&nbsp;&nbsp;He went to the temples on the regular days, but after dark on account of his youthful charm, seeing that he attracted many women by his comeliness and high lineage; though often tempted by them he seems never to have been enticed. Not only did the watchful care of his mother, who guarded him and forbade his wandering, protect him, but he too was prudent now that he was advancing in age. During the Latin festival when the consuls had to ascend the <a about=https://topostext.org/place/418127LAlb class=place long=12.709 lat=41.7514>Alban Mount</a> to perform the customary sacrifices, the priests meanwhile succeeding to the jurisdiction of the consuls, <a href=/people/8 target=_blank>Octavius</a> sat on the Tribunal in the center of the forum. And there came many people on legal business and many on no business at all except for a sight of the boy; for he was well worth beholding, especially when he assumed the dignity and honorable aspect of office.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:6'><b>&sect; 6</b>&nbsp;&nbsp;<a href=/people/3 target=_blank>Caesar</a> had by this time completed the wars in Europe, had conquered <a href=/people/7 target=_blank>Pompey</a> in <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>, had taken <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, had returned from <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a> and the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Euxine</a> Sea, and was intending to advance in to <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a> in order to put down what was left of war over there; and <a href=/people/8 target=_blank>Octavius</a> wanted to take the field with him in order that he night gain experience in the practice of war. But when he found that his mother <a href=/people/4444 target=_blank>Atia</a> was opposed he said nothing by way of argument but remained at home. It was plain that <a href=/people/3 target=_blank>Caesar</a>, out of solicitude for them, did not wish him to take the field yet, lest he might bring on illness to a weak body through changing his mode of life and thus permanently injure his health. For this cause he took no part in the expedition.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:7'><b>&sect; 7</b>&nbsp;&nbsp;After finishing that war also, <a href=/people/3 target=_blank>Caesar</a> returned to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, having granted pardon to a very few of the captives who fell to him because they had not learned wisdom in the earlier wars. Then the following incident occurred: there was a particular associate and friend of <a href=/people/8 target=_blank>Octavius</a>, <a href=/people/91 target=_blank>Agrippa</a>, who had been educated at the same place and who was a very special friend of his. His brother was with <a href=/people/41 target=_blank>Cato</a> and treated with much respect; he had participated in the <a about=https://topostext.org/place/300070RLib class=demonym long=10.01 lat=32.01>Libyan</a> War, but was at this time taken captive. Although <a href=/people/8 target=_blank>Octavius</a> had never yet asked anything of <a href=/people/3 target=_blank>Caesar</a> he wanted to beg the prisoner off, but he hesitated because of modesty and at the same time because he saw how <a href=/people/3 target=_blank>Caesar</a> was disposed toward those who had been captured in that war. However, he made bold to ask it, and had his request granted. Thereupon he was very glad at having rescued a brother for his friend and he was praised by others for employing his zeal and right of intercession first of all for a friend's safety.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:8'><b>&sect; 8</b>&nbsp;&nbsp;After this <a href=/people/3 target=_blank>Caesar</a> celebrated his triumphs for the <a about=https://topostext.org/place/300070RLib class=demonym long=10.01 lat=32.01>Libyan</a> War and the others which he had fought; and he ordered the young <a href=/people/3 target=_blank>Caesar</a>, whom he had now adopted, and who was in a way a son even by nature, on account of the closeness of their relationship, to follow his chariot, having bestowed upon him military decorations, as if he had been his aide (syskenon) the war. Likewise, at the sacrifices and when entering the temples he stationed him at his side and he ordered the others to yield precedence to him. <a href=/people/3 target=_blank>Caesar</a> already bore the rank of Imperator, which was the highest according to the Roman usage, and he was highly esteemed in the state. The boy, being his companion both at the theater and at the banquets, and seeing that he conversed kindly with him, as if with his own son, and having by this time become somewhat more courageous, when many of his friends and citizens asked him to intercede for them with <a href=/people/3 target=_blank>Caesar</a>, in matters in which they were in need of aid, looking out for the opportune moment he respectfully asked and was successful; and he became of great value to many of his kinsfolk, for he took care never to ask a favor at an inopportune time, nor when it was annoying to <a href=/people/3 target=_blank>Caesar</a>. And he displayed not a few sparks of kindness and natural intelligence.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:9'><b>&sect; 9</b>&nbsp;&nbsp;<a href=/people/3 target=_blank>Caesar</a> wished <a href=/people/8 target=_blank>Octavius</a> to have the experience of directing the exhibition of theatrical productions (for there were two theaters, the one Roman, over which he himself had charge, and the other Greek). This he turned over to the care of <a href=/people/8 target=_blank>Octavius</a>. The latter, wishing to exhibit interest and benevolence in the matter, even on the hottest and longest days, never left his post before the end of the play; with the result that he fell ill, for he was young and unaccustomed to toil. Being very ill, every one felt considerable apprehension regarding him, lest a constitution such as his might suffer some mishap, and <a href=/people/3 target=_blank>Caesar</a> most of all. Accordingly, every day he either called himself and encouraged him or else sent friends to do so, and he kept physicians in continuous attendance. On one occasion word was brought to him while he was dining that <a href=/people/8 target=_blank>Octavius</a> was in a state of collapse and dangerously ill. He sprang up and ran barefooted to the place where the patient was, and in great anxiety and with great emotion questioned the physicians, and he sat down by the bedside himself. When <a href=/people/8 target=_blank>Octavius</a>' full recovery was brought about, he showed much joy.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:10'><b>&sect; 10</b>&nbsp;&nbsp;While <a href=/people/8 target=_blank>Octavius</a> was convalescent, still weak physically though entirely out of danger, <a href=/people/3 target=_blank>Caesar</a> had to take the field on an expedition in which he had previously the intention of taking the boy. This however he could not now do on account of his attack of sickness. Accordingly, he left him behind in the care of a number of persons who were to take particular charge of his mode of life; and giving orders that if <a href=/people/8 target=_blank>Octavius</a> should grow strong enough, he was to follow him, he went off to the war. The eldest son of <a href=/people/7 target=_blank>Pompeius Magnus</a> had got together a great force in a short time, contrary to the expectations of everyone, with the intention of avenging his father's death, and, if possible, of retrieving his father's defeat. <a href=/people/8 target=_blank>Octavius</a>, left behind in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, in the first place gave his attention to gaining as much physical strength as possible, and soon he was sufficiently robust. Then he set out from home toward the army, according to his uncle's instructions (for that is what he called him). Many were eager to accompany him on account of his great promise but he rejected them all, even his mother herself, and selecting the speediest and strongest of his servants he hastened on his journey and with incredible dispatch he covered the long road and approached <a href=/people/3 target=_blank>Caesar</a>, who had already completed the whole war in the space of seven months.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:11'><b>&sect; 11</b>&nbsp;&nbsp;When <a href=/people/8 target=_blank>Octavius</a> reached <a about=https://topostext.org/place/411013UTar class=place long=1.259 lat=41.1147>Tarraco</a> it was hard to believe that he had managed to arrive in so great a tumult of war. Not finding <a href=/people/3 target=_blank>Caesar</a> there, he had to endure more trouble and danger. He caught up with <a href=/people/3 target=_blank>Caesar</a> in Spain near the city of Calpia. <a href=/people/3 target=_blank>Caesar</a> embraced him as a son and welcomed him, for he had left him at home, ill, and he now unexpectedly saw him safe from both enemies and brigands. In fact, he did not let him go from him, but he kept him at his own quarters and mess. He commended his zeal and intelligence, inasmuch as he was the first of those who had set out from <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> to arrive. And he made the point of asking him in conversation, for he was anxious to make a trial of his understanding; and finding that he was sagacious, intelligent, and concise in his replies and that he always answered to the point, his esteem and affection for him increased. After this they had to sail for <a about=https://topostext.org/place/376-09PCar class=place long=-0.9738 lat=37.6013>Carthago Nova</a>, and arrangements were made whereby <a href=/people/8 target=_blank>Octavius</a> embarked in the same boat as <a href=/people/3 target=_blank>Caesar</a>, with five slaves, but, out of affection, he took three of his companions aboard in addition to the slaves, though he feared that <a href=/people/3 target=_blank>Caesar</a> would be angry when he found this out. However, the reverse was the case, for <a href=/people/3 target=_blank>Caesar</a> was pleased in that <a href=/people/8 target=_blank>Octavius</a> was fond of his comrades and he commended him because he always liked to have present with him men who were observant and who tried to attain to excellence; and because he was already giving no little thought to gaining a good reputation at home.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:12'><b>&sect; 12</b>&nbsp;&nbsp;<a href=/people/3 target=_blank>Caesar</a> duly arrived at <a about=https://topostext.org/place/376-09PCar class=place long=-0.9738 lat=37.6013>Carthago Nova</a>, intending to meet with those who were in need of him. A great many came to see him, some for the purpose of settling any differences they might have had with certain persons, others because of matters of civil administration, others in order to obtain the rewards for deeds of courage which they had performed. Regarding these matters he gave them audience. Many other officers had congregated there also. The <a about=https://topostext.org/place/397-03USag class=ethnic long=-0.2807 lat=39.677>Saguntini</a> came to <a href=/people/8 target=_blank>Octavius</a> asking for assistance, for there were a number of charges against them. He acted as their spokesman, and speaking before <a href=/people/3 target=_blank>Caesar</a> skillfully secured their release from the charges. He sent them home delighted, singing his praises to everyone and calling him their savior. Thereupon many people approached him, asking for his patronage, and he proved of considerable value for them. Some he relieved of the charges brought against them, for others he secured rewards, and he placed still others in offices of state. His kindness, humanity, and the prudence he had revealed at these gatherings were subjects of comment to all. In fact <a href=/people/3 target=_blank>Caesar</a> himself cautiously [lacuna]....</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:13'><b>&sect; 13</b>&nbsp;&nbsp;(F128) [lacuna] ...of silver, according to the ancestral custom; nor to associate with young fellows who drank freely, nor to remain at banquets till nightfall, nor to dine before the tenth hour, except at the house of <a href=/people/3 target=_blank>Caesar</a> or <a href=/people/26 target=_blank>Philippus</a> or <a href=/people/71 target=_blank>Marcellus</a>, his sister's husband, a man of sobriety and of the best Roman descent. Modesty, which one might assume was fitting for one of that age (for nature has assigned it an earlier place than other virtues) was apparent in his actions and continued during his whole life. Therefore <a href=/people/3 target=_blank>Caesar</a> made much of him and not as some think, entirely because of relationship. Some time before he had decided to adopt him, but fearing that elated at the hope of such good fortune, as those usually are who are brought up in wealth, he might become forgetful of virtue and depart from his accustomed mode of life, <a href=/people/3 target=_blank>Caesar</a> concealed his intention but he adopted him as son in his Will (for he had no male children of his own) and made him residuary legatee of his entire estate, after bequeathing one fourth of his property to friends and townsmen, as was afterwards known.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:14'><b>&sect; 14</b>&nbsp;&nbsp;<a href=/people/8 target=_blank>Octavius</a> asked permission to go home to see his mother, and when it was granted, he set out. When he reached the <a about=https://topostext.org/place/419125LJan class=place long=12.4608 lat=41.8913>Janiculan Hill</a> near <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, a man who claimed to be the son of Gaius <a href=/people/50 target=_blank>Marius</a> came with a large crowd of people to meet him. He had taken also some women who were relatives of <a href=/people/3 target=_blank>Caesar</a>, for he was anxious to be enrolled in the family, and they testified to his descent. He did not succeed in persuading <a href=/people/4444 target=_blank>Atia</a> at all, nor her sister, to make any false statement concerning their family; for the families of <a href=/people/3 target=_blank>Caesar</a> and <a href=/people/50 target=_blank>Marius</a> were very close, but this young man was really no relative whatever. So then, he came up to the young <a href=/people/3 target=_blank>Caesar</a> with a great multitude and tried to gain his authority also for being enrolled in the family. The citizens who accompanied him were also earnestly persuaded that he was <a href=/people/50 target=_blank>Marius</a>' son. <a href=/people/8 target=_blank>Octavius</a> was in quite a quandary and began to consider what he should do. It was a difficult thing to greet a stranger as a relative, one whose origin he did not know, and for whom his mother did not vouch; and on the other hand, to repudiate the youth [neaniskon] and the crowd of citizens with him would be very difficult particularly for one so modest as he. Accordingly he quietly answered and dismissed the fellow, saying that <a href=/people/3 target=_blank>Caesar</a> was the head of their family and the chief of the state and of the whole Roman government.. He should therefore go to him and explain to him the kinship, and if he convinced <a href=/people/3 target=_blank>Caesar</a>, then both they and the other relations would accede to his decision quite convinced; otherwise there could be no ground for their connection with him. In the meanwhile, until <a href=/people/3 target=_blank>Caesar</a> decided, he should not come to <a href=/people/8 target=_blank>Octavius</a> nor ask for anything that might be expected of a relative. Thus sensibly he answered and everyone there commended him; nevertheless the young fellow followed him all the way home.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:15'><b>&sect; 15</b>&nbsp;&nbsp;When he arrived in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he lodged near the house of <a href=/people/26 target=_blank>Philippus</a> and his mother, and passed his time with them, seldom leaving them, except at times when he wished to invite some of his young friends to dine with him; but that was not often. While he was in the City, he was declared a patrician by the Senate. <br />(F129) <a href=/people/8 target=_blank>Octavius</a> lived soberly and in moderation; his friends know of something else about him that was remarkable. For an entire year at the very age at which youths, particularly those with wealth, are most wanton, he abstained from sexual gratification out of regard for both his voice and his strength.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:16'><b>&sect; 16</b>&nbsp;&nbsp;(F130) <a href=/people/8 target=_blank>Octavius</a> spent three months in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and then came and sojourned here [<a about=https://topostext.org/place/407195PApo class=place long=19.4727 lat=40.7215>Apollonia</a>]. He was admired by his friends and companions, revered by everyone in the city, and praised by his instructors. In the fourth month of his stay, a freedman came from home, in excitement and dismay, sent by his mother and carrying a letter which said that <a href=/people/3 target=_blank>Caesar</a> had been killed in the Senate by <a href=/people/61 target=_blank>Cassius</a> and <a href=/people/34 target=_blank>Brutus</a> and their accomplices. She asked her son to return to her as she did not know what the outcome of affairs would be. She said he must show himself a man now and consider what he ought to do and put his plans in action, according to fortune and opportunity. His mother's letter made all this clear, and the man who brought it gave a similar report. He said he had been sent immediately after <a href=/people/3 target=_blank>Caesar</a>'s murder, and he had wasted no time on the way, so that hearing the news as quickly as possible, <a href=/people/8 target=_blank>Octavius</a> would be able to make his plans accordingly. He added that the relatives of the murdered man were in great danger, and it was necessary to consider first of all how this was to be avoided. The group of murderers was not small, and they would drive out and murder <a href=/people/3 target=_blank>Caesar</a>'s relatives.<br />When they heard this they were greatly disturbed (it was just about the time that they were going to dinner). Speedily a report spread to those out of doors and through the whole city, revealing nothing accurately, but only that some great calamity had befallen. Then when the evening was fully come many of the foremost <a about=https://topostext.org/place/407195PApo class=ethnic long=19.4727 lat=40.7215>Apollonians</a> came up with torches, asking with kind intent what the news was. After taking counsel with his friends <a href=/people/8 target=_blank>Octavius</a> decided to tell the most distinguished of them, but to send the rabble away. He and his friends did so, and when the crowd was with difficulty persuaded by the leaders to leave, <a href=/people/8 target=_blank>Octavius</a> had the opportunity of taking counsel with his friends (much of the night already having been spent) as to what ought to be done and how he should improve the situation. After thoroughly considering the case, some of his friends advised him to go and join the army in <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>; it had been sent out for the <a about=https://topostext.org/place/370585RPar class=demonym long=58.5 lat=37>Parthian</a> War, and Marcus <a href=/people/584 target=_blank>Acilius</a> was in command of it. They advised him to take the army for the sake of safety, to go to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and to take vengeance upon the murderers. The soldiers would be hostile toward the murderers because they had been fond of <a href=/people/3 target=_blank>Caesar</a>, and their sympathy would increase when they saw the boy. But this seemed a difficult course for a very young man, and too much for his present youth and inexperience, especially since the disposition of the people toward him was not clear as yet and many enemies were at hand. Hence the suggestion was not adopted.<br />Avengers of <a href=/people/3 target=_blank>Caesar</a> were expected to appear from among those who in his lifetime had come upon good fortune at his hands or who had received from him power, riches, and valuable gifts, such as they had not hoped for even in dreams. <a href=/people/8 target=_blank>Octavius</a> received advice of various sorts form different people, as is always the case in times when a situation is obscure and unsettled, but he determined to postpone decision in the whole matter until he could see those of his friends who were preeminently mature and wise and secure the aid of their counsel also. He decided therefore to refrain from action, but to go to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and having first arrived in <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, to find out what had taken place after <a href=/people/3 target=_blank>Caesar</a>'s murder, and to take counsel with the people there concerning the entire affair.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:17'><b>&sect; 17</b>&nbsp;&nbsp;His retinue then began preparations for the voyage. <a href=/people/13 target=_blank>Alexander</a>, pleading his age and ill health, returned to his home at <a about=https://topostext.org/place/391272PPer class=place long=27.1842 lat=39.1325>Pergamum</a>. The inhabitants of <a about=https://topostext.org/place/407195PApo class=place long=19.4727 lat=40.7215>Apollonia</a> came in multitudes and for some time affectionately begged <a href=/people/8 target=_blank>Octavius</a> to stay with them, saying that they would put the city to any use that he wished, out of good will toward him and reverence for the deceased. they thought that it would be better for him to await developments in a friendly city, since so many enemies were abroad. However, since he desired to participate in whatever was done, and to avail himself of any opportunity for action, he did not change his decision, but said that he must set sail. Then he praised the <a about=https://topostext.org/place/407195PApo class=ethnic long=19.4727 lat=40.7215>Apollonians</a>, and afterward when he became master of <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> he conferred on them autonomy and immunity and some other not inconsiderable favors, and made it one of the most fortunate cities. All the people in tears escorted him at his departure, admiring his restraint and wisdom that he had revealed in his sojourn there; and at the same time they were sorry for his lot.<br />There came to him from the army not a few from the cavalry and infantry, both tribunes and centurions, and many others for the sake of serving him, but some for their own gain. Then they exhorted him to take up arms and they promised that they would take the field with him and persuade others also, in order to avenge <a href=/people/3 target=_blank>Caesar</a>'s death. He commended them, but said that he had no need of them at present; when, however, he would call them to take vengeance, he asked that they be ready; and they agreed to this.<br /><a href=/people/8 target=_blank>Octavius</a> put out to sea on ships which were at hand, though it was still quite perilously wintry, and crossing the <a about=https://topostext.org/place/408187WIon class=demonym long=18.7 lat=39.2>Ionian</a> Sea, arrived at the nearest promontory of <a about=https://topostext.org/place/406176RCal class=place long=17.6 lat=40.6>Calabria</a>, where the news regarding the revolution at <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> had not yet been clearly announced to the inhabitants. He came ashore here and started on foot for <a about=https://topostext.org/place/404182ULup class=place long=18.1705 lat=40.3514>Lupiae</a>. When he arrived there he met people who had been in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> when <a href=/people/3 target=_blank>Caesar</a> was buried; and they told him, among other things, that he had been named in the will as <a href=/people/3 target=_blank>Caesar</a>'s son, inheriting three fourths of his property, the remaining share having been set aside to pay the sum of seventy-five drachmae to each man in the city. He had enjoined <a href=/people/4444 target=_blank>Atia</a>, the youth's mother, to take charge of his burial, but a great crowd had forced its way into the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> and had there cremated the body and interred the remains. They told <a href=/people/8 target=_blank>Octavius</a> that <a href=/people/34 target=_blank>Brutus</a> and <a href=/people/61 target=_blank>Cassius</a> and the other murderers had taken possession of the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a>, and were obtaining, through the promise of freedom, the slaves as allies. On the first two days while <a href=/people/3 target=_blank>Caesar</a>'s friends were still panic stricken many men came and joined the murderers; but when colonists from the neighboring cities (whom <a href=/people/3 target=_blank>Caesar</a> had furnished with grants and had established in those cities) began to come in large numbers and attach themselves to the followers of <a href=/people/128 target=_blank>Lepidus</a>, the Master of the Horse, and to those of <a href=/people/10 target=_blank>Antonius</a>, <a href=/people/3 target=_blank>Caesar</a>'s colleague in the consulship, who were promising to avenge <a href=/people/3 target=_blank>Caesar</a>'s death, most of the conspirators' group dispersed. The conspirators being thus deserted gathered some gladiators and others who were implacably hostile to <a href=/people/3 target=_blank>Caesar</a>, or who had had a share in the plot. A little later, all these came down from the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a>, having received pledges of safety from <a href=/people/10 target=_blank>Antonius</a> who now had a large force, but who for the present had given up his plan to avenge <a href=/people/3 target=_blank>Caesar</a>'s murder. (That was why they were allowed to leave <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> safely and go to <a about=https://topostext.org/place/415126UAnt class=place long=12.6286 lat=41.4552>Antium</a>). Even their houses were besieged by the people, not under any leader, but the populace itself was enraged on account of the murder of <a href=/people/3 target=_blank>Caesar</a>, of whom they were fond, and especially when they had seen his bloody garment and newly slain body brought to burial when they had forced their way into the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> and had there interred it.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:18'><b>&sect; 18</b>&nbsp;&nbsp;When <a href=/people/8 target=_blank>Octavius</a> heard this he was moved to tears and grief because of his memory and affection for the man, and his sorrow stirred anew. Then he stopped and waited for other letters from his mother and friends in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, although he did not disbelieve those who had reported the events, for he saw no reason why they should fabricate any falsehood. After this he set sail for <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brundisium</a>, for he had now learned that none of his enemies were there, though previously he had been suspicious lest the city might be held by some of them, and consequently he had not recklessly approached it directly from the other shore. There arrived from his mother also a letter in which was written an urgent request for him to return to hear and the whole household as soon as possible, so that no treachery should come upon him from without, seeing that he had been designated <a href=/people/3 target=_blank>Caesar</a>'s son. It bore out the earlier news, and said that the whole populace was aroused against <a href=/people/34 target=_blank>Brutus</a> and <a href=/people/61 target=_blank>Cassius</a> and their party, and was greatly vexed at what they had done. His stepfather <a href=/people/26 target=_blank>Philippus</a> sent him a letter asking him not to take steps to secure <a href=/people/3 target=_blank>Caesar</a>'s bequest but even to retain his own name because of what had happened to <a href=/people/3 target=_blank>Caesar</a> and to live free from politics and in safety. <a href=/people/8 target=_blank>Octavius</a> knew that this advice was given with kind intent, but he thought differently, as he already had his mind on great things and he was full of confidence; he therefore took upon himself the toil and danger and the enmity of men whom he did not care to please. Nor did he propose to cede to anyone a name or a rule so great as his, particularly with the state on his side and calling him to come into his father's honors; and very rightly, since both naturally and by law the office belonged to him, for he was the nearest relative and had been adopted as son by <a href=/people/3 target=_blank>Caesar</a> himself, and he felt that to follow the matter up and avenge his death was the proper course to pursue. This is what he thought, and he wrote and so answered <a href=/people/26 target=_blank>Philippus</a> though he did not succeed in convincing him. His mother <a href=/people/4444 target=_blank>Atia</a>, when she saw the glory of fortune and the extent of the Empire devolving upon her own son, rejoiced; but on the other hand knowing that the undertaking was full of fear and danger, and having seen what had happened to her uncle <a href=/people/3 target=_blank>Caesar</a>, she was not very enthusiastic; so it looked as if she was between the view of her husband <a href=/people/26 target=_blank>Philippus</a> and that of her son. Hence she felt many cares, now anxious when she enumerated all the dangers awaiting one striving for supreme power, and now elated when she thought of the extent of that power and honor. Therefore she did not dare to dissuade her son from attempting the great deed and effecting a just requital, but still she did not venture to urge him on, because fortune seemed somewhat obscure. She permitted his use of the name <a href=/people/3 target=_blank>Caesar</a> and in fact was the first to assent. <a href=/people/8 target=_blank>Octavian</a>, having made inquiry as to what all his friends thought about this also, without delay accepted both the name and the adoption, with good fortune and favorable omen.<br />This was the beginning of good both for himself and all mankind, but especially for the state and the entire Roman people. He sent immediately to <a href=/people/4027 target=_blank>Asia</a> for the money and means that <a href=/people/3 target=_blank>Caesar</a> had previously dispatched for the <a about=https://topostext.org/place/370585RPar class=demonym long=58.5 lat=37>Parthian</a> War, and when he received it along with a year's tribute from the people of <a href=/people/4027 target=_blank>Asia</a>, contenting himself with the portion that had belonged to <a href=/people/3 target=_blank>Caesar</a> he turned the public property over to the state treasury. At that time, too, some of his friends urged him as they had at <a about=https://topostext.org/place/407195PApo class=place long=19.4727 lat=40.7215>Apollonia</a> to go to <a href=/people/3 target=_blank>Caesar</a>'s colonies and to levy an army, inducing the men to join an expedition on his behalf by employing the prestige of the great name of <a href=/people/3 target=_blank>Caesar</a>. They declared that the soldiers would gladly follow the leadership of <a href=/people/3 target=_blank>Caesar</a>'s son and would do everything for him; for there persisted among them a wonderful loyalty and good will toward <a href=/people/3 target=_blank>Caesar</a> and a memory of what they had accomplished with him in his lifetime, and they desired under the auspices of <a href=/people/3 target=_blank>Caesar</a>'s name to win the power which they had formerly bestowed upon <a href=/people/3 target=_blank>Caesar</a>. However, the opportunity for this did not seem to be at hand. He therefore turned his attention toward seeking legally, through a senatorial decree, the dignity his father had held; and he was careful not to acquire the reputation of being one who was ambitious and not a law abiding man. Accordingly, he listened especially to the eldest of his friends and those of the greatest experience, and set out from <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brundisium</a> for <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -50 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:19'><b>&sect; 19</b>&nbsp;&nbsp;From this point my narrative will investigate the manner in which the assassins formed their conspiracy against <a href=/people/3 target=_blank>Caesar</a> and how they worked out the whole affair, and what happened afterward when the whole state was shaken. Accordingly, I shall in the first place rehearse the circumstances of the plot itself, its reasons, and its final momentous outcome. In the next place I shall speak of <a href=/people/8 target=_blank>Octavian</a> on whose account this narrative was undertaken; how he came into power, and now, after he had taken his predecessor's place, he employed himself in deeds of peace and war.<br />At first a few men started the conspiracy, but afterwards many took part, more than are remembered to have taken part in any earlier plot against a commander. They say that there were more than eighty who had a share in it. Among those who had the most influence were: <a href=/people/11075 target=_blank>Decimus Brutus</a>, a particular friend of <a href=/people/3 target=_blank>Caesar</a>, Gaius <a href=/people/61 target=_blank>Cassius</a>, and Marcus <a href=/people/34 target=_blank>Brutus</a>, second to none in the estimation of the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> at that time. All these were formerly members of the opposite faction, and had tried to further <a href=/people/7 target=_blank>Pompeius</a>' interests, but when he was defeated, they came under <a href=/people/3 target=_blank>Caesar</a>'s jurisdiction and lived quietly for the time being; but although <a href=/people/3 target=_blank>Caesar</a> tried to win them over individually by kindly treatment, they never abandoned their hope of doing him harm. He on his part was naturally without grudge against the beaten party, because of a certain leniency of disposition, but they, using to their own advantage his lack of suspicion, by seductive words and pretence of deeds treated him in such a way as to more readily escape detection in their plot. There were various reasons which affected each and all of them and impelled them to lay hands on the man. Some of them had hopes of becoming leaders themselves in his place if he were put out of the way; others were angered over what had happened to them in the war, embittered over the loss of their relatives, property, or offices of state. They concealed the fact that they were angry, and made the pretense of something more seemly, saying that they were displeased at the rule of a single man and that they were striving for a republican form of government. Different people had different reasons, all brought together by whatever pretext they happened upon.<br />At first the ringleaders conspired; then many more joined, some of their own accord because of personal grievances, some because they had been associated with the others and wished to show plainly the good faith in their long standing friendship, and accordingly became their associates. There were some who were of neither of these types, but who had agreed because of the worth of the others, and who resented the power of one man after the long-standing republican constitution. They were very glad not to start the affair themselves, but were willing to join such company when someone else had initiated proceedings, not even hesitating to pay the penalty if need be. The reputation which had long been attached to the <a href=/people/34 target=_blank>Brutus</a> family was very influential in causing the uprising, for <a href=/people/34 target=_blank>Brutus</a>' ancestors had overthrown the kings who ruled from the time of <a href=/people/167 target=_blank>Romulus</a>, and they had first established republican government in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>. Moreover, men who had been friends of <a href=/people/3 target=_blank>Caesar</a> were no longer similarly well disposed toward him when they saw people who were previously his enemies saved by him and given honors equal to their own. In fact, even these others were not particularly well disposed toward him, for their ancient grudges took precedence over gratitude and made them forgetful of their good fortune in being saved, while, when they remembered the good things they had lost in being defeated, they were provoked. Many also hated him because they had been saved by him although he had been irreproachable in his behavior toward them in every respect; but nevertheless, the very thought of receiving as a favor the benefits which as victors they would readily have enjoyed, annoyed them very much.<br />Then there was another class of men, namely those who had served with him, whether as officers or privates, and who did not get a share of glory. They asserted that prisoners of war were enrolled among the veteran forces and that they received identical pay. Accordingly, his friends were incensed at being rated as equal to those whom they themselves had taken prisoners, and indeed they were even outranked by some of them. To many, also, the fact that they benefitted at his hands, both by gifts of property and by appointments to offices, was a special source of grievance, since he alone was able to bestow such benefits, and everyone else was ignored as of no importance. When he became exalted through many notable victories (which was fair enough) and began to think himself superhuman the common people worshipped him, but he began to be obnoxious to the optimates and to those who were trying to obtain a share in the government. And so, every kind of man combined against him: great and small, friend and foe, military and political, every one of whom put forward his own particular pretext for the matter in hand, and as a result of his own complaints each lent a ready ear to the accusations of the others. They all confirmed each other in their conspiracy and they furnished as surety to one another the grievances which they held severally in private against him. Hence, though the number of conspirators became so great, no one dared to give information of the fact. Some say, however, that a little before his death, <a href=/people/3 target=_blank>Caesar</a> received a note in which warning of the plot was given, and that he was murdered with it in his hands before he had a chance to read it, and that it was found among other notes after his death.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:20'><b>&sect; 20</b>&nbsp;&nbsp;However, all this became known subsequently. At that time some wished to gratify him by voting him one honor after another, while others treacherously included extravagant honors, and published them, so that he might become and object of envy and suspicion to all. <a href=/people/3 target=_blank>Caesar</a> was of guileless disposition and was unskilled in political practices by reason of his foreign campaigns, so that he was easily taken in by these people, supposing, naturally enough, that their commendations came rather from men who admired him than from men who were plotting against him.<br />To those who were in authority this measure was especially displeasing: that the people were now rendered powerless to make appointments to office, and that <a href=/people/3 target=_blank>Caesar</a> was given the right of investiture to bestow upon whomsoever he pleased. An ordinance voted not long before provided this. Furthermore, all sorts of rumors were being bandied about in the crowd, some telling one story, others another. Some said that he had decided to establish a capital of the whole empire in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, and that Queen <a href=/people/100 target=_blank>Cleopatra</a> had lain with him and borne him a son, named <a href=/people/27 target=_blank>Cyrus</a>, there. This he himself refuted in his will as false. Others said that he was going to do the same thing at <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, on account of his ancient connection with the <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> race.<br />Something else, such as it was, took place which especially stirred the conspirators against him. There was a golden statue of him which had been erected on the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a> by vote of the people. A diadem appeared on it, encircling the head, whereupon the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> became very suspicious, supposing that it was a symbol of servitude. Two of the tribunes, Lucius and Gaius, came up and ordered one of their subordinates to climb up, take it down, and throw it away. When <a href=/people/3 target=_blank>Caesar</a> discovered what had happened, he convened the Senate in the <a about=https://topostext.org/place/419125SCon class=place long=12.48428 lat=41.89294>Temple</a> of <a href=/people/3370 target=_blank>Concordia</a> and arraigned the tribunes, asserting that they themselves had secretly placed the diadem on the statue, so that they might have a chance to insult him openly and thus get credit for doing a brave deed by dishonoring the statue, caring nothing either for him or for the Senate. He continued that their action was one which indicated a more serious resolution and plot: if somehow they might slander him to the people as a seeker after unconstitutional power, and thus (themselves stirring up an insurrection) to slay him. After this address, with the concurrence of the Senate he banished them. Accordingly, they went off into exile and other tribunes were appointed in their place. Then the people clamored that he become king and they shouted that there should be no longer any delay in crowning him as such, for <a href=/people/2811 target=_blank>Fortune</a> had already crowned him. But <a href=/people/3 target=_blank>Caesar</a> declared that although he would grant the people everything because of their good will toward him, he would never allow this step; and he asked their indulgence for contradicting their wishes in preserving the old form of government, saying that he preferred to hold the office of consul in accordance with the law to being king illegally.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:21'><b>&sect; 21</b>&nbsp;&nbsp;Such was the people's talk at that time. Later, in the course of the winter, a festival was held in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, called <a href=/people/12178 target=_blank>Lupercalia</a>, in which old and young men together take part in a procession, naked except for a girdle, and anointed, railing that those whom they meet and striking them with pieces of <a href=/people/10956 target=_blank>goat</a> hide. When this festival came on Marcus <a href=/people/10 target=_blank>Antonius</a> was chosen director[hegemon]. He proceeded through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, as was the custom, and the rest of the throng followed him. <a href=/people/3 target=_blank>Caesar</a> was sitting in a golden chair on the <a about=https://topostext.org/place/419125BRoA class=place long=12.48458 lat=41.89258>Rostra</a>, wearing a purple toga. At first <a href=/people/232 target=_blank>Licinius</a> advanced toward him carrying a laurel wreath, though inside it a diadem was plainly visible. He mounted up, pushed up by his colleagues (for the place from which <a href=/people/3 target=_blank>Caesar</a> was accustomed to address the assembly was high), and set the diadem down before <a href=/people/3 target=_blank>Caesar</a>'s feet. Thereupon <a href=/people/3 target=_blank>Caesar</a> called <a href=/people/128 target=_blank>Lepidus</a>, the Master of the Horse, to ward him off, but <a href=/people/128 target=_blank>Lepidus</a> hesitated. In the meanwhile <a href=/people/61 target=_blank>Cassius</a> <a href=/people/1477 target=_blank>Longinus</a>, one of the conspirators, pretending to be really well disposed toward <a href=/people/3 target=_blank>Caesar</a> so that he might the more readily escape suspicion, hurriedly removed the diadem and placed it in <a href=/people/3 target=_blank>Caesar</a>'s lap. Publius <a href=/people/1659 target=_blank>Casca</a> was also with him. While <a href=/people/3 target=_blank>Caesar</a> kept rejecting it, and among the shouts of the people, <a href=/people/10 target=_blank>Antonius</a> suddenly rushed up, naked and anointed, just as he was in the procession, and placed it on his head. But <a href=/people/3 target=_blank>Caesar</a> snatched it off, and threw it into the crowd. Those who were standing at some distance applauded this action, but those who were near at hand clamored that he should accept it and not repel the people's favor. Various individuals held different views of the matter. Some were angry, thinking it an indication of power out of place in a democracy; others, thinking to court favor, approved; still others spread the report that <a href=/people/10 target=_blank>Antonius</a> had acted as he did not without <a href=/people/3 target=_blank>Caesar</a>'s connivance. There were many who were quite willing that <a href=/people/3 target=_blank>Caesar</a> be made king openly. All sorts of talk began to go through the crowd. When <a href=/people/10 target=_blank>Antonius</a> crowned <a href=/people/3 target=_blank>Caesar</a> a second time, the people shouted in chorus, Hail, King; but <a href=/people/3 target=_blank>Caesar</a> still refusing the crown, ordered it to be taken to the Temple of <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a> <a href=/people/1 target=_blank>Jupiter</a>, saying that it was more appropriate there. Again the same people applauded as before. There is told another story, that <a href=/people/10 target=_blank>Antonius</a> acted thus wishing to ingratiate himself with <a href=/people/3 target=_blank>Caesar</a>, and at the same time was cherishing the hope of being adopted as his son. Finally, he embraced <a href=/people/3 target=_blank>Caesar</a> and gave the crown to some of the men standing near to place it on the head of the statue of <a href=/people/3 target=_blank>Caesar</a> which was near by. This they did. Of all the occurrences of that time this was not the least influential in hastening the action of the conspirators, for it proved to their very eyes the truth of the suspicions they entertained.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:22'><b>&sect; 22</b>&nbsp;&nbsp;Not long after this, the Praetor <a href=/people/391 target=_blank>Cinna</a> propitiated <a href=/people/3 target=_blank>Caesar</a> to the extent of securing a decree which allowed the exiled tribunes to return; though in accordance with the wish of the people they were not to resume their office, but to remain private citizens, yet not excluded from public affairs. <a href=/people/3 target=_blank>Caesar</a> did not prevent their recall, so they returned. <a href=/people/3 target=_blank>Caesar</a> called the annual comitia (for he had the authority of a decree to do so) and appointed <a href=/people/1725 target=_blank>Vibius</a> <a href=/people/644 target=_blank>Pansa</a> and <a href=/people/1616 target=_blank>Aulus</a> <a href=/people/612 target=_blank>Hirtius</a> as consuls for the ensuing year; for the year after that, <a href=/people/11075 target=_blank>Decimus Brutus</a>, one of the conspirators, and <a href=/people/3050 target=_blank>Munatius</a> <a href=/people/505 target=_blank>Plancus</a>. Directly after this, another thing happened that greatly aroused the conspirators. <a href=/people/3 target=_blank>Caesar</a> was having a large handsome forum laid out in <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a>, and he had called together the artisans and was letting the contracts for its construction. In the meanwhile, up came a procession of Roman nobles, to confer the honors which had just been voted him by common consent. In the lead was the consul (the one who was <a href=/people/3 target=_blank>Caesar</a>'s colleague at that time), and he carried the decree with him. In front of him were lictors, keeping the crowd back on either side. With the consul came the praetors, tribunes, quaestors, and all the other officials. Next came the Senate, in orderly formation, and then a multitude of enormous size — never so large. The dignity of the nobles was awe inspiring — they were entrusted with the rule of the whole empire, and yet looked with admiration on another as if he were still greater. <a href=/people/3 target=_blank>Caesar</a> was seated while they advanced and because he was conversing with men standing to one side, he did not turn his head toward the approaching procession or pay any attention to it, but continued to prosecute the business which he had on hand, until one of his friends, nearby, said, 'Look at these people coming up in front of you.' Then <a href=/people/3 target=_blank>Caesar</a> laid down his papers and turned around and listened to what they had come to say. Now among their number were the conspirators, who filled the others with ill-will toward him, though the others were already offended at him because of this incident.<br />Then those also were excited who wished to lay hands on him not to recover liberty but to destroy the entire extant system; they were looking for an opportunity to overcome one who seemed to be absolutely invincible. For, although he had participated up to this time in three hundred and two battles in both <a href=/people/4027 target=_blank>Asia</a> and Europe, it appeared that he had never been worsted. Since, however, he frequently came out by himself and appeared before them, the hope arose that he could be taken by treachery. They tried to bring about, somehow, the dismissal of his bodyguard by flattering him when they addressed him, saying that he ought to be considered sacred in the eyes of all and be called 'pater patriae'; and by proposing decrees to that effect in the hope that he would be thus misled and actually trust to their affection, and that he would dismiss his spearmen in the belief that he was guarded by the good will of everyone. This actually came to pass, and made their task far easier.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:23'><b>&sect; 23</b>&nbsp;&nbsp;The conspirators never met to make their plans in the open, but in secret, a few at a time in each other's houses. As was natural, many plans were proposed and set in motion by them as they considered how and when they should commit the awful deed. Some proposed to attach him while on his way through the 'Via Sacra', for he often walked there; others, at the time of the comitia, when he had to cross a certain bridge to hold the election of magistrates in the field before the city. They would so divide their duties by lot that some should jostle him off the bridge and the others should rush upon him and slay him. Others proposed that he be attacked when the gladiatorial shows were held (they were near at hand), for then, because of these contests no suspicion would be aroused by the sight of men armed for the deed. The majority urged that he be killed during the session of the Senate, for then he was likely to be alone. There was no admittance to non-members, and many of the senators were conspirators, and carried swords under their togas. This plan was adopted.<br /><a href=/people/2811 target=_blank>Tyche</a> [fortune] had a part in this by causing <a href=/people/3 target=_blank>Caesar</a> himself to set a certain day on which the members of the Senate were to assemble to consider certain motions which he wished to introduce. When the appointed day came the conspirators assembled, prepared in all respects. They met in the portico (stoa) of <a href=/people/7 target=_blank>Pompeius</a>' theater, where they sometimes gathered. Thus the divinity showed the vanity of man's estate — how very unstable it is, and subject to the vagaries of fortune — for <a href=/people/3 target=_blank>Caesar</a> was brought to the house of his enemy, there to lie, a corpse, before the statue of one whom, now dead, he had defeated when he was alive. And <a href=/people/140 target=_blank>Fate</a> [<a href=/people/140 target=_blank>Moira</a>] becomes a still stronger force if indeed one acknowledges her part in these things: on that day his friends, drawing conclusions from certain auguries, tried to prevent him from going to the Senate Room [bouleuterion], as did also his physicians on account of vertigoes to which he was sometimes subject, and from which he was at that time suffering; and especially his wife <a href=/people/2393 target=_blank>Calpurnia</a>, who was terrified by a dream that night. She clung to him and said that she would not let him go out on that day. But <a href=/people/34 target=_blank>Brutus</a>, one of the conspirators, though he was at that time thought to be one of his most intimate friends, came up to him and said, 'What do you say, <a href=/people/3 target=_blank>Caesar</a>? Are you going to pay any attention to a woman's dreams and foolish men's omens, a man such as you? Are you going to insult the Senate which has honored you and which you yourself convened, by not going out? No; if you take my advice you will dismiss from your mind the dreams of these people and go, for the Senate has been in session since morning, and is awaiting you.' He was persuaded and went out.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:24'><b>&sect; 24</b>&nbsp;&nbsp;Meanwhile the assassins were making ready, some of them stationing themselves beside his chair, others in front of it, others behind it. The augurs brought forward the victims for him to make his final sacrifice before his entry into the Senate Room. It was manifest that the omens were unfavorable. The augurs substituted one animal after another in the attempt to secure a more auspicious forecast. Finally they said that the indications from the gods where unfavorable and that there was plainly some sort of curse hiding in the victims. In disgust, <a href=/people/3 target=_blank>Caesar</a> turned away toward the setting sun, and the augurs interpreted this action still more unfavorably. The assassins were on hand and were pleased at all this. <a href=/people/3 target=_blank>Caesar</a>'s friends begged that he postpone the present session on account of what the soothsayers had said; and for his part, he was just giving the order to do this, but suddenly the attendants came to summon him, saying that the Senate had a quorum. Then <a href=/people/3 target=_blank>Caesar</a> cast a look toward his friends. And <a href=/people/34 target=_blank>Brutus</a> approached him again and said, 'Come Sir, turn your back on these people's nonsense and do not postpone the business that deserves the attention of <a href=/people/3 target=_blank>Caesar</a> and of the great empire, but consider your own worth a favorable omen.' Thus persuading him, he at the same time took him by the hand and led him in, for the Senate-chamber was nearby. <a href=/people/3 target=_blank>Caesar</a> followed in silence. When he came in and the Senate saw him, the members rose out of respect to him. Those who intended to lay hands on him were all about him. The first to come to him was <a href=/people/364 target=_blank>Tullius</a> <a href=/people/2398 target=_blank>Cimber</a>, whose brother <a href=/people/3 target=_blank>Caesar</a> had exiled, and stepping forward as though to make an urgent appeal on behalf of his brother, he seized <a href=/people/3 target=_blank>Caesar</a>'s toga, seeming to act rather boldly for a suppliant, and thus prevented him from standing up and using his hands if he so wished. <a href=/people/3 target=_blank>Caesar</a> was very angry, but the men held to their purpose and all suddenly bared their daggers and rushed upon him. First <a href=/people/213 target=_blank>Servilius</a> <a href=/people/1659 target=_blank>Casca</a> stabbed him on the left shoulder a little above the collar bone, at which he had aimed but missed through nervousness. <a href=/people/3 target=_blank>Caesar</a> sprang up to defend himself against him, and <a href=/people/1659 target=_blank>Casca</a> called to his brother, speaking in Greek in his excitement. The latter obeyed him and drove his sword into <a href=/people/3 target=_blank>Caesar</a>'s side. A moment before <a href=/people/61 target=_blank>Cassius</a> had struck him obliquely across the face. <a href=/people/11075 target=_blank>Decimus Brutus</a> struck him through the thigh. <a href=/people/61 target=_blank>Cassius</a> <a href=/people/1477 target=_blank>Longinus</a> was eager to give another stroke, but he missed and struck Marcus <a href=/people/34 target=_blank>Brutus</a> on the hand. <a href=/people/427 target=_blank>Minucius</a>, too, made a lunge at <a href=/people/3 target=_blank>Caesar</a> but he struck <a href=/people/1903 target=_blank>Rubrius</a> on the thigh. It looked as if they were fighting over <a href=/people/3 target=_blank>Caesar</a>. He fell, under many wounds, before the statue of <a href=/people/7 target=_blank>Pompey</a>, and there was not one of them but struck him as he lay lifeless, to show that each of them had had a share in the deed, until he had received thirty-five wounds, and breathed his last.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:25'><b>&sect; 25</b>&nbsp;&nbsp;A tremendous uproar arose from those who had no knowledge of the plot and who were rushing terror-stricken from the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>senate house</a>, thinking that the same awful thing was going to happen to themselves also; and from those of <a href=/people/3 target=_blank>Caesar</a>'s associates who were outside and who thought that the whole senate was involved and that a large army was on hand for the purpose; and from those who, ignorant of the affair, were terrified and thrown into confusion from the suddenness of the noise and from what burst upon their view (for all at once the assassins, with bloody daggers in their hands ....). The whole place was full of people running and shouting. There was a crowd, too, in the Theater, which got up and rushed out in disorder (there happened to be a gladiatorial exhibition in progress) knowing nothing definite of what had happened but frightened by the shouting all about them. Some said that the Senate was being slaughtered by gladiators, others that <a href=/people/3 target=_blank>Caesar</a> had been murdered and that his army had started to pillage the city; some got one impression, others another. There was nothing clear to be heard, for there was a continuous tumult until the people saw the assassins and Marcus <a href=/people/34 target=_blank>Brutus</a> trying to stop the outcry and exhorting the people to be of good courage, for that no evil had taken place The sum and substance of his words (as the rest of the assassins also loudly boasted) was that they had slain a tyrant. It was proposed by some of the conspirators that they ought to put out of the way still others who were likely to oppose them and again try to gain control. They say that Marcus <a href=/people/34 target=_blank>Brutus</a> restrained them, declaring that it was not right to kill, for the sake of vague suspicion, people against whom there was no clear charge; and this view prevailed. Then rushing forth the assassins fled in haste through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> up to the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a>, carrying their swords bare and shouting that they had acted in behalf of common freedom. A great crowd of gladiators and slaves, who had been prepared for the purpose, followed them. There was much running in the streets and through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, now that the news that <a href=/people/3 target=_blank>Caesar</a> had been murdered became known to the throng. The city looked as if it had been occupied by an enemy. After the conspirators had ascended the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a>, they distributed themselves in a circle about the place and mounted a guard, fearing that <a href=/people/3 target=_blank>Caesar</a>'s soldiers would attack them.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:26'><b>&sect; 26</b>&nbsp;&nbsp;The body of <a href=/people/3 target=_blank>Caesar</a> lay just where it fell, ignominiously stained with blood — a man who had advanced westward as far as <a about=https://topostext.org/place/530-15IBri class=place long=-1.5 lat=53>Britain</a> and the Ocean, and who had intended to advance eastward against the realms of the <a about=https://topostext.org/place/370585RPar class=ethnic long=58.5 lat=37>Parthians</a> and <a about=https://topostext.org/place/300740RInd class=ethnic long=74 lat=30>Indi</a>, so that, with them also subdued, an empire of all land and sea might be brought under the power of a single head. There he lay, no one daring to remain to remove the body. Those of his friends who had been present had run away, and those who were away remained hidden in their houses, or else changed their clothing and went out into the country districts nearby. Not one of his many friends stood by him, either while he was being slaughtered or afterward, except <a href=/people/1469 target=_blank>Calvisius</a> <a href=/people/573 target=_blank>Sabinus</a> and <a href=/people/2605 target=_blank>Censorinus</a>; but these also, though they offered some slight opposition when <a href=/people/34 target=_blank>Brutus</a> and <a href=/people/61 target=_blank>Cassius</a> and their followers made their attack, had to flee because of the greater number of their opponents. All the others looked out for themselves and some even acquiesced in what had occurred. They say that one of them thus addressed the body: 'Enough of truckling to a tyrant.' A little later, three slaves, who were nearby, placed the body on a litter and carried it home through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, showing, where the covering was drawn back on each side, the hands hanging limp and the wounds on the face. Then no one refrained from tears, seeing him who had lately been honored like a god. Much weeping and lamentation accompanied them from either side, from mourners on the roofs, in the streets, and in the vestibules. When they approached his house, a far greater wailing met their ears, for his wife rushed out with a number of women and servants, calling on her husband and bewailing her lot in that she had in vain counseled him not to go out on that day. But he had met with a fate far worse than she ever expected.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26b>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:26b'><b>&sect; 26b</b>&nbsp;&nbsp;These were now preparing for his burial, but the assassins had secured a number of gladiators some time previous to the deed when they were about to attack him and had placed them under arms, between the <a about=https://topostext.org/place/419125BCJu class=place long=12.48549 lat=41.89296>senate house</a> and the theater in <a href=/people/7 target=_blank>Pompeius</a>' arcade. <a href=/people/11075 target=_blank>Decimus Brutus</a> had got them ready under the pretext that he wished to seize one of the gladiators who were assembling in that theater, a man whom he had previously hired. (The contests were taking place at that time, and as he was going to conduct some himself, he pretended that he was jealous of the present exhibitor.) As a matter of fact, this preparation was more with reference to the assassination, so that, in case any resistance should be offered by <a href=/people/3 target=_blank>Caesar</a>'s guards, the conspirators should have assistance at hand. With these gladiators and an additional throng of slaves they descended from the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a>. Calling together the people, they decided to test them and the magistrates, finding out how they were regarded by them; whether they were looked upon as having ended a tyranny or as murderers . . . . . that still greater ills were likely to burst forth in consequence of the late deed; for the action had taken place with no inconsiderable forethought and preparation on the part of those who accomplished it, and on the part of those against whom the plot was laid; and that there was a considerable number of <a href=/people/3 target=_blank>Caesar</a>'s auxiliary troops and important commanders still left, who would take over the task of carrying out his plans. There was profound silence then because of the unusual nature of the situation, for men's minds were confused, everyone watching eagerly to see what bold move might first be made in such a crisis, and be the beginning of a revolution. Meanwhile since the people were quietly awaiting the consequences, Marcus <a href=/people/34 target=_blank>Brutus</a> (honored throughout his whole life because of his discretion and the renown of his ancestors and the fairness which he was supposed to have) made the following speech (See my work, 'Concerning Public Speeches.')</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:27'><b>&sect; 27</b>&nbsp;&nbsp;After this harangue the conspirators withdrew again to the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a> and took counsel as to what ought to be done under the present circumstances. They decided to send envoys to <a href=/people/128 target=_blank>Lepidus</a> and <a href=/people/10 target=_blank>Antonius</a> to persuade them to come to them in the temple and there confer with them in planning the future of the state; and to promise them that everything which they possessed from <a href=/people/3 target=_blank>Caesar</a>'s hands would be considered as authorized gifts, so that there would be no cause for dissent on these grounds. When the envoys arrived <a href=/people/10 target=_blank>Antonius</a> and <a href=/people/128 target=_blank>Lepidus</a> said that they would answer on the following day. These things were done in the late evening, and a greater confusion laid hold on the city. Everyone saw to his own property, deserting the public interests, for they feared sudden plots and attacks, seeing that the leaders were encamped under arms in opposition to each other; nor was it yet clear to them who would gain complete control. When night came on they dispersed. On the following day the consul <a href=/people/10 target=_blank>Antonius</a> was under arms; and <a href=/people/128 target=_blank>Lepidus</a>, having collected a considerable force of auxiliaries proceeded through the middle of the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a>, having decided to avenge <a href=/people/3 target=_blank>Caesar</a>. when those who had previously been in doubt saw this, they joined <a href=/people/10 target=_blank>Antonius</a> and <a href=/people/128 target=_blank>Lepidus</a>, with their respective retinues under arms, and the result was an army of considerable size. There were some who acted thus through fear, not wishing to seem too delighted at <a href=/people/3 target=_blank>Caesar</a>'s death, and at the same time looking to their future interests by joining the consuls.<br />Many messages were sent to those who had benefitted at <a href=/people/3 target=_blank>Caesar</a>'s hands (whether through grants of dwelling places in cities, through grants of land, or allotments of money)saying that everything would be changed unless some strenuous efforts were exerted by them as well. Then his friends received many mournful entreaties, reminding those especially who had once taken the field with him how he had suffered death abandoned by his friends, great as he was. Accordingly, many joined the consuls out of compassion and friendship, finding a chance for private gain as well as what would result from a revolution, especially since the course of their opponents seemed to lack vigor and was not what they previously expected it to be when they believed that they had a stronger force. Now it was openly said that <a href=/people/3 target=_blank>Caesar</a> must be avenged, and that this was the only thing to do, and that his death must not go unpunished. Gathering into groups they expressed various views, some suggesting one course, others another.<br />However, those who advocated a republican form of government were gratified at the whole change, and only blamed <a href=/people/3 target=_blank>Caesar</a>'s murderers because they had not done away with more of the people who were at that time viewed with suspicion, and thus brought about a real liberty; for those who were still left would be likely to give considerable trouble. There were also men who had a reputation for greater foresight, and who had gained knowledge from experience with what had happened before in <a href=/people/39 target=_blank>Sulla</a>'s time; they cautioned one another to keep to a middle course, for at the time of <a href=/people/39 target=_blank>Sulla</a> those who were thought to have been destroyed, suddenly took fresh courage and drove out their late conquerors. They declared that <a href=/people/3 target=_blank>Caesar</a> would give his murderers and their companions much trouble, even though he was dead, since here was a large force threatening them, with energetic men in charge of it.<br /><a href=/people/10 target=_blank>Antonius</a> and his associates before preparing for action sent a legation to parley with the forces on the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitoline</a>, but later, emboldened by the amount of their arms and the number of their men, they felt justified in taking full charge of the government, and ending the disturbance in the city. First of all they took council (having asked their friends to be present) how they ought to act toward the assassins. <a href=/people/128 target=_blank>Lepidus</a> proposed that they should fight them and avenge <a href=/people/3 target=_blank>Caesar</a>. <a href=/people/612 target=_blank>Hirtius</a> thought that they should discuss the matter with them and come to friendly terms. Someone else, supporting <a href=/people/128 target=_blank>Lepidus</a>, expressed the opposite opinion, saying that it would be sacrilegious to pass by the murder of <a href=/people/3 target=_blank>Caesar</a> unavenged, and furthermore, it would not be safe for all those who had been his friends; 'for even if the murderers are inactive now, yet as soon as they get more power, they will go still further.' <a href=/people/10 target=_blank>Antonius</a> favored the proposal of <a href=/people/612 target=_blank>Hirtius</a>, and voted to save them. There were others who urged that they be dismissed from the city under truce.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:28'><b>&sect; 28</b>&nbsp;&nbsp;After the great <a href=/people/3 target=_blank>Caesar</a>'s death and burial, his friends counselled <a href=/people/8 target=_blank>Octavian</a> to cultivate <a href=/people/10 target=_blank>Antonius</a>' friendship, and put him in charge of his interests . . . . [long lacuna, some months]. And though there were many other contributory causes toward disagreement between them, he seemed the more to incite enmity between them, for he was at odds with <a href=/people/8 target=_blank>Octavian</a>, and a partisan of <a href=/people/10 target=_blank>Antonius</a>. <a href=/people/8 target=_blank>Octavian</a>, however, in no wise frightened, because of his high spirit, gave some exhibitions on the occasion of the festival of <a href=/people/15 target=_blank>Venus</a> Genetrix which his father had established. He again approached <a href=/people/10 target=_blank>Antonius</a> with a number of his friends, requesting that permission be given for the throne and wreath to be set up in his father's honor. <a href=/people/10 target=_blank>Antonius</a> made the same threat as before, if he did not drop that proposal and keep quiet. <a href=/people/8 target=_blank>Octavian</a> withdrew and made no opposition to the veto of the consul. When he entered the theater, however, the people applauded him loudly, and his father's soldiers, angered because he had been prevented from paying tribute to the honored memory of his father, gave him, as a mark of their approval, one round of applause after another all through the performance. Then he counted out for the people their allotted money, and that secured him their especial good will.<br />From that day <a href=/people/10 target=_blank>Antonius</a> was manifestly still more ill disposed toward <a href=/people/8 target=_blank>Octavian</a>, who stood in the way of the people's zeal for him. <a href=/people/8 target=_blank>Octavian</a> saw (what had become very plain to him from the present situation) that he was in need of political authority. He also saw that the consuls, secure in much power, were openly resisting him and appropriating still more power for themselves. Even the city treasury, which his father had filled with funds, they had emptied within two months after <a href=/people/3 target=_blank>Caesar</a>'s death, wasting money in large lots on any excuse that offered in the general confusion; and furthermore they were on good terms with the assassins. So <a href=/people/8 target=_blank>Octavian</a> was the only one left to avenge his father, for <a href=/people/10 target=_blank>Antonius</a> let the whole matter pass, and was even in favor of an amnesty for the assassins. A number of men, indeed, joined <a href=/people/8 target=_blank>Octavian</a>, but many joined <a href=/people/10 target=_blank>Antonius</a> and <a href=/people/148 target=_blank>Dolabella</a> also. There were others who, from a middle ground, tried to foment enmity between them, and doing so . . .</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28b>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:28b'><b>&sect; 28b</b>&nbsp;&nbsp;. . [lacuna] The chief of these were the following men: Publius, <a href=/people/1725 target=_blank>Vibius</a>, Lucius and especially <a href=/people/2300 target=_blank>Cicero</a>. <a href=/people/8 target=_blank>Octavian</a> was not ignorant of the reason why the associated themselves with him, trying to provoke him against <a href=/people/10 target=_blank>Antonius</a>, but he did not repel them, for he wished to have their assistance and a more powerful guard thrown around him, though he was aware that each of these men was very little concerned over public interests but that they were looking about for an opportunity to acquire public office and supreme power. To their mind, the man who had previously enjoyed that power was out of the way, and <a href=/people/8 target=_blank>Octavian</a> was altogether too young and not likely to hold out against so great a tumult, with one man looking out for one thing, another for another, and all of them seizing what they could for their own gain. For with all attention to public welfare put away, and with the foremost citizens separated into many factions, and everyone trying to encompass all the power for himself, or at least as much of it as could be detached, the rule showed many strange aspects.<br /><a href=/people/128 target=_blank>Lepidus</a>, who had broken off a part of <a href=/people/3 target=_blank>Caesar</a>'s army and who was trying to seize the command himself, was in Nearer Spain; he also held the part of Gaul which borders on the upper sea. Gallia <a href=/people/4493 target=_blank>Comata</a> Lucius <a href=/people/3050 target=_blank>Munatius</a> <a href=/people/505 target=_blank>Plancus</a>, the consul-elect, held with another army. Farther Spain was in charge of Gaius <a href=/people/685 target=_blank>Asinius</a>, with another army. <a href=/people/11075 target=_blank>Decimus Brutus</a> held Cisalpine Gaul with two legions, against whom <a href=/people/10 target=_blank>Antonius</a> was just preparing to march. Gaius <a href=/people/34 target=_blank>Brutus</a> laid claim to <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>, and was just about to cross over to that place from <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>; <a href=/people/61 target=_blank>Cassius</a> <a href=/people/1477 target=_blank>Longinus</a> laid claim to <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>, though he had been appointed Praetor for <a about=https://topostext.org/place/405195RIll class=place long=19.8 lat=40.8>Illyria</a>. So many were the armies that had been put in the field at that time, and with such men in charge, each of whom was trying to get complete power into his own hands without consideration of law and justice, every matter being decided according to the amount of force that was available for application in each case. <a href=/people/8 target=_blank>Octavian</a> alone, to whom all the power had justly been bequeathed, in accordance with the authority of him who had obtained it in the first instance, and because of his relationship to him, was without any share of authority whatever, and he was buffeted between the political envy and greed of men who were lying in wait to attack him and seize the supreme command. Divine providence [<a href=/people/2811 target=_blank>Tyche</a>] finally ordered these things aright. But for the present fearing for his life, knowing <a href=/people/10 target=_blank>Antonius</a>' attitude toward him and yet quite unable to change it, <a href=/people/8 target=_blank>Octavian</a> remained at home and awaited his opportunity.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:29'><b>&sect; 29</b>&nbsp;&nbsp;The first move in the city came from his father's soldiers, who resented <a href=/people/10 target=_blank>Antonius</a>' contempt for them. At first they discussed their own forgetfulness of <a href=/people/3 target=_blank>Caesar</a> in allowing his son to be thus insulted, that son for whom they all ought to act as guardians if they were to take any account of what was just and righteous. Then gathering in a great company and reproaching themselves still more bitterly they set out for <a href=/people/10 target=_blank>Antonius</a>' house (for he also was relying on them) and made some plain statements to him: that he ought to treat <a href=/people/8 target=_blank>Octavian</a> more fairly and keep in mind his father's instructions; that it was their sacred duty not to overlook these, but to carry out even the details of his memoranda, not to mention supporting the man he had named as his son and successor; that they saw that to <a href=/people/10 target=_blank>Antonius</a> and <a href=/people/8 target=_blank>Octavian</a> a reconciliation would be most advantageous at the present time because of the multitude of foes pressing on from every side. After this speech <a href=/people/10 target=_blank>Antonius</a>, in order not to seem to be opposing their endeavor, for he happened to be really in need of their services, said that he approved of and desired that very course, if only <a href=/people/8 target=_blank>Octavian</a> would also act with moderation and render him the honor which was his due; that he was ready to have a conference with him in their presence and within their hearing. They were satisfied with this and agreed to conduct him into the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> and act as mediators in the reconciliation if he should so desire. He then assented and immediately went up into the Temple of <a href=/people/1 target=_blank>Jupiter</a>, and sent them after <a href=/people/8 target=_blank>Octavian</a>.<br />They were pleased and went to his house in a great body, so that he felt some anxiety when it was announced that there was a large crowd of soldiers outside and that some were in the house looking for him. In his agitation, he first went upstairs with his friends who happened to be present, and looking down, asked the men what they wanted and why they had come, and then he discovered that they were his own soldiers. They answered that they had come for his own good and that of his whole party, if he also was willing to forget what <a href=/people/10 target=_blank>Antonius</a> had done, for his actions had not been pleasing to them either; that he and <a href=/people/10 target=_blank>Antonius</a> ought to put aside all resentment and be reconciled simply and sincerely. Then one of them called out in a somewhat louder voice and bade him be of good cheer and be assured that he had inherited all their support, for they thought of his late father as a god, and would do and suffer anything for his successors. Another one shouted out still more loudly and said that he would make away with <a href=/people/10 target=_blank>Antonius</a> with his own hands if he did not observe the provisions of <a href=/people/3 target=_blank>Caesar</a>'s will and keep faith with the Senate. <a href=/people/8 target=_blank>Octavian</a>, encouraged at this, went downstairs to them, and embracing them showed much pleasure at their eager good will toward him. They seized him and led him in triumph through the <a about=https://topostext.org/place/419125SFRo class=place long=12.485108 lat=41.892507>Forum</a> to the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a>, vying with each other in their zeal, some because of their dislike of <a href=/people/10 target=_blank>Antonius</a>' rule and others out of reverence for <a href=/people/3 target=_blank>Caesar</a> and his heir; others led on (and rightly enough) by the hope of obtaining great avantages at his hands, and still others who were eager for revenge on the assassins, believing that this would be accomplished most readily through the boy if they had the assistance of the consul also. In fact, all those who approached him advised him out of good will not to be contentious but to think of their own safety, and how he could gain more supporters, remembering how unexpected <a href=/people/3 target=_blank>Caesar</a>'s death had been. <a href=/people/8 target=_blank>Octavian</a> heard all this and saw that the people's zeal for him was natural; he then entered the <a about=https://topostext.org/place/419125SCap class=place long=12.483 lat=41.8933>Capitol</a> and saw there many more of his father's soldiers, on whom <a href=/people/10 target=_blank>Antonius</a> was relying, but who were really far better disposed toward himself, if <a href=/people/10 target=_blank>Antonius</a> should try to injure him in any way. The majority of the throng withdrew and the two leaders with their friends were left to discuss the situation.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30a>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:30a'><b>&sect; 30a</b>&nbsp;&nbsp;When <a href=/people/8 target=_blank>Octavian</a> went home after his reconciliation with <a href=/people/10 target=_blank>Antonius</a>, the latter, left to himself, became provoked again at seeing the good will of all the soldiers inclining very much toward <a href=/people/8 target=_blank>Octavian</a>. For they held that he was <a href=/people/3 target=_blank>Caesar</a>'s son and that he had been proclaimed his heir in his will; that he was called by the same name and that he exhibited excellent promise from the very energy of his nature, of which <a href=/people/3 target=_blank>Caesar</a> had taken cognizance in bringing about his adoption no less than of his degree of kinship, in the belief that he alone might be entrusted with preserving all of <a href=/people/3 target=_blank>Caesar</a>'s authority and the dignity of his house. When <a href=/people/10 target=_blank>Antonius</a> reflected on all this he changed his mind again, especially when he saw the Caesarian soldiers desert him right before his eyes and escort <a href=/people/8 target=_blank>Octavian</a> in a body from the temple. Some thought that he would not have refrained from apprehending <a href=/people/8 target=_blank>Octavian</a>, had he not been in fear of the soldiers, lest they should set on him and mete out punishment, easily diverting all his faction from him; for each of them had an army which was waiting to see how things would turn out. Reflecting on all this, he still delayed and hesitated, although he had changed his mind. <a href=/people/8 target=_blank>Octavian</a>, however, actually believing that the reconciliation between them was in good faith, went every day to <a href=/people/10 target=_blank>Antonius</a>' house, as was quite proper, since <a href=/people/10 target=_blank>Antonius</a> was consul and an older man and a friend of his father's; and he paid him every other respect according to his promise until <a href=/people/10 target=_blank>Antonius</a> did him a second wrong in the following manner: Having acquired the province of Gaul in exchange for <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a>, he transferred the troops which were in the latter place to <a about=https://topostext.org/place/406163RIta class=place long=16.3 lat=40.6>Italy</a>, and when they arrived he left <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> and went down as far as <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brundisium</a> to meet them. Then, thinking that he had a suitable opportunity for what he had in mind, he spread a report that he was being plotted against, and seizing some soldiers, he threw them into chains, on the pretext that they had been sent for this very purpose of killing him. He hinted at <a href=/people/8 target=_blank>Octavian</a> but did not definitely name him. The report quickly ran through the city that the consul had been plotted against, but had seized the men who had come to attack him. Then his friends gathered at his house, and soldiers under arms were summoned. In the late afternoon the report reached <a href=/people/8 target=_blank>Octavian</a> also that <a href=/people/10 target=_blank>Antonius</a> had been in danger of being assassinated, and that he was sending for troops to guard him that night. Immediately <a href=/people/8 target=_blank>Octavian</a> sent word to him that he was ready to stand beside his bed with his own retinue to keep him safe, for he thought that the plot had been laid by some of the party of <a href=/people/34 target=_blank>Brutus</a> and <a href=/people/61 target=_blank>Cassius</a>. He was thus in readiness to do an act of kindness entirely unsuspicious of the rumor <a href=/people/10 target=_blank>Antonius</a> had started or of the plot. <a href=/people/10 target=_blank>Antonius</a>, however, did not even permit the messenger to be received indoors, but dismissed him discourteously. The messenger returned after hearing fuller reports and announced to <a href=/people/8 target=_blank>Octavian</a> that his name was being mentioned among the men about <a href=/people/10 target=_blank>Antonius</a>' door as being himself the man who had despatched the assassins against <a href=/people/10 target=_blank>Antonius</a>, who were now in prison. <a href=/people/8 target=_blank>Octavian</a>, when he heard this, at first did not believe it because of its improbable sound, but soon he perceived that the whole plan had been directed against himself, so he considered with his friends as to what he should do. <a href=/people/26 target=_blank>Philippus</a> and <a href=/people/4444 target=_blank>Atia</a> his mother came also, at a loss over the strange turn of affairs, and desiring to know what the report meant and what were <a href=/people/10 target=_blank>Antonius</a>' intentions. They advised <a href=/people/8 target=_blank>Octavian</a> to withdraw from the city at once for a few days until the matter could be investigated and cleared up. He, unconscious of any guilt, thought that it would be a serious matter for him to conceal himself and in a way incriminate himself, for he would gain nothing toward his safety by withdrawing, while he might the more easily be destroyed in secret if he were away from home. Such was the discussion in which he was thus engaged.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30b>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:30b'><b>&sect; 30b</b>&nbsp;&nbsp;On the following morning he sat as usual with his friends and gave orders that the doors be opened to those of his townsmen, guests, and soldiers who were accustomed to visit him and greet him, and he conversed with them all in his usual way, in no wise changing his daily routine. But <a href=/people/10 target=_blank>Antonius</a> called an assembly of his friends and said in their presence that the was aware that <a href=/people/8 target=_blank>Octavian</a> had even earlier been plotting against him, and that when he was to leave the city to go to the army that had come for him, he had provided <a href=/people/8 target=_blank>Octavian</a> with this opportunity against him. that one of the men sent to accomplish the crime had, by means of substantial bribes, turned informer in the matter; and hence he had seized the others; and he had now called his friends together to hear their opinions as to what should be done in the light of the recent events. When <a href=/people/10 target=_blank>Antonius</a> had spoken the members of his council asked to be shown where the men were who had been seized, so that they might find out something from them. Then <a href=/people/10 target=_blank>Antonius</a> pretended that this had nothing to do with the present business, since, forsooth, it had already been confessed to; and he turned the discourse into other channels, watching eagerly for someone to propose that they ought to take vengeance on <a href=/people/8 target=_blank>Octavian</a> and not quietly submit. However, they all sat in silent thought, since no apparent proof lay before them, until someone said that <a href=/people/10 target=_blank>Antonius</a> would do well to dismiss the assembly, saying that he ought to act moderately and not stir up any disturbance, for he was consul. After this discussion, <a href=/people/10 target=_blank>Antonius</a> dismissed the assembly. Two or three days afterward, he set out for <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brundisium</a> to take over the army which had now arrived there. There was no further discussion about the plot, and when he left, his friends who remained behind dismissed the whole matter, and no one ever saw any of the conspirators who were alleged to have been taken.<br /><a href=/people/8 target=_blank>Octavian</a>, although now exonerated from the charge, was nonetheless chagrined at the talk about him, interpreting it as evidence of a great conspiracy against him. He thought that if <a href=/people/10 target=_blank>Antonius</a> had happened to get the army on his side by means of bridges he would not have delayed in attacking him, not because he had been wronged in any respect, but simply led on to that course as an outcome of his former hopes. It was manifest that a man who had concocted this charge would go further to others and that he would have been eager to do this from the first if he had not had to fear the army. Accordingly <a href=/people/8 target=_blank>Octavian</a> was filled with righteous indignation against <a href=/people/10 target=_blank>Antonius</a> and with some concern for his own person, now that the other's intention had become plain. Reviewing all contingencies, he saw that he must not remain quiet, for this was not safe, but that he must seek out some aid wherewith to oppose the other's power and strategems. So then, reflecting upon this question, he decided that he had better take refuge in his father's colonies, where his father had granted allotments and founded cities, to remind the people of <a href=/people/3 target=_blank>Caesar</a>'s beneficence and to bewail his fate and his own sufferings, and thus to secure their support, attracting them also by gifts of money. He thought that this would be his only safe course, that it would redound greatly to his fame, and that it would also redeem the prestige of his family. It was a far better and juster course than to be pushed aside out of his inherited honor by men who had no claim to it, and finally to be foully and nefariously slain just as his father had been. After consulting over this with his friends and after sacrificing, with good fortune, to the gods, that they might be his assistants in his just and glorious endeavor, he set out, taking with him a considerable sum of money, first of all into <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a> where were the Seventh and Eighth Legions (for that is what the <a about=https://topostext.org/place/419125PRom class=ethnic long=12.486 lat=41.891>Romans</a> call their regiments). He thought that he ought first to sound the feelings of the Seventh, for its fame was greater, and with this colony aligned in his favor, and many others with it</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30c>
+                            <p id='urn:cts:greekLit:tlg0577.tlg003:30c'><b>&sect; 30c</b>&nbsp;&nbsp;[lacuna] and in this plan and in the events that followed, he had the approval of his friends. These were: Marcus <a href=/people/91 target=_blank>Agrippa</a>, Lucius <a href=/people/1293 target=_blank>Maecenas</a>, Quintus <a href=/people/2756 target=_blank>Juventius</a>, Marcus Modialius, and Lucius. Other officers, centurions, and soldiers followed, as well as a multitude of slaves and a pack train carrying the pay-money and the supplies. As for his mother, he decided not to acquaint her with his plan, lest, out of affection and weakness, like a woman and a mother, she might be a hindrance to his great purpose. He gave out openly that he was going to <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a> to sell some of his father's property there, to take the money and put it to the uses that his father had enjoined. But even so, he went off entirely without her consent.<br />At that time Marcus <a href=/people/34 target=_blank>Brutus</a> and Gaius <a href=/people/61 target=_blank>Cassius</a> were at <a about=https://topostext.org/place/408141PDik class=place long=14.1253 lat=40.8259>Dicaearchia</a>, and when they learned of the throng that was accompanying <a href=/people/8 target=_blank>Octavian</a> from <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> (the messengers having exaggerated the report, as usually happens) they were struck with much fear and consternation, thinking that the expedition was directed against themselves. They took flight across the <a about=https://topostext.org/place/421170WAdr class=place long=16.95 lat=42.09>Adriatic</a>. <a href=/people/34 target=_blank>Brutus</a> went to <a about=https://topostext.org/place/382219RAch class=place long=21.9 lat=38.2>Achaea</a>, <a href=/people/61 target=_blank>Cassius</a> to <a about=https://topostext.org/place/355390RSyr class=place long=39 lat=35.5>Syria</a>. When <a href=/people/8 target=_blank>Octavian</a> arrived in <a about=https://topostext.org/place/410144UCal class=place long=14.356 lat=41.0428>Calatia</a> in <a about=https://topostext.org/place/411146RCam class=place long=14.6 lat=41.1>Campania</a>, the inhabitants received him as the son of their benefactor and treated him with the highest honor. On the following day he disclosed the whole situation to them and he appealed to the soldiers, telling them how unjustly his father had been killed and how he was himself being plotted against. As he spoke, some of the decurions did not wish to listen at all, but the people did so eagerly and with good-will, and they sympathized with him, frequently bidding him to be of good cheer, for they would not neglect him but would assist him in every way until he should be established in his inherited rights. Then he invited them to his house and gave each of them five hundred drachmae; and the next day he called together the members of the curia and appealed to them not to be outdone in good will by the people, but to remember <a href=/people/3 target=_blank>Caesar</a> who had given them the colony and their position of honor. He promised that the colony and their position of honor. He promised that they would experience no less benefits at his own hands. He showed that it was more fitting for him to enjoy their aid and to make use of their influence and arms than for <a href=/people/10 target=_blank>Antonius</a> to do so. They were aroused to a greater zeal to help him and to undertake trouble and danger with him if need be. <a href=/people/8 target=_blank>Octavian</a> commended their zeal and asked them to accompany him as far as the neighboring colonies, and furnish him safe-conduct. The people were pleased at this and gladly complied, escorting him under arms to the next colony. And gathering these also into an assembly, he addressed them. He succeeded in persuading both legions to escort him to <a about=https://topostext.org/place/419125PRom class=place long=12.486 lat=41.891>Rome</a> through the other colonies, and strenuously to repel any act of violence on the part of <a href=/people/10 target=_blank>Antonius</a>. he attracted other soldiers also with high pay, and on the march he trained and instructed the new recruits, sometimes individually and sometimes in squads, telling them that the were going against <a href=/people/10 target=_blank>Antonius</a>. He sent some of his followers who were preeminent for intelligence and daring to <a about=https://topostext.org/place/406179PBru class=place long=17.947 lat=40.641>Brundisium</a>, to see if they could also win the forces just arrived from <a about=https://topostext.org/place/408225RMak class=place long=22.5 lat=40.81>Macedonia</a> over to his side, bidding them remember his father <a href=/people/3 target=_blank>Caesar</a> and not to betray his son. He instructed his propagandists that if they could not achieve their purposes in the open, they were to write this out and scatter it all about so that the men could pick up the notices and read them; and in order that they might join his party he made promises that filled the rest with hope of what they would receive from him when he came into his power. So they departed.</p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -44 <a href='https://books.google.gr/books?id=oqcKAAAAYAAJ&pg=PA427#v=onepage&q=%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%85%CF%82&f=false' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2017                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=669', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas669";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=669';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

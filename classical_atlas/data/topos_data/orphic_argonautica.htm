@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Orphic Argonautica' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='The Orphic Argonautica, translated by Jason Colavito, derived from his text at argonauts-book.com, copyright 2011, used by permission of the translator. ' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='350' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 350' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='copyright Jason Colavita, used by permission' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/549' content='urn:cts:greekLit:tlg0579.tlg002' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n86113748' content='Orphica'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n2005052957' content='Jason Colavito (1981- )' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.argonauts-book.com/orphic-argonautica.html' /><h2>Orphic Argonautica</h2>The Orphic Argonautica, translated by Jason Colavito, derived from his text at argonauts-book.com, copyright 2011, used by permission of the translator.  This text has 193 tagged references to 134 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0579.tlg002'>urn:cts:greekLit:tlg0579.tlg002</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q1230444'>Q1230444</a>;     <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1'><b>&sect; 1</b>&nbsp;&nbsp;O powerful lord of <a about=https://topostext.org/place/385225SDel class=place long=22.50108 lat=38.48264>Pytho</a>, far-thrower, also a seer, whose place is high atop the <a about=https://topostext.org/place/385226LPar class=place long=22.6219 lat=38.5354>Parnassus</a> rock, of your power I sing: In turn, may your gift furnish me with glory and send your true voice into my mind so that, by the imposition of the <a href=/people/54 target=_blank>Muse</a>, I may disperse a fine song to the numberless races of men with the help of my well-made cithara. For now to you, O worker of the lyre, singer of pleasing songs, my spirit rouses me to tell of things of which I have never before spoken, when driven by the goad of Kings <a href=/people/5 target=_blank>Bacchus</a> and <a href=/people/2 target=_blank>Apollo</a>, I described their terrible shafts, and likewise I disclosed the cure for feeble mortal bodies and the Great Rites to initiates. Truly, above all I disclosed the stern inevitability of ancient <a href=/people/1434 target=_blank>Chaos</a>, and Time, who in his boundless coils, produced <a href=/people/2576 target=_blank>Aether</a>, and the twofold, beautiful, and noble <a href=/people/38 target=_blank>Eros</a>, whom the younger men call <a href=/people/4777 target=_blank>Phanes</a>, celebrated parent of eternal <a href=/people/12253 target=_blank>Night</a>, because he himself first manifested. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:17'><b>&sect; 17</b>&nbsp;&nbsp;Then, I sang, of the race of powerful Brimo, and the destructive acts of the <a href=/people/11034 target=_blank>Giants</a>, who spilled their gloomy seed from the sky begetting the men of old, whence came forth mortal stock, which resides throughout the boundless world. And I sang of the service of <a href=/people/1 target=_blank>Zeus</a>, and of the cult of the Mother and how wandering in the mountains of <a href=/people/366 target=_blank>Cybele</a> she conceived the girl <a href=/people/138 target=_blank>Persephone</a> by the unconquerable son of <a href=/people/43 target=_blank>Cronus</a>, and of the renowned tearing of <a href=/people/12243 target=_blank>Casmilus</a> [or perhaps Meleus; the text is corrupt] by <a href=/people/4 target=_blank>Heracles</a>, and of the sacred oath of <a href=/people/5713 target=_blank>Idaeus</a>, and of the immense oak of the <a href=/people/1092 target=_blank>Corybantes</a>, and of the wanderings of <a href=/people/48 target=_blank>Demeter</a>, her great sorrow for <a href=/people/138 target=_blank>Persephone</a>, and her lawgiving. And also I sang of the splendid gift of the <a href=/people/1091 target=_blank>Kabeiroi</a>, and the silent oracles of <a href=/people/12253 target=_blank>Night</a> about Lord <a href=/people/5 target=_blank>Bacchus</a>, and of the sea of <a about=https://topostext.org/place/405255PSam class=place long=25.5348 lat=40.5039>Samothrace</a> and of <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>, and of the love of <a href=/people/15 target=_blank>Aphrodite</a> for <a href=/people/430 target=_blank>Adonis</a>. And I sang of the rites of <a href=/people/10131 target=_blank>Praxidike</a> and the mountain nights of Athela, and of the lamentations of <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a>, and of the holy offerings to <a href=/people/187 target=_blank>Osiris</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:33'><b>&sect; 33</b>&nbsp;&nbsp;And also you learned the multitudinous ways prophesying: from the motion of wild birds and from the positions of entrails; and whatsoever the souls of men prophesy through the ways of interpreting the dreams that pierce the mind in sleep, and the interpretation of these signs and prophecies; and from the motions of the stars. You learned of atonement, the great happiness for mortals; and of obtaining an accounting of the supplication of the gods, and of offerings to the dead. And other things were described to you, that which I gained by sight and thought when on the dark way of entering <a href=/people/10685 target=_blank>Hades</a> via <a about=https://topostext.org/place/364225STai class=place long=22.4867 lat=36.4018>Taenaron</a>, relying on my cithara, through the love of my wife. Then I described the sacred test of the <a about=https://topostext.org/place/271307REgy class=ethnic long=30.7 lat=27.1>Egyptians</a> in <a about=https://topostext.org/place/298313PMem class=place long=31.255 lat=29.849>Memphis</a> that is used to convey prophesy, and I described the sacred city of <a href=/people/360 target=_blank>Apis</a>, which is surrounded by the river <a about=https://topostext.org/place/312301WNil class=place long=31.2313 lat=30.0918>Nile</a>. All this have you learned truthfully from my soul. Now in truth, when instigated by the burning air I abandon this body and fly away into the ample heavens, you will hear from my voice what at first was hidden. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:50'><b>&sect; 50</b>&nbsp;&nbsp;Once, in <a about=https://topostext.org/place/402225RPie class=place long=22.5 lat=40.2>Pieria</a> and the highest peaks of <a about=https://topostext.org/place/400225PLei class=place long=22.5343 lat=40.0244>Libethra</a>, <a href=/people/2578 target=_blank>Jason</a>, first among the heroes and children of gods, came asking me for my aid on his expedition to fetch the fleece with his sea-faring ship from inhospitable people, the rich and harmful tribe ruled over by <a href=/people/320 target=_blank>Aeetes</a>, the son of <a href=/people/180 target=_blank>Helios</a>, who supplies light for men. <a href=/people/390 target=_blank>Pelias</a> feared an oracle that a son of <a href=/people/467 target=_blank>Aeson</a> would take the kingly power from his hands, and therefore he devised a trick in his soul so that <a href=/people/2578 target=_blank>Jason</a> might die on a fraudulent journey. He ordered that the prince carry back the Golden Fleece to from <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a> to <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>. And when <a href=/people/2578 target=_blank>Jason</a> heard this unjust call, raising his hands in veneration, he called upon <a href=/people/19 target=_blank>Hera</a>, whom he honored as the most holy among all the gods. In truth, she yielded to this prayer: for she greatly admired and loved the virtuous hero, the celebrated son of <a href=/people/467 target=_blank>Aeson</a>. Summoning <a href=/people/11 target=_blank>Athena</a> <a href=/people/1857 target=_blank>Tritogeneia</a>, she ordered the goddess to build the first ship out of wood, the first to pierce the salty deep with its wooden oars, the first to disturb the sea with its passage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=70>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:70'><b>&sect; 70</b>&nbsp;&nbsp;When <a href=/people/2578 target=_blank>Jason</a> set out to gather the celebrated lords and heroes in <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>, he found me occupied playing my cithara skillfully and singing sweet songs, stroking wild animals and winged <a href=/people/55 target=_blank>serpents</a>. But when he had entered into my unpleasant cave, he returned a gentle voice from his strong chest: <a href=/people/143 target=_blank>Orpheus</a>, beloved son of <a href=/people/736 target=_blank>Calliope</a> and <a href=/people/3111 target=_blank>Oeagrus</a>, ruling the <a about=https://topostext.org/place/410255RKik class=ethnic long=25.5 lat=41>Cicones</a> in <a href=/people/10978 target=_blank>cattle</a>-rich <a about=https://topostext.org/place/413248RBis class=place long=25 lat=41.2>Bistonia</a>, I greet thee. I come now to the <a about=https://topostext.org/place/428247LHae class=demonym long=24.659 lat=42.773>Haemonian</a> forest and the river <a about=https://topostext.org/place/408238WStr class=place long=23.8489 lat=40.7858>Strymon</a> and the steep ravines of <a about=https://topostext.org/place/412253LRho class=place long=25.28 lat=41.23>Rhodope</a>. I, the son of <a href=/people/467 target=_blank>Aeson</a>, bear the most excellent blood among the chosen <a href=/people/11039 target=_blank>Minyans</a>, and I want to be a friend to you: truly, friend, receive me favorably, find my words pleasing to your ears, and give in to my begging. You must go with me so that when returning from the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a> and the fortified <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a> in the ship <a href=/people/352 target=_blank>Argo</a> you can show the ways to the Parthenian Sea, a thing wished for by all the heroes, who for that reason are waiting for your tortoise-shell lyre and your divine voice, hoping for your help and that you will share their labor in the sea. They will not undertake to sail to the barbarian peoples without you. And indeed, because you alone among men ventured to the dark fog, down into the bowels of <a href=/people/10685 target=_blank>Hades</a>, and found the way back, I ask you to undertake this and make common cause with the <a href=/people/11039 target=_blank>Minyans</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=97>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:97'><b>&sect; 97</b>&nbsp;&nbsp;I responded to him with these words: Son of <a href=/people/467 target=_blank>Aeson</a>, is this what you ask me with this exhortation, to help the <a href=/people/11039 target=_blank>Minyans</a> go to <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a>, sailing the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a> in a wooden ship? Enough work for me now, who has had enough of work; I have attended to all the earth and its cities. When in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> and <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>, I came forth as an oracle of men and revealed the secret rites, my mother watched over my furious inspirations and led me thence to another home, where I might come upon old age and the finality of death. But it is not permitted to evade what has been decreed by fate. The commands of fate press down, for these invocations do not spurn the supplications of <a href=/people/1 target=_blank>Zeus</a>’ daughters. I will come at once and act as attendant to the younger heroes and demigods. And then I will go to the forsaken cave of my beloved. When the crew sets out I will come to the <a href=/people/11039 target=_blank>Minyans</a> on fleet foot through the <a about=https://topostext.org/place/393230WPag class=place long=23 lat=39.25>Pagasetic</a> shore. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=113>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:113'><b>&sect; 113</b>&nbsp;&nbsp;There the leaders of the <a href=/people/11039 target=_blank>Minyan</a> crew were gathered on a narrow mound of sand beside the river <a about=https://topostext.org/place/393228WAna class=place long=22.899 lat=39.365>Anaurus</a>. When they had learned that I would be going forth guiding them, they lifted me in an embrace, and every one to a man felt joy in his soul. Afterward, I spoke with these most excellent men. I saw first the strength of the divine <a href=/people/4 target=_blank>Heracles</a>, whom <a href=/people/1123 target=_blank>Alcmene</a> bore by Cronian <a href=/people/1 target=_blank>Zeus</a>, when for three days the sun departed and all over was a long night. <a href=/people/1304 target=_blank>Tiphys</a>, son of <a href=/people/317 target=_blank>Hagnias</a>, was the helmsman of the long ship. He left the <a about=https://topostext.org/place/383232PThe class=ethnic long=23.1549 lat=38.2935>Thespians</a> on the waters of Telmissos (Teumessos?) and took in exchange the flow at <a about=https://topostext.org/place/382230PSip class=place long=23.0515 lat=38.1899>Siphai</a> (?). He knew the painstaking art of discerning from the bellowing and flashing of storms when and how to guide the ship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=127>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:127'><b>&sect; 127</b>&nbsp;&nbsp;I became acquainted with <a href=/people/230 target=_blank>Castor</a>, the tamer of <a href=/people/10959 target=_blank>horses</a>; and <a href=/people/327 target=_blank>Polydeuces</a>; and <a href=/people/872 target=_blank>Mopsus</a> from <a about=https://topostext.org/place/402221LTit class=place long=22.123 lat=40.161>Titaros</a>, whom Aregonis the wife of <a href=/people/4063 target=_blank>Ampyx</a> gave birth to under a cloak; and <a href=/people/109 target=_blank>Peleus</a>, the illustrious son of <a href=/people/255 target=_blank>Aeacus</a> of <a about=https://topostext.org/place/378234PAig class=place long=23.425 lat=37.75>Aegina</a>, who ruled over the <a about=https://topostext.org/place/392217RDol class=ethnic long=21.7 lat=39.2>Dolopes</a> in <a about=https://topostext.org/place/393223RPht class=place long=22.5 lat=39.2>Phthia</a>. I also saw the noble triple progeny of <a href=/people/33 target=_blank>Hermes</a>: <a href=/people/2976 target=_blank>Aethalides</a>, born by the renowned <a href=/people/8637 target=_blank>Eupolemeia</a>, daughter of Myrmonides, on rocky <a about=https://topostext.org/place/388229PAlo class=place long=22.9484 lat=38.7478>Alope</a>; then Erytus and beautiful <a href=/people/1580 target=_blank>Echion</a>, who once were born to the lord of <a about=https://topostext.org/place/379224LKyl class=place long=22.3969 lat=37.9397>Cyllene</a> by the <a href=/people/159 target=_blank>Nymph</a> <a href=/people/6076 target=_blank>Laothoe</a>, daughter of Meretus, bearing the golden wand of the <a href=/people/493 target=_blank>Argus</a>-slayer. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=138>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:138'><b>&sect; 138</b>&nbsp;&nbsp;Then came <a href=/people/2196 target=_blank>Coronus</a>, the most ravenous of the sons of <a href=/people/929 target=_blank>Actor</a>. A bit later came <a href=/people/1102 target=_blank>Iphiclus</a>, son of noble <a href=/people/2477 target=_blank>Phylacus</a> and <a href=/people/1546 target=_blank>Butes</a> son of Aeneus, resembling golden <a href=/people/11033 target=_blank>Phoebus</a>. From <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a> came the son of <a href=/people/941 target=_blank>Abas</a>, <a href=/people/3718 target=_blank>Canthus</a>, who was killed in <a about=https://topostext.org/place/300070RLib class=place long=10.01 lat=32.01>Libya</a>. <a href=/people/4363 target=_blank>Phalerus</a>, son of <a href=/people/2965 target=_blank>Alcon</a>, came from the river <a about=https://topostext.org/place/403278WAis class=place long=27.6022 lat=40.2674>Aesepus</a>. He founded the city of <a about=https://topostext.org/place/398226UGyr class=place long=22.4031 lat=39.7573>Gyrton</a> surrounded by the sea. Next I observed <a href=/people/751 target=_blank>Iphitus</a>, son of <a href=/people/3108 target=_blank>Naubolus</a>, who ruled over <a about=https://topostext.org/place/386227RPho class=place long=22.7 lat=38.6>Phocis</a> and the fortified tower of <a about=https://topostext.org/place/383236PTan class=place long=23.5841 lat=38.3074>Tanagra</a>. <a href=/people/3998 target=_blank>Laodocus</a>, <a href=/people/1412 target=_blank>Talaus</a>, and <a href=/people/2693 target=_blank>Areius</a> came, the famous sons of <a href=/people/2281 target=_blank>Bias</a> by <a href=/people/4011 target=_blank>Pero</a>. <a href=/people/2950 target=_blank>Iphidamas</a>, son of <a href=/people/1523 target=_blank>Aleus</a>, also came. His mighty father felt sorry for him, leaving behind <a about=https://topostext.org/place/375224PTeg class=place long=22.429 lat=37.464>Tegea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=152>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:152'><b>&sect; 152</b>&nbsp;&nbsp;<a href=/people/1177 target=_blank>Erginus</a> came also, leaving behind the fruitful land of <a href=/people/3149 target=_blank>Branchus</a> and the ramparts of fortified <a about=https://topostext.org/place/375273PMil class=place long=27.2775 lat=37.5292>Miletus</a>, where the wandering river <a about=https://topostext.org/place/376275WMae class=place long=27.4713 lat=37.622>Maeander</a> gushes forth. One of the sons of <a href=/people/1278 target=_blank>Neleus</a>, <a href=/people/2022 target=_blank>Periclymenus</a>, came forth from far off <a about=https://topostext.org/place/372223PPel class=place long=22.3244 lat=37.2083>Pellene</a> and well-watered Lipaxus, leaving behind the wealthy citadel and mountain-reared Colona. From <a about=https://topostext.org/place/384215UKal class=place long=21.533 lat=38.372>Calydon</a> swift <a href=/people/315 target=_blank>Meleager</a> approached. His parents were <a href=/people/1231 target=_blank>Oeneus</a> and <a href=/people/1122 target=_blank>Althaea</a> of the rose-colored arms. Formerly, <a href=/people/1102 target=_blank>Iphiclus</a> had joined with his relative <a href=/people/315 target=_blank>Meleager</a> and had taught him to fight. <a href=/people/2279 target=_blank>Asterion</a> also came, the illustrious son of <a href=/people/3720 target=_blank>Cometes</a>, who lived where the river <a about=https://topostext.org/place/383218WPei class=place long=21.573 lat=38.136>Peiros</a> flows into the <a about=https://topostext.org/place/393223WEni class=place long=22.15 lat=39.492>Enipeus</a> and the pair are mixed by the river god <a about=https://topostext.org/place/399227WPen class=place long=22.7094 lat=39.9298>Peneus</a> and sent to the sea. <a href=/people/2971 target=_blank>Eurydamas</a> came from the wetlands beside <a about=https://topostext.org/place/395228WBoi class=place long=22.8 lat=39.5>Boebeis</a> and the charming town of <a about=https://topostext.org/place/397228UMel class=place long=22.8889 lat=39.6795>Meliboea</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=168>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:168'><b>&sect; 168</b>&nbsp;&nbsp;Then came <a href=/people/882 target=_blank>Polyphemus</a>, son of <a href=/people/1526 target=_blank>Elatus</a>, whose courage was the most conspicuous among all the heroes. There also had come Eneus, son of <a href=/people/1256 target=_blank>Caeneus</a>, of whom it is said he joined with the <a href=/people/721 target=_blank>Lapiths</a> and was killed by the <a href=/people/553 target=_blank>Centaurs</a>, beaten and crushed by pine-tree trunks. However, he would not bow down or bend under the strain and went down among the dead under the earth while still alive. Moreover, <a href=/people/1035 target=_blank>Admetus</a> came from <a about=https://topostext.org/place/394228PPhe class=place long=22.7539 lat=39.379>Pherae</a>, this mortal whom Paean was bound to serve under the command of <a href=/people/1 target=_blank>Zeus</a> for having killed the <a href=/people/350 target=_blank>Cyclops</a> that had killed his son <a href=/people/114 target=_blank>Asclepius</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=179>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:179'><b>&sect; 179</b>&nbsp;&nbsp;There also came <a href=/people/1528 target=_blank>Eurytion</a> son of <a href=/people/1550 target=_blank>Iros</a> the Aktorian leaving rugged <a about=https://topostext.org/place/386230POpo class=place long=22.992 lat=38.652>Opus</a>, and with him <a href=/people/719 target=_blank>Idas</a> and <a href=/people/6078 target=_blank>Lynceus</a>, the only man able to see through the air, under the deep sea, and down into the infernal abyss of <a href=/people/10685 target=_blank>Hades</a>. Then <a href=/people/258 target=_blank>Telamon</a> followed, born to invincible <a href=/people/255 target=_blank>Aeacus</a> by <a href=/people/2972 target=_blank>Aegina</a>, celebrated daughter of <a about=https://topostext.org/place/383233WAso class=place long=23.5921 lat=38.3016>Asopus</a>, on the shore of <a about=https://topostext.org/place/379235PSal class=place long=23.5408 lat=37.952>Salamis</a>. Now came the illegitimate son of <a href=/people/941 target=_blank>Abas</a>, <a href=/people/1810 target=_blank>Idmon</a>, born to <a href=/people/8607 target=_blank>Antianeira</a> by Lord <a href=/people/2 target=_blank>Apollo</a> on the river <a about=https://topostext.org/place/392227WAmp class=place long=22.7455 lat=39.1729>Amphryssos</a>. <a href=/people/2 target=_blank>Apollo</a> gave him the power of prophecy and divination in order that he could speak the gods’ will to men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=192>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:192'><b>&sect; 192</b>&nbsp;&nbsp;There even came <a href=/people/10976 target=_blank>Menoetius</a> of <a about=https://topostext.org/place/386230POpo class=person long=22.992 lat=38.652>Opus</a>, a neighbor of the <a href=/people/11039 target=_blank>Minyans</a>, and the surpassingly noble <a href=/people/1143 target=_blank>Oileus</a>, and likewise the celebrated <a href=/people/4366 target=_blank>Phlias</a>, the born to a <a href=/people/159 target=_blank>Nymph</a> who submitted to <a href=/people/5 target=_blank>Bacchus</a> by the river <a about=https://topostext.org/place/403278WAis class=place long=27.6022 lat=40.2674>Aesepus</a>, his body free from all fault and possessed of great judgment. <a href=/people/774 target=_blank>Cepheus</a> also voluntarily came to the heroes from <a about=https://topostext.org/place/375223RArk class=place long=22.3 lat=37.5>Arcadia</a>. The elderly father of <a href=/people/932 target=_blank>Ancaeus</a> cast him out from <a href=/people/10978 target=_blank>cattle</a>-rich <a about=https://topostext.org/place/375223RArk class=place long=22.3 lat=37.5>Arcadia</a> to join the expedition. At no time did he wear a woolen tunic; instead he wore the shaggy pelt of a bear across his breast. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=202>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:202'><b>&sect; 202</b>&nbsp;&nbsp;After him came <a href=/people/1195 target=_blank>Nauplius</a>, son of <a href=/people/1146 target=_blank>Amymone</a>, who bore him to the <a href=/people/25 target=_blank>Earth-Shaker</a>. He was of conspicuous virtue and his body was like that of the immortals. Then <a about=https://topostext.org/place/364225STai class=person long=22.4867 lat=36.4018>Taenarian</a> <a href=/people/2141 target=_blank>Euphemus</a> was in attendance leaving behind the valleys of the <a about=https://topostext.org/place/364232LMal class=demonym long=23.198 lat=36.436>Maleatic</a> promontory near sea-washed [sic] <a about=https://topostext.org/place/371225UThe class=place long=22.534 lat=37.0736>Therapne</a>. Also there came <a href=/people/932 target=_blank>Ancaeus</a> of <a about=https://topostext.org/place/384214PPle class=person long=21.417 lat=38.402>Pleuron</a>, who was knowledgeable in the movement of the stars and the heavens and the orbits of the planets and could therefore predict the fate of men. Palaemonius also came, the illegitimate son of <a href=/people/5084 target=_blank>Lernus</a>. Because his feet were crippled in a brush fire, everyone called him the son of <a href=/people/84 target=_blank>Hephaestus</a>. And from <a about=https://topostext.org/place/376217PPis class=place long=21.653 lat=37.6395>Pisatis</a> by the river <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a> came <a href=/people/1015 target=_blank>Augeas</a>, son of <a href=/people/180 target=_blank>Helios</a>. In truth, there even came the twin progeny free from blemish, <a href=/people/393 target=_blank>Amphion</a> and <a href=/people/1435 target=_blank>Asterius</a>, leaving behind <a about=https://topostext.org/place/380225PPel class=place long=22.5384 lat=38.0446>Pellene</a>, their home and fatherland. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=218>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:218'><b>&sect; 218</b>&nbsp;&nbsp;I became acquainted with the twin sons of <a href=/people/208 target=_blank>Boreas</a> by <a href=/people/2336 target=_blank>Oreithyia</a>, the daughter of <a href=/people/298 target=_blank>Erechtheus</a>, whom <a href=/people/208 target=_blank>Boreas</a> seduced by the stream of <a about=https://topostext.org/place/380237WIli class=place long=23.734 lat=37.968>Ilissos</a> and flew up with into the air, causing her to give birth to sons called <a href=/people/2087 target=_blank>Zetes</a> and <a href=/people/1919 target=_blank>Calais</a>, with bodies like the immortals. In truth, <a href=/people/390 target=_blank>Pelias</a>’ son <a href=/people/805 target=_blank>Acastus</a> came from <a about=https://topostext.org/place/394228PPhe class=place long=22.7539 lat=39.379>Pherae</a>, for he was rejoicing to go to the inhospitable <a about=https://topostext.org/place/433424LCau class=place long=42.45 lat=43.351>Caucasus</a> with the heroes in the ship <a href=/people/352 target=_blank>Argo</a>. With him came the friend of the divine <a href=/people/4 target=_blank>Heracles</a>, the beautiful <a href=/people/1258 target=_blank>Hylas</a>, who had not yet had any down redden the milky white of his tender cheeks and chin; this boy still gave great pleasure to <a href=/people/4 target=_blank>Heracles</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=229>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:229'><b>&sect; 229</b>&nbsp;&nbsp;And indeed this band of men had been called together to the ship, and each addressed those coming, and spoke to them, and made available to one another the hospitality of the banquet table. But after the group had sated its soul with food and drink and had made camp, each man burned with desire to undertake the great work. When they had all gotten up from the deep sandy shore, they went to the place above the sea where the ship had been assembled and they were struck dumb by the sight; but soon <a href=/people/493 target=_blank>Argus</a> revealed an inspired plan to move the ship with wooden rollers, and he had bound the stern with rope. He ordered everyone to approach. They obeyed and pulled off their armor. They bound the ropes around their chests like fetters, and each man pressed quickly into the rapid waves in order to drag the talkative <a href=/people/352 target=_blank>Argo</a>. And her weight caused her to get stuck in the sand, entwined in dried seaweed, not yielding to the combined strength of the heroes’ hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=248>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:248'><b>&sect; 248</b>&nbsp;&nbsp;<a href=/people/2578 target=_blank>Jason</a>’s soul froze, and he nodded to me to look at this, and rouse the weary men with my robust and lively songs. And I, holding out my lyre in my hands, called up the delectable glory of the songs of my mother, and brought forward a sweet voice from my breast: The heroic blood is manifest in the <a href=/people/11039 target=_blank>Minyae</a>. Come now! Press forward with those ropes tied around your chests. Make an attack together. Stretch out the rope by taking steps forward, and draw the ship forward successfully! And you, <a href=/people/352 target=_blank>Argo</a>, built of pitch-black oak, hear my voice, and indeed you heard me before, when I stroked the trees on the well-wooded peak and you descended for me from the mountain to the sea. Follow now the way to the Parthenian Sea. Hurry to travel to <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a> and yield to my cithara and my divine voice. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=266>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:266'><b>&sect; 266</b>&nbsp;&nbsp;Then was heard the bellowing of the Tomarian oak beam, which <a href=/people/493 target=_blank>Argus</a> had placed before the keel of the ship by order of <a href=/people/681 target=_blank>Pallas</a>, and the <a href=/people/352 target=_blank>Argo</a> slipped so quickly to the sea that she scattered the close-set timbers placed beneath her keel, and only one stretched rope was needed. On both sides, clouds of sand rose up in waves, and <a href=/people/2578 target=_blank>Jason</a> rejoiced in his heart. <a href=/people/493 target=_blank>Argus</a> leapt into the ship, and <a href=/people/1304 target=_blank>Tiphys</a> followed nearby. Then they assigned fitting and appropriate places. They prepared the mast, and sails, and they barred the steering oars, suspended from the stern and bound with a leather strap. Then, with the oars stretched out on both sides, and the <a href=/people/11039 target=_blank>Minyans</a> hastening to advance, <a href=/people/2578 target=_blank>Jason</a> addressed the heroes: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=281>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:281'><b>&sect; 281</b>&nbsp;&nbsp;Hear me: it does not please me to give orders to you, O mighty lords. In truth, whosoever stirs your heart and soul, set him up as your leader, who shall be careful for everything and take it upon himself to order us to sail across the sea or to put ashore, or to deal with <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a> or with other men. And indeed, with me you determine on whom you shall fix this honor. There are many among you who boast of being from the race of the offspring of the immortals. You seek the shared glory of labor. I am not considered better or more glorious than <a href=/people/4 target=_blank>Heracles</a>, and him you know well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=293>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:293'><b>&sect; 293</b>&nbsp;&nbsp;So he spoke, and all assented; in one voice they shouted that the leader of the <a href=/people/11039 target=_blank>Minyans</a> should be the Alceid (<a href=/people/4 target=_blank>Heracles</a>), who was more excellent than any of the crew. But they did not persuade the wise hero, who now understood by the instigation of <a href=/people/19 target=_blank>Hera</a> that the son of <a href=/people/467 target=_blank>Aeson</a> was to be preferred as the manager of this good and glorious undertaking. And so <a href=/people/4 target=_blank>Heracles</a> announced that the leader of the fifty oarsmen should be <a href=/people/2578 target=_blank>Jason</a> on land and sea. And then all gave great praise to what <a href=/people/4 target=_blank>Heracles</a> ordered, and they set up <a href=/people/2578 target=_blank>Jason</a> as leader. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=303>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:303'><b>&sect; 303</b>&nbsp;&nbsp;When the <a href=/people/180 target=_blank>Sun</a> had severed the sky with his swift <a href=/people/10959 target=_blank>horses</a> and the dark night stretched out, indecision stirred the breast of <a href=/people/467 target=_blank>Aeson</a>’s son about whether he should impose an oath of loyalty upon the heroes to seal their faith in him. And I say to you, beloved <a href=/people/4006 target=_blank>Musaeus</a>, son of <a href=/people/12281 target=_blank>Antiophemus</a>, he ordered me to prepare quickly for an appropriate sacrifice. And so I built an altar of excellent oak on the shore, and putting on a robe, I offered service to the gods on behalf of the men. And then I slit the throat of an enormous <a href=/people/10955 target=_blank>bull</a>, bending back the heads to the gods, cutting up the fresh meat and pouring the blood around the fire. After I laid the heart on broken cakes, I made a libation of oil and <a href=/people/10954 target=_blank>sheep</a>’s milk. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=318>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:318'><b>&sect; 318</b>&nbsp;&nbsp;I then ordered the heroes to spread round the victim, thrusting their spears and their swords furnished with handles into the victim, and into the hide and the viscera shining in my hands. And I set up in the middle a vessel containing kykeon, the sacred drink of water and barley, which I carefully mixed, the first nourishing offering to <a href=/people/48 target=_blank>Demeter</a>. Then came the blood of the <a href=/people/10955 target=_blank>bull</a>, and salty sea-water. I ordered the crew wreathed with crowns of olive leaves. Then filling up a golden vessel with kykeon by my hands, I divided it by rank so that every man could have a sip of the powerful drink. I asked <a href=/people/2578 target=_blank>Jason</a> to order a dry pine torch to be placed beneath, and with swift motion the divine flame ascended. And this I called out while lifting my hands to the seashore and the sea rich in waves: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=333>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:333'><b>&sect; 333</b>&nbsp;&nbsp;O powerful <a href=/people/527 target=_blank>Oceanus</a>, and the sea churning with waves, the abyss holding blessed, and all those who inhabit the rough sandy shores and the rock-strewn sea, and the outer wave of <a href=/people/832 target=_blank>Tethys</a>! I call first upon <a href=/people/428 target=_blank>Nereus</a>, with his fifty beloved girls; <a href=/people/1197 target=_blank>Glaucus</a>, full of fish; boundless <a href=/people/1147 target=_blank>Amphitrite</a>; <a href=/people/5355 target=_blank>Proteus</a> and <a href=/people/1496 target=_blank>Phorcys</a>; the broad power of Triton, and the swift Winds, with the breeze bearing winged sandals of gold. I call upon the Stars shining afar, and the darkness of murky <a href=/people/12253 target=_blank>Night</a>, and <a href=/people/1259 target=_blank>Auge</a>, the forerunner of the <a href=/people/180 target=_blank>Sun</a>’s swift <a href=/people/10959 target=_blank>horses</a>. May the gods of the sea guide the heroes over the seas, rivers, waves, and shores. And I beseech the son of <a href=/people/43 target=_blank>Cronus</a>, <a href=/people/25 target=_blank>Poseidon</a> himself, the <a href=/people/25 target=_blank>Earth-Shaker</a>, clothed in blue, may a jumping wave come to aid in our oath: so that the companions of <a href=/people/2578 target=_blank>Jason</a> may always remain committed helpers in this task and so that we all to a man may return home! In truth, whoever fails to honor this pact and transgresses against it, may <a href=/people/194 target=_blank>Dike</a> bear witness and the <a href=/people/1744 target=_blank>Furies</a> destroy him. And trembling they agreed to the oath with one soul, and they gave the signal of their assent with their hands. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=353>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:353'><b>&sect; 353</b>&nbsp;&nbsp;And when they had sworn to the oath, they went down into the ship and took their places and took up their oars in their hands. Thereupon <a href=/people/1304 target=_blank>Tiphys</a> ordered a long rope to carry the ship from the harbor to the shore. Then <a href=/people/19 target=_blank>Hera</a> the wife of <a href=/people/1 target=_blank>Zeus</a> sent a favorable blowing wind and spurred the <a href=/people/352 target=_blank>Argo</a> on its course. The princes therefore, by their hands and souls, moved the ship with their rowing: The immense sea was cleaved, and foam rose up from the keel. And when the first light appeared newborn from the river Ocean, dawn followed, bringing a pleasant light to mortals and immortals alike. Then the well-wooded, windy mountain of <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a> appeared by the shore. <a href=/people/1304 target=_blank>Tiphys</a> adjusted the rudder and ordered the ship to follow the shore for a little while. And thus quickly we put ashore and a wooden ladder was lowered down to the harbor. The <a href=/people/11039 target=_blank>Minyan</a> heroes climbed down the ladder and rested from their labors. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=376>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:376'><b>&sect; 376</b>&nbsp;&nbsp;<a href=/people/109 target=_blank>Peleus</a> addressed them: Do you see, friends, that dark spot on the summit of the mountain? In that cave lives <a href=/people/1086 target=_blank>Chiron</a>, the most just of the <a href=/people/553 target=_blank>Centaurs</a> who lived in the cave of Pholus and the high summits of the <a about=https://topostext.org/place/400208LPin class=place long=20.75 lat=40>Pindus</a> range. He gave judgment and treated the sick, and knocked the cithara from the hands of <a href=/people/11033 target=_blank>Phoebus</a> with his sweet playing of the tortoise shell phorminx of <a href=/people/33 target=_blank>Hermes</a>. He brought justice to all his neighbors. Therefore, right after giving birth to our child, <a href=/people/202 target=_blank>Thetis</a> of the silver feet bore our boy up leafy <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a> in her arms and handed him to <a href=/people/1086 target=_blank>Chiron</a> to rear and educate wisely and well. I wish to see him. Come, friends, let us approach the cave and see my boy. He pointed the way, and we followed him into a dark hall. There lay recumbent the great <a href=/people/553 target=_blank>Centaur</a>, resting against a rock, his hooves and swift <a href=/people/10959 target=_blank>horse</a> feet extended. Standing near, the son of <a href=/people/109 target=_blank>Peleus</a> and <a href=/people/202 target=_blank>Thetis</a> played the lyre with his hands, which lifted the spirits of <a href=/people/1086 target=_blank>Chiron</a>. When he first caught sight of the famous lords, he stood up to greet them and kissed each and every man. He made food available and furnished amphorae of wine. He spread out a covering of torn leaves and commanded his guests to take a place. He swiftly placed ample deer and <a href=/people/10951 target=_blank>boar</a> meat on rough plates; afterward he distributed sweet wine to drink. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=406>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:406'><b>&sect; 406</b>&nbsp;&nbsp;When everyone was sated with food and drink, all simultaneously clapped their hands so that <a href=/people/1086 target=_blank>Chiron</a> and I would have a song and cithara-playing contest. I did not want to yield to humor, for I was unwilling and ashamed to risk showing up a man born before me. But <a href=/people/1086 target=_blank>Chiron</a> himself signaled his wish to vie with me in song. Before he sang, the <a href=/people/553 target=_blank>Centaur</a> took from <a href=/people/17 target=_blank>Achilles</a> the beautiful lyre which he was playing, and <a href=/people/1086 target=_blank>Chiron</a> first sang of the battle of the violent-hearted <a href=/people/553 target=_blank>Centaurs</a> whom the <a href=/people/721 target=_blank>Lapiths</a> killed due to their recklessness, how obstinately they fought against <a href=/people/4 target=_blank>Heracles</a> in Pholus when wine roused their spirits. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=419>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:419'><b>&sect; 419</b>&nbsp;&nbsp;Then I picked up my tortoise-shell instrument and sent forth a honeyed song from my mouth: First I sung of the obscurity of ancient <a href=/people/1434 target=_blank>Chaos</a>, and how the elements were ordered, and the Heavens reduced to bound. I sang then of the creation of the wide-bosomed earth, and the depth of the sea, and <a href=/people/38 target=_blank>Eros</a>, the most ancient, self-perfecting, and of manifold design. I sang of how he generated all things and parted them from one another. And I have sung of <a href=/people/43 target=_blank>Cronus</a> so miserably undone, and how the kingdom of the blessed Immortals descended upon thunder-loving <a href=/people/1 target=_blank>Zeus</a>. I then sang of the younger generation of the blessed ones, of Brimo and <a href=/people/5 target=_blank>Bacchus</a>, and the destructive acts of the <a href=/people/11034 target=_blank>Giants</a>. I sang too of the origins of the many scattered races of men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=431>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:431'><b>&sect; 431</b>&nbsp;&nbsp;The sound of my tortoise shell instrument and my sweet voice traveled through the narrow cave and were heard across the peaks and vales of well-wooded <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a>, and my voice entered even the highest oaks. In the deepest roots of <a href=/people/1086 target=_blank>Chiron</a>’s hall, the very rocks resounded. The wild animals sat outside <a href=/people/1086 target=_blank>Chiron</a>’s cave listening, and the birds surrounded the <a href=/people/553 target=_blank>Centaur</a>’s lair as if their wings had grown tired and they had forgotten their nests. Seeing this, the Cenatur was struck dumb and repeatedly struck hand upon hand and his hooves upon the ground. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=442>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:442'><b>&sect; 442</b>&nbsp;&nbsp;<a href=/people/1304 target=_blank>Tiphys</a> enjoined the <a href=/people/11039 target=_blank>Minyans</a> to go forth from the cave and enter the ship; thus I brought my song to an end. They rose quickly and put on their arms. Meanwhile, <a href=/people/109 target=_blank>Peleus</a> hugged his boy, kissed him on the head and both eyes, tearfully laughing. His mind was soothed by <a href=/people/17 target=_blank>Achilles</a>. Moreover, the <a href=/people/553 target=_blank>Centaur</a> gave me a leopard skin from his hand, to bear away as a gift. As we rushed from the cave, the old Phillyrides (<a href=/people/1086 target=_blank>Chiron</a>) beseeched us with upraised hands and called upon all the gods for the return of the <a href=/people/11039 target=_blank>Minyans</a> and great glory for the younger princes about to become men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=455>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:455'><b>&sect; 455</b>&nbsp;&nbsp;After everyone had gone down to the shore and into the ship, they took their seats, stretched out the oars with their hands, and struck out into the waves, departing from <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a>. Above the great surface of the sea, the churning foam made the water white. The cape of <a about=https://topostext.org/place/391232LTis class=place long=23.1545 lat=39.106>Pissaeum</a> was hidden, and the headland of <a about=https://topostext.org/place/391232LSep class=place long=23.3496 lat=39.188>Sepias</a>. <a about=https://topostext.org/place/392235PSki class=place long=23.4885 lat=39.164>Sciathus</a> appeared. The tomb of <a href=/people/3509 target=_blank>Dolops</a> came into sight, and seaside <a about=https://topostext.org/place/398226LHom class=place long=22.6464 lat=39.8272>Homole</a>, and the seaward-rushing flow of the river channel (<a about=https://topostext.org/place/399227WPen class=place long=22.7094 lat=39.9298>Peneius</a>), which hurls thundering waters across a broad land. The <a href=/people/11039 target=_blank>Minyans</a> saw far off <a about=https://topostext.org/place/401224LOly class=place long=22.3586 lat=40.0856>Olympus</a> on account of its inaccessibly high rocks, and they passed well-wooded <a about=https://topostext.org/place/402243LAth class=place long=24.327 lat=40.158>Athos</a> and spacious <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Pallene</a> and sacred <a about=https://topostext.org/place/405255SMeg class=place long=25.5301 lat=40.5008>Samothrace</a> of the awful rites of the gods that may not be defiled by men. The heroes eagerly approached this place upon my advice, for great is the utility of these rites to sailing men, and indeed to all men. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=471>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:471'><b>&sect; 471</b>&nbsp;&nbsp;We brought our swift ship up along the haughty Sintian coast of holy <a about=https://topostext.org/place/399253ILem class=place long=25.21 lat=39.93>Lemnos</a>. There evil acts had been done by the women. In their wickedness, they had killed their husbands. Renowned <a href=/people/939 target=_blank>Hypsipyle</a>, the most beautiful of the women, now ruled over them according to their wishes. But, in truth, what is the reason for making a long tale of this, <a href=/people/4006 target=_blank>Musaeus</a>, how <a href=/people/168 target=_blank>Cypris</a> [<a href=/people/15 target=_blank>Aphrodite</a>] nurse of love, excited the desire of the <a about=https://topostext.org/place/399253ILem class=demonym long=25.21 lat=39.93>Lemnian</a> women to have sex with the <a href=/people/11039 target=_blank>Minyans</a>, so that by magical enticement <a href=/people/2578 target=_blank>Jason</a> possessed <a href=/people/939 target=_blank>Hypsipyle</a> and the other <a href=/people/11039 target=_blank>Minyans</a> made love with the other women? They would have forgotten about the expedition had I not called them back to the dark ship with my restraining words and soothing song, making them long for their oars and demand earnestly for resumption of their task. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=484>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:484'><b>&sect; 484</b>&nbsp;&nbsp;Then early in the morning we entered the <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a> with a favorable wind sent by the powerful <a href=/people/444 target=_blank>Zephyr</a>. We passed beside narrow <a about=https://topostext.org/place/402264PAby class=place long=26.4091 lat=40.1951>Abydos</a>, Dardanian <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilion</a>, and <a about=https://topostext.org/place/403267UPit class=place long=26.6992 lat=40.3467>Pitye</a> on the right, and <a about=https://topostext.org/place/404267UAba class=place long=26.7344 lat=40.3783>Abarnis</a> and <a about=https://topostext.org/place/403266UPer class=place long=26.5888 lat=40.2739>Percote</a>, the fruitful land which <a about=https://topostext.org/place/403278WAis class=place long=27.6022 lat=40.2674>Aesepus</a> washes with silver streams. And jumping, the talkative <a href=/people/352 target=_blank>Argo</a> hastened at once to where we put her ashore. There, the ship’s helmsman <a href=/people/1304 target=_blank>Tiphys</a>, the famous son of <a href=/people/467 target=_blank>Aeson</a>, and all the other <a href=/people/11039 target=_blank>Minyans</a> raised a heavy stone to gray-eyed <a href=/people/11 target=_blank>Athena</a> (where the nymphs made beautiful waters gush forth from the <a about=https://topostext.org/place/404278IArt class=demonym long=27.786 lat=40.375>Artacian</a> fountain) because sailing through the wide <a about=https://topostext.org/place/402264WHel class=place long=26.4 lat=40.2>Hellespont</a>, the fair weather that had occurred receded and forced them to cast anchor on land as the waves beat down with wintery breath. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=501>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:501'><b>&sect; 501</b>&nbsp;&nbsp;There, preparing an eating place and dinner on the high shore, we gave a banquet for all. <a href=/people/3159 target=_blank>Cyzicus</a>, the son of Aeneus who ruled over all the Doliones, came up and took a place among the heroes. He had been born to a most noble woman, Aenete, daughter of Eusorus. He honored the <a href=/people/11039 target=_blank>Minyans</a> with hospitality, slaughtering colored <a href=/people/10954 target=_blank>sheep</a>, curved-footed <a href=/people/10978 target=_blank>cows</a>, and ferocious <a href=/people/10951 target=_blank>pigs</a>. In addition, he gave red wine and sent copious grain for the trip, bringing also cloaks, woolen cloth, and well-sewn tunics. He was surrounded by the assembled guests, who were of similar age, and he feasted and entertained them through the whole day. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=512>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:512'><b>&sect; 512</b>&nbsp;&nbsp;But when the <a href=/people/206 target=_blank>Titan</a> Ocean plunged into disorder and the Moon wrapped the stars in a blanket of darkness, there came men of <a href=/people/24 target=_blank>Ares</a> who lived on mountains in the far north, stupid, like wild savages, strong like the <a href=/people/206 target=_blank>Titans</a> and the <a href=/people/11034 target=_blank>Giants</a>. Indeed six hands emerged from their shoulders. Observing the invincible lords, they charged in battle wearing the armor of <a href=/people/24 target=_blank>Ares</a>. The strangers fought partly with pine torches and partly with fir spears, and they made an attack on the <a href=/people/11039 target=_blank>Minyans</a> through the dark fog. The strong son of <a href=/people/1 target=_blank>Zeus</a> killed the invaders, sending forth arrows; and likewise he killed <a href=/people/3159 target=_blank>Cyzicus</a>, the son of Aeneus, not intentionally but through ignorant confusion. Truly, he was fated to be killed by <a href=/people/4 target=_blank>Heracles</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=526>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:526'><b>&sect; 526</b>&nbsp;&nbsp;At once the <a href=/people/11039 target=_blank>Minyans</a> within the ship met to prepare for departure, and each man took up his rowing position. <a href=/people/1304 target=_blank>Tiphys</a>, shouting from the stern, ordered the ladder dragged up into the ship in order to set sail from the coast. In truth, they were not able to loosen the rope, but they were held back by churning waves and an inexplicable that knot had bound them fast. <a href=/people/1304 target=_blank>Tiphys</a>, a strong man, was struck dumb and, losing his speech, dropped the <a href=/people/352 target=_blank>Argo</a>’s rudders from his hands, and indeed he hoped the waves would pass away. Certainly <a href=/people/243 target=_blank>Rhea</a> was furious with the <a href=/people/11039 target=_blank>Minyans</a> for hewing down her people. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=536>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:536'><b>&sect; 536</b>&nbsp;&nbsp;In the middle of the night, when the far off shining stars fell beneath the river Ocean, a deep sleep attacked the eyes of the helmsman. The dread goddess <a href=/people/11 target=_blank>Athena</a> stood near him in sleep, and gave an order with these words of divine rebuke: Sleeping son of <a href=/people/317 target=_blank>Hagnias</a>, are your eyelids wrapped in sleep? When you arise, <a href=/people/1304 target=_blank>Tiphys</a>, you must order the heroes to return to the tranquil shore, emerge from the ship, and go to the place where the killing occurred and pay homage to the dead. <a href=/people/243 target=_blank>Rhea</a>, the all-mother, orders you to give honors and offerings to those below the earth, and to pour out the tears of your eyes, honoring the divine law and the hospitality of the table. <a href=/people/4 target=_blank>Heracles</a> killed a guest imprudently in the nighttime mists, thus provoking the rage of <a href=/people/243 target=_blank>Rhea</a>. But when you will have justly honored the dead, then at once climb <a about=https://topostext.org/place/405277LDin class=place long=27.911 lat=40.433>Dindymon</a>, the seat of <a href=/people/243 target=_blank>Rhea</a>. There you shall find purification from the daughter of <a href=/people/3304 target=_blank>Ge</a>. Then finally, you can sail away from the shore. Thus having spoken, the goddess changed into the form of an arrow and shot into the sky. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=543>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:543'><b>&sect; 543</b>&nbsp;&nbsp;<a href=/people/1304 target=_blank>Tiphys</a>’ stupor dissipated at once, and quickly dismounting from the stern, he roused the men with a shout, shaking the sleeping and resting men on this side and that, and he pointed out to them the course they must take. Rising quickly, they jumped down to the shore. Meanwhile, <a href=/people/683 target=_blank>Eos</a> of the dawn appeared as a thong of gold born from the darkness, and the dawn sky returned. Then the noble <a href=/people/11039 target=_blank>Minyans</a> recognized the corpse of <a href=/people/3159 target=_blank>Cyzicus</a>, polluted with dust and blood. There lay all around him the bodies of their enemies, the wild and monstrous beasts, but also among them those of some of their allies. Placing King <a href=/people/3159 target=_blank>Cyzicus</a> under a wooden plank, they heaped up a mound atop him, and they built a monument. Then they quickly brought logs and burned offerings of black <a href=/people/10955 target=_blank>bulls</a> for the dead. I placated the dead king’s soul, pouring out rich liquid as a means of appeasing him, water and honeyed milk, just as one should sprinkle a libation on a corpse. And I sang a hymn of honor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=576>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:576'><b>&sect; 576</b>&nbsp;&nbsp;The son of <a href=/people/467 target=_blank>Aeson</a> himself proposed funeral games, and as prizes for the winner of the funeral games the gifts which <a href=/people/939 target=_blank>Hypsipyle</a> had given them on <a about=https://topostext.org/place/399253ILem class=place long=25.21 lat=39.93>Lemnos</a>. To <a href=/people/932 target=_blank>Ancaeus</a> he gave the prize for wrestling, a very large, golden two-fold drinking vessel. To <a href=/people/109 target=_blank>Peleus</a>, the victor in the foot race, he gave a purple cloak, a product of <a href=/people/11 target=_blank>Athena</a>’s many arts. He bestowed upon <a href=/people/4 target=_blank>Heracles</a>, the winner of the gymnastic contest, a silver krater everywhere encrusted with figures. To <a href=/people/230 target=_blank>Castor</a>, the winner of the equestrian contest, he gave a golden decorative <a href=/people/10959 target=_blank>horse</a> collar. To the victorious boxer <a href=/people/327 target=_blank>Polydeuces</a>, he gave a woolen cloth embroidered with flowers. <a href=/people/2578 target=_blank>Jason</a> himself seized the pliant bow and arrows. He threw a spear, which flew a long way. Therefore the crowd of <a href=/people/11039 target=_blank>Minyans</a> gave the son of <a href=/people/467 target=_blank>Aeson</a> a crown woven of blooming olive branches. Finally, <a href=/people/2578 target=_blank>Jason</a> gave me a prize for my song to the gods, holding out the high boots worn by poets, these bearing golden wings. Thus ended the games. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=594>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:594'><b>&sect; 594</b>&nbsp;&nbsp;Meanwhile, a rumor flew within the king’s house that <a href=/people/3159 target=_blank>Cyzicus</a> was dead: His unfortunate wife, tearing her breast, cried sharply, and tying a rope around her neck killed herself with the noose. But the earth took in the tears, and there emerged from that spot a fountain like unto a basin from the middle of which forever gushed forth water like unto silver. The people of the area called it <a href=/people/5562 target=_blank>Cleite</a> [after the wife]. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=601>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:601'><b>&sect; 601</b>&nbsp;&nbsp;Then <a href=/people/461 target=_blank>Argonauts</a> on account of this, which they had heard during their sleep, proceeded to the top of the mountain of <a about=https://topostext.org/place/405277LDin class=place long=27.911 lat=40.433>Dindymon</a> in order by abundant libations of wine to avoid the wrath of the most ancient <a href=/people/243 target=_blank>Rhea</a> and placate the goddess. I followed, holding my tortoise-shell instrument in my hands. And <a href=/people/493 target=_blank>Argus</a> came, leaving behind the famous ship. He cut down with iron the trunk of a fir tree surrounded by dry grape vines, and he fashioned this by his art into the image of the goddess, in order that it should remain for future men. He built a house of rocks for the goddess. Here, the work spurring on the <a href=/people/11039 target=_blank>Minyans</a>, most of all the son of <a href=/people/467 target=_blank>Aeson</a>, they joined together to build an altar of stones on which were added libations and a <a href=/people/10955 target=_blank>bull</a> sacrifice. The princes obtained omens from the sacrifice that the libations pleased <a href=/people/243 target=_blank>Rhea</a>. But they ordered me to sing to and honor the goddess so that she would grant our prayers to depart. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=618>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:618'><b>&sect; 618</b>&nbsp;&nbsp;When we had beseeched the goddess with prayers and incense, we descended back down to the <a href=/people/352 target=_blank>Argo</a>. <a href=/people/1304 target=_blank>Tiphys</a> had called to the heroes from the stern, and they took their seats. Settling in to their seats, they began rowing. And now the rope loosened from the land, and the shore disentangled, and suddenly <a href=/people/243 target=_blank>Rhea</a> sent a favorable wind from high atop <a about=https://topostext.org/place/405277LDin class=place long=27.911 lat=40.433>Dindymon</a>, dressed with splendid towers. We made sacrifices in honor of our return to the ship, having ordered the construction of an altar of the goddess in the temple on <a about=https://topostext.org/place/405277LDin class=place long=27.911 lat=40.433>Dindymon</a> among the descendants called the children of <a href=/people/243 target=_blank>Rhea</a> Peismatia, she who loosens the cables. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=629>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:629'><b>&sect; 629</b>&nbsp;&nbsp;When the wind had filled the sails of the ship, it ran, cleaving the salty waves of the sea; and it skirted near the boundary of the <a about=https://topostext.org/place/375275RMys class=ethnic long=28 lat=40>Mysians</a>’ land. Quickly in its course, it crossed the mouth of <a about=https://topostext.org/place/401285WRhy class=place long=28.542 lat=40.1357>Rhyndacos</a>, and entered in the beautiful port and arrived at a sandy shore. Then hurling the rope, the <a href=/people/461 target=_blank>Argonauts</a> fastened together the sails and bound the leather straps. They threw down the ladder to the land, and climbed down, greatly desiring food and drink. Around a hill, there appeared Arganthos and vast rocky peaks. <a href=/people/4 target=_blank>Heracles</a> hastened to a well-wooded hill, bearing three-pronged arrows so that he might supply food for the crew, such as <a href=/people/10951 target=_blank>boar</a>, horned <a href=/people/10978 target=_blank>cow</a>, or <a href=/people/10956 target=_blank>goat</a>. But <a href=/people/1258 target=_blank>Hylas</a> followed him from the ship in secret and wandered off, roaming the woods. He came across a marshy cave belonging to <a href=/people/159 target=_blank>Nymphs</a>. They caught sight of the young man as he went by, and thinking he looked like a god, intercepted him so that he could be immortal with them and be free from old age for all time. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=649>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:649'><b>&sect; 649</b>&nbsp;&nbsp;But when the sun drove his swift <a href=/people/10959 target=_blank>horses</a> to the middle of the day, suddenly a favorable wind blew from the mountain and cut into the white sails. <a href=/people/1304 target=_blank>Tiphys</a> gave the sign to return to the ship and loosen it from the shore. The <a href=/people/461 target=_blank>Argonauts</a> obeyed the exhortation of the helmsman. <a href=/people/882 target=_blank>Polyphemus</a>, son of <a href=/people/1526 target=_blank>Elatus</a>, quickly ascended to the top of the mountain, calling <a href=/people/4 target=_blank>Heracles</a> to hasten back to the ship. But he did not run to meet them, for <a href=/people/4 target=_blank>Heracles</a> had lost all strength for continuing on the journey to the beautiful <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=659>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:659'><b>&sect; 659</b>&nbsp;&nbsp;Near morning, we came to a deadly land where <a href=/people/1606 target=_blank>Amycus</a> reigned over the proud <a href=/people/8978 target=_blank>Bebryces</a>. He laid down a law, disregarding <a href=/people/1 target=_blank>Zeus</a> Panomphaeus (source of oracles_, that none should be provided with hospitality until he had challenged him in battle. And so, when the <a href=/people/461 target=_blank>Argonauts</a> came to his house, he sent for someone to put to the test in boxing. The powerful <a href=/people/327 target=_blank>Polydeuces</a> therefore killed him, beating his head (like a thunderbolt) with his boxing glove. The <a href=/people/11039 target=_blank>Minyans</a> completely destroyed the crowd of <a href=/people/8978 target=_blank>Bebryces</a> with bronze arms. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=667>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:667'><b>&sect; 667</b>&nbsp;&nbsp;Weary of rowing, we put ashore at the wide beach of the large city of the <a about=https://topostext.org/place/405295RBit class=ethnic long=29.5 lat=40.5>Bithynians</a>, hurrying through the mouth of the river; and in the snowy woods, we marked off a nighttime camp and prepared dinner. There the unfortunate <a href=/people/615 target=_blank>Phineus</a>, due to the rage of his wife, had blinded his two sons, and enchanted by womanly words, he abandoned them on nearby rocks to become prey to wild beasts. The two sons of <a href=/people/208 target=_blank>Boreas</a> found them unharmed, and, enraged, they in turn brought punishment to <a href=/people/615 target=_blank>Phineus</a>, taking away the splendor of light from his eyes. Afterwards, violent <a href=/people/208 target=_blank>Boreas</a> threw up a storm full of whirlpools in the dense forest of <a about=https://topostext.org/place/413248RBis class=place long=25 lat=41.2>Bistonia</a>, where through the storm’s destructive strength, death overtook <a href=/people/615 target=_blank>Phineus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=680>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:680'><b>&sect; 680</b>&nbsp;&nbsp;Then leaving behind the house of <a href=/people/615 target=_blank>Phineus</a>, son of <a href=/people/394 target=_blank>Agenor</a>, we crossed the surface of the great sea and came to the <a about=https://topostext.org/place/412291IKya class=place long=29.11517 lat=41.234>Cyanaean</a> rocks, which my mother, the farseeing <a href=/people/736 target=_blank>Calliope</a>, had told me about. Truly there was no place of refuge, but impelled by a frothing wind storm, their clashing would destroy us as we went through. The crash sent waves through the sea and the spacious sky and stirred up the waters in such a way that the boiling sea made much noise with its immense waves. I predicted to <a href=/people/1304 target=_blank>Tiphys</a>, son of <a href=/people/317 target=_blank>Hagnias</a>, that he should look back at the stern and beware. His soul was struck dumb by what he heard, but he hid from the heroes in his breast that which would happen. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=694>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:694'><b>&sect; 694</b>&nbsp;&nbsp;And gray-eyed <a href=/people/11 target=_blank>Athena</a> by the instigation of <a href=/people/19 target=_blank>Hera</a> sent a heron so that it could be brought up to the highest yardarm. It reluctantly flew toward the danger: It turned around the innermost rocks with its upraised wings, and the shaking rocks rushed into one another and clipped the end of the bird’s tail; moreover, in vain did the rocks strike each other in turn. <a href=/people/1304 target=_blank>Tiphys</a>, when he saw the heron plunge headlong into danger, urged on the heroes with a silent signal. Realizing they were being sent forth and urged on, they cleaved the waves with their rowing. And I, by my song, charmed the lofty rocks. They receded in turn, and a wave rushed in with a loud sound. The rocks permitted the ship to pass and yielded to my cithara on account of my divine song. While singing my song, we escaped through a narrow channel between the Cyanae, and the rocks took root and stood motionless as though they had always been fixed, for such had it been spun by the Moirai. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=712>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:712'><b>&sect; 712</b>&nbsp;&nbsp;Thus slipping away from bitter death, we avoided ruin on the <a about=https://topostext.org/place/412292WRhe class=place long=29.2205 lat=41.2147>Rhebas</a> and the black beach. We passed then the long island of <a about=https://topostext.org/place/412303IThy class=place long=30.2593 lat=41.2157>Thynias</a>, near which the Tembrius full of fish becomes green and overflows its banks and the river <a about=https://topostext.org/place/411306WSan class=place long=30.645 lat=41.109>Sangarius</a> gushes waves into the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Euxine</a>. When we had rowed to the shore, we landed at the river <a about=https://topostext.org/place/412314WLyk class=place long=31.4315 lat=41.2497>Lycus</a>. The ruler of the people there had the same name as the river, <a href=/people/398 target=_blank>Lycus</a>. He received the <a href=/people/11039 target=_blank>Minyan</a> heroes with a hospitable table, and he kept them in a friendly manner for several days and nights. There, fate brought death to two men: <a href=/people/1810 target=_blank>Idmon</a>, son of <a href=/people/2709 target=_blank>Ampycus</a>, and <a href=/people/1304 target=_blank>Tiphys</a> the helmsman. The latter died of illness, while the former was killed by a wild <a href=/people/10951 target=_blank>boar</a> in the countryside. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=725>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:725'><b>&sect; 725</b>&nbsp;&nbsp;When we had built their tombs, we sailed under the trusted guidance of <a href=/people/932 target=_blank>Ancaeus</a>, for all said he was skilled in sailing and the best equipped with knowledge of the same. He took up the rudders in his hand, and steered the ship by the streams of <a about=https://topostext.org/place/417323WPar class=place long=32.2517 lat=41.6747>Parthenius</a>, which they call <a href=/people/3788 target=_blank>Callichorus</a>. I made mention of this to you, <a href=/people/4006 target=_blank>Musaeus</a>, in a lofty conversation. Sailing by the outer headland, we came near the land of the <a about=https://topostext.org/place/410300RPap class=ethnic long=30 lat=41>Paphlagonians</a>. Then the course of the <a href=/people/352 target=_blank>Argo</a> passed over into the great sea. The ship reached Cape <a about=https://topostext.org/place/420334UKar class=place long=33.369 lat=42.013>Carambis</a>, in which the <a about=https://topostext.org/place/412369WThe class=place long=36.942 lat=41.194>Thermodon</a> is situated, and the streams of <a about=https://topostext.org/place/416359WHal class=place long=35.883 lat=41.569>Halys</a>, drawing the salty waves to the wide shore. Sailing lower down from the northern country for a little while, there was situated <a about=https://topostext.org/place/412370UThe class=place long=36.967 lat=41.215>Themiscyra</a> and Doeas, near which lie the cities of the <a href=/people/154 target=_blank>Amazons</a>. Also situated there, the <a href=/people/11016 target=_blank>Chalybes</a> and <a about=https://topostext.org/place/410380RTib class=ethnic long=38 lat=40.96>Tibareni</a>, neighboring peoples living mixed together in the region of the <a about=https://topostext.org/place/408387RMos class=ethnic long=38.7 lat=40.8>Mossyni</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=744>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:744'><b>&sect; 744</b>&nbsp;&nbsp;Then sailing to the left, we put ashore where the Macrones border the <a about=https://topostext.org/place/409312RMar class=ethnic long=31.2 lat=40.86>Mariandyni</a>. Further down, under <a href=/people/2086 target=_blank>Helike</a> a long neck of land was extended. In that place, resplendent ravines were surrounded by jutting ridges above a broad, curving bay. In that place stood the mount of <a href=/people/8582 target=_blank>Syme</a> and a huge and verdant meadow. There was the stream of <a about=https://topostext.org/place/391454WAra class=place long=45.4002 lat=39.0809>Araxes</a>, the loud-sounding river, from which <a about=https://topostext.org/place/412369WThe class=place long=36.942 lat=41.194>Thermodon</a>, and <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>, and <a about=https://topostext.org/place/473393WTan class=place long=39.336 lat=47.268>Tanais</a> flow, where there are the famous tribes of <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchi</a> and <a href=/people/12043 target=_blank>Heniochi</a> and <a href=/people/12179 target=_blank>Abasgi</a>. We sailed passing through the inmost harbors of the Ouri, Chidnaei, Charandaei and <a href=/people/10296 target=_blank>Solymi</a>; the nation of the <a href=/people/196 target=_blank>Assyrians</a> and the uneven bends of <a about=https://topostext.org/place/420351PSin class=place long=35.143 lat=42.025>Sinope</a>; the Philyrae, Napatae, and the crowded towns of the <a href=/people/6896 target=_blank>Sapeires</a>; and besides these, the <a href=/people/4101 target=_blank>Byzeres</a> and the inhospitable Sigymnae. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=757>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:757'><b>&sect; 757</b>&nbsp;&nbsp;The <a href=/people/352 target=_blank>Argo</a> was carried through early in the morning by a blowing wind filling her sails, carried to the furthest ends of the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a> by the gentle flowing <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>. <a href=/people/932 target=_blank>Ancaeus</a> exhorted everyone with his words to gather the sails and drop the yard and with bent mast sail forth by oars. After we entered the mouth of the gently flowing river, <a href=/people/932 target=_blank>Ancaeus</a> pointed out the strong walls of <a href=/people/320 target=_blank>Aeetes</a>’ fortified city, and the grove in which the Golden Fleece was suspended from an oak tree like hail. In his heart and soul, <a href=/people/2578 target=_blank>Jason</a> turned over his options, and he eloquently shared his question with the <a href=/people/11039 target=_blank>Minyans</a>: whether to go alone to the house of <a href=/people/320 target=_blank>Aeetes</a> and appease him by speaking gentle words, or whether to go with the heroes and consider immediate battle? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=773>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:773'><b>&sect; 773</b>&nbsp;&nbsp;It was not pleasing for all the <a href=/people/11039 target=_blank>Minyans</a> to go, for the glorious goddess had thrown fear and hesitation into their minds in order that she might meanwhile complete what divine will had ordained. Quickly, she commanded a vision of danger to occur in the house of <a href=/people/320 target=_blank>Aeetes</a>. The dream quickly struck terrible fear in the heart of the king. He seemed to see on the lovely bosom of the young maiden <a href=/people/165 target=_blank>Medea</a>, whom he was raising in his halls, a glistening star darting across its heavenly path, which she, having taken it up on her robe, brought to water of the fair-flowing <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>. He saw the star seize the maiden and carry her across the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a>. He suddenly woke up from this deceptive vision, and terrible fear dragged around his chest. Jumping up, he ordered his slaves to quickly prepare his <a href=/people/10959 target=_blank>horses</a> to be yoked to his chariot to carry him to the beloved stream in order to placate the <a href=/people/159 target=_blank>Nymphs</a> and the souls of the heroes, however many would be wandering to the river. So that they could be guarded, he called forth his perfumed daughters from their bedrooms: <a href=/people/736 target=_blank>Calliope</a> with the sons of murdered <a href=/people/548 target=_blank>Phrixus</a>, and also tender <a href=/people/165 target=_blank>Medea</a>, gifted with excellent form, a chaste maiden. <a href=/people/1981 target=_blank>Absyrtus</a> lived away from the city in a separate dwelling. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=798>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:798'><b>&sect; 798</b>&nbsp;&nbsp;<a href=/people/320 target=_blank>Aeetes</a> got up into a gold chariot with his daughters, whom the <a href=/people/10959 target=_blank>horses</a> swiftly carried through the plain and through the river bank full of reeds, to the place where they always made holy offerings and prayers to the river. The <a href=/people/352 target=_blank>Argo</a> came up to this very bank. <a href=/people/320 target=_blank>Aeetes</a> gazed upon it, and he saw thereafter many seated heroes resembling the immortals and clad in shining armor. But noble <a href=/people/2578 target=_blank>Jason</a> stood out as the most handsome of all. <a href=/people/19 target=_blank>Hera</a> honored him in every way, giving him surpassing beauty, stature, and manliness. But when they gazed into each other’s eyes, <a href=/people/320 target=_blank>Aeetes</a> and the <a href=/people/11039 target=_blank>Minyans</a> equally stiffened their chests. <a href=/people/320 target=_blank>Aeetes</a> in his chariot and lustrous golden robes shone like the sun. Ringing his head was a crown fringed with glowing rays. He swung with his hands a scepter like lightning. At his sides stood his two daughters, by whom he was made happy and triumphant. Thus approaching the ship gazing with terrible eyes, he sent out a roaring voice from his chest, making horrendous threats and resounding loudly: Tell me who you are, what need sent you here, and from where. What makes you wish to cross the land of Cytae? Do you not dread my power or the people of <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a>, who bend to my scepter, well-skilled in battled and impervious even to the spear of <a href=/people/24 target=_blank>Ares</a> himself? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=826>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:826'><b>&sect; 826</b>&nbsp;&nbsp;Thus he spoke, but indeed the <a href=/people/461 target=_blank>Argonauts</a> gaped at him in silent astonishment. Therefore, <a href=/people/19 target=_blank>Hera</a>, the adored goddess, placed courage in the son of <a href=/people/467 target=_blank>Aeson</a>’s breast. He roared back: Neither did we come as bandits nor did we undertake to wander from a foreign land to make abusive injury to men for sake of advantage in life. In truth, my uncle <a href=/people/390 target=_blank>Pelias</a>, son of <a href=/people/25 target=_blank>Poseidon</a>, imposed this labor on me, so that unless we take the Golden Fleece, we cannot return to <a about=https://topostext.org/place/394230UIol class=place long=22.9689 lat=39.3663>Iolcus</a>. Nor are my beloved companions ignoble. Some are children of gods, others of heroes, unskilled neither in combat nor battle. But we wish to be guests of your house. For this is better. Thus he spoke. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=840>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:840'><b>&sect; 840</b>&nbsp;&nbsp;The soul of stormy <a href=/people/320 target=_blank>Aeetes</a> was excited, weaving a dread trick against the heroes. After a long interval, he carried on a great conversation with the <a href=/people/11039 target=_blank>Minyans</a>. If indeed you will enter battle against the warlike <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a> and finish off its army of men, then without controversy the prize will be yours: You can take the fleece and return with it to your homeland. But if you leave even a few phalanxes, then this will be your prize: your death and the destruction of your ship. However, if you obey me, which is much more useful, then choose the most excellent among you and the most deserving of royal power. Him I will test with labors which I will dictate, and should he complete them, he will take away the Golden Fleece. That will be your prize. Thus speaking, he spurred on his <a href=/people/10959 target=_blank>horses</a>, which carried him back. Truly, grief seized the <a href=/people/11039 target=_blank>Minyans</a>’ souls. Then indeed the regret for the loss of <a href=/people/4 target=_blank>Heracles</a> moved over them; for without him they had no hope of defeating the invincible people of <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a> and reckless <a href=/people/24 target=_blank>Ares</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=858>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:858'><b>&sect; 858</b>&nbsp;&nbsp;Now I will describe to you, O <a href=/people/4006 target=_blank>Musaeus</a>, everything the <a href=/people/11039 target=_blank>Minyans</a> did and suffered: <a href=/people/493 target=_blank>Argus</a>, one of the bellicose sons of <a href=/people/548 target=_blank>Phrixus</a> whom Chaliope bore (for she had been married to their father), came running back from the house of <a href=/people/320 target=_blank>Aeetes</a>, announcing to the <a href=/people/11039 target=_blank>Minyans</a> that <a href=/people/320 target=_blank>Aeetes</a> had committed a pernicious crime against them. Then, on the advice of <a href=/people/19 target=_blank>Hera</a>, <a href=/people/165 target=_blank>Medea</a> of the unlucky marriage was conquered by the allure of <a href=/people/2578 target=_blank>Jason</a>; for the Cytheran mother of love, <a href=/people/15 target=_blank>Aphrodite</a>, sent desire into her, and the most ancient one [<a href=/people/38 target=_blank>Eros</a>] sent an arrow into her heart. Then, <a href=/people/2578 target=_blank>Jason</a> set two fire-breathing <a href=/people/10955 target=_blank>bulls</a> under the yoke, planting four acres with seed that pugnacious <a href=/people/548 target=_blank>Phrixus</a> had brought with him when he came to <a href=/people/320 target=_blank>Aeetes</a>’ house: a dowry of the teeth of the dragon of <a href=/people/24 target=_blank>Ares</a>. <a href=/people/2578 target=_blank>Jason</a> killed the crop of hostile <a href=/people/8328 target=_blank>Spartoi</a> by causing them to cut each other down, and the son of <a href=/people/467 target=_blank>Aeson</a> brought back splendid glory. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=876>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:876'><b>&sect; 876</b>&nbsp;&nbsp;The maiden of the unlucky marriage came secretly from the house, wrapped in a robe as black as night. Her love and womanly need drove her on, so <a href=/people/165 target=_blank>Medea</a> came to the <a href=/people/352 target=_blank>Argo</a>, not worrying about keeping back her father’s rage. She was embraced passionately by <a href=/people/2578 target=_blank>Jason</a> and kissed furiously across her beautiful face, tears overflowing her cheeks. Nor did she have any of her favorite hero’s shame, and with acts of love she abandoned her maidenhood and her desire for an honest marriage. Now you will hear of many other things. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=887>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:887'><b>&sect; 887</b>&nbsp;&nbsp;When <a href=/people/165 target=_blank>Medea</a> had come from the house of <a href=/people/320 target=_blank>Aeetes</a> in secret and arrived at our ship, we deliberated in our souls how best to approach and carry back the Golden Fleece from its sacred oak. We hoped this would be easy to do, for none of us knew this undertaking was hopeless. For great was the deed pressing down on all heroes, and the deepest chasm of our troubles appeared. For before the house of <a href=/people/320 target=_blank>Aeetes</a> and a rushing river, a fifty-four foot high enclosure stood before us, defended by towers and polished blocks of iron, crowned by seven defensive walls in a circle. Within it were three gigantic gates of bronze, between which ran a wall, and atop this, golden battlements. At one of the gateposts there stood [a statue of] the far-seeing queen, scattering with her motion the radiance of fire, whom the <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a> propitiate as <a href=/people/28 target=_blank>Artemis</a> of the gate, resounding with the chase, terrible for men to see, and terrible to hear, unless one approaches the sacred rites and purification, the rites kept hidden by the priestess who was initiated, <a href=/people/165 target=_blank>Medea</a>, unfortunate in marriage, along with the girls of Cyta. No mortal, whether native or stranger, entered that way, crossing over the threshold, for the terrible Goddess kept them away by all means, breathing madness into her fire-eyed <a href=/people/10953 target=_blank>dogs</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=911>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:911'><b>&sect; 911</b>&nbsp;&nbsp;In the innermost recess of the enclosure was a sacred grove, shaded by green trees. Therein were many laurels, cornels, tall shoots, and grass, within which grew short plants with powerful roots: asphodel, beautiful maidenhair, rushes, galingale, delicate verbena, sage, hedge-mustard, purple honeysuckle, healing cassidony, flourishing field basil, mandrake, hulwort; in addition fluffy dittany, fragrant saffron, nose-smart; and also <a href=/people/10960 target=_blank>lion</a>-foot, greenbrier, camomile, black poppy, alcua, all-heal, white hellebore, aconite, and other noxious plants which are born from the earth. In the middle, the trunk of a great oak reached high, and the tree’s branches overspread the grove. On this, spread over a long branch, hung the Golden Fleece, over which a terrible <a href=/people/55 target=_blank>snake</a> continuously watched, a <a href=/people/55 target=_blank>serpent</a> dangerous to men and indescribable. It was covered in golden scales and wound about the tree trunk with its huge coils, watching over the tomb of <a href=/people/1 target=_blank>Zeus</a> Chamaizelos while guarding the Fleece. Untiring, exempt from sleep, it kept guard over its charges, casting its gray eyes all about. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=934>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:934'><b>&sect; 934</b>&nbsp;&nbsp;But when we heard the truth about Mounychian <a href=/people/409 target=_blank>Hecate</a> and the guardian of the <a href=/people/55 target=_blank>snake</a>, for <a href=/people/165 target=_blank>Medea</a> had carefully explained this, we sought an unexpected way to accomplish the wretched undertaking: by placating savage <a about=https://topostext.org/place/380237SArt class=place long=23.73529 lat=37.96761>Agrotera</a> so that we could appease the wild monster so we could steal the Fleece and return to our homeland. Then <a href=/people/872 target=_blank>Mopsus</a>, who knew of these things by his prophetic art, urged the other heroes to beseech me and to thrust upon me the job of placating <a href=/people/28 target=_blank>Artemis</a> and soothing the monstrous beast. Thus, standing around me, they begged. I ordered to come with me to the place of the undertaking the son of <a href=/people/467 target=_blank>Aeson</a>; two strong men, <a href=/people/230 target=_blank>Castor</a> the horseman and <a href=/people/327 target=_blank>Polydeuces</a> the boxer; and <a href=/people/872 target=_blank>Mopsus</a>, son of <a href=/people/4063 target=_blank>Ampyx</a>. Alone among the others, <a href=/people/165 target=_blank>Medea</a> followed me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=950>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:950'><b>&sect; 950</b>&nbsp;&nbsp;After I came to the enclosures and the sacred place, I dug a three-sided pit in some flat ground. I quickly brought some trunks of juniper, dry cedar, prickly boxthorn and weeping black poplars, and in the pit I made a pyre of them. Skilled <a href=/people/165 target=_blank>Medea</a> brought to me many drugs, taking them from the innermost part of a chest smelling of incense. At once, I fashioned certain images from barley-meal [the text is corrupt here]. I threw them onto the pyre, and as a sacrifice to honor the dead, I killed three black <a href=/people/10953 target=_blank>puppies</a>. I mixed with their blood copper sulfate, soapwort, a sprig of safflower, and in addition odorless fleawort, red alkanet, and bronze-plant. After this, I filled the bellies of the <a href=/people/10953 target=_blank>puppies</a> with this mixture and placed them on the wood. Then I mixed the bowels with water and poured the mixture around the pit. Dressed in a black mantle, I sounded bronze cymbals and made my prayer to the <a href=/people/1744 target=_blank>Furies</a>. They heard me quickly, and breaking forth from the caverns of the gloomy abyss, <a href=/people/1495 target=_blank>Tisiphone</a>, <a href=/people/2707 target=_blank>Allecto</a>, and divine <a href=/people/1803 target=_blank>Megaira</a> arrived, brandishing the light of death in their dry pine torches. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=970>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:970'><b>&sect; 970</b>&nbsp;&nbsp;Suddenly the pit blazed up, and the deadly fire crackled, and the unclean flame sent high its smoke. At once, on the far side of the fire, the terrible, fearful, savage goddesses arose. One had a body of iron. The dead call her <a href=/people/1765 target=_blank>Pandora</a>. With her came one who takes on various shapes, having three heads, a deadly monster you do not wish to know: <a href=/people/409 target=_blank>Hecate</a> of <a href=/people/306 target=_blank>Tartarus</a>. From her left shoulder leapt a <a href=/people/10959 target=_blank>horse</a> with a long mane. On her right shoulder there could be seen a <a href=/people/10953 target=_blank>dog</a> with a maddened face. The middle head had the shape of a <a href=/people/10960 target=_blank>lion</a> [or <a href=/people/55 target=_blank>snake</a>] of wild form. In her hand she held a well-hilted sword. <a href=/people/1765 target=_blank>Pandora</a> and <a href=/people/409 target=_blank>Hecate</a> circled the pit, moving this way and that, and the <a href=/people/1744 target=_blank>Furies</a> leapt with them. Suddenly the wooden guardian statue of <a href=/people/28 target=_blank>Artemis</a> dropped its torches from its hands and raised its eyes to heaven. Her canine companions fawned. The bolts of the silver bars were loosened, and the beautiful gates of the thick walls opened; and the sacred grove within came into view. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=988>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:988'><b>&sect; 988</b>&nbsp;&nbsp;I crossed the threshold. Then <a href=/people/165 target=_blank>Medea</a>, the daughter of <a href=/people/320 target=_blank>Aeetes</a>, and the glorious son of <a href=/people/467 target=_blank>Aeson</a>, and the Tyndarids at the same time pressed in, followed by <a href=/people/872 target=_blank>Mopsus</a>. But when we could see nearby the lovely oak and the pedestal and altar base of <a href=/people/5315 target=_blank>Xenios</a> <a href=/people/1 target=_blank>Zeus</a>, then the <a href=/people/55 target=_blank>snake</a> lifted his head and fearsome jaws from beneath his broad coils and let out a deadly hiss. The boundless ether roared; the trees resounded, shaking from their tips to their roots. The shaded grove cried out. In truth, trembling seized me and my companions. Alone among us, <a href=/people/165 target=_blank>Medea</a> kept in her breast a fearless soul. For she had pulled up with her hands deadly roots. Then I matched my divine voice with my tortoise-shell lyre, resounding deeply, plucking its lowest-pitched string. I called upon <a href=/people/422 target=_blank>Sleep</a>, king of the gods and all men, to come and beguile the might of the immense <a href=/people/55 target=_blank>snake</a>. Yielding to me at once, he came to the land of Cyta, on his way causing sleep among tribes of men weary from the day’s work, powerful blasts of winds, waves of the sea, springs of ever-flowing water, gliding rivers, beasts and birds, and everything living and moving he persuaded to sleep under his golden wings. Thus he came to the blooming land of the harsh <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a>. A deep sleep suddenly settled on the <a href=/people/55 target=_blank>serpent</a>’s eyes, the likeness of death. He laid out his long neck, his head weighed down by his scales. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1015>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1015'><b>&sect; 1015</b>&nbsp;&nbsp;The unfortunate <a href=/people/165 target=_blank>Medea</a> was struck dumb seeing this. Encouraging the glorious son of <a href=/people/467 target=_blank>Aeson</a>, she impelled him to quickly seize the Golden Fleece from the tree. He did not refuse her command, but took away the vast Fleece and came to the ship. The <a href=/people/11039 target=_blank>Minyan</a> heroes were exceedingly glad and lifted their hands to the immortals living in the wide heaven. Thus they gazed upon the Fleece. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1023>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1023'><b>&sect; 1023</b>&nbsp;&nbsp;Soon <a href=/people/320 target=_blank>Aeetes</a> heard from a slave-girl that <a href=/people/165 target=_blank>Medea</a> had departed. He enjoined <a href=/people/1981 target=_blank>Absyrtus</a> to call together the people and to search for the girl, his sister. The swift <a href=/people/1981 target=_blank>Absyrtus</a> hurried to the river bank, to the crowd of heroes, and discovered there the dread maiden. <a href=/people/12253 target=_blank>Night</a> had cut a middle path through the star-spangled sky, when, through a hateful fraud, <a href=/people/1981 target=_blank>Absyrtus</a>, who was pursuing the wife of <a href=/people/2578 target=_blank>Jason</a>, was killed and cut down on account of <a href=/people/165 target=_blank>Medea</a>’s deadly love. Therefore, the <a href=/people/461 target=_blank>Argonauts</a> threw down the murdered man onto the banks and into the mouth of the rushing river. By a strong wind pushing a wave across the sterile sea, <a href=/people/1981 target=_blank>Absyrtus</a>’ body was drawn to a set of islands which are therefore called the <a about=https://topostext.org/place/447144UAps class=place long=14.393 lat=44.6939>Absyrtides</a>. This did not escape the watchful gaze of <a href=/people/1 target=_blank>Zeus</a>, or his divine will. When they had recovered themselves within the ship, and they had cut themselves free from the shore, spurred on by quick rowing they traversed the river. By no means, however, could we travel to the fish-filled <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a> by the direct path through the wide mouth of the <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a>, but we were forced to wander much in sailing back. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1041>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1041'><b>&sect; 1041</b>&nbsp;&nbsp;The cities of the <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a> were left behind by the unsuspecting <a href=/people/11039 target=_blank>Minyans</a>. Enveloped by darkness, but pressing on with our oars, we unknowingly hurried up the river, running through the middle of a plain. There men living on both sides were: the Gymni, Buonomae, and the rustic Arkyes; and the Cercetici and the ferocious <a about=https://topostext.org/place/414233RSin class=ethnic long=23.3 lat=41.4>Sinti</a>, who established their seat in the middle of the surrounding Charandaei, near the headland of the <a about=https://topostext.org/place/433424LCau class=place long=42.45 lat=43.351>Caucasus</a> by the strait of <a about=https://topostext.org/place/365-063PGad class=place long=-6.266 lat=36.499>Erytheia</a>. But when there appeared the newborn dawn, pleasing to men, we landed at a grassy island. There two rivers split their courses: the wide <a about=https://topostext.org/place/422417WPha class=place long=41.733 lat=42.171>Phasis</a> flowing with unnavigable waves, and the placidly flowing Saranges, which gushes forth with a roar into Lake <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotis</a> through marshy grasses. Rowing, we sailed a night and a day, and after three quarters of two more [36 hours] we came to the <a about=https://topostext.org/place/454367WBos class=place long=36.66 lat=45.36>Bosporus</a> between the Marsh [Lake <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotis</a>] and the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Black Sea</a>, where once the <a href=/people/10978 target=_blank>cattle</a>-stealing <a href=/people/206 target=_blank>Titan</a>, sitting upon a strong <a href=/people/10955 target=_blank>bull</a>, divided the passage from the swampy lake. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1059>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1059'><b>&sect; 1059</b>&nbsp;&nbsp;Weary from an entire day of rowing, we arrived first at the softly-robed tribe of the <a about=https://topostext.org/place/460370WMai class=ethnic long=37 lat=46>Maeotae</a>, and then the <a href=/people/4157 target=_blank>Geloni</a> and the long-haired Bathychaeti, and the <a about=https://topostext.org/place/490315RSar class=ethnic long=31.5 lat=49>Sauromatae</a>, <a about=https://topostext.org/place/435268RGet class=ethnic long=26.8 lat=43.5>Getae</a>, and Gymnaei and Cecryphes, and the Arsopes and <a href=/people/11015 target=_blank>Arimaspi</a>, peoples rich in <a href=/people/10978 target=_blank>cattle</a>, of whom a tribe was living near the lake of <a about=https://topostext.org/place/460370WMai class=place long=37 lat=46>Maeotis</a>. For when the immortals threw forth great trouble, we transfixed the outer waters of a raging whirlpool, which carried us away. There the water is confined by the low banks of the swamp, driven up with a great crashing sound, from where a great forest resounded, at the northern limits of the Ocean. And blown past, the <a href=/people/352 target=_blank>Argo</a> proceeded through the mouth of the river. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1071>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1071'><b>&sect; 1071</b>&nbsp;&nbsp;Nine nights and as many days working, we left behind here and there countless savage nations: the Pacti, the Arctei, and the proud Lelii; the <a about=https://topostext.org/place/475310RSky class=ethnic long=31.01 lat=47.5>Scythians</a> armed with arrows, faithfully serving <a href=/people/24 target=_blank>Ares</a>; and the <a about=https://topostext.org/place/453343RChe class=ethnic long=34.3 lat=45.3>Tauri</a>, who offer gloomy sacrifices to <a about=https://topostext.org/place/379237HMou class=place long=23.658 lat=37.938>Mounychia</a>, their mixing bowl moistened with human blood. We travelled past the <a href=/people/801 target=_blank>Hyperboreans</a>, the Nomads, and the <a about=https://topostext.org/place/400516WHyr class=ethnic long=51.6 lat=40>Caspians</a>. But after the tenth birth of <a href=/people/683 target=_blank>Dawn</a>, who brings light to men, we landed at the <a about=https://topostext.org/place/520255LRhi class=place long=25.5 lat=52>Rhipaean</a> hills. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1080>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1080'><b>&sect; 1080</b>&nbsp;&nbsp;From here, the <a href=/people/352 target=_blank>Argo</a> made advances by leaps and jumps through the narrow strait, and fell into the Ocean, which the <a href=/people/801 target=_blank>Hyperborean</a> men call the Cronian Sea or the <a about=https://topostext.org/place/315355WAsp class=place long=35.4778 lat=31.4929>Dead Sea</a>. We were not trusting that it would be possible to escape sad ruin, if <a href=/people/932 target=_blank>Ancaeus</a>, pressing hard upon the polished rudders with the greatest fury, had not righted the charging ship so that it would go along the right-hand shore. He pushed the ship forward, driving on the rudders with both hands. But after laborious rowing, the <a href=/people/461 target=_blank>Argonauts</a>’ exhausted hands did not remain on duty, but with a sad heart they supported their heads with their hands, wishing for sweat to make them cool. Meanwhile, they burned with hunger. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1092>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1092'><b>&sect; 1092</b>&nbsp;&nbsp;<a href=/people/932 target=_blank>Ancaeus</a> sprung up and roused all the other heroes, speaking to them with gentle words. Then coming up to tenacious mud in the sea, they sent their feet over the walls of the ship and at once descended from her on twisted ropes. <a href=/people/932 target=_blank>Ancaeus</a> and <a href=/people/493 target=_blank>Argus</a> threw a long rope from the stern, and catching the end, they gave it to the heroes, who at once hurried to the shore, straining to drag the seafaring ship. And thus the ship followed where they drew her, along the clear way across the polished pebbles of the shore, for no blowing breeze stirred that low sea, where Helix is and the farthest wave of <a href=/people/832 target=_blank>Tethys</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1105>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1105'><b>&sect; 1105</b>&nbsp;&nbsp;When six dawns had come, we reached the happy and rich <a href=/people/7912 target=_blank>Macrobii</a>, who live for many healthy years, twelve thousand months corresponding to hundreds of years of the full moon, free from all troubles of age. But after they finish the fated number of months, they take hold of a pleasant end by dying in their sleep. Meanwhile, the life of a man is free from care, thoughts of food, or toil. They graze on pastures with plants sweetened with honey, drinking the powerful dew of divine ambrosia. Tranquility they always experience, a placid serenity across eyes and brows. Thier just temperament resides in both children and parents in their minds and souls, endowing them with eloquent wisdom and just speaking. We traveled through here, pressing the shore with our feet. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1120>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1120'><b>&sect; 1120</b>&nbsp;&nbsp;Pulling the swift ship, we then came to the <a about=https://topostext.org/place/454367WBos class=ethnic long=36.66 lat=45.36>Cimmerians</a>, who are without the splendid light of the sun. For the <a about=https://topostext.org/place/520255LRhi class=place long=25.5 lat=52>Rhipaean</a> mountains and the Calpius block the rising sun and shut out brightness. <a about=https://topostext.org/place/400236LPal class=place long=23.41 lat=40.06>Phlegra</a> overshadows the noontime sun, and the sharp-peaked <a about=https://topostext.org/place/441073LAlp class=place long=7.343 lat=44.142>Alps</a> block the evening light. So the <a about=https://topostext.org/place/454367WBos class=ethnic long=36.66 lat=45.36>Cimmerians</a> are always in darkness. When we once again went forth, pushing the ship with our feet, we came to a rough headland and a river devoid of wind, where a gushing river rushed forth from a deep whirlpool, gold-bearing <a href=/people/3122 target=_blank>Acheron</a>, through a cold region, rolling water of glittering silver. A black marsh kept it back, and the green trees next to the river’s shores made a loud noise, always weighed down night and day with fruit. Next to this low pasture was found Hermioneia, with defensive walls running around well-built villages. In this there lived the most just tribe of men, for whom transport by a single ship alone suffices after death: for their souls cross over the <a href=/people/3122 target=_blank>Acheron</a> from the city by ship immediately. Near this are cities, unconquered gates to <a href=/people/10685 target=_blank>Hades</a>, and the land of phantoms. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1143>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1143'><b>&sect; 1143</b>&nbsp;&nbsp;Afterward, we went over both cities and homes, suffering by our misfortune a grave disaster. <a href=/people/932 target=_blank>Ancaeus</a> entered the ship, and at once he ordered all the crew to take their seats, and he spoke to us with flattering words: Endure this labor, friends, because I hope no worse will arise for us. For I now see a rising <a href=/people/444 target=_blank>Zephyr</a> bristling up. Not without reason does the water of Ocean make noise against the sands. But quickly raise the mast and loosen the sails from the rope! Bringing the rope, quickly tie together the sails on both sides of the ship! And each took pains to do so. And from the belly of the ship, a bellow sounded from the Tomarian oak beam, which when the <a href=/people/352 target=_blank>Argo</a> was constructed <a href=/people/681 target=_blank>Pallas</a> had built into it. In truth, entering our dumbstruck minds, it said: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1159>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1159'><b>&sect; 1159</b>&nbsp;&nbsp;Ah! Woe! If only I had been destroyed by the <a about=https://topostext.org/place/412291IKya class=place long=29.11517 lat=41.234>Cyaneae</a> in the <a about=https://topostext.org/place/435335WPon class=place long=33.5 lat=43.5>Inhospitable Sea</a>, never having to hear of the crime of the good king I carry. Since now the Fury <a href=/people/1744 target=_blank>Erinys</a> follows closely behind us, seeking murdered <a href=/people/1981 target=_blank>Absyrtus</a>. Disaster and calamity hem us in. She will punish the cause of this deadly and sad crime when I first come near the Isle of <a about=https://topostext.org/place/533-75RHib class=place long=-7.4992 lat=53.3682>Ierne</a>. Pressing me to the <a about=https://topostext.org/place/370000LSPr class=place long=-8.948 lat=36.995>Sacred Headland</a> you need to direct the ship within the curve of the earth, or you will run out into the <a href=/people/770 target=_blank>Atlantic</a> Ocean. Thus the voice of fate fell silent. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1170>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1170'><b>&sect; 1170</b>&nbsp;&nbsp;But the inner mind of the <a href=/people/11039 target=_blank>Minyans</a> was stupefied. Accordingly, they had cause to fear that due to <a href=/people/2578 target=_blank>Jason</a>’s love, death and disaster awaited. And they began to consider with bitter souls whether to kill <a href=/people/165 target=_blank>Medea</a> of the unfortunate marriage and throw her overboard as a prize for the fishes. Would this turn away <a href=/people/1744 target=_blank>Erinys</a>? And they would have done so, had not the noble son of <a href=/people/467 target=_blank>Aeson</a> quickly realized what they were about to do and, humbly beseeching them, settled their souls. Moreover, they sat down at their oars after hearing the truthful voice of <a href=/people/493 target=_blank>Argus</a>, and quickly they took hold of the oars. <a href=/people/932 target=_blank>Ancaeus</a> skillfully held the rudders, and sailing by the island of <a about=https://topostext.org/place/533-75RHib class=place long=-7.4992 lat=53.3682>Ierne</a>, a fierce dark storm bellowing behind, the sails billowed out and the ship quickly ran through the clear waves. No one hoped any longer for escape from certain ruin. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1185>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1185'><b>&sect; 1185</b>&nbsp;&nbsp;The dawn had now come twelve times, and not a single man would have known within his soul where we were, had not <a href=/people/6078 target=_blank>Lynceus</a> recognized the tranquil far shore of the river Ocean. For he caught sight from afar of a pine-covered island and the great houses of the Queen <a href=/people/48 target=_blank>Demeter</a>, surrounded by a black cloud. Of this story, intelligent <a href=/people/4006 target=_blank>Musaeus</a>, you have heard: how once, <a href=/people/138 target=_blank>Persephone</a>’s sisters led her through a great and wide wood, holding in her hands plucked flowers, and how <a href=/people/45 target=_blank>Plouton</a> approached the girl with his black <a href=/people/10959 target=_blank>horses</a> by permission of <a href=/people/1 target=_blank>Zeus</a> and seized her and carried her through the barren waves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1197>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1197'><b>&sect; 1197</b>&nbsp;&nbsp;Then I abandoned any hope of sailing along the shore and those gleaming houses, where no man had come by ship. The harbor offers no safety for ships but a tall and precipitous rock encircles all. Nor was the helmsman of the unlucky ship, <a href=/people/932 target=_blank>Ancaeus</a>, without faith in me, but at once he drove to change course backward, bending the helm to the left. Thus doing, he proceeded on the proper path, but the current dragged us toward the right. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1207>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1207'><b>&sect; 1207</b>&nbsp;&nbsp;On the third day we came to the house of <a href=/people/245 target=_blank>Circe</a>, to the Lycaean shore, and the sea surrounding its residences. We approached the beach, and we bound the ship to the shore with rocks. <a href=/people/2578 target=_blank>Jason</a> sent beloved crewmen from the ship to go and inquire as to what kind of men lived in this great land and to learn about their cities and the settlements of their people. But suddenly there arrived the maiden sister of noble <a href=/people/320 target=_blank>Aeetes</a>, a daughter of <a href=/people/180 target=_blank>Helios</a> (whom they call <a href=/people/245 target=_blank>Circe</a>, whose mother was <a href=/people/5374 target=_blank>Asterope</a> and her father far-shining <a href=/people/1062 target=_blank>Hyperion</a> [the Sun]). She quickly came down to the ship. All were struck dumb by this sight. From her head hung hair like rays of light. Her beautiful face shone out, and her breath grew bright with flames. With her eye she caught sight of <a href=/people/165 target=_blank>Medea</a>, wrapped in a garment (as though the veil would cover her pallor and her shame, and the aching of her heart). Feeling pity for her, she spoke to her with these words: </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1226>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1226'><b>&sect; 1226</b>&nbsp;&nbsp;Oh unfortunate, unfortunate one! What terrible fate has <a href=/people/168 target=_blank>Cypris</a> thrust upon you? It does not escape me that you come to my island polluted with your crime against your old father and your brother, whom I am astounded to adduce you killed. Therefore I adjudge that you shall not return to your native shores until you atone for this crime. You will wash yourself clean of the crime on the shores of <a about=https://topostext.org/place/364232LMal class=place long=23.198 lat=36.436>Maleia</a> with <a href=/people/143 target=_blank>Orpheus</a>’ knowledge of divine expiation. You may not enter my house by divine law, for you are contaminated by a crime of great magnitude. Meanwhile, I will at once send you gifts from host to guest in a spirit of goodwill: bread, sweet unmixed wine, and also much meat. Thus speaking, she flew back. Indeed, food and drink were prepared and set in the ship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1237>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1237'><b>&sect; 1237</b>&nbsp;&nbsp;A strong favorable wind arose and sent us on our course. Then we loosened the ship from the island, and we came through the mouth of <a about=https://topostext.org/place/373000PTar class=place long=-6.947 lat=37.258>Tartessus</a>, and we approached the <a about=https://topostext.org/place/361000LPHe class=place long=-5.3464 lat=36.123>Pillars of Heracles</a>, and we completed our circuit around the sacred headland of King <a href=/people/5 target=_blank>Bacchus</a> by night, when our soul was in need of sustenance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1246>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1246'><b>&sect; 1246</b>&nbsp;&nbsp;When the dawn had brought light from the east, early in the morning we cleaved the sea with our oars. We came to <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a> in the sea, and the bay of the <a about=https://topostext.org/place/417129RLat class=ethnic long=12.9 lat=41.7>Latins</a>, and we were carried to the shores of the <a about=https://topostext.org/place/410155RAus class=place long=15.5 lat=41>Ausonian</a> [Italian] islands. Afterward, we held the sounding sea by <a about=https://topostext.org/place/378124ULil class=place long=12.4342 lat=37.7991>Lilybaeum</a>, and we moved along the three-sided island [<a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a>], the flames of Mount <a about=https://topostext.org/place/377150LAit class=place long=15.001 lat=37.748>Etna</a> trying to hold us back. Over the prow dangerous waves boiled up from the deep, and with hissing from the innermost chasm, <a about=https://topostext.org/place/382156WCha class=place long=15.606 lat=38.248>Charybdis</a> stirred up the greatest evil with churning waves. But the wave, reversing itself in turn, held the ship back in the same place, able to go neither forward nor back, but compelled to circle around the raging abyss. The <a href=/people/352 target=_blank>Argo</a> would surely have been submerged in the depths had not the powerful daughter born to the <a href=/people/11094 target=_blank>Old Man of the Sea</a>, <a href=/people/202 target=_blank>Thetis</a>, wanted to see her husband <a href=/people/109 target=_blank>Peleus</a> again. She rose from the depths and freed the <a href=/people/352 target=_blank>Argo</a> from ruin, and guarded her from the churning sea. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1264>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1264'><b>&sect; 1264</b>&nbsp;&nbsp;Then while sailing along, we saw not very far off a rocky headland. A steep cliff overhung a lofty and projecting rock, eaten into deep caverns within which the dark waves resounded terribly. Here we happened to meet girls who sang with a melodious voice, charming the ears of men so that they would forget returning home. The <a href=/people/11039 target=_blank>Minyans</a> listened enraptured to the <a href=/people/605 target=_blank>Sirens</a>’ song. They did not want to sail by the dangerous voice, and they dropped the oars from their hands. <a href=/people/932 target=_blank>Ancaeus</a> steered straight for the headland. I grabbed my lyre and sang a glorious song my mother taught. I sang a melodious song with my divine voice while plucking my lyre, a song of how long ago a quarrel arose over the swiftest of <a href=/people/10959 target=_blank>horses</a> between <a href=/people/1 target=_blank>Zeus</a>, thundering from on high, and <a href=/people/25 target=_blank>Poseidon</a>, shaking land and sea. The blue god <a href=/people/25 target=_blank>Poseidon</a>, angry at father <a href=/people/1 target=_blank>Zeus</a>, struck the land of <a about=https://topostext.org/place/375324RLyk class=place long=32.4 lat=37.5>Lycaonia</a> with his golden trident and spread its broken pieces across the immense sea, so that it was no longer a mainland but rather three islands surrounded by sea. These are called <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a>, <a about=https://topostext.org/place/402920ISar class=place long=9.2 lat=40.2>Sardinia</a>, and windy <a about=https://topostext.org/place/350330RCyp class=place long=33 lat=35>Cyprus</a>. Thus singing with my cithara, upon the snowy rock the <a href=/people/605 target=_blank>Sirens</a> were struck dumb, and they stopped their song. One dropped her flute; another dropped her tortoise-shell lyre from her hands. They groaned deeply since they had come to their sad fate and their destined death. They threw themselves headlong from the heights down to the depths of the unquiet sea, in which their bodies and distinguished forms were changed into rocks. Even after evading this fate, swift <a href=/people/352 target=_blank>Argo</a> finished her passage through wave and bending sea, and the wind, blowing against the forestay and the stern, drove us to divine <a about=https://topostext.org/place/396199PKer class=place long=19.9156 lat=39.6063>Corcyra</a>, where lived a race of skilled oarsman and seafarers, the <a href=/people/629 target=_blank>Phaeacians</a>. They were given their laws by the command of their most just king, <a href=/people/10603 target=_blank>Alcinous</a>. Therefore, we prepared to land to make sacrifices to All-Seeing <a href=/people/1 target=_blank>Zeus</a> and the <a href=/people/2 target=_blank>Apollo</a> of the shores. But rowing fast, there came innumerable ships, a powerful fleet sent by <a href=/people/320 target=_blank>Aeetes</a>: <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a>, Erravi, Charandaei, and <a href=/people/10296 target=_blank>Solymi</a>. They were looking for the <a href=/people/11039 target=_blank>Minyans</a> so that they could lead <a href=/people/165 target=_blank>Medea</a> back to her distinguished father <a href=/people/320 target=_blank>Aeetes</a> to be punished for the crime of killing her brother. When they had come to the harbor, at once heralds went forth to <a href=/people/10603 target=_blank>Alcinous</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1308>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1308'><b>&sect; 1308</b>&nbsp;&nbsp;<a href=/people/165 target=_blank>Medea</a> trembled with fear, and terror corrupted her noble visage, lest the <a href=/people/629 target=_blank>Phaeacian</a> king send her back unwillingly to her home and they destroy her as an example. The goddess Parca of the <a href=/people/140 target=_blank>Fates</a> had not yet fixed her will, not until the house of <a href=/people/390 target=_blank>Pelias</a> was destroyed and <a href=/people/2578 target=_blank>Jason</a> himself brought an evil death to the king. But when <a href=/people/323 target=_blank>Arete</a>, forearms decorated with roses, and <a href=/people/10603 target=_blank>Alcinous</a>, like unto a god, heard the cruel command of King <a href=/people/320 target=_blank>Aeetes</a>, <a href=/people/10603 target=_blank>Alcinous</a> at once allowed the armed ships to lead the girl away so that she could receive her punishment. The famous Queen <a href=/people/323 target=_blank>Arete</a> felt sympathy for <a href=/people/165 target=_blank>Medea</a>, and coaxed her husband, speaking thusly: It is not pleasing to break a marriage, to disturb the nuptial bed, to extinguish the torch of love. <a href=/people/15 target=_blank>Aphrodite</a>, daughter of Dionaea, will become violently angry at the man or woman who undertakes such an effort. Indeed, if <a href=/people/165 target=_blank>Medea</a> is a virgin and came here sexually intact, she should depart for her homeland in <a about=https://topostext.org/place/431423RCol class=place long=42.28 lat=42.12>Colchis</a>. But if she is sexually experienced and lost her virginity in the marital bed, her husband should take her away. Thus said she. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1329>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1329'><b>&sect; 1329</b>&nbsp;&nbsp;<a href=/people/10603 target=_blank>Alcinous</a> absorbed this speech in his soul, and ordered that everything should be done as the queen had said. And this decision did not escape the <a href=/people/11039 target=_blank>Minyans</a>. For at once <a href=/people/19 target=_blank>Hera</a>, making her body look like that of a slave, flew into the ship. She quickly reported what the king and queen had decided, and she indicated what they needed to do. Then <a href=/people/165 target=_blank>Medea</a> prepared a marriage bed on the highest part of the stern. The crew spread a matting of rushes. They spread out the Golden Fleece itself, and then they suspended from spears the hide of a <a href=/people/10955 target=_blank>bull</a> and shields. And so they hid for modesty’s sake the act of marriage. Then <a href=/people/165 target=_blank>Medea</a> of the unlucky marriage was deprived of the flower of a girl’s maidenhood, un-praised by wedding hymns. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1341>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1341'><b>&sect; 1341</b>&nbsp;&nbsp;Afterward, <a about=https://topostext.org/place/431423RCol class=ethnic long=42.28 lat=42.12>Colchians</a> and <a href=/people/11039 target=_blank>Minyans</a> came in view of the king and queen, and they pleaded their cause. The son of <a href=/people/467 target=_blank>Aeson</a> accepted the judgment of <a href=/people/10603 target=_blank>Alcinous</a>, and he led away his wife <a href=/people/165 target=_blank>Medea</a> with him. At once the <a href=/people/461 target=_blank>Argonauts</a> loosened the ship’s oars, and rowing with many conversations, the <a href=/people/352 target=_blank>Argo</a> ran ahead, cleaving the <a about=https://topostext.org/place/390210WAmb class=place long=20.9692 lat=38.9725>Ambracian Gulf</a>. Now, <a href=/people/4006 target=_blank>Musaeus</a>, born of a goddess, I will relate to you all that the <a href=/people/11039 target=_blank>Minyans</a> suffered after this: from the winds around <a about=https://topostext.org/place/314186WSyr class=place long=18.6 lat=31.4>Syrtis</a>, and how they were protected on their wandering voyage over the sea. We suffered a great enemy on <a about=https://topostext.org/place/352252IKre class=place long=25.1836 lat=35.2052>Crete</a>, when we observed a bronze giant who allowed no one to go into the harbor. And so, driven back into a narrow passage by the low echo of a sea wave, we suddenly feared being covered by a black tempest lest we be dashed upon the gloomy and forbidding rocks. But from nearby, far-throwing Paean heard our cries. He shot a dart from rocky <a about=https://topostext.org/place/374253PDel class=place long=25.267 lat=37.398>Delos</a> and revealed himself in the middle of the <a href=/people/12181 target=_blank>Sporades</a> on the island which all the neighboring peoples called <a about=https://topostext.org/place/364258PAna class=place long=25.799 lat=36.359>Anaphe</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1360>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1360'><b>&sect; 1360</b>&nbsp;&nbsp;But it was not divine law that the son of <a href=/people/467 target=_blank>Aeson</a> should be prevented from sailing the sea, for he brought his atonement with him. The dangerous <a href=/people/140 target=_blank>Fate</a>, <a href=/people/140 target=_blank>Moira</a>, recoiled. (Not without cause was <a href=/people/1062 target=_blank>Hyperion</a> angry.) We rowed to the <a about=https://topostext.org/place/364232LMal class=place long=23.198 lat=36.436>Maleac promontory</a>, where <a href=/people/245 target=_blank>Circe</a> had advised, to avert the curses of <a href=/people/320 target=_blank>Aeetes</a> and calm the persecuting fury of <a href=/people/1744 target=_blank>Erinys</a>. I made expiatory sacrifices for the <a href=/people/11039 target=_blank>Minyans</a>, and I prayed to <a href=/people/25 target=_blank>Poseidon</a>, the god who shakes the earth, that he might permit our safe return, and allow us the sight of our native land, and bless the <a href=/people/11039 target=_blank>Minyans</a> with the embraces of their beloved parents. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1369>
+                            <p id='urn:cts:greekLit:tlg0579.tlg002:1369'><b>&sect; 1369</b>&nbsp;&nbsp;And indeed the <a href=/people/11039 target=_blank>Minyans</a> pressed on, sailing to the well-cultivated <a about=https://topostext.org/place/394230UIol class=place long=22.9689 lat=39.3663>Iolcus</a>; and I approached windy <a about=https://topostext.org/place/364225LTai class=place long=22.4831 lat=36.3862>Taenaron</a>, making an offering to the celebrated kings who hold the keys to the underworld abyss. Thus quickly departing, I pressed on to snowy <a about=https://topostext.org/place/410265RThr class=place long=26.5 lat=41>Thrace</a>, in the region of <a about=https://topostext.org/place/400225PLei class=place long=22.5343 lat=40.0244>Libethra</a>, in my homeland, entering the famous cave where my mother gave birth to me on the bed of the brave <a href=/people/3111 target=_blank>Oeagrus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.poesialatina.it/_ns/greek/testi/Orphica/Argonautica.html' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=549', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas549";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=549';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

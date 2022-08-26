@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Euripides, Electra' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Electra, Euripides, translated by Edward Philip Coleridge (1863-1936), in the public domain, texts drawn and reformatted from the Internet Classics Archive.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-411' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -411' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/45' content='urn:cts:greekLit:tlg0006.tlg042' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063679' content='Euripides'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/no93028581' content='Edward Philip Coleridge (1863-1936)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://classics.mit.edu/index.html' /><h2>Euripides, Electra</h2>Electra, Euripides, translated by Edward Philip Coleridge (1863-1936), in the public domain, texts drawn and reformatted from the Internet Classics Archive. This text has 73 tagged references to 31 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0006.tlg042'>urn:cts:greekLit:tlg0006.tlg042</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q540161'>Q540161</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1'><b>&sect; 1</b>&nbsp;&nbsp;PEASANT: O <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, ancient land, and streams of <a about=https://topostext.org/place/378228WIna class=place long=22.744 lat=37.625>Inachus</a>, whence on a day king <a href=/people/47 target=_blank>Agamemnon</a> sailed to the realm of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, carrying his warriors aboard a thousand ships; and after he had slain <a href=/people/64 target=_blank>Priam</a> who was reigning in <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a> and captured the famous city of <a href=/people/1325 target=_blank>Dardanus</a>, he came hither to <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> and has set up high on the temple-walls many a trophy, spoil of the barbarians. Though all went well with him in <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, yet was he slain in his own palace by the guile of his wife <a href=/people/595 target=_blank>Clytemnestra</a> and the hand of <a href=/people/374 target=_blank>Aegisthus</a>, son of <a href=/people/598 target=_blank>Thyestes</a>. So he died and left behind him the ancient sceptre of <a href=/people/383 target=_blank>Tantalus</a>, and <a href=/people/374 target=_blank>Aegisthus</a> reigns in his stead, with the daughter of <a href=/people/362 target=_blank>Tyndareus</a>, <a href=/people/47 target=_blank>Agamemnon</a>'s queen, to wife. Now as for those whom he left in his halls, when he sailed to <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, his son <a href=/people/120 target=_blank>Orestes</a> and his tender daughter <a href=/people/388 target=_blank>Electra</a>,-the boy <a href=/people/120 target=_blank>Orestes</a>, as he was like to be slain by <a href=/people/374 target=_blank>Aegisthus</a>, his sire's old foster-father secretly removed to the land of <a about=https://topostext.org/place/386227RPho class=place long=22.7 lat=38.6>Phocis</a> and gave to <a href=/people/2024 target=_blank>Strophius</a> to bring up, but the maid <a href=/people/388 target=_blank>Electra</a> abode in her father's house, and soon as she had budded into maidenhood, came all the princes of Hellas asking her hand in marriage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:22'><b>&sect; 22</b>&nbsp;&nbsp;But <a href=/people/374 target=_blank>Aegisthus</a> kept her at home for fear she might bear a son to some chieftain who would avenge <a href=/people/47 target=_blank>Agamemnon</a>, nor would he betroth her unto any. But when e'en thus there seemed some room for fear that she might bear some noble lord a child by stealth and <a href=/people/374 target=_blank>Aegisthus</a> was minded to slay her, her mother, though she had a cruel heart, yet rescued the maiden from his hand. For she could find excuses for having slain her husband, but she feared the hatred she would incur for her children's murder. Wherefore <a href=/people/374 target=_blank>Aegisthus</a> devised this scheme; on <a href=/people/47 target=_blank>Agamemnon</a>'s son who had escaped his realm by flight he set a price to be paid to any who should slay him, while he gave <a href=/people/388 target=_blank>Electra</a> to me in marriage, whose ancestors were citizens of <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a>. It is not that I blame myself for; my family was noble enough, though certainly impoverished, and so my good birth suffers. By making for her this weak alliance he thought he would have little to fear. For if some man of high position had married her, he might have revived the vengeance for <a href=/people/47 target=_blank>Agamemnon</a>'s murder, which now is sleeping; in which case <a href=/people/374 target=_blank>Aegisthus</a> would have paid the penalty. But <a href=/people/168 target=_blank>Cypris</a> is my witness that I have ever respected her maidenhood; she is still as though unwed. Unworthy as I am, honour forbids that I should so affront the daughter of a better man. Yea, and I am sorry for <a href=/people/120 target=_blank>Orestes</a>, hapless youth, who is called my kinsman, to think that he should ever return to <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> and behold his sister's wretched marriage. And whoso counts me but a fool for leaving a tender maid untouched when I have her in my house, to him I say, he measures purity by the vicious standard of his own soul, a standard like himself. (ELECTRA enters from the hut, carrying a water pitcher on her head. She is meanly clad.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:54'><b>&sect; 54</b>&nbsp;&nbsp;ELECTRA O sable night, nurse of the golden stars! beneath thy pall I go to fetch water from the brook with my pitcher poised upon my head, not indeed because I am forced to this necessity, but that to the gods I may display the affronts <a href=/people/374 target=_blank>Aegisthus</a> puts upon me, and to the wide firmament pour out my lamentation for my sire. For my own mother, the baleful daughter of <a href=/people/362 target=_blank>Tyndareus</a>, hath cast me forth from her house to gratify her lord; for since she hath borne other children to <a href=/people/374 target=_blank>Aegisthus</a> she puts me and <a href=/people/120 target=_blank>Orestes</a> on one side at home. <br />PEASANT: Oh! why, poor maiden, dost thou toil so hard on my behalf, thou that aforetime wert reared so daintily? why canst thou not forego thy labour, as I bid thee? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=67>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:67'><b>&sect; 67</b>&nbsp;&nbsp;ELECTRA: As a god's I count thy kindness to me, for in my distress thou hast never made a mock at me. 'Tis rare fortune when mortals find such healing balm for their cruel wounds as 'tis my lot to find in thee. Wherefore I ought, though thou forbid me, to lighten thy labours, as far as my strength allows, and share all burdens with thee to ease thy load. Thou hast enough to do abroad; 'tis only right that I should keep thy house in order. For when the toiler cometh to his home from the field, it is pleasant to find all comfortable in the house. <br />PEASANT: If such thy pleasure, go thy way; for, after all, the spring is no great distance from my house. And at break of day I will drive my steers to my glebe and <a href=/people/10951 target=_blank>sow</a> my crop. For no idler, though he has the gods' names ever on his lips, can gather a livelihood without hard work. (ELECTRA and the PEASANT go out. A moment later ORESTES and PYLADES enter.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:67' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=82>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:82'><b>&sect; 82</b>&nbsp;&nbsp;ORESTES: Ah <a href=/people/663 target=_blank>Pylades</a>, I put thee first 'mongst men for thy love, thy loyalty and friendliness to me; for thou alone of all my friends wouldst still honour poor <a href=/people/120 target=_blank>Orestes</a>, in spite of the grievous plight whereto I am reduced by <a href=/people/374 target=_blank>Aegisthus</a>, who with my accursed mother's aid slew my sire. I am come from <a href=/people/2 target=_blank>Apollo</a>'s mystic shrine to the soil of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, without the knowledge of any, to avenge my father's death upon his murderers. Last night went unto his tomb and wept thereon, cutting off my hair as an offering and pouring o'er the grave the blood of a <a href=/people/10954 target=_blank>sheep</a> for sacrifice, unmarked by those who lord it o'er this land. And now though I enter not the walled town, yet by coming to the borders of the land I combine two objects; I can escape to another country if any spy me out and recognize me, and at the same time seek my sister, for I am told she is a maid no longer but is married and living here, that I may meet her, and, after enlisting her aid in the deed of blood, learn for certain what is happening in the town. Let us now, since dawn is uplifting her radiant eye, step aside from this path. For maybe some labouring man or serving maid will come in sight, of whom we may inquire whether it is here that my sister hath her home. Lo! yonder I see a servant bearing a full pitcher of water on her shaven head; let us sit down and make inquiry of this bond-maid, if haply we may glean some tidings of the matter which brought us hither, <a href=/people/663 target=_blank>Pylades</a>. (They retire a little, as ELECTRA returns from the spring.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:82' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=112>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:112'><b>&sect; 112</b>&nbsp;&nbsp;ELECTRA (chanting, strophe 1) Bestir thy lagging feet, 'tis high time; on, on o'er thy path of tears! ah misery! I am <a href=/people/47 target=_blank>Agamemnon</a>'s daughter, she whom <a href=/people/595 target=_blank>Clytemnestra</a>, hateful child of <a href=/people/362 target=_blank>Tyndareus</a>, bare; hapless <a href=/people/388 target=_blank>Electra</a> is the name my countrymen call me. Ah me! for my cruel lot, my hateful existence! O my father <a href=/people/47 target=_blank>Agamemnon</a>! in <a href=/people/10685 target=_blank>Hades</a> art thou laid, butchered by thy wife and <a href=/people/374 target=_blank>Aegisthus</a>. Come, raise with me that dirge once more; uplift the woful strain that brings relief. <br />On, on o'er thy path of tears! ah misery! And thou, poor brother, in what city and house art thou a slave, leaving thy suffering sister behind in the halls of our fathers to drain the cup of bitterness? Oh! come, great <a href=/people/1 target=_blank>Zeus</a>, to set me free from this life of sorrow, and to avenge my sire in the blood of his foes, bringing the wanderer home to <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:112' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=140>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:140'><b>&sect; 140</b>&nbsp;&nbsp;Take this pitcher from my head, put it down, that I may wake betimes, while it is yet night, my lamentation for my sire, my doleful chant, my dirge of death, for thee, my father in thy grave, which day by day I do rehearse, rending my skin with my nails, and smiting on my shaven head in mourning for thy death. Woe, woe! rend the cheek; like a swan with clear loud note beside the brimming river calling to its parent dear that lies a-dying in the meshes of the crafty net, so I bewail thee, my hapless sire, <br />After that last fatal bath of thine laid out most piteously in death. Oh I the horror of that axe which hacked thee so cruelly, my sire I oh! the bitter thought that prompted thy return from <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>! With no garlands or victor's crowns did thy wife welcome thee, but with his two-edged sword she made thee the sad sport of <a href=/people/374 target=_blank>Aegisthus</a> and kept her treacherous paramour. (The CHORUS OF ARGIVE COUNTRY-WOMEN enter. The following lines between ELECTRA and the CHORUS are sung responsively.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:140' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1672>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1672'><b>&sect; 1672</b>&nbsp;&nbsp;CHORUS (strophe) O <a href=/people/388 target=_blank>Electra</a>, daughter of <a href=/people/47 target=_blank>Agamemnon</a>, to thy rustic cot I come, for a messenger hath arrived, a highlander from <a about=https://topostext.org/place/377228PMyk class=person long=22.7561 lat=37.7308>Mycenae</a>, one who lives on milk, announcing that the <a about=https://topostext.org/place/376227PArg class=ethnic long=22.7195 lat=37.6316>Argives</a> are proclaiming a sacrifice for the third day from now, and all our maidens are to go attend to <a href=/people/19 target=_blank>Hera</a>. <br />ELECTRA: Kind friends, my heart is not set on festivity, nor do necklaces of gold cause any flutter in my sorrowing bosom, nor will I stand up with the maidens of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> to beat my foot in the mazy dance. Tears have been my meat day and night; ah misery! See my unkempt hair, my tattered dress; are they fit for a princess, a daughter of <a href=/people/47 target=_blank>Agamemnon</a>, or for <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> which once thought of my father as its captor? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1672' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=190>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:190'><b>&sect; 190</b>&nbsp;&nbsp;CHORUS (antistrophe) Mighty is the goddess; so come, and borrow of me broidered robes for apparel and jewels of gold that add a further grace to beauty's charms. Dost think to triumph o'er thy foes by tears, if thou honour not the gods? 'Tis not by lamentation but by pious prayers to heaved that thou, my daughter, wilt make fortune smile on thee. <br />ELECTRA: No god hearkens to the voice of lost <a href=/people/388 target=_blank>Electra</a>, or heeds the sacrifices offered by my father long ago. Ah woe for the dead! woe for the living wanderer, who dwelleth in some foreign land, an outcast and vagabond at a menial board, sprung though he is of a famous sire! Myself, too, in a poor man's hut do dwell, wasting my soul with grief, an exile from my father's halls, here by the scarred hill-side; while my mother is wedded to a new husband in a marriage stained by blood. <br />LEADER OF THE CHORUS Many a woe to Hellas and thy house did <a href=/people/69 target=_blank>Helen</a>, thy mother's sister, cause. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:190' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=215>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:215'><b>&sect; 215</b>&nbsp;&nbsp;ELECTRA (catching sight of ORESTES AND PYLADES) Ha! Friends, I break off my lament; yonder are strangers just leaving the place of ambush where they were couching, and making for the house. We must seek to escape the villains by flying, thou along the path and I into my cottage. <br />ORESTES: Stay, poor maid; fear no violence from me. <br />ELECTRA: O <a href=/people/11033 target=_blank>Phoebus</a> <a href=/people/2 target=_blank>Apollo</a> I beseech thee spare my life. <br />ORESTES: Give me the lives of others more my foes than thou! <br />ELECTRA: Begone! touch me not! thou hast no right to. <br />ORESTES: There is none I have a better right to touch. <br />ELECTRA: How is it then thou waylayest me, sword in hand, near my house? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:215' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=226>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:226'><b>&sect; 226</b>&nbsp;&nbsp;ORESTES Wait and hear, and thou wilt soon agree with me <br />ELECTRA: Here I stand; I am in thy power in any case, since thou art the stronger. <br />ORESTES: I am come to thee with news of thy brother. <br />ELECTRA: O best of friends! is he alive or dead? <br />ORESTES: Alive; I would fain give thee my good news first. <br />ELECTRA: God bless thee! in return for thy welcome tidings. <br />ORESTES: I am prepared to share that blessing between us. <br />ELECTRA: In what land is my poor brother spending his dreary exile? <br />ORESTES: His ruined life does not conform to the customs of any one city. <br />ELECTRA: Surely he does not want for daily bread? <br />ORESTES: Bread he has, but an exile is a helpless man at best. <br />ELECTRA: What is this message thou hast brought from him? <br />ORESTES: He asks, Art thou alive? and if so, How art thou faring? <br />ELECTRA: Well, first thou seest how haggard I am grown. <br />ORESTES: So wasted with sorrow that I weep for thee. <br />ELECTRA: Next mark my head, shorn and shaven like a <a about=https://topostext.org/place/475310RSky class=demonym long=31.01 lat=47.5>Scythian</a>'s. <br />ORESTES: Thy brother's fate and father's death no doubt disturb thee. <br />ELECTRA: Yes, alas! for what have I more dear than these? <br />ORESTES: Ah! and what dost thou suppose is dearer to thy brother? <br />ELECTRA: He is far away, not here to show his love to me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:226' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=246>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:246'><b>&sect; 246</b>&nbsp;&nbsp;ORESTES Wherefore art thou living here far from the city? <br />ELECTRA: I am wedded, sir; a fatal match! <br />ORESTES: Alas! for thy brother; I pity him. Is thy husband of <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a>? <br />ELECTRA: He is not the man to whom my father ever thought of betrothing me. <br />ORESTES: Tell me all, that I may report it to thy brother. <br />ELECTRA: I live apart from my husband in this house. <br />ORESTES: The only fit inmate would be a hind or herd. <br />ELECTRA: Poor he is, yet he displays a generous consideration for me. <br />ORESTES: Why, what is this consideration that attaches to thy husband? <br />ELECTRA: He has never presumed to claim from me a husband's rights. <br />ORESTES: Is he under a vow of chastity? or does he disdain thee? <br />ELECTRA: He thought he had no right to flout my ancestry. <br />ORESTES: How was it he was not overjoyed at winning such a bride? <br />ELECTRA: He does not recognize the right of him who disposed of my hand. <br />ORESTES: I understand; he was afraid of the vengeance of <a href=/people/120 target=_blank>Orestes</a> hereafter. <br />ELECTRA: There was that fear, but he was a virtuous man as well. <br />ORESTES: Ah! a noble nature this! He deserves kind treatment. <br />ELECTRA: Yes, if ever the wanderer return. <br />ORESTES: But did thy own mother give in to this? <br />ELECTRA 'Tis her husband, not her children that a woman loves, sir stranger. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:246' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=266>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:266'><b>&sect; 266</b>&nbsp;&nbsp;ORESTES Wherefore did <a href=/people/374 target=_blank>Aegisthus</a> put this affront on thee? <br />ELECTRA: His design in giving me to such a husband was to weaken my offspring <br />ORESTES: To prevent thee bearing sons, I suppose, who should punish him? <br />ELECTRA: That was his plan; God grant I may avenge me on him for it! <br />ORESTES: Does thy mother's husband know that thou art yet a maid? <br />ELECTRA: He does not; our silence robs him of that knowledge. <br />ORESTES: Are these women friends of thine, who overhear our talk? <br />ELECTRA: They are, and they will keep our conversation perfectly secret. <br />ORESTES: What could <a href=/people/120 target=_blank>Orestes</a> do in this matter, if he did return? <br />ELECTRA: Canst thou ask? Shame on thee for that! Is not this the time for action? <br />ORESTES: But suppose he comes, how could he slay his father's murderers? <br />ELECTRA: By boldly meting out the same fate that his father had meted out to him by his foes. <br />ORESTES: Wouldst thou be brave enough to help him slay his mother? <br />ELECTRA: Aye, with the self-same axe that drank my father's blood. <br />ORESTES: Am I to tell him this, and that thy purpose firmly holds? <br />ELECTRA: Once I have shed my mother's blood o'er his, then welcome death! <br />ORESTES: Ah! would <a href=/people/120 target=_blank>Orestes</a> were standing near to hear that! <br />ELECTRA: I should not know him, sir, if I saw him. <br />ORESTES: No wonder; you were both children when you parted. <br />ELECTRA: There is only one of my friends would recognize him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:266' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=286>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:286'><b>&sect; 286</b>&nbsp;&nbsp;ORESTES The man maybe who is said to have snatched him away from being murdered? <br />ELECTRA: Yes, the old servant who tended my father's childhood long ago. <br />ORESTES: Did thy father's corpse obtain burial? <br />ELECTRA: Such burial as it was, after his body had been flung forth from the palace. <br />ORESTES: O God! how awful is thy story! Yes, there is a feeling, arising even from another's distress, that wrings the human heart. Say on, that when know the loveless tale, which yet I needs must hear, I may carry it to thy brother. For pity, though it has no place in ignorant natures, is inborn in the wise; still it may cause trouble to find excessive cleverness amongst the wise. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:286' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=297>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:297'><b>&sect; 297</b>&nbsp;&nbsp;LEADER: I too am stirred by the same desire as the stranger. For dwelling so far from the city I know nothing of its ills, and I should like to hear about them now myself. <br />ELECTRA: I will tell you, if I may; and surely I may tell a friend about my own and my father's grievous misfortunes. Now since thou movest me to speak, I entreat thee, sir, tell <a href=/people/120 target=_blank>Orestes</a> of our sorrows; first, describe the dress I wear, the load of squalor that oppresses me, the hovel I inhabit after my royal home; tell him how hard I have to work at weaving clothes myself or else go barely clad and do without; how I carry home on my head water from the brook; no part have I in holy festival, no place amid the dance; a maiden still I turn from married dames and from <a href=/people/230 target=_blank>Castor</a> too, to whom they betrothed me before he joined the heavenly host, for I was his kinswoman. Meantime my mother, 'mid the spoils of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, is seated on her throne, and at her foot-stool slaves from Asia stand and wait, captives of my father's spear, whose <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> robes are fastened with brooches of gold. And there on the wall my father's blood still leaves a deep dark stain, while his murderer mounts the dead man's car and fareth forth, proudly grasping in his blood-stained hands the sceptre with which <a href=/people/47 target=_blank>Agamemnon</a> would marshal the sons of Hellas. Dishonoured lies his grave; naught as yet hath it received of drink outpoured or myrtle-spray, but bare of ornament his tomb is left. Yea, and 'tis said that noble hero who is wedded to my mother, in his drunken fits, doth leap upon the grave, and pelt with stones my father's monument, boldly gibing at us on this wise, Where is thy son <a href=/people/120 target=_blank>Orestes</a>? Is he ever coming in his glory to defend thy tomb? Thus is <a href=/people/120 target=_blank>Orestes</a> flouted behind his back. Oh! tell him this, kind sir, I pray thee. And there be many calling him to come,-I am but their mouthpiece,-these suppliant hands, this tongue, my broken heart, my shaven head, and his own father too. For 'tis shameful that the sire should have destroyed <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>'s race and the son yet prove too weak to pit himself against one foe unto the death, albeit he has youth and better blood as well. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:297' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=340>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:340'><b>&sect; 340</b>&nbsp;&nbsp;LEADER: Lo! here is thy husband hurrying homeward, his labour done. <br />PEASANT (entering and catching sight of strangers talking to ELECTRA) Ha! who are these strangers I see at my door? And why are they come hither to my rustic gate? can they want my help? for 'tis unseemly for a woman to stand talking with young men. <br />ELECTRA: Dear husband, be not suspicious of me. For thou shalt hear the truth; these strangers have come to bring me news of <a href=/people/120 target=_blank>Orestes</a>. Good sirs, pardon him those words. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:340' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=349>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:349'><b>&sect; 349</b>&nbsp;&nbsp;PEASANT What say they? is that hero yet alive and in the light of day? <br />ELECTRA: He is; at least they say so, and I believe them. <br />PEASANT: Surely then he hath some memory of his father and thy wrongs? <br />ELECTRA: These are things to hope for; a man in exile is helpless. <br />PEASANT: What message have they brought from <a href=/people/120 target=_blank>Orestes</a>? <br />ELECTRA: He sent them to spy out my evil case. <br />PEASANT: Well, they only see a part of it, though maybe thou art telling them the rest. <br />ELECTRA: They know all; there is nothing further they need ask. <br />PEASANT: Long ere this then shouldst thou have thrown open our doors to them. Enter, sirs; for in return for your good tidings, shall ye find such cheer as my house affords. Ho! servants, take their baggage within; make no excuses, for ye are friends sent by one I love; and poor though I am, yet will I never show meanness in my habits. <br />ORESTES 'Fore heaven! is this the man who is helping thee to frustrate thy marriage, because he will not shame <a href=/people/120 target=_blank>Orestes</a>? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:349' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=366>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:366'><b>&sect; 366</b>&nbsp;&nbsp;ELECTRA This is he whom they call my husband, woe is me! <br />ORESTES: Ah! there is no sure mark to recognize a man's worth; for human nature hath in it an element of confusion. For I have seen ere now the son of noble sire prove himself a worthless knave, and virtuous children sprung from evil parents; likewise dearth in a rich man's spirit, and in a poor man's frame a mighty soul. By what standard then shall we rightly judge these things? By wealth? An evil test to use. By poverty then? Nay, poverty suffers from this, that it teaches a man to play the villain from necessity. To martial prowess must I turn? But who could pronounce who is the valiant man merely from the look of his spear? Better is it to leave these matters to themselves without troubling. For here is a man of no account in <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, with no family reputation to boast, one of the common herd, proved a very hero. A truce to your folly! ye self-deceivers, swollen with idle fancies; learn to judge men by their converse, and by their habits decide who are noble. Such are they who rule aright both states and families; while those forms of flesh, devoid of intellect, are but figure-heads in the market-place. The strong arm, again, no more than the weak awaits the battle-shock, for this depends on natural courage. Well! absent or present, <a href=/people/47 target=_blank>Agamemnon</a>'s son, whose business brings us here, deserves this of us, so let us accept a lodging in this house. (Calling to his servants) Ho! sirrahs, go within. A humble host, who does his best, in preference to a wealthy man for me! And so I thankfully accept this peasant's proffered welcome, though I could have preferred that thy brother were conducting me to share his fortune in his halls. Maybe he yet will come; for the oracies of <a href=/people/2 target=_blank>Loxias</a> are sure, but to man's divining Farewell say I. (ORESTES, PYLADES and their attendants go into the hut.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:366' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=401>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:401'><b>&sect; 401</b>&nbsp;&nbsp;LEADER <a href=/people/388 target=_blank>Electra</a>, I feel a warmer glow of joy suffuse my heart than ever heretofore; perchance our fortune, moving on at last, will find a happy resting-place. <br />ELECTRA: O reckless man, why didst thou welcome strangers like these, so far beyond thy station, knowing the poverty of thy house? <br />PEASANT: Why? if they are really as noble as they seem, surely they will be equally content with rich or humble fare. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:401' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=408>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:408'><b>&sect; 408</b>&nbsp;&nbsp;ELECTRA: Well. since thou hast made this error, poor man as thou art, go to my father's kind old foster-sire; on the bank of the river <a about=https://topostext.org/place/373228WTan class=place long=22.756 lat=37.433>Tanaus</a>, the boundary 'twixt <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> and the land of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, he tends his flocks, an outcast from the city; bid him come hither to our house and some provision for the strangers' entertainment. Glad will he be, and will offer thanks to heaven to hear that the child, whom once he saved, is yet alive. I shall get nothing from my mother from my ancestral halls; for we should rue our message, were she to learn, unnatural wretch! that <a href=/people/120 target=_blank>Orestes</a> liveth. <br />PEASANT: I will take this message to the old man, if it seem good to thee; but get thee in at once and there make ready. A woman, when she chooses, can find dainties in plenty to garnish a feast. Besides, there is quite enough in the house to satisfy them with food for one day at least. 'Tis in such cases, when I come to muse thereon, that I discern the mighty power of wealth, whether to give to strangers, or to expend in curing the body when it falls sick; but our daily food is a small matter; for all of us, rich as well as poor, are in like case, as soon as we are satisfied. (The PEASANT departs as ELECTRA enters the hut.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:408' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=432>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:432'><b>&sect; 432</b>&nbsp;&nbsp;CHORUS: Ye famous ships, that on a day were brought to land at <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a> by those countless oars, what time ye led the <a href=/people/590 target=_blank>Nereids</a>' dance, where the <a href=/people/10965 target=_blank>dolphin</a> music-loving rolled and gambolled round your dusky prows, escorting <a href=/people/17 target=_blank>Achilles</a>, nimble son of <a href=/people/202 target=_blank>Thetis</a>, when he went with <a href=/people/47 target=_blank>Agamemnon</a> to the banks of <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> <a about=https://topostext.org/place/400262WSim class=place long=26.248 lat=39.9617>Simois</a>; <br />When <a href=/people/590 target=_blank>Nereids</a> left <a about=https://topostext.org/place/385239IEub class=place long=23.87 lat=38.53>Euboea</a>'s strand, bringing from <a href=/people/84 target=_blank>Hephaestus</a>' golden forge the harness he had fashioned for that warrior's use; him long they sought o'er <a about=https://topostext.org/place/394230LPel class=place long=23.046 lat=39.437>Pelion</a> and <a about=https://topostext.org/place/398227LOss class=place long=22.6869 lat=39.7969>Ossa</a>'s spurs, ranging the sacred glens and the peaks of Nymphaea, where his knightly sire was training up a light for Hellas, even the sea-born son of <a href=/people/202 target=_blank>Thetis</a>, a warrior swift to help the sons of <a href=/people/126 target=_blank>Atreus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:432' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=452>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:452'><b>&sect; 452</b>&nbsp;&nbsp;One that came from <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a>, and set foot in the haven of <a about=https://topostext.org/place/376228UNau class=place long=22.796 lat=37.565>Nauplia</a>, told me that on the circle of thy far-famed targe, O son of <a href=/people/202 target=_blank>Thetis</a>, was wrought this blazon, a terror to the <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a>; on the rim of the buckler <a href=/people/153 target=_blank>Perseus</a> with winged sandals, was bearing in his hand across the main the <a href=/people/655 target=_blank>Gorgon</a>'s head, just severed by the aid of <a href=/people/33 target=_blank>Hermes</a>, the messenger of <a href=/people/1 target=_blank>Zeus</a>, that rural god whom <a href=/people/525 target=_blank>Maia</a> bore; antistrophe 2) While in the centre of the shield the sun's bright orb flashed light on the backs of his winged coursers; there too was the heavenly choir of stars, <a href=/people/287 target=_blank>Pleiades</a> and <a href=/people/1564 target=_blank>Hyades</a>, to dazzle <a href=/people/40 target=_blank>Hector</a>'s eyes and make him flee; and upon his gold-forged helm were sphinxes, bearing in their talons the prey of which the minstrels sing; on his breast-plate was lioness breathing flame, her eye upon <a about=https://topostext.org/place/379229WPei class=place long=22.87585 lat=37.88935>Peirene</a>'s steed, in eagerness to rend it. There too in murderous fray four-footed steeds were prancing, while oer their backs uprose dark clouds of dust. But he who led these warriors stout, was slain by wedding thee, malignant child of <a href=/people/362 target=_blank>Tyndareus</a>! Wherefore shall the gods of heaven one day send thee to thy doom, and I shall yet live to see the sword at thy throat, drinking its crimson tide. (The OLD MAN, the former servant of <a href=/people/47 target=_blank>Agamemnon</a>, enters. ELECTRA presently appears at the door of the hut.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:452' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=487>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:487'><b>&sect; 487</b>&nbsp;&nbsp;OLD MAN: Where is the young princess, my mistress, <a href=/people/47 target=_blank>Agamemnon</a>'s daughter, whom I nursed in days gone by? Oh! how steep is the approach to this house, a hard climb for these old wasted feet of mine! Still, to reach such friends as these, I must drag my bent old back and tottering knees up it. Ah, daughter!-for I see thee now at thy door,-lo! I have brought the this tender <a href=/people/10954 target=_blank>lamb</a> from my own flock, having taken it from its dam, with garlands too and cheese straight from the press, and this flask of choice old wine with fragrant bouquet; 'tis small perhaps, but pour a cup thereof into some weaker drink, and it is a luscious draught. Let some one carry these gifts into the house for the guests; for I would fain wipe from my eyes the rising tears on this tattered cloak. <br />ELECTRA: Why stands the tear-drop in thine eye, old friend? Is it that my sorrows have been recalled to thee after an interval? or art thou bewailing the sad exile of <a href=/people/120 target=_blank>Orestes</a>, and my father's fate, whom thou didst once fondle in thy arms, in vain, alas! for thee and for thy friends? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:487' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=508>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:508'><b>&sect; 508</b>&nbsp;&nbsp;OLD MAN Ah yes! in vain; but still I could not bear to leave him thus; and so I added this to my journey that I sought his grave, and, falling thereupon, wept o'er its desolation; then did I open the wine-skin, my gift to thy guests, and poured a libation, and set myrtle-sprigs round the tomb. And lo! upon the grave itself I saw a black ram had been offered, and there was blood, not long poured forth, and severed locks of auburn hair. Much I wondered, my daughter, who had dared approach the tomb; certainly 'twas no <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a>. Nay, thy brother may perchance have come by stealth, and going thither have done honour to his father's wretched grave. Look at the hair, compare it with thy own, to see if the colour of these cut locks is the same; for children in whose veins runs the same father's blood have a close resemblance in many features. <br />ELECTRA: Old sir, thy words are unworthy of a wise man, if thou thinkest my own brave brother would have come to this land by stealth for fear of <a href=/people/374 target=_blank>Aegisthus</a>. In the next place, how should our hair correspond? His is the hair of a gallant youth trained up in manly sports, mine a woman's curled and combed; nay, that is a hopeless clue. Besides, thou couldst find many, whose hair is of the same colour, albeit not sprung from the same blood. No, maybe 'twas some stranger cut off his hair in pity at his tomb, or one that came to spy this land privily. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:508' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=532>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:532'><b>&sect; 532</b>&nbsp;&nbsp;OLD MAN: Put thy foot in the print of his shoe and mark whether it correspond with thine, my child. <br />ELECTRA: How should the foot make any impression on stony ground? and if it did, the foot of brother and sister would not be the same in size, for man's is the larger. <br />OLD MAN: Hast thou no mark, in case thy brother should come, whereby to recognize the weaving of thy loom, the robe wherein I snatched him from death that day? <br />ELECTRA: Dost thou forget I was still a babe when <a href=/people/120 target=_blank>Orestes</a> left the country? and even if I had woven him a robe, how should he, a mere child then, be wearing the same now, unless our clothes and bodies grow together? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:532' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=547>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:547'><b>&sect; 547</b>&nbsp;&nbsp;OLD MAN: Where are these guests? I fain would question them face to face about thy brother. (As he speaks, ORESTES and PYLADES come out of the hut.) <br />ELECTRA: There they are, in haste to leave the house. <br />OLD MAN Well born, it seems, but that may be a sham; for there be plenty such prove knaves. Still I give them greeting. <br />ORESTES: All hail, father! To which of thy friends, <a href=/people/388 target=_blank>Electra</a>, does this old relic of mortality belong? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:547' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=555>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:555'><b>&sect; 555</b>&nbsp;&nbsp;ELECTRA This is he who nursed my sire, sir stranger. <br />ORESTES: What! do I behold him who removed thy brother out of harm's way? <br />ELECTRA: Behold the man who saved his life; if, that is, he liveth still. <br />ORESTES: Ha! why does he look so hard at me, as if he were examining the bright device on silver coin? Is he finding in me a likeness to some other? <br />ELECTRA: Maybe he is glad to see in thee a companion of <a href=/people/120 target=_blank>Orestes</a>. <br />ORESTES: A man I love full well. But why is he walking round me? <br />ELECTRA I, too, am watching his movements with amaze, sir stranger. <br />OLD MAN My honoured mistress, my daughter <a href=/people/388 target=_blank>Electra</a>, return thanks to heaven,- <br />ELECTRA: For past or present favours? which? <br />OLD MAN That thou hast found a treasured prize, which God is now revealing. <br />ELECTRA: Hear me invoke the gods. But what dost thou mean, old man? <br />OLD MAN Behold before thee, my child, thy nearest and dearest. <br />ELECTRA: I have long feared thou wert not in thy sound senses <br />OLD MAN Not in my sound senses, because I see thy brother? <br />ELECTRA: What mean'st thou, aged friend, by these astounding words? <br />OLD MAN That I see <a href=/people/120 target=_blank>Orestes</a>, <a href=/people/47 target=_blank>Agamemnon</a>'s son, before me. <br />ELECTRA: What mark dost see that I can trust? <br />OLD MAN A scar along his brow, where he fell and cut himself one day in his father's home when chasing a fawn with thee. <br />ELECTRA: Is it possible? True; I see the mark of the fall. <br />OLD MAN Dost hesitate then to embrace thy own dear brother? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:555' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=577>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:577'><b>&sect; 577</b>&nbsp;&nbsp;ELECTRA No! not any longer, old friend; for my soul is convinced by the tokens thou showest. O my brother, thou art come at last, and I embrace thee, little as I ever thought to. <br />ORESTES: And thee to my bosom at last I press. <br />ELECTRA: I never thought that it would happen. <br />ORESTES: All hope in me was also dead. <br />ELECTRA: Art thou really he? <br />ORESTES: Aye, thy one and only champion, if I can but safely draw to shore the cast I mean to throw; and I feel sure I shall; else must we cease to believe in gods, if wrong is to triumph o'er right. <br />CHORUS (singing) At last, at last appears thy radiant dawn, O happy day! and as beacon to the city hast thou revealed the wanderer, who, long ago, poor boy! was exiled from his father's halls. Now, lady, comes our turn for victory, ushered in by some god. Raise hand and voice in prayer, beseech the gods that good fortune may attend thy brother's entry to the city. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:577' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=596>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:596'><b>&sect; 596</b>&nbsp;&nbsp;ORESTES: Enough! sweet though the rapture of this greeting be, I must wait and return it hereafter. Do thou, old friend so timely met, tell me how I am to avenge me on my father's murderer, and on my mother, the partner in his guilty marriage. Have I still in <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> any band of kindly friends? or am I, like my fortunes, bankrupt altogether? With whom am I to league myself? by night or day shall I advance? point out a road for me to take against these foes of mine. <br />OLD MAN My son, thou hast no friend now in thy hour of adversity. No! that is a piece of rare good luck, to find another share thy fortunes alike for better and for worse. Thou art of every friend completely reft, all hope is gone from thee; be sure of what I tell thee; on thy own arm and fortune art thou wholly thrown to win thy father's home and thy city. <br />ORESTES: What must I do to compass this result? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:596' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=613>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:613'><b>&sect; 613</b>&nbsp;&nbsp;OLD MAN Slay <a href=/people/598 target=_blank>Thyestes</a>' son and thy mother. <br />ORESTES: I came to win that victor's crown, but how can I attain it? <br />OLD MAN Thou wouldst never achieve it if thou didst enter the walls. <br />ORESTES: Are they manned with guards and armed sentinels? <br />OLD MAN Aye truly; for he is afraid of thee, and cannot sleep secure. <br />ORESTES: Well then, do thou next propose a scheme, old friend. <br />OLD MAN Hear me a moment; an idea has just occurred to me. <br />ORESTES: May thy counsel prove good, and my perception keen! <br />OLD MAN I saw <a href=/people/374 target=_blank>Aegisthus</a>, as I was slowly pacing hither- <br />ORESTES: I welcome thy words. Where was he? <br />OLD MAN Not far from these fields, at his stables. <br />ORESTES: What was he doing? I see a gleam of hope after our helplessness. <br />OLD MAN I thought he was preparing a feast for the <a href=/people/159 target=_blank>Nymphs</a>. <br />ORESTES: In return for the bringing up of children or in anticipation of a birth? <br />OLD MAN All I know is this, he was preparing to sacrifice <a href=/people/10961 target=_blank>oxen</a>. <br />ORESTES: How many were with him? or was he alone with his servants? <br />OLD MAN There was no <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> there; only a band of his own followers. <br />ORESTES: Is it possible that any of them will recognize me, old man? <br />OLD MAN They are only servants, and they have never even seen thee. <br />ORESTES: Will they support me, if I prevail? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:613' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=633>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:633'><b>&sect; 633</b>&nbsp;&nbsp;OLD MAN Yes, that is the way of slaves, luckily for thee. <br />ORESTES: On what pretext can I approach him? <br />OLD MAN Go to some place where he will see thee as he sacrifices. <br />ORESTES: His estate is close to the road then, I suppose. <br />OLD MAN Yes, and when he sees thee there, he will invite thee to the feast. <br />ORESTES: So help me God! He shall rue his invitation. <br />OLD MAN After that, form thy own plan according to circumstances. <br />ORESTES: Good advice! But my mother, where is she? <br />OLD MAN At <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>; but she will yet join her husband for the feast. <br />ORESTES: Why did she not come forth with him? <br />OLD MAN From fear of the citizens' reproach she stayed behind. <br />ORESTES: I understand; she knows that the city suspects her. <br />OLD MAN Just so; her wickedness makes her hated. <br />ORESTES: How shall I slay her and him together? <br />ELECTRA: Mine be the preparation of my mother's slaying! <br />ORESTES: Well, as for the other, fortune will favour us. <br />ELECTRA: Our old friend here must help us both. <br />OLD MAN Aye, that will I; but what is thy scheme for slaying thy mother? <br />ELECTRA: Go, old man, and tell <a href=/people/595 target=_blank>Clytemnestra</a> from me that I have given birth to a son. <br />OLD MAN Some time ago, or quite recently? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:633' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=654>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:654'><b>&sect; 654</b>&nbsp;&nbsp;ELECTRA Ten days ago, which are the days of my purification. <br />OLD MAN Suppose it done; but how doth this help towards slaying thy mother? <br />ELECTRA: She will come, when she hears of my confinement. <br />OLD MAN What! dost think she cares aught for thee, my child? <br />ELECTRA: Oh yes! she will weep no doubt over my child's low rank. <br />OLD MAN Perhaps she may; but go back again to the point. <br />ELECTRA: Her death is certain, if she comes. <br />OLD MAN In that case, let her come right up to the door of the house. <br />ELECTRA: Why then it were a little thing to turn her steps into the road to <a href=/people/10685 target=_blank>Hades</a>' halls. <br />OLD MAN Oh! to see this one day, then die! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:654' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=664>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:664'><b>&sect; 664</b>&nbsp;&nbsp;ELECTRA First of all, old friend, act as my brother's guide. <br />OLD MAN To the place where <a href=/people/374 target=_blank>Aegisthus</a> is now sacrificing to the gods? <br />ELECTRA: Then go, find my mother and give her my message. <br />OLD MAN Aye, that I will, so that she shall think the very words are thine. <br />ELECTRA (to ORESTES) Thy work begins at once; thou hast drawn the first lot in the tragedy. <br />ORESTES: I will go, if some one will show me the way. <br />OLD MAN I will myself conduct thee nothing loth. <br />ORESTES: O <a href=/people/1 target=_blank>Zeus</a>, god of my fathers, vanquisher of my foes, have pity on us, for a piteous lot has ours been. <br />ELECTRA: Oh! have pity on thy own descendants. <br />ORESTES: O <a href=/people/19 target=_blank>Hera</a>, mistress of <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a>'s altars, grant us the victory, if we are asking what is right. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:664' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=676>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:676'><b>&sect; 676</b>&nbsp;&nbsp;ELECTRA Yes, grant us vengeance on them for our father's death. <br />ORESTES: Thou too, my father, sent to the land of shades by wicked hands, and <a href=/people/3304 target=_blank>Earth</a>, the queen of all, to whom I spread my suppliant palms, up and champion thy dear children. Come with all the dead to aid, all they who helped thee break the <a about=https://topostext.org/place/400310RPhr class=ethnic long=31 lat=40>Phrygians</a>' power, and all who hate ungodly crime. Dost hear me, father, victim of my mother's rage? <br />ELECTRA: Sure am I he heareth all; but 'tis time to part. For this cause too I bid thee strike <a href=/people/374 target=_blank>Aegisthus</a> down, because, if thou fall in the struggle and perish, I also die; no longer number me amongst the living; for I will stab myself with a two-edged sword. And now will I go indoors and make all ready there, for, if there come good news from thee, my house shall ring with women's cries of joy; but, if thou art slain, a different scene must then ensue. These are my instructions to thee. <br />ORESTES: I know my lesson well. (ORESTES, PYLADES, the OLD MAN, and attendants, depart.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:676' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=693>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:693'><b>&sect; 693</b>&nbsp;&nbsp;ELECTRA: Then show thyself a man. And you, my friends, signal to me by cries the certain issue of this fray. Myself will keep the sword ready in my grasp, for I will never accept defeat, and yield my body to my enemies to insult. (ELECTRA goes into the hut.) <br />CHORUS (singing, strophe 1) Still the story finds a place in time-honoured legends, how on day <a href=/people/97 target=_blank>Pan</a>, the steward of husbandry, came breathing dulcet music on his jointed pipe, and brought with him from its tender dam on <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> hills, a beauteous <a href=/people/10954 target=_blank>lamb</a> with fleece of gold; then stood a herald high upon the rock and cried aloud, Away to the place of assembly, ye folk of <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a>! to behold the strange and awful sight vouchsafed to our blest rulers. Anon the dancers did obeisance to the family of <a href=/people/126 target=_blank>Atreus</a>; antistrophe 1) The altar-steps of beaten gold were draped; and through that <a about=https://topostext.org/place/376227PArg class=demonym long=22.7195 lat=37.6316>Argive</a> town the altars blazed with fire; sweetly rose the lute's clear note, the handmaid of the <a href=/people/54 target=_blank>Muse</a>'s song; and ballads fair were written on the golden <a href=/people/10954 target=_blank>lamb</a>, saying that <a href=/people/598 target=_blank>Thyestes</a> had the luck; for he won the guilty love of the wife of <a href=/people/126 target=_blank>Atreus</a>, and carried off to his house the strange creature, and then coming before the assembled folk he declared to them that he had in his house that horned beast with fleece of gold. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:693' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=727>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:727'><b>&sect; 727</b>&nbsp;&nbsp;In the self-same hour it was that <a href=/people/1 target=_blank>Zeus</a> changed the radiant courses of the stars, the light of the sun, and the joyous face of dawn, and drave his car athwart the western sky with fervent heat from heaven's fires, while northward fled the rain-clouds, and <a about=https://topostext.org/place/292255SAmm class=place long=25.5435 lat=29.2052>Ammon</a>'s strand grew parched and faint and void of dew, when it was robbed of heaven's genial showers. <br />'Tis said, though I can scarce believe it, the sun turned round his glowing throne of gold, to vex the sons of men by this change because of the quarrel amongst them. Still, tales of horror have their use in making men regard the gods; of whom thou hadst no thought, when thou slewest thy husband, thou mother of this noble pair. <br />LEADER OF THE CHORUS Hark! my friends, did ye hear that noise, like to the rumbling of an earthquake, or am I the dupe of idle fancy? Hark! hark! once more that wind-borne sound swells loudly on mine ear. <a href=/people/388 target=_blank>Electra</a>! mistress mine! come forth from the house! <br />ELECTRA (rushing out) What is it, good friends? how goes the day with us? <br />LEADER: I hear the cries of dying men; no more I know. <br />ELECTRA: I heard them too, far off, but still distinct. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:727' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=754>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:754'><b>&sect; 754</b>&nbsp;&nbsp;LEADER Yes, the sound came stealing from afar, but yet 'twas clear. <br />ELECTRA: Was it the groan of an <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argive</a>, or of my friends? <br />LEADER: I know not; for the cries are all confused. <br />ELECTRA: That word of thine is my death-warrant; why do I delay? <br />LEADER: Stay, till thou learn thy fate for certain. <br />ELECTRA: No, no; we are vanquished; where are our messengers? <br />LEADER: They will come in time; to slay a king is no light task. (A MESSENGER enters in haste.) <br />MESSENGER: All hail! ye victors, maidens of <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a>, to all <a href=/people/120 target=_blank>Orestes</a>' friends his triumph I announce; <a href=/people/374 target=_blank>Aegisthus</a>, the murderer of <a href=/people/47 target=_blank>Agamemnon</a>, lies weltering where he fell; return thanks to heaven. <br />ELECTRA: Who art thou? What proof dost thou give of this? <br />MESSENGER: Look at me, dost thou not recognize thy brother's servant? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:754' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=767>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:767'><b>&sect; 767</b>&nbsp;&nbsp;ELECTRA O best of friends! 'twas fear that prevented me from recognizing thee; now I know thee well. What sayst thou? Is my father's hateful murderer slain? <br />MESSENGER: He is; I repeat it since it is thy wish. <br />LEADER: Ye gods, and justice, whose eye is on all, at last art thou come. <br />ELECTRA: I fain would learn the way and means my brother took to slay <a href=/people/598 target=_blank>Thyestes</a>' son. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:767' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=774>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:774'><b>&sect; 774</b>&nbsp;&nbsp;MESSENGER: After we had set out from this house, we struck into the broad wagon-road, and came to the place where was the far-famed King of <a about=https://topostext.org/place/377228PMyk class=person long=22.7561 lat=37.7308>Mycenae</a>. Now he was walking in a garden well-watered, culling a wreath of tender myrtle-sprays for his head, and when he saw us, he called out, All hail! strangers; who are ye? whence come ye? from what country? To him <a href=/people/120 target=_blank>Orestes</a> answered, We are from <a about=https://topostext.org/place/394223RThs class=place long=22.3 lat=39.4>Thessaly</a>, on our way to <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>' banks to sacrifice to <a about=https://topostext.org/place/401224LOly class=person long=22.3586 lat=40.0856>Olympian</a> <a href=/people/1 target=_blank>Zeus</a>. When <a href=/people/374 target=_blank>Aegisthus</a> heard that, he said, Ye must be my guests today, and share the feast, for I am even now sacrificing to the <a href=/people/159 target=_blank>Nymphs</a>; and by rising with tomorrow's light ye will be just as far upon your journey; now let us go within. Therewith he caught us by the hand and led us by the way; refuse we could not; and when we were come to the house, he gave command: Bring water for my guests to wash forthwith, that they may stand around the altar near the laver. But <a href=/people/120 target=_blank>Orestes</a> answered, 'Twas but now we purified ourselves and washed us clean in water from the river. So if we strangers are to join your citizens in sacrifice, we are ready, King <a href=/people/374 target=_blank>Aegisthus</a>, and will not refuse. So ended they their private conference. Meantime the servants, that composed their master's bodyguard, laid aside their weapons, and one and all were busied at their tasks. Some brought the bowl to catch the blood, others took up baskets, while others kindled fire and set cauldrons round about the altars, and the whole house rang. Then did thy mother's husband take the barley for sprinkling, and began casting it upon the hearth with these words,Ye <a href=/people/159 target=_blank>Nymphs</a>, who dwell among the rocks, grant that I may often sacrifice with my wife, the daughter of <a href=/people/362 target=_blank>Tyndareus</a>, within my halls, as happily as now, and ruin seize my foes! (whereby he meant <a href=/people/120 target=_blank>Orestes</a> and thyself). But my master, lowering his voice, offered a different prayer, that he might regain his father's house. Next <a href=/people/374 target=_blank>Aegisthus</a> took from basket a long straight knife, and cutting off some of the calf's hair, laid it with his right hand on the sacred fire, and then cut its throat when the servants had lifted it upon their shoulders, and thus addressed thy brother; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:774' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=815>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:815'><b>&sect; 815</b>&nbsp;&nbsp;Men declare that amongst the <a about=https://topostext.org/place/394223RThs class=ethnic long=22.3 lat=39.4>Thessalians</a> this is counted honourable, to cut up a <a href=/people/10955 target=_blank>bull</a> neatly and to manage steeds. So take the knife, sir stranger, and show us if rumour speaks true about the <a about=https://topostext.org/place/394223RThs class=ethnic long=22.3 lat=39.4>Thessalians</a>. Thereon <a href=/people/120 target=_blank>Orestes</a> seized the <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> knife of tempered steel and cast from his shoulders his graceful buckled robe; then choosing <a href=/people/663 target=_blank>Pylades</a> to help him in his task, he made the servants withdraw, and catching the calf by the hoof, proceeded to lay bare its white flesh, with arm outstretched, and he flayed the hide quicker than a runner ever finishes the two laps of the <a href=/people/10959 target=_blank>horses</a>' race-course; next he laid the belly open, and <a href=/people/374 target=_blank>Aegisthus</a> took the entrails in his hands and carefully examined them. Now the liver had no lobe, while the portal vein leading to the gall-bladder portended dangerous attack on him who was observing it. Dark grows <a href=/people/374 target=_blank>Aegisthus</a>' brow, but my master asks, Why so despondent, good sir? Said he, I fear treachery from a stranger. <a href=/people/47 target=_blank>Agamemnon</a>'s son of all men most I hate, and he hates my house. But <a href=/people/120 target=_blank>Orestes</a> cried, What! fear treachery from an exile! thou the ruler of the city? Ho! take this <a about=https://topostext.org/place/387224RDor class=demonym long=22.4 lat=38.7>Dorian</a> knife away and bring me a <a about=https://topostext.org/place/394223RThs class=demonym long=22.3 lat=39.4>Thessalian</a> cleaver, that we by sacrificial feast may learn the will of heaven; let me cleave the breast-bone. And he took the axe and cut it through. Now <a href=/people/374 target=_blank>Aegisthus</a> was examining the entrails, separating them in his hands, and as he was bending down, thy brother rose on tiptoe and smote him on the spine, severing the bones of his back; and his body gave one convulsive shudder from head to foot and writhed in the death-agony. No sooner did his servants see it, than they rushed to arms, a host to fight with two; yet did <a href=/people/663 target=_blank>Pylades</a> and <a href=/people/120 target=_blank>Orestes</a> of their valiancy meet them with brandished spears. Then cried <a href=/people/120 target=_blank>Orestes</a>, </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:815' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=847>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:847'><b>&sect; 847</b>&nbsp;&nbsp;I am no foe that come against this city and my own servants, but I have avenged me on the murderer of my sire, I, ill-starred <a href=/people/120 target=_blank>Orestes</a>. Slay me not, my father's former thralls! They, when they heard him speak, restrained their spears, and an old man, who had been in the family many a long year, recognized him. Forthwith they crown thy brother with a wreath, and utter shouts of joy. And lo! he is coming to show thee the head, not the <a href=/people/655 target=_blank>Gorgon</a>'s, but the head of thy hated foe <a href=/people/374 target=_blank>Aegisthus</a>; his death today has paid in blood a bitter debt of blood. <br />CHORUS (singing) Dear mistress, now with step as light as fawn join in the dance; lift high the nimble foot and be glad. <a href=/people/335 target=_blank>Victory</a> crowns thy brother; he hath won a fairer wreath than ever victor gained beside the streams of <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a>; so raise a fair hymn to victory, the while I dance. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:847' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=866>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:866'><b>&sect; 866</b>&nbsp;&nbsp;ELECTRA: O light of day! O bright careering sun! O earth! and night erewhile my only day; now may I open my eyes in freedom, for <a href=/people/374 target=_blank>Aegisthus</a> is dead, my father's murderer. Come friends, let me bring out whate'er my house contains to deck his head and wreath with crowns my conquering brother's brow. <br />CHORUS (singing) Bring forth thy garlands for his head, and we will lead the dance the <a href=/people/54 target=_blank>Muses</a> love. Now shall the royal line, dear to us in days gone by, resume its sway o'er the realm, having laid low the usurper as he deserves. So let the shout go up, whose notes are those of joy. (ORESTES and PYLADES enter, followed by attendants who are bearing the body of <a href=/people/374 target=_blank>Aegisthus</a>.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:866' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=880>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:880'><b>&sect; 880</b>&nbsp;&nbsp;ELECTRA: Hail! glorious victor, <a href=/people/120 target=_blank>Orestes</a>, son of a sire who won the day 'neath <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a>'s walls, accept this wreath to bind about the tresses of thy hair. Not in vain hast thou run thy course unto the goal and reached thy home again; no! but thou hast slain thy foe, <a href=/people/374 target=_blank>Aegisthus</a>, the murderer of our father. Thou too, O <a href=/people/663 target=_blank>Pylades</a>, trusty squire, whose training shows thy father's sterling worth, receive a garland from my hand, for thou no less than he hast a share in this emprise; and so I pray, good luck be thine for ever! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:880' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=890>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:890'><b>&sect; 890</b>&nbsp;&nbsp;ORESTES: First recognize the gods, <a href=/people/388 target=_blank>Electra</a>, as being the authors of our fortune, and then praise me their minister and fate's. Yea, I come from having slain <a href=/people/374 target=_blank>Aegisthus</a> in very deed, no mere pretence; and to make thee the more certain of this, I am bringing thee his corpse, which, if thou wilt, expose for beasts to rend, or set it upon a stake for birds, the children of the air, to prey upon; for now is he thy slave, once called thy lord and master. <br />ELECTRA: I am ashamed to utter my wishes. <br />ORESTES: What is it? speak out, for thou art through the gates of fear. <br />ELECTRA: I am ashamed to flout the dead, for fear some spite assail me. <br />ORESTES: No one would blame thee for this. <br />ELECTRA: Our folk are hard to please, and love to blame. <br />ORESTES: Speak all thy mind, sister; for we entered on this feud with him on terms admitting not of truce. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:890' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=907>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:907'><b>&sect; 907</b>&nbsp;&nbsp;ELECTRA: Enough! With which of thy iniquities shall I begin my recital? With which shall I end it? To which allot a middle place? And yet I never ceased, as each day dawned, to rehearse the story I would tell thee to thy face, if ever I were freed from my old terrors; and now I am; so I will pay thee back with the abuse I fain had uttered to thee when alive. Thou wert my ruin, making me and my brother orphans, though we had never injured thee, and thou didst make a shameful marriage with my mother, having slain her lord who led the host of Hellas, though thyself didst never go to <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. Such was thy folly, thou didst never dream that my mother would prove thy curse when thou didst marry her, though thou wert wronging my father's honour. Know this; whoso defiles his neighbour's wife, and afterward is forced to take her to himself, is a wretched wight, if he supposes she will be chaste as his wife, though she sinned against her former lord. Thine was a life most miserable, though thou didst pretend 'twas otherwise; well thou knewest how guilty thy marriage was, and my mother knew she had a villain for husband. Sinners both ye took each other's lot, she thy fortune, thou her curse. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:907' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=930>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:930'><b>&sect; 930</b>&nbsp;&nbsp;While everywhere in <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> thou-wouldst hear such phrases as, that woman's husband, never that man's wife. Yet 'tis shameful for the wife and not the man to rule the house; wherefore I loathe those children, who are called in the city not the sons of the man, their father, but of their mother. For if a man makes a great match above his rank, there is no talk of the husband but only of the wife. Herein lay thy grievous error, due to ignorance; thou thoughtest thyself some one, relying on thy wealth, but this is naught save to stay with us a space. 'Tis nature that stands fast, not wealth. For it, if it abide unchanged, exalts man's horn; but riches dishonestly acquired and in the hands of fools, soon take their flight, their blossom quickly shed. As for thy sins with women, I pass them by, 'tis not for maiden's lips to mention them, but I will shrewdly hint thereat. And then thy arrogance! because forsooth thou hadst a palace and some looks to boast. May I never have a husband with a girl's face, but one that bears him like a man! For the children of these latter cling to a life of arms, while those, who are so fair to see, do only serve to grace the dance. Away from me! (Spurning the corpse with her foot) Time has shown thy villainy, little as thou reckest of the forfeit thou hast paid for it. Let none suppose, though he have run the first stage of his course with joy, that he will get the better of justice, till he have reached the goal and ended his career. <br />LEADER OF THE CHORUS Terrible alike his crime and your revenge; for mighty is the power of justice. <br />ORESTES 'Tis well. Carry his body within the house and hide it, sirrahs, that when my mother comes, she may not see his corpse before she is smitten herself. (PYLADES and the attendants take the body into the hut.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:930' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=963>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:963'><b>&sect; 963</b>&nbsp;&nbsp;ELECTRA Hold! let us strike out another scheme. <br />ORESTES: How now? Are those allies from <a about=https://topostext.org/place/377228PMyk class=place long=22.7561 lat=37.7308>Mycenae</a> whom I see? <br />ELECTRA: No, 'tis my mother, that bare me. <br />ORESTES: Full into the net she is rushing, oh, bravely! <br />ELECTRA: See how proudly she rides in her chariot and fine robes! <br />ORESTES: What must we do to our mother? Slay her? <br />ELECTRA: What! has pity seized thee at sight of her? <br />ORESTES: O God! how can I slay her that bare and suckled me? <br />ELECTRA: Slay her as she slew thy father and mine. <br />ORESTES: O <a href=/people/11033 target=_blank>Phoebus</a>, how foolish was thy oracle- <br />ELECTRA: Where <a href=/people/2 target=_blank>Apollo</a> errs, who shall be wise? <br />ORESTES: In bidding me commit this crime-my mother's murder! <br />ELECTRA: How canst thou be hurt by avenging thy father? <br />ORESTES: Though pure before, I now shall carry into exile the stain of a mother's blood. <br />ELECTRA: Still, if thou avenge not thy father, thou wilt fail in thy duty. <br />ORESTES: And if I slay my mother, I must pay the penalty to her. <br />ELECTRA: And so must thou to him, if thou resign the avenging of our father. <br />ORESTES: Surely it was a fiend in the likeness of the god that ordered this! <br />ELECTRA: Seated on the holy tripod? I think not so. <br />ORESTES: I cannot believe this oracle was meant. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:963' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=982>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:982'><b>&sect; 982</b>&nbsp;&nbsp;ELECTRA Turn not coward! Cast not thy manliness away! <br />ORESTES: Am I to devise the same crafty scheme for her? <br />ELECTRA: The self-same death thou didst mete out to her lord <a href=/people/374 target=_blank>Aegisthus</a>. <br />ORESTES: I will go in; 'tis an awful task I undertake; an awful deed I have to do; still if it is Heaven's will, be it so; I loathe and yet I love the enterprise. (As ORESTES withdraws into the hut, CLYTEMNESTRA enters in a chariot. Her attendants are hand-maidens attired in gorgeous apparel.) <br />CHORUS (singing) Hail! Queen of <a about=https://topostext.org/place/376227PArg class=person long=22.7195 lat=37.6316>Argos</a>, daughter of <a href=/people/362 target=_blank>Tyndareus</a>, sister of those two noble sons of <a href=/people/1 target=_blank>Zeus</a>, who dwell in the flame-lit firmament amid the stars, whose guerdon high it is to save the sailor tossing on the sea. All hail! because of thy wealth and high prosperity, I do thee homage as I do the blessed gods. Now is the time, great queen, for us to pay our court unto thy fortunes. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:982' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=998>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:998'><b>&sect; 998</b>&nbsp;&nbsp;CLYTEMNESTRA: Alight from the car, ye <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> maids, and take my hand that I may step down from the chariot. With <a about=https://topostext.org/place/400262UIli class=demonym long=26.2389 lat=39.9575>Trojan</a> spoils the houses of the gods are decked, but I have obtained these maidens as a special gift from <a about=https://topostext.org/place/400262UIli class=person long=26.2389 lat=39.9575>Troy</a>, in return for my lost daughter, a trifling boon no doubt, but still an ornament to my house. <br />ELECTRA: And may not I, mother, take that highly-favoured hand of thine? I am a slave like them, an exile from my father's halls in this miserable abode. <br />CLYTEMNESTRA: See, my servants are here; trouble not on my account. <br />ELECTRA: Why, thou didst make me thy prisoner by robbing me of my home; like these I became a captive when my home was taken, an orphan all forlorn. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:998' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1011>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1011'><b>&sect; 1011</b>&nbsp;&nbsp;CLYTEMNESTRA: True; but thy father plotted so wickedly against those of his own kin whom least of all he should have treated so. Speak I must; albeit, when woman gets an evil reputation, there is a feeling of bitterness against all she says; unfairly indeed in my case, for it were only fair to hate after learning the circumstances, and seeing if the object deserves it; otherwise, why hate at all? Now <a href=/people/362 target=_blank>Tyndareus</a> bestowed me on thy father not that I or any children I might bear should be slain. Yet he went and took my daughter from our house to the fleet at <a about=https://topostext.org/place/384236UAul class=place long=23.5925 lat=38.4335>Aulis</a>, persuading me that <a href=/people/17 target=_blank>Achilles</a> was to wed her; and there he held her o'er the pyre, and cut <a href=/people/708 target=_blank>Iphigenia</a>'s snowy throat. Had he slain her to save his city from capture, or to benefit his house, or to preserve his other children, a sacrifice of one for many, could have pardoned him. But, as it was, his reasons for murdering my child were these: the wantonness of <a href=/people/69 target=_blank>Helen</a> and her husband's folly in not punishing the traitress. Still, wronged as I was, my rage had not burst forth for this, nor would I have slain my lord, had he not returned to me with that frenzied maiden and made her his mistress, keeping at once two brides beneath the same roof. Women maybe are given to folly, I do not deny it; this granted, when a husband goes astray and sets aside his own true wife, she fain will follow his example and find another love; and then in our case hot abuse is heard, while the men, who are to blame for this, escape without a word. Again, suppose <a href=/people/53 target=_blank>Menelaus</a> had been secretly snatched from his home, should I have had to kill <a href=/people/120 target=_blank>Orestes</a> to save <a href=/people/53 target=_blank>Menelaus</a>, my sister's husband? How would thy father have endured this? Was he then to escape death for slaying what was mine, while I was to suffer at his hands? I slew him, turning, as my only course, to his enemies. For which of all thy father's friends would have joined me in his murder? Speak all that is in thy heart, and prove against me with all free speech, that thy father's death was not deserved. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1011' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1051>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1051'><b>&sect; 1051</b>&nbsp;&nbsp;ELECTRA Justly urged! but thy justice is not free from shame; for in all things should every woman of sense yield to her husband. Whoso thinketh otherwise comes not within the scope of what I say. Remember, mother, those last words of thine, allowing me free utterance before thee. <br />CLYTEMNESTRA: Daughter, far from refusing it, I grant it again. <br />ELECTRA: Thou wilt not, when thou hearest, wreak thy vengeance on me? <br />CLYTEMNESTRA: No, indeed; I shall welcome thy opinion. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1051' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1060>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1060'><b>&sect; 1060</b>&nbsp;&nbsp;ELECTRA: Then will I speak, and this shall be the prelude of my speech: Ah, mother mine! would thou hadst had a better heart; for though thy beauty and <a href=/people/69 target=_blank>Helen</a>'s win you praises well deserved, yet are ye akin in nature, pair of wantons, unworthy of <a href=/people/230 target=_blank>Castor</a>. She was carried off, 'tis true, but her fall was voluntary: and thou hast slain the bravest soul in Hellas, excusing thyself on the ground that thou didst kill a husband to avenge a daughter; the world does not know thee so well as I do, thou who before ever thy daughter's death was decided, yea, soon as thy lord had started from his home, wert combing thy golden tresses at thy mirror. That wife who, when her lord is gone from home, sets to beautifying herself, strike off from virtue's list; for she has no need to carry her beauty abroad, save she is seeking some mischief. Of all the wives in Hellas thou wert the only one I know who wert overjoyed when <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>'s star was in the ascendant, while, if it set, thy brow was clouded, since thou hadst no wish that <a href=/people/47 target=_blank>Agamemnon</a> should return from <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>. And yet thou couldst have played a virtuous part to thy own glory. The husband thou hadst was no whit inferior to <a href=/people/374 target=_blank>Aegisthus</a>, for he it was whom Hellas chose to be her captain. And when thy sister <a href=/people/69 target=_blank>Helen</a> wrought that deed of shame, thou couldst have won thyself great glory, for vice is a warning and calls attention to virtue. If, as thou allegest, my father slew thy daughter, what is the wrong I and my brother have done thee? How was it thou didst not bestow on us our father's halls after thy husband's death, instead of bartering them to buy a paramour? Again, thy husband is not exiled for thy son's sake, nor is he slain to avenge my death, although by him this life is quenched twice as much as e'er my sister's was; so if murder is to succeed murder in requital, I and thy son <a href=/people/120 target=_blank>Orestes</a> must slay thee to avenge our father; if that was just, why so is this. Whoso fixes his gaze on wealth or noble birth and weds a wicked woman, is a fool; better is a humble partner in his home, if she be virtuous, than a proud one. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1060' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1102>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1102'><b>&sect; 1102</b>&nbsp;&nbsp;LEADER OF THE CHORUS Chance rules the marriages of women; some I see turn out well, others ill amongst mankind. <br />CLYTEMNESTRA: Daughter, 'twas ever thy nature to love thy father. This too one finds; some sons cling to their father, others have a deeper affection for their mother. I will forgive thee, for myself am not so exceeding glad at the deed that I have done, my child. But thou,-why thus unwashed and clad in foul attire, now that the days of thy lying-in are accomplished? Ah me, for my sorry schemes! I have goaded my husband into anger more than e'er I should have done. <br />ELECTRA: Thy sorrow comes too late; the hour of remedy has gone from thee; my father is dead. Yet why not recall that exile, thy own wandering son? <br />CLYTEMNESTRA: I am afraid; 'tis my interest, not his that I regard. For they say he is wroth for his father's murder. <br />ELECTRA: Why, then, dost thou encourage thy husband's bitterness against us? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1102' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1117>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1117'><b>&sect; 1117</b>&nbsp;&nbsp;CLYTEMNESTRA 'Tis his way; thou too hast a stubborn nature. <br />ELECTRA: Because I am grieved; yet will I check my spirit. <br />CLYTEMNESTRA: I promise then he shall no longer oppress thee. <br />ELECTRA: From living in my home he grows too proud. <br />CLYTEMNESTRA: Now there! 'tis thou that art fanning the quarrel into new life. <br />ELECTRA: I say no more; my dread of him is even what it is. <br />CLYTEMNESTRA <a href=/people/280 target=_blank>Peace</a>! Enough of this. Why didst thou summon me, my child? <br />ELECTRA: Thou hast heard, I suppose, of my confinement; for this I pray thee, since I know not how, offer the customary sacrifice on the tenth day after birth, for I am a novice herein, never having had a child before. <br />CLYTEMNESTRA: This is work for another, even for her who delivered thee. <br />ELECTRA: I was all alone in my travail and at the babe's birth. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1117' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1130>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1130'><b>&sect; 1130</b>&nbsp;&nbsp;CLYTEMNESTRA Dost live so far from neighbours? <br />ELECTRA: No one cares to make the poor his friends. <br />CLYTEMNESTRA: Well, I will go to offer to the gods a sacrifice for the child's completion of the days; and when I have done thee this service, I will seek the field where my husband is sacrificing to the <a href=/people/159 target=_blank>Nymphs</a>. Take this chariot hence, my servants, and tie the <a href=/people/10959 target=_blank>horses</a> to the stalls; and when ye think that I have finished my offering to the gods, attend me, for I must likewise pleasure my lord. (She goes into the hut.) <br />ELECTRA: Enter our humble cottage; but, prithee, take care that my smoke grimed walls soil not thy robes; now wilt thou offer to the gods a fitting sacrifice. There stands the basket ready, and the knife is sharpened, the same that slew the <a href=/people/10955 target=_blank>bull</a>, by whose side thou soon wilt lie a corpse; and thou shalt be his bride in <a href=/people/10685 target=_blank>Hades</a>' halls whose wife thou wast on earth. This is the boon I will grant thee, while thou shalt pay me for my father's blood. (ELECTRA follows her into the hut.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1130' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1147>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1147'><b>&sect; 1147</b>&nbsp;&nbsp;CHORUS: Miseries are changing sides; the breeze veers round, and now blows fair upon my house. The day is past when my chief fell murdered in his bath, and the roof and the very stones of the walls rang with this his cry: O cruel wife, why art thou murdering me on my return to my dear country after ten long years? antistrophe) The tide is turning, and justice that pursues the faithless wife is drawing within its grasp the murderess, who slew her hapless lord, when he came home at last to these towering Cyclopean walls,-aye, with her own hand she smote him with the sharpened steel, herself the axe uplifting. Unhappy husband! whate'er the curse that possessed that wretched woman. Like a lioness of the hills that rangeth through the woodland for her prey, she wrought the deed. <br />CLYTEMNESTRA (within) O my children, by Heaven I pray ye spare your mother. <br />CHORUS (chanting) Dost hear her cries within the house? <br />CLYTEMNESTRA: O God! ah me! <br />CHORUS (chanting) I too bewail thee, dying by thy children's hands. God deals out His justice in His good time. A cruel fate is thine, unhappy one; yet didst thou sin in murdering thy lord. (ORESTES and <br />ELECTRA come out of the hut, followed by attendants who are carrying the two corpses. The following lines between ELECTRA, ORESTES and the CHORUS are chanted.) But lo! from the house they come, dabbled in their mother's fresh-spilt gore, their triumph proving the piteous butchery. There is not nor ever has been a race more wretched than the line of <a href=/people/383 target=_blank>Tantalus</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1147' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1177>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1177'><b>&sect; 1177</b>&nbsp;&nbsp;ORESTES O <a href=/people/3304 target=_blank>Earth</a>, and <a href=/people/1 target=_blank>Zeus</a> whose eye is over all! behold this foul deed of blood, these two corpses lying here that I have slain in vengeance for my sufferings. <br />ELECTRA: Tears are all too weak for this, brother; and I am the guilty cause. Ah, woe is me! How hot my fury burned against the mother that bare me! <br />ORESTES: Alas! for thy lot, O mother mine! A piteous, piteous doom, aye, worse than that, hast thou incurred at children's hands! Yet justly hast thou paid forfeit for our father's blood. Ah, <a href=/people/11033 target=_blank>Phoebus</a>! thine was the voice that praised this vengeance; thou it is that hast brought these hideous scenes to light, and caused this deed of blood. To what city can I go henceforth? what friend, what man of any piety will bear the sight of a mother's murderer like me? <br />ELECTRA: Ah me! alas! and whither can I go? What share have I henceforth in dance or marriage rite? What husband will accept me as his bride? <br />ORESTES: Again thy fancy changes with the wind; for now thou thinkest aright, though not so formerly; an awful deed didst thou urge thy brother against his will to commit, dear sister. Oh! didst thou see how the poor victim threw open her robe and showed her bosom as smote her, sinking on her knees, poor wretch? And her hair I- <br />ELECTRA: Full well I know the agony through which thou didst pass at hearing thy own mother's bitter cry. <br />ORESTES: Ah yes! she laid her band upon my chin, and cried aloud, My child, I entreat thee! and she clung about my neck, so that I let fall the sword. <br />ELECTRA: O my poor mother! How didst thou endure to see her breathe her last before thy eyes? <br />ORESTES: I threw my mantle o'er them and began the sacrifice by plunging the sword into my mother's throat. <br />ELECTRA: Yet 'twas I that urged thee on, yea, and likewise grasped the steel. Oh! I have done an awful deed. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1177' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1227>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1227'><b>&sect; 1227</b>&nbsp;&nbsp;ORESTES Oh! take and hide our mother's corpse beneath a pall, and close her gaping wound. (Turning to the corpse) Ah! thy murderers were thine own children. <br />ELECTRA (covering the corpse) There! thou corpse both loved and loathed; still o'er thee I cast robe, to end the grievous troubles of our house. <br />CHORUS: See! where o'er the roof-top spirits are appearing, or gods maybe from heaven, for this is not a road that mortals tread. Why come they thus where mortal eyes can see them clearly? (THE DIOSCURI appear from above.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1227' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1238>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1238'><b>&sect; 1238</b>&nbsp;&nbsp;DIOSCURI: Hearken, son of <a href=/people/47 target=_blank>Agamemnon</a>. We, the twin sons of <a href=/people/1 target=_blank>Zeus</a>, thy mother's sisters, call thee, even <a href=/people/230 target=_blank>Castor</a> and his brother <a href=/people/327 target=_blank>Polydeuces</a>. 'Tis but now we have reached <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> after stilling the fury of the sea for mariners, having seen the slaying of our sister, thy mother. She hath received her just reward, but thine is no righteous act, and <a href=/people/11033 target=_blank>Phoebus</a>-but no! he is my king, my lips are sealed-is <a href=/people/11033 target=_blank>Phoebus</a> still, albeit the oracle he gave thee was no great proof of his wisdom. But we must acquiesce herein. Henceforth must thou follow what <a href=/people/1 target=_blank>Zeus</a> and destiny ordain for thee. On <a href=/people/663 target=_blank>Pylades</a> bestow <a href=/people/388 target=_blank>Electra</a> for his wife to take unto his home; do thou leave <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>, for after thy mother's murder thou mayst not set foot in the city. And those grim goddesses of doom, that glare like savage <a href=/people/10953 target=_blank>hounds</a>, will drive thee mad and chase thee to and fro; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1238' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1254>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1254'><b>&sect; 1254</b>&nbsp;&nbsp;but go thou to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> and make thy prayer to the holy <a href=/people/12046 target=_blank>image of Pallas</a>, for she will close their fierce <a href=/people/55 target=_blank>serpents</a>' mouths, so that they touch thee not, holding o'er thy head her aegis with the <a href=/people/655 target=_blank>Gorgon</a>'s head. A hill (<a about=https://topostext.org/place/380237LAre class=place long=23.723 lat=37.972>ochthos</a>) there is, to <a href=/people/24 target=_blank>Ares</a> sacred, where first the gods in conclave sat to decide the law of blood, in the day that savage <a href=/people/24 target=_blank>Ares</a> slew <a href=/people/3290 target=_blank>Halirrothius</a>, son of the ocean-king, in anger for the violence he offered to his daughter's honour; from that time all decisions given there are most holy and have heaven's sanction. There must thou have this murder tried; and if equal votes are given, they shall save thee from death in the decision, for <a href=/people/2 target=_blank>Loxias</a> will take the blame upon himself, since it was his oracle that advised thy mother's murder. And this shall be the law for all posterity; in every trial the accused shall win his case if the votes are equal. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1254' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1270>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1270'><b>&sect; 1270</b>&nbsp;&nbsp;Then shall those dread (deinai) goddesses, stricken with grief at this, vanish into a cleft of the earth close to the <a about=https://topostext.org/place/380237LAre class=place long=23.723 lat=37.972>pagos</a>, revered by men henceforth as a place for holy oracles; whilst thou must settle in a city of <a about=https://topostext.org/place/375223RArk class=place long=22.3 lat=37.5>Arcadia</a> on the banks of the river <a about=https://topostext.org/place/376215WAlp class=place long=21.4517 lat=37.6125>Alpheus</a> near the shrine of <a about=https://topostext.org/place/375220LLyk class=person long=21.975 lat=37.4569>Lycaean</a> <a href=/people/2 target=_blank>Apollo</a>, and the <a about=https://topostext.org/place/373222POre class=place long=22.2181 lat=37.3524>city shall be called after thy name</a>. To thee I say this. As for the corpse of <a href=/people/374 target=_blank>Aegisthus</a>, the citizens of <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a> must give it burial; but <a href=/people/53 target=_blank>Menelaus</a>, who has just arrived at <a about=https://topostext.org/place/376228UNau class=place long=22.796 lat=37.565>Nauplia</a> from the sack of <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>, shall bury the, mother, <a href=/people/69 target=_blank>Helen</a> helping him; for she hath come from her sojourn in <a about=https://topostext.org/place/271307REgy class=place long=30.7 lat=27.1>Egypt</a> in the halls of <a href=/people/5355 target=_blank>Proteus</a>, and hath never been to <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Troy</a>; but <a href=/people/1 target=_blank>Zeus</a>, to stir up strife and bloodshed in the world, sent forth a phantom of <a href=/people/69 target=_blank>Helen</a> to <a about=https://topostext.org/place/400262UIli class=place long=26.2389 lat=39.9575>Ilium</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1270' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1284>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1284'><b>&sect; 1284</b>&nbsp;&nbsp;Now let <a href=/people/663 target=_blank>Pylades</a> take his maiden wife and bear her to his home in <a about=https://topostext.org/place/382219RAch class=place long=21.9 lat=38.2>Achaea</a>; also he must conduct thy so-called kinsman to the land of <a about=https://topostext.org/place/386227RPho class=place long=22.7 lat=38.6>Phocis</a>, and there reward him well. But go thyself along the narrow <a about=https://topostext.org/place/379230LIst class=place long=22.973 lat=37.928>Isthmus</a>, and seek <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Cecropia</a>'s happy home. For once thou hast fulfilled the doom appointed for this murder, thou shalt be blest and free from all thy troubles. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1284' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1292>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1292'><b>&sect; 1292</b>&nbsp;&nbsp;CHORUS: Ye sons of <a href=/people/1 target=_blank>Zeus</a>, may we draw near to speak with you? <br />DIOSCURI: Ye may, since ye are not polluted by this murder. <br />ORESTES: May I too share your converse, of <a href=/people/362 target=_blank>Tyndareus</a>? <br />DIOSCURI: Thou too! for to <a href=/people/11033 target=_blank>Phoebus</a> will I ascribe this deed of blood. <br />CHORUS: How was it that ye, the brothers of the murdered woman, gods too, did not ward the doom-goddesses from her roof? <br />DIOSCURI 'Twas fate that brought resistless doom to her, and that thoughtless oracle that <a href=/people/11033 target=_blank>Phoebus</a> gave. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1292' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1303>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1303'><b>&sect; 1303</b>&nbsp;&nbsp;ELECTRA But why did the god, and wherefore did his oracles make me my mother's murderer? <br />DIOSCURI: A share in the deed, a share in its doom; one ancestral curse hath ruined both of you. <br />ORESTES: Ah, sister mine! at last I see thee again only to be robbed in moment of thy dear love; I must leave thee, and by thee be left. <br />DIOSCURI: Hers are a husband and a home; her only suffering this, that she is quitting <a about=https://topostext.org/place/376227PArg class=place long=22.7195 lat=37.6316>Argos</a>. <br />ORESTES: Yet what could call forth deeper grief than exile from one's fatherland? I must leave my father's house, and at a stranger's bar he sentenced for my mother's blood. <br />DIOSCURI: Be of good cheer; go to the holy town of <a href=/people/429 target=_blank>Pallas</a>; keep a stout heart only. <br />ELECTRA: O my brother, best and dearest! clasp me to thy breast; for now is the curse of our mother's blood cutting us off from the home of our fathers. <br />ORESTES: Throw thy arms in close embrace about me. Oh! weep as o'er my grave when I am dead. <br />DIOSCURI: Ah me, that bitter cry makes even gods shudder to hear. Yea, for in my breast and in every heavenly being's dwells pity for the sorrows of mankind. <br />ORESTES: Never to see thee more! </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1303' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1333>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1333'><b>&sect; 1333</b>&nbsp;&nbsp;ELECTRA Never again to stand within thy sight! <br />ORESTES: This is my last good-bye to thee. <br />ELECTRA: Farewell, farewell, my city! and ye my fellow-countrywomen, long farewell to you! <br />ORESTES: Art thou going already, truest of thy sex? <br />ELECTRA: I go, the tear-drop dimming my tender eyes. <br />ORESTES: Go, <a href=/people/663 target=_blank>Pylades</a>, and be happy; take and wed <a href=/people/388 target=_blank>Electra</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1333' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1342>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1342'><b>&sect; 1342</b>&nbsp;&nbsp;DIOSCURI: Their only thoughts will be their marriage; but haste thee to <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a>, seeking to escape these <a href=/people/10953 target=_blank>hounds</a> of hell, for they are on thy track in fearful wise, swart monsters, with <a href=/people/55 target=_blank>snakes</a> for hands, who reap a harvest of man's agony. But we twain must haste away o'er the <a about=https://topostext.org/place/376145RSic class=demonym long=14.5 lat=37.6>Sicilian</a> main to save the seaman's ship. Yet as we fly through heaven's expanse we help not the wicked; but whoso in his life loves piety and justice, all such we free from troublous toils and save. Wherefore let no man be minded to act unjustly, or with men foresworn set sail; such the warning I, a god, to mortals give. (THE DIOSCURI vanish.) </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1342' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=1357>
+                            <p id='urn:cts:greekLit:tlg0006.tlg042:1357'><b>&sect; 1357</b>&nbsp;&nbsp;CHORUS: Farewell! truly that mortal's is a happy lot, who can thus fare, unafflicted by any woe. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg012.perseus-grc1:1357' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1000                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=45', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas45";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=45';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

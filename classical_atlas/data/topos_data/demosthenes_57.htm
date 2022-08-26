@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Demosthenes 57, Against Eubulides' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='Against Eubulides, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='-350' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to -350' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='CC license' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/457' content='urn:cts:greekLit:tlg0014.tlg057' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79063465' content='Demosthenes'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n88615458' content='Augustus Taber Murray (1866-1940)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman' /><h2>Demosthenes 57, Against Eubulides</h2>Against Eubulides, Demosthenes with an English translation by A. T. Murray, Ph.D., LL.D., Loeb Classical Library (Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1939.) digitized by the Perseus Project with support from the Annenberg CPB/Project and shared under a Creative Commons 3.0 License. This text has 47 tagged references to 13 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg057'>urn:cts:greekLit:tlg0014.tlg057</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87738432'>Q87738432</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:1'><b>&sect; 1</b>&nbsp;&nbsp;Since <a href=/people/579 target=_blank>Eubulides</a> has brought many false charges against me, and has uttered slanders which are neither becoming nor just, I shall try, men of the jury, to prove by a true and fair statement that I am entitled to citizenship, and that I have been unworthily treated by this fellow. I beg you all, men of the jury, and implore and beseech you, that in view of the great importance of the present trial and the shame and ruin which conviction entails, you will hear me, as you have heard my opponent, in silence; indeed that you will listen to me with greater goodwill, if possible, than you have listened to him (for it is reasonable to suppose that you are more favorably disposed to those who stand in peril), but, if this cannot be, at least with equal goodwill. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:2'><b>&sect; 2</b>&nbsp;&nbsp;But it so happens, men of the jury, that, although I am of good cheer so far as you are concerned and my right to citizenship and have good hopes of coming through this trial well, yet the occasion alarms me and the temper shown by the state when it has to deal with cases of disfranchisement; for while many have with justice been expelled from all the demes, we who have been the victims of political rivalry are involved in the prejudice felt toward them and have to combat the charge brought against them, and not merely defend each his own case; so that our alarm is necessarily great. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:3'><b>&sect; 3</b>&nbsp;&nbsp;Nevertheless, despite these disadvantages, I shall at once tell you what I hold to be right and just about these very matters. In my opinion it is your duty to treat with severity those who are proved to be aliens, who without having either won your consent or asked for it, have by stealth and violence come to participate in your religious rites and your common privileges, but to bring help and deliverance to those who have met with misfortune and can prove that they are citizens; for you should consider how pitiful above all others would be the plight of us whose rights have been denied, if, when we might properly sit with you as those exacting the penalty, we should be numbered with those who pay it, and should unjustly be condemned along with them because of the passion which the subject arouses. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:3' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:4'><b>&sect; 4</b>&nbsp;&nbsp;I should have thought, men of the jury, that it was fitting for <a href=/people/579 target=_blank>Eubulides</a>, and for all those who are now making accusations in cases of disfranchisement, to state only things of which they have accurate knowledge and to bring forward no hearsay evidence in a trial of this sort. Such a procedure has from time immemorial been recognized as so clearly unjust that the laws do not admit the production of hearsay testimony even in the case of the most trifling charges; and with good reason; for when persons who claim to have sure knowledge have ere now been convicted of falsehood, how can it be right to give credence in matters regarding which even the speaker himself has no knowledge? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:5'><b>&sect; 5</b>&nbsp;&nbsp;And when it is not permitted a man, even when he makes himself responsible, to harm another by evidence which he declares he has heard, how can it be right for you to give credence to one who speaks without responsibility? Since, then, this fellow, who knows the laws, and knows them all too well, has made his charges with injustice and with a view to selfish advantage, I must first tell you of the outrageous treatment which I received among my fellow-demesmen. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:6'><b>&sect; 6</b>&nbsp;&nbsp;I beg of you, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, not until I have been heard, to take my rejection by the demesmen as a proof that I am not entitled to citizenship, for if you thought that the demesmen would be able to decide all cases with perfect justice, you would not have allowed the appeal to yourselves. As it is, however, because you thought that something of this sort might occur through rivalry and malice and enmity or through some other pretexts, you made your court a place of refuge for those who have been wronged, and through this right action on your part, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, you have saved all those who have suffered wrong. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:7'><b>&sect; 7</b>&nbsp;&nbsp;First, then, I will explain to you how the purging of the list came to be made at the meeting of the demesmen; for I think it is relevant to the case before you if one shows all the wrongs that one has suffered contrary to your decree, when overwhelmed by political rivalry. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:8'><b>&sect; 8</b>&nbsp;&nbsp;This man <a href=/people/579 target=_blank>Eubulides</a>, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, as many of you know, indicted the sister of <a href=/people/10865 target=_blank>Lacedemonius</a> for impiety, but did not receive a fifth part of the votes. It is because in that trial I gave testimony that was true but unfavorable to him that he hates me and makes me the object of his attacks. Being a member of the senate, men of the jury, with power to administer the oath and being custodian of the documents on the basis of which he convened the demesmen, what does he do? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:9'><b>&sect; 9</b>&nbsp;&nbsp;In the first place, after the demesmen had assembled, he wasted the whole day in making speeches and in drawing up resolutions. This was not done by accident, but was a part of his plot against me, in order that the vote regarding me might take place as late in the day as possible; and he accomplished this end. Those of us members of the deme who took the oath numbered seventy-three, and we began voting late in the evening, with the result that, when my name was called, it was already dark; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:10'><b>&sect; 10</b>&nbsp;&nbsp;for my name was about the sixtieth, and I was the last of all those called on that day, when the older members of the deme had gone back to their farms. For since our deme is distant thirty-five stades from the city and most of the demesmen live there, the majority of them had gone home; those who remained were not more than thirty in number; among them, however, were all those suborned by <a href=/people/579 target=_blank>Eubulides</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:11'><b>&sect; 11</b>&nbsp;&nbsp;When my name was called, the fellow jumped up and immediately began to vilify me, speaking at great length and with a loud voice, as he did just now. He produced no witnesses in support of his charges, either a member of the deme or one of the citizens at large, but urged the demesmen to pass a vote of expulsion. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:12'><b>&sect; 12</b>&nbsp;&nbsp;I demanded that the vote be put off until the following day on account of the lateness of the hour and because I had no one present to speak in my behalf, and because the thing had come upon me so suddenly, and also that <a href=/people/579 target=_blank>Eubulides</a> might have the opportunity of making any charges that he pleased, and of producing any witnesses he might have, while I on my part might be able to defend myself before all my fellow-demesmen and to produce my relatives as witnesses; and I agreed to abide by whatever decision they might reach concerning me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=13>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:13'><b>&sect; 13</b>&nbsp;&nbsp;The fellow, however, paid no heed at all to my proposals, but proceeded at once to give ballots to the members of the deme who were present, without allowing me to make any defence or himself giving any convincing proof of his charges. Those who were in league with him then jumped up and gave their votes. It was dark, and they received from him two or three ballots apiece, and put them in the box. Here is a proof of this. Those who voted were not more than thirty in number, but the ballots, when counted, were more than sixty; so that we were all astounded. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:13' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:14'><b>&sect; 14</b>&nbsp;&nbsp;To prove that I am stating the truth in this — that the ballots were not given out when all were present and that the ballots outnumbered those who voted — I will bring before you witnesses. It happens that I have at hand no friend of my own or any other <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> to be my witness regarding these facts since the hour was so late and I had not asked anyone to be present, but I am forced to call as witnesses the very men who have wronged me. I have thereore put in writing for them statements which they will not be able to deny. Read. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:15'><b>&sect; 15</b>&nbsp;&nbsp;Now, men of the jury, if the <a about=https://topostext.org/place/379237DHal class=ethnic long=23.7321 lat=37.906>Halimusians</a> had been deciding on that day the status of all the members of the deme, it would have been reasonable for them to continue voting until late, in order that they might have fulfilled the requirements of your decree before departing to their homes. But, seeing that there were more than twenty of the demesmen left regarding whom they had to vote on the following day, and that the members of the deme had in any case to be convened again, what difficulty was there for <a href=/people/579 target=_blank>Eubulides</a> to order an adjournment until the morrow, and then let the demesmen vote upon my case first? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:16'><b>&sect; 16</b>&nbsp;&nbsp;The reason was, men of the jury, that <a href=/people/579 target=_blank>Eubulides</a> knew very well that, if an opportunity of speaking should be granted me and if all the men of the deme should be present to support me and the ballots honestly given out, those who had leagued themselves with him would be nowhere! How these people came to form their conspiracy against me I will tell you, if you wish to hear it, as soon as I shall have spoken about my parentage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:17'><b>&sect; 17</b>&nbsp;&nbsp;In the meantime what do I hold to be just, and what am I prepared to do, men of the jury? To show you that I am an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> on both my father's and my mother's side, and to produce to prove it witnesses whose veracity you will not question, and to break down the calumnies and the charges brought against me. It will rest with you, when you have heard my statements, if you conclude that I am a citizen and the victim of a conspiracy, to come to my rescue; but if you reach a different conclusion, to act in whatever way your regard for your oaths may bid you. I will begin with this proof. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:18'><b>&sect; 18</b>&nbsp;&nbsp;They have maliciously asserted that my father spoke with a foreign accent. But that he was taken prisoner by the enemy in the course of the <a about=https://topostext.org/place/382238DDek class=demonym long=23.794 lat=38.151>Decelean</a> war and was sold into slavery and taken to <a about=https://topostext.org/place/387207PLeu class=place long=20.717 lat=38.81>Leucas</a>, and that he there fell in with <a href=/people/857 target=_blank>Cleander</a>, the actor, and was brought back here to his kinsfolk after a long lapse of time — all this they have omitted to state; but just as though it were right that I should be brought to ruin on account of his misfortunes, they have made his foreign accent the basis of a charge against him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=19>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:19'><b>&sect; 19</b>&nbsp;&nbsp;On my part, however, I think that these very facts will more than anything else help me to demonstrate that I am an <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>. In the first place, to prove that my father was taken prisoner and was ransomed, I will bring witnesses before you; then, that when he reached home he received from his uncles his share of the property; and furthermore, that neither among the members of the deme nor among those of the clan nor anywhere else did anyone ever accuse him (despite his foreign accent) with being a foreigner. Please take the depositions. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:19' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:20'><b>&sect; 20</b>&nbsp;&nbsp;You have heard, then, of my father's being taken prisoner by the enemy and of the good fortune which brought him back here. To prove now that he was your fellow-citizen, men of the jury (for this you may depend upon as being the veritable truth), I will call as witnesses those of my relatives on my father's side who are still living. Call first, please, Thucritides and Charisiades; for their father <a href=/people/7475 target=_blank>Charisius</a> was brother to my grandfather Thucritides and my grandmother <a href=/people/9717 target=_blank>Lysarete</a>, and uncle to my father (for my father had married his sister born of a different mother). </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:21'><b>&sect; 21</b>&nbsp;&nbsp;Next, call <a href=/people/5825 target=_blank>Niciades</a>; for his father <a href=/people/1783 target=_blank>Lysanias</a> was brother to Thucritides and <a href=/people/9717 target=_blank>Lysarete</a>, and uncle to my father. After him, call <a href=/people/474 target=_blank>Nicostratus</a>; for his father <a href=/people/5825 target=_blank>Niciades</a> was nephew to my grandfather and my grandmother, and cousin to my father. Call all these persons, please. And do you check the water. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=22>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:22'><b>&sect; 22</b>&nbsp;&nbsp;You have heard, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, the relatives of my father on the male side both deposing and swearing that my father was an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> and their own kinsman. And surely not one of them would commit perjury with imprecations on his own head in the presence of those who would know that he was forswearing himself. Now take also the depositions of those related to my father on the female side. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:22' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:23'><b>&sect; 23</b>&nbsp;&nbsp;These persons, then, the surviving relatives of my father, on both the male and the female side, have testified that he was on both sides an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> and justly entitled to the rights of citizenship. Now call, please, the clansmen and thereafter the members of the gens. Witnesses Now take the depositions of the demesmen and the members of the gens in regard to the clansmen, to show that they elected me president of the clan. Depositions </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:24'><b>&sect; 24</b>&nbsp;&nbsp;You have heard, then, the testimony given by my relatives and fellow-clansmen and by the members of the deme and of the gens, who are the proper persons to be called upon to testify. And from this you may learn whether a man who has this support is a citizen or an alien. If we were seeking protection in the testimony of one or two people only, we might be open to the suspicion that we had suborned them; but if it appears that my father in his lifetime and I myself at present have been put to the test before all the groups to which each one of you belongs (I mean those of clan, of kindred, of the deme, and of the gens), how can it be, how can it possibly be, that all these persons have been suborned to appear, they not being in truth relatives of mine? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:25'><b>&sect; 25</b>&nbsp;&nbsp;If it were shown that my father was a man of wealth and had given money to these people to persuade them to assert that they were his relatives, it would have been reasonable for anyone to suspect that he was not a citizen; but if, poor as he was, he both produced these same people as his relatives and proved that they had shared their property with him, is it not perfectly clear that he was indeed related to them? For surely, if he was related to no one of them, they would not have admitted him to a place in the gens and have given him money besides. No; he was related to them, as the facts have shown, and as witnesses have testified to you. And furthermore, he was chosen to offices by lot, and he passed the probationary test, and held office. Take the deposition, please. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=26>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:26'><b>&sect; 26</b>&nbsp;&nbsp;Now does any one of you imagine that the demesmen would have suffered the alien and non-citizen to hold office among them, and would not have prosecuted him? Well, not a single man prosecuted him, or brought any charge against him. More than that, the demesmen had of necessity to vote on one another, after binding themselves by solemn oaths, when their voting-register was lost during the administration as prefect of the deme of <a href=/people/1199 target=_blank>Antiphilus</a>, the father of <a href=/people/579 target=_blank>Eubulides</a>, and they expelled some of their members; but not a man made any motion about my father or brought any such charges against him. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:26' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:27'><b>&sect; 27</b>&nbsp;&nbsp;Yet for all men the end of life is death; and with whatsoever wrongdoings a man may be charged during his lifetime, it is right that for these his children should forever be held accountable; but in matters concerning which no man ever made accusation against him while he lived, is it not outrageous that anyone so wishing should bring his children to trial? If, now, there had been no inquiry into the question, let us grant that the matter has escaped notice; but if inquiry was made and the demesmen reviewed their lists, and no one ever made any accusation, ought I not justly to be regarded as an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> so far as my father is concerned, seeing that he died before any dispute regarding his lineage arose? To prove that these statements of mine are true, I will call witnesses who depose to these facts also. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:28'><b>&sect; 28</b>&nbsp;&nbsp;Furthermore, my father had four sons born of the same mother as myself, and when they died he buried them in our ancestral tomb, which belongs in common to all members of the gens; and no one of these kinsfolk ever made protest or prevented it or brought suit. And yet, who is there who would have permitted persons having no connection with the family to be placed in the ancestral tomb? To prove that these statements of mine also are true, take the deposition. Deposition </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:29'><b>&sect; 29</b>&nbsp;&nbsp;With regard to my father, then, these are the grounds for my assertion that he was an <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>; and I have brought forward as witnesses persons whom my opponents themselves have voted to be citizens, and who depose that my father was their own cousin. It is shown that he lived such and such a number of years here in <a about=https://topostext.org/place/379239RAtt class=place long=23.9 lat=37.9>Attica</a> and that he was never in any place brought under scrutiny as being an alien, but that he found a refuge with these persons as his relatives, and that they both received him and gave him a share of their property as being one of themselves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:30'><b>&sect; 30</b>&nbsp;&nbsp;Again, it is shown that he was born in a period when, even if he was an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> on one side only, he was entitled to citizenship; for he was born before the archonship of Hucleides. With regard to my mother (for they make her too a reproach against me) I will speak, and will call witnesses to support my statements. And yet, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, in reproaching us with service in the market <a href=/people/579 target=_blank>Eubulides</a> has acted, not only contrary to your decree, but also contrary to the laws which declare that anyone who makes business in the market a reproach against any male or female citizen shall be liable to the penalties for evil-speaking. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=31>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:31'><b>&sect; 31</b>&nbsp;&nbsp;We on our part acknowledge that we sell ribbons and do not live in the manner we could wish, and if in your eyes, <a href=/people/579 target=_blank>Eubulides</a>, this is a sign that we are not <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, I shall prove to you the very opposite — that it is not permitted to any alien to do business in the market. Take first the law of <a href=/people/76 target=_blank>Solon</a> and read it, please. Law </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:31' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=32>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:32'><b>&sect; 32</b>&nbsp;&nbsp;Now take also the law of <a href=/people/979 target=_blank>Aristophon</a>; for, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, <a href=/people/76 target=_blank>Solon</a> was thought to have enacted in this instance so wise and democratic a law that you voted to re-enact it. Law It is fitting that you, then, acting in defence of the laws, should hold, not that those who ply a trade are aliens, but that those who bring malicious and baseless suits are scoundrels. For, <a href=/people/579 target=_blank>Eubulides</a>, there is another law too regarding idleness to which you, who denounce us who are traders, are amenable. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:32' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:33'><b>&sect; 33</b>&nbsp;&nbsp;But we are at the present time involved in a misfortune so great that, whereas it is permitted to this fellow to make slanderous statements which have nothing to do with the case, and to avail himself of every possible means to prevent my obtaining my rights in any particular, you will perhaps rebuke me, if I tell you what sort of a trade this man plies as he goes about the city; and you would do so with good reason, for what need is there for me to tell you what you know? But consider. It seems to me certainly that our carrying on a trade in the <a about=https://topostext.org/place/380237XAgo class=place long=23.723 lat=37.975>Agora</a> is the strongest proof that this fellow is bringing against us charges which are false. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:34'><b>&sect; 34</b>&nbsp;&nbsp;He asserts that my mother is a vendor of ribbons and that everybody has seen her. Well then, there ought to be many to testify from knowledge who she is, and not from hearsay only. If she was an alien, they ought to have examined the market-tolls, and have shown whether she paid the alien's tax, and from what country she came; and if she were a slave, then the one who had bought her should by all means have come to give evidence against her, or the one who sold her, or in default of them, someone else to prove that she had lived as a slave or had been set free. But as it is, <a href=/people/579 target=_blank>Eubulides</a> has proved not one of these things; he has merely, in my opinion, indulged in every form of abuse. For this is what a blackmailer is; he makes all manner of charges, but proves nothing. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:35'><b>&sect; 35</b>&nbsp;&nbsp;He has said this too about my mother, that she served as a nurse. We, on our part, do not deny that this was the case in the time of the city's misfortune, when all people were badly off; but in what manner and for what reasons she became a nurse I will tell you plainly. And let no one of you, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, be prejudiced against us because of this; for you will find today many <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> women who are serving as nurses; I will mention them by name, if you wish. If we were rich we should not be selling ribbons nor be in want in any way. But what has this to do with our descent? Nothing whatever, in my opinion. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:36'><b>&sect; 36</b>&nbsp;&nbsp;Pray, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, do not scorn the needy (their poverty is misfortune enough), and scorn still less those who choose to engage in trade and get their living by honest means. No; listen to my words, and if I prove to you that my mother's relatives are such as free-born people ought to be; that they deny upon oath the calumnious charges which this man makes regarding her, and testify that they know her to be of civic birth — they on their part being witnesses whom you yourselves will acknowledge to be worthy of credence -, then, as you are bound to do, cast your votes in my favor. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=37>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:37'><b>&sect; 37</b>&nbsp;&nbsp;My grandfather, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, the father of my mother, was <a href=/people/4963 target=_blank>Damostratus</a> of <a about=https://topostext.org/place/380237DMel class=person long=23.719 lat=37.975>Melite</a>. To him were born four children; by his first wife a daughter and a son <a href=/people/4838 target=_blank>Amytheon</a>, and by his second wife <a href=/people/7468 target=_blank>Chaerestrate</a> my mother and <a href=/people/250 target=_blank>Timocrates</a>. These also had children. <a href=/people/4838 target=_blank>Amytheon</a> had a son <a href=/people/4963 target=_blank>Damostratus</a>, who bore the same name as his grandfather, and two others, <a href=/people/659 target=_blank>Callistratus</a> and <a href=/people/5608 target=_blank>Dexitheus</a>. <a href=/people/4838 target=_blank>Amytheon</a>, my mother's brother, was one of those who served in the campaign in <a about=https://topostext.org/place/376145RSic class=place long=14.5 lat=37.6>Sicily</a> and were killed there, and he lies buried in the public tomb. These facts will be proved to you by testimony. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:37' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=38>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:38'><b>&sect; 38</b>&nbsp;&nbsp;To <a href=/people/4838 target=_blank>Amytheon</a>'s sister, who married <a href=/people/199 target=_blank>Diodorus</a> of <a about=https://topostext.org/place/379238DHal class=person long=23.7783 lat=37.8341>Halae</a>, was born a son <a href=/people/2102 target=_blank>Ctesibius</a>, and he was killed in <a about=https://topostext.org/place/402264PAby class=place long=26.4091 lat=40.1951>Abydus</a> while serving in the campaign with <a href=/people/253 target=_blank>Thrasybulus</a>. Of these relatives there is living <a href=/people/4963 target=_blank>Damostratus</a>, son of <a href=/people/4838 target=_blank>Amytheon</a> and nephew of my mother. The sister of my grandmother <a href=/people/7468 target=_blank>Chaerestrate</a> was married to <a href=/people/110 target=_blank>Apollodorus</a> of <a about=https://topostext.org/place/381239DPlo class=person long=23.8767 lat=38.1264>Plotheia</a>. They had a son <a href=/people/3646 target=_blank>Olympichus</a>, and <a href=/people/3646 target=_blank>Olympichus</a> a son <a href=/people/110 target=_blank>Apollodorus</a>, who is still living. Call these people, please. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:38' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:39'><b>&sect; 39</b>&nbsp;&nbsp;These witnesses, then, you have heard giving their testimony and taking their oaths. I will call also one who is our kinsman on both sides, and his sons. For <a href=/people/250 target=_blank>Timocrates</a>, who is my mother's brother, born from the same father and the same mother, had a son <a href=/people/4151 target=_blank>Euxitheus</a>, and <a href=/people/4151 target=_blank>Euxitheus</a> had three sons. All these persons are still living. Call, please, those of them who are in the city. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:40'><b>&sect; 40</b>&nbsp;&nbsp;Now take, please, the depositions of the members of the clan belonging to the same gens as my mother, and of the members of the deme, and of those who have the right of burial in the same tombs. Depositions As to my mother's lineage, then, I prove to you in this way that she was an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> on both the male and the female side. My mother, men of the jury, first married <a href=/people/2439 target=_blank>Protomachus</a>, to whom she was given by <a href=/people/250 target=_blank>Timocrates</a>, her brother born of the same father and the same mother; and she had by him a daughter. Then she married my father and gave birth to me. But how it was that she came to marry my father you must hear; for the charges which my opponent makes regarding <a href=/people/810 target=_blank>Cleinias</a> and my mother's having served as nurse — all this too I will set forth to you clearly. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=41>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:41'><b>&sect; 41</b>&nbsp;&nbsp;<a href=/people/2439 target=_blank>Protomachus</a> was a poor man, but becoming entitled to inherit a large estate by marrying an heiress, and wishing to give my mother in marriage, he persuaded my father Thucritus, an acquaintance of his, to take her, and my father received my mother in marriage at the hands of her brother <a href=/people/250 target=_blank>Timocrates</a> of <a about=https://topostext.org/place/380237DMel class=person long=23.719 lat=37.975>Melite</a>, in the presence of both his own uncles and other witnesses; and of these as many as are still living shall give testimony before you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:41' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:42'><b>&sect; 42</b>&nbsp;&nbsp;Some time after this, when by now two children had been born to her, she was compelled at a time when my father was absent on military service with <a href=/people/253 target=_blank>Thrasybulus</a> and she herself was in hard straits, to take <a href=/people/810 target=_blank>Cleinias</a>, the son of <a href=/people/12460 target=_blank>Cleidicus</a>, to nurse. This act of hers was, Heaven knows, none too fortunate with reference to the danger which has now come upon me (for it was from this nursing that all the slander about us has arisen); but in view of the poverty with which she had to cope she did what was perhaps both necessary and fitting. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=43>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:43'><b>&sect; 43</b>&nbsp;&nbsp;Now it is plain, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that it was not my father who first received my mother in marriage. No; it was <a href=/people/2439 target=_blank>Protomachus</a>, and he had by her a son, and a daughter whom he gave in marriage. And he, even though dead, bears testimony by what he did that my mother was an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> and of civic birth. To prove that these statements of mine are true, call first, please, the sons of <a href=/people/2439 target=_blank>Protomachus</a>, and next the witnesses who were present when my mother was betrothed to my father, and from the members of the clan the kinsfolk to whom my father gave the marriage-feast in honor of my mother. After them call <a href=/people/3597 target=_blank>Eunicus</a> of <a about=https://topostext.org/place/381237DCho class=person long=23.7391 lat=38.0564>Cholargus</a>, who received my sister in marriage from <a href=/people/2439 target=_blank>Protomachus</a>, and then my sister's son. Call them. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:43' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=44>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:44'><b>&sect; 44</b>&nbsp;&nbsp;Would not my lot, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, be more piteous than that of any other, if, when all this host of witnesses deposes and swears that they are of my kin, and when no one disputes the citizenship of any one of these, you should vote that I am an alien? Take, please, also the deposition of <a href=/people/810 target=_blank>Cleinias</a> and that of his relatives; for they, I presume, know who my mother was who once served as his nurse. Their oath requires them to bear witness, not to what I say today, but to what they have always known regarding her who was reputed to be my mother and the nurse of <a href=/people/810 target=_blank>Cleinias</a>. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:44' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=45>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:45'><b>&sect; 45</b>&nbsp;&nbsp;For even if a nurse is a lowly thing, I do not shun the truth. For it is not our being poor that would mark us as wrong-doers, but our not being citizens; and the present trial has to do, not with our fortune or our money, but with our descent. Many are the servile acts which free men are compelled by poverty to perform, and for these they should be pitied, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, rather than be brought also to utter ruin. For, as I am informed, many women have become nurses and laborers at the loom or in the vineyards owing to the misfortunes of the city in those days, women of civic birth, too; and many who were poor then are now rich. However, I shall speak of these matters by and by. For the moment, please call the witnesses. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:45' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=46>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:46'><b>&sect; 46</b>&nbsp;&nbsp;Well then, that I am a citizen on both my mother's and my father's side you have all learned, partly from the testimony which has just been given and partly from that previously given regarding my father. It remains for me to speak to you about myself — and my statement is, I think, the simplest and the most reasonable -, that, since I am of civic birth on the side of both parents and have shared by inheritance both the property and the family, I am a citizen. Nevertheless I will produce witnesses to establish also all the circumstances which befit a citizen — that I was inducted into the clan, that I was enrolled on the register of the demesmen, that by these men themselves I was nominated among the noblest-born to draw lots for the priesthood of <a href=/people/4 target=_blank>Heracles</a>, and that I passed the scrutiny and held offices. Call them, please. Witnesses </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:46' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=47>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:47'><b>&sect; 47</b>&nbsp;&nbsp;Is it not an outrage, men of the jury, that, whereas, if I had been chosen by lot as priest, even as I had been nominated, it would have been my duty to offer sacrifice on behalf of these people, and <a href=/people/579 target=_blank>Eubulides</a> would have had to join in the sacrifice with me, — is it not an outrage, I ask, that these same people should not allow me even to share in the sacrifices with them? It is plain, then, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that in all previous time I have been acknowledged as a citizen by all those who now accuse me; </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:47' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=48>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:48'><b>&sect; 48</b>&nbsp;&nbsp;for surely <a href=/people/579 target=_blank>Eubulides</a> would never have suffered the foreigner or resident alien, as he now calls me, either to hold offices or to draw lots with himself as a nominee for the priesthood; for he too was one of the nominees who drew lots. Nor, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, seeing that he is an old enemy of mine, would he have waited for the present opportunity, which no one could foresee, if he had known any such facts regarding me. But he did not know them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:48' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=49>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:49'><b>&sect; 49</b>&nbsp;&nbsp;So, then, although he continued throughout all the past to act as a member of the deme and to draw lots for offices together with me without seeing any of these objections, yet, when the whole city was roused to sharp indignation against those who had recklessly forced their way into the demes, then, and not till then, he laid his plots. The earlier time would have suited one who was convinced of the truth of his charges; but the present suits an enemy and one who will stoop to malicious pettifoggery. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:49' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=50>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:50'><b>&sect; 50</b>&nbsp;&nbsp;For my own part, men of the jury (and I beg you by <a href=/people/1 target=_blank>Zeus</a> and the gods, let no one make an outcry or be vexed at what I am going to say), I hold myself to be an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> on the same grounds on which each one of you holds himself to be one, having from the first regarded as my mother her whom I represent as such to you, and not pretending to be hers while really belonging to another; and in regard to my father the case is the same. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:50' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=51>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:51'><b>&sect; 51</b>&nbsp;&nbsp;Yet, if in the case of those who are proved to have hidden their real parentage and laid claim to a false one, you rightly hold this to be a proof that they are aliens, surely in my case the opposite should prove that I am a citizen. For in claiming the rights of citizenship I should never have inscribed myself as the son of parents who were both foreigners, but, if I had known any such thing, I should have sought out persons to claim as my parents. But I knew nothing of the sort, and so, holding fast to those who are my real parents, I claim <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> citizenship. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:51' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=52>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:52'><b>&sect; 52</b>&nbsp;&nbsp;Again, I was left an orphan; and yet they say that I am rich and that some of the witnesses testify that they are my relatives because they receive help from me. They taunt me with my poverty and make my birth a reproach, but at the same time they assert that I am rich enough to buy anything. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:52' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=53>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:53'><b>&sect; 53</b>&nbsp;&nbsp;In which statement, then, is one to believe them? It surely would have been their right, if I had been illegitimate or an alien, to inherit all my property. Do they prefer, then, to take a little and jeopardize themselves by giving false testimony and to commit perjury, rather than to take everything, and that with safety, without having invoked a curse upon their own heads? This is not the case. No; in my opinion, seeing that they are my relatives, they are but doing what is right in aiding one of themselves. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:53' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=54>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:54'><b>&sect; 54</b>&nbsp;&nbsp;And they are not doing this at this time because I have induced them to do so; on the contrary, when I was a child they at once took me to the phratry, they took me to the shrine of <a href=/people/2 target=_blank>Apollo</a> <a about=https://topostext.org/place/380237SPtr class=place long=23.7221 lat=37.97554>Patroos</a>, and to the other sacred places. And yet I presume that as a child I did not induce these men to do this by giving them money. No; my father himself, while he still lived, swore the customary oath and introduced me to the phratry, knowing that I was an <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>, born of an <a about=https://topostext.org/place/380237PAth class=demonym long=23.72793 lat=37.9718>Athenian</a> mother, lawfully betrothed to himself; and these facts have been established by testimony. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:54' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=55>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:55'><b>&sect; 55</b>&nbsp;&nbsp;Am I, then, an alien? Where have I paid the resident alien's tax? Or what member of my family has ever paid it? Have I ever gone to the members of another deme and, because I could not induce them to accept me, got myself registered in this one? Have I done any of the things which all those who are not genuine citizens are proved to have done? Certainly not. No; in a word I manifestly have lived as a member of the deme among the same people among whom my father's grandfather, my own grandfather, and my father himself lived. And now, how could anyone prove to you more convincingly than I have done that he is entitled to the rights of citizenship? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:55' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=56>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:56'><b>&sect; 56</b>&nbsp;&nbsp;Let each one of you consider, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, in what other way he could prove that people are his kinsmen than in the way in which I have proved it — by having them give testimony under oath and showing that they have always been my kinsmen from the beginning. It is for these reasons that I have confidence in my case and have come to you for protection. For I see, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that the decisions of your courts are more valid not only than those of the <a about=https://topostext.org/place/379237DHal class=ethnic long=23.7321 lat=37.906>Halimusians</a> who have expelled me, but more valid even than those of the senate and the popular assembly; and justly so; for in all respects the verdicts of your courts are most just. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:56' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=57>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:57'><b>&sect; 57</b>&nbsp;&nbsp;Reflect upon this also, all you who belong to the large demes, that you are not wont to deprive any man of his right of accusation and defence. And I invoke many blessings upon the heads of all of you who have dealt fairly with this matter, because you did not deprive of the opportunity to prepare their case those who asked for a delay. By taking this course you exposed the pettifoggers and those who were maliciously scheming against others. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:57' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=58>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:58'><b>&sect; 58</b>&nbsp;&nbsp;You are deserving of praise for this, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>; but those are to be blamed who have misused a procedure that was both admirable and just. In no other of the demes will you find that more outrageous things have been done than in ours. Of brothers born of the same mother and the same father they have expelled some and retained others, and they have expelled elderly men of slender means, while they have left their sons on the list of demesmen; and to prove these things I will call witnesses, if you wish. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:58' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=59>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:59'><b>&sect; 59</b>&nbsp;&nbsp;But you must hear the most outrageous thing which these conspirators have done (and I beg you in the name of <a href=/people/1 target=_blank>Zeus</a> and the gods, let no one of you be offended if I show the rascality of these men who have wronged me. For I hold that in showing what scoundrels they are I am speaking with precise reference to the experience which has befallen me). For, you must know, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, that when certain aliens, <a href=/people/666 target=_blank>Anaximenes</a> and <a href=/people/474 target=_blank>Nicostratus</a>, wished to become citizens, these scoundrels admitted them for a sum of money, which they divided among themselves, receiving five drachmae apiece. <a href=/people/579 target=_blank>Eubulides</a> and his clique will not deny on oath that they have knowledge of this; and now in this last revision they did not expel these men. Do you think, then, that there is anything that they would not do in private, seeing that in a public matter they dared this? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:59' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=60>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:60'><b>&sect; 60</b>&nbsp;&nbsp;There are many people indeed, men of the jury, whom <a href=/people/579 target=_blank>Eubulides</a> and his clique have destroyed or have saved for money. For even at an earlier time (and my words shall bear upon the matter in hand, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>) <a href=/people/1199 target=_blank>Antiphilus</a>, the father of <a href=/people/579 target=_blank>Eubulides</a>, when he was prefect of the deme, as I have told you, made use of trickery in his desire to get money from certain persons, and asserted that he had lost the public register; and he thereby induced the <a about=https://topostext.org/place/379237DHal class=ethnic long=23.7321 lat=37.906>Halimusians</a> to revise their list of members, denounced ten of their number, and had them expelled; all of whom with one exception the court of justice restored. These facts all the older ones know. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:60' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=61>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:61'><b>&sect; 61</b>&nbsp;&nbsp;It is unlikely indeed that they left on the list any who were not <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, when they conspired to expel even men who were citizens, whom the court restored. And although he was a personal enemy of my father at the time, <a href=/people/579 target=_blank>Eubulides</a> not only did not denounce him, but did not even cast his vote that he was not an <a about=https://topostext.org/place/380237PAth class=person long=23.72793 lat=37.9718>Athenian</a>. How is this proved? Because my father was declared by all the votes to be a member of the deme. But what need is there to speak of our fathers? <a href=/people/579 target=_blank>Eubulides</a> himself, when I was entered on the register and all the demesmen after taking the oath cast their votes regarding me as the law prescribes, neither denounced me nor cast his vote against me; for in this case again they all voted that I was a member of the deme. And, if they say that I am lying about this, let anyone who wishes give evidence to the contrary in the time allotted to me. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:61' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=62>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:62'><b>&sect; 62</b>&nbsp;&nbsp;If, then, men of <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athens</a>, my opponents seem to have a very strong argument in the fact that in the present instance the demesmen have rejected me, I point out to you that on four previous occasions, when they gave their votes in accordance with their oaths without entering into a conspiracy, they voted that both I and my father were their fellow-demesmen — first, when my father passed the scrutiny; secondly, when I did so; then, in the former revision, after these men had made away with the register; and, finally, when they nominated me among the noblest-born and voted that I should draw lots for the priesthood of <a href=/people/4 target=_blank>Heracles</a>. All these facts have been established by testimony. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:62' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=63>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:63'><b>&sect; 63</b>&nbsp;&nbsp;If it be right for me to speak of my administration as prefect, because of which I incurred the anger of many, and in the course of which I became involved in quarrels because I required some of the demesmen to pay the rents which they owed for sacred lands and to refund other sums which they had embezzled from the public moneys, I should be very glad to have you listen to me; but perhaps you will hold that these matters are foreign to the subject before us. However, I am able to point to this as a positive proof of their conspiracy. For they struck out of the oath the clause that they would vote according to their unbiassed judgement and without favor or malice. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:63' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=64>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:64'><b>&sect; 64</b>&nbsp;&nbsp;This became a matter of general knowledge, as did also the fact that the demesmen from whom I had exacted repayment of the public moneys swore a conspiracy against me, and by a sacrilegious theft stole from the temple the shields which I had dedicated to <a href=/people/11 target=_blank>Athena</a> (for the truth shall be told), and chiseled out the decree which the demesmen had passed in my honor. And they have come to such a pitch of shamelessness that they went about saying that I had done this for the sake of my defence. Yet what man among you, men of the jury, would judge me so utterly insane as to commit an act punishable with death in order to secure so mighty a bit of evidence for my case, and then myself to destroy an inscription which brought me honor? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:64' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=65>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:65'><b>&sect; 65</b>&nbsp;&nbsp;But the most outrageous act of all I fancy they would hardly say that I myself contrived. For hardly had my misfortune come about, when immediately, as if I were already an exile and a ruined man, some of these people went by night to my cottage in the country and attempted to carry off what was there; so utter was their contempt for you and for your laws. If you wish, I will call persons who know the facts. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:65' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=66>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:66'><b>&sect; 66</b>&nbsp;&nbsp;Many are the other deeds of theirs which I could point out and many the falsehoods which they have told, which I should be glad to enumerate to you; but as you consider these alien to the matter in hand, I will leave them out. Bear in mind, however, the following points, and see how many just arguments I have in coming before you. For, just as you question the <a href=/people/1119 target=_blank>Thesmothetae</a> in their scrutiny, I will in the same manner question myself before you. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:66' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=67>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:67'><b>&sect; 67</b>&nbsp;&nbsp;'Sir, who was your father?' 'My father? Thucritus.' 'Do any of your relatives give testimony in his favor?' 'Certainly; first, four cousins; then, the son of a cousin; then, those who are married to the female cousins; then, the clansmen; then, those of the gens who worship our ancestral <a href=/people/2 target=_blank>Apollo</a> Patroos and <a href=/people/1 target=_blank>Zeus</a> <a href=/people/3608 target=_blank>Herkeios</a>; then, those who have the right to the same places of burial; then, the members of the deme, who testify that he has often passed the scrutiny and held office, and who are shown themselves to have cast their votes in his favor.' In all that concerns my father, then, how could I prove my case to you more fairly or more convincingly? I will call my relatives before you, if you so wish. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:67' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=68>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:68'><b>&sect; 68</b>&nbsp;&nbsp;Now hear the facts regarding my mother. My mother is <a href=/people/2246 target=_blank>Nicarete</a>, the daughter of <a href=/people/4963 target=_blank>Damostratus</a> of <a about=https://topostext.org/place/380237DMel class=person long=23.719 lat=37.975>Melite</a>. Who among her relatives give testimony? First, a nephew; then, two sons of her other nephew; then, the son of a cousin; then the sons of <a href=/people/2439 target=_blank>Protomachus</a>, who was my mother's former husband; then, <a href=/people/3597 target=_blank>Eunicus</a>, of <a about=https://topostext.org/place/381237DCho class=person long=23.7391 lat=38.0564>Cholargus</a>, who married my sister, the daughter of <a href=/people/2439 target=_blank>Protomachus</a>; then, my sister's son. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:68' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=69>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:69'><b>&sect; 69</b>&nbsp;&nbsp;More than this, the clansmen and the demesmen of her relatives have given this testimony. Of what, then, could you have further need? Yet again, that my father married my mother according to the laws, and that he gave a marriage-feast to the members of the clan, has been proved by testimony. And besides all this, I have shown that I myself have shared in all the privileges which befit free men. On all grounds, therefore, you will act in accordance with your oaths, if you give your verdict in my favour as justice and right demand. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:69' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=70>
+                            <p id='urn:cts:greekLit:tlg0014.tlg057:70'><b>&sect; 70</b>&nbsp;&nbsp;Furthermore, men of the jury, when you question the nine archons, you ask whether they act dutifully toward their parents. I for my part am left without a father, but for my mother's sake I beg and beseech you so to settle this trial as to restore to me the right to bury her in our ancestral tomb. Do not deny me this; do not make me a man without a country; do not cut me off from such a host of relatives, and bring me to utter ruin. Rather than abandon them, if it prove impossible for them to save me, I will kill myself, that at least I may be buried by them in my country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0014.tlg057.perseus-grc1:70' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -350                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=457', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas457";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=457';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>

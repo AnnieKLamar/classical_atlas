@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73073339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73073339-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/swiper.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://topostext.org/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/magnific-popup.css" type="text/css" />
+
+
+
+    <!-- NonProfit Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="https://topostext.org/css/colors.php?color=C6C09C" type="text/css" /> <!-- Theme Color -->
+    <!-- <link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://topostext.org/demos/nonprofit/nonprofit.css" type="text/css" />
+    <!-- / -->
+    <link rel="stylesheet" href="https://topostext.org/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://topostext.org/css/responsive.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://topostext.org/leaflet/leaflet-search.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="https://topostext.org/leaflet/leaflet-search.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://topostext.org/leaflet/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster-src.js"></script>
+
+    <link rel="stylesheet" href="https://topostext.org/css/modal.css" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>ToposText</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+<header id="header" class="clearfix static-sticky">
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="https://topostext.org/images/icons/favicon.png" />
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			<!-- Logo
+					============================================= -->
+			<div id="logo">
+				<a href="https://topostext.org" class="logo-big standard-logo" data-dark-logo="https://topostext.org/images/logo1_2.png">
+					<img src="https://topostext.org/images/logo1_2.png" alt="Topostext">
+				</a>
+				<a href="https://topostext.org" class="logo-small" data-dark-logo="images/lg1.png">
+					<img class="logo-small" src="https://topostext.org/images/lg1.png" alt="Topostext">
+				</a>
+				<!-- <a href="index.php" class="retina-logo" data-dark-logo="images/logo_topos1.png">
+					<img src="images/logo_1.png" alt="Topostext">
+				</a> -->
+			</div><!-- #logo end -->
+
+			<!-- Primary Navigation
+					============================================= -->
+			<nav id="primary-menu" class="d-lg-flex d-xl-flex justify-content-xl-between justify-content-lg-between fnone with-arrows">
+
+
+				<ul class="align-self-start">
+					<li><span class="menu-bg col-auto align-self-start d-flex"></span></li>
+					<li ><a href="https://topostext.org">
+							<div>Home</div>
+						</a></li>
+					<li ><a href="#">
+							<div>About TT</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/who-we-are">
+									<div>Who we are</div>
+								</a></li>
+							<li><a href="https://topostext.org/the-project">
+									<div>The Project</div>
+								</a></li>
+						</ul>
+					</li>
+					<li ><a href="https://topostext.org/the-places">
+							<div>Places</div>
+						</a></li>
+					<li  class="active" ><a href="https://topostext.org/texts">
+							<div>Ancient Texts</div>
+						</a></li>
+					<li ><a href="https://topostext.org/the-people">
+							<div>People</div>
+						</a></li>
+					<li><a href="#">
+							<div>Tools</div>
+						</a>
+						<ul>
+							<li><a href="https://topostext.org/search-tool">
+									<div>Search Tool</div>
+								</a></li>
+							<li><a href="https://topostext.org/TT-downloads">
+									<div>Downloads</div>
+								</a></li>
+						</ul>
+						</li>
+						<li><a href="https://topostext.org/contact-us">
+								<div>Contact us</div>
+							</a></li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix">
+
+
+                    
+                    <div class="bottommargin-sm">
+                        <p><link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' /> <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' /> <link rel='schema.LCCH' href='http://purl.org/dc/terms/LCSH' /> <meta name='DC.title' property='dc:title' itemprop='name' lang='en' content='Plutarch, Laws and Customs of the Lacedaemonians, Moralia' /> <meta name='DC.description' property='dc:description' itemprop='description' lang='en' content='The Account of the Laws and Customs of the Lacedaemonians. , Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling.' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greek literature (English)' /> <meta name='DC.subject' property='dc:subject' itemprop='about' lang='en' content='Greece--Civilization--Sources.' /> <meta name='DC.type' property='dc:type' lang='en' content='Text' /> <meta name='DC.date' property='dc:date' content='102' /> <meta name='DC.coverage' property='dc:coverage' content='The Greek world from 1000 BCE to 102' /> <meta name='DC.publisher' property='dc:publisher' itemprop='publisher' lang='en' content='Aikaterini Laskaridis Foundation, Piraeus, Greece' /> <meta name='DC.language' property='dc:language' itemprop='inLanguage' content='en' /><meta name='DC.rights' property='dc:rights' itemprop='copyrightHolder' lang='en' content='public domain' /> <meta name='DCTERMS.license' property='dcterms:license' content='https://creativecommons.org/licenses/by-nc/4.0/' /> <meta name='DC.identifier' property='dc:identifier' itemprop='url' content='https://topostext.org/work/265' content='urn:cts:greekLit:tlg0007.tlg082a' /> <meta name='DC.creator' property='dc:creator' itemprop='author' lang='en' content='href='https://lccn.loc.gov/n79026763' content='Plutarch'/> <meta name='DC.creator' property='dc:creator' itemprop='translator' lang='en' content='href='https://lccn.loc.gov/n84801218' content='William Watson Goodwin (1831-1912)' /> <meta name='DC.contributor' property='dc:contributor' itemprop='editor' lang='en' content='Kiesling, John Brady, 1957-' /> <meta name='DC.source' property='dc:source' itemprop='source' lang='en' content='https://archive.org/details/plutarchsmorals01plut' /><h2>Plutarch, Laws and Customs of the Lacedaemonians, Moralia</h2>The Account of the Laws and Customs of the Lacedaemonians. , Plutarch, The Moralia, translations edited by William Watson Goodwin (1831-1912), from the edition of 1878, a text in the public domain digitized by the Internet Archive and reformatted/lightly corrected by Brady Kiesling. This text has 15 tagged references to 8 ancient places. <br />CTS URN: <a href='https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0007.tlg082a'>urn:cts:greekLit:tlg0007.tlg082a</a>; Wikidata ID: <a href='https://www.wikidata.org/wiki/Q87196159'>Q87196159</a>;     <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1' target='_blank'>[Open Greek text in new tab]</a></p>
+                    </div>
+                                            <div class="pSelector" id=1>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:1'><b>&sect; 1</b>&nbsp;&nbsp;It was a singular instance of the wisdom of this nation, in that they took the greatest care they could, by an early sober education, to instill into their youth the principles of virtue and good manners, that so, by a constant succession of prudent and valiant men, they might the better provide for the honor and security of their state, and lay in the minds of every one a solid and good foundation of love and friendship, of prudence and knowledge, of temperance and frugality, of courage and resolution. And therefore their great lawgiver thought it necessary for the ends of government to institute several distinct societies and conventions of the people; amongst which was that of their solemn and public living together at one table, where their custom was to admit their youth into the conversation of their wise and elderly men, that so by daily eating and drinking with them they might insensibly, as it were, be trained up to a right knowledge of themselves, to a just submission to their superiors, and to the learning of whatever might conduce to the reputation of their laws and the interest of their country. For here they were taught all the wholesome rules of discipline, and daily instructed how to demean themselves from the example and practice of their great ones; and though they did not at this public meeting confine themselves to set and grave discourses concerning the civil government, but allowed themselves a larger freedom, by mingling sometimes with their politics the easy and familiar entertainments of mirth and satire, yet this was ever done with the greatest modesty and discretion, not so much to expose the person of any one, as to reprove the fault he had committed. Whatever was transacted at these stated and common feasts was to be locked up in every one's breast with the greatest silence and secrecy, insomuch as the eldest among them at these assemblies, pointing to the door, acquainted him who entered the room that nothing of what was done or spoken there was to be talked of afterwards. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:1' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=2>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:2'><b>&sect; 2</b>&nbsp;&nbsp;At all these public meetings they used a great deal of moderation, they being designed only for schools of temperance and modesty, not for luxury and indecency; their chief dish and only delicacy being a sort of pottage (called by them their black broth, and made of some little pieces of flesh, with a small quantity of blood, salt, and vinegar), and this the more ancient among them generally preferred to any sort of meat whatsoever, as the more pleasing entertainment and of a more substantial nourishment. The younger sort contented themselves with flesh and other ordinary provisions, without tasting of this dish, which was reserved only for the old men. It is reported of <a href=/people/23 target=_blank>Dionysius</a>, the <a about=https://topostext.org/place/376145RSic class=person long=14.5 lat=37.6>Sicilian</a> tyrant, that having heard of the great fame and commendation of this broth, he hired a certain cook of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedemon</a>, who was thoroughly skilled in the make and composition of it, to furnish his table every day with so great and curious a dainty; and that he might have it in the greatest perfection, enjoined him to spare no cost in the making it agreeable and pleasant to his palate. But it seems the end answered not the pains he took in it; for after all his care and niceness, the king, as soon as he had tasted of it, found it both fulsome and nauseous to his stomach, and spitting it out with great distaste, as if he had taken down a vomit, sufficiently expressed his disapprobation of it. But the cook, not discouraged at this dislike of his master, told the tyrant that he humbly conceived the reason of this disagreeableness to him was not in the pottage, but rather in himself, who had not prepared his body for such food according to the Laconic mode and custom. For hard labors and long exercises and moderate abstinence (the best preparatives to a good and healthy appetite) and frequent bathings in the river <a about=https://topostext.org/place/371224WEur class=place long=22.427 lat=37.093>Eurotas</a> were the only necessaries for a right relish and understanding of the excellency of this entertainment. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:2' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=3.>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:3.'><b>&sect; 3.</b>&nbsp;&nbsp;'Tis true, their constant diet was very mean and sparing; not what might pamper their bodies or make their minds soft and delicate, but such only as would barely serve to supply the common necessities of nature. This they accustomed themselves to, that so they might become sober and governable, active and bold in the defence of their country; they accounting only such men serviceable to the state, who could best endure the extremes of hunger and cold, and with cheerfulness and vigor run through the fatigues of labor and the difficulties of hardship. Those who could fast longest after a slender meal, and with the least provision satisfy their appetites, were esteemed the most frugal and temperate, and most sprightly and healthful, the most comely and well proportioned; nature, through such a temperance and moderation of diet, not suffering the constitution to run out into an unwieldy bulk or greatness of body (the usual consequence of full tables and too much ease), but rather rendering it thereby nervous and sinewy, of a just and equal growth, and consolidating and knitting together all the several parts and members of it. A very little drink did serve their turn, who never drank but when an extreme thirst provoked them to it; for at all their common entertainments they studied the greatest measures of sobriety, and took care they should be deprived of all kinds of compotations whatsoever. And at night when they returned home, they went cheerfully to their sleep, without the assistance of any light to direct them to their lodging; that being prohibited them as an indecent thing, the better to accustom them to travel in the dark, without any sense of fear or apprehensions of danger. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:3.' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=4>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:4'><b>&sect; 4</b>&nbsp;&nbsp;They never applied their minds to any kind of learning, further than what was necessary for use and service; nature indeed having made them more fit for the purposes of war than for the improvements of knowledge. And therefore for speculative sciences and philosophic studies, they looked upon them as foreign to their business and unserviceable to their ends of living, and for this reason they would not tolerate them amongst them, nor suffer the professors of them to live within their government. They banished them their cities, as they did all sorts of strangers, esteeming them as things that did debase the true worth and excellency of virtue, which they made to consist only in manly actions and generous exercises, and not in vain disputations and empty notions. So that the whole of what their youth was instructed in was to learn obedience to the laws and injunctions of their governors, to endure with patience the greatest labors, and where they could not conquer, to die valiantly in the field For this reason likewise it was, that all mechanic arts and trades, all vain and insignificant employments, such as regarded only curiosity or pleasure, were strictly prohibited them, as things that would make them degenerate into idleness and covetousness, would render them vain and effeminate, useless to themselves, and unserviceable to the state; and on this account it was that they would never suffer any scenes or interludes, whether of comedy or tragedy, to be set up among them, lest there should be any encouragement given to speak or act any thing that might savor of contempt or contumely against their laws and government, it being customary for the stage to assume an indecent liberty of taxing the one with faults and the other with imperfections. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:4' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=5>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:5'><b>&sect; 5</b>&nbsp;&nbsp;As to their apparel, they were as thinly clad as they were dieted, never exceeding one garment, which they wore for the space of a whole year. And this they did, the better to inure them to hardship and to bear up against all the injuries of the weather, that so the extremities of heat and cold should have no influence at all upon their constitution. They were as regardless of their selves as they were negligent of their clothes, denying themselves (unless it were at some stated time of the year) the use of ointments and bathings to keep them clean and sweet, as too expensive and signs of a too soft and delicate temper of body. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:5' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=6>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:6'><b>&sect; 6</b>&nbsp;&nbsp;Their youth, as they were instructed and ate in public together, so at night slept in distinct companies in one common chamber, and on no other beds than what were made of reeds, which they had gathered out of the river <a about=https://topostext.org/place/371224WEur class=place long=22.427 lat=37.093>Eurotas</a>, near the banks of which they grew. This was the only accommodation they had in the summer, but in winter they mingled with the reeds a certain soft and downy thistle, having much more of heat and warmth in it than the other. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:6' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=7>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:7'><b>&sect; 7</b>&nbsp;&nbsp;It was freely allowed them to place an ardent affection upon those whose excellent endowments recommended them to the love and consideration of any one; but then this was always done with the greatest innocency and modesty, and every way becoming the strictest rules and measures of virtue, it being accounted a base and dishonorable passion in any one to love the body and not the mind, as those did who in their young men preferred the beauty of the one before the excellency of the other. Chaste thoughts and modest discourses were the usual entertainments of their loves; and if any one was accused at any time either of wanton actions or impure discourse, it was esteemed by all so infamous a thing, that the stains it left upon his reputation could never be wiped out during his whole life. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:7' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=8>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:8'><b>&sect; 8</b>&nbsp;&nbsp;So strict and severe was the education of their youth, that whenever they were met with in the streets by your grave and elderly persons, they underwent a close examination; it being their custom to enquire of them upon what business and whither they were going, and if they did not give them a direct and true answer to the question demanded of them, but shamed them with some idle story or false pretence, they never escaped without a rigorous censure and sharp correction. And this they did to prevent their youth from stealing abroad upon any idle or bad design, that so, through the uneasy fears of meeting these grave examiners, and the impossibility of escaping punishment upon their false account and representations of things, they might be kept within due compass, and do nothing that might entrench upon truth or offend against the rules of virtue. Nor was it expected only from their superiors to censure and admonish them upon any miscarriage or indecency whatsoever, but it was strictly required of them under a severe penalty; for he who did not reprove a fault that was committed in his presence, and showed not his just resentments of it by a verbal correction, was adjudged equally culpable with the guilty, and obnoxious to the same punishment. For they could not imagine that person had a serious regard for the honor of their laws and the reputation of their government, who could carelessly pass by any immorality and patiently see the least corruption of good manners in their youth; by which means they took away all occasions of fondness, partiality, and indulgence in the aged, and all presumption, irreverence, and disobedience, and especially all impatiency of reproof, in the younger sort. For not to endure the reprehension of their superiors in such cases was highly disgraceful to them, and ever interpreted as an open renunciation of their authority, and a downright opposing of the justice of their proceedings. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:8' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=9>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:9'><b>&sect; 9</b>&nbsp;&nbsp;Besides, when any was surprised in the commission of some notorious offence, he was presently sentenced to walk round a certain altar in the city, and publicly to shame himself by singing an ingenious satire, composed by himself, upon the crime and folly he had been guilty of, that so the punishment might be inflicted by the same hand which had contracted the guilt. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:9' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=10>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:10'><b>&sect; 10</b>&nbsp;&nbsp;Their children were brought up in a strict obedience to their parents, and taught from their infancy to pay a profound reverence to all their dictates and commands. And no less were they enjoined to show an awful regard and observance to all their superiors in age and authority, so as to rise up before the hoary head, and to honor the face of the old man, to give him the way when they met him in the streets, and to stand still and remain silent till he was passed by; insomuch as it was indulged them, as a peculiar privilege due to their age and wisdom, not only to have a paternal authority over their own children, servants, and estates, but over their neighbors too, as if they were a part of their own family and propriety; that so in general there might be a mutual care, and an united interest, zealously carried on betwixt them for the private good of every one in particular, as well as for the public good of the communities they lived in. By this means they never wanted faithful counsellors to assist with good advice in all their concerns, nor hearty friends to prosecute each other's interest as it were their own; by this means they never wanted careful tutors and guardians for their youth, who were always at hand to admonish and instruct them in the solid principles of virtue. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:10' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=11>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:11'><b>&sect; 11</b>&nbsp;&nbsp;No one durst show himself refractory to their instructions, nor at the least murmur at their reprehensions; insomuch that, whenever any of their youth had been punished by them for some ill that had been done, and a complaint thereupon made by them to their parents of the severity they had suffered, hoping for some little relief from their indulgence and affection, it was accounted highly dishonorable in them not to add to their punishment by a fresh correction for the folly and injustice of their complaint. For by the common interest of discipline, and that great care that every one was obliged to take in the education of their youth, they had a firm trust and assurance in one another, that they never would enjoin their children the performance of any thing that was in the least unnecessary or unbecoming them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:11' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=12>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:12'><b>&sect; 12</b>&nbsp;&nbsp;Though it might seem very strange and unaccountable in this wise nation, that any thing which had the least semblance of baseness or dishonesty should be universally approved, commended, and encouraged by their laws, yet so it was in the case of theft, whereby their young children were allowed to steal certain things, as particularly the fruit of their orchards or their messes at their feasts. But then this was not done to encourage them to the desires of avarice and injustice, but to sharpen their wits, and to make them crafty and subtle, and to train them up in all sorts of wiles and cunning, watchfulness and circumspection, whereby they were rendered more apt to serve them in their wars, which was upon the matter the whole profession of this commonwealth. And if at any time they were taken in the act of stealing, they were most certainly punished with rods and the penance of fasting; not because they esteemed the stealth criminal, but because they wanted skill and cunning in the management and concealing of it. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:12' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=14>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:14'><b>&sect; 14</b>&nbsp;&nbsp;They spent a great part of their studies in poetry and music, which raised their minds above the ordinary level, and by a kind of artificial enthusiasm inspired them with generous heats and resolutions for action. Their compositions, consisting only of very grave and moral subjects, were easy and natural, in a plain dress, and without any paint or ornament, containing nothing else but the just commendations of those great personages whose singular wisdom and virtue had made their lives famous and exemplary, and whose courage in defence of their country had made their deaths honorable and happy. Nor were the valiant and virtuous only the subject of these songs; but the better to make men sensible of what rewards and honors are due to the memory of such, they made invectives in them upon those who were signally vicious and cowards, as men who died with as much contempt as they had lived with infamy. They generally concluded their poem with a solemn profession of what they would be, boasting of their progress in virtue, agreeable to the abilities of their nature and the expectations of their age. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:14' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=15>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:15'><b>&sect; 15</b>&nbsp;&nbsp;At all their public festivals these songs were a great part of their entertainment, where there were three companies of singers, representing the three several ages of nature. The old men made up the first chorus, whose business was to present what they had been after this manner: That active courage youthful blood contains Did once with equal vigor warm our veins. To which the chorus, consisting of young men only, thus answers: Valiant and bold we are, let who will try: Who dare accept our challenge soon shall die. The third, which were of young children, replied to them in this manner: Those seeds which Nature in our breast did sow Shall soon to generous fruits of virtue grow; Then all those valiant deeds which you relate We will excel, and scorn to imitate. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:15' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=16>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:16'><b>&sect; 16</b>&nbsp;&nbsp;They made use of a peculiar measure in their songs, when their armies were in their march towards an enemy, which being sung in a full choir to their flutes seemed proper to excite in them a generous courage and contempt of death. <a href=/people/12417 target=_blank>Lycurgus</a> was the first who brought this warlike music into the field, that so he might moderate and soften the rage and fury of their minds in an engagement by solemn musical measures, and that their valor (which should be no boisterous and unruly thing) might always be under the government of their reason, and not of passion. To this end it was always their custom before the fight to sacrifice to the <a href=/people/54 target=_blank>Muses</a>, that they might behave themselves with as much good conduct as with courage, and do such actions as were worthy of memory, and which might challenge the applauses and commendations of every one. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:16' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=17>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:17'><b>&sect; 17</b>&nbsp;&nbsp;And indeed so great an esteem and veneration had they for the gravity and simplicity of their ancient music, that no one was allowed to recede in the least from the established rules and measures of it, insomuch as the Ephori, upon complaint made to them, laid a severe mulct upon <a href=/people/1164 target=_blank>Terpander</a> (a musician of great note and eminency for his incomparable skill and excellency in playing upon the harp, and who, as he had ever professed a great veneration for antiquity, so ever testified by his eulogiums and commendations the esteem he always had of virtuous and heroic actions), depriving him of his harp, and (as a peculiar punishment) exposing it to the censure of the people, by fixing it upon a nail, because he had added one string more to his instrument than was the usual and stated number, though done with no other design and advantage than to vary the sound, and to make it more useful and pleasant. That music was ever accounted among them the best, which was most grave, simple, and natural. And for this reason too, when <a href=/people/155 target=_blank>Timotheus</a> in their <a href=/people/3152 target=_blank>Carnean</a> feasts, which were instituted in honor of <a href=/people/2 target=_blank>Apollo</a>, contended for a preference in his art, one of the Ephori took a knife in his hand, and cut the strings of his harp, for having exceeded the number of seven in it. So severely tenacious were they of their ancient customs and practices, that they would not suffer the least innovation, though in things that were indifferent and of no great importance, lest an indulgence in one thing might have introduced another, till at length by gradual and insensible alterations the whole body of their laws might be disregarded and contemned, and so the main pillar which did support the fabric of their government be weakened and undermined. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:17' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=18>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:18'><b>&sect; 18</b>&nbsp;&nbsp;<a href=/people/12417 target=_blank>Lycurgus</a> took away that superstition, which formerly indeed had been the practice among them, concerning their sepulchre and funeral solemnities, by permitting them to bury the remains of their departed friends within the city, that so they might the better secure them from the rude and barbarous violence of an enemy, and to erect their monuments for them in separated places joining to their temples; that, having their graves and tombs always before their eyes, they might not only remember but imitate the worthy actions they had done, and so lessen the fears and apprehensions of death with the consideration of those honors they paid their memories when they put off their mortalities. He took away those pollutions which they formerly looked upon as arising from their dead bodies, and prohibited all costly and sumptuous expenses at their funerals, it being very improper for those who while alive generally abstained from whatever was vain and curious to be carried to the grave with any pomp and magnificence. Therefore without the use of drugs and ointments, without any rich odors and perfumes, without any art or curiosity, save only the little ornament of a red vestment and a few olive-leaves, they carried him to the place of burying, where he was, without any formal sorrows and public lamentations, honorably and securely laid up in a decent and convenient sepulchre. And here it was lawful for any one who would be at the trouble to erect a monument for the person deceased, but not to engrave the least inscription on it; this being the peculiar reward of such only who had signalized themselves in war, and died gallantly in defence of their country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:18' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=20>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:20'><b>&sect; 20</b>&nbsp;&nbsp;It was not allowed any of them to travel into foreign countries, lest their conversation should be tinctured with the customs of those places, and they at their return introduce amongst them new modes and incorrect ways of living, to the corruption of good manners and the prejudice of their own laws and usage; for which reason they expelled all strangers from <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>, lest they should insinuate their vices and their folly into the affections of the people, and leave in the minds of their citizens the bad principles of softness and luxury, ease and covetousness. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:20' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=21>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:21'><b>&sect; 21</b>&nbsp;&nbsp;Nothing could sooner forfeit the right and privilege of a citizen, than refusing their children that public education which their laws and country demanded of them. For as none of them were on any account exempt from obedience to their laws, so, if any one out of an extraordinary tenderness and indulgence would not suffer his sons to be brought up according to their strict discipline and institutions, he was straightways disfranchised. For they could not think that person could ever prove serviceable to their government, who had not been educated with the same care and severity with his fellow-subjects. And it was no less a shame and reproach to the parents themselves, who could be of such mean and abject spirits as to prefer the love of their children to the love of their country, and the satisfaction of a fond and imprudent passion to the honor and security of their state. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:21' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=23>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:23'><b>&sect; 23</b>&nbsp;&nbsp;Nay further, as there was a community of children, so there was of their goods and estates, it being free for them in case of necessity to make use of their neighbor's servants, as if they were their own; and not only so, but of their <a href=/people/10959 target=_blank>horses</a> and <a href=/people/10953 target=_blank>dogs</a> too, unless the owners stood in need of them themselves, whenever they designed the diversion of hunting, an exercise peculiar to this nation, and to which they were accustomed from their youth. And if upon any extraordinary occasion any one was pressed with the want of what his neighbors were possessed of, he went freely to them and borrowed, as though he had been the right proprietary of their storehouses; and being supplied answerably to his necessities, he carefully sealed them up again and left them secure. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:23' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=24>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:24'><b>&sect; 24</b>&nbsp;&nbsp;In all their warlike expeditions they generally clothed themselves with a garment of a purple color, as best becoming the profession of soldiers, and carrying in them a signification of that blood they were resolved to shed in the service of their country. It was of use likewise, not only to cast a greater terror into their adversaries and to secure from their discovery the wounds they should receive, but likewise for distinction's sake, that in the heat and fury of the battle they might discriminate each other from the enemy. They always fought with consideration and cunning, craft being many times of more advantage to them than downright blows; for it is not the multitude of men, nor the strongest arm and the sharpest sword, that make men masters of the field. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:24' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=25>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:25'><b>&sect; 25</b>&nbsp;&nbsp;Whenever a victory was gained through a well-contrived stratagem, and thereby with little loss of men and blood, they always sacrificed an <a href=/people/10961 target=_blank>ox</a> to <a href=/people/24 target=_blank>Mars</a>; but when the success was purely owing to their valor and prowess, they only offered up a cock to him; it being in their estimation more honorable for their generals and commanders to overcome their enemies by policy and subtlety than by mere strength and courage. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:25' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=27>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:27'><b>&sect; 27</b>&nbsp;&nbsp;One great part of their religion lay in their solemn prayers and devotion, which they daily offered up to their Gods, heartily requesting of them to enable them to bear all kinds of injuries with a generous and unshaken mind, and to reward them with honor and prosperity, according to their performances of piety and virtue. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:27' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=28>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:28'><b>&sect; 28</b>&nbsp;&nbsp;Besides, it was a great part of that honor they paid their Gods, of whatever sex they were, to adorn them with military weapons and armor, partly out of superstition and an extraordinary reverence they had for the virtue of fortitude, which they preferred to all others, and which they looked upon as an immediate gift of the Gods, as being the greatest lovers and patrons of those who were endued with it; and partly to encourage every one to address his devotions to them for it; insomuch as <a href=/people/15 target=_blank>Aphrodite</a> herself, who in other nations was generally represented naked, had her armor too, as well as her particular altars and worshippers. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:28' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=29>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:29'><b>&sect; 29</b>&nbsp;&nbsp;Whenever they take any business of moment in hand, they generally pray to <a href=/people/2811 target=_blank>Fortune</a> in a set form of words for their success in it; it being no better in their esteem than profaneness and irreverence to their Gods to invoke them upon slight and trivial emergencies. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:29' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=30>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:30'><b>&sect; 30</b>&nbsp;&nbsp;No discovery of what is bad and vicious comes with greater evidence to the spirits and apprehensions of children, who are unable to bear the force of reason, than that which is offered to them by way of example. Therefore the <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> discipline did endeavor to preserve their youth (on whom philosophical discourses would have made but small impression) from all kinds of intemperance and excess of wine, by presenting before them all the indecencies of their drunken <a href=/people/12102 target=_blank>Helots</a>, persons indeed who were their slaves, and employed not only in all kinds of servile offices, but especially in tilling of their fields and manuring of their ground, which was let out to them at reasonable rates, they paying in every year their returns of rent, according to what was anciently established and ordained amongst them at the first general division of their lands. And if any did exact greater payments from them, it was esteemed an execrable thing amongst them; they being desirous that the <a href=/people/12102 target=_blank>Helots</a> might reap gain and profit from their labors, and thereupon be obliged faithfully to serve their masters as well as their own interest with greater cheerfulness and industry. And therefore their lords never required more of them than what bare custom and contracts exacted of them. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:30' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=33>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:33'><b>&sect; 33</b>&nbsp;&nbsp;They adjudged it necessary for the preservation of that gravity and seriousness of manners which was required of their youth for the attainments of wisdom and virtue, never to admit of any light and wanton, any ludicrous or effeminate poetry; which made them allow of no poets among them but such only who for their grave and virtuous compositions were approved by the public magistrate; that being hereby under some restraint, they might neither act nor write any thing to the prejudice of good manners, or to the dishonor of their laws and government. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:33' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=34>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:34'><b>&sect; 34</b>&nbsp;&nbsp;And therefore it was, that when they heard of <a href=/people/384 target=_blank>Archilochus</a>'s arrival at <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a> (though a <a about=https://topostext.org/place/371224PSpa class=person long=22.4237 lat=37.0821>Lacedemonian</a>, and of an excellent wit), yet they presently commanded him to depart the city, having understood how that in a poem of his he had affirmed it was greater wisdom for a man to throw his arms away and secure himself by flight, than to stand to his own defence with the hazard of his life, or therein to die valiantly in the field. His words were after this manner: Let who will boast their courage in the field, I find but little safety from my shield. Nature's not Honor's laws we must obey; This made me cast my useless shield away, And by a prudent flight and cunning save A life, which valor could not, from the grave. A better buckler I can soon regain, But who can get another life again? </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:34' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=35>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:35'><b>&sect; 35</b>&nbsp;&nbsp;It was a received opinion amongst many nations, that some of their Gods were propitious only to their men, and others only to their women, which made them sometimes prohibit the one and sometimes the other from being present at their sacred rites and solemnities. But the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a> took away this piece of superstition by not excluding either sex from their temples and religious services; but, as they were always bred up to the same civil exercises, so they were to the same common performances of their holy mysteries, so that by an early knowledge of each other there might be a real love and friendship established betwixt them, which ever stood most firm upon the basis of religion. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:35' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=36>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:36'><b>&sect; 36</b>&nbsp;&nbsp;Their virtuous man, as he was to do no wrong, so likewise was not to suffer any without a due sense and modest resentment of it; and therefore the Ephori laid a mulct upon Sciraphidas, because he could so tamely receive the many injuries and affronts that were offered him, — concluding that he who was so insensible of his own interest as not to stand up in a bold and honest vindication of himself from the wrongs and injustice that may be done to his good name and honor, would without all doubt be as dull and listless, when an opportunity should invite him to it, in appearing for the defence of the fame and reputation of his country. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:36' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=39>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:39'><b>&sect; 39</b>&nbsp;&nbsp;Action and not speaking was the study and commendation of a <a about=https://topostext.org/place/371224PSpa class=person long=22.4237 lat=37.0821>Spartan</a>, and therefore polite discourses and long harangues were not with them the character of a wise or learned man, their speech being always grave and sententious, without any ornament or tedious argumentation. They accustomed themselves to brevity, and upon every subject to express themselves in the finest words, with as much satire and smartness as possible; insomuch as they had a law among them for the instruction of their youth, by which they were enjoined to practise a close and compendious style in all their orations; which made them banish one <a href=/people/1820 target=_blank>Cephisophon</a>, a talkative rhetorician, for boasting publicly that he could upon any subject whatsoever entertain his auditory for a whole day together; alleging this as a sufficient reason for their justification, that it was the part of a good orator to adjust his discourse according to the weight and dignity of the matter he was to treat of. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:39' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=40>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:40'><b>&sect; 40</b>&nbsp;&nbsp;There was indeed a strange and unnatural custom amongst them, annually observed at the celebration of the bloody rites of <a href=/people/28 target=_blank>Artemis</a> <a href=/people/3222 target=_blank>Orthia</a>, where there was a certain number of children, not only of the vulgar sort but of the gentry and nobility, who were whipped almost to death with rods before the <a about=https://topostext.org/place/371224SArt class=place long=22.435 lat=37.083>altar</a> of the goddess; their parents and relations standing by, and all the while exhorting them to patience and constancy in suffering. Although this ceremony lasted for the space of a whole day, yet they underwent this barbarous rite with such a prodigious cheerfulness and resolution of mind as never could be expected from the softness and tenderness of their age. They did not so much as express one little sigh or groan during the whole solemnity, but out of a certain emulation and desire of glory there was a great contention among them, who should excel his companions in the constancy of enduring the length and sharpness of their pains; and he who held out the longest was ever the most esteemed and valued person amongst them, and the glory and reputation where-with they rewarded his sufferings rendered his after life much more eminent and illustrious. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:40' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=42>
+                            <p id='urn:cts:greekLit:tlg0007.tlg082a:42'><b>&sect; 42</b>&nbsp;&nbsp;They had a very slight regard to maritime affairs, on the account of an ancient law amongst them, whereby they were prohibited from applying of themselves to the becoming of good seamen or engaging themselves in any sea-fight. Afterwards indeed, through the necessity of affairs and the security of their country, they judged it convenient, when they were invaded by the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a> and other nations, to furnish themselves with a navy; by which it was that <a href=/people/107 target=_blank>Lysander</a>, who was then the general in that expedition, obtained a great victory over the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, and thereby for a considerable time secured the sovereignty of the seas to themselves. But finding afterwards this grievance arising from it, that there was a very sensible corruption of good manners and decay of discipline amongst them, from the conversation of their rude and debauched mariners, they were obliged to lay this profession wholly aside, and by a revival of this law endeavor to retrieve their ancient sobriety, and, by turning the bent and inclinations of the people into their old channel again, to make them tractable and obedient, modest and virtuous. Though indeed they did not long hold to their resolution herein, any more than they were wont to do in other matters of moment, which could not but be variable, according to the circumstances of affairs and the necessities of their government. For though great riches and large possessions were things they hated to death, it being a capital crime and punishment to have any gold or silver in their houses, or to amass up together heaps of money (which was generally made with them of iron or leather), — for which reason several had been put to death, according to that law which banished covetousness out of the city, on the account of an answer of their oracle to <a href=/people/997 target=_blank>Alcamenes</a> and <a href=/people/121 target=_blank>Theopompus</a>, two of their <a about=https://topostext.org/place/371224PSpa class=demonym long=22.4237 lat=37.0821>Spartan</a> kings, That the love of money should be the ruin of <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Sparta</a>: yet notwithstanding the severe penalty annexed to the heaping up much wealth, and the example of those who had suffered for it, <a href=/people/107 target=_blank>Lysander</a> was highly honored and rewarded for bringing in a great quantity of gold and silver to <a about=https://topostext.org/place/371224PSpa class=place long=22.4237 lat=37.0821>Lacedemon</a>, after the victory he had gained over the <a about=https://topostext.org/place/380237PAth class=ethnic long=23.72793 lat=37.9718>Athenians</a>, and the taking of the city of <a about=https://topostext.org/place/380237PAth class=place long=23.72793 lat=37.9718>Athens</a> itself, wherein an inestimable treasure was found. So that what had been a capital crime in others was a meritorious act in him. It is true indeed that as long as the Spartas did adhere closely to the observation of the laws and rules of <a href=/people/12417 target=_blank>Lycurgus</a>, and keep their oath religiously to be true to their own government, they outstripped all the other cities of Greece for prudence and valor, and for the space of five hundred years became famous everywhere for the excellency of their laws and the wisdom of their policy. But when the honor of these laws began to lessen and their citizens grew luxurious and exorbitant, when covetousness and too much liberty had softened their minds and almost destroyed the wholesome constitution of their state, their former greatness and power began by little and little to decay and dwindle in the estimation of men. And as by reason of these vices and ill customs they proved unserviceable to themselves, so likewise they became less formidable to others; insomuch as their several allies and confederates, who had with them jointly carried on their common good and interest, were wholly alienated from them. But although their affairs were in such a languishing posture, when <a href=/people/30 target=_blank>Philip</a> of <a about=https://topostext.org/place/408225RMak class=person long=22.5 lat=40.81>Macedon</a>, after his great victory at <a about=https://topostext.org/place/385228PCha class=place long=22.8416 lat=38.4944>Chaeronea</a>, was by the Grecians declared their general both by land and sea, as likewise his son <a href=/people/6 target=_blank>Alexander</a> after the conquest of the <a about=https://topostext.org/place/383233PThe class=ethnic long=23.3178 lat=38.3191>Thebans</a>; yet the <a about=https://topostext.org/place/371224PSpa class=ethnic long=22.4237 lat=37.0821>Lacedemonians</a>, though their cities had no other walls for their security, but only their own courage, though by reason of their frequent wars they were reduced to low measures and small numbers of men, and thereby become so weak as to be an easy prey to any powerful enemy, yet retaining amongst them some reverence for those few remains of <a href=/people/12417 target=_blank>Lycurgus</a>'s institution and government, they could not be brought to assist these two, or any other of their <a about=https://topostext.org/place/408225RMak class=demonym long=22.5 lat=40.81>Macedonian</a> kings in their wars and expeditions; neither could they be prevailed with to assist at their common assemblies and consults with them, nor pay any tribute or contributions to them. But when all those laws and customs (which are the main pillars that support a state) enacted by <a href=/people/12417 target=_blank>Lycurgus</a>, and so highly approved of by the government, were now universally despised and unobserved, they immediately became a prey to the ambition and usurpation, to the cruelty and tyranny of their fellow-citizens; and having no regard at all to their ancient virtues and constitution, they utterly lost their ancient glory and reputation, and by degrees, as well as weaker nations, did in a very little time everywhere degenerate into poverty, contempt, and servitude; being at present subject to the Romans, like all the other cities of Greece. </p>                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: -1 <a href='http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg082a.perseus-grc1:42' target='_blank'>GR</a>                        </div>
+                                            <div class="pSelector" id=E>
+                            END                        </div>
+                        <div class="text-right bottommargin-sm">
+                            Event Date: 2019                         </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+		<footer id="footer" style="background-color: #002D40;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				=============================================
+				<div class="footer-widgets-wrap dark clearfix" style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.jpg') repeat center center / cover;  padding: 150px 0">
+					<div class="divcenter center" style="max-width: 700px;">
+						<h2 class="display-2 t700 text-white mb-0 ls1 font-secondary mb-4"><i class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+						<a href="#" class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ml-0 mt-5">Donate Now</a>
+					</div>
+				</div>-->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bgcolor">
+
+				<div class="container clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							ToposText Web Version 3.0<br>
+							<div class="copyright-links">
+								Copyrights &copy; 2019 All Rights Reserved. Developed by <a href="https://pavla.gr" target="_blank">Pavla SA</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="texts">Ancient Texts</a>/<a href="https://topostext.org/the-places">Places</a>/<a href="https://topostext.org/the-people">People</a>/<a href="https://topostext.org/contact-us">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+        <!-- Floating Contact
+        ============================================= -->
+        <div class="floating-contact-wrap">
+            <div class="floating-contact-btn shadow">
+                <i class="floating-contact-icon btn-unactive icon-search1"></i>
+                <i class="floating-contact-icon btn-active icon-line-plus"></i>
+            </div>
+            <div id="paragraphs_index" class="floating-contact-box">
+                <div id="q-contact" class="widget quick-contact-widget clearfix">
+                    <div class="floating-contact-heading bgcolor p-4 rounded-top">
+                     <h3 class="mb-0 font-secondary h2 ls0">Quick Search</h3>
+                    </div>
+                    <div class="form-widget" data-alert-type="false">
+                        <div class="form-result"></div>
+                        <div class="floating-contact-loader css3-spinner" style="position: absolute;">
+                            <div class="css3-spinner-bounce1"></div>
+                            <div class="css3-spinner-bounce2"></div>
+                            <div class="css3-spinner-bounce3"></div>
+                        </div>
+                        <div class="tabs_container">
+
+                            <div class="tabs-container">
+                                <!-- <div class="tab-slider--nav">
+                                    <input type="text" placeholder="Search Term">
+                                    <button onclick="findText()" class="btn btn-primary">Find</button>
+                                </div>
+                                 -->
+                                <div class="tab-slider--container">
+                                    <div id="tab2" class="tab-slider--body">
+                                        <h3>Go to Paragraph</h3>
+                                        <ul id="p_list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #wrapper end -->
+
+
+    <div class="modal2">
+        <div class="modal2-content">
+            <span onclick="showHideMap()" class="close-button">&times;</span>
+            <div id="mapid2"></div>
+        </div>
+    </div>
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="https://topostext.org/js/jquery.js"></script>
+    <script src="https://topostext.org/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="https://topostext.org/js/functions.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid2');
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+
+    function PoIstile(feature, latlng) {
+    switch(feature.properties["icon"]) {
+        case "polis.png":
+            var polisIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/polis.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: polisIcon});
+        case "sanctuary.png":
+            var sanctuaryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/sanctuary.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: sanctuaryIcon});
+        case "settlement.png":
+            var settlementIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementIcon});
+        case "region3.png":
+            var region3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region3Icon});
+        case "settlementlow3.png":
+            var settlementlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlementlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlementlow3Icon});
+        case "region2.png":
+            var region2Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region2.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region2Icon});
+        case "harbor.png":
+            var harborIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/harbor.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: harborIcon});
+        case "region1.png":
+            var region1Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/region1.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: region1Icon});
+        case "stadium.png":
+            var stadiumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/stadium.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: stadiumIcon});
+        case "cape.png":
+            var capeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cape.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: capeIcon});
+        case "bluedot.png":
+            var bluedotIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bluedot.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bluedotIcon});
+        case "mountain.png":
+            var mountainIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mountain.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mountainIcon});
+        case "squarelow.png":
+            var squarelowIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/squarelow.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squarelowIcon});
+        case "cave.png":
+            var caveIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cave.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: caveIcon});
+        case "questionmark.png":
+            var questionmarkIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/questionmark.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: questionmarkIcon});
+        case "fort.png":
+            var fortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/fort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: fortIcon});
+        case "bath.png":
+            var bathIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bath.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bathIcon});
+        case "bridge.png":
+            var bridgeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/bridge.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: bridgeIcon});
+        case "castle.png":
+            var castleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/castle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: castleIcon});
+        case "cemetery.png":
+            var cemeteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/cemetery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: cemeteryIcon});
+        case "church.png":
+            var churchIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/church.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: churchIcon});
+        case "deme.png":
+            var demeIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/deme.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demeIcon});
+        case "demefort.png":
+            var demefortIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demefort.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demefortIcon});
+        case "demelow3.png":
+            var demelow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/demelow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: demelow3Icon});
+        case "excavation.png":
+            var excavationIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavation.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationIcon});
+        case "excavationlow3.png":
+            var excavationlow3Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/excavationlow3.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: excavationlow3Icon});
+        case "hill.png":
+            var hillIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/hill.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: hillIcon});
+        case "mine.png":
+            var mineIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/mine.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: mineIcon});
+        case "monastery.png":
+            var monasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monasteryIcon});
+        case "monument.png":
+            var monumentIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/monument.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: monumentIcon});
+        case "museum.png":
+            var museumIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/museum.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: museumIcon});
+        case "pass.png":
+            var passIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/pass.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: passIcon});
+        case "settlement45.png":
+            var settlement45Icon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/settlement45.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: settlement45Icon});
+        case "smiley.png":
+            var smileyIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/smiley.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: smileyIcon});
+        case "square.png":
+            var squareIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/square.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: squareIcon});
+        case "starcastle.png":
+            var starcastleIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starcastle.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starcastleIcon});
+        case "starmonastery.png":
+            var starmonasteryIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/starmonastery.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: starmonasteryIcon});
+        case "startower.png":
+            var startowerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/startower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: startowerIcon});
+        case "theatre.png":
+            var theatreIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/theatre.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: theatreIcon});
+        case "tower.png":
+            var towerIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tower.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: towerIcon});
+        case "tumb.png":
+            var tumbIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/tumb.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: tumbIcon});
+        case "villa.png":
+            var villaIcon = new L.icon({
+                iconUrl: 'https://topostext.org/images/icons/villa.png',
+                iconSize:     [30, 30], // size of the icon
+            });
+            return L.marker(latlng, {icon: villaIcon});
+        }
+
+
+};
+
+
+    var markers = L.markerClusterGroup();
+
+    $.getJSON('https://topostext.org/api/place/geojsonwork.php?work_id=265', function (geojson) {
+  var geoJsonLayer = L.geoJson(geojson, {
+    pointToLayer: PoIstile,
+    onEachFeature: function (feature, layer) {
+
+      layer.bindPopup('<p><b>Name:</b> '+feature.properties.concat1+'<br /> <b>Hits:</b> '+feature.properties.hits+'<br /><b>Category:</b> '+feature.properties.featureTypes+'<br /><b>Description:</b> '+feature.properties.description+'<br /> <a href="https://topostext.org/place/'+feature.properties.placeID+'"><b>View Place</b></a></p>');
+    }
+
+  });
+
+  markers.addLayer(geoJsonLayer);
+        mymap.addLayer(markers);
+
+
+});
+
+</script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var elementParent = $('.floating-contact-wrap');
+            $('.floating-contact-btn').off('click').on('click', function() {
+                elementParent.toggleClass('active', );
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // var cdnScript = document.createElement('script');
+// cdnScript.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+// document.head.appendChild(cdnScript);
+
+// const axios = require('axios')
+
+
+
+const secondTab = document.getElementById("p_list");
+
+function getParagraphsNum() {
+
+    var test = "asasas265";
+    var parUrl = 'https://topostext.org/api/paragraph/readweb.php?workID=265';
+    let pLocations = "";
+    $.ajax({
+        url: parUrl,
+        type: "POST",
+        data: $(this).serialize(),
+        success: function (res) {
+            //console.log(typeof res);
+            pLocations = res.map(par => par.location);
+            // //console.log(pLocations);
+            for (var i = 0; i < pLocations.length; i++) {
+                let listItem = document.createElement("li");
+                let paragraphLink = document.createElement('a');
+                let paragraphId = "#" + pLocations[i];
+
+                paragraphLink.innerText = "§" + pLocations[i];
+                paragraphLink.setAttribute('href', paragraphId);
+                listItem.appendChild(paragraphLink);
+                secondTab.appendChild(listItem);
+            }
+        }
+    })
+    return pLocations
+}
+
+$(document).ready(function () {
+    getParagraphsNum();
+});
+
+$("document").ready(function () {
+    $(".tab-slider--body").hide();
+    $(".tab-slider--body:first").show();
+});
+
+$(".tab-slider--nav li").click(function () {
+    $(".tab-slider--body").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    if ($(this).attr("rel") == "tab2") {
+        $('.tab-slider--tabs').addClass('slide');
+    } else {
+        $('.tab-slider--tabs').removeClass('slide');
+    }
+    $(".tab-slider--nav li").removeClass("active");
+    $(this).addClass("active");
+});
+
+    </script>
+    <script type="text/javascript" src="https://topostext.org/js/popUpMap.js"></script>
+
+
+</body>
+
+</html>
