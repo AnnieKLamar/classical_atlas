@@ -5,6 +5,8 @@ permalink: docs/index.html
 # Classical Atlas: A Python Package for Open-Access Geospatial Datasets about the Ancient World
 ### Developed by Annie K. Lamar (Stanford University | kalamar@stanford.edu)
 
+Read the docs at https://annieklamar.github.io/classical_atlas/ 
+
 ## Installation
 
 You can install classical_atlas using pip by running the command `pip install classical_atlas`. Classical Atlas requires the following external packages be installed:
