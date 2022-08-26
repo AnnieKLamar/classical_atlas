@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>classical_atlas.topos_wrangler API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>classical_atlas.topos_wrangler</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import json
+import os
+from bs4 import BeautifulSoup
+import csv
+from collections import defaultdict
+
+
+def load_json(file_name):
+    &#34;&#34;&#34;
+    Load a JSON file as a Python dataframe.
+
+    Parameters
+    ----------
+    file_name : string
+        file name of the target JSON file
+
+    Returns
+    -------
+    dataframe
+        A dataframe representing the JSON file
+    &#34;&#34;&#34;
+    file = open(file_name, &#34;r+&#34;, encoding=&#34;utf8&#34;)
+    df = json.load(file)
+    return df
+
+
+def get_topos_data():
+    &#34;&#34;&#34;
+    Loads the Topos Text Gazeteer data.
+
+    Returns
+    -------
+    dataframe
+        A dataframe with data from the Topos Text Gazeteer
+    &#34;&#34;&#34;
+    return load_json(&#34;data/ToposTextGazetteer.jsonld&#34;)
+
+
+def switch_to_pleiades_ids(topos_df, topos_places):
+    &#34;&#34;&#34;
+    Swap all IDs to Pleiades IDs if possible
+
+    Parameters
+    ----------
+    topos_df : dataframe
+        a dataframe with data from the Topos Text Gazeteer
+
+    topos_places : dictionary
+        a dictionary with key=texts and value=list of Topos Text IDs
+
+    Returns
+    -------
+    dictionary
+        dictionary with key=texts and value=list of Pleiades IDs, where possible
+
+    Notes
+    -----
+    This method reports how many IDs were unable to be switched. In the case that there is no
+    corresponding Pleiades ID for a given Topos Text ID, the Topos Text ID is retained in the dictionary.
+    &#34;&#34;&#34;
+    ids = _topos_pleiades_ids(topos_df)
+    switch_counter = 0
+    did_not_switch = 0
+    for place in topos_places.keys():
+        for i in range(len(topos_places[place])):
+            topos_id = topos_places[place][i]
+            if topos_id in ids.keys():
+                topos_places[place][i] = ids[topos_id]
+                switch_counter += 1
+            else:
+                did_not_switch += 1
+    print(&#34;Made &#34; + str(switch_counter) + &#34; switches.&#34;)
+    print(&#34;No Pleiades ID available for &#34; + str(did_not_switch) + &#34; topos places.&#34;)
+    return topos_places
+
+
+def swap_key_value_pairs(textual_refs):
+    &#34;&#34;&#34;
+    Reorganize the dictionary with key=ID and value= list of texts
+
+    Parameters
+    ----------
+    textual_refs : dictionary
+        dictionary with key=text and value=ID
+
+    Returns
+    -------
+    dictionary
+        dictionary with key=ID and value=list of texts
+    &#34;&#34;&#34;
+    reorganized = defaultdict(list)
+    for text in textual_refs.keys():
+        for id in textual_refs[text]:
+            reorganized[id].append(text)
+    for i in reorganized.keys():
+        set(reorganized[i])
+    return reorganized
+
+
+def parse_topos_place_refs():
+    &#34;&#34;&#34;
+    Create a dictionary from the Topos Text .csv file
+
+    Returns
+    -------
+    dictionary
+        A dictionary with key=text and value=list of Topos Text IDs
+    &#34;&#34;&#34;
+    topos_places = defaultdict(list)
+    with open(&#39;data/topos_data.csv&#39;, &#39;r&#39;, encoding=&#34;utf8&#34;) as topos_csv:
+        csv_reader = csv.reader(topos_csv, delimiter=&#39;,&#39;)
+        for row in csv_reader:
+            if len(row) &gt; 0:
+                for i in range(len(row)):
+                    if i == 0:
+                        key = row[i]
+                        topos_places[key] = []
+                    else:
+                        topos_places[key].append(row[i])
+    return topos_places
+
+
+def _parse_topos_place_refs_from_all_files(data=&#39;data/topos_data/&#39;):
+    directory = os.fsencode(data)
+    topos_places = defaultdict(list)
+    print(&#34;Parsing data...please be patient.&#34;)
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        # print(filename)
+        if filename.endswith(&#34;.htm&#34;) or filename.endswith(&#34;.html&#34;):
+            # print(&#34;here!&#34;)
+            name = &#34;data/topos_data/&#34; + filename
+            text = open(name, &#34;r&#34;, encoding=&#34;utf8&#34;).read()
+            soup = BeautifulSoup(text, &#39;html.parser&#39;)
+            title = soup.find(&#39;meta&#39;, property=&#39;dc:title&#39;, itemprop=&#39;name&#39;, lang=&#39;en&#39;).get_text(&#34;|&#34;)
+            elements = title.split(&#34;|&#34;)
+            for element in elements:
+                if len(element) &gt; 1:
+                    short_title = element
+                    # print(short_title)
+                    break
+            place_refs = soup.find_all(&#39;a&#39;, {&#34;class&#34;: &#34;place&#34;})
+            for ref in place_refs:
+                link = ref[&#39;about&#39;].split(&#34;/&#34;)[-1]
+                topos_places[short_title].append(link)
+        else:
+            continue
+    print(&#34;Parsed &#34; + str(len(topos_places)) + &#34; documents.&#34;)
+    return topos_places
+
+
+def _write_topos_place_refs_to_csv(topos_place_refs):
+    with open(&#39;data/topos_data.csv&#39;, &#39;w+&#39;, encoding=&#34;utf8&#34;) as topos_csv:
+        # create the csv writer
+        writer = csv.writer(topos_csv)
+        for item in topos_place_refs.keys():
+            row = [item]
+            for ref in topos_place_refs[item]:
+                row.append(ref)
+            writer.writerow(row)
+
+
+def _topos_pleiades_ids(df, key_selector=&#39;topos&#39;):
+    topos_pleiades_ids = {}
+    pleiades_topos_ids = {}
+    for location in range(len(df[&#39;features&#39;])):
+        pleiades_link = None
+        pleiades_id = None
+        if &#39;links&#39; in df[&#39;features&#39;][location]:
+            if df[&#39;features&#39;][location][&#39;links&#39;][0]:
+                pleiades_link = df[&#39;features&#39;][location][&#39;links&#39;][0][&#39;identifier&#39;]
+        topos_link = df[&#39;features&#39;][location][&#39;@id&#39;]
+        if pleiades_link and &#39;pleiades&#39; in pleiades_link:
+            pleiades_id = pleiades_link.split(&#34;/&#34;)[-1]
+        topos_id = topos_link.split(&#34;/&#34;)[-1]
+        topos_pleiades_ids[topos_id] = pleiades_id
+        if pleiades_id:
+            pleiades_topos_ids[pleiades_id] = topos_id
+    if key_selector == &#39;topos&#39;:
+        return topos_pleiades_ids
+    else:
+        return pleiades_topos_ids</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="classical_atlas.topos_wrangler.get_topos_data"><code class="name flex">
+<span>def <span class="ident">get_topos_data</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads the Topos Text Gazeteer data.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dataframe</code></dt>
+<dd>A dataframe with data from the Topos Text Gazeteer</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_topos_data():
+    &#34;&#34;&#34;
+    Loads the Topos Text Gazeteer data.
+
+    Returns
+    -------
+    dataframe
+        A dataframe with data from the Topos Text Gazeteer
+    &#34;&#34;&#34;
+    return load_json(&#34;data/ToposTextGazetteer.jsonld&#34;)</code></pre>
+</details>
+</dd>
+<dt id="classical_atlas.topos_wrangler.load_json"><code class="name flex">
+<span>def <span class="ident">load_json</span></span>(<span>file_name)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Load a JSON file as a Python dataframe.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>file_name</code></strong> :&ensp;<code>string</code></dt>
+<dd>file name of the target JSON file</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dataframe</code></dt>
+<dd>A dataframe representing the JSON file</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_json(file_name):
+    &#34;&#34;&#34;
+    Load a JSON file as a Python dataframe.
+
+    Parameters
+    ----------
+    file_name : string
+        file name of the target JSON file
+
+    Returns
+    -------
+    dataframe
+        A dataframe representing the JSON file
+    &#34;&#34;&#34;
+    file = open(file_name, &#34;r+&#34;, encoding=&#34;utf8&#34;)
+    df = json.load(file)
+    return df</code></pre>
+</details>
+</dd>
+<dt id="classical_atlas.topos_wrangler.parse_topos_place_refs"><code class="name flex">
+<span>def <span class="ident">parse_topos_place_refs</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Create a dictionary from the Topos Text .csv file</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dictionary</code></dt>
+<dd>A dictionary with key=text and value=list of Topos Text IDs</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_topos_place_refs():
+    &#34;&#34;&#34;
+    Create a dictionary from the Topos Text .csv file
+
+    Returns
+    -------
+    dictionary
+        A dictionary with key=text and value=list of Topos Text IDs
+    &#34;&#34;&#34;
+    topos_places = defaultdict(list)
+    with open(&#39;data/topos_data.csv&#39;, &#39;r&#39;, encoding=&#34;utf8&#34;) as topos_csv:
+        csv_reader = csv.reader(topos_csv, delimiter=&#39;,&#39;)
+        for row in csv_reader:
+            if len(row) &gt; 0:
+                for i in range(len(row)):
+                    if i == 0:
+                        key = row[i]
+                        topos_places[key] = []
+                    else:
+                        topos_places[key].append(row[i])
+    return topos_places</code></pre>
+</details>
+</dd>
+<dt id="classical_atlas.topos_wrangler.swap_key_value_pairs"><code class="name flex">
+<span>def <span class="ident">swap_key_value_pairs</span></span>(<span>textual_refs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Reorganize the dictionary with key=ID and value= list of texts</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>textual_refs</code></strong> :&ensp;<code>dictionary</code></dt>
+<dd>dictionary with key=text and value=ID</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dictionary</code></dt>
+<dd>dictionary with key=ID and value=list of texts</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def swap_key_value_pairs(textual_refs):
+    &#34;&#34;&#34;
+    Reorganize the dictionary with key=ID and value= list of texts
+
+    Parameters
+    ----------
+    textual_refs : dictionary
+        dictionary with key=text and value=ID
+
+    Returns
+    -------
+    dictionary
+        dictionary with key=ID and value=list of texts
+    &#34;&#34;&#34;
+    reorganized = defaultdict(list)
+    for text in textual_refs.keys():
+        for id in textual_refs[text]:
+            reorganized[id].append(text)
+    for i in reorganized.keys():
+        set(reorganized[i])
+    return reorganized</code></pre>
+</details>
+</dd>
+<dt id="classical_atlas.topos_wrangler.switch_to_pleiades_ids"><code class="name flex">
+<span>def <span class="ident">switch_to_pleiades_ids</span></span>(<span>topos_df, topos_places)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Swap all IDs to Pleiades IDs if possible</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>topos_df</code></strong> :&ensp;<code>dataframe</code></dt>
+<dd>a dataframe with data from the Topos Text Gazeteer</dd>
+<dt><strong><code>topos_places</code></strong> :&ensp;<code>dictionary</code></dt>
+<dd>a dictionary with key=texts and value=list of Topos Text IDs</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dictionary</code></dt>
+<dd>dictionary with key=texts and value=list of Pleiades IDs, where possible</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<p>This method reports how many IDs were unable to be switched. In the case that there is no
+corresponding Pleiades ID for a given Topos Text ID, the Topos Text ID is retained in the dictionary.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def switch_to_pleiades_ids(topos_df, topos_places):
+    &#34;&#34;&#34;
+    Swap all IDs to Pleiades IDs if possible
+
+    Parameters
+    ----------
+    topos_df : dataframe
+        a dataframe with data from the Topos Text Gazeteer
+
+    topos_places : dictionary
+        a dictionary with key=texts and value=list of Topos Text IDs
+
+    Returns
+    -------
+    dictionary
+        dictionary with key=texts and value=list of Pleiades IDs, where possible
+
+    Notes
+    -----
+    This method reports how many IDs were unable to be switched. In the case that there is no
+    corresponding Pleiades ID for a given Topos Text ID, the Topos Text ID is retained in the dictionary.
+    &#34;&#34;&#34;
+    ids = _topos_pleiades_ids(topos_df)
+    switch_counter = 0
+    did_not_switch = 0
+    for place in topos_places.keys():
+        for i in range(len(topos_places[place])):
+            topos_id = topos_places[place][i]
+            if topos_id in ids.keys():
+                topos_places[place][i] = ids[topos_id]
+                switch_counter += 1
+            else:
+                did_not_switch += 1
+    print(&#34;Made &#34; + str(switch_counter) + &#34; switches.&#34;)
+    print(&#34;No Pleiades ID available for &#34; + str(did_not_switch) + &#34; topos places.&#34;)
+    return topos_places</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="classical_atlas" href="index.html">classical_atlas</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="classical_atlas.topos_wrangler.get_topos_data" href="#classical_atlas.topos_wrangler.get_topos_data">get_topos_data</a></code></li>
+<li><code><a title="classical_atlas.topos_wrangler.load_json" href="#classical_atlas.topos_wrangler.load_json">load_json</a></code></li>
+<li><code><a title="classical_atlas.topos_wrangler.parse_topos_place_refs" href="#classical_atlas.topos_wrangler.parse_topos_place_refs">parse_topos_place_refs</a></code></li>
+<li><code><a title="classical_atlas.topos_wrangler.swap_key_value_pairs" href="#classical_atlas.topos_wrangler.swap_key_value_pairs">swap_key_value_pairs</a></code></li>
+<li><code><a title="classical_atlas.topos_wrangler.switch_to_pleiades_ids" href="#classical_atlas.topos_wrangler.switch_to_pleiades_ids">switch_to_pleiades_ids</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
