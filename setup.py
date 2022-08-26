@@ -9,7 +9,7 @@ setup(
   author = 'Annie K. Lamar',                   # Type in your name
   author_email = 'kalamar@stanford.edu',      # Type in your E-Mail
   url = 'https://github.com/AnnieKLamar/classical_atlas',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/AnnieKLamar/classical_atlas/archive/refs/tags/v1.13.tar.gz',
+  download_url = 'https://github.com/AnnieKLamar/classical_atlas/archive/refs/tags/v1.2.tar.gz',
   keywords = ['Pleiades', 'network', 'geospatial', 'open access', 'digital humanities', 'archaeology'],   # Keywords that define your package best
   install_requires=[
           'collections',
