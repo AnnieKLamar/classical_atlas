@@ -1,3 +1,7 @@
+---
+permalink: docs/index.html
+---
+
 # Classical Atlas: A Python Package for Open-Access Geospatial Datasets about the Ancient World
 ### Developed by Annie K. Lamar (Stanford University | kalamar@stanford.edu)
 
