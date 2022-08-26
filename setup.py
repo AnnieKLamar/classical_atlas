@@ -8,7 +8,7 @@ setup(
   description = 'A Python package for accessing open-source geospatial datasets.',   # Give a short description about your library
   author = 'Annie K. Lamar',                   # Type in your name
   author_email = 'kalamar@stanford.edu',      # Type in your E-Mail
-  url = 'https://github.com/AnnieKLamar/Classical_Atlas',   # Provide either the link to your github or to your website
+  url = 'https://github.com/AnnieKLamar/classical_atlas',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/AnnieKLamar/classical_atlas/archive/refs/tags/v1.12.tar.gz',
   keywords = ['Pleiades', 'network', 'geospatial', 'open access', 'digital humanities', 'archaeology'],   # Keywords that define your package best
   install_requires=[
