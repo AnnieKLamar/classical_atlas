@@ -2,12 +2,14 @@
 
 Notes
 -----
-Names in Pleiades are also connected with places. A name reflects the
+"Names in Pleiades are also connected with places. A name reflects the
 identity of a place in human language, not its physical location in the landscape. Names have no spatial coordinates,
 but they are always annotated with the time period(s) of the textual source(s) in which they are attested. As with
 locations, a single place can have multiple names, but an individual name can be associated with one and only one
 place. This is true even if the same sequence of characters is also attested as a name for another place; Pleiades
-treats these “identical” names as separate entities. (https://pleiades.stoa.org/help/conceptual-overview)
+treats these “identical” names as separate entities."
+
+Notes from https://pleiades.stoa.org/help/conceptual-overview.
 
 """
 

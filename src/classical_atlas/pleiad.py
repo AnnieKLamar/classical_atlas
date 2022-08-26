@@ -2,7 +2,7 @@
 
 Notes
 -----
-Pleiades places are the primary organizational construct of the gazetteer. They are conceptual entities: the term
+"Pleiades places are the primary organizational construct of the gazetteer. They are conceptual entities: the term
 "place" applies to any locus of human attention, material or intellectual, in a real-world geographic context. A
 settlement mentioned in an ancient text is a place, whether or not it can now be located; an archaeological site is a
 place; a modern city located atop an ancient settlement is a place. Basically, any spatial feature that is connected
@@ -33,7 +33,9 @@ place without an ancient name.
 The spatial aspects of Pleiades places (i.e., latitude and longitude coordinates in space), as well as their ancient
 and modern names, are addressed through two other conceptual entities: locations and names. Connections are used to
 express and document relationships between different places. Temporal characteristics and bibliographical references
-are recorded at the name, location, and connection levels as appropriate. (https://pleiades.stoa.org/help/conceptual-overview)
+are recorded at the name, location, and connection levels as appropriate."
+
+Notes from https://pleiades.stoa.org/help/conceptual-overview.
 
 Note also that this class excludes the deprecated (as of 2010) Pleiades 'features' that are linked to places.
 The features container remains in the available Pleiades dataset to preserve spatial metadata.

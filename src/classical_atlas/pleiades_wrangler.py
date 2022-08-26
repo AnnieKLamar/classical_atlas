@@ -1,8 +1,14 @@
 """
-Classical Atlas
-module header
-@author: kalamar
+Classical Atlas : A Python Package for Open-Access Geospatial Datasets about the Ancient World
+Developed by Annie K. Lamar (Stanford University | kalamar@stanford.edu)
 
+This module contains the methods you will use most often. With these methods, you can parse all Pleiades data,
+create Pleiad objects representing Pleiades Places, add Places to a networkX graph, add edges representing
+connections between places, and even add node attributes from other datasets (e.g. ToposText) to the graph.
+
+To quickly obtain a graph all Pleiades places and connections, use the method **get_pleiades_network_shortcut.** You
+can also use the methods individually if you want to change the default settings. To add data from ToposText,
+create a graph of Pleiad objects and use **add_topos_text_data_to_network()**, passing the graph as a parameter.
 """
 from collections import defaultdict
 import networkx as nx
@@ -12,6 +18,12 @@ import topos_wrangler
 
 
 def make_pleiades_objects(download_latest_data=False):
+    """
+    Parses Pleiades data and returns a list of Pleiad objects. Each Pleiad object represents a single Pleiades place.
+    With default settings, this method will use the JSON file included in the release of this Python package. If you
+    want to make sure you are using the most recent Pleiades JSON file, set the parameter **download_latest_data=True**.
+    Note that downloading recent data will take quite a while.
+    """
     if download_latest_data:
         print("Warning: Pleiades data files are large and may require considerable time to download.")
         input("Press Enter to continue...")
@@ -28,7 +40,7 @@ def make_pleiades_objects(download_latest_data=False):
 
 
 def find_keyword(list_of_pleiads, keyword, print_results=False):
-    """Search through text fields of pleiad objects, locations, and names for a specified keyword.
+    """Search through text fields of Pleiad objects, locations, and names for a specified keyword.
 
     Parameters
     ----------
@@ -75,7 +87,7 @@ def find_keyword(list_of_pleiads, keyword, print_results=False):
 
 def get_pleiades_as_nodes(list_of_pleiades):
     """
-    Add nodes representing places to a graph.
+    Add nodes representing places to a graph. Each node is a Pleiades "Place" and has linked Locations and Names.
 
     Parameters
     ----------
@@ -95,7 +107,9 @@ def get_pleiades_as_nodes(list_of_pleiades):
 
 def add_connections_as_edges(graph):
     """
-    Adds edges between places with connections.
+    Adds edges between places with connections. These connections are taken from the Pleiades metadata. Connection
+    type is also included as an edge attribute. More information about connections is available here:
+    https://pleiades.stoa.org/help/what-are-connections.
 
     Parameters
     ----------
@@ -123,7 +137,10 @@ def add_connections_as_edges(graph):
 
 def get_pleiades_network_shortcut():
     """
-    Get a network of representing the entire Pleiades dataset.
+    Get a networkX Graph representing the entire Pleiades dataset. This method is a shortcut to parse all Pleiades
+    data, create Pleiad objects representing every Pleiades place with linked Locations and Names, add those objects
+    to a Graph as nodes, and add edges that represent connections (and their attributes) between Places. This method
+    takes no arguments and returns a networkX Graph object.
 
     Returns
     -------
@@ -138,7 +155,11 @@ def get_pleiades_network_shortcut():
 
 def add_topos_text_data_to_network(graph):
     """
-    Add topos text data to the network.
+    Add topos text data to the network. This method parses through all Topos Text data, matches the Topos Text data
+    to Pleiades IDs when possible, and adds a list of textual references as a node attribute. The graph that you pass
+    to this method should be a networkX Graph object created with the methods found in the pleiades_wrangler module.
+    Edges are not required, but do not impact the functionality if present. The returned Graph is the same except
+    nodes have one added attribute: a list of texts that reference that particular place.
 
     Parameters
     ----------
@@ -158,3 +179,4 @@ def add_topos_text_data_to_network(graph):
         for node in graph.nodes:
             if node.id == topos_id:
                 G.add_node(node, textual_refs=topos_refs[topos_id])
+    return G

@@ -2,12 +2,14 @@
 
 Notes
 -----
-Locations in Pleiades connect places to coordinates in space. A location identifies a specific area of interest on
+"Locations in Pleiades connect places to coordinates in space. A location identifies a specific area of interest on
 the earth’s surface that is associated with a place during a particular date range. A place can contain multiple
 locations. Locations, on the other hand, are associated with one and only one place. Depending on the state of the
 evidence, the association between location and place may vary in certainty; some places, attested by name in ancient
 sources, may have no associated location at all because modern scholarship cannot pinpoint reliably the ancient site
-or area in question. (https://pleiades.stoa.org/help/conceptual-overview)
+or area in question."
+
+Notes from https://pleiades.stoa.org/help/conceptual-overview.
 """
 
 
